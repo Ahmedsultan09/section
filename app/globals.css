@@ -165,16 +165,6 @@ img { display: block; max-width: 100%; }
 .choice-grid button { min-height: 115px; padding: 22px; border: 1px solid rgba(255,255,255,.24); background: rgba(255,255,255,.04); color: var(--paper); text-align: left; font: 400 20px Georgia, serif; cursor: default; }
 .choice-grid button:first-child { background: var(--oxide); border-color: var(--oxide); }
 
-.build-stack { height: 100%; display: grid; grid-template-columns: 1.15fr .85fr; gap: 5vw; }
-.stack-main h2 { font: 400 29px Georgia, serif; margin: 0 0 22px; }
-.stack-row { border-top: 1px solid var(--hairline); padding: 15px 0; display: grid; grid-template-columns: 40px 1fr; gap: 14px; }
-.stack-row span { font: 400 18px Georgia, serif; color: var(--oxide); }
-.stack-row p { margin: 0; font-size: 12px; line-height: 1.5; }
-.stack-aside { background: var(--walnut); color: white; padding: clamp(26px, 3vw, 44px); display: flex; flex-direction: column; justify-content: center; }
-.stack-aside h3 { font: 400 clamp(27px, 3vw, 44px)/1.05 Georgia, serif; margin: 10px 0 22px; }
-.stack-aside > p:not(.eyebrow) { font-size: 12px; line-height: 1.6; opacity: .78; margin-bottom: 28px; }
-.stack-aside .source-link { align-self: flex-start; margin-bottom: 12px; }
-
 .phases { height: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-items: stretch; }
 .phases section { border: 1px solid var(--hairline); padding: clamp(24px, 3vw, 44px); display: flex; flex-direction: column; }
 .phases section.active { background: var(--ink); color: var(--paper); transform: translateY(-12px); }
@@ -228,7 +218,7 @@ img { display: block; max-width: 100%; }
   .section-mark { width: 30px; height: 30px; font-size: 18px; }
   .slide { padding: 32px 24px 70px; gap: 22px; overflow-y: auto; }
   .slide h1 { font-size: clamp(32px, 8vw, 52px); }
-  .cover-grid, .audit-grid, .reference-layout, .palette-layout, .visual-language, .build-stack, .closing-layout, .consultation-concept { grid-template-columns: 1fr; gap: 22px; }
+  .cover-grid, .audit-grid, .reference-layout, .palette-layout, .visual-language, .closing-layout, .consultation-concept { grid-template-columns: 1fr; gap: 22px; }
   .cover-copy { display: none; }.hero-frame { height: 58vh; }
   .two-doors, .commerce-matrix, .phases { grid-template-columns: 1fr; height: auto; }
   .door { min-height: 280px; }.door + .door { border-left: 0; border-top: 1px solid var(--hairline); }
@@ -240,7 +230,7 @@ img { display: block; max-width: 100%; }
   .photo-grid { min-height: 460px; }.type-specimen { display: none; }
   .product-concept { grid-template-columns: 1fr; height: auto; }.product-visual { min-height: 280px; }.product-info { padding: 24px; }
   .choice-grid button { min-height: 82px; font-size: 16px; }
-  .stack-aside { display: none; }.phases section { min-height: 250px; }.phases section.active { transform: none; }
+  .phases section { min-height: 250px; }.phases section.active { transform: none; }
   .decision-list { grid-template-columns: 1fr; }.decision-list > div:nth-child(odd) { border-right: 0; }
   .closing-layout figure { max-height: 240px; }.closing-statement { font-size: 34px; }
   .deck-controls { left: 58px; }.utility-controls { right: 10px; }.utility-controls button:not(:last-child) { display: none; }

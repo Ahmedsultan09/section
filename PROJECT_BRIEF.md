@@ -56,7 +56,9 @@ Palette:
 - Testimonials, partner logos and warranty/after-sales information
 - Inquiry owner and product/content owner after launch
 
-## Implementation approach
+## Implementation approach — internal build note
+
+Keep this section in the working brief only. Do not include Codex, skills, developer tooling or the implementation toolkit in the client-facing presentation.
 
 Use the official OpenAI frontend skill for art direction and interface quality, a reusable component/design system for the website, and browser verification for desktop/mobile flows. Select a commerce platform only after catalogue size, inventory operations, payment method and delivery rules are confirmed.
 

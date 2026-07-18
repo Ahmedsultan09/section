@@ -13,8 +13,6 @@ type Slide = {
 const oldSite = "https://chestnut-rabbit-rcj1hm.mystrikingly.com/";
 const sohoHome = "https://www.sohohome.com/";
 const sohoDesign = "https://www.sohohome.com/eu/soho-home-design";
-const frontendSkill = "https://github.com/openai/skills/blob/main/skills/.curated/frontend-skill/SKILL.md";
-const skillsCatalog = "https://github.com/openai/skills";
 
 function Arrow({ direction = "right" }: { direction?: "left" | "right" }) {
   return <span aria-hidden="true">{direction === "right" ? "→" : "←"}</span>;
@@ -260,17 +258,6 @@ export default function Home() {
         ),
       },
       {
-        kicker: "Implementation approach",
-        title: "Build the brand system once, then let every page reuse it.",
-        note: "This is the practical build proposal. Use a reusable component system, not isolated page designs. Keep content editable. Choose the commerce engine only after we know product count, payment method, delivery rules and who will manage stock.",
-        body: (
-          <div className="build-stack">
-            <div className="stack-main"><h2>Recommended Codex workflow</h2><div className="stack-row"><span>01</span><p><b>Official frontend skill</b> for strong art direction and production-quality interface decisions.</p></div><div className="stack-row"><span>02</span><p><b>Sites + a reusable design system</b> for the shareable prototype and core website.</p></div><div className="stack-row"><span>03</span><p><b>Commerce layer after discovery</b>—Shopify or a lighter checkout depending on catalogue complexity.</p></div><div className="stack-row"><span>04</span><p><b>Browser verification</b> for mobile, product and inquiry flows before launch.</p></div></div>
-            <aside className="stack-aside"><p className="eyebrow">Skill research</p><h3>Start with the official OpenAI frontend skill.</h3><p>It is specifically designed for visually strong landing pages, websites and prototypes. Use platform-specific commerce skills only after the owner chooses the store model.</p><Source href={frontendSkill}>Frontend skill</Source><Source href={skillsCatalog}>OpenAI skills catalog</Source></aside>
-          </div>
-        ),
-      },
-      {
         kicker: "Phased scope",
         title: "Launch the smallest version that feels complete—not the largest version we can imagine.",
         note: "Frame this as a sensible commercial sequence. Phase one creates credibility and qualified leads. Phase two proves commerce with a curated collection. Phase three adds richer content and operational integrations after real use tells us what matters.",
@@ -283,30 +270,30 @@ export default function Home() {
         ),
       },
       {
-        kicker: "Decisions to leave with today",
-        title: "Seven answers unlock the design and the build.",
-        note: "Use this as the discussion checklist. Do not leave without a primary business goal, a first product set and the transaction model. If the answers are incomplete, agree on who will provide them and by when.",
-        body: (
-          <div className="decision-list">
-            <div><span>01</span><p>Is the primary goal <b>project leads</b> or <b>product sales</b>?</p></div>
-            <div><span>02</span><p>Which <b>6–12 products</b> are ready for the first collection?</p></div>
-            <div><span>03</span><p>Are prices fixed, “from,” deposit-based or quotation-only?</p></div>
-            <div><span>04</span><p>Which sizes, materials and finishes are genuinely standardized?</p></div>
-            <div><span>05</span><p>Where do delivery and installation happen—and how are they priced?</p></div>
-            <div><span>06</span><p>Who owns product updates, inquiries and stock after launch?</p></div>
-            <div><span>07</span><p>Which real projects and customer proof can become the launch story?</p></div>
-          </div>
-        ),
-      },
-      {
         kicker: "Recommended direction",
         title: "Make Section feel like a destination—not a gallery folder.",
-        note: "Close with the recommendation in one sentence. Ask for agreement on the two-door model, the warm editorial art direction and the phased launch. Then confirm the next deliverable: a sitemap/content checklist, followed by the homepage prototype.",
+        note: "Summarize the recommendation in one sentence. Ask for agreement on the two-door model, the warm editorial art direction and the phased launch—then move into the practical owner questions on the final slide.",
         tone: "ink",
         body: (
           <div className="closing-layout">
             <figure><img src="/assets/474743_155959.jpg" alt="Section Furniture bedroom project" /></figure>
             <div><p className="closing-statement">A digital showroom where people can trust the craft, imagine the space and choose the right next step.</p><div className="closing-actions"><span>01 · Approve direction</span><span>02 · Select launch products</span><span>03 · Gather content</span><span>04 · Prototype homepage</span></div><p className="thank-you">Section Furniture · made with intention</p></div>
+          </div>
+        ),
+      },
+      {
+        kicker: "Owner discussion · before we start",
+        title: "Seven practical decisions for a focused launch.",
+        note: "Use this as the final discussion checklist. Record a clear answer, owner and deadline for each item. The most important outcomes are the business priority, launch product list, transaction method and content owner.",
+        body: (
+          <div className="decision-list">
+            <div><span>01</span><p>In the first six months, should the website prioritize <b>qualified project inquiries, showroom visits or product sales</b>?</p></div>
+            <div><span>02</span><p>Which <b>services and project types</b> are most profitable—and which ones do you want more of?</p></div>
+            <div><span>03</span><p>Which <b>6–12 products are genuinely launch-ready</b> with final dimensions, materials, prices and production times?</p></div>
+            <div><span>04</span><p>Should product customers <b>pay in full, pay a deposit or submit an order for confirmation</b>?</p></div>
+            <div><span>05</span><p>Where can you deliver and install, what does it cost, and what lead time can you promise?</p></div>
+            <div><span>06</span><p>Who will answer website inquiries and update products—and what response time can the team maintain?</p></div>
+            <div><span>07</span><p>Which project photos, product photos, testimonials and specifications can be supplied <b>within the next two weeks</b>?</p></div>
           </div>
         ),
       },
