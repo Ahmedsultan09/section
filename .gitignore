@@ -32,9 +32,3 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
-next-env.d.ts
-/dist/
-/.wrangler/
-/outputs/
-/work/

@@ -1,0 +1,1 @@
+import{r as e}from"./framework-DkySH6nJ.js";import{t}from"./react-DAvIGDRQ.js";var n=e();function r({children:e,className:r=``,delay:i=0}){return(0,n.jsx)(t.div,{className:r,initial:{opacity:0,y:34},whileInView:{opacity:1,y:0},viewport:{once:!0,amount:.15},transition:{duration:.72,delay:i,ease:[.22,1,.36,1]},children:e})}export{r as Reveal};
