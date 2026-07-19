@@ -1,4 +1,42 @@
-// Intentionally empty by default.
-// Add Drizzle tables here when the site actually needs a database.
-// See examples/d1/db/schema.ts for an opt-in example.
-export {};
+import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+
+export const inquiries = sqliteTable("inquiries", {
+  id: text("id").primaryKey(),
+  createdAt: integer("created_at", { mode: "timestamp_ms" }).notNull(),
+  status: text("status").notNull().default("received"),
+  locale: text("locale").notNull(),
+  name: text("name").notNull(),
+  company: text("company").notNull(),
+  role: text("role").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone").notNull(),
+  preferredContact: text("preferred_contact").notNull(),
+  sector: text("sector").notNull(),
+  projectName: text("project_name").notNull(),
+  location: text("location").notNull(),
+  projectStage: text("project_stage").notNull(),
+  capabilities: text("capabilities").notNull(),
+  serviceScope: text("service_scope").notNull(),
+  scale: text("scale").notNull(),
+  drawingsStatus: text("drawings_status").notNull(),
+  roleDetail: text("role_detail"),
+  targetDelivery: text("target_delivery").notNull(),
+  budgetBand: text("budget_band").notNull(),
+  procurementStatus: text("procurement_status").notNull(),
+  decisionTimeline: text("decision_timeline").notNull(),
+  brief: text("brief").notNull(),
+  consent: integer("consent", { mode: "boolean" }).notNull(),
+  sourceIp: text("source_ip"),
+  userAgent: text("user_agent"),
+  notificationError: text("notification_error"),
+});
+
+export const inquiryAttachments = sqliteTable("inquiry_attachments", {
+  id: text("id").primaryKey(),
+  inquiryId: text("inquiry_id").notNull().references(() => inquiries.id, { onDelete: "cascade" }),
+  storageKey: text("storage_key").notNull().unique(),
+  originalName: text("original_name").notNull(),
+  mimeType: text("mime_type").notNull(),
+  bytes: integer("bytes").notNull(),
+  createdAt: integer("created_at", { mode: "timestamp_ms" }).notNull(),
+});

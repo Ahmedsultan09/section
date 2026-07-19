@@ -1,0 +1,86 @@
+export type Locale = "en" | "ar";
+
+export type LocalizedText = Record<Locale, string>;
+
+export type ProjectSector =
+  | "residential-developments"
+  | "hospitality"
+  | "workplace"
+  | "retail-public";
+
+export type CapabilitySlug =
+  | "kitchens"
+  | "dressing-rooms"
+  | "living-rooms"
+  | "custom-units"
+  | "bedrooms"
+  | "doors"
+  | "wall-cladding"
+  | "materials-finishes";
+
+export type MediaAsset = {
+  id: string;
+  src: string;
+  sourceFolder: string;
+  sourceName: string;
+  projectSlug?: string;
+  sector?: ProjectSector;
+  capabilities: CapabilitySlug[];
+  stage: "finished" | "process" | "detail" | "unknown";
+  authenticity: "verified-real" | "ai-concept" | "unknown";
+  rights: "approved" | "pending" | "restricted";
+  orientation: "landscape" | "portrait" | "square";
+  quality: "hero" | "editorial" | "reference";
+  usage: "hero" | "project" | "process" | "capability" | "quarantine";
+  alt: LocalizedText;
+};
+
+export type Project = {
+  slug: string;
+  title: LocalizedText;
+  sector: ProjectSector;
+  sectorLabel: LocalizedText;
+  location: LocalizedText;
+  year: string;
+  client: LocalizedText;
+  clientVisibility: "approved" | "confidential" | "pending";
+  verificationNote: LocalizedText;
+  summary: LocalizedText;
+  scope: LocalizedText;
+  responsibilities: LocalizedText[];
+  materials: LocalizedText[];
+  outcome: LocalizedText;
+  capabilities: CapabilitySlug[];
+  media: string[];
+};
+
+export type Capability = {
+  slug: CapabilitySlug;
+  number: string;
+  title: LocalizedText;
+  short: LocalizedText;
+  intro: LocalizedText;
+  applications: LocalizedText[];
+  materials: LocalizedText[];
+  process: LocalizedText[];
+  image: string;
+};
+
+export type InquiryPayload = {
+  locale: Locale;
+  name: string;
+  phone: string;
+  projectElements: string[];
+  serviceScope: string[];
+  projectStage: string;
+  brief: string;
+  consent: boolean;
+};
+
+export type InquiryAttachment = {
+  inquiryId: string;
+  storageKey: string;
+  originalName: string;
+  mimeType: string;
+  bytes: number;
+};
