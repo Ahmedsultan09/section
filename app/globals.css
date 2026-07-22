@@ -1724,3 +1724,18 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   .immersive-hero-reel-track { animation: none; transform: none; }
   .immersive-process-chapters article { opacity: 1; transition: none; }
 }
+
+/* Keep the real wordmark compact inside Immersive navigation. */
+.immersive-header > .immersive-wordmark {
+  width: 154px;
+  display: block;
+  line-height: 0;
+}
+.immersive-header > .immersive-wordmark .wordmark.brand-mark {
+  width: 154px;
+  max-width: 154px;
+}
+@media (max-width: 760px) {
+  .immersive-header > .immersive-wordmark,
+  .immersive-header > .immersive-wordmark .wordmark.brand-mark { width: 126px; max-width: 126px; }
+}

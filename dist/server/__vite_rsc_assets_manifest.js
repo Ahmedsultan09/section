@@ -169,13 +169,13 @@ export default {
     "app/(root)/layout.tsx": {
       "js": [],
       "css": [
-        "/assets/index-XfMwOncN.css"
+        "/assets/index-BLu3SGxM.css"
       ]
     },
     "app/[locale]/layout.tsx": {
       "js": [],
       "css": [
-        "/assets/index-XfMwOncN.css"
+        "/assets/index-BLu3SGxM.css"
       ]
     }
   }
