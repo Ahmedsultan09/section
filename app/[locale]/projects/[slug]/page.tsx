@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { capabilityLabel, getMedia, getProject, isLocale, locales, projects } from "@/lib/site-content";
+import { DesignAwareLink } from "@/components/DesignAwareLink";
+import { DesignSwitcher } from "@/components/DesignSwitcher";
 import { JsonLd } from "@/components/JsonLd";
+import { getDesign } from "@/lib/designs";
+import { capabilityLabel, getMedia, getProject, isLocale, locales, projects } from "@/lib/site-content";
 import { breadcrumbSchema, pageMetadata, projectSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -16,18 +18,26 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const project = getProject(slug);
   if (!project) return {};
   const title = locale === "ar" ? `${project.title[locale]} — دراسة مشروع نجارة وتجهيز داخلي` : `${project.title[locale]} — Joinery & Fit-out Project Study`;
-  return pageMetadata({ locale, path: `/projects/${slug}`, title, description: project.summary[locale] });
+  return pageMetadata({ locale, path: `/projects/${slug}`, title, description: project.summary[locale], image: getMedia(project.media[0]).src });
 }
 
-export default async function ProjectPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+export default async function ProjectPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+  searchParams?: Promise<{ design?: string }>;
+}) {
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
   const project = getProject(slug);
   if (!project) notFound();
+  const design = getDesign((await searchParams)?.design);
   const index = projects.findIndex((item) => item.slug === slug);
   const next = projects[(index + 1) % projects.length];
   const hero = getMedia(project.media[0]);
-  return <main className="project-detail subpage">
+
+  return <main className={`project-detail subpage design-${design}`} data-design={design}>
     <JsonLd data={[
       projectSchema(locale, project),
       breadcrumbSchema(locale, [
@@ -36,6 +46,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
         { name: project.title[locale], path: `/projects/${slug}` },
       ]),
     ]} />
+    <DesignSwitcher locale={locale} current={design} path={`/${locale}/projects/${slug}`} />
     <header className="project-hero">
       <div className="project-hero-media"><Image unoptimized src={hero.src} alt={hero.alt[locale]} fill priority sizes="100vw" /></div>
       <div className="project-hero-copy"><p>{project.sectorLabel[locale]} / {project.location[locale]}</p><h1>{project.title[locale]}</h1><span>{project.client[locale]}</span></div>
@@ -49,6 +60,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
       {project.media.map((mediaId, mediaIndex) => { const asset = getMedia(mediaId); return <figure className={mediaIndex % 3 === 1 ? "portrait" : "landscape"} key={`${mediaId}-${mediaIndex}`}><div><Image unoptimized src={asset.src} alt={asset.alt[locale]} fill sizes="(max-width: 800px) 100vw, 75vw" /></div><figcaption><span>{String(mediaIndex + 1).padStart(2, "0")} / {String(project.media.length).padStart(2, "0")}</span>{asset.alt[locale]}</figcaption></figure>; })}
     </section>
     <section className="project-delivery section-pad"><div><p className="eyebrow">{locale === "ar" ? "مسؤوليتنا" : "Our responsibility"}</p><h2>{project.outcome[locale]}</h2></div><div><ul>{project.responsibilities.map((item) => <li key={item.en}>{item[locale]}</li>)}</ul><ul>{project.materials.map((item) => <li key={item.en}>{item[locale]}</li>)}</ul></div></section>
-    <Link className="next-project section-pad" href={`/${locale}/projects/${next.slug}`}><p>{locale === "ar" ? "المشروع التالي" : "Next project"}</p><h2>{next.title[locale]}</h2><span>↗</span></Link>
+    <DesignAwareLink className="next-project section-pad" href={`/${locale}/projects/${next.slug}`}><p>{locale === "ar" ? "المشروع التالي" : "Next project"}</p><h2>{next.title[locale]}</h2><span>↗</span></DesignAwareLink>
   </main>;
 }

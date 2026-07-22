@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { capabilities, copy, getMedia, isLocale, projects } from "@/lib/site-content";
 import { Reveal } from "@/components/Reveal";
 import { ProcessStory } from "@/components/ProcessStory";
-import { ProjectExplorer } from "@/components/ProjectExplorer";
 import { InquiryForm } from "@/components/InquiryForm";
 import { DesignSwitcher, type DesignVariant } from "@/components/DesignSwitcher";
 import { ImmersiveHome } from "@/components/ImmersiveHome";
+import { ShowroomHome } from "@/components/ShowroomHome";
+import { ProjectStoryRail } from "@/components/ProjectStoryRail";
+import { DesignAwareLink } from "@/components/DesignAwareLink";
 import { pageMetadata, seoCopy } from "@/lib/seo";
+import { getDesign } from "@/lib/designs";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -23,9 +25,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function HomePage({ params, searchParams }: { params: Promise<{ locale: string }>; searchParams?: Promise<{ design?: string }> }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  const requestedDesign = (await searchParams)?.design;
-  const design: DesignVariant = requestedDesign === "immersive" ? "immersive" : "editorial";
+  const design: DesignVariant = getDesign((await searchParams)?.design);
   if (design === "immersive") return <ImmersiveHome locale={locale} />;
+  if (design === "assemblage" || design === "nocturne") return <ShowroomHome locale={locale} mode={design} />;
   const t = copy[locale];
   const hero = getMedia("asset-living-01");
   const featured = projects[0];
@@ -49,7 +51,7 @@ export default async function HomePage({ params, searchParams }: { params: Promi
           </h1>
           <div className="hero-bottom">
             <p>{t.hero.body}</p>
-            <div className="hero-actions"><Link className="button-primary" href="#inquiry">{t.hero.primary}<span>↘</span></Link><Link className="text-link light" href={`/${locale}/projects`}>{t.hero.secondary}<span>↓</span></Link></div>
+            <div className="hero-actions"><DesignAwareLink className="button-primary" href="#inquiry">{t.hero.primary}<span>↘</span></DesignAwareLink><DesignAwareLink className="text-link light" href={`/${locale}/projects`}>{t.hero.secondary}<span>↓</span></DesignAwareLink></div>
           </div>
         </div>
         <p className="hero-note">{t.hero.note}</p>
@@ -67,7 +69,7 @@ export default async function HomePage({ params, searchParams }: { params: Promi
         <Reveal className="featured-media">
           <Image unoptimized src={featuredImage.src} alt={featuredImage.alt[locale]} fill sizes="100vw" />
           <div className="featured-label"><p>{featured.client[locale]}</p><h3>{featured.title[locale]}</h3><span>{featured.location[locale]}</span></div>
-          <Link href={`/${locale}/projects/${featured.slug}`} aria-label={t.featured.link}>{t.featured.link}<span>↗</span></Link>
+          <DesignAwareLink href={`/${locale}/projects/${featured.slug}`} aria-label={t.featured.link}>{t.featured.link}<span>↗</span></DesignAwareLink>
         </Reveal>
       </section>
 
@@ -76,9 +78,9 @@ export default async function HomePage({ params, searchParams }: { params: Promi
         <div className="capability-index">
           {capabilities.map((capability) => {
             const image = getMedia(capability.image);
-            return <Link href={`/${locale}/collections/${capability.slug}`} className="capability-row" key={capability.slug}>
+            return <DesignAwareLink href={`/${locale}/collections/${capability.slug}`} className="capability-row" key={capability.slug}>
               <span>{capability.number}</span><h3>{capability.title[locale]}</h3><p>{capability.short[locale]}</p><div className="capability-preview"><Image unoptimized src={image.src} alt={image.alt[locale]} fill sizes="28vw" /></div><b>↗</b>
-            </Link>;
+            </DesignAwareLink>;
           })}
         </div>
       </section>
@@ -95,7 +97,7 @@ export default async function HomePage({ params, searchParams }: { params: Promi
 
       <section className="projects-section section-pad">
         <div className="section-heading split"><div><p className="eyebrow">{t.projects.eyebrow}</p><h2>{locale === "ar" ? <>أعمال تستحق <em>أن تفتحها.</em></> : <>Work worth <em>opening.</em></>}</h2></div><p>{t.projects.body}</p></div>
-        <ProjectExplorer locale={locale} />
+        <ProjectStoryRail locale={locale} />
       </section>
 
       <section className="materials-section section-pad">
@@ -104,7 +106,7 @@ export default async function HomePage({ params, searchParams }: { params: Promi
       </section>
 
       <section className="closing-cta section-pad">
-        <p className="eyebrow">{t.close.eyebrow}</p><h2>{locale === "ar" ? <>أرسل لنا <em>المتطلبات.</em></> : <>Bring us <em>the brief.</em></>}</h2><div><p>{t.close.body}</p><Link className="button-yellow" href="#inquiry">{t.close.action}<span>↘</span></Link></div>
+        <p className="eyebrow">{t.close.eyebrow}</p><h2>{locale === "ar" ? <>أرسل لنا <em>المتطلبات.</em></> : <>Bring us <em>the brief.</em></>}</h2><div><p>{t.close.body}</p><DesignAwareLink className="button-yellow" href="#inquiry">{t.close.action}<span>↘</span></DesignAwareLink></div>
       </section>
 
       <section className="landing-inquiry section-pad" id="inquiry">

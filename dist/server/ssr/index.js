@@ -11630,25 +11630,25 @@ function createFromReadableStream(stream, options = {}) {
 //#region \0virtual:vite-rsc/client-references
 var client_references_default = {
 	"15c18cfaeeff": async () => {
-		const m = await import("./assets/layout-segment-context-BRT6wKYx.js");
+		const m = await import("./assets/layout-segment-context--1mWdnyN.js");
 		return { get "LayoutSegmentProvider"() {
 			return m["LayoutSegmentProvider"];
 		} };
 	},
 	"1a2e3044d30c": async () => {
-		const m = await import("./assets/InquiryForm-CNbtLcat.js");
+		const m = await import("./assets/InquiryForm-DhZ_1Ti9.js");
 		return { get "InquiryForm"() {
 			return m["InquiryForm"];
 		} };
 	},
 	"3066addfb889": async () => {
-		const m = await import("./assets/ProcessStory-D6iXp5_E.js");
+		const m = await import("./assets/ProcessStory-txWOJLor.js");
 		return { get "ProcessStory"() {
 			return m["ProcessStory"];
 		} };
 	},
 	"593f344dc510": async () => {
-		const m = await import("./assets/error-boundary-CPHUfBkW.js");
+		const m = await import("./assets/error-boundary-CVA6uE-r.js");
 		return {
 			get "ErrorBoundary"() {
 				return m["ErrorBoundary"];
@@ -11667,14 +11667,20 @@ var client_references_default = {
 			}
 		};
 	},
+	"5f1b05c78786": async () => {
+		const m = await import("./assets/DesignAwareLink-DgPiLzHn.js");
+		return { get "DesignAwareLink"() {
+			return m["DesignAwareLink"];
+		} };
+	},
 	"5fc7428cabbc": async () => {
-		const m = await import("./assets/ImmersiveWebGL-D6Z46G14.js");
+		const m = await import("./assets/ImmersiveWebGL-C9bKWMwG.js");
 		return { get "ImmersiveWebGL"() {
 			return m["ImmersiveWebGL"];
 		} };
 	},
 	"726cfa7c07d1": async () => {
-		const m = await import("./assets/ProjectExplorer-C7CBhUX4.js");
+		const m = await import("./assets/ProjectExplorer-UDAggXvb.js");
 		return { get "ProjectExplorer"() {
 			return m["ProjectExplorer"];
 		} };
@@ -11694,33 +11700,45 @@ var client_references_default = {
 		};
 	},
 	"9fb86276be8f": async () => {
-		const m = await import("./assets/image-BveHEV8u.js");
+		const m = await import("./assets/image-D8P5PEeD.js");
 		return { get "default"() {
 			return m["default"];
 		} };
 	},
 	"a23e0279e836": async () => {
-		const m = await import("./assets/LocaleSwitch-DbCflFmj.js");
+		const m = await import("./assets/LocaleSwitch-nN1-pU6s.js");
 		return { get "LocaleSwitch"() {
 			return m["LocaleSwitch"];
 		} };
 	},
 	"ab0e265b1002": async () => {
-		const m = await import("./assets/Reveal-C2WJ09pc.js");
+		const m = await import("./assets/Reveal-CCo_aZF5.js");
 		return { get "Reveal"() {
 			return m["Reveal"];
 		} };
 	},
+	"b178cf627e26": async () => {
+		const m = await import("./assets/AdaptiveWebGL-BdsERwn4.js");
+		return { get "AdaptiveWebGL"() {
+			return m["AdaptiveWebGL"];
+		} };
+	},
 	"c2747888630f": async () => {
-		const m = await import("./assets/link-CEecQDgT.js");
+		const m = await import("./assets/link-LlPHghJ8.js").then((n) => n.n);
 		return { get "default"() {
 			return m["default"];
 		} };
 	},
 	"c731416457b7": async () => {
-		const m = await import("./assets/ImmersiveProcessStory-BrurvOUw.js");
+		const m = await import("./assets/ImmersiveProcessStory-gr7FZq3F.js");
 		return { get "ImmersiveProcessStory"() {
 			return m["ImmersiveProcessStory"];
+		} };
+	},
+	"f18800975cb3": async () => {
+		const m = await import("./assets/ProjectStoryRail-BiH3BBXo.js");
+		return { get "ProjectStoryRail"() {
+			return m["ProjectStoryRail"];
 		} };
 	}
 };

@@ -131,6 +131,27 @@ export const capabilities: Capability[] = [
 
 export const projects: Project[] = [
   {
+    slug: "sodic-collaboration", title: { en: "SODIC Collaboration", ar: "تعاون مع سوديك" },
+    sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Egypt", ar: "مصر" }, year: "—",
+    client: { en: "SODIC", ar: "سوديك" }, clientVisibility: "approved", verificationStatus: "partial",
+    verificationNote: { en: "The client name and broad work categories are approved for this preview; detailed project facts remain under review.", ar: "اسم العميل وفئات العمل العامة معتمدة لهذه المعاينة، بينما تظل تفاصيل المشروع قيد المراجعة." },
+    summary: { en: "Interior work, custom woodwork and furniture delivered as a coordinated project package.", ar: "أعمال داخلية ونجارة مخصصة وأثاث ضمن حزمة مشروع منسقة." },
+    scope: { en: "Interior work, woodwork and furniture. Quantities, locations and programme are intentionally omitted until verified.", ar: "أعمال داخلية ونجارة وأثاث. تم استبعاد الكميات والمواقع والبرنامج الزمني حتى التحقق منها." },
+    responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
+    materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." },
+    capabilities: ["custom-units", "wall-cladding", "bedrooms"], media: ["asset-wall-01", "asset-living-01", "asset-unit-01"], collaboratorIds: [],
+  },
+  {
+    slug: "ora-collaboration", title: { en: "ORA Collaboration", ar: "تعاون مع أورا" },
+    sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Egypt", ar: "مصر" }, year: "—",
+    client: { en: "ORA", ar: "أورا" }, clientVisibility: "approved", verificationStatus: "pending",
+    verificationNote: { en: "The client name is approved for this preview. Scope details are pending confirmation.", ar: "اسم العميل معتمد لهذه المعاينة، وتفاصيل نطاق العمل في انتظار التأكيد." },
+    summary: { en: "A selected collaboration presented while the detailed project record is being organized.", ar: "تعاون مختار يُعرض بينما يجري تنظيم سجل المشروع التفصيلي." },
+    scope: { en: "Selected collaboration. Detailed scope, locations, quantities and outcomes are not yet published.", ar: "تعاون مختار. لم يتم بعد نشر النطاق التفصيلي أو المواقع أو الكميات أو النتائج." },
+    responsibilities: [], materials: [], outcome: { en: "Project information will expand as verified material is approved.", ar: "ستتوسع معلومات المشروع مع اعتماد المواد الموثقة." },
+    capabilities: ["kitchens", "dressing-rooms", "custom-units"], media: ["asset-bedroom-01", "asset-door-01", "asset-detail-01"], collaboratorIds: [],
+  },
+  {
     slug: "residential-joinery-study", title: { en: "Residential Joinery Study", ar: "دراسة نجارة لمشروع سكني" },
     sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Greater Cairo", ar: "القاهرة الكبرى" }, year: "—",
     client: { en: "Confidential developer", ar: "مطور عقاري — سري" }, clientVisibility: "pending",

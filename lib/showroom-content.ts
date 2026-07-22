@@ -1,0 +1,41 @@
+import type { CollectionPiece, Locale, PartnerLogo } from "./site-types";
+import { driveSrc } from "./media-manifest";
+
+export const collectionPieces: CollectionPiece[] = [
+  { slug: "obour-kitchen", collection: "kitchens", title: { en: "Obour Kitchen", ar: "مطبخ العبور" }, story: { en: "A calm fitted composition where storage, preparation and appliance zones read as one architectural line.", ar: "تكوين هادئ ومتكامل يجمع التخزين والتحضير والأجهزة في خط معماري واحد." }, application: { en: "Residential kitchen", ar: "مطبخ سكني" }, scope: { en: "Fitted cabinetry and coordinated installation", ar: "خزائن مدمجة وتركيب منسق" }, media: [driveSrc("k01a"), driveSrc("k01b"), driveSrc("k01c"), "/drive/kitchens/kitchen-01-d.webp", "/drive/kitchens/kitchen-01-e.webp"], sourceFolderIds: ["1FDvpmYk-p-zNaDXyRSM1Q9CMO1cqfBpf"], status: "preview" },
+  { slug: "sahar-kitchen", collection: "kitchens", title: { en: "Sahar Kitchen", ar: "مطبخ سحر" }, story: { en: "A compact kitchen study shaped around clear circulation, concealed storage and an easy everyday rhythm.", ar: "دراسة لمطبخ مدمج تتشكل حول حركة واضحة وتخزين هادئ وإيقاع يومي سهل." }, application: { en: "Private residence", ar: "مسكن خاص" }, scope: { en: "Cabinetry development and fitting", ar: "تطوير الخزائن وتركيبها" }, media: [driveSrc("k02a"), driveSrc("k02b"), "/drive/kitchens/kitchen-02-c.webp", "/drive/kitchens/kitchen-02-d.webp"], sourceFolderIds: ["1ag8bx9wjuYjZK3XTuUdTpSR4oPIZAVsw"], status: "preview" },
+  { slug: "kitchen-03", collection: "kitchens", title: { en: "Kitchen 03", ar: "المطبخ ٠٣" }, story: { en: "A material-led kitchen package developed from site dimensions into a precise fitted envelope.", ar: "حزمة مطبخ تقودها الخامة وتتطور من أبعاد الموقع إلى غلاف دقيق ومتكامل." }, application: { en: "Made-to-fit kitchen", ar: "مطبخ مصمم للمقاس" }, scope: { en: "Survey, detailing and production", ar: "رفع مقاسات وتفاصيل وتصنيع" }, media: [driveSrc("k03a"), driveSrc("k03b")], sourceFolderIds: ["1tMOmunoBYRxhlvs-rTsll-B7ZLDLPghU"], status: "preview" },
+  { slug: "kitchen-04", collection: "kitchens", title: { en: "Kitchen 04", ar: "المطبخ ٠٤" }, story: { en: "A restrained storage system designed to keep the room visually quiet while every function stays close at hand.", ar: "نظام تخزين هادئ بصرياً يحافظ على قرب كل وظيفة وسهولة الوصول إليها." }, application: { en: "Residential development", ar: "مشروع سكني" }, scope: { en: "Joinery manufacturing and fitting", ar: "تصنيع نجارة وتركيب" }, media: [driveSrc("k04a"), driveSrc("k04b")], sourceFolderIds: ["13xG1rK3o4rdBb46kbVLMR_b2yflBEiE7"], status: "preview" },
+  { slug: "kitchen-05", collection: "kitchens", title: { en: "Kitchen 05", ar: "المطبخ ٠٥" }, story: { en: "A practical kitchen sequence balancing durable surfaces with a clean, composed elevation.", ar: "تسلسل عملي يوازن بين الأسطح المتينة وواجهة نظيفة ومتزنة." }, application: { en: "Residential kitchen", ar: "مطبخ سكني" }, scope: { en: "Production and coordinated delivery", ar: "تصنيع وتسليم منسق" }, media: [driveSrc("k05a"), driveSrc("k05b"), "/drive/kitchens/kitchen-05-c.webp", "/drive/kitchens/kitchen-05-d.webp"], sourceFolderIds: ["1Va7QqpjC6Pmchnseo37B_tZq4kPiresk"], status: "preview" },
+  { slug: "glass-frame-dressing", collection: "dressing-rooms", title: { en: "Glass-frame Dressing Room", ar: "غرفة ملابس بإطارات زجاجية" }, story: { en: "A full-height wardrobe system combining illuminated interiors, glass fronts and accessible storage hardware.", ar: "نظام خزائن بارتفاع كامل يجمع الإضاءة الداخلية والواجهات الزجاجية وإكسسوارات التخزين العملية." }, application: { en: "Bedroom dressing wall", ar: "حائط ملابس لغرفة نوم" }, scope: { en: "Wardrobes, lighting integration and fitting", ar: "خزائن ودمج إضاءة وتركيب" }, media: [driveSrc("d08"), driveSrc("d04"), driveSrc("d01"), driveSrc("d02")], sourceFolderIds: ["1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X"], status: "preview" },
+  { slug: "walk-in-dressing", collection: "dressing-rooms", title: { en: "Walk-in Dressing Room", ar: "غرفة ملابس داخلية" }, story: { en: "A room-scale storage system where lighting, hanging, drawers and display zones form a continuous sequence.", ar: "نظام تخزين بحجم الغرفة تتصل فيه الإضاءة والتعليق والأدراج ومساحات العرض في تسلسل واحد." }, application: { en: "Walk-in wardrobe", ar: "خزانة ملابس داخلية" }, scope: { en: "Internal planning, cabinetry and installation", ar: "تخطيط داخلي وخزائن وتركيب" }, media: [driveSrc("d06"), driveSrc("d05"), driveSrc("d07"), driveSrc("d03")], sourceFolderIds: ["1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X"], status: "preview" },
+  ...[
+    ["living-rooms", "living-composition", "Living Composition", "تكوين للمعيشة", "/assets/141202_527604.jpeg"],
+    ["custom-units", "fitted-storage", "Fitted Storage", "تخزين مدمج", "/assets/217375_739589.jpeg"],
+    ["bedrooms", "coordinated-bedroom", "Coordinated Bedroom", "غرفة نوم متكاملة", "/assets/474743_155959.jpg"],
+    ["doors", "timber-door-set", "Timber Door Set", "مجموعة باب خشبي", "/assets/412078_605141.jpeg"],
+    ["wall-cladding", "integrated-wall", "Integrated Wall", "حائط متكامل", "/assets/171467_688502.jpeg"],
+    ["materials-finishes", "finish-study", "Finish Study", "دراسة تشطيب", "/assets/891416_45535.jpg"],
+  ].map(([collection, slug, en, ar, image]) => ({ slug, collection, title: { en, ar }, story: { en: "A selected SECTION study showing how one crafted element is coordinated with the wider interior.", ar: "دراسة مختارة من SECTION توضح كيف ينسق العنصر المصنوع مع المساحة الداخلية كاملة." }, application: { en: "Made-to-fit interior", ar: "عنصر داخلي مصمم للمقاس" }, scope: { en: "Design development, making and fitting", ar: "تطوير تصميم وتصنيع وتركيب" }, media: [image], sourceFolderIds: [], status: "preview" } as CollectionPiece)),
+];
+
+export const partnerLogos: PartnerLogo[] = [
+  { id: "karim-magdy", name: "Karim Magdy", src: "/drive/partners/partner-01.webp", driveFileId: "1IiQg5vYq1_OJQ4qMskBPi5tO3L2LL7bo", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "taj", name: "Taj Design House", src: "/drive/partners/partner-02.webp", driveFileId: "1mwUeY1oHD95mEIMQE_lz4qJiKzevsnbP", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "mys", name: "MYS", src: "/drive/partners/partner-03.webp", driveFileId: "1QrmYNK6hGxTetEZSQSWGcTBzsjd5LgF4", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "nawara", name: "Nawara — Alaa Ezzat", src: "/drive/partners/partner-04.webp", driveFileId: "1zSKp_VH6g6s3Hxxt5LzjQR0jGhkStk_o", kind: "collaborator", preferredSurface: "light", approval: "preview" },
+  { id: "mai-saad", name: "Mai Saad Designs", src: "/drive/partners/partner-05.webp", driveFileId: "1fGnufPbJE1ehgO58NgssAFAGqSygkJEy", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "ahmad-elsherif", name: "Ahmad Elsherif Designs", src: "/drive/partners/partner-06.webp", driveFileId: "1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "ra", name: "RA Interior Design", src: "/drive/partners/partner-07.webp", driveFileId: "1Jc9w8yMxhyAzNDk-_dKTPitLaLlfUIy3", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "vento", name: "Vento Designs", src: "/drive/partners/partner-08.webp", driveFileId: "1kkrKXJpd1K65oqPZ1UsAiT5pBqp2t-T1", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "amaken", name: "Amaken Contracting", src: "/drive/partners/partner-09.webp", driveFileId: "1AeawK1pm8GH1Jfuiy9d1v7zvTs61xs-1", kind: "collaborator", preferredSurface: "light", approval: "preview" },
+];
+
+export function piecesFor(collection: string) {
+  return collectionPieces.filter((piece) => piece.collection === collection && piece.status !== "quarantined");
+}
+
+export const showroomCopy: Record<Locale, { partners: string; partnerNote: string; similar: string; pieceLabel: string }> = {
+  en: { partners: "People we work with", partnerNote: "Designers, studios and delivery partners", similar: "Discuss something similar", pieceLabel: "Selected project piece" },
+  ar: { partners: "شركاء العمل", partnerNote: "مصممون واستوديوهات وشركاء تنفيذ", similar: "ناقش مشروعاً مشابهاً", pieceLabel: "قطعة مختارة من مشروع" },
+};

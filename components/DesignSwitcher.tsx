@@ -1,13 +1,25 @@
 import Link from "next/link";
-import type { Locale } from "@/lib/site-types";
+import { ENABLED_DESIGNS, withDesign } from "@/lib/designs";
+import type { DesignId, Locale } from "@/lib/site-types";
 
-export type DesignVariant = "editorial" | "immersive";
+const labels: Record<DesignId, Record<Locale, string>> = {
+  editorial: { en: "Editorial", ar: "تحريري" },
+  immersive: { en: "Immersive", ar: "تفاعلي" },
+  assemblage: { en: "Assemblage", ar: "تركيبي" },
+  nocturne: { en: "Nocturne", ar: "ليلي" },
+};
 
-export function DesignSwitcher({ locale, current }: { locale: Locale; current: DesignVariant }) {
-  const isArabic = locale === "ar";
-  return <nav className="design-switcher" aria-label={isArabic ? "اختيار اتجاه التصميم" : "Design direction"}>
-    <span>{isArabic ? "الاتجاه" : "View"}</span>
-    <Link className={current === "editorial" ? "active" : ""} href={`/${locale}?design=editorial`}>{isArabic ? "تحريري" : "Editorial"}</Link>
-    <Link className={current === "immersive" ? "active" : ""} href={`/${locale}?design=immersive`}>{isArabic ? "تفاعلي" : "Immersive"}</Link>
-  </nav>;
+export type DesignVariant = DesignId;
+
+export function DesignSwitcher({ locale, current, path = `/${locale}` }: { locale: Locale; current: DesignId; path?: string }) {
+  return (
+    <nav className="design-switcher" aria-label={locale === "ar" ? "اختيار اتجاه التصميم" : "Design direction"}>
+      <span>{locale === "ar" ? "الاتجاه" : "View"}</span>
+      {ENABLED_DESIGNS.map((design) => (
+        <Link key={design} className={current === design ? "active" : ""} href={withDesign(path, design)} aria-current={current === design ? "page" : undefined}>
+          {labels[design][locale]}
+        </Link>
+      ))}
+    </nav>
+  );
 }

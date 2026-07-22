@@ -1,11 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
-import { capabilities, getMedia, projects } from "@/lib/site-content";
+import { capabilities, getMedia } from "@/lib/site-content";
 import type { Locale } from "@/lib/site-types";
 import { DesignSwitcher } from "./DesignSwitcher";
 import { ImmersiveWebGL } from "./ImmersiveWebGL";
 import { ImmersiveProcessStory } from "./ImmersiveProcessStory";
 import { InquiryForm } from "./InquiryForm";
+import { DesignAwareLink } from "./DesignAwareLink";
+import { ProjectStoryRail } from "./ProjectStoryRail";
+import { PartnerMarquee } from "./PartnerMarquee";
 
 export function ImmersiveHome({ locale }: { locale: Locale }) {
   const isArabic = locale === "ar";
@@ -17,14 +19,14 @@ export function ImmersiveHome({ locale }: { locale: Locale }) {
       <DesignSwitcher locale={locale} current="immersive" />
 
       <header className="immersive-header">
-        <Link className="immersive-wordmark" href={`/${locale}?design=immersive`}>SECT<span>I</span>ON</Link>
+        <DesignAwareLink className="immersive-wordmark" href={`/${locale}`}>SECT<span>I</span>ON</DesignAwareLink>
         <nav aria-label={isArabic ? "التنقل" : "Navigation"}>
           <a href="#collections">{isArabic ? "ما نصنعه" : "What we make"}</a>
           <a href="#process">{isArabic ? "كيف نعمل" : "How it moves"}</a>
           <a href="#projects">{isArabic ? "المشروعات" : "Projects"}</a>
         </nav>
         <div className="immersive-header-actions">
-          <Link href={`/${languageTarget}?design=immersive`}>{languageTarget.toUpperCase()}</Link>
+          <DesignAwareLink href={`/${languageTarget}`}>{languageTarget.toUpperCase()}</DesignAwareLink>
           <a className="immersive-header-cta" href="#inquiry">{isArabic ? "ابدأ مشروعاً" : "Start a project"}<span>↗</span></a>
         </div>
       </header>
@@ -65,10 +67,10 @@ export function ImmersiveHome({ locale }: { locale: Locale }) {
         <div className="immersive-collection-stack">
           {capabilities.map((capability) => {
             const media = getMedia(capability.image);
-            return <Link className="immersive-collection" href={`/${locale}/collections/${capability.slug}`} key={capability.slug}>
+            return <DesignAwareLink className="immersive-collection" href={`/${locale}/collections/${capability.slug}`} key={capability.slug}>
               <div className="immersive-collection-media"><Image unoptimized src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 780px) 100vw, 54vw" /></div>
               <div className="immersive-collection-copy"><span>{capability.number}</span><h3>{capability.title[locale]}</h3><p>{capability.short[locale]}</p><b>Open ↗</b></div>
-            </Link>;
+            </DesignAwareLink>;
           })}
         </div>
       </section>
@@ -82,16 +84,8 @@ export function ImmersiveHome({ locale }: { locale: Locale }) {
       </section>
 
       <section className="immersive-projects" id="projects">
-        <div className="immersive-projects-head"><p className="immersive-label">{isArabic ? "مشروعات مختارة" : "Selected work"}</p><h2>{isArabic ? "المشروع هو الدليل." : "The project is the proof."}</h2><Link href={`/${locale}/projects`}>{isArabic ? "شاهد الكل" : "View all"} ↗</Link></div>
-        <div className="immersive-project-rail">
-          {projects.map((project) => {
-            const media = getMedia(project.media[0]);
-            return <Link className="immersive-project" href={`/${locale}/projects/${project.slug}`} key={project.slug}>
-              <div><Image unoptimized src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 780px) 86vw, 54vw" /></div>
-              <span>{project.sectorLabel[locale]}</span><h3>{project.title[locale]}</h3><p>{project.summary[locale]}</p>
-            </Link>;
-          })}
-        </div>
+        <div className="immersive-projects-head"><p className="immersive-label">{isArabic ? "مشروعات مختارة" : "Selected work"}</p><h2>{isArabic ? "المشروع هو الدليل." : "The project is the proof."}</h2><DesignAwareLink href={`/${locale}/projects`}>{isArabic ? "شاهد الكل" : "View all"} ↗</DesignAwareLink></div>
+        <ProjectStoryRail locale={locale} />
       </section>
 
       <section className="immersive-inquiry" id="inquiry">
@@ -99,6 +93,7 @@ export function ImmersiveHome({ locale }: { locale: Locale }) {
         <InquiryForm locale={locale} />
       </section>
 
+      <PartnerMarquee locale={locale} />
       <footer className="immersive-footer"><span>SECTION © 2026</span><span>{isArabic ? "صُنع في القاهرة" : "MADE IN CAIRO"}</span><a href="#top">{isArabic ? "إلى الأعلى" : "BACK TO ORBIT"} ↑</a></footer>
     </main>
   );

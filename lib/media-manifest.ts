@@ -1,0 +1,57 @@
+export type DriveMediaRecord = {
+  id: string;
+  driveFileId: string;
+  sourceFolder: string;
+  sourceName: string;
+  localSrc: string;
+  originalMime: string;
+  contentHash?: string;
+  orientation?: "landscape" | "portrait" | "square" | "unknown";
+  quality?: "hero" | "editorial" | "reference";
+  derived?: { webp?: string; avif?: string; jpeg?: string; poster?: string };
+  authenticity: "verified-real" | "ai-concept" | "unknown";
+  rights: "approved" | "pending" | "restricted";
+  publishStatus: "preview" | "public" | "quarantined";
+};
+
+const driveMediaSeed: DriveMediaRecord[] = [
+  { id: "k01a", driveFileId: "1Hv7GMYnP7qzss5Z-lElj6o72b7uX9kXh", sourceFolder: "Kitchens/Kitchen 1 (Obour)", sourceName: "IMG_9411.PNG", localSrc: "/drive/kitchens/kitchen-01-a.webp", originalMime: "image/jpeg", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k01b", driveFileId: "1y5OA8MBhG1Y-W1V7Dt3_qkNQjiAAxuit", sourceFolder: "Kitchens/Kitchen 1 (Obour)", sourceName: "IMG_9410.PNG", localSrc: "/drive/kitchens/kitchen-01-b.webp", originalMime: "image/png", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k01c", driveFileId: "15PX6xQLTHHcwgw-a_p9uviBgz7ZCf-8w", sourceFolder: "Kitchens/Kitchen 1 (Obour)", sourceName: "IMG_9413.PNG", localSrc: "/drive/kitchens/kitchen-01-c.webp", originalMime: "image/png", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k02a", driveFileId: "10819BvNKzsMfxkPho7FiGZMskyOFnxaT", sourceFolder: "Kitchens/Kitchen 2 (Sahar)", sourceName: "a63f7de2-a084-400e-be9b-fe465d3af53c.jpg", localSrc: "/drive/kitchens/kitchen-02-a.webp", originalMime: "image/jpeg", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k02b", driveFileId: "11yb5QCp9uONppPgxANDBLSWvCOS8MT0C", sourceFolder: "Kitchens/Kitchen 2 (Sahar)", sourceName: "e666bc45-4ac0-422d-9a8b-143c535db2d6.jpg", localSrc: "/drive/kitchens/kitchen-02-b.webp", originalMime: "image/jpeg", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k03a", driveFileId: "1MiqzILdZIhAYIichI46uxTMb5vOBPL3m", sourceFolder: "Kitchens/Kitchen 3", sourceName: "IMG_0304.heif", localSrc: "/drive/kitchens/kitchen-03-a.webp", originalMime: "image/heif", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k03b", driveFileId: "1yZ_Hh6iBOD_V-iahLabsybTNL6g6XYT7", sourceFolder: "Kitchens/Kitchen 3", sourceName: "IMG_0298.heif", localSrc: "/drive/kitchens/kitchen-03-b.webp", originalMime: "image/heif", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k04a", driveFileId: "1mwygWZo1b9d0NXtkeETDIYffUGEMbHzh", sourceFolder: "Kitchens/Kitchen 4", sourceName: "IMG_7819.heif", localSrc: "/drive/kitchens/kitchen-04-a.webp", originalMime: "image/heif", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k04b", driveFileId: "1-NylTtxw8GzZBzCn3g1X66HBuRWiftA_", sourceFolder: "Kitchens/Kitchen 4", sourceName: "IMG_7817.heif", localSrc: "/drive/kitchens/kitchen-04-b.webp", originalMime: "image/heif", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k05a", driveFileId: "1MaFkgFgZLcYEl98ufqo7DwqBsGCUeCu3", sourceFolder: "Kitchens/Kitchen 5", sourceName: "768ab4de-7929-4097-a69b-488ab12ec550.jpeg", localSrc: "/drive/kitchens/kitchen-05-a.webp", originalMime: "image/jpeg", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  { id: "k05b", driveFileId: "15vrqdtWjcMOQmTyZkm-S2m9usjMrvq1U", sourceFolder: "Kitchens/Kitchen 5", sourceName: "a08faa30-6467-48e2-9377-3ab5ac14639b.jpeg", localSrc: "/drive/kitchens/kitchen-05-b.webp", originalMime: "image/jpeg", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
+  ...[
+    ["d01", "19P_A2Q7w9AlxE67Y087iirRaHSiLY4Iq"], ["d02", "1ksvIGXGPsAp7XrAMDAmronYjYpXQsqb-"], ["d03", "1Nmvi7geXmXUvOgT6V6OycY8JX7m0pcAC"], ["d04", "1_kID2fqpB4jF6pfUjdXtGKfKg3TCInf6"],
+    ["d05", "1oBpvLO3Mo3KhmLI4QnCI2YdaEopdEAdZ"], ["d06", "12EE_jOrRRMUKqkXjATFjETlJkXYUM_HH"], ["d07", "1VzGwxT4COzuoP-jqC0BwWIqj7UwWXmvR"], ["d08", "1MLLFKBXiphhfEUXitbc4IC2eZnaILlIa"],
+  ].map(([id, driveFileId], index) => ({ id, driveFileId, sourceFolder: "Dressing", sourceName: `Dressing image ${index + 1}`, localSrc: `/drive/dressing/dressing-0${index + 1}.webp`, originalMime: "image/heif", authenticity: "verified-real" as const, rights: "pending" as const, publishStatus: "preview" as const })),
+];
+
+function dedupeDriveMedia(records: DriveMediaRecord[]) {
+  const seen = new Set<string>();
+  return records.flatMap((record) => {
+    const aiLabelled = /chatgpt|gemini/i.test(record.sourceName);
+    const key = record.contentHash ? `hash:${record.contentHash}` : `drive:${record.driveFileId}`;
+    if (seen.has(key)) return [];
+    seen.add(key);
+    return [{
+      ...record,
+      authenticity: aiLabelled ? "ai-concept" as const : record.authenticity,
+      publishStatus: aiLabelled ? "quarantined" as const : record.publishStatus,
+      orientation: record.orientation ?? "unknown" as const,
+      quality: record.quality ?? "editorial" as const,
+      derived: record.derived ?? { webp: record.localSrc },
+    }];
+  });
+}
+
+export const driveMediaManifest = dedupeDriveMedia(driveMediaSeed);
+
+export function driveSrc(id: string) {
+  return driveMediaManifest.find((item) => item.id === id)?.localSrc ?? "/assets/217375_739589.jpeg";
+}

@@ -81,17 +81,28 @@ Black and white carry the main structure, olive tones create material warmth, an
 
 The trial fonts embedded in the PDF must not be shipped without valid web licences. The English implementation uses open-licensed Saira Condensed for architectural display type, Saira for interface and utility copy, and Newsreader for editorial contrast. Headlines deliberately mix Saira Condensed with a small number of Newsreader italic words, occasionally revealed with a signal-yellow marker treatment. This expressive contrast is reserved for high-value phrases rather than applied to every word. IBM Plex Sans Arabic remains the Arabic display and reading face, with weight and colour providing the same emphasis without forcing Latin letterforms into RTL content. Licensed brand fonts can replace these through CSS tokens without redesigning layouts.
 
-The visual signature is a workshop drawing table: measured grid lines, oversized condensed type, material-sheet image crops and controlled signal-yellow registration marks. The design takes its boldest risk in the hero and keeps subsequent sections disciplined and content-led.
+The client preview exposes four complete design systems through `?design=`. They share content, routes, SEO, inquiry behavior and media governance:
 
-Visual thesis:
+1. **Editorial** — expressive typography, documentary images and a disciplined print-like grid.
+2. **Immersive** — a material orbit with layered motion and sculptural image presentation.
+3. **Assemblage** — a light technical environment where drawings, planes and timber-like components assemble into place.
+4. **Nocturne** — a dark cinematic showroom where photography moves through depth and objects emerge through controlled light.
 
-> An industrial editorial documentary where architectural scale, workshop precision and confident yellow interventions make SECTION unmistakable.
+`ENABLED_DESIGNS` and `DEFAULT_DESIGN` are the single source of truth. The design query persists across internal and language-switch links but is excluded from canonicals, `hreflang`, structured data and the sitemap. Once the client selects a direction, the other systems can be removed without changing content records or routes.
 
-Motion is editorial-cinematic: a hero entrance, a hand-drawn highlight sweep, viewport-aware headline and image reveals, capability image previews and one scroll-driven process story. Each of the four process stages occupies a complete desktop viewport so the Installation stage resolves fully before the section ends. Mobile uses native horizontal scroll-snap. `prefers-reduced-motion` removes non-essential animation.
+Motion is editorial-cinematic and progressively enhanced. Assemblage and Nocturne dynamically import Three.js only when selected. Their lifecycle controller caps DPR, pauses the canvas offscreen, handles context loss, disposes GPU resources and falls back to the static LCP poster for reduced motion or data-saving connections. DOM motion uses Motion and CSS. No system captures the mouse wheel or hides essential content behind effects.
 
 ## Content and media governance
 
-The Drive audit found 62 images across People/Clients, Units, Wall Cladding and Doors. Materials, Dressing Rooms, Living Rooms, Bedrooms and Kitchens were empty. AI-labelled images were mixed into Units and Wall Cladding.
+The initial Drive audit found 62 images across People/Clients, Units, Wall Cladding and Doors, with AI-labelled imagery mixed into Units and Wall Cladding. The newer Kitchens, Dressing and partner folders have now been selectively ingested for the preview.
+
+Current local preview ingestion:
+
+- Five kitchen stories based on Kitchen 1–5, including the working names Obour and Sahar.
+- Two dressing-room stories derived from the supplied dressing folder.
+- Nine partner/collaborator marks: Karim Magdy, Taj Design House, MYS, Nawara / Alaa Ezzat, Mai Saad Designs, Ahmad Elsherif Designs, RA Interior Design, Vento Designs and Amaken Contracting.
+- HEIC/HEIF, JPEG and PNG source copies are converted into optimized WebP derivatives. The originals remain in Drive and are not shipped in the production public directory.
+- Drive IDs remain in the typed manifest for deduplication and later remapping.
 
 Every media record tracks:
 
@@ -109,7 +120,9 @@ Rules:
 - AI concepts never appear as project proof.
 - Unknown images remain editorial placeholders until verified.
 - Client names, logos, testimonials, figures and outcomes require explicit approval.
-- SODIC must not be named or shown until written permission and the correct project scope are recorded.
+- SODIC and ORA names are approved for this client preview. Their logos, metrics, outcomes and unsupported scope details remain excluded.
+- SODIC may use only the supplied factual scope: interior work, custom woodwork and furniture. ORA remains labelled as a selected collaboration until its exact scope is supplied.
+- Partner marks remain globally presented and are not assigned to SODIC, ORA or another project until the relationship is verified.
 - “People we worked with” must be separated into client logos, team photography and project photography.
 
 Before public launch, verify:
@@ -154,7 +167,11 @@ No dropdowns are exposed. The choices qualify the lead without asking for locati
 - Next.js App Router on the existing vinext/Cloudflare deployment
 - Static typed project and capability content; no CMS in release one
 - English and Arabic locale routes with RTL-aware layouts and alternate-language metadata
-- Motion for React plus CSS; no WebGL or scroll hijacking
+- Motion for React and CSS for DOM transitions
+- Three.js client islands for Assemblage and Nocturne, dynamically imported only for the selected direction
+- Shared adaptive WebGL lifecycle: capped DPR, offscreen pause, context-loss recovery, disposal, data-saver and reduced-motion fallbacks
+- Native horizontal scroll-snap for project and piece galleries; no wheel capture or smooth-scroll library
+- Local developer-only media importer using `heic-convert`, `sharp` and `ffmpeg-static`
 - Cloudflare D1 for inquiry records
 - Private Cloudflare R2 bucket for attachments
 - `POST /api/inquiries` for multipart submission
@@ -205,6 +222,12 @@ Required deployment configuration:
 - Arabic responses contain server-rendered `lang="ar"` and `dir="rtl"`
 - Canonicals, `hreflang`, sitemap, robots, social metadata and JSON-LD validate on the production origin
 - No unverified client name, statistic or image enters search metadata
+- All four designs render the same server-side headings, links and inquiry actions without JavaScript
+- `?design=` persists across navigation while canonical and sitemap URLs remain design-independent
+- SODIC and ORA are visible without unsupported metrics, logos or collaborator claims
+- All nine partner marks appear without recolouring, cropping, distortion or blend-mode treatment
+- The project rail supports touch, pointer drag, keyboard arrows, RTL and a fully reachable final card
+- Collection pages render inquiry-only named pieces with stable anchors and no `Product` or `Offer` schema
 
 ## Internal design and build references
 

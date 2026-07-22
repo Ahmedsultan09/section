@@ -1,5 +1,7 @@
 export type Locale = "en" | "ar";
 
+export type DesignId = "editorial" | "immersive" | "assemblage" | "nocturne";
+
 export type LocalizedText = Record<Locale, string>;
 
 export type ProjectSector =
@@ -33,6 +35,11 @@ export type MediaAsset = {
   quality: "hero" | "editorial" | "reference";
   usage: "hero" | "project" | "process" | "capability" | "quarantine";
   alt: LocalizedText;
+  driveFileId?: string;
+  originalMime?: string;
+  contentHash?: string;
+  derived?: { webp?: string; avif?: string; jpeg?: string; poster?: string };
+  publishStatus?: "preview" | "public" | "quarantined";
 };
 
 export type Project = {
@@ -52,6 +59,32 @@ export type Project = {
   outcome: LocalizedText;
   capabilities: CapabilitySlug[];
   media: string[];
+  collaboratorIds?: string[];
+  verificationStatus?: "verified" | "partial" | "pending";
+};
+
+export type CollectionPiece = {
+  slug: string;
+  collection: CapabilitySlug;
+  title: LocalizedText;
+  story: LocalizedText;
+  application: LocalizedText;
+  scope: LocalizedText;
+  materials?: LocalizedText[];
+  media: string[];
+  sourceFolderIds: string[];
+  status: "preview" | "approved" | "quarantined";
+};
+
+export type PartnerLogo = {
+  id: string;
+  name: string;
+  src: string;
+  driveFileId: string;
+  kind: "client" | "collaborator";
+  preferredSurface: "light" | "dark";
+  approval: "preview" | "approved";
+  projectSlugs?: string[];
 };
 
 export type Capability = {

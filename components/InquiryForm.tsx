@@ -119,7 +119,7 @@ export function InquiryForm({ locale }: FormProps) {
 }
 
 function ChoiceStep({ eyebrow, options, selected, onToggle, multiple = false }: { eyebrow: string; options: CardOption[]; selected: string[]; onToggle: (value: string) => void; multiple?: boolean }) {
-  return <fieldset className="choice-field"><legend>{eyebrow}</legend><div className="choice-grid">{options.map((option, index) => <button type="button" className={`choice-card ${selected.includes(option.value) ? "selected" : ""}`} key={option.value} aria-pressed={selected.includes(option.value)} onClick={() => onToggle(option.value)}><span className="choice-index">{String(index + 1).padStart(2, "0")}</span><strong>{option.title}</strong>{option.detail && <small>{option.detail}</small>}<i aria-hidden="true">{selected.includes(option.value) ? "✓" : multiple ? "+" : "↗"}</i></button>)}</div></fieldset>;
+  return <fieldset className="choice-field"><legend>{eyebrow}</legend><div className="choice-grid">{options.map((option, index) => <button type="button" data-value={option.value} className={`choice-card ${selected.includes(option.value) ? "selected" : ""}`} key={option.value} aria-pressed={selected.includes(option.value)} onClick={() => onToggle(option.value)}><span className="choice-index">{String(index + 1).padStart(2, "0")}</span><strong>{option.title}</strong>{option.detail && <small>{option.detail}</small>}<i aria-hidden="true">{selected.includes(option.value) ? "✓" : multiple ? "+" : "↗"}</i></button>)}</div></fieldset>;
 }
 
 function BriefStep({ copy, values, update, files, onFiles }: { copy: Copy; values: Values; update: <K extends keyof Values>(key: K, value: Values[K]) => void; files: File[]; onFiles: (list: FileList | null) => void }) {

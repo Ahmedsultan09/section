@@ -6,8 +6,20 @@
       "_rolldown-runtime-BYbx6iT9.js"
     ]
   },
-  "_react-DAvIGDRQ.js": {
-    "file": "assets/react-DAvIGDRQ.js",
+  "_link-COM-suc-.js": {
+    "file": "assets/link-COM-suc-.js",
+    "name": "link",
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DkySH6nJ.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/router.js"
+    ]
+  },
+  "_react-D0rAtT7z.js": {
+    "file": "assets/react-D0rAtT7z.js",
     "name": "react",
     "imports": [
       "_rolldown-runtime-BYbx6iT9.js",
@@ -18,25 +30,51 @@
     "file": "assets/rolldown-runtime-BYbx6iT9.js",
     "name": "rolldown-runtime"
   },
-  "_site-content-B0PlJOAT.js": {
-    "file": "assets/site-content-B0PlJOAT.js",
+  "_site-content-BoNLg5ES.js": {
+    "file": "assets/site-content-BoNLg5ES.js",
     "name": "site-content"
   },
+  "components/AdaptiveWebGL.tsx": {
+    "file": "assets/AdaptiveWebGL-BUGnH6A_.js",
+    "name": "AdaptiveWebGL",
+    "src": "components/AdaptiveWebGL.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DkySH6nJ.js"
+    ],
+    "dynamicImports": [
+      "node_modules/three/build/three.module.js"
+    ]
+  },
+  "components/DesignAwareLink.tsx": {
+    "file": "assets/DesignAwareLink-BIrJQJXW.js",
+    "name": "DesignAwareLink",
+    "src": "components/DesignAwareLink.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DkySH6nJ.js",
+      "_link-COM-suc-.js"
+    ]
+  },
   "components/ImmersiveProcessStory.tsx": {
-    "file": "assets/ImmersiveProcessStory-gJi2AzTP.js",
+    "file": "assets/ImmersiveProcessStory-BS1Yq8-c.js",
     "name": "ImmersiveProcessStory",
     "src": "components/ImmersiveProcessStory.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-BYbx6iT9.js",
-      "_site-content-B0PlJOAT.js",
+      "_site-content-BoNLg5ES.js",
       "node_modules/vinext/dist/shims/image.js",
-      "_react-DAvIGDRQ.js",
+      "_react-D0rAtT7z.js",
       "_framework-DkySH6nJ.js"
     ]
   },
   "components/ImmersiveWebGL.tsx": {
-    "file": "assets/ImmersiveWebGL-Dcrb9wb5.js",
+    "file": "assets/ImmersiveWebGL-CPubvs0i.js",
     "name": "ImmersiveWebGL",
     "src": "components/ImmersiveWebGL.tsx",
     "isDynamicEntry": true,
@@ -46,66 +84,83 @@
     ]
   },
   "components/InquiryForm.tsx": {
-    "file": "assets/InquiryForm-41Ju1zLl.js",
+    "file": "assets/InquiryForm-BldQ7KhI.js",
     "name": "InquiryForm",
     "src": "components/InquiryForm.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-BYbx6iT9.js",
-      "_site-content-B0PlJOAT.js",
+      "_site-content-BoNLg5ES.js",
       "_framework-DkySH6nJ.js"
     ]
   },
   "components/LocaleSwitch.tsx": {
-    "file": "assets/LocaleSwitch-DKlMe6Sq.js",
+    "file": "assets/LocaleSwitch-UMQcZMMU.js",
     "name": "LocaleSwitch",
     "src": "components/LocaleSwitch.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_rolldown-runtime-BYbx6iT9.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DkySH6nJ.js",
-      "node_modules/vinext/dist/shims/link.js"
+      "components/DesignAwareLink.tsx",
+      "_framework-DkySH6nJ.js"
     ]
   },
   "components/ProcessStory.tsx": {
-    "file": "assets/ProcessStory-BKFBNYnA.js",
+    "file": "assets/ProcessStory-ByeLxkvQ.js",
     "name": "ProcessStory",
     "src": "components/ProcessStory.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-BYbx6iT9.js",
-      "_site-content-B0PlJOAT.js",
+      "_site-content-BoNLg5ES.js",
       "node_modules/vinext/dist/shims/image.js",
-      "_react-DAvIGDRQ.js",
+      "_react-D0rAtT7z.js",
       "_framework-DkySH6nJ.js"
     ]
   },
   "components/ProjectExplorer.tsx": {
-    "file": "assets/ProjectExplorer-CZkc7P5u.js",
+    "file": "assets/ProjectExplorer-CwbrPinK.js",
     "name": "ProjectExplorer",
     "src": "components/ProjectExplorer.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-BYbx6iT9.js",
-      "_site-content-B0PlJOAT.js",
+      "components/DesignAwareLink.tsx",
+      "_site-content-BoNLg5ES.js",
       "node_modules/vinext/dist/shims/image.js",
-      "_framework-DkySH6nJ.js",
-      "node_modules/vinext/dist/shims/link.js"
+      "_framework-DkySH6nJ.js"
+    ]
+  },
+  "components/ProjectStoryRail.tsx": {
+    "file": "assets/ProjectStoryRail-CxaobZCZ.js",
+    "name": "ProjectStoryRail",
+    "src": "components/ProjectStoryRail.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BYbx6iT9.js",
+      "components/DesignAwareLink.tsx",
+      "_site-content-BoNLg5ES.js",
+      "node_modules/vinext/dist/shims/image.js",
+      "_framework-DkySH6nJ.js"
     ]
   },
   "components/Reveal.tsx": {
-    "file": "assets/Reveal-BCR8A-iT.js",
+    "file": "assets/Reveal-DR6lHcU_.js",
     "name": "Reveal",
     "src": "components/Reveal.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_react-DAvIGDRQ.js",
+      "_react-D0rAtT7z.js",
       "_framework-DkySH6nJ.js"
     ]
   },
+  "node_modules/three/build/three.module.js": {
+    "file": "assets/three.module-C4tILjpl.js",
+    "name": "three.module",
+    "src": "node_modules/three/build/three.module.js",
+    "isDynamicEntry": true
+  },
   "node_modules/vinext/dist/shims/image.js": {
-    "file": "assets/image-BB24ok5U.js",
+    "file": "assets/image-ChxKFKzs.js",
     "name": "image",
     "src": "node_modules/vinext/dist/shims/image.js",
     "isDynamicEntry": true,
@@ -115,7 +170,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-Bm4iUqFo.js",
+    "file": "assets/layout-segment-context-ZfcQMaRX.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -125,22 +180,8 @@
       "_framework-DkySH6nJ.js"
     ]
   },
-  "node_modules/vinext/dist/shims/link.js": {
-    "file": "assets/link-DrnK9bpv.js",
-    "name": "link",
-    "src": "node_modules/vinext/dist/shims/link.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-BYbx6iT9.js",
-      "virtual:vinext-app-browser-entry",
-      "_framework-DkySH6nJ.js"
-    ],
-    "dynamicImports": [
-      "node_modules/vinext/dist/shims/router.js"
-    ]
-  },
   "node_modules/vinext/dist/shims/router.js": {
-    "file": "assets/router-DBGqX9W5.js",
+    "file": "assets/router-Dlzd4rN3.js",
     "name": "router",
     "src": "node_modules/vinext/dist/shims/router.js",
     "isDynamicEntry": true,
@@ -148,14 +189,14 @@
       "_rolldown-runtime-BYbx6iT9.js",
       "virtual:vinext-app-browser-entry",
       "_framework-DkySH6nJ.js",
-      "node_modules/vinext/dist/shims/link.js"
+      "_link-COM-suc-.js"
     ],
     "dynamicImports": [
       "_framework-DkySH6nJ.js"
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-DJv8uvkI.js",
+    "file": "assets/index-DVFLXocn.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -168,13 +209,16 @@
       "components/InquiryForm.tsx",
       "components/ProcessStory.tsx",
       "virtual:vinext-app-browser-entry",
+      "components/DesignAwareLink.tsx",
       "components/ImmersiveWebGL.tsx",
       "components/ProjectExplorer.tsx",
       "node_modules/vinext/dist/shims/image.js",
       "components/LocaleSwitch.tsx",
       "components/Reveal.tsx",
-      "node_modules/vinext/dist/shims/link.js",
-      "components/ImmersiveProcessStory.tsx"
+      "components/AdaptiveWebGL.tsx",
+      "_link-COM-suc-.js",
+      "components/ImmersiveProcessStory.tsx",
+      "components/ProjectStoryRail.tsx"
     ]
   }
 }

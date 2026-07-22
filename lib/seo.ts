@@ -94,13 +94,13 @@ export function localeMetadata(locale: Locale): Metadata {
       alternateLocale: locale === "ar" ? ["en_EG"] : ["ar_EG"],
       title: text.siteTitle,
       description: text.description,
-      images: [{ url: "/og.png", width: 1680, height: 945, alt: `${SITE_NAME} — Made with wood. Built for ambitious spaces.` }],
+      images: [{ url: "/og-showroom.jpg", width: 1680, height: 945, alt: `${SITE_NAME} — Made with wood. Built for ambitious spaces.` }],
     },
     twitter: {
       card: "summary_large_image",
       title: text.siteTitle,
       description: text.description,
-      images: ["/og.png"],
+      images: ["/og-showroom.jpg"],
     },
     other: {
       "geo.region": "EG-C",
@@ -125,9 +125,9 @@ export function pageMetadata({ locale, path, title, description, image }: { loca
       alternateLocale: locale === "ar" ? ["en_EG"] : ["ar_EG"],
       title,
       description,
-      images: [{ url: image ?? "/og.png", width: 1680, height: 945, alt: title }],
+      images: [{ url: image ?? "/og-showroom.jpg", width: 1680, height: 945, alt: title }],
     },
-    twitter: { card: "summary_large_image", title, description, images: [image ?? "/og.png"] },
+    twitter: { card: "summary_large_image", title, description, images: [image ?? "/og-showroom.jpg"] },
   };
 }
 
@@ -180,7 +180,7 @@ export function breadcrumbSchema(locale: Locale, items: Array<{ name: string; pa
 }
 
 export function serviceSchema(locale: Locale, capability: Capability) {
-  const path = `/capabilities/${capability.slug}`;
+  const path = `/collections/${capability.slug}`;
   return {
     "@context": "https://schema.org",
     "@type": "Service",

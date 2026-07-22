@@ -150,3 +150,56 @@ test("keeps inquiry qualification card-based and low-friction", async () => {
   assert.match(route, /Name, phone and consent are required/);
   assert.match(route, /Not specified/);
 });
+
+test("ships four design systems on one shared, design-independent content model", async () => {
+  const [designs, home, showroom, webgl, switcher, collection, projects, css] = await Promise.all([
+    read("lib/designs.ts"),
+    read("app/[locale]/page.tsx"),
+    read("components/ShowroomHome.tsx"),
+    read("components/AdaptiveWebGL.tsx"),
+    read("components/DesignSwitcher.tsx"),
+    read("app/[locale]/collections/[slug]/page.tsx"),
+    read("components/ProjectStoryRail.tsx"),
+    read("app/globals.css"),
+  ]);
+
+  assert.match(designs, /"editorial", "immersive", "assemblage", "nocturne"/);
+  assert.match(designs, /DEFAULT_DESIGN/);
+  assert.match(designs, /withDesign/);
+  assert.match(home, /ShowroomHome/);
+  assert.match(showroom, /mode === "nocturne"/);
+  assert.match(webgl, /import\("three"\)/);
+  assert.match(webgl, /prefers-reduced-motion/);
+  assert.match(webgl, /webglcontextlost/);
+  assert.match(webgl, /IntersectionObserver/);
+  assert.match(switcher, /ENABLED_DESIGNS\.map/);
+  assert.match(collection, /ItemList/);
+  assert.match(collection, /collection-piece-list/);
+  assert.doesNotMatch(collection, /"@type": "(?:Product|Offer)"/);
+  assert.match(projects, /onKeyDown/);
+  assert.match(projects, /story-rail-end/);
+  assert.match(css, /\.design-assemblage/);
+  assert.match(css, /\.design-nocturne/);
+});
+
+test("keeps Drive media, client proof and partner marks governed", async () => {
+  const [manifest, showroom, content, partners] = await Promise.all([
+    read("lib/media-manifest.ts"),
+    read("lib/showroom-content.ts"),
+    read("lib/site-content.ts"),
+    read("components/PartnerMarquee.tsx"),
+  ]);
+
+  assert.match(manifest, /driveFileId/);
+  assert.match(manifest, /authenticity/);
+  assert.match(manifest, /publishStatus/);
+  assert.match(manifest, /image\/heif/);
+  assert.match(showroom, /Obour Kitchen/);
+  assert.match(showroom, /Glass-frame Dressing Room/);
+  assert.equal((showroom.match(/kind: "collaborator"/g) ?? []).length, 9);
+  assert.match(content, /client: \{ en: "SODIC"/);
+  assert.match(content, /client: \{ en: "ORA"/);
+  assert.doesNotMatch(content, /SODIC.{0,80}(?:units|sqm|m²|million)/i);
+  assert.match(partners, /preferredSurface/);
+  assert.match(partners, /partner-logo/);
+});
