@@ -81,7 +81,8 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
         if (disposed) return;
 
         loaded.forEach((texture, index) => {
-          if (!texture || !group) return;
+          const targetGroup = group;
+          if (!texture || !targetGroup) return;
           texture.colorSpace = THREE.SRGBColorSpace;
           texture.anisotropy = 4;
           textures.push(texture);
@@ -98,17 +99,19 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
             mesh.rotation.y = -angle * 0.42;
             mesh.rotation.z = (index - 1.5) * 0.06;
           }
-          group.add(mesh);
+          targetGroup.add(mesh);
         });
 
         if (mode === "assemblage") {
+          const targetGroup = group;
+          if (!targetGroup) return;
           const colors = [0xfedd10, 0x58533a, 0xffffff, 0xa49e7b];
           colors.forEach((color, index) => {
             const geometry = new THREE.BoxGeometry(index % 2 ? 0.18 : 3.8, index % 2 ? 5.1 : 0.12, 0.2);
             const material = new THREE.MeshStandardMaterial({ color, roughness: 0.72, metalness: 0.04 });
             const mesh = new THREE.Mesh(geometry, material);
             mesh.position.set(index % 2 ? (index < 2 ? -3.7 : 3.6) : 0, index % 2 ? 0 : (index < 2 ? -2.35 : 2.45), -0.15);
-            materials.push(material); geometries.push(geometry); group.add(mesh);
+            materials.push(material); geometries.push(geometry); targetGroup.add(mesh);
           });
         }
 

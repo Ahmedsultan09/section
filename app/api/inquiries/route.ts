@@ -1,16 +1,13 @@
-import { env } from "cloudflare:workers";
-import { eq } from "drizzle-orm";
-import { getDb } from "@/db";
-import { inquiries, inquiryAttachments } from "@/db/schema";
 import { signFileAccess } from "@/lib/inquiry-security";
+import { patchInquiry, saveInquiry, saveInquiryAttachment } from "@/lib/inquiry-store";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 const allowedTypes = new Set(["application/pdf", "image/jpeg", "image/png", "image/webp"]);
 const rateWindow = new Map<string, number[]>();
 
 type RuntimeEnv = {
-  UPLOADS?: R2Bucket;
   RESEND_API_KEY?: string;
   INQUIRY_TO_EMAIL?: string;
   INQUIRY_FROM_EMAIL?: string;
@@ -31,7 +28,7 @@ function isRateLimited(ip: string) {
 }
 
 export async function POST(request: Request) {
-  const ip = request.headers.get("cf-connecting-ip") ?? "unknown";
+  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? request.headers.get("cf-connecting-ip") ?? "unknown";
   if (isRateLimited(ip)) return Response.json({ error: "Too many requests" }, { status: 429 });
 
   const data = await request.formData();
@@ -47,17 +44,15 @@ export async function POST(request: Request) {
   const files = data.getAll("files").filter((entry): entry is File => entry instanceof File && entry.size > 0);
   if (files.length > 3 || files.some((file) => file.size > 10 * 1024 * 1024 || !allowedTypes.has(file.type))) return Response.json({ error: "Invalid attachments" }, { status: 400 });
 
-  const runtime = env as unknown as RuntimeEnv;
-  if (files.length > 0 && !runtime.UPLOADS) return Response.json({ error: "Attachment storage is unavailable" }, { status: 503 });
+  const runtime = process.env as unknown as RuntimeEnv;
 
   const id = crypto.randomUUID();
-  const db = getDb();
   const createdAt = new Date();
   const email = value(data, "email");
   const projectName = value(data, "projectName") || "Website inquiry";
   const brief = value(data, "brief") || "No additional brief provided.";
 
-  await db.insert(inquiries).values({
+  saveInquiry({
     id, createdAt, status: "received", locale: value(data, "locale") === "ar" ? "ar" : "en",
     name: value(data, "name"), company: value(data, "company") || "Website inquiry", role: value(data, "role") || "Not specified", email: email || "Not provided", phone: value(data, "phone"), preferredContact: "phone",
     sector: value(data, "sector") || "Not specified", projectName, location: value(data, "location") || "Not specified", projectStage: value(data, "projectStage") || "not-sure-yet", capabilities: JSON.stringify(capabilities),
@@ -71,12 +66,11 @@ export async function POST(request: Request) {
     for (const file of files) {
       const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_").slice(-120);
       const key = `inquiries/${id}/${crypto.randomUUID()}-${safeName}`;
-      await runtime.UPLOADS!.put(key, file.stream(), { httpMetadata: { contentType: file.type, contentDisposition: `attachment; filename="${safeName}"` }, customMetadata: { inquiryId: id, originalName: file.name } });
-      await db.insert(inquiryAttachments).values({ id: crypto.randomUUID(), inquiryId: id, storageKey: key, originalName: file.name, mimeType: file.type, bytes: file.size, createdAt });
+      saveInquiryAttachment({ id: crypto.randomUUID(), inquiryId: id, storageKey: key, originalName: file.name, mimeType: file.type, bytes: file.size, createdAt, file });
       stored.push({ key, name: file.name });
     }
   } catch (error) {
-    await db.update(inquiries).set({ status: "attachment_failed", notificationError: error instanceof Error ? error.message.slice(0, 500) : "Attachment storage failed" }).where(eq(inquiries.id, id));
+    patchInquiry(id, { status: "attachment_failed", notificationError: error instanceof Error ? error.message.slice(0, 500) : "Attachment storage failed" });
     return Response.json({ error: "Attachments could not be stored" }, { status: 500 });
   }
 
@@ -84,9 +78,9 @@ export async function POST(request: Request) {
     await notifyTeam(request, runtime, id, stored, {
       name: value(data, "name"), company: value(data, "company") || "Website inquiry", email, phone: value(data, "phone"), project: projectName, sector: value(data, "sector") || "Not specified", brief, capabilities,
     });
-    await db.update(inquiries).set({ status: "notified" }).where(eq(inquiries.id, id));
+    patchInquiry(id, { status: "notified" });
   } catch (error) {
-    await db.update(inquiries).set({ status: "notification_pending", notificationError: error instanceof Error ? error.message.slice(0, 500) : "Notification failed" }).where(eq(inquiries.id, id));
+    patchInquiry(id, { status: "notification_pending", notificationError: error instanceof Error ? error.message.slice(0, 500) : "Notification failed" });
   }
 
   return Response.json({ id, status: "received" }, { status: 201 });
