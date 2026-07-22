@@ -1,22 +1,22 @@
 export default {
-  "bootstrapScriptContent": "import(\"/assets/index-DVFLXocn.js\")",
+  "bootstrapScriptContent": "import(\"/assets/index-C3eRNJ8g.js\")",
   "clientReferenceDeps": {
     "b178cf627e26": {
       "js": [
-        "/assets/AdaptiveWebGL-BUGnH6A_.js",
+        "/assets/AdaptiveWebGL-DHHhEbBQ.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
-        "/assets/index-DVFLXocn.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/framework-DkySH6nJ.js"
       ],
       "css": []
     },
     "5f1b05c78786": {
       "js": [
-        "/assets/DesignAwareLink-BIrJQJXW.js",
+        "/assets/DesignAwareLink-DskLSoCA.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
-        "/assets/index-DVFLXocn.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/link-COM-suc-.js"
+        "/assets/link-BRTnB_5J.js"
       ],
       "css": []
     },
@@ -28,7 +28,7 @@ export default {
         "/assets/image-ChxKFKzs.js",
         "/assets/framework-DkySH6nJ.js",
         "/assets/react-D0rAtT7z.js",
-        "/assets/index-DVFLXocn.js"
+        "/assets/index-C3eRNJ8g.js"
       ],
       "css": []
     },
@@ -37,7 +37,7 @@ export default {
         "/assets/ImmersiveWebGL-CPubvs0i.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/index-DVFLXocn.js"
+        "/assets/index-C3eRNJ8g.js"
       ],
       "css": []
     },
@@ -47,18 +47,18 @@ export default {
         "/assets/rolldown-runtime-BYbx6iT9.js",
         "/assets/site-content-BoNLg5ES.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/index-DVFLXocn.js"
+        "/assets/index-C3eRNJ8g.js"
       ],
       "css": []
     },
     "a23e0279e836": {
       "js": [
-        "/assets/LocaleSwitch-UMQcZMMU.js",
-        "/assets/DesignAwareLink-BIrJQJXW.js",
+        "/assets/LocaleSwitch-DHoSkjyx.js",
+        "/assets/DesignAwareLink-DskLSoCA.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
-        "/assets/index-DVFLXocn.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/link-COM-suc-.js"
+        "/assets/link-BRTnB_5J.js"
       ],
       "css": []
     },
@@ -70,18 +70,18 @@ export default {
         "/assets/image-ChxKFKzs.js",
         "/assets/framework-DkySH6nJ.js",
         "/assets/react-D0rAtT7z.js",
-        "/assets/index-DVFLXocn.js"
+        "/assets/index-C3eRNJ8g.js"
       ],
       "css": []
     },
     "726cfa7c07d1": {
       "js": [
-        "/assets/ProjectExplorer-CwbrPinK.js",
+        "/assets/ProjectExplorer-BhkUihSH.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
-        "/assets/DesignAwareLink-BIrJQJXW.js",
-        "/assets/index-DVFLXocn.js",
+        "/assets/DesignAwareLink-DskLSoCA.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/link-COM-suc-.js",
+        "/assets/link-BRTnB_5J.js",
         "/assets/site-content-BoNLg5ES.js",
         "/assets/image-ChxKFKzs.js"
       ],
@@ -89,12 +89,12 @@ export default {
     },
     "f18800975cb3": {
       "js": [
-        "/assets/ProjectStoryRail-CxaobZCZ.js",
+        "/assets/ProjectStoryRail-BQsSmuv7.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
-        "/assets/DesignAwareLink-BIrJQJXW.js",
-        "/assets/index-DVFLXocn.js",
+        "/assets/DesignAwareLink-DskLSoCA.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/link-COM-suc-.js",
+        "/assets/link-BRTnB_5J.js",
         "/assets/site-content-BoNLg5ES.js",
         "/assets/image-ChxKFKzs.js"
       ],
@@ -106,13 +106,24 @@ export default {
         "/assets/react-D0rAtT7z.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/index-DVFLXocn.js"
+        "/assets/index-C3eRNJ8g.js"
+      ],
+      "css": []
+    },
+    "5297feacba07": {
+      "js": [
+        "/assets/ShowroomProcess-C2qYIWLl.js",
+        "/assets/rolldown-runtime-BYbx6iT9.js",
+        "/assets/site-content-BoNLg5ES.js",
+        "/assets/image-ChxKFKzs.js",
+        "/assets/framework-DkySH6nJ.js",
+        "/assets/index-C3eRNJ8g.js"
       ],
       "css": []
     },
     "593f344dc510": {
       "js": [
-        "/assets/index-DVFLXocn.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
         "/assets/framework-DkySH6nJ.js"
       ],
@@ -123,31 +134,31 @@ export default {
         "/assets/image-ChxKFKzs.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
         "/assets/framework-DkySH6nJ.js",
-        "/assets/index-DVFLXocn.js"
+        "/assets/index-C3eRNJ8g.js"
       ],
       "css": []
     },
     "15c18cfaeeff": {
       "js": [
-        "/assets/layout-segment-context-ZfcQMaRX.js",
+        "/assets/layout-segment-context-zc8MfA1a.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
-        "/assets/index-DVFLXocn.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/framework-DkySH6nJ.js"
       ],
       "css": []
     },
     "c2747888630f": {
       "js": [
-        "/assets/link-COM-suc-.js",
+        "/assets/link-BRTnB_5J.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
-        "/assets/index-DVFLXocn.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/framework-DkySH6nJ.js"
       ],
       "css": []
     },
     "8c0f216c4604": {
       "js": [
-        "/assets/index-DVFLXocn.js",
+        "/assets/index-C3eRNJ8g.js",
         "/assets/rolldown-runtime-BYbx6iT9.js",
         "/assets/framework-DkySH6nJ.js"
       ],
@@ -158,13 +169,13 @@ export default {
     "app/(root)/layout.tsx": {
       "js": [],
       "css": [
-        "/assets/index-MdmTD0MV.css"
+        "/assets/index-XfMwOncN.css"
       ]
     },
     "app/[locale]/layout.tsx": {
       "js": [],
       "css": [
-        "/assets/index-MdmTD0MV.css"
+        "/assets/index-XfMwOncN.css"
       ]
     }
   }

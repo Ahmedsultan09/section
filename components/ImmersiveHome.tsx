@@ -8,6 +8,7 @@ import { InquiryForm } from "./InquiryForm";
 import { DesignAwareLink } from "./DesignAwareLink";
 import { ProjectStoryRail } from "./ProjectStoryRail";
 import { PartnerMarquee } from "./PartnerMarquee";
+import { Wordmark } from "./SiteHeader";
 
 export function ImmersiveHome({ locale }: { locale: Locale }) {
   const isArabic = locale === "ar";
@@ -19,7 +20,7 @@ export function ImmersiveHome({ locale }: { locale: Locale }) {
       <DesignSwitcher locale={locale} current="immersive" />
 
       <header className="immersive-header">
-        <DesignAwareLink className="immersive-wordmark" href={`/${locale}`}>SECT<span>I</span>ON</DesignAwareLink>
+        <DesignAwareLink className="immersive-wordmark" href={`/${locale}`}><Wordmark tone="light" /></DesignAwareLink>
         <nav aria-label={isArabic ? "التنقل" : "Navigation"}>
           <a href="#collections">{isArabic ? "ما نصنعه" : "What we make"}</a>
           <a href="#process">{isArabic ? "كيف نعمل" : "How it moves"}</a>

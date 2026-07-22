@@ -27,6 +27,15 @@ const driveMediaSeed: DriveMediaRecord[] = [
   { id: "k05a", driveFileId: "1MaFkgFgZLcYEl98ufqo7DwqBsGCUeCu3", sourceFolder: "Kitchens/Kitchen 5", sourceName: "768ab4de-7929-4097-a69b-488ab12ec550.jpeg", localSrc: "/drive/kitchens/kitchen-05-a.webp", originalMime: "image/jpeg", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
   { id: "k05b", driveFileId: "15vrqdtWjcMOQmTyZkm-S2m9usjMrvq1U", sourceFolder: "Kitchens/Kitchen 5", sourceName: "a08faa30-6467-48e2-9377-3ab5ac14639b.jpeg", localSrc: "/drive/kitchens/kitchen-05-b.webp", originalMime: "image/jpeg", authenticity: "verified-real", rights: "pending", publishStatus: "preview" },
   ...[
+    ["material-01", "17c5xZN7lUnoUQmZDo2t2BuPd7zPAvWBn", "IMG_0362.PNG", "image/png"],
+    ["material-02", "12UB_raYGjIKzzeHz6mqgoaK9nXu88bS9", "IMG_0265.PNG", "image/png"],
+    ["material-03", "16u6J76HoR1oCmKSKnx59lLB9-8xTWj7E", "IMG_5784.PNG", "image/png"],
+    ["material-04", "1fFfDfJGWdBNjYShHvxC9YgA-Wl_gQe-U", "IMG_0216.PNG.jpg", "image/jpeg"],
+    ["material-05", "1rLMWuQH931sIZ5BCapViU7iN5-BwNowv", "IMG_0215.PNG", "image/png"],
+    ["material-06", "1pjguo7CPdfmQ7NQKeM1BRfPn-24Ccrqb", "IMG_0213.PNG", "image/png"],
+    ["material-07", "1YZQp-kAxh0iJ_ZCgztnVH1bCrMHpvei6", "IMG_0211.PNG", "image/png"],
+  ].map(([id, driveFileId, sourceName, originalMime]) => ({ id, driveFileId, sourceFolder: "Materials used", sourceName, localSrc: `/drive/materials/${id}.webp`, originalMime, authenticity: "verified-real" as const, rights: "pending" as const, publishStatus: "preview" as const })),
+  ...[
     ["d01", "19P_A2Q7w9AlxE67Y087iirRaHSiLY4Iq"], ["d02", "1ksvIGXGPsAp7XrAMDAmronYjYpXQsqb-"], ["d03", "1Nmvi7geXmXUvOgT6V6OycY8JX7m0pcAC"], ["d04", "1_kID2fqpB4jF6pfUjdXtGKfKg3TCInf6"],
     ["d05", "1oBpvLO3Mo3KhmLI4QnCI2YdaEopdEAdZ"], ["d06", "12EE_jOrRRMUKqkXjATFjETlJkXYUM_HH"], ["d07", "1VzGwxT4COzuoP-jqC0BwWIqj7UwWXmvR"], ["d08", "1MLLFKBXiphhfEUXitbc4IC2eZnaILlIa"],
   ].map(([id, driveFileId], index) => ({ id, driveFileId, sourceFolder: "Dressing", sourceName: `Dressing image ${index + 1}`, localSrc: `/drive/dressing/dressing-0${index + 1}.webp`, originalMime: "image/heif", authenticity: "verified-real" as const, rights: "pending" as const, publishStatus: "preview" as const })),

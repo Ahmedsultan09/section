@@ -14,7 +14,7 @@ export function PartnerMarquee({ locale }: { locale: Locale }) {
         <div className="partner-track">
           {items.map((partner, index) => (
             <figure className={`partner-logo ${partner.preferredSurface}`} key={`${partner.id}-${index}`} aria-hidden={index >= partnerLogos.length}>
-              <Image unoptimized src={partner.src} alt={index < partnerLogos.length ? partner.name : ""} width={220} height={220} sizes="160px" />
+              <Image unoptimized src={partner.src} alt={index < partnerLogos.length ? partner.name : ""} width={720} height={320} sizes="(max-width: 700px) 170px, 220px" />
             </figure>
           ))}
         </div>

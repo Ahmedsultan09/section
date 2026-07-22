@@ -1,0 +1,1 @@
+import{r as e}from"./framework-DkySH6nJ.js";import{DesignAwareLink as t,t as n}from"./DesignAwareLink-DskLSoCA.js";var r=e();function i({locale:e}){let i=n(),a=e===`en`?`ar`:`en`;return(0,r.jsx)(t,{className:`locale-switch`,href:i.replace(/^\/(en|ar)(?=\/|$)/,`/${a}`),"aria-label":e===`en`?`العربية`:`English`,children:e===`en`?`AR`:`EN`})}export{i as LocaleSwitch};

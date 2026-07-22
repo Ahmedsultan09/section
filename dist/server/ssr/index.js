@@ -11630,7 +11630,7 @@ function createFromReadableStream(stream, options = {}) {
 //#region \0virtual:vite-rsc/client-references
 var client_references_default = {
 	"15c18cfaeeff": async () => {
-		const m = await import("./assets/layout-segment-context--1mWdnyN.js");
+		const m = await import("./assets/layout-segment-context-DLqszpdU.js");
 		return { get "LayoutSegmentProvider"() {
 			return m["LayoutSegmentProvider"];
 		} };
@@ -11647,8 +11647,14 @@ var client_references_default = {
 			return m["ProcessStory"];
 		} };
 	},
+	"5297feacba07": async () => {
+		const m = await import("./assets/ShowroomProcess-CaM_lWD2.js");
+		return { get "ShowroomProcess"() {
+			return m["ShowroomProcess"];
+		} };
+	},
 	"593f344dc510": async () => {
-		const m = await import("./assets/error-boundary-CVA6uE-r.js");
+		const m = await import("./assets/error-boundary-4nEa0_1F.js");
 		return {
 			get "ErrorBoundary"() {
 				return m["ErrorBoundary"];
@@ -11668,7 +11674,7 @@ var client_references_default = {
 		};
 	},
 	"5f1b05c78786": async () => {
-		const m = await import("./assets/DesignAwareLink-DgPiLzHn.js");
+		const m = await import("./assets/DesignAwareLink-v0fQ-wIE.js");
 		return { get "DesignAwareLink"() {
 			return m["DesignAwareLink"];
 		} };
@@ -11680,7 +11686,7 @@ var client_references_default = {
 		} };
 	},
 	"726cfa7c07d1": async () => {
-		const m = await import("./assets/ProjectExplorer-UDAggXvb.js");
+		const m = await import("./assets/ProjectExplorer-yufbwkt1.js");
 		return { get "ProjectExplorer"() {
 			return m["ProjectExplorer"];
 		} };
@@ -11706,7 +11712,7 @@ var client_references_default = {
 		} };
 	},
 	"a23e0279e836": async () => {
-		const m = await import("./assets/LocaleSwitch-nN1-pU6s.js");
+		const m = await import("./assets/LocaleSwitch-Xu9JWziR.js");
 		return { get "LocaleSwitch"() {
 			return m["LocaleSwitch"];
 		} };
@@ -11718,13 +11724,13 @@ var client_references_default = {
 		} };
 	},
 	"b178cf627e26": async () => {
-		const m = await import("./assets/AdaptiveWebGL-BdsERwn4.js");
+		const m = await import("./assets/AdaptiveWebGL-BZj0wKn-.js");
 		return { get "AdaptiveWebGL"() {
 			return m["AdaptiveWebGL"];
 		} };
 	},
 	"c2747888630f": async () => {
-		const m = await import("./assets/link-LlPHghJ8.js").then((n) => n.n);
+		const m = await import("./assets/link-DNjtvVSq.js").then((n) => n.n);
 		return { get "default"() {
 			return m["default"];
 		} };
@@ -11736,7 +11742,7 @@ var client_references_default = {
 		} };
 	},
 	"f18800975cb3": async () => {
-		const m = await import("./assets/ProjectStoryRail-BiH3BBXo.js");
+		const m = await import("./assets/ProjectStoryRail-CLXZxMIv.js");
 		return { get "ProjectStoryRail"() {
 			return m["ProjectStoryRail"];
 		} };

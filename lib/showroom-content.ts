@@ -20,15 +20,15 @@ export const collectionPieces: CollectionPiece[] = [
 ];
 
 export const partnerLogos: PartnerLogo[] = [
-  { id: "karim-magdy", name: "Karim Magdy", src: "/drive/partners/partner-01.webp", driveFileId: "1IiQg5vYq1_OJQ4qMskBPi5tO3L2LL7bo", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
-  { id: "taj", name: "Taj Design House", src: "/drive/partners/partner-02.webp", driveFileId: "1mwUeY1oHD95mEIMQE_lz4qJiKzevsnbP", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
-  { id: "mys", name: "MYS", src: "/drive/partners/partner-03.webp", driveFileId: "1QrmYNK6hGxTetEZSQSWGcTBzsjd5LgF4", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
-  { id: "nawara", name: "Nawara — Alaa Ezzat", src: "/drive/partners/partner-04.webp", driveFileId: "1zSKp_VH6g6s3Hxxt5LzjQR0jGhkStk_o", kind: "collaborator", preferredSurface: "light", approval: "preview" },
-  { id: "mai-saad", name: "Mai Saad Designs", src: "/drive/partners/partner-05.webp", driveFileId: "1fGnufPbJE1ehgO58NgssAFAGqSygkJEy", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
-  { id: "ahmad-elsherif", name: "Ahmad Elsherif Designs", src: "/drive/partners/partner-06.webp", driveFileId: "1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
-  { id: "ra", name: "RA Interior Design", src: "/drive/partners/partner-07.webp", driveFileId: "1Jc9w8yMxhyAzNDk-_dKTPitLaLlfUIy3", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
-  { id: "vento", name: "Vento Designs", src: "/drive/partners/partner-08.webp", driveFileId: "1kkrKXJpd1K65oqPZ1UsAiT5pBqp2t-T1", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
-  { id: "amaken", name: "Amaken Contracting", src: "/drive/partners/partner-09.webp", driveFileId: "1AeawK1pm8GH1Jfuiy9d1v7zvTs61xs-1", kind: "collaborator", preferredSurface: "light", approval: "preview" },
+  { id: "karim-magdy", name: "Karim Magdy", src: "/drive/partners-transparent/partner-01.png", driveFileId: "1IiQg5vYq1_OJQ4qMskBPi5tO3L2LL7bo", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "taj", name: "Taj Design House", src: "/drive/partners-transparent/partner-02.png", driveFileId: "1mwUeY1oHD95mEIMQE_lz4qJiKzevsnbP", kind: "collaborator", preferredSurface: "light", approval: "preview" },
+  { id: "mys", name: "MYS", src: "/drive/partners-transparent/partner-03.png", driveFileId: "1QrmYNK6hGxTetEZSQSWGcTBzsjd5LgF4", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "nawara", name: "Nawara — Alaa Ezzat", src: "/drive/partners-transparent/partner-04.png", driveFileId: "1zSKp_VH6g6s3Hxxt5LzjQR0jGhkStk_o", kind: "collaborator", preferredSurface: "light", approval: "preview" },
+  { id: "mai-saad", name: "Mai Saad Designs", src: "/drive/partners-transparent/partner-05.png", driveFileId: "1fGnufPbJE1ehgO58NgssAFAGqSygkJEy", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "ahmad-elsherif", name: "Ahmad Elsherif Designs", src: "/drive/partners-transparent/partner-06.png", driveFileId: "1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "ra", name: "RA Interior Design", src: "/drive/partners-transparent/partner-07.png", driveFileId: "1Jc9w8yMxhyAzNDk-_dKTPitLaLlfUIy3", kind: "collaborator", preferredSurface: "light", approval: "preview" },
+  { id: "vento", name: "Vento Designs", src: "/drive/partners-transparent/partner-08.png", driveFileId: "1kkrKXJpd1K65oqPZ1UsAiT5pBqp2t-T1", kind: "collaborator", preferredSurface: "dark", approval: "preview" },
+  { id: "amaken", name: "Amaken Contracting", src: "/drive/partners-transparent/partner-09.png", driveFileId: "1AeawK1pm8GH1Jfuiy9d1v7zvTs61xs-1", kind: "collaborator", preferredSurface: "light", approval: "preview" },
 ];
 
 export function piecesFor(collection: string) {

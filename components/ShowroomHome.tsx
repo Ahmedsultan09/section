@@ -4,7 +4,8 @@ import { DesignAwareLink } from "./DesignAwareLink";
 import { DesignSwitcher } from "./DesignSwitcher";
 import { InquiryForm } from "./InquiryForm";
 import { ProjectStoryRail } from "./ProjectStoryRail";
-import { capabilities, copy, getMedia, processSteps } from "@/lib/site-content";
+import { ShowroomProcess } from "./ShowroomProcess";
+import { capabilities, copy, getMedia } from "@/lib/site-content";
 import type { DesignId, Locale } from "@/lib/site-types";
 
 type Mode = Extract<DesignId, "assemblage" | "nocturne">;
@@ -61,18 +62,7 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         </div>
       </section>
 
-      <section className="showroom-process" id="process">
-        <header><p>03 / {t.process.eyebrow}</p><h2>{locale === "ar" ? <>أربع مراحل. <em>قصة واحدة.</em></> : <>Four stages. <em>One story.</em></>}</h2></header>
-        <div className="showroom-process-track">
-          {processSteps.map((step) => {
-            const media = getMedia(step.image);
-            return <article key={step.number}>
-              <div className="showroom-process-media"><Image unoptimized src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 760px) 88vw, 42vw" /></div>
-              <span>{step.number}</span><h3>{step.title[locale]}</h3><p>{step.text[locale]}</p>
-            </article>;
-          })}
-        </div>
-      </section>
+      <ShowroomProcess locale={locale} mode={mode} />
 
       <section className="showroom-projects">
         <header><p>04 / {t.projects.eyebrow}</p><h2>{locale === "ar" ? <>الثقة تُبنى من <em>العمل.</em></> : <>Trust is built through <em>the work.</em></>}</h2></header>
@@ -80,12 +70,26 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
       </section>
 
       <section className="showroom-manufacturing">
-        <div className="showroom-manufacturing-media"><Image unoptimized src="/assets/805180_442982.jpeg" alt={getMedia("asset-process-01").alt[locale]} fill sizes="(max-width: 760px) 100vw, 52vw" /></div>
-        <div><p>05 / {t.factory.eyebrow}</p><h2>{t.factory.title}</h2><span>{t.factory.body}</span><ol>{t.factory.facts.map((fact, index) => <li key={fact}><b>0{index + 1}</b>{fact}</li>)}</ol></div>
+        <div className="showroom-manufacturing-media">
+          <Image unoptimized src="/drive/materials/material-01.webp" alt={locale === "ar" ? "مراجعة عينة خشبية بعلامة SECTION" : "A SECTION-labelled timber sample under review"} fill sizes="(max-width: 760px) 100vw, 52vw" />
+          <figure><Image unoptimized src="/drive/materials/material-03.webp" alt={locale === "ar" ? "مكتبة عينات للقشرة والتشطيبات" : "Veneer and finish sample library"} fill sizes="240px" /></figure>
+          <figure><Image unoptimized src="/drive/materials/material-07.webp" alt={locale === "ar" ? "مراجعة عينات التشطيب يدوياً" : "Finishes being reviewed by hand"} fill sizes="240px" /></figure>
+        </div>
+        <div><p>05 / {locale === "ar" ? "الخامة والتصنيع" : "Material & manufacturing"}</p><h2>{locale === "ar" ? "نختار بالعين. ونثبت باليد." : "Chosen by eye. Proven by hand."}</h2><span>{locale === "ar" ? "نراجع الألواح والقشرة والتشطيبات والإكسسوارات كعينات فعلية قبل الإنتاج، حتى تتوافق الدرجة والملمس وقابلية التنفيذ مع موجز المشروع." : "Boards, veneers, finishes and hardware are reviewed as physical samples before production, aligning tone, texture and buildability with the project brief."}</span><ol>{(locale === "ar" ? ["مكتبات تشطيبات منسقة", "عينات واعتمادات فعلية", "مراجعة قبل بدء الإنتاج"] : ["Curated finish libraries", "Physical samples and approvals", "Review before production"]).map((fact, index) => <li key={fact}><b>0{index + 1}</b>{fact}</li>)}</ol></div>
+      </section>
+
+      <section className="showroom-about" id="studio">
+        <p>06 / {locale === "ar" ? "عن SECTION" : "About SECTION"}</p>
+        <h2>{locale === "ar" ? <>الخشب هو الخامة. <em>والمكان هو القصة.</em></> : <>Wood is the medium. <em>The space is the story.</em></>}</h2>
+        <div className="showroom-about-copy">
+          <p>{locale === "ar" ? "نرشد المشروع من أول محادثة حتى التركيب النهائي، ونحوّل الرؤية إلى عناصر خشبية مصممة للمقاس تجمع بين الجمال والوظيفة والمتانة." : "We guide a project from the first conversation to final installation, turning the brief into made-to-fit timber interiors that balance beauty, function and durability."}</p>
+          <p>{locale === "ar" ? "رؤيتنا أن نكون شريكاً موثوقاً للتصميم والتصنيع؛ نصنع مساحات ذات غرض واضح، تعكس هوية المشروع وتدوم بشكل جميل." : "Our vision is to be a trusted design-and-manufacturing partner: creating purposeful spaces that carry the project’s identity and last beautifully."}</p>
+        </div>
+        <blockquote>{locale === "ar" ? "أعد التفكير في التصميم. اروِ قصة المكان." : "Rethink the design. Tell the story of the space."}</blockquote>
       </section>
 
       <section className="showroom-inquiry" id="inquiry">
-        <header><p>06 / {locale === "ar" ? "ابدأ من هنا" : "Start here"}</p><h2>{locale === "ar" ? <>ما الذي تريد أن <em>نصنعه؟</em></> : <>What should we <em>make together?</em></>}</h2><span>{locale === "ar" ? "اختر المطلوب في خطوات قصيرة. الاسم ورقم الهاتف فقط مطلوبان." : "Qualify the request in a few simple choices. Only your name and phone are required."}</span></header>
+        <header><p>07 / {locale === "ar" ? "ابدأ من هنا" : "Start here"}</p><h2>{locale === "ar" ? <>ما الذي تريد أن <em>نصنعه؟</em></> : <>What should we <em>make together?</em></>}</h2><span>{locale === "ar" ? "اختر المطلوب في خطوات قصيرة. الاسم ورقم الهاتف فقط مطلوبان." : "Qualify the request in a few simple choices. Only your name and phone are required."}</span></header>
         <InquiryForm locale={locale} />
       </section>
     </main>

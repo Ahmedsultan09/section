@@ -1,10 +1,16 @@
+import Image from "next/image";
 import type { Locale } from "@/lib/site-types";
 import { copy } from "@/lib/site-content";
 import { LocaleSwitch } from "./LocaleSwitch";
 import { DesignAwareLink } from "./DesignAwareLink";
 
-export function Wordmark() {
-  return <span className="wordmark" aria-label="Section">SECT<span>I</span>ON</span>;
+export function Wordmark({ tone = "auto" }: { tone?: "auto" | "dark" | "light" }) {
+  return (
+    <span className={`wordmark brand-mark brand-mark-${tone}`} aria-label="SECTION">
+      <Image unoptimized className="brand-mark-dark" src="/brand/section-black.png" alt="" width={980} height={175} />
+      <Image unoptimized className="brand-mark-light" src="/brand/section-white.png" alt="" width={980} height={175} />
+    </span>
+  );
 }
 
 export function SiteHeader({ locale }: { locale: Locale }) {

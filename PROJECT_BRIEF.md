@@ -164,6 +164,15 @@ No dropdowns are exposed. The choices qualify the lead without asking for locati
 
 ## Technical implementation
 
+### July 2026 source-content integration
+
+- The supplied `Section_BrandWorld_160925.pdf` is the canonical visual source for the SECTION wordmark and palette. The website uses transparent black and white derivatives of the actual wordmark shape rather than a font-built approximation.
+- The footer contact information currently follows the brand document: showroom at Silver Star Downtown Mall, New Cairo; factory at Trolly Street, El-Marg, Cairo; phone `01272333832`. These details remain subject to final owner verification before the production launch.
+- The About narrative is derived from `mission vision story.docx` and edited for a concise B2B voice: SECTION guides a brief from first conversation to final installation, balancing beauty, function and durability; the brand aims to be a trusted design-and-manufacturing partner for purposeful spaces.
+- Seven real material-selection photographs from the `Materials used` Drive folder are ingested into the tracked media manifest. Assemblage and Nocturne use them in the manufacturing story and the manufacturing stage, with rights status kept as `pending` for preview.
+- Assemblage now presents the four-stage process as technical assembly sheets with measured lines and native horizontal scroll-snap. Nocturne presents the same stages as illuminated exhibition rooms. Both use touch, keyboard, on-page arrows, a visible active-stage index, reduced-motion fallbacks and an end spacer that exposes the final installation stage completely.
+- The nine partner marks use transparent derived PNGs produced from the supplied pixels. Only the captured presentation backgrounds are removed; logo color, proportion and drawing remain unchanged. Every mark is placed with `object-fit: contain` inside a contrast-appropriate matte so no artwork is cropped.
+
 - Next.js App Router on the existing vinext/Cloudflare deployment
 - Static typed project and capability content; no CMS in release one
 - English and Arabic locale routes with RTL-aware layouts and alternate-language metadata

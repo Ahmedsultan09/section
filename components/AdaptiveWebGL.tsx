@@ -15,7 +15,10 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const connection = (navigator as ConnectionNavigator).connection;
     const lowData = Boolean(connection?.saveData || connection?.effectiveType === "2g");
-    if (reduced || lowData) { setFallback(true); return; }
+    if (reduced || lowData) {
+      const fallbackFrame = requestAnimationFrame(() => setFallback(true));
+      return () => cancelAnimationFrame(fallbackFrame);
+    }
 
     let disposed = false;
     let frame = 0;
