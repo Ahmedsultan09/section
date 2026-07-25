@@ -92,6 +92,47 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 - `npm test`: build the starter and verify its rendered loading skeleton
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
+## Admin Dashboard + Leads (PostgreSQL)
+
+This project now stores contact leads in PostgreSQL and includes a protected admin
+portal at `/admin-dashboard`.
+
+### Required environment variables
+
+- `DATABASE_URL`: PostgreSQL connection string.
+- `ADMIN_AUTH_SECRET`: long random secret used to sign admin sessions.
+
+Copy `.env.example` to `.env.local` (or `.env`) and update values before running:
+
+```bash
+cp .env.example .env.local
+```
+
+### Default seeded admin
+
+On first login request, the app seeds an admin user if missing:
+
+- Email: `sectionadmin@section.com`
+- Password: `Section@2026`
+- Role: `admin`
+
+### Data model
+
+- `users`: `email`, `password_hash`, `role`, timestamps.
+- `leads`: `name`, `phone`, `message`, `choices` (JSON), timestamp.
+
+### Accessing PostgreSQL in TablePlus
+
+1. Open TablePlus → **Create a new connection** → **PostgreSQL**.
+2. Use the same host/port/database/user/password from `DATABASE_URL`.
+3. After connect, open tables: `users` and `leads`.
+4. To inspect data quickly, run:
+
+```sql
+SELECT id, email, role, created_at FROM users ORDER BY created_at DESC;
+SELECT id, name, phone, message, choices, created_at FROM leads ORDER BY created_at DESC;
+```
+
 ## Learn More
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
