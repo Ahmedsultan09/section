@@ -10,6 +10,7 @@ import { ImmersiveHome } from "@/components/ImmersiveHome";
 import { ShowroomHome } from "@/components/ShowroomHome";
 import { ProjectStoryRail } from "@/components/ProjectStoryRail";
 import { DesignAwareLink } from "@/components/DesignAwareLink";
+import { Wordmark } from "@/components/SiteHeader";
 import { pageMetadata, seoCopy } from "@/lib/seo";
 import { getDesign } from "@/lib/designs";
 
@@ -45,6 +46,10 @@ export default async function HomePage({ params, searchParams }: { params: Promi
         </div>
         <div className="hero-grid" aria-hidden="true"><i /><i /><i /></div>
         <div className="hero-content">
+          <Reveal className="hero-brand" delay={0.04}>
+            <Wordmark tone="dark" />
+            <span>{locale === "ar" ? "تصميم وتنفيذ للمساحات التي تريد أن تُلاحظ" : "Design and build for spaces that want to be noticed"}</span>
+          </Reveal>
           <p className="eyebrow hero-eyebrow">{t.hero.eyebrow}</p>
           <h1 aria-label={t.hero.title.replace("\n", " ")}>
             {locale === "ar" ? <><span>مصنوع من <em>الخشب.</em></span><span>لمساحات <em>بطموح</em> كبير.</span></> : <><span>Made with <em>wood.</em></span><span>Built for <em>ambitious</em></span><span>spaces.</span></>}

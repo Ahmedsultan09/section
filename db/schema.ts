@@ -1,42 +1,38 @@
-import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { jsonb, pgEnum, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
 
-export const inquiries = sqliteTable("inquiries", {
-  id: text("id").primaryKey(),
-  createdAt: integer("created_at", { mode: "timestamp_ms" }).notNull(),
-  status: text("status").notNull().default("received"),
-  locale: text("locale").notNull(),
-  name: text("name").notNull(),
-  company: text("company").notNull(),
-  role: text("role").notNull(),
-  email: text("email").notNull(),
-  phone: text("phone").notNull(),
-  preferredContact: text("preferred_contact").notNull(),
-  sector: text("sector").notNull(),
-  projectName: text("project_name").notNull(),
-  location: text("location").notNull(),
-  projectStage: text("project_stage").notNull(),
-  capabilities: text("capabilities").notNull(),
-  serviceScope: text("service_scope").notNull(),
-  scale: text("scale").notNull(),
-  drawingsStatus: text("drawings_status").notNull(),
-  roleDetail: text("role_detail"),
-  targetDelivery: text("target_delivery").notNull(),
-  budgetBand: text("budget_band").notNull(),
-  procurementStatus: text("procurement_status").notNull(),
-  decisionTimeline: text("decision_timeline").notNull(),
-  brief: text("brief").notNull(),
-  consent: integer("consent", { mode: "boolean" }).notNull(),
-  sourceIp: text("source_ip"),
-  userAgent: text("user_agent"),
-  notificationError: text("notification_error"),
+export const userRole = pgEnum("user_role", ["admin"]);
+export const leadStatus = pgEnum("lead_status", ["not_contacted", "contacted"]);
+
+export const users = pgTable("users", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  email: text("email").notNull().unique(),
+  passwordHash: text("password_hash").notNull(),
+  role: userRole("role").notNull().default("admin"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 
-export const inquiryAttachments = sqliteTable("inquiry_attachments", {
-  id: text("id").primaryKey(),
-  inquiryId: text("inquiry_id").notNull().references(() => inquiries.id, { onDelete: "cascade" }),
-  storageKey: text("storage_key").notNull().unique(),
-  originalName: text("original_name").notNull(),
-  mimeType: text("mime_type").notNull(),
-  bytes: integer("bytes").notNull(),
-  createdAt: integer("created_at", { mode: "timestamp_ms" }).notNull(),
+export type LeadChoices = {
+  capabilities: string[];
+  serviceScope: string[];
+  projectStage: string[];
+};
+
+export const leads = pgTable("leads", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  name: text("name").notNull(),
+  phone: text("phone").notNull(),
+  message: text("message").notNull(),
+  choices: jsonb("choices").$type<LeadChoices>().notNull(),
+  status: leadStatus("status").notNull().default("not_contacted"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const leadNotes = pgTable("lead_notes", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  leadId: uuid("lead_id")
+    .notNull()
+    .references(() => leads.id, { onDelete: "cascade" }),
+  body: text("body").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 });
