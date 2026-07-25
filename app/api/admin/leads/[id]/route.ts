@@ -10,11 +10,12 @@ function isLeadStatus(value: string | null): value is "contacted" | "not_contact
   return value === "contacted" || value === "not_contacted";
 }
 
-export async function POST(request: Request, { params }: { params: { id: string } }) {
+export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   await requireAuthenticatedAdmin();
-  const { id } = params;
+  const { id } = await params;
   const data = await request.formData();
-  const status = typeof data.get("status") === "string" ? data.get("status") : null;
+  const statusValue = data.get("status");
+  const status = typeof statusValue === "string" ? statusValue : null;
 
   if (!isLeadStatus(status)) {
     return NextResponse.json({ error: "Invalid status" }, { status: 400 });

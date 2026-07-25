@@ -14,7 +14,8 @@ export async function PATCH(request: Request, { params }: { params: { id: string
   await requireAuthenticatedAdmin();
   const { id } = await params;
   const data = await request.formData();
-  const status = typeof data.get("status") === "string" ? data.get("status") : null;
+  const statusValue = data.get("status");
+  const status = typeof statusValue === "string" ? statusValue : null;
 
   if (!isLeadStatus(status)) {
     return NextResponse.json({ error: "Invalid status" }, { status: 400 });

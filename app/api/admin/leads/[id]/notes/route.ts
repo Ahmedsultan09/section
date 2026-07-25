@@ -52,7 +52,8 @@ export async function POST(request: Request, { params }: { params: { id: string 
   await requireAuthenticatedAdmin();
   const { id } = await params;
   const data = await request.formData();
-  const body = typeof data.get("body") === "string" ? data.get("body").trim() : "";
+  const bodyValue = data.get("body");
+  const body = typeof bodyValue === "string" ? bodyValue.trim() : "";
 
   if (!body) {
     return NextResponse.json({ error: "Note body is required" }, { status: 400 });
