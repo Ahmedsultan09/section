@@ -25,13 +25,13 @@ const initialValues: Values = {
 
 const labels = {
   en: {
-    step: "Step", back: "Back", next: "Next", submit: "Send inquiry", sending: "Sending…",
+    step: "Step", back: "Back", next: "Next", skip: "Skip / Next", optional: "Optional", submit: "Send inquiry", sending: "Sending…",
     headings: ["What are you looking for?", "How ready is the project?", "Share your brief", "How do we reach you?"],
     intros: ["Choose one or more areas.", "Choose the answer that best matches where you are today.", "Add any useful context. This step is explicitly optional.", "Add your name and phone, then confirm consent."],
     required: "Choose an option before continuing.",
     contactRequired: "Add your name, phone number and consent before sending.",
     submitError: "We could not send the inquiry. Your answers are still here—please try again.",
-    briefLabel: "Project brief (optional)",
+    briefLabel: "Project brief",
     briefHint: "Leave this empty if you would rather shape the direction with us.",
     consent: "I agree that SECTION can use these details to review my inquiry and contact me about the project.",
     successTitle: "We have your inquiry.",
@@ -48,13 +48,13 @@ const labels = {
     },
   },
   ar: {
-    step: "الخطوة", back: "رجوع", next: "التالي", submit: "إرسال الاستفسار", sending: "جارٍ الإرسال…",
+    step: "الخطوة", back: "رجوع", next: "التالي", skip: "تخطِ / التالي", optional: "اختياري", submit: "إرسال الاستفسار", sending: "جارٍ الإرسال…",
     headings: ["ماذا تحتاج؟", "ما مدى جاهزية المشروع؟", "شارك موجز المشروع", "كيف نتواصل معك؟"],
     intros: ["اختر عنصراً أو أكثر.", "اختر الإجابة الأقرب إلى وضع مشروعك اليوم.", "أضف أي تفاصيل مفيدة. هذه الخطوة اختيارية بوضوح.", "أدخل الاسم ورقم الهاتف ثم أكد الموافقة."],
     required: "اختر إجابة قبل المتابعة.",
     contactRequired: "أدخل الاسم ورقم الهاتف والموافقة قبل الإرسال.",
     submitError: "تعذر إرسال الاستفسار. إجاباتك ما زالت محفوظة، حاول مرة أخرى.",
-    briefLabel: "موجز المشروع (اختياري)",
+    briefLabel: "موجز المشروع",
     briefHint: "اتركه فارغاً إذا كنت تفضل أن نحدد الاتجاه معاً.",
     consent: "أوافق على استخدام SECTION لهذه البيانات لمراجعة الاستفسار والتواصل معي بخصوص المشروع.",
     successTitle: "وصلنا استفسارك.",
@@ -132,22 +132,22 @@ export function InquiryForm({ locale }: { locale: Locale }) {
 
   return <form className="inquiry-form" onSubmit={submit} noValidate>
     <div className="form-progress"><span style={{ width: progress }} /></div>
-    <header className="form-heading"><p>{t.step} {step + 1} / 4</p><h2>{t.headings[step]}</h2><span>{t.intros[step]}</span></header>
+    <div className="form-action-area">
+      {error && step === 3 && <p className="form-error" role="alert">{error}</p>}
+      <div className="form-actions">
+        <button type="button" className="button-ghost" onClick={() => { setError(""); setStep((current) => Math.max(0, current - 1)); }} disabled={step === 0}>{t.back}</button>
+        {step < 3
+          ? <button type="button" className="button-primary" onClick={next}>{step === 2 ? t.skip : t.next}<span>→</span></button>
+          : <button type="submit" className="button-primary" disabled={status === "sending"}>{status === "sending" ? t.sending : t.submit}<span>↗</span></button>}
+      </div>
+    </div>
+    <header className="form-heading"><p>{t.step} {step + 1} / 4</p><h2>{t.headings[step]}{step === 2 && <mark className="optional-badge">{t.optional}</mark>}</h2><span>{t.intros[step]}</span></header>
     <input aria-hidden="true" className="honeypot" name="website" tabIndex={-1} autoComplete="off" value={values.website} onChange={(event) => update("website", event.target.value)} />
     <div className="form-stage" key={step}>
       {step === 0 && <ChoiceStep eyebrow={t.focusEyebrow} options={[...capabilities.map((item) => ({ value: item.slug, title: item.title[locale], detail: item.short[locale] })), { value: "not-sure-yet", title: t.notSure }]} selected={values.selectedCapabilities} onSelect={toggleCapability} multiple error={error} />}
       {step === 1 && <ChoiceStep eyebrow={t.readinessEyebrow} options={[{ value: "has-brief", title: t.readiness.brief, detail: t.readiness.briefDetail }, { value: "needs-ideas", title: t.readiness.ideas, detail: t.readiness.ideasDetail }]} selected={values.projectReadiness ? [values.projectReadiness] : []} onSelect={(value) => update("projectReadiness", value as ProjectReadiness)} error={error} />}
       {step === 2 && <BriefStep copy={t} values={values} update={update} />}
       {step === 3 && <ContactStep locale={locale} copy={t} values={values} update={update} />}
-    </div>
-    <div className="form-action-area">
-      {error && step === 3 && <p className="form-error" role="alert">{error}</p>}
-      <div className="form-actions">
-        <button type="button" className="button-ghost" onClick={() => { setError(""); setStep((current) => Math.max(0, current - 1)); }} disabled={step === 0}>{t.back}</button>
-        {step < 3
-          ? <button type="button" className="button-primary" onClick={next}>{t.next}<span>→</span></button>
-          : <button type="submit" className="button-primary" disabled={status === "sending"}>{status === "sending" ? t.sending : t.submit}<span>↗</span></button>}
-      </div>
     </div>
   </form>;
 }
@@ -157,7 +157,7 @@ function ChoiceStep({ eyebrow, options, selected, onSelect, multiple = false, er
 }
 
 function BriefStep({ copy, values, update }: { copy: Copy; values: Values; update: <K extends keyof Values>(key: K, value: Values[K]) => void }) {
-  return <div className="brief-step"><label className="field wide"><span>{copy.briefLabel}</span><textarea rows={6} value={values.brief} onChange={(event) => update("brief", event.target.value)} /><small>{copy.briefHint}</small></label></div>;
+  return <div className="brief-step"><label className="field wide"><span>{copy.briefLabel} <mark className="field-optional">{copy.optional}</mark></span><textarea rows={6} value={values.brief} onChange={(event) => update("brief", event.target.value)} /><small>{copy.briefHint}</small></label></div>;
 }
 
 function ContactStep({ locale, copy, values, update }: { locale: Locale; copy: Copy; values: Values; update: <K extends keyof Values>(key: K, value: Values[K]) => void }) {

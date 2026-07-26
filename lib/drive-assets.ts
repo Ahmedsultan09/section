@@ -95,6 +95,7 @@ export const sodicVideoPosters = [
 export const siteContact = {
   phoneDisplay: "+20 127 233 3832",
   phoneHref: "tel:+201272333832",
+  whatsappHref: "https://wa.me/201272333832",
   instagramLabel: "@sectionfurniture",
   instagramHref: "https://www.instagram.com/sectionfurniture/",
   showroom: {

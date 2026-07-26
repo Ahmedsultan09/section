@@ -5,17 +5,19 @@ import test from "node:test";
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
 test("ships the bilingual B2B route and content model", async () => {
-  const [root, localeLayout, home, content] = await Promise.all([
+  const [root, localeLayout, home, showroomHome, content] = await Promise.all([
     read("app/(root)/page.tsx"),
     read("app/[locale]/layout.tsx"),
     read("app/[locale]/page.tsx"),
+    read("components/ShowroomHome.tsx"),
     read("lib/site-content.ts"),
   ]);
 
   assert.match(root, /redirect\("\/en"\)/);
   assert.match(localeLayout, /lang=\{locale\}/);
   assert.match(localeLayout, /dir=\{locale === "ar" \? "rtl" : "ltr"\}/);
-  assert.match(home, /t\.hero\.primary/);
+  assert.match(home, /mode="nocturne"/);
+  assert.match(showroomHome, /nocturne-final-cta/);
   assert.match(content, /Made with wood\.\\nBuilt for ambitious spaces\./);
   assert.match(content, /مصنوع من الخشب/);
   assert.match(content, /export const capabilities: Capability\[\]/);
@@ -108,16 +110,18 @@ test("implements the four-step validated inquiry pipeline", async () => {
   assert.match(schema, /serviceScope\?: string\[\]/);
   assert.match(schema, /projectStage\?: string\[\]/);
   assert.match(form, /\(step \+ 1\) \/ 4/);
-  assert.match(form, /Project brief \(optional\)/);
+  assert.match(form, /briefLabel: "Project brief"/);
+  assert.match(form, /optional-badge/);
+  assert.match(form, /Skip \/ Next/);
   assert.match(form, /data\.append\("brief", values\.brief\.trim\(\)\)/);
   assert.match(hosting, /"d1": "DB"/);
   assert.match(hosting, /"r2": "UPLOADS"/);
 });
 
 test("includes responsive, RTL, and reduced-motion safeguards", async () => {
-  const [css, home, process] = await Promise.all([
+  const [css, showroomHome, process] = await Promise.all([
     read("app/globals.css"),
-    read("app/[locale]/page.tsx"),
+    read("components/ShowroomHome.tsx"),
     read("components/ProcessStory.tsx"),
   ]);
 
@@ -131,8 +135,8 @@ test("includes responsive, RTL, and reduced-motion safeguards", async () => {
   assert.match(css, /@keyframes marker-sweep/);
   assert.match(css, /\.process-track \{ width: 400vw; \}/);
   assert.match(css, /\.process-card \{ width: 100vw; min-width: 100vw; \}/);
-  assert.match(home, /<em>wood\.<\/em>/);
-  assert.match(home, /<em>the brief\.<\/em>/);
+  assert.match(showroomHome, /Spaces <em>revealed<\/em> in light\./);
+  assert.match(showroomHome, /nocturne-final-cta/);
   assert.match(process, /\["0%", "-75%"\]/);
 });
 
@@ -156,28 +160,29 @@ test("keeps inquiry qualification card-based and low-friction", async () => {
   assert.match(route, /Capabilities and project readiness are required/);
 });
 
-test("ships four design systems on one shared, design-independent content model", async () => {
-  const [designs, home, showroom, webgl, switcher, collection, projects, css] = await Promise.all([
+test("publishes Nocturne as the only SECTION view", async () => {
+  const [designs, home, showroom, webgl, collection, projects, css] = await Promise.all([
     read("lib/designs.ts"),
     read("app/[locale]/page.tsx"),
     read("components/ShowroomHome.tsx"),
     read("components/AdaptiveWebGL.tsx"),
-    read("components/DesignSwitcher.tsx"),
     read("app/[locale]/collections/[slug]/page.tsx"),
     read("components/ProjectStoryRail.tsx"),
     read("app/globals.css"),
   ]);
 
-  assert.match(designs, /"editorial", "immersive", "assemblage", "nocturne"/);
+  assert.match(designs, /ENABLED_DESIGNS: DesignId\[\] = \["nocturne"\]/);
   assert.match(designs, /DEFAULT_DESIGN/);
-  assert.match(designs, /withDesign/);
-  assert.match(home, /ShowroomHome/);
+  assert.match(home, /mode="nocturne"/);
+  assert.doesNotMatch(home, /DesignSwitcher|ImmersiveHome|design ===/);
+  assert.doesNotMatch(showroom, /<DesignSwitcher/);
   assert.match(showroom, /mode === "nocturne"/);
   assert.match(webgl, /import\("three"\)/);
   assert.match(webgl, /prefers-reduced-motion/);
   assert.match(webgl, /webglcontextlost/);
   assert.match(webgl, /IntersectionObserver/);
-  assert.match(switcher, /ENABLED_DESIGNS\.map/);
+  assert.match(collection, /data-design="nocturne"/);
+  assert.doesNotMatch(collection, /DesignSwitcher|getDesign/);
   assert.match(collection, /ItemList/);
   assert.match(collection, /collection-piece-list/);
   assert.doesNotMatch(collection, /"@type": "(?:Product|Offer)"/);
@@ -188,7 +193,7 @@ test("ships four design systems on one shared, design-independent content model"
 });
 
 test("keeps Drive media, SODIC attribution and partner marks governed", async () => {
-  const [manifest, showroom, content, partners, logoMarquee, driveAssets, inventory] = await Promise.all([
+  const [manifest, showroom, content, partners, logoMarquee, driveAssets, inventory, categoryAssets] = await Promise.all([
     read("lib/media-manifest.ts"),
     read("lib/showroom-content.ts"),
     read("lib/site-content.ts"),
@@ -196,6 +201,7 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
     read("components/LogoMarquee.tsx"),
     read("lib/drive-assets.ts"),
     read("docs/nocturne-drive-asset-inventory.md"),
+    read("lib/generated-category-drive-assets.json"),
   ]);
 
   assert.match(manifest, /driveFileId/);
@@ -208,22 +214,31 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(content, /client: \{ en: "SODIC"/);
   assert.match(content, /collaboratorIds: \["ahmed-elsheref"\]/);
   assert.match(content, /media: \["sodic-drive-06"/);
-  assert.match(content, /client: \{ en: "ORA"/);
+  assert.doesNotMatch(content, /ORA Collaboration|client: \{ en: "ORA"/);
   assert.doesNotMatch(content, /SODIC.{0,80}(?:units|sqm|m²|million)/i);
   assert.match(partners, /sodic-attribution/);
   assert.match(logoMarquee, /partner-logo/);
   assert.match(driveAssets, /11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS/);
   assert.match(showroom, /1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs/);
   assert.match(inventory, /no logo file was found/i);
+  assert.match(showroom, /1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv/);
+  assert.match(showroom, /10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j/);
+  assert.match(showroom, /10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp/);
+  assert.equal(JSON.parse(categoryAssets).length, 50);
 });
 
 test("keeps Nocturne revisions isolated and ordered", async () => {
-  const [home, categoryStack, categoryPage, narrative, layout] = await Promise.all([
+  const [home, categoryStack, categoryPage, narrative, layout, materials, logoMarquee, footer, contacts, css] = await Promise.all([
     read("components/ShowroomHome.tsx"),
     read("components/NocturneCategoryStack.tsx"),
     read("app/[locale]/collections/[slug]/page.tsx"),
     read("components/BrandNarrative.tsx"),
     read("app/layout.tsx"),
+    read("components/MaterialBrandMarquee.tsx"),
+    read("components/LogoMarquee.tsx"),
+    read("components/SiteFooter.tsx"),
+    read("lib/drive-assets.ts"),
+    read("app/globals.css"),
   ]);
 
   assert.match(home, /\{!dark && <DesignAwareLink href=\{`\/\$\{locale\}\/inquiry`\}/);
@@ -239,4 +254,15 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
   assert.doesNotMatch(home, /<BrandNarrative/);
   assert.match(layout, /next\/font\/local/);
   assert.match(layout, /brand-variable\.woff2/);
+  assert.match(materials, /direction="reverse"/);
+  assert.match(logoMarquee, /marquee-\$\{direction\}/);
+  assert.match(logoMarquee, /partner-logo-tooltip/);
+  assert.doesNotMatch(home, /Selected work with/);
+  assert.doesNotMatch(home, /showroom-hero-proof/);
+  assert.match(footer, /SocialIcon kind="whatsapp"/);
+  assert.match(contacts, /https:\/\/wa\.me\/201272333832/);
+  assert.match(css, /@keyframes partner-run-reverse/);
+  assert.match(css, /\.material-brand-marquee \.partner-logo \{/);
+  assert.match(css, /\.design-nocturne \.showroom-collection-list \{ display: grid; gap:/);
+  assert.match(css, /\.form-action-area \{\s+position: relative;/);
 });

@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { DesignAwareLink } from "@/components/DesignAwareLink";
-import { DesignSwitcher } from "@/components/DesignSwitcher";
 import { JsonLd } from "@/components/JsonLd";
 import { ProjectAttribution } from "@/components/ProjectAttribution";
-import { getDesign } from "@/lib/designs";
 import { capabilityLabel, getMedia, getProject, isLocale, locales, projects } from "@/lib/site-content";
 import { breadcrumbSchema, pageMetadata, projectSchema } from "@/lib/seo";
 
@@ -24,21 +22,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function ProjectPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ locale: string; slug: string }>;
-  searchParams?: Promise<{ design?: string }>;
 }) {
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
   const project = getProject(slug);
   if (!project) notFound();
-  const design = getDesign((await searchParams)?.design);
   const index = projects.findIndex((item) => item.slug === slug);
   const next = projects[(index + 1) % projects.length];
   const hero = getMedia(project.media[0]);
 
-  return <main className={`project-detail subpage design-${design}`} data-design={design}>
+  return <main className="project-detail subpage design-nocturne" data-design="nocturne">
     <JsonLd data={[
       projectSchema(locale, project),
       breadcrumbSchema(locale, [
@@ -47,7 +42,6 @@ export default async function ProjectPage({
         { name: project.title[locale], path: `/projects/${slug}` },
       ]),
     ]} />
-    <DesignSwitcher locale={locale} current={design} path={`/${locale}/projects/${slug}`} />
     <header className="project-hero">
       <div className="project-hero-media"><Image unoptimized src={hero.src} alt={hero.alt[locale]} fill priority sizes="100vw" /></div>
       <div className="project-hero-copy"><p>{project.sectorLabel[locale]} / {project.location[locale]}</p><h1>{project.title[locale]}</h1><span>{project.client[locale]}</span><ProjectAttribution project={project} locale={locale} /></div>

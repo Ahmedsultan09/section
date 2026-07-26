@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { DesignAwareLink } from "@/components/DesignAwareLink";
-import { DesignSwitcher } from "@/components/DesignSwitcher";
 import { JsonLd } from "@/components/JsonLd";
-import { getDesign } from "@/lib/designs";
 import { breadcrumbSchema, pageMetadata, serviceSchema } from "@/lib/seo";
 import { capabilities, getCapability, getMedia, isLocale, locales, projects } from "@/lib/site-content";
 import { piecesFor, showroomCopy } from "@/lib/showroom-content";
@@ -22,18 +20,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return pageMetadata({ locale, path: `/collections/${slug}`, title, description: collection.intro[locale] });
 }
 
-export default async function CollectionPage({ params, searchParams }: { params: Promise<{ locale: string; slug: string }>; searchParams?: Promise<{ design?: string }> }) {
+export default async function CollectionPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
   const collection = getCapability(slug);
   if (!collection) notFound();
-  const design = getDesign((await searchParams)?.design);
   const image = getMedia(collection.image);
   const related = projects.filter((project) => project.capabilities.includes(collection.slug));
   const pieces = piecesFor(collection.slug);
 
-  return <main className={`capability-detail subpage design-${design}`} data-design={design}>
-    <DesignSwitcher locale={locale} current={design} path={`/${locale}/collections/${slug}`} />
+  return <main className="capability-detail subpage design-nocturne" data-design="nocturne">
     <JsonLd data={[
       serviceSchema(locale, collection),
       { "@context": "https://schema.org", "@type": "CollectionPage", name: collection.title[locale], inLanguage: locale, mainEntity: { "@type": "ItemList", itemListElement: pieces.map((piece, index) => ({ "@type": "ListItem", position: index + 1, name: piece.title[locale], url: `#${piece.slug}` })) } },

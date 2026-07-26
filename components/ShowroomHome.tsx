@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { AdaptiveWebGL } from "./AdaptiveWebGL";
 import { DesignAwareLink } from "./DesignAwareLink";
-import { DesignSwitcher } from "./DesignSwitcher";
 import { InquiryForm } from "./InquiryForm";
 import { MaterialBrandMarquee } from "./MaterialBrandMarquee";
 import { NocturneCategoryStack } from "./NocturneCategoryStack";
@@ -26,7 +25,6 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
 
   return (
     <main className={`showroom-home design-${mode}`} data-design={mode}>
-      <DesignSwitcher locale={locale} current={mode} />
       <section className="showroom-hero">
         <Image unoptimized className="showroom-hero-poster" src={poster} alt="" fill priority sizes="100vw" />
         <AdaptiveWebGL mode={mode} />
@@ -35,9 +33,6 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
           <p>{dark ? "SECTION / MATERIAL THEATRE" : "SECTION / DESIGN · MAKE · INSTALL"}</p>
           <h1>{title}</h1>
           <div><span>{body}</span>{!dark && <DesignAwareLink href={`/${locale}/inquiry`}>{t.hero.primary} ↗</DesignAwareLink>}</div>
-        </div>
-        <div className="showroom-hero-proof" aria-label={locale === "ar" ? "عملاء مختارون" : "Selected client work"}>
-          <span>{locale === "ar" ? "أعمال مختارة مع" : "Selected work with"}</span><strong>SODIC</strong><i>+</i><strong>ORA</strong>
         </div>
       </section>
 

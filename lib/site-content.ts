@@ -1,5 +1,6 @@
 import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectSector } from "./site-types";
 import { sodicMediaAssets } from "./drive-assets";
+import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
 
 export const locales: Locale[] = ["en", "ar"];
 
@@ -14,8 +15,47 @@ export const sectors: Array<{ slug: ProjectSector; label: Record<Locale, string>
   { slug: "retail-public", label: { en: "Retail & public spaces", ar: "التجزئة والمساحات العامة" } },
 ];
 
+const categoryMediaAssets: MediaAsset[] = generatedCategoryDriveAssets.map((asset) => {
+  const capability: CapabilitySlug = asset.id.startsWith("kitchen")
+    ? "kitchens"
+    : asset.id.startsWith("bedroom")
+      ? "bedrooms"
+      : "dressing-rooms";
+  const labels: Record<CapabilitySlug, Record<Locale, string>> = {
+    kitchens: { en: "Drive-supplied kitchen project photograph", ar: "صورة مشروع مطبخ موردة من Drive" },
+    bedrooms: { en: "Drive-supplied bedroom project photograph", ar: "صورة مشروع غرفة نوم موردة من Drive" },
+    "dressing-rooms": { en: "Drive-supplied dressing room photograph", ar: "صورة غرفة ملابس موردة من Drive" },
+    "living-rooms": { en: "Living space", ar: "مساحة معيشة" },
+    "custom-units": { en: "Custom unit", ar: "وحدة مخصصة" },
+    doors: { en: "Architectural door", ar: "باب معماري" },
+    "wall-cladding": { en: "Wall cladding", ar: "تكسية حائط" },
+    "materials-finishes": { en: "Material finish", ar: "تشطيب خامة" },
+  };
+  return {
+    id: asset.id,
+    src: asset.localSrc,
+    sourceFolder: asset.sourceFolderId,
+    sourceFolderId: asset.sourceFolderId,
+    sourceName: asset.sourceName,
+    capabilities: [capability],
+    stage: "finished",
+    authenticity: asset.authenticity as MediaAsset["authenticity"],
+    rights: asset.rights as MediaAsset["rights"],
+    orientation: asset.orientation as MediaAsset["orientation"],
+    quality: asset.id.endsWith("-01") ? "hero" : "editorial",
+    usage: asset.id.endsWith("-01") ? "capability" : "project",
+    alt: labels[capability],
+    driveFileId: asset.driveFileId,
+    originalMime: asset.originalMime,
+    contentHash: asset.contentHash,
+    derived: { webp: asset.localSrc },
+    publishStatus: asset.publishStatus as MediaAsset["publishStatus"],
+  };
+});
+
 export const mediaAssets: MediaAsset[] = [
   ...sodicMediaAssets,
+  ...categoryMediaAssets,
   {
     id: "asset-living-01", src: "/assets/141202_527604.jpeg", sourceFolder: "Legacy site", sourceName: "141202_527604.jpeg",
     projectSlug: "residential-joinery-study", sector: "residential-developments", capabilities: ["living-rooms", "custom-units"],
@@ -71,7 +111,7 @@ export const capabilities: Capability[] = [
     intro: { en: "Complete kitchen environments coordinated with appliances, services, worktops and site conditions before production begins.", ar: "بيئات مطابخ متكاملة تُنسق مع الأجهزة والخدمات وأسطح العمل وظروف الموقع قبل بدء التصنيع." },
     applications: [{ en: "Residential developments", ar: "المشروعات السكنية" }, { en: "Serviced residences", ar: "الوحدات الفندقية" }, { en: "Hospitality", ar: "الضيافة" }],
     materials: [{ en: "Moisture-resistant boards", ar: "ألواح مقاومة للرطوبة" }, { en: "Natural veneers", ar: "القشرة الطبيعية" }, { en: "Durable hardware", ar: "إكسسوارات عالية التحمل" }],
-    process: [{ en: "Layout coordination", ar: "تنسيق المخطط" }, { en: "Sample approval", ar: "اعتماد العينة" }, { en: "Sequenced installation", ar: "التركيب المرحلي" }], image: "asset-unit-01",
+    process: [{ en: "Layout coordination", ar: "تنسيق المخطط" }, { en: "Sample approval", ar: "اعتماد العينة" }, { en: "Sequenced installation", ar: "التركيب المرحلي" }], image: "kitchen-obour-01",
   },
   {
     slug: "dressing-rooms", number: "02", title: { en: "Dressing Rooms", ar: "غرف الملابس" },
@@ -79,7 +119,7 @@ export const capabilities: Capability[] = [
     intro: { en: "Wardrobes and dressing rooms developed as complete systems with considered internals, finishes, hardware and lighting.", ar: "خزائن وغرف ملابس تُطوّر كنظم متكاملة تشمل التقسيمات والتشطيبات والإكسسوارات والإضاءة." },
     applications: [{ en: "Walk-in rooms", ar: "غرف ملابس داخلية" }, { en: "Built-in wardrobes", ar: "خزائن مدمجة" }, { en: "Hospitality storage", ar: "تخزين الضيافة" }],
     materials: [{ en: "Textured laminates", ar: "لامينيت محبب" }, { en: "Painted finishes", ar: "تشطيبات دهان" }, { en: "Glass and metal details", ar: "تفاصيل زجاج ومعدن" }],
-    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "asset-unit-01",
+    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-09",
   },
   {
     slug: "living-rooms", number: "03", title: { en: "Living Spaces", ar: "مساحات المعيشة" },
@@ -103,7 +143,7 @@ export const capabilities: Capability[] = [
     intro: { en: "Beds, night units, wardrobes and wall details developed together for repeatable residential and hospitality rooms.", ar: "أسرة ووحدات جانبية وخزائن وتفاصيل حوائط تُطوّر معاً لغرف سكنية وفندقية قابلة للتكرار." },
     applications: [{ en: "Residential bedrooms", ar: "غرف النوم السكنية" }, { en: "Hotel rooms", ar: "الغرف الفندقية" }, { en: "Serviced apartments", ar: "الشقق الفندقية" }],
     materials: [{ en: "Timber veneer", ar: "قشرة خشبية" }, { en: "Upholstery", ar: "التنجيد" }, { en: "Integrated lighting details", ar: "تفاصيل إضاءة مدمجة" }],
-    process: [{ en: "Room-type study", ar: "دراسة نموذج الغرفة" }, { en: "Prototype review", ar: "مراجعة النموذج" }, { en: "Package installation", ar: "تركيب الحزمة" }], image: "asset-bedroom-01",
+    process: [{ en: "Room-type study", ar: "دراسة نموذج الغرفة" }, { en: "Prototype review", ar: "مراجعة النموذج" }, { en: "Package installation", ar: "تركيب الحزمة" }], image: "bedroom-a-01",
   },
   {
     slug: "wall-cladding", number: "06", title: { en: "Wall cladding", ar: "تكسية الحوائط" },
@@ -142,16 +182,6 @@ export const projects: Project[] = [
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." },
     capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"],
-  },
-  {
-    slug: "ora-collaboration", title: { en: "ORA Collaboration", ar: "تعاون مع أورا" },
-    sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Egypt", ar: "مصر" }, year: "—",
-    client: { en: "ORA", ar: "أورا" }, clientVisibility: "approved", verificationStatus: "pending",
-    verificationNote: { en: "The client name is approved for this preview. Scope details are pending confirmation.", ar: "اسم العميل معتمد لهذه المعاينة، وتفاصيل نطاق العمل في انتظار التأكيد." },
-    summary: { en: "A selected collaboration presented while the detailed project record is being organized.", ar: "تعاون مختار يُعرض بينما يجري تنظيم سجل المشروع التفصيلي." },
-    scope: { en: "Selected collaboration. Detailed scope, locations, quantities and outcomes are not yet published.", ar: "تعاون مختار. لم يتم بعد نشر النطاق التفصيلي أو المواقع أو الكميات أو النتائج." },
-    responsibilities: [], materials: [], outcome: { en: "Project information will expand as verified material is approved.", ar: "ستتوسع معلومات المشروع مع اعتماد المواد الموثقة." },
-    capabilities: ["kitchens", "dressing-rooms", "custom-units"], media: ["asset-bedroom-01", "asset-door-01", "asset-detail-01"], collaboratorIds: [],
   },
   {
     slug: "residential-joinery-study", title: { en: "Residential Joinery Study", ar: "دراسة نجارة لمشروع سكني" },

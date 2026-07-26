@@ -8,5 +8,6 @@ export function MaterialBrandMarquee({ locale }: { locale: Locale }) {
     note={locale === "ar" ? "شركاء الألواح والأسطح والإكسسوارات المعتمدون" : "Board, surface and hardware partners"}
     items={materialBrandLogos}
     className="material-brand-marquee"
+    direction="reverse"
   />;
 }

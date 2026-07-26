@@ -13,6 +13,23 @@ Google Drive is the source of truth. Files under `public/drive` and `app/fonts` 
 | Brand fonts | `10y34BF4Iqc6dUwpB92zTmuasIFz3Nh7` | Canonical font source |
 | Brand/contact record | `1L3lX1LWIRbPi1MgWkrGhV0tJyG8FnCVc` | Canonical contact source |
 | Brand narrative | `1FOtmkjvBnWF5ASWJ9vOQ4cLC0E04h_TX` | Source found; component remains unmounted |
+| Kitchens — supplied set A | `1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv` | 21 stills imported; videos excluded from this photo update |
+| Kitchens — supplied set B | `16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M` | Six stills imported from the `Edited photos` child folder |
+| Bedrooms — supplied set A | `10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j` | 11 stills imported; videos excluded from this photo update |
+| Bedrooms — supplied set B | `10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp` | Seven stills imported |
+| Dressing | `1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X` | Existing eight stills retained and five additional stills imported |
+
+## Category gallery media
+
+The generated manifest at `lib/generated-category-drive-assets.json` records the Drive file ID, source folder ID, original name and MIME type, SHA-256 hash, orientation and optimized WebP derivative for every new still.
+
+| Category | Imported stills | Presentation |
+| --- | ---: | --- |
+| Kitchens | 27 | Three visually verified project galleries: Obour Kitchen, Kitchen Study 07 and Kitchen Study 06 |
+| Bedrooms | 18 | Two distinct project galleries matching the two supplied folders |
+| Dressing Rooms | 5 new / 13 total | Existing two dressing presentations expanded with the remaining unique stills |
+
+The Kitchen folder also contains four videos, the first Bedroom folder contains six videos, and the Dressing folder contains six videos. They were inventoried but not published because this request specified photos. ORA attribution and its placeholder project were removed after the owner confirmed there was no collaboration.
 
 ## SODIC project media
 
