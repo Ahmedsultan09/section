@@ -3,6 +3,9 @@ import { AdaptiveWebGL } from "./AdaptiveWebGL";
 import { DesignAwareLink } from "./DesignAwareLink";
 import { DesignSwitcher } from "./DesignSwitcher";
 import { InquiryForm } from "./InquiryForm";
+import { MaterialBrandMarquee } from "./MaterialBrandMarquee";
+import { NocturneCategoryStack } from "./NocturneCategoryStack";
+import { PartnerMarquee } from "./PartnerMarquee";
 import { ProjectStoryRail } from "./ProjectStoryRail";
 import { ShowroomProcess } from "./ShowroomProcess";
 import { capabilities, copy, getMedia } from "@/lib/site-content";
@@ -31,7 +34,7 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         <div className="showroom-hero-copy">
           <p>{dark ? "SECTION / MATERIAL THEATRE" : "SECTION / DESIGN · MAKE · INSTALL"}</p>
           <h1>{title}</h1>
-          <div><span>{body}</span><DesignAwareLink href={`/${locale}/inquiry`}>{t.hero.primary} ↗</DesignAwareLink></div>
+          <div><span>{body}</span>{!dark && <DesignAwareLink href={`/${locale}/inquiry`}>{t.hero.primary} ↗</DesignAwareLink>}</div>
         </div>
         <div className="showroom-hero-proof" aria-label={locale === "ar" ? "عملاء مختارون" : "Selected client work"}>
           <span>{locale === "ar" ? "أعمال مختارة مع" : "Selected work with"}</span><strong>SODIC</strong><i>+</i><strong>ORA</strong>
@@ -46,7 +49,8 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
 
       <section className="showroom-collections" id="capabilities">
         <header><p>02 / {t.capabilities.eyebrow}</p><h2>{t.capabilities.title}</h2></header>
-        <div className="showroom-collection-list">
+        {dark && <NocturneCategoryStack locale={locale} items={capabilities.map((capability) => ({ capability, media: getMedia(capability.image) }))} />}
+        <div className={`showroom-collection-list ${dark ? "nocturne-desktop-collections" : ""}`}>
           {capabilities.map((capability, index) => {
             const media = getMedia(capability.image);
             return (
@@ -69,14 +73,14 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         <ProjectStoryRail locale={locale} />
       </section>
 
-      <section className="showroom-manufacturing">
+      {!dark && <section className="showroom-manufacturing">
         <div className="showroom-manufacturing-media">
           <Image unoptimized src="/drive/materials/material-01.webp" alt={locale === "ar" ? "مراجعة عينة خشبية بعلامة SECTION" : "A SECTION-labelled timber sample under review"} fill sizes="(max-width: 760px) 100vw, 52vw" />
           <figure><Image unoptimized src="/drive/materials/material-03.webp" alt={locale === "ar" ? "مكتبة عينات للقشرة والتشطيبات" : "Veneer and finish sample library"} fill sizes="240px" /></figure>
           <figure><Image unoptimized src="/drive/materials/material-07.webp" alt={locale === "ar" ? "مراجعة عينات التشطيب يدوياً" : "Finishes being reviewed by hand"} fill sizes="240px" /></figure>
         </div>
         <div><p>05 / {locale === "ar" ? "الخامة والتصنيع" : "Material & manufacturing"}</p><h2>{locale === "ar" ? "نختار بالعين. ونثبت باليد." : "Chosen by eye. Proven by hand."}</h2><span>{locale === "ar" ? "نراجع الألواح والقشرة والتشطيبات والإكسسوارات كعينات فعلية قبل الإنتاج، حتى تتوافق الدرجة والملمس وقابلية التنفيذ مع موجز المشروع." : "Boards, veneers, finishes and hardware are reviewed as physical samples before production, aligning tone, texture and buildability with the project brief."}</span><ol>{(locale === "ar" ? ["مكتبات تشطيبات منسقة", "عينات واعتمادات فعلية", "مراجعة قبل بدء الإنتاج"] : ["Curated finish libraries", "Physical samples and approvals", "Review before production"]).map((fact, index) => <li key={fact}><b>0{index + 1}</b>{fact}</li>)}</ol></div>
-      </section>
+      </section>}
 
       <section className="showroom-about" id="studio">
         <p>06 / {locale === "ar" ? "عن SECTION" : "About SECTION"}</p>
@@ -88,10 +92,20 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         <blockquote>{locale === "ar" ? "أعد التفكير في التصميم. اروِ قصة المكان." : "Rethink the design. Tell the story of the space."}</blockquote>
       </section>
 
-      <section className="showroom-inquiry" id="inquiry">
+      {dark && <>
+        <PartnerMarquee locale={locale} />
+        <MaterialBrandMarquee locale={locale} />
+        <section className="nocturne-final-cta">
+          <p>{locale === "ar" ? "ابدأ من هنا" : "Start here"}</p>
+          <h2>{locale === "ar" ? <>لنجعل فكرتك <em>مساحة حقيقية.</em></> : <>Let’s make your idea <em>a real space.</em></>}</h2>
+          <DesignAwareLink href={`/${locale}/inquiry`}>{locale === "ar" ? "ناقش مشروعك" : "Discuss a project"} <span>↗</span></DesignAwareLink>
+        </section>
+      </>}
+
+      {!dark && <section className="showroom-inquiry" id="inquiry">
         <header><p>07 / {locale === "ar" ? "ابدأ من هنا" : "Start here"}</p><h2>{locale === "ar" ? <>ما الذي تريد أن <em>نصنعه؟</em></> : <>What should we <em>make together?</em></>}</h2><span>{locale === "ar" ? "اختر المطلوب في خطوات قصيرة. الاسم ورقم الهاتف فقط مطلوبان." : "Qualify the request in a few simple choices. Only your name and phone are required."}</span></header>
         <InquiryForm locale={locale} />
-      </section>
+      </section>}
     </main>
   );
 }

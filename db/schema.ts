@@ -13,8 +13,11 @@ export const users = pgTable("users", {
 
 export type LeadChoices = {
   capabilities: string[];
-  serviceScope: string[];
-  projectStage: string[];
+  projectReadiness?: "has-brief" | "needs-ideas";
+  installationIncluded?: true;
+  // Historical submissions only.
+  serviceScope?: string[];
+  projectStage?: string[];
 };
 
 export const leads = pgTable("leads", {

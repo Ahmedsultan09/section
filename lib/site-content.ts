@@ -1,4 +1,5 @@
 import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectSector } from "./site-types";
+import { sodicMediaAssets } from "./drive-assets";
 
 export const locales: Locale[] = ["en", "ar"];
 
@@ -14,6 +15,7 @@ export const sectors: Array<{ slug: ProjectSector; label: Record<Locale, string>
 ];
 
 export const mediaAssets: MediaAsset[] = [
+  ...sodicMediaAssets,
   {
     id: "asset-living-01", src: "/assets/141202_527604.jpeg", sourceFolder: "Legacy site", sourceName: "141202_527604.jpeg",
     projectSlug: "residential-joinery-study", sector: "residential-developments", capabilities: ["living-rooms", "custom-units"],
@@ -139,7 +141,7 @@ export const projects: Project[] = [
     scope: { en: "Interior work, woodwork and furniture. Quantities, locations and programme are intentionally omitted until verified.", ar: "أعمال داخلية ونجارة وأثاث. تم استبعاد الكميات والمواقع والبرنامج الزمني حتى التحقق منها." },
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." },
-    capabilities: ["custom-units", "wall-cladding", "bedrooms"], media: ["asset-wall-01", "asset-living-01", "asset-unit-01"], collaboratorIds: [],
+    capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"],
   },
   {
     slug: "ora-collaboration", title: { en: "ORA Collaboration", ar: "تعاون مع أورا" },

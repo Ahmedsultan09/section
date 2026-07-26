@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import localFont from "next/font/local";
 import "@fontsource/saira/400.css";
 import "@fontsource/saira/500.css";
 import "@fontsource/saira/600.css";
@@ -9,10 +10,36 @@ import "@fontsource/newsreader/400.css";
 import "@fontsource/newsreader/400-italic.css";
 import "@ibm/plex-sans-arabic/css/ibm-plex-sans-arabic-default.min.css";
 import "./globals.css";
+import { SITE_URL } from "@/lib/seo";
+
+const nocturneBold = localFont({
+  src: "./fonts/brand-bold.woff2",
+  variable: "--font-nocturne-bold",
+  display: "swap",
+});
+
+const nocturneVariable = localFont({
+  src: "./fonts/brand-variable.woff2",
+  variable: "--font-nocturne-variable",
+  display: "swap",
+  weight: "100 900",
+});
+
+const nocturneLight = localFont({
+  src: "./fonts/brand-light.woff2",
+  variable: "--font-nocturne-light",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "SECTION",
   description: "B2B digital showroom for design, engineering, manufacturing, and installation.",
+  openGraph: {
+    title: "SECTION — Made with wood",
+    description: "Design, manufacturing and installation for ambitious interiors.",
+    images: ["/og.png"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -24,7 +51,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html className={`${nocturneBold.variable} ${nocturneVariable.variable} ${nocturneLight.variable}`} lang="en" suppressHydrationWarning>
       <body>{children}</body>
     </html>
   );

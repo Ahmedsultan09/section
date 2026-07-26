@@ -44,7 +44,6 @@ export default async function CollectionPage({ params, searchParams }: { params:
       ]),
     ]} />
     <header className="capability-hero"><div><p className="eyebrow">{locale === "ar" ? "مجموعات SECTION" : "SECTION collection"} / {collection.number}</p><h1>{collection.title[locale]}</h1><p>{collection.intro[locale]}</p><DesignAwareLink className="button-yellow" href={`/${locale}/inquiry`}>{locale === "ar" ? "ناقش نطاقك" : "Discuss your scope"}<span>↗</span></DesignAwareLink></div><div className="capability-hero-media"><Image unoptimized src={image.src} alt={image.alt[locale]} fill priority sizes="(max-width: 800px) 100vw, 50vw" /></div></header>
-    <section className="capability-spec section-pad"><SpecList number="01" title={locale === "ar" ? "التطبيقات" : "Applications"} items={collection.applications.map((item) => item[locale])} /><SpecList number="02" title={locale === "ar" ? "الخامات" : "Materials"} items={collection.materials.map((item) => item[locale])} /><SpecList number="03" title={locale === "ar" ? "مسار العمل" : "Delivery path"} items={collection.process.map((item) => item[locale])} /></section>
     <section className="collection-pieces section-pad" aria-labelledby="collection-pieces-title">
       <header><p className="eyebrow">{showroomCopy[locale].pieceLabel}</p><h2 id="collection-pieces-title">{locale === "ar" ? "تفاصيل تستحق الاستكشاف." : "Pieces worth exploring."}</h2><span>{locale === "ar" ? "كل قطعة مرجع يمكن تطويره وفقاً لاحتياجات مشروعك." : "Each piece is a made-to-order reference that can be developed for your project brief."}</span></header>
       <div className="collection-piece-list">
@@ -55,6 +54,7 @@ export default async function CollectionPage({ params, searchParams }: { params:
         </article>)}
       </div>
     </section>
+    <section className="capability-spec section-pad"><SpecList number="01" title={locale === "ar" ? "التطبيقات" : "Applications"} items={collection.applications.map((item) => item[locale])} /><SpecList number="02" title={locale === "ar" ? "الخامات" : "Materials"} items={collection.materials.map((item) => item[locale])} /><SpecList number="03" title={locale === "ar" ? "مسار العمل" : "Delivery path"} items={collection.process.map((item) => item[locale])} /></section>
     {related.length > 0 && <section className="related-projects section-pad"><p className="eyebrow">{locale === "ar" ? "دراسات مرتبطة" : "Related studies"}</p>{related.map((project) => <DesignAwareLink href={`/${locale}/projects/${project.slug}`} key={project.slug}><span>{project.sectorLabel[locale]}</span><h2>{project.title[locale]}</h2><b>↗</b></DesignAwareLink>)}</section>}
   </main>;
 }

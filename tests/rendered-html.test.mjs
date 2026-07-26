@@ -51,7 +51,7 @@ test("implements the complete multilingual SEO discovery layer", async () => {
     read("app/[locale]/inquiry/page.tsx"),
   ]);
 
-  assert.match(localeLayout, /<html lang=\{locale\} dir=/);
+  assert.match(localeLayout, /className="locale-shell" lang=\{locale\} dir=/);
   assert.match(localeLayout, /localeMetadata\(locale\)/);
   assert.match(seo, /"x-default"/);
   assert.match(seo, /canonical:/);
@@ -89,27 +89,29 @@ test("keeps visitor-facing source free of commerce and developer-tool language",
   assert.match(source, /inquiry|Discuss|ناقش/);
 });
 
-test("implements a durable, validated inquiry pipeline", async () => {
-  const [route, schema, hosting, security] = await Promise.all([
+test("implements the four-step validated inquiry pipeline", async () => {
+  const [route, schema, hosting, form] = await Promise.all([
     read("app/api/inquiries/route.ts"),
     read("db/schema.ts"),
     read(".openai/hosting.json"),
-    read("lib/inquiry-security.ts"),
+    read("components/InquiryForm.tsx"),
   ]);
 
-  assert.match(route, /files\.length > 3/);
-  assert.match(route, /10 \* 1024 \* 1024/);
-  assert.match(route, /allowedTypes/);
   assert.match(route, /getDb\(\)/);
-  assert.match(route, /db\.insert\(inquiries\)/);
-  assert.match(route, /runtime\.UPLOADS!\.put/);
-  assert.match(route, /notification_pending/);
+  assert.match(route, /\.insert\(schema\.leads\)/);
+  assert.match(route, /\["has-brief", "needs-ideas"\]/);
+  assert.match(route, /installationIncluded: true/);
+  assert.doesNotMatch(route, /value\(data, "installationIncluded"\)/);
   assert.match(route, /status: "received"/);
-  assert.ok(route.indexOf("db.insert(inquiries)") < route.indexOf("notifyTeam("));
-  assert.match(schema, /inquiry_attachments/);
+  assert.match(schema, /projectReadiness\?: "has-brief" \| "needs-ideas"/);
+  assert.match(schema, /installationIncluded\?: true/);
+  assert.match(schema, /serviceScope\?: string\[\]/);
+  assert.match(schema, /projectStage\?: string\[\]/);
+  assert.match(form, /\(step \+ 1\) \/ 4/);
+  assert.match(form, /Project brief \(optional\)/);
+  assert.match(form, /data\.append\("brief", values\.brief\.trim\(\)\)/);
   assert.match(hosting, /"d1": "DB"/);
   assert.match(hosting, /"r2": "UPLOADS"/);
-  assert.match(security, /HMAC/);
 });
 
 test("includes responsive, RTL, and reduced-motion safeguards", async () => {
@@ -135,20 +137,23 @@ test("includes responsive, RTL, and reduced-motion safeguards", async () => {
 });
 
 test("keeps inquiry qualification card-based and low-friction", async () => {
-  const [form, home, route] = await Promise.all([
+  const [form, showroom, route] = await Promise.all([
     read("components/InquiryForm.tsx"),
-    read("app/[locale]/page.tsx"),
+    read("components/ShowroomHome.tsx"),
     read("app/api/inquiries/route.ts"),
   ]);
 
   assert.doesNotMatch(form, /<select/);
   assert.match(form, /choice-card/);
   assert.match(form, /not-sure-yet/);
+  assert.match(form, /has-brief/);
+  assert.match(form, /needs-ideas/);
   assert.match(form, /Name \*/);
   assert.match(form, /Phone number \*/);
-  assert.match(home, /<InquiryForm locale=\{locale\} \/>/);
+  assert.match(showroom, /!dark && <section className="showroom-inquiry"/);
+  assert.match(showroom, /nocturne-final-cta/);
   assert.match(route, /Name, phone and consent are required/);
-  assert.match(route, /Not specified/);
+  assert.match(route, /Capabilities and project readiness are required/);
 });
 
 test("ships four design systems on one shared, design-independent content model", async () => {
@@ -182,12 +187,15 @@ test("ships four design systems on one shared, design-independent content model"
   assert.match(css, /\.design-nocturne/);
 });
 
-test("keeps Drive media, client proof and partner marks governed", async () => {
-  const [manifest, showroom, content, partners] = await Promise.all([
+test("keeps Drive media, SODIC attribution and partner marks governed", async () => {
+  const [manifest, showroom, content, partners, logoMarquee, driveAssets, inventory] = await Promise.all([
     read("lib/media-manifest.ts"),
     read("lib/showroom-content.ts"),
     read("lib/site-content.ts"),
     read("components/PartnerMarquee.tsx"),
+    read("components/LogoMarquee.tsx"),
+    read("lib/drive-assets.ts"),
+    read("docs/nocturne-drive-asset-inventory.md"),
   ]);
 
   assert.match(manifest, /driveFileId/);
@@ -198,8 +206,37 @@ test("keeps Drive media, client proof and partner marks governed", async () => {
   assert.match(showroom, /Glass-frame Dressing Room/);
   assert.equal((showroom.match(/kind: "collaborator"/g) ?? []).length, 9);
   assert.match(content, /client: \{ en: "SODIC"/);
+  assert.match(content, /collaboratorIds: \["ahmed-elsheref"\]/);
+  assert.match(content, /media: \["sodic-drive-06"/);
   assert.match(content, /client: \{ en: "ORA"/);
   assert.doesNotMatch(content, /SODIC.{0,80}(?:units|sqm|m²|million)/i);
-  assert.match(partners, /preferredSurface/);
-  assert.match(partners, /partner-logo/);
+  assert.match(partners, /sodic-attribution/);
+  assert.match(logoMarquee, /partner-logo/);
+  assert.match(driveAssets, /11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS/);
+  assert.match(showroom, /1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs/);
+  assert.match(inventory, /no logo file was found/i);
+});
+
+test("keeps Nocturne revisions isolated and ordered", async () => {
+  const [home, categoryStack, categoryPage, narrative, layout] = await Promise.all([
+    read("components/ShowroomHome.tsx"),
+    read("components/NocturneCategoryStack.tsx"),
+    read("app/[locale]/collections/[slug]/page.tsx"),
+    read("components/BrandNarrative.tsx"),
+    read("app/layout.tsx"),
+  ]);
+
+  assert.match(home, /\{!dark && <DesignAwareLink href=\{`\/\$\{locale\}\/inquiry`\}/);
+  assert.match(home, /<ProjectStoryRail locale=\{locale\} \/>/);
+  assert.match(home, /<PartnerMarquee locale=\{locale\} \/>/);
+  assert.match(home, /<MaterialBrandMarquee locale=\{locale\} \/>/);
+  assert.ok(home.indexOf("<ProjectStoryRail") < home.indexOf("<section className=\"showroom-about\""));
+  assert.ok(home.indexOf("<section className=\"showroom-about\"") < home.indexOf("<PartnerMarquee"));
+  assert.match(categoryStack, /IntersectionObserver/);
+  assert.match(categoryStack, /mostVisible/);
+  assert.ok(categoryPage.indexOf("collection-piece-list") < categoryPage.indexOf("capability-spec"));
+  assert.match(narrative, /Brand story/);
+  assert.doesNotMatch(home, /<BrandNarrative/);
+  assert.match(layout, /next\/font\/local/);
+  assert.match(layout, /brand-variable\.woff2/);
 });

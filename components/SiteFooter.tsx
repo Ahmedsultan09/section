@@ -2,6 +2,7 @@ import type { Locale } from "@/lib/site-types";
 import { Wordmark } from "./SiteHeader";
 import { DesignAwareLink } from "./DesignAwareLink";
 import { PartnerMarquee } from "./PartnerMarquee";
+import { siteContact } from "@/lib/drive-assets";
 
 export function SiteFooter({ locale }: { locale: Locale }) {
   return (
@@ -11,10 +12,11 @@ export function SiteFooter({ locale }: { locale: Locale }) {
       <div className="footer-links">
         <DesignAwareLink href={`/${locale}/projects`}>{locale === "ar" ? "الأعمال" : "Projects"}</DesignAwareLink>
         <DesignAwareLink href={`/${locale}/inquiry`}>{locale === "ar" ? "ناقش مشروعك" : "Discuss a project"}</DesignAwareLink>
-        <a href="tel:+201272333832">+20 127 233 3832</a>
+        <a href={siteContact.phoneHref}>{siteContact.phoneDisplay}</a>
+        <a href={siteContact.instagramHref} target="_blank" rel="noreferrer">{siteContact.instagramLabel}</a>
         <address>
-          <span>{locale === "ar" ? "المعرض — سيلفر ستار داون تاون مول، القاهرة الجديدة" : "Showroom — Silver Star Downtown Mall, New Cairo"}</span>
-          <span>{locale === "ar" ? "المصنع — شارع الترولي، المرج، القاهرة" : "Factory — Trolly Street, El-Marg, Cairo"}</span>
+          <span>{locale === "ar" ? `المعرض — ${siteContact.showroom.ar}` : `Showroom — ${siteContact.showroom.en}`}</span>
+          <span>{locale === "ar" ? `المصنع — ${siteContact.factory.ar}` : `Factory — ${siteContact.factory.en}`}</span>
         </address>
       </div>
       <div className="footer-meta">

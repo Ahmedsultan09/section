@@ -24,6 +24,7 @@ export type MediaAsset = {
   id: string;
   src: string;
   sourceFolder: string;
+  sourceFolderId?: string;
   sourceName: string;
   projectSlug?: string;
   sector?: ProjectSector;
@@ -59,6 +60,7 @@ export type Project = {
   outcome: LocalizedText;
   capabilities: CapabilitySlug[];
   media: string[];
+  clientLogoId?: string;
   collaboratorIds?: string[];
   verificationStatus?: "verified" | "partial" | "pending";
 };
@@ -104,10 +106,19 @@ export type InquiryPayload = {
   name: string;
   phone: string;
   projectElements: string[];
-  serviceScope: string[];
-  projectStage: string;
+  projectReadiness: ProjectReadiness;
+  installationIncluded: true;
   brief: string;
   consent: boolean;
+};
+
+export type ProjectReadiness = "has-brief" | "needs-ideas";
+
+export type DriveAssetReference = {
+  driveFileId: string;
+  sourceFolderId: string;
+  contentHash: string;
+  approval: "preview" | "approved";
 };
 
 export type InquiryAttachment = {

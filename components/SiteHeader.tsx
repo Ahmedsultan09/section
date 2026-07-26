@@ -3,6 +3,7 @@ import type { Locale } from "@/lib/site-types";
 import { copy } from "@/lib/site-content";
 import { LocaleSwitch } from "./LocaleSwitch";
 import { DesignAwareLink } from "./DesignAwareLink";
+import { siteContact } from "@/lib/drive-assets";
 
 export function Wordmark({ tone = "auto" }: { tone?: "auto" | "dark" | "light" }) {
   return (
@@ -37,6 +38,11 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           <DesignAwareLink href={`/${locale}#studio`}>{nav.studio}</DesignAwareLink>
           <DesignAwareLink href={`/${locale}/inquiry`}>{nav.inquiry}</DesignAwareLink>
         </nav>
+        <section className="mobile-find-us" aria-label={locale === "ar" ? "تواصل معنا" : "Find us"}>
+          <p>{locale === "ar" ? "تواصل معنا" : "Find us"}</p>
+          <a href={siteContact.phoneHref}><span aria-hidden="true">☎</span>{siteContact.phoneDisplay}</a>
+          <a href={siteContact.instagramHref} target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span>{siteContact.instagramLabel}</a>
+        </section>
       </details>
     </header>
   );

@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { DesignAwareLink } from "./DesignAwareLink";
 import { getMedia, projects } from "@/lib/site-content";
 import type { Locale } from "@/lib/site-types";
+import { ProjectAttribution } from "./ProjectAttribution";
 
 export function ProjectStoryRail({ locale }: { locale: Locale }) {
   const railRef = useRef<HTMLDivElement>(null);
@@ -79,6 +80,7 @@ export function ProjectStoryRail({ locale }: { locale: Locale }) {
               <div className="story-card-copy">
                 <p>{project.sectorLabel[locale]} / {project.location[locale]}</p>
                 <h3 className={named ? "named-client" : ""}>{named ? project.client[locale] : project.title[locale]}</h3>
+                <ProjectAttribution project={project} locale={locale} compact />
                 <span>{project.summary[locale]}</span>
                 <DesignAwareLink href={`/${locale}/projects/${project.slug}`}>{locale === "ar" ? "افتح القصة" : "Open the story"} ↗</DesignAwareLink>
               </div>

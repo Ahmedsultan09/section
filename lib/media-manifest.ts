@@ -1,3 +1,5 @@
+import { SODIC_SOURCE_FOLDER_ID, sodicMediaAssets, sodicVideoPosters } from "./drive-assets";
+
 export type DriveMediaRecord = {
   id: string;
   driveFileId: string;
@@ -39,6 +41,36 @@ const driveMediaSeed: DriveMediaRecord[] = [
     ["d01", "19P_A2Q7w9AlxE67Y087iirRaHSiLY4Iq"], ["d02", "1ksvIGXGPsAp7XrAMDAmronYjYpXQsqb-"], ["d03", "1Nmvi7geXmXUvOgT6V6OycY8JX7m0pcAC"], ["d04", "1_kID2fqpB4jF6pfUjdXtGKfKg3TCInf6"],
     ["d05", "1oBpvLO3Mo3KhmLI4QnCI2YdaEopdEAdZ"], ["d06", "12EE_jOrRRMUKqkXjATFjETlJkXYUM_HH"], ["d07", "1VzGwxT4COzuoP-jqC0BwWIqj7UwWXmvR"], ["d08", "1MLLFKBXiphhfEUXitbc4IC2eZnaILlIa"],
   ].map(([id, driveFileId], index) => ({ id, driveFileId, sourceFolder: "Dressing", sourceName: `Dressing image ${index + 1}`, localSrc: `/drive/dressing/dressing-0${index + 1}.webp`, originalMime: "image/heif", authenticity: "verified-real" as const, rights: "pending" as const, publishStatus: "preview" as const })),
+  ...sodicMediaAssets.map((asset) => ({
+    id: asset.id,
+    driveFileId: asset.driveFileId!,
+    sourceFolder: SODIC_SOURCE_FOLDER_ID,
+    sourceName: asset.sourceName,
+    localSrc: asset.src,
+    originalMime: asset.originalMime!,
+    contentHash: asset.contentHash,
+    orientation: asset.orientation,
+    quality: asset.quality,
+    derived: asset.derived,
+    authenticity: asset.authenticity,
+    rights: asset.rights,
+    publishStatus: asset.publishStatus!,
+  })),
+  ...sodicVideoPosters.map((video) => ({
+    id: video.id,
+    driveFileId: video.driveFileId,
+    sourceFolder: video.sourceFolderId,
+    sourceName: video.sourceName,
+    localSrc: video.poster,
+    originalMime: "video/quicktime",
+    contentHash: video.contentHash,
+    orientation: "portrait" as const,
+    quality: "reference" as const,
+    derived: { poster: video.poster },
+    authenticity: "verified-real" as const,
+    rights: "approved" as const,
+    publishStatus: "public" as const,
+  })),
 ];
 
 function dedupeDriveMedia(records: DriveMediaRecord[]) {

@@ -27,6 +27,12 @@ function formatChoice(values: string[] | undefined) {
   return values && values.length ? values : ["Not specified"];
 }
 
+function formatReadiness(value: LeadChoices["projectReadiness"]) {
+  if (value === "has-brief") return ["Has a brief"];
+  if (value === "needs-ideas") return ["Needs ideas"];
+  return ["Historical submission"];
+}
+
 function prettyStatus(status: "contacted" | "not_contacted") {
   return status === "contacted" ? "Contacted" : "Not contacted";
 }
@@ -48,11 +54,16 @@ export function LeadDetailsDialog({ leadId, leadName, leadStatus, choices }: Lea
   const loadMoreRootRef = useRef<HTMLDivElement | null>(null);
 
   const choiceSections = useMemo(
-    () => [
-      { step: "01", label: "Capabilities", values: formatChoice(choices.capabilities) },
-      { step: "02", label: "Scope", values: formatChoice(choices.serviceScope) },
-      { step: "03", label: "Stage", values: formatChoice(choices.projectStage) },
-    ],
+    () => {
+      const current = [
+        { step: "01", label: "Capabilities", values: formatChoice(choices.capabilities) },
+        { step: "02", label: "Readiness", values: formatReadiness(choices.projectReadiness) },
+        { step: "03", label: "Installation", values: [choices.installationIncluded ? "Included" : "Historical / not recorded"] },
+      ];
+      if (choices.serviceScope?.length) current.push({ step: "H1", label: "Historical scope", values: choices.serviceScope });
+      if (choices.projectStage?.length) current.push({ step: "H2", label: "Historical stage", values: choices.projectStage });
+      return current;
+    },
     [choices]
   );
 

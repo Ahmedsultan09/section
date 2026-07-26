@@ -44,15 +44,14 @@ export async function POST(request: Request) {
   const message = value(data, "brief");
   const consent = value(data, "consent") === "true";
   const capabilities = parseChoiceList(value(data, "capabilities"));
-  const serviceScope = parseChoiceList(value(data, "serviceScope"));
-  const projectStage = parseChoiceList(value(data, "projectStage"));
+  const projectReadiness = value(data, "projectReadiness");
 
   if (!name || !phone || !consent) {
     return Response.json({ error: "Name, phone and consent are required" }, { status: 400 });
   }
 
-  if (!capabilities.length || !serviceScope.length || !projectStage.length) {
-    return Response.json({ error: "All contact steps must include at least one option" }, { status: 400 });
+  if (!capabilities.length || !["has-brief", "needs-ideas"].includes(projectReadiness)) {
+    return Response.json({ error: "Capabilities and project readiness are required" }, { status: 400 });
   }
 
   const db = getDb();
@@ -64,8 +63,8 @@ export async function POST(request: Request) {
       message: message || "No message provided.",
       choices: {
         capabilities,
-        serviceScope,
-        projectStage,
+        projectReadiness: projectReadiness as "has-brief" | "needs-ideas",
+        installationIncluded: true,
       },
       status: "not_contacted",
     })

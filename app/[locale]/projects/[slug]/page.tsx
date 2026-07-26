@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { DesignAwareLink } from "@/components/DesignAwareLink";
 import { DesignSwitcher } from "@/components/DesignSwitcher";
 import { JsonLd } from "@/components/JsonLd";
+import { ProjectAttribution } from "@/components/ProjectAttribution";
 import { getDesign } from "@/lib/designs";
 import { capabilityLabel, getMedia, getProject, isLocale, locales, projects } from "@/lib/site-content";
 import { breadcrumbSchema, pageMetadata, projectSchema } from "@/lib/seo";
@@ -49,7 +50,7 @@ export default async function ProjectPage({
     <DesignSwitcher locale={locale} current={design} path={`/${locale}/projects/${slug}`} />
     <header className="project-hero">
       <div className="project-hero-media"><Image unoptimized src={hero.src} alt={hero.alt[locale]} fill priority sizes="100vw" /></div>
-      <div className="project-hero-copy"><p>{project.sectorLabel[locale]} / {project.location[locale]}</p><h1>{project.title[locale]}</h1><span>{project.client[locale]}</span></div>
+      <div className="project-hero-copy"><p>{project.sectorLabel[locale]} / {project.location[locale]}</p><h1>{project.title[locale]}</h1><span>{project.client[locale]}</span><ProjectAttribution project={project} locale={locale} /></div>
     </header>
     <section className="project-overview section-pad">
       <div><p className="eyebrow">{locale === "ar" ? "نظرة عامة" : "Overview"}</p><h2>{project.summary[locale]}</h2></div>

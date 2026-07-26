@@ -1759,6 +1759,148 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   width: 154px;
   max-width: 154px;
 }
+
+/* Nocturne revision — Drive-backed type, imagery, attribution and marquees. */
+.design-nocturne {
+  --sans: var(--font-nocturne-variable), "IBM Plex Sans Arabic", sans-serif;
+  --show-heading: var(--font-nocturne-bold), "IBM Plex Sans Arabic", sans-serif;
+  --show-label: var(--font-nocturne-light), "IBM Plex Sans Arabic", sans-serif;
+  font-family: var(--sans);
+}
+.design-nocturne h1,
+.design-nocturne h2,
+.design-nocturne h3 { font-family: var(--show-heading); }
+.design-nocturne .eyebrow,
+.design-nocturne .showroom-hero-copy > p,
+.design-nocturne .showroom-statement > p,
+.design-nocturne .showroom-collections header p,
+.design-nocturne .showroom-process header p,
+.design-nocturne .showroom-projects > header p { font-family: var(--show-label); }
+[dir="rtl"] .design-nocturne,
+[dir="rtl"] .design-nocturne h1,
+[dir="rtl"] .design-nocturne h2,
+[dir="rtl"] .design-nocturne h3,
+[dir="rtl"] .design-nocturne .eyebrow { font-family: "IBM Plex Sans Arabic", sans-serif; }
+
+.nocturne-mobile-collections { display: none; }
+.design-nocturne > .partner-proof {
+  width: 100%;
+  margin: 0;
+  padding: clamp(70px, 8vw, 110px) 0;
+  background: #0a0a07;
+}
+.design-nocturne > .material-brand-marquee { background: #11110d; }
+.locale-shell > main.design-nocturne ~ .site-footer > .partner-proof,
+.locale-shell > main.design-immersive ~ .site-footer > .partner-proof { display: none; }
+.logo-marquee-section .partner-logo {
+  border-color: rgba(255,255,255,.14);
+  transition: opacity .3s ease, transform .3s ease;
+}
+.logo-marquee-section .partner-logo img { padding: 5px; }
+.logo-marquee-section .partner-logo.text-mark span {
+  font: 700 28px/1 var(--font-nocturne-bold), sans-serif;
+  letter-spacing: -.04em;
+}
+.logo-marquee-section .partner-logo[data-logo-id="mys"] { padding: 28px; background: #f4efe2; }
+.logo-marquee-section .partner-logo[data-logo-id="amaken"] { padding: 22px 28px; background: #fff; }
+.material-brand-marquee .partner-logo[data-logo-id="saviola"] { background: #161610; }
+
+.nocturne-final-cta {
+  min-height: 78svh;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 34px;
+  padding: clamp(90px, 12vw, 180px) var(--gutter);
+  color: #f6f1df;
+  background: #050504;
+}
+.nocturne-final-cta > p { margin: 0; font: 500 9px var(--show-label); letter-spacing: .14em; text-transform: uppercase; }
+.nocturne-final-cta h2 { max-width: 1080px; margin: 0; font-size: clamp(54px, 8.5vw, 132px); line-height: .88; letter-spacing: -.065em; text-wrap: balance; }
+.nocturne-final-cta h2 em { color: var(--show-accent); font-style: normal; }
+.nocturne-final-cta > a { min-height: 58px; display: inline-flex; align-items: center; justify-content: space-between; gap: 70px; padding: 0 20px; color: #050504; background: var(--show-accent); font: 600 10px var(--show-label); text-transform: uppercase; }
+
+.project-attribution { display: flex; align-items: center; gap: 12px; margin-top: 22px; }
+.project-client-text { min-width: 122px; min-height: 58px; display: grid; place-items: center; padding: 10px 18px; color: #111; background: #f6f1df; font: 700 22px/1 var(--sans); letter-spacing: -.04em; }
+.project-collaborator-logo,
+.project-client-logo { width: 150px; height: 58px; display: grid; place-items: center; margin: 0; padding: 8px 14px; background: #f6f1df; }
+.project-collaborator-logo.dark,
+.project-client-logo.dark { background: #161610; border: 1px solid rgba(255,255,255,.24); }
+.project-collaborator-logo img,
+.project-client-logo img { width: 100%; height: 100%; object-fit: contain; }
+.project-attribution.compact { margin: 0 0 20px; }
+.project-attribution.compact .project-client-text,
+.project-attribution.compact .project-collaborator-logo { min-height: 48px; height: 48px; }
+
+.field small { display: block; margin-top: 10px; color: rgba(0,0,0,.58); font-size: 12px; line-height: 1.5; }
+.form-action-area { margin-top: clamp(28px, 4vw, 55px); }
+.form-action-area .form-actions { margin-top: 0; padding-top: 0; }
+.choice-error { margin-top: 18px; }
+
+@media (max-width: 760px) {
+  .mobile-menu nav { bottom: 42%; overflow-y: auto; }
+  .mobile-find-us {
+    position: fixed;
+    inset: 58% 0 0;
+    z-index: 50;
+    display: grid;
+    align-content: start;
+    padding: 22px var(--gutter);
+    color: var(--white);
+    background: var(--black);
+    border-top: 1px solid var(--line-light);
+  }
+  .mobile-find-us p { margin: 0 0 12px; color: rgba(255,255,255,.55); font: 500 9px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+  .mobile-find-us a { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line-light); font-size: 15px; }
+  .mobile-find-us a span { width: 22px; color: var(--yellow); text-align: center; }
+
+  .design-nocturne .showroom-hero-copy h1 { font-size: clamp(50px, 15vw, 72px); line-height: .9; }
+  .design-nocturne .showroom-hero-copy > div > span,
+  .design-nocturne .showroom-statement > span,
+  .design-nocturne .showroom-about-copy p { font-size: 16px; line-height: 1.6; }
+  .design-nocturne .showroom-collections header h2,
+  .design-nocturne .showroom-process header h2,
+  .design-nocturne .showroom-projects > header h2 { font-size: clamp(46px, 14vw, 68px); line-height: .92; }
+  .nocturne-desktop-collections { display: none; }
+  .nocturne-mobile-collections { display: grid; gap: 16px; }
+  .nocturne-category-card {
+    min-height: 78svh;
+    position: relative;
+    display: grid;
+    align-content: end;
+    grid-template-columns: 34px 1fr auto;
+    gap: 14px;
+    padding: 22px;
+    overflow: hidden;
+    color: #fff;
+    background: #11110d;
+    opacity: .58;
+    transform: scale(.965);
+    transition: opacity .5s ease, transform .5s ease;
+    scroll-margin-block: 16vh;
+  }
+  .nocturne-category-card::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg, rgba(0,0,0,.82), rgba(0,0,0,.08) 72%); }
+  .nocturne-category-card > img { object-fit: cover; filter: brightness(.72) saturate(.72); transition: filter .5s ease, transform .8s ease; }
+  .nocturne-category-card > span,
+  .nocturne-category-card > div,
+  .nocturne-category-card > b { position: relative; z-index: 2; }
+  .nocturne-category-card > span { color: var(--show-accent); font: 500 10px var(--show-label); }
+  .nocturne-category-card h3 { margin: 0 0 10px; font-size: clamp(38px, 12vw, 58px); line-height: .9; }
+  .nocturne-category-card p { margin: 0; font-size: 16px; line-height: 1.45; }
+  .nocturne-category-card > b { align-self: end; font-size: 22px; }
+  .nocturne-category-card.active { opacity: 1; transform: scale(1); }
+  .nocturne-category-card.active > img { filter: brightness(.94) saturate(.92); transform: scale(1.025); }
+  .nocturne-final-cta { min-height: 70svh; }
+  .nocturne-final-cta h2 { font-size: clamp(52px, 16vw, 78px); }
+  .project-attribution { flex-wrap: wrap; }
+  .project-attribution.compact .project-client-text { min-width: 105px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nocturne-category-card,
+  .nocturne-category-card > img,
+  .logo-marquee-section .partner-logo { transition: none; transform: none; }
+}
 @media (max-width: 760px) {
   .immersive-header > .immersive-wordmark,
   .immersive-header > .immersive-wordmark .wordmark.brand-mark { width: 126px; max-width: 126px; }

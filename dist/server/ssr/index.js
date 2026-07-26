@@ -8,17 +8,7 @@ var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __esmMin = (fn, res) => () => (fn && (res = fn(fn = 0)), res);
 var __commonJSMin = (cb, mod) => () => (mod || (cb((mod = { exports: {} }).exports, mod), cb = null), mod.exports);
-var __exportAll = (all, no_symbols) => {
-	let target = {};
-	for (var name in all) __defProp(target, name, {
-		get: all[name],
-		enumerable: true
-	});
-	if (!no_symbols) __defProp(target, Symbol.toStringTag, { value: "Module" });
-	return target;
-};
 var __copyProps = (to, from, except, desc) => {
 	if (from && typeof from === "object" || typeof from === "function") for (var keys = __getOwnPropNames(from), i = 0, n = keys.length, key; i < n; i++) {
 		key = keys[i];
@@ -33,9 +23,8 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 	value: mod,
 	enumerable: true
 }) : target, mod));
-var __toCommonJS = (mod) => __hasOwnProp.call(mod, "module.exports") ? mod["module.exports"] : __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 //#endregion
-//#region node_modules/vinext/dist/server/http-error-responses.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/http-error-responses.js
 /**
 * Build a 404 Not Found plain-text response.
 *
@@ -50,7 +39,7 @@ function notFoundResponse(init) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/utils/base-path.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/utils/base-path.js
 /**
 * Shared basePath helpers.
 *
@@ -74,9 +63,7 @@ function stripBasePath(pathname, basePath) {
 	return pathname.slice(basePath.length) || "/";
 }
 //#endregion
-//#region node_modules/vinext/dist/server/headers.js
-/** URL-encoded JSON route params carried on RSC responses. */
-var VINEXT_PARAMS_HEADER = "X-Vinext-Params";
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/headers.js
 /** Deduplicated, sorted list of mounted layout slots for cache keying. */
 var VINEXT_MOUNTED_SLOTS_HEADER = "X-Vinext-Mounted-Slots";
 /** Route interception context for parallel/intercepting routes. */
@@ -88,7 +75,7 @@ var NEXT_ROUTER_PREFETCH_HEADER = "Next-Router-Prefetch";
 var NEXT_ROUTER_SEGMENT_PREFETCH_HEADER = "Next-Router-Segment-Prefetch";
 var NEXT_URL_HEADER = "Next-Url";
 //#endregion
-//#region node_modules/vinext/dist/server/request-pipeline.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/request-pipeline.js
 /**
 * Returns true if a request pathname looks like a protocol-relative open
 * redirect, in either literal or percent-encoded form.
@@ -123,7 +110,7 @@ function isOpenRedirectShaped(rawPathname) {
 	return false;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/artifact-compatibility.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/artifact-compatibility.js
 function createArtifactCompatibilityEnvelope(input = {}) {
 	return {
 		schemaVersion: 1,
@@ -162,7 +149,7 @@ function parseArtifactCompatibilityEnvelope(value) {
 	};
 }
 //#endregion
-//#region node_modules/react/cjs/react.production.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react.production.js
 /**
 * @license React
 * react.production.js
@@ -522,12 +509,12 @@ var require_react_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/react/index.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/index.js
 var require_react = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_production();
 }));
 //#endregion
-//#region node_modules/vinext/dist/server/app-elements-wire.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-elements-wire.js
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 var APP_INTERCEPTION_SEPARATOR = "\0";
 var APP_ARTIFACT_COMPATIBILITY_KEY = "__artifactCompatibility";
@@ -744,7 +731,7 @@ var AppElementsWire = {
 	withLayoutFlags
 };
 //#endregion
-//#region node_modules/vinext/dist/shims/url-safety.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/url-safety.js
 /**
 * Shared URL safety utilities for Link, Form, and navigation shims.
 *
@@ -772,126 +759,7 @@ function buildDangerousSchemeRegex(scheme) {
 	const chars = scheme.split("").join(SCHEME_IGNORED);
 	return new RegExp(`^${LEADING_IGNORED}${chars}${SCHEME_IGNORED}:`, "i");
 }
-var DANGEROUS_SCHEME_RES = [
-	buildDangerousSchemeRegex("javascript"),
-	buildDangerousSchemeRegex("data"),
-	buildDangerousSchemeRegex("vbscript")
-];
-var DANGEROUS_URL_BLOCK_MESSAGE = "Next.js has blocked a javascript: URL as a security precaution.";
-function isDangerousScheme(url) {
-	const str = "" + url;
-	return DANGEROUS_SCHEME_RES.some((re) => re.test(str));
-}
-function assertSafeNavigationUrl(url) {
-	if (isDangerousScheme(url)) throw new Error(DANGEROUS_URL_BLOCK_MESSAGE);
-}
-//#endregion
-//#region node_modules/vinext/dist/shims/url-utils.js
-/**
-* Shared URL utilities for same-origin detection.
-*
-* Used by link.tsx, navigation.ts, and router.ts to normalize
-* same-origin absolute URLs to local paths for client-side navigation.
-*/
-/**
-* If `url` is an absolute same-origin URL, return the local path
-* (pathname + search + hash). Returns null for truly external URLs
-* or on the server (where origin is unknown).
-*/
-function toSameOriginPath(url) {
-	if (typeof window === "undefined") return null;
-	try {
-		const parsed = url.startsWith("//") ? new URL(url, window.location.origin) : new URL(url);
-		if (parsed.origin === window.location.origin) return parsed.pathname + parsed.search + parsed.hash;
-	} catch {}
-	return null;
-}
-/**
-* If `url` is an absolute same-origin URL, return the app-relative path
-* (basePath stripped from the pathname, if configured). Returns null for
-* truly external URLs or on the server.
-*/
-function toSameOriginAppPath(url, basePath) {
-	const localPath = toSameOriginPath(url);
-	if (localPath == null || !basePath) return localPath;
-	try {
-		const parsed = new URL(localPath, "http://vinext.local");
-		if (!hasBasePath(parsed.pathname, basePath)) return null;
-		return stripBasePath(parsed.pathname, basePath) + parsed.search + parsed.hash;
-	} catch {
-		return localPath;
-	}
-}
-/**
-* Prepend basePath to a local path for browser URLs / fetches.
-*/
-function withBasePath(path, basePath) {
-	if (!basePath || !path.startsWith("/") || path.startsWith("http://") || path.startsWith("https://") || path.startsWith("//")) return path;
-	return basePath + path;
-}
-/**
-* Resolve a potentially relative href against the current URL.
-* Handles: "#hash", "?query", "?query#hash", and relative paths.
-*/
-function resolveRelativeHref(href, currentUrl, basePath = "") {
-	const base = currentUrl ?? (typeof window !== "undefined" ? window.location.href : void 0);
-	if (!base) return href;
-	if (href.startsWith("/") || href.startsWith("http://") || href.startsWith("https://") || href.startsWith("//")) return href;
-	try {
-		const resolved = new URL(href, base);
-		return (basePath && resolved.pathname === basePath ? "" : basePath ? stripBasePath(resolved.pathname, basePath) : resolved.pathname) + resolved.search + resolved.hash;
-	} catch {
-		return href;
-	}
-}
-/**
-* Convert a local navigation target into the browser URL that should be used
-* for history entries, fetches, and onNavigate callbacks.
-*/
-function toBrowserNavigationHref(href, currentUrl, basePath = "") {
-	const resolved = resolveRelativeHref(href, currentUrl, basePath);
-	if (!basePath) return withBasePath(resolved, basePath);
-	if (resolved === "") return basePath;
-	if (resolved.startsWith("?") || resolved.startsWith("#")) return basePath + resolved;
-	return withBasePath(resolved, basePath);
-}
-function isHashOnlyBrowserUrlChange(href, currentHref, basePath = "") {
-	try {
-		const current = new URL(currentHref);
-		const next = new URL(href, currentHref);
-		return stripBasePath(current.pathname, basePath) === stripBasePath(next.pathname, basePath) && current.search === next.search && next.hash !== "";
-	} catch {
-		return false;
-	}
-}
-//#endregion
-//#region node_modules/vinext/dist/client/instrumentation-client-state.js
-var clientInstrumentationHooks = null;
-function notifyAppRouterTransitionStart(href, navigationType) {
-	clientInstrumentationHooks?.onRouterTransitionStart?.(href, navigationType);
-}
-//#endregion
-//#region node_modules/vinext/dist/server/app-rsc-render-mode.js
-var APP_RSC_RENDER_MODE_NAVIGATION = "navigation";
-var APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI = "refresh-preserve-ui";
-var APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI = "action-rerender-preserve-ui";
-function parseAppRscRenderMode(value) {
-	switch (value) {
-		case APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI: return APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI;
-		case APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI: return APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI;
-		default: return APP_RSC_RENDER_MODE_NAVIGATION;
-	}
-}
-//#endregion
-//#region node_modules/vinext/dist/server/app-rsc-cache-busting.js
-/**
-* RSC cache-busting hashes cover the headers that make a `.rsc` payload vary.
-* Client-side variant headers must survive transit through CDNs and reverse
-* proxies; stripping them changes the server hash and turns stale URLs into
-* repeated canonicalization redirects.
-*/
-var VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM = "_rsc";
-var VINEXT_RSC_CONTENT_TYPE = "text/x-component";
+buildDangerousSchemeRegex("javascript"), buildDangerousSchemeRegex("data"), buildDangerousSchemeRegex("vbscript");
 [
 	"RSC",
 	"Accept",
@@ -903,85 +771,9 @@ var VINEXT_RSC_CONTENT_TYPE = "text/x-component";
 	VINEXT_MOUNTED_SLOTS_HEADER,
 	VINEXT_RSC_RENDER_MODE_HEADER
 ].join(", ");
-var CACHE_BUSTING_DIGEST_BYTES = 12;
-var textEncoder = new TextEncoder();
-function encodeBase64Url(bytes) {
-	let binary = "";
-	for (const byte of bytes) binary += String.fromCharCode(byte);
-	return btoa(binary).replaceAll("+", "-").replaceAll("/", "_").replace(/=+$/, "");
-}
-function normalizeHeaderValue(value) {
-	return value ?? "0";
-}
-function normalizeRenderModeHeaderValue(value) {
-	const renderMode = parseAppRscRenderMode(value);
-	return renderMode === "navigation" ? null : renderMode;
-}
-function createCacheBustingInput(headers, options = {}) {
-	const values = [
-		headers.get(NEXT_ROUTER_PREFETCH_HEADER),
-		headers.get(NEXT_ROUTER_SEGMENT_PREFETCH_HEADER),
-		headers.get(NEXT_ROUTER_STATE_TREE_HEADER),
-		headers.get(NEXT_URL_HEADER),
-		headers.get(VINEXT_INTERCEPTION_CONTEXT_HEADER),
-		headers.get(VINEXT_MOUNTED_SLOTS_HEADER),
-		...options.includeRenderModeHeader === false ? [] : [normalizeRenderModeHeaderValue(headers.get(VINEXT_RSC_RENDER_MODE_HEADER))]
-	];
-	if (values.every((value) => value === null)) return null;
-	return values.map(normalizeHeaderValue).join(",");
-}
-async function sha256CacheBustingHash(input) {
-	const digest = await globalThis.crypto.subtle.digest("SHA-256", textEncoder.encode(input));
-	return encodeBase64Url(new Uint8Array(digest).subarray(0, CACHE_BUSTING_DIGEST_BYTES));
-}
-function getSearchPairsWithoutRscCacheBusting(url) {
-	return (url.search.startsWith("?") ? url.search.slice(1) : url.search).split("&").filter((pair) => pair.length > 0 && !isRscCacheBustingSearchPair(pair));
-}
-function isRscCacheBustingSearchPair(pair) {
-	const separatorIndex = pair.indexOf("=");
-	const rawKey = separatorIndex === -1 ? pair : pair.slice(0, separatorIndex);
-	try {
-		return decodeURIComponent(rawKey.replaceAll("+", " ")) === VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM;
-	} catch {
-		return rawKey === VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM;
-	}
-}
-async function computeRscCacheBustingSearchParam(headers) {
-	const input = createCacheBustingInput(headers);
-	if (input === null) return "";
-	return sha256CacheBustingHash(input);
-}
-function setRscCacheBustingSearchParam(url, hash) {
-	const pairs = getSearchPairsWithoutRscCacheBusting(url);
-	pairs.push(hash.length > 0 ? `${VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM}=${hash}` : VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM);
-	url.search = `?${pairs.join("&")}`;
-}
-function createRscRequestHeaders(options = {}) {
-	const headers = new Headers({
-		Accept: VINEXT_RSC_CONTENT_TYPE,
-		["RSC"]: "1"
-	});
-	if (options.interceptionContext !== void 0 && options.interceptionContext !== null) headers.set(VINEXT_INTERCEPTION_CONTEXT_HEADER, options.interceptionContext);
-	if (options.mountedSlotsHeader !== void 0 && options.mountedSlotsHeader !== null) headers.set(VINEXT_MOUNTED_SLOTS_HEADER, options.mountedSlotsHeader);
-	const renderMode = options.renderMode ?? "navigation";
-	if (renderMode !== "navigation") headers.set(VINEXT_RSC_RENDER_MODE_HEADER, renderMode);
-	return headers;
-}
-function toRscRequestPath(href) {
-	const hashIndex = href.indexOf("#");
-	const beforeHash = hashIndex === -1 ? href : href.slice(0, hashIndex);
-	const queryIndex = beforeHash.indexOf("?");
-	const pathname = queryIndex === -1 ? beforeHash : beforeHash.slice(0, queryIndex);
-	const query = queryIndex === -1 ? "" : beforeHash.slice(queryIndex);
-	return `${pathname.length > 1 && pathname.endsWith("/") ? pathname.slice(0, -1) : pathname}.rsc${query}`;
-}
-async function createRscRequestUrl(href, headers) {
-	const url = new URL(toRscRequestPath(href), "http://vinext.local");
-	setRscCacheBustingSearchParam(url, await computeRscCacheBustingSearchParam(headers));
-	return `${url.pathname}${url.search}`;
-}
+new TextEncoder();
 //#endregion
-//#region node_modules/vinext/dist/shims/readonly-url-search-params.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/readonly-url-search-params.js
 var ReadonlyURLSearchParamsError = class extends Error {
 	constructor() {
 		super("Method unavailable on `ReadonlyURLSearchParams`. Read more: https://nextjs.org/docs/app/api-reference/functions/use-search-params#updating-searchparams");
@@ -1006,15 +798,7 @@ var ReadonlyURLSearchParams = class extends URLSearchParams {
 	}
 };
 //#endregion
-//#region node_modules/vinext/dist/shims/navigation.js
-/**
-* next/navigation shim
-*
-* App Router navigation hooks. These work on both server (RSC) and client.
-* Server-side: reads from a request context set by the RSC handler.
-* Client-side: reads from browser Location API and provides navigation.
-*/
-var _LAYOUT_SEGMENT_CTX_KEY = Symbol.for("vinext.layoutSegmentContext");
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/navigation.js
 var _SERVER_INSERTED_HTML_CTX_KEY = Symbol.for("vinext.serverInsertedHTMLContext");
 function getServerInsertedHTMLContext() {
 	if (typeof import_react.createContext !== "function") return null;
@@ -1023,48 +807,23 @@ function getServerInsertedHTMLContext() {
 	return globalState[_SERVER_INSERTED_HTML_CTX_KEY] ?? null;
 }
 var ServerInsertedHTMLContext = getServerInsertedHTMLContext();
-/**
-* Get or create the layout segment context.
-* Returns null in the RSC environment (createContext unavailable).
-*/
-function getLayoutSegmentContext() {
-	if (typeof import_react.createContext !== "function") return null;
-	const globalState = globalThis;
-	if (!globalState[_LAYOUT_SEGMENT_CTX_KEY]) globalState[_LAYOUT_SEGMENT_CTX_KEY] = import_react.createContext({ children: [] });
-	return globalState[_LAYOUT_SEGMENT_CTX_KEY] ?? null;
-}
 var GLOBAL_ACCESSORS_KEY = Symbol.for("vinext.navigation.globalAccessors");
 var _GLOBAL_ACCESSORS_KEY = GLOBAL_ACCESSORS_KEY;
 var _GLOBAL_HYDRATION_CONTEXT_KEY = Symbol.for("vinext.navigation.clientHydrationContext");
 function _getGlobalAccessors() {
 	return globalThis[_GLOBAL_ACCESSORS_KEY];
 }
-function _getClientHydrationContext() {
-	const globalState = globalThis;
-	if (Object.prototype.hasOwnProperty.call(globalState, _GLOBAL_HYDRATION_CONTEXT_KEY)) return globalState[_GLOBAL_HYDRATION_CONTEXT_KEY] ?? null;
-}
 function _setClientHydrationContext(ctx) {
 	globalThis[_GLOBAL_HYDRATION_CONTEXT_KEY] = ctx;
 }
-var _serverContext = null;
 var _serverInsertedHTMLCallbacks = [];
-var _getServerContext = () => {
-	if (typeof window !== "undefined") {
-		const hydrationContext = _getClientHydrationContext();
-		return hydrationContext !== void 0 ? hydrationContext : _serverContext;
-	}
-	const g = _getGlobalAccessors();
-	return g ? g.getServerContext() : _serverContext;
-};
 var _setServerContext = (ctx) => {
 	if (typeof window !== "undefined") {
-		_serverContext = ctx;
 		_setClientHydrationContext(ctx);
 		return;
 	}
 	const g = _getGlobalAccessors();
 	if (g) g.setServerContext(ctx);
-	else _serverContext = ctx;
 };
 var _getInsertedHTMLCallbacks = () => {
 	const g = _getGlobalAccessors();
@@ -1080,7 +839,7 @@ var _clearInsertedHTMLCallbacks = () => {
 * @internal
 */
 function _registerStateAccessors(accessors) {
-	_getServerContext = accessors.getServerContext;
+	accessors.getServerContext;
 	_setServerContext = accessors.setServerContext;
 	_getInsertedHTMLCallbacks = accessors.getInsertedHTMLCallbacks;
 	_clearInsertedHTMLCallbacks = accessors.clearInsertedHTMLCallbacks;
@@ -1093,99 +852,7 @@ function setNavigationContext(ctx) {
 	_setServerContext(ctx);
 }
 var isServer = typeof window === "undefined";
-function getCurrentInterceptionContext() {
-	if (isServer) return null;
-	return stripBasePath(window.location.pathname, "");
-}
-/** Get or create the shared in-memory RSC prefetch cache on window. */
-function getPrefetchCache() {
-	if (isServer) return /* @__PURE__ */ new Map();
-	if (!window.__VINEXT_RSC_PREFETCH_CACHE__) window.__VINEXT_RSC_PREFETCH_CACHE__ = /* @__PURE__ */ new Map();
-	return window.__VINEXT_RSC_PREFETCH_CACHE__;
-}
-/**
-* Get or create the shared set of already-prefetched RSC URLs on window.
-* Keyed by interception-aware cache key so distinct source routes do not alias.
-*/
-function getPrefetchedUrls() {
-	if (isServer) return /* @__PURE__ */ new Set();
-	if (!window.__VINEXT_RSC_PREFETCHED_URLS__) window.__VINEXT_RSC_PREFETCHED_URLS__ = /* @__PURE__ */ new Set();
-	return window.__VINEXT_RSC_PREFETCHED_URLS__;
-}
-/**
-* Evict prefetch cache entries if at capacity.
-* First sweeps expired entries, then falls back to FIFO eviction.
-*/
-function evictPrefetchCacheIfNeeded() {
-	const cache = getPrefetchCache();
-	if (cache.size < 50) return;
-	const now = Date.now();
-	const prefetched = getPrefetchedUrls();
-	for (const [key, entry] of cache) if (now - entry.timestamp >= 3e4) {
-		cache.delete(key);
-		prefetched.delete(key);
-	}
-	while (cache.size >= 50) {
-		const oldest = cache.keys().next().value;
-		if (oldest !== void 0) {
-			cache.delete(oldest);
-			prefetched.delete(oldest);
-		} else break;
-	}
-}
-/**
-* Snapshot an RSC response to an ArrayBuffer for caching and replay.
-* Consumes the response body and stores it with content-type and URL metadata.
-*/
-async function snapshotRscResponse(response) {
-	return {
-		buffer: await response.arrayBuffer(),
-		contentType: response.headers.get("content-type") ?? "text/x-component",
-		mountedSlotsHeader: response.headers.get(VINEXT_MOUNTED_SLOTS_HEADER),
-		paramsHeader: response.headers.get(VINEXT_PARAMS_HEADER),
-		url: response.url
-	};
-}
-/**
-* Prefetch an RSC response and snapshot it for later consumption.
-* Stores the in-flight promise so immediate clicks can await it instead
-* of firing a duplicate fetch.
-* Enforces a maximum cache size to prevent unbounded memory growth on
-* link-heavy pages.
-*/
-function prefetchRscResponse(rscUrl, fetchPromise, interceptionContext = null, mountedSlotsHeader = null) {
-	const cacheKey = AppElementsWire.encodeCacheKey(rscUrl, interceptionContext);
-	const cache = getPrefetchCache();
-	const prefetched = getPrefetchedUrls();
-	const entry = {
-		outcome: "pending",
-		timestamp: Date.now()
-	};
-	entry.pending = fetchPromise.then(async (response) => {
-		if (response.ok) entry.snapshot = {
-			...await snapshotRscResponse(response),
-			mountedSlotsHeader
-		};
-		else {
-			prefetched.delete(cacheKey);
-			cache.delete(cacheKey);
-		}
-	}).catch(() => {
-		prefetched.delete(cacheKey);
-		cache.delete(cacheKey);
-	}).finally(() => {
-		entry.pending = void 0;
-		if (entry.snapshot) entry.outcome = "cache-seeded";
-	});
-	cache.set(cacheKey, entry);
-	evictPrefetchCacheIfNeeded();
-}
 var _CLIENT_NAV_STATE_KEY = Symbol.for("vinext.clientNavigationState");
-var _MOUNTED_SLOTS_HEADER_KEY = Symbol.for("vinext.mountedSlotsHeader");
-function getMountedSlotsHeader() {
-	if (isServer) return null;
-	return window[_MOUNTED_SLOTS_HEADER_KEY] ?? null;
-}
 function getClientNavigationState() {
 	if (isServer) return null;
 	const globalState = window;
@@ -1214,17 +881,6 @@ function notifyNavigationListeners() {
 	if (!state) return;
 	for (const fn of state.listeners) fn();
 }
-/**
-* Get cached pathname snapshot for useSyncExternalStore.
-* Note: Returns cached value from ClientNavigationState, not live window.location.
-* The cache is updated by syncCommittedUrlStateFromLocation() after navigation commits.
-* This ensures referential stability and prevents infinite re-renders.
-* External pushState/replaceState while URL notifications are suppressed won't
-* be visible until the next commit.
-*/
-function getPathnameSnapshot() {
-	return getClientNavigationState()?.cachedPathname ?? "/";
-}
 function syncCommittedUrlStateFromLocation() {
 	const state = getClientNavigationState();
 	if (!state) return false;
@@ -1241,77 +897,6 @@ function syncCommittedUrlStateFromLocation() {
 		changed = true;
 	}
 	return changed;
-}
-var _CLIENT_NAV_RENDER_CTX_KEY = Symbol.for("vinext.clientNavigationRenderContext");
-function getClientNavigationRenderContext() {
-	if (typeof import_react.createContext !== "function") return null;
-	const globalState = globalThis;
-	if (!globalState[_CLIENT_NAV_RENDER_CTX_KEY]) globalState[_CLIENT_NAV_RENDER_CTX_KEY] = import_react.createContext(null);
-	return globalState[_CLIENT_NAV_RENDER_CTX_KEY] ?? null;
-}
-function useClientNavigationRenderSnapshot() {
-	const ctx = getClientNavigationRenderContext();
-	if (!ctx || typeof import_react.useContext !== "function") return null;
-	try {
-		return import_react.useContext(ctx);
-	} catch {
-		return null;
-	}
-}
-function subscribeToNavigation(cb) {
-	const state = getClientNavigationState();
-	if (!state) return () => {};
-	state.listeners.add(cb);
-	return () => {
-		state.listeners.delete(cb);
-	};
-}
-/**
-* Returns the current pathname.
-* Server: from request context. Client: from window.location.
-*/
-function usePathname() {
-	if (isServer) return _getServerContext()?.pathname ?? "/";
-	const renderSnapshot = useClientNavigationRenderSnapshot();
-	const pathname = import_react.useSyncExternalStore(subscribeToNavigation, getPathnameSnapshot, () => _getServerContext()?.pathname ?? "/");
-	if (renderSnapshot && (getClientNavigationState()?.navigationSnapshotActiveCount ?? 0) > 0) return renderSnapshot.pathname;
-	return pathname;
-}
-/**
-* Check if a href is an external URL (any URL scheme per RFC 3986, or protocol-relative).
-*/
-function isExternalUrl(href) {
-	return /^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith("//");
-}
-/**
-* Check if a href is only a hash change relative to the current URL.
-*/
-function isHashOnlyChange(href) {
-	if (typeof window === "undefined") return false;
-	if (href.startsWith("#")) return true;
-	return isHashOnlyBrowserUrlChange(href, window.location.href, "");
-}
-/**
-* Scroll to a hash target element, or to the top if no hash.
-*/
-function scrollToHash(hash) {
-	if (!hash || hash === "#") {
-		window.scrollTo(0, 0);
-		return;
-	}
-	const id = hash.slice(1);
-	const element = document.getElementById(id);
-	if (element) element.scrollIntoView({ behavior: "auto" });
-}
-function withSuppressedUrlNotifications(fn) {
-	const state = getClientNavigationState();
-	if (!state) return fn();
-	state.suppressUrlNotifyCount += 1;
-	try {
-		return fn();
-	} finally {
-		state.suppressUrlNotifyCount -= 1;
-	}
 }
 /**
 * Commit pending client navigation state to committed snapshots.
@@ -1340,30 +925,6 @@ function commitClientNavigationState(navId, options) {
 	const shouldNotify = urlChanged || state.hasPendingNavigationUpdate;
 	state.hasPendingNavigationUpdate = false;
 	if (shouldNotify) notifyNavigationListeners();
-}
-function pushHistoryStateWithoutNotify(data, unused, url) {
-	withSuppressedUrlNotifications(() => {
-		getClientNavigationState()?.originalPushState.call(window.history, data, unused, url);
-	});
-}
-function replaceHistoryStateWithoutNotify(data, unused, url) {
-	withSuppressedUrlNotifications(() => {
-		getClientNavigationState()?.originalReplaceState.call(window.history, data, unused, url);
-	});
-}
-/**
-* Save the current scroll position into the current history state.
-* Called before every navigation to enable scroll restoration on back/forward.
-*
-* Uses replaceHistoryStateWithoutNotify to avoid triggering the patched
-* history.replaceState interception (which would cause spurious re-renders).
-*/
-function saveScrollPosition() {
-	replaceHistoryStateWithoutNotify({
-		...window.history.state ?? {},
-		__vinext_scrollX: window.scrollX,
-		__vinext_scrollY: window.scrollY
-	}, "");
 }
 /**
 * Restore scroll position from a history state object (used on popstate).
@@ -1395,128 +956,6 @@ function restoreScrollPosition(state) {
 			});
 		});
 	}
-}
-/**
-* Navigate to a URL, handling external URLs, hash-only changes, and RSC navigation.
-*/
-async function navigateClientSide(href, mode, scroll, programmaticTransition = false) {
-	let normalizedHref = href;
-	if (isExternalUrl(href)) {
-		const localPath = toSameOriginAppPath(href, "");
-		if (localPath == null) {
-			if (mode === "replace") window.location.replace(href);
-			else window.location.assign(href);
-			return;
-		}
-		normalizedHref = localPath;
-	}
-	const fullHref = toBrowserNavigationHref(normalizedHref, window.location.href, "");
-	notifyAppRouterTransitionStart(fullHref, mode);
-	if (mode === "push") saveScrollPosition();
-	if (isHashOnlyChange(fullHref)) {
-		const hash = fullHref.includes("#") ? fullHref.slice(fullHref.indexOf("#")) : "";
-		if (mode === "replace") replaceHistoryStateWithoutNotify(null, "", fullHref);
-		else pushHistoryStateWithoutNotify(null, "", fullHref);
-		commitClientNavigationState();
-		if (scroll) scrollToHash(hash);
-		return;
-	}
-	const hashIdx = fullHref.indexOf("#");
-	const hash = hashIdx !== -1 ? fullHref.slice(hashIdx) : "";
-	if (typeof window.__VINEXT_RSC_NAVIGATE__ === "function") await window.__VINEXT_RSC_NAVIGATE__(fullHref, 0, "navigate", mode, void 0, programmaticTransition);
-	else {
-		if (mode === "replace") replaceHistoryStateWithoutNotify(null, "", fullHref);
-		else pushHistoryStateWithoutNotify(null, "", fullHref);
-		commitClientNavigationState();
-	}
-	if (scroll) if (hash) scrollToHash(hash);
-	else window.scrollTo(0, 0);
-}
-/**
-* App Router public router instance. Mirrors Next.js's
-* `publicAppRouterInstance` from
-* `packages/next/src/client/components/app-router-instance.ts`.
-*
-* Exported so the App Router browser entry can install it on
-* `window.next.router` for Next.js parity (see `client/window-next.ts`).
-* Internal callers in this file continue to use `_appRouter` for brevity.
-*/
-var _appRouter = {
-	bfcacheId: "0",
-	push(href, options) {
-		assertSafeNavigationUrl(href);
-		if (isServer) return;
-		import_react.startTransition(() => {
-			navigateClientSide(href, "push", options?.scroll !== false, true);
-		});
-	},
-	replace(href, options) {
-		assertSafeNavigationUrl(href);
-		if (isServer) return;
-		import_react.startTransition(() => {
-			navigateClientSide(href, "replace", options?.scroll !== false, true);
-		});
-	},
-	back() {
-		if (isServer) return;
-		window.history.back();
-	},
-	forward() {
-		if (isServer) return;
-		window.history.forward();
-	},
-	refresh() {
-		if (isServer) return;
-		const clearCaches = window.__VINEXT_CLEAR_NAV_CACHES__;
-		if (typeof clearCaches === "function") clearCaches();
-		const rscNavigate = window.__VINEXT_RSC_NAVIGATE__;
-		if (typeof rscNavigate === "function") {
-			const navigate = () => {
-				rscNavigate(window.location.href, 0, "refresh", void 0, void 0, true);
-			};
-			import_react.startTransition(navigate);
-		}
-	},
-	prefetch(href) {
-		assertSafeNavigationUrl(href);
-		if (isServer) return;
-		(async () => {
-			let prefetchHref = href;
-			if (href.startsWith("http://") || href.startsWith("https://") || href.startsWith("//")) {
-				const localPath = toSameOriginAppPath(href, "");
-				if (localPath == null) return;
-				prefetchHref = localPath;
-			}
-			const fullHref = toBrowserNavigationHref(prefetchHref, window.location.href, "");
-			const interceptionContext = getCurrentInterceptionContext();
-			const mountedSlotsHeader = getMountedSlotsHeader();
-			const headers = createRscRequestHeaders({ interceptionContext });
-			if (mountedSlotsHeader) headers.set(VINEXT_MOUNTED_SLOTS_HEADER, mountedSlotsHeader);
-			const rscUrl = await createRscRequestUrl(fullHref, headers);
-			const cacheKey = AppElementsWire.encodeCacheKey(rscUrl, interceptionContext);
-			const prefetched = getPrefetchedUrls();
-			if (prefetched.has(cacheKey)) return;
-			prefetched.add(cacheKey);
-			prefetchRscResponse(rscUrl, fetch(rscUrl, {
-				headers,
-				credentials: "include",
-				priority: "low"
-			}), interceptionContext, mountedSlotsHeader);
-		})().catch((error) => {
-			console.error("[vinext] RSC prefetch setup error:", error);
-		});
-	}
-};
-/**
-* App Router's useRouter — returns push/replace/back/forward/refresh.
-* Different from Pages Router's useRouter (next/router).
-*
-* Returns a stable singleton: the same object reference on every call,
-* matching Next.js behavior so components using referential equality
-* (e.g. useMemo / useEffect deps, React.memo) don't re-render unnecessarily.
-*/
-function useRouter() {
-	return _appRouter;
 }
 /**
 * useServerInsertedHTML — inject HTML during SSR from client components.
@@ -1606,7 +1045,7 @@ if (!isServer) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/internal/als-registry.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/internal/als-registry.js
 /**
 * Shared helper for registering AsyncLocalStorage instances on `globalThis`
 * via `Symbol.for(...)` so that they survive multiple module instances.
@@ -1657,7 +1096,7 @@ function getOrCreateAls(key) {
 	return _g$2[sym] ??= new AsyncLocalStorage$1();
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/unified-request-context.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/unified-request-context.js
 var _REQUEST_CONTEXT_ALS_KEY = Symbol.for("vinext.requestContext.als");
 var _g$1 = globalThis;
 var _als$1 = getOrCreateAls("vinext.unifiedRequestContext.als");
@@ -1731,7 +1170,7 @@ function isInsideUnifiedScope() {
 	return _als$1.getStore() != null;
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/navigation-state.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/navigation-state.js
 /**
 * Server-only navigation state backed by AsyncLocalStorage.
 *
@@ -1782,7 +1221,7 @@ var _accessors = {
 _registerStateAccessors(_accessors);
 globalThis[GLOBAL_ACCESSORS_KEY] = _accessors;
 //#endregion
-//#region node_modules/vinext/dist/shims/script-nonce-context.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/script-nonce-context.js
 var ScriptNonceContext = import_react.createContext(void 0);
 function ScriptNonceProvider(props) {
 	return import_react.createElement(ScriptNonceContext.Provider, { value: props.nonce }, props.children);
@@ -1792,7 +1231,7 @@ function withScriptNonce(element, nonce) {
 	return import_react.createElement(ScriptNonceProvider, { nonce }, element);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/html.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/html.js
 /**
 * HTML-safe JSON serialization for embedding data in <script> tags.
 *
@@ -1827,7 +1266,7 @@ function createInlineScriptTag(content, nonce) {
 	return `<script${createNonceAttribute(nonce)}>${content}<\/script>`;
 }
 //#endregion
-//#region node_modules/react/cjs/react-jsx-runtime.production.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.production.js
 /**
 * @license React
 * react-jsx-runtime.production.js
@@ -1857,25 +1296,12 @@ var require_react_jsx_runtime_production = /* @__PURE__ */ __commonJSMin(((expor
 		};
 	}
 	exports.jsx = jsxProd;
-	exports.jsxs = jsxProd;
 }));
 //#endregion
-//#region node_modules/react/jsx-runtime.js
-var require_jsx_runtime = /* @__PURE__ */ __commonJSMin(((exports, module) => {
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/slot.js
+var import_jsx_runtime = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_jsx_runtime_production();
-}));
-//#endregion
-//#region node_modules/vinext/dist/shims/slot.js
-var slot_exports = /* @__PURE__ */ __exportAll({
-	Children: () => Children,
-	ChildrenContext: () => ChildrenContext,
-	ElementsContext: () => ElementsContext,
-	ParallelSlot: () => ParallelSlot,
-	ParallelSlotsContext: () => ParallelSlotsContext,
-	Slot: () => Slot,
-	UNMATCHED_SLOT: () => UNMATCHED_SLOT
-});
-var import_jsx_runtime = require_jsx_runtime();
+})))();
 var EMPTY_ELEMENTS = Object.freeze({});
 /**
 * Holds resolved AppElements (not a Promise). React 19's use(Promise) during
@@ -1898,17 +1324,11 @@ function Slot({ id, children, parallelSlots }) {
 		})
 	});
 }
-function Children() {
-	return import_react.useContext(ChildrenContext);
-}
-function ParallelSlot({ name }) {
-	return import_react.useContext(ParallelSlotsContext)?.[name] ?? null;
-}
 //#endregion
-//#region node_modules/vinext/dist/server/app-browser-hydration.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-browser-hydration.js
 var RSC_FORM_STATE_GLOBAL = "__VINEXT_RSC_FORM_STATE__";
 //#endregion
-//#region node_modules/vinext/dist/server/app-client-reference-preloader.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-client-reference-preloader.js
 var resolvedPreload = Promise.resolve();
 function createClientReferencePreloader(options) {
 	let allReferencesPreloaded = false;
@@ -1951,7 +1371,7 @@ function createClientReferencePreloader(options) {
 	} };
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-stream.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-stream.js
 /**
 * Wraps a stream so that `onFlush` is called when the last byte has been read
 * by the downstream consumer (i.e. when the HTTP layer finishes draining the
@@ -1988,7 +1408,7 @@ function deferUntilStreamConsumed(stream, onFlush) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-ssr-stream.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-ssr-stream.js
 /**
 * Fix invalid preload "as" values in RSC Flight hint lines before they reach
 * the client. React Flight emits HL hints with as="stylesheet" for CSS, but
@@ -2126,7 +1546,7 @@ function createTickBufferedTransform(rscEmbed, injectHTML = "") {
 	});
 }
 //#endregion
-//#region node_modules/react-dom/cjs/react-dom.production.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom.production.js
 /**
 * @license React
 * react-dom.production.js
@@ -2267,7 +1687,7 @@ var require_react_dom_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/react-dom/index.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/index.js
 var require_react_dom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function checkDCE() {
 		if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -2281,7 +1701,7 @@ var require_react_dom = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_dom_production();
 }));
 //#endregion
-//#region node_modules/react-dom/cjs/react-dom-server.edge.production.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom-server.edge.production.js
 var require_react_dom_server_edge_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	globalThis.AsyncLocalStorage = __viteRscAsyncHooks.AsyncLocalStorage;
 	/**
@@ -6403,7 +5823,7 @@ var require_react_dom_server_edge_production = /* @__PURE__ */ __commonJSMin(((e
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.js
 /**
 * @license React
 * react-dom-server-legacy.browser.production.js
@@ -10246,7 +9666,7 @@ var require_react_dom_server_legacy_browser_production = /* @__PURE__ */ __commo
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/dist-rz-Bnebz.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_r_86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/dist-rz-Bnebz.js
 var import_server_edge = (/* @__PURE__ */ __commonJSMin(((exports) => {
 	var b;
 	var l;
@@ -10274,7 +9694,7 @@ function memoize(f, options) {
 	});
 }
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/shared-BViDMJTQ.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_r_86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/shared-BViDMJTQ.js
 function removeReferenceCacheTag(id) {
 	return id.split("$$cache=")[0];
 }
@@ -10288,7 +9708,7 @@ function setInternalRequire() {
 	};
 }
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/core/ssr.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_r_86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/core/ssr.js
 var init = false;
 function setRequireModule(options) {
 	if (init) return;
@@ -10303,7 +9723,7 @@ function createServerConsumerManifest() {
 	return {};
 }
 //#endregion
-//#region node_modules/react-server-dom-webpack/cjs/react-server-dom-webpack-client.edge.production.js
+//#region node_modules/.pnpm/react-server-dom-webpack@19_52441176a68c130d0650c2079b651ea6/node_modules/react-server-dom-webpack/cjs/react-server-dom-webpack-client.edge.production.js
 /**
 * @license React
 * react-server-dom-webpack-client.edge.production.js
@@ -11616,7 +11036,7 @@ var require_react_server_dom_webpack_client_edge_production = /* @__PURE__ */ __
 	};
 }));
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/react/ssr.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_r_86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/react/ssr.js
 var import_client_edge = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_server_dom_webpack_client_edge_production();
 })))(), 1);
@@ -11628,128 +11048,9 @@ function createFromReadableStream(stream, options = {}) {
 }
 //#endregion
 //#region \0virtual:vite-rsc/client-references
-var client_references_default = {
-	"15c18cfaeeff": async () => {
-		const m = await import("./assets/layout-segment-context-DLqszpdU.js");
-		return { get "LayoutSegmentProvider"() {
-			return m["LayoutSegmentProvider"];
-		} };
-	},
-	"1a2e3044d30c": async () => {
-		const m = await import("./assets/InquiryForm-DhZ_1Ti9.js");
-		return { get "InquiryForm"() {
-			return m["InquiryForm"];
-		} };
-	},
-	"3066addfb889": async () => {
-		const m = await import("./assets/ProcessStory-txWOJLor.js");
-		return { get "ProcessStory"() {
-			return m["ProcessStory"];
-		} };
-	},
-	"5297feacba07": async () => {
-		const m = await import("./assets/ShowroomProcess-CaM_lWD2.js");
-		return { get "ShowroomProcess"() {
-			return m["ShowroomProcess"];
-		} };
-	},
-	"593f344dc510": async () => {
-		const m = await import("./assets/error-boundary-4nEa0_1F.js");
-		return {
-			get "ErrorBoundary"() {
-				return m["ErrorBoundary"];
-			},
-			get "ForbiddenBoundary"() {
-				return m["ForbiddenBoundary"];
-			},
-			get "NotFoundBoundary"() {
-				return m["NotFoundBoundary"];
-			},
-			get "RedirectBoundary"() {
-				return m["RedirectBoundary"];
-			},
-			get "UnauthorizedBoundary"() {
-				return m["UnauthorizedBoundary"];
-			}
-		};
-	},
-	"5f1b05c78786": async () => {
-		const m = await import("./assets/DesignAwareLink-v0fQ-wIE.js");
-		return { get "DesignAwareLink"() {
-			return m["DesignAwareLink"];
-		} };
-	},
-	"5fc7428cabbc": async () => {
-		const m = await import("./assets/ImmersiveWebGL-C9bKWMwG.js");
-		return { get "ImmersiveWebGL"() {
-			return m["ImmersiveWebGL"];
-		} };
-	},
-	"726cfa7c07d1": async () => {
-		const m = await import("./assets/ProjectExplorer-yufbwkt1.js");
-		return { get "ProjectExplorer"() {
-			return m["ProjectExplorer"];
-		} };
-	},
-	"8c0f216c4604": async () => {
-		const m = await Promise.resolve().then(() => slot_exports);
-		return {
-			get "Children"() {
-				return m["Children"];
-			},
-			get "ParallelSlot"() {
-				return m["ParallelSlot"];
-			},
-			get "Slot"() {
-				return m["Slot"];
-			}
-		};
-	},
-	"9fb86276be8f": async () => {
-		const m = await import("./assets/image-D8P5PEeD.js");
-		return { get "default"() {
-			return m["default"];
-		} };
-	},
-	"a23e0279e836": async () => {
-		const m = await import("./assets/LocaleSwitch-Xu9JWziR.js");
-		return { get "LocaleSwitch"() {
-			return m["LocaleSwitch"];
-		} };
-	},
-	"ab0e265b1002": async () => {
-		const m = await import("./assets/Reveal-CCo_aZF5.js");
-		return { get "Reveal"() {
-			return m["Reveal"];
-		} };
-	},
-	"b178cf627e26": async () => {
-		const m = await import("./assets/AdaptiveWebGL-BZj0wKn-.js");
-		return { get "AdaptiveWebGL"() {
-			return m["AdaptiveWebGL"];
-		} };
-	},
-	"c2747888630f": async () => {
-		const m = await import("./assets/link-DNjtvVSq.js").then((n) => n.n);
-		return { get "default"() {
-			return m["default"];
-		} };
-	},
-	"c731416457b7": async () => {
-		const m = await import("./assets/ImmersiveProcessStory-gr7FZq3F.js");
-		return { get "ImmersiveProcessStory"() {
-			return m["ImmersiveProcessStory"];
-		} };
-	},
-	"f18800975cb3": async () => {
-		const m = await import("./assets/ProjectStoryRail-CLXZxMIv.js");
-		return { get "ProjectStoryRail"() {
-			return m["ProjectStoryRail"];
-		} };
-	}
-};
+var client_references_default = {};
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/ssr.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_r_86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/ssr.js
 var import_react_dom = /* @__PURE__ */ __toESM(require_react_dom(), 1);
 var onClientReference;
 initialize();
@@ -11794,7 +11095,7 @@ function preloadDeps(deps) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-ssr-entry.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugi_6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-ssr-entry.js
 var clientReferencePreloader = createClientReferencePreloader({
 	getReferences() {
 		return client_references_default;
@@ -11910,4 +11211,4 @@ var app_ssr_entry_default = { async fetch(request) {
 	return new Response(String(result), { status: 200 });
 } };
 //#endregion
-export { stripBasePath as C, __toCommonJS as D, __exportAll as E, __toESM as O, hasBasePath as S, __esmMin as T, withBasePath as _, getPrefetchedUrls as a, require_react as b, usePathname as c, createRscRequestHeaders as d, app_ssr_entry_default as default, createRscRequestUrl as f, toSameOriginAppPath as g, toBrowserNavigationHref as h, handleSsr, getMountedSlotsHeader as i, useRouter as l, resolveRelativeHref as m, getCurrentInterceptionContext as n, navigateClientSide as o, isHashOnlyBrowserUrlChange as p, getLayoutSegmentContext as r, prefetchRscResponse as s, require_jsx_runtime as t, ReadonlyURLSearchParams as u, isDangerousScheme as v, __commonJSMin as w, VINEXT_MOUNTED_SLOTS_HEADER as x, AppElementsWire as y };
+export { app_ssr_entry_default as default, handleSsr };
