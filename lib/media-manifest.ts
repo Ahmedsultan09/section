@@ -1,4 +1,4 @@
-import { SODIC_SOURCE_FOLDER_ID, sodicMediaAssets, sodicVideoPosters } from "./drive-assets";
+import { SODIC_SOURCE_FOLDER_ID, hydeParkMediaAssets, sodicMediaAssets, sodicVideoPosters } from "./drive-assets";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
 
 export type DriveMediaRecord = {
@@ -55,6 +55,22 @@ const driveMediaSeed: DriveMediaRecord[] = [
     id: asset.id,
     driveFileId: asset.driveFileId!,
     sourceFolder: SODIC_SOURCE_FOLDER_ID,
+    sourceName: asset.sourceName,
+    localSrc: asset.src,
+    originalMime: asset.originalMime!,
+    contentHash: asset.contentHash,
+    orientation: asset.orientation,
+    quality: asset.quality,
+    derived: asset.derived,
+    authenticity: asset.authenticity,
+    rights: asset.rights,
+    publishStatus: asset.publishStatus!,
+  })),
+  ...hydeParkMediaAssets.map((asset) => ({
+    id: asset.id,
+    driveFileId: asset.driveFileId!,
+    sourceFolder: asset.sourceFolderId!,
+    sourceFolderId: asset.sourceFolderId,
     sourceName: asset.sourceName,
     localSrc: asset.src,
     originalMime: asset.originalMime!,

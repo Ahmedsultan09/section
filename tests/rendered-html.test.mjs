@@ -214,11 +214,18 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(content, /client: \{ en: "SODIC"/);
   assert.match(content, /collaboratorIds: \["ahmed-elsheref"\]/);
   assert.match(content, /media: \["sodic-drive-06"/);
+  assert.match(content, /slug: "hyde-park"/);
+  assert.match(content, /client: \{ en: "HYDE PARK", ar: "هايد بارك" \}, clientVisibility: "approved"/);
+  assert.match(content, /media: \["white-island-kitchen-01"/);
+  assert.ok(content.indexOf('slug: "sodic-collaboration"') < content.indexOf('slug: "hyde-park"'));
+  assert.ok(content.indexOf('slug: "hyde-park"') < content.indexOf('slug: "residential-joinery-study"'));
   assert.doesNotMatch(content, /ORA Collaboration|client: \{ en: "ORA"/);
   assert.doesNotMatch(content, /SODIC.{0,80}(?:units|sqm|m²|million)/i);
   assert.match(partners, /sodic-attribution/);
   assert.match(logoMarquee, /partner-logo/);
   assert.match(driveAssets, /11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS/);
+  assert.match(driveAssets, /1-P-ia4hCmDsLPVi_ilzt40IELPK6_S1t/);
+  assert.match(driveAssets, /1aD2z7kpl5x0XU0x6mLqVbo0U-K1P_ZUY/);
   assert.match(showroom, /1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs/);
   assert.match(inventory, /no logo file was found/i);
   assert.match(showroom, /1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv/);
@@ -264,5 +271,5 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
   assert.match(css, /@keyframes partner-run-reverse/);
   assert.match(css, /\.material-brand-marquee \.partner-logo \{/);
   assert.match(css, /\.design-nocturne \.showroom-collection-list \{ display: grid; gap:/);
-  assert.match(css, /\.form-action-area \{\s+position: relative;/);
+  assert.match(css, /\.inquiry-page \.form-action-area \{\s+position: fixed;\s+top: 12px;/);
 });

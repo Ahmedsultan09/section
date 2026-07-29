@@ -1,5 +1,5 @@
 import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectSector } from "./site-types";
-import { sodicMediaAssets } from "./drive-assets";
+import { hydeParkMediaAssets, sodicMediaAssets } from "./drive-assets";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
 
 export const locales: Locale[] = ["en", "ar"];
@@ -55,6 +55,7 @@ const categoryMediaAssets: MediaAsset[] = generatedCategoryDriveAssets.map((asse
 
 export const mediaAssets: MediaAsset[] = [
   ...sodicMediaAssets,
+  ...hydeParkMediaAssets,
   ...categoryMediaAssets,
   {
     id: "asset-living-01", src: "/assets/141202_527604.jpeg", sourceFolder: "Legacy site", sourceName: "141202_527604.jpeg",
@@ -104,7 +105,7 @@ export function getMedia(id: string) {
   return mediaAssets.find((asset) => asset.id === id) ?? mediaAssets[0];
 }
 
-export const capabilities: Capability[] = [
+const capabilityCatalog: Capability[] = [
   {
     slug: "kitchens", number: "01", title: { en: "Kitchens", ar: "المطابخ" },
     short: { en: "Made-to-fit kitchens planned for everyday use and demanding project schedules.", ar: "مطابخ مصممة للمقاس تجمع الاستخدام اليومي مع متطلبات برامج المشاريع." },
@@ -171,6 +172,14 @@ export const capabilities: Capability[] = [
   },
 ];
 
+const capabilityOrder = ["wall-cladding", "kitchens", "dressing-rooms", "doors", "custom-units", "bedrooms"];
+
+export const capabilities: Capability[] = [...capabilityCatalog].sort((a, b) => {
+  const aIndex = capabilityOrder.indexOf(a.slug);
+  const bIndex = capabilityOrder.indexOf(b.slug);
+  return (aIndex === -1 ? capabilityOrder.length : aIndex) - (bIndex === -1 ? capabilityOrder.length : bIndex);
+});
+
 export const projects: Project[] = [
   {
     slug: "sodic-collaboration", title: { en: "SODIC Collaboration", ar: "تعاون مع سوديك" },
@@ -182,6 +191,17 @@ export const projects: Project[] = [
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." },
     capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"],
+  },
+  {
+    slug: "hyde-park", title: { en: "Hyde Park", ar: "هايد بارك" },
+    sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Egypt", ar: "مصر" }, year: "—",
+    client: { en: "HYDE PARK", ar: "هايد بارك" }, clientVisibility: "approved", verificationStatus: "partial",
+    summary: { en: "A bright fitted kitchen combining glossy white cabinetry, integrated black appliances and timber-accented island worktops.", ar: "مطبخ مشرق ومتكامل يجمع بين الخزائن البيضاء اللامعة والأجهزة السوداء المدمجة وأسطح الجزر بلمسات خشبية." },
+    scope: { en: "Completed kitchen cabinetry with full-height storage, integrated appliance housings and paired island work surfaces.", ar: "خزائن مطبخ مكتملة مع تخزين بارتفاع كامل ووحدات مدمجة للأجهزة وسطحَي عمل للجزيرتين." },
+    responsibilities: [{ en: "Kitchen cabinetry", ar: "خزائن المطبخ" }, { en: "Integrated appliance housings", ar: "وحدات الأجهزة المدمجة" }, { en: "Island work surfaces", ar: "أسطح عمل الجزر" }],
+    materials: [{ en: "High-gloss white fronts", ar: "واجهات بيضاء عالية اللمعان" }, { en: "Dark timber worktops", ar: "أسطح عمل خشبية داكنة" }, { en: "White work surfaces", ar: "أسطح عمل بيضاء" }],
+    outcome: { en: "A composed kitchen where storage, preparation and cooking zones read as one continuous interior.", ar: "مطبخ متناسق تتصل فيه مناطق التخزين والتحضير والطهي ضمن مساحة داخلية واحدة." },
+    capabilities: ["kitchens", "custom-units"], media: ["white-island-kitchen-01", "white-island-kitchen-02", "white-island-kitchen-03", "white-island-kitchen-04", "white-island-kitchen-05", "white-island-kitchen-06", "white-island-kitchen-07"],
   },
   {
     slug: "residential-joinery-study", title: { en: "Residential Joinery Study", ar: "دراسة نجارة لمشروع سكني" },

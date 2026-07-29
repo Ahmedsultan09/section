@@ -22,12 +22,15 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
     ? dark ? "رحلة بصرية عبر الخامة والتصنيع والمكان المكتمل." : "نصمم وننسق ونصنع ونركب العناصر الخشبية للمشروعات الطموحة."
     : dark ? "A cinematic journey through material, making and the completed space." : "We design, coordinate, make and install timber elements for ambitious projects.";
   const poster = dark ? "/drive/dressing/dressing-08.webp" : "/assets/171467_688502.jpeg";
+  const heroImages = dark
+    ? ["dressing-09", "kitchen-obour-01", "bedroom-a-01", "dressing-12", "kitchen-edited-02", "bedroom-b-03", "dressing-13"].map(getMedia)
+    : [];
 
   return (
     <main className={`showroom-home design-${mode}`} data-design={mode}>
       <section className="showroom-hero">
         <Image unoptimized className="showroom-hero-poster" src={poster} alt="" fill priority sizes="100vw" />
-        <AdaptiveWebGL mode={mode} />
+        <AdaptiveWebGL mode={mode} imageSources={heroImages.map((image) => image.src)} />
         <div className="showroom-hero-grid" aria-hidden="true"><span /><span /><span /><span /></div>
         <div className="showroom-hero-copy">
           <p>{dark ? "SECTION / MATERIAL THEATRE" : "SECTION / DESIGN · MAKE · INSTALL"}</p>

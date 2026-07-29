@@ -8,6 +8,7 @@ Google Drive is the source of truth. Files under `public/drive` and `app/fonts` 
 | --- | --- | --- |
 | Website source of truth | `1J_E8PhUFAvRpUuIYrGL0XjwMU3c6V5uK` | Canonical |
 | SODIC / Ahmed Elsheref project | `11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS` | Approved for this project presentation |
+| Hyde Park project | `1-P-ia4hCmDsLPVi_ilzt40IELPK6_S1t` | Seven stills approved for presentation with Hyde Park text attribution |
 | People We Work With | `1_gXLthKMbOmODh3n7X5nel79B8EYaH2d` | Canonical logo source |
 | Material Brands | `1Zxpk16-Um3Y9pDDq99vuabCQYmssTt6a` | Canonical logo source |
 | Brand fonts | `10y34BF4Iqc6dUwpB92zTmuasIFz3Nh7` | Canonical font source |
@@ -49,6 +50,20 @@ All nine photographs have WebP and AVIF derivatives. The two MOV files have post
 | `IMG_0168.MOV` | `1sXahXE3x6Me9n5NO0-43VzHvsmi1AsAa` | `720d49f7052a3c5f3de90da5facf20652281e6f8bf0139ea1cf0b420a073e971` | Video poster |
 | `IMG_0202.MOV` | `1Um3CARs8u0n3eeLvPx5TbWnpvFGbDln_` | `983380d2e21c3ffd476219ef5accea7b367e7807147e45d81b298d43c67bdc87` | Video poster |
 
+## Hyde Park project media
+
+The seven supplied HEIC photographs were visually verified as one completed kitchen set and are mounted directly after SODIC in Selected Work. Each source has optimized WebP and AVIF derivatives. The approved client name is shown as HYDE PARK, matching SODIC's text-attribution treatment. The folder contains no Hyde Park logo file, so no untraceable logo is shown.
+
+| Source | Drive file ID | SHA-256 | Intended usage |
+| --- | --- | --- | --- |
+| `IMG_6731.HEIC` | `1aD2z7kpl5x0XU0x6mLqVbo0U-K1P_ZUY` | `b7d4d3b446fa0769b2b31ee15d8f560f20f8bbf6b900ca038bf44934b63c7385` | Project cover / gallery |
+| `IMG_6722.HEIC` | `1deym7-BZRB5HsvTLA9P0z9Hpt1csHZTK` | `0555f201bee0c693184b7f849b4e19462ccbcd973edce03e164fcef8aed1580f` | Island detail / gallery |
+| `IMG_6717.HEIC` | `1at1I3jvFVhaNtbA8-fvPAbTZDwdXCU6q` | `88c5656d8e6e01b1f9404e33f80ed77469cebedc902bb7dc1191d502a6791e74` | Full-height cabinetry / gallery |
+| `IMG_6726.HEIC` | `1i9wuVQl9d0yDPtkpLiyv-dQSm55Txh2X` | `68c75c112f01c2e0c5eb23b8cf44ec4d2e041fa8d67a2538c9b22c6c72c00c93` | Twin-island view / gallery |
+| `IMG_6712.HEIC` | `1hXWLasXz302JmMDSwpMrWfdzsIyXrBS2` | `74915028997dce8372e1256cc5a3a5c728b43411549c3b6d32cfa6964d8c6982` | Front view / gallery |
+| `IMG_6715.HEIC` | `1Stl8xxMkdlcP_dE2YU3SN5EmNHDjiYiB` | `4d0021f569924edba096140b6c6fd2454fe590cfa9b62f3a37b2e8a2d5682be4` | Breakfast counter / gallery |
+| `IMG_6713.HEIC` | `1mh6bEWV1lcQbU6LNllM-gpEFEqZjQTp6` | `d0c3a93e99e26d1e4026e7177e0ffb8b05f03ba51e41d2bf2271dbfb6edc51d5` | Cooking island / gallery |
+
 ## Identity and logo sources
 
 - Ahmed Elsheref Designs: Drive ID `1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs`; approved collaborator mark; shown on the SODIC card, project detail and People We Work With.
@@ -77,3 +92,4 @@ The approved marquee maps Drive IDs in `lib/drive-assets.ts` to Egger, Egypt Pan
 3. Confirm the Ahmed Elsheref / Ahmad Elsherif spelling against the owner record.
 4. Confirm commercial licensing for the Drive font files.
 5. Approve localized Brand Story, Vision and Mission placement before mounting `BrandNarrative`.
+6. Supply and approve a Hyde Park logo in Drive if logo attribution is required.

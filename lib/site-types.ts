@@ -52,7 +52,7 @@ export type Project = {
   year: string;
   client: LocalizedText;
   clientVisibility: "approved" | "confidential" | "pending";
-  verificationNote: LocalizedText;
+  verificationNote?: LocalizedText;
   summary: LocalizedText;
   scope: LocalizedText;
   responsibilities: LocalizedText[];

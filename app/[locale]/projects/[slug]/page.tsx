@@ -50,7 +50,7 @@ export default async function ProjectPage({
       <div><p className="eyebrow">{locale === "ar" ? "نظرة عامة" : "Overview"}</p><h2>{project.summary[locale]}</h2></div>
       <div className="project-facts"><p>{project.scope[locale]}</p><dl><div><dt>{locale === "ar" ? "القطاع" : "Sector"}</dt><dd>{project.sectorLabel[locale]}</dd></div><div><dt>{locale === "ar" ? "الموقع" : "Location"}</dt><dd>{project.location[locale]}</dd></div><div><dt>{locale === "ar" ? "العناصر" : "Elements"}</dt><dd>{project.capabilities.map((capability) => capabilityLabel(capability, locale)).join(" · ")}</dd></div></dl></div>
     </section>
-    <aside className="verification-note"><span>!</span><p>{project.verificationNote[locale]}</p></aside>
+    {project.verificationNote ? <aside className="verification-note"><span>!</span><p>{project.verificationNote[locale]}</p></aside> : null}
     <section className="editorial-gallery section-pad">
       {project.media.map((mediaId, mediaIndex) => { const asset = getMedia(mediaId); return <figure className={mediaIndex % 3 === 1 ? "portrait" : "landscape"} key={`${mediaId}-${mediaIndex}`}><div><Image unoptimized src={asset.src} alt={asset.alt[locale]} fill sizes="(max-width: 800px) 100vw, 75vw" /></div><figcaption><span>{String(mediaIndex + 1).padStart(2, "0")} / {String(project.media.length).padStart(2, "0")}</span>{asset.alt[locale]}</figcaption></figure>; })}
     </section>

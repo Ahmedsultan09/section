@@ -5,7 +5,13 @@ import type { DesignId } from "@/lib/site-types";
 
 type ConnectionNavigator = Navigator & { connection?: { saveData?: boolean; effectiveType?: string } };
 
-export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" | "nocturne"> }) {
+export function AdaptiveWebGL({
+  mode,
+  imageSources = [],
+}: {
+  mode: Extract<DesignId, "assemblage" | "nocturne">;
+  imageSources?: string[];
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [fallback, setFallback] = useState(false);
 
@@ -31,16 +37,53 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
     const materials: import("three").Material[] = [];
     const geometries: import("three").BufferGeometry[] = [];
     const textures: import("three").Texture[] = [];
-    const pointer = { x: 0, y: 0 };
+    const pointer = {
+      x: 0,
+      y: 0,
+      dragOffset: 0,
+      velocity: 0,
+      dragging: false,
+      pointerId: -1,
+      lastX: 0,
+    };
 
     const onPointer = (event: PointerEvent) => {
       pointer.x = (event.clientX / window.innerWidth - 0.5) * 0.45;
       pointer.y = (event.clientY / window.innerHeight - 0.5) * 0.25;
     };
+    const onPointerDown = (event: PointerEvent) => {
+      if (!event.isPrimary || event.button !== 0) return;
+      pointer.dragging = true;
+      pointer.pointerId = event.pointerId;
+      pointer.lastX = event.clientX;
+      pointer.velocity = 0;
+      canvas.setPointerCapture(event.pointerId);
+      canvas.dataset.dragging = "true";
+      if (event.pointerType !== "touch") event.preventDefault();
+    };
+    const onPointerDrag = (event: PointerEvent) => {
+      if (!pointer.dragging || pointer.pointerId !== event.pointerId) return;
+      const delta = event.clientX - pointer.lastX;
+      pointer.lastX = event.clientX;
+      pointer.dragOffset += delta * 0.008;
+      pointer.velocity = delta * 0.0008;
+      if (event.cancelable) event.preventDefault();
+    };
+    const onPointerUp = (event: PointerEvent) => {
+      if (!pointer.dragging || pointer.pointerId !== event.pointerId) return;
+      pointer.dragging = false;
+      pointer.pointerId = -1;
+      delete canvas.dataset.dragging;
+      if (canvas.hasPointerCapture(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
+    };
     const onContextLost = (event: Event) => { event.preventDefault(); setFallback(true); };
     const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }, { threshold: 0.01 });
     observer.observe(canvas);
     window.addEventListener("pointermove", onPointer, { passive: true });
+    canvas.addEventListener("pointerdown", onPointerDown);
+    canvas.addEventListener("pointermove", onPointerDrag);
+    canvas.addEventListener("pointerup", onPointerUp);
+    canvas.addEventListener("pointercancel", onPointerUp);
     canvas.addEventListener("webglcontextlost", onContextLost);
 
     void (async () => {
@@ -73,11 +116,12 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
         background.position.z = -4;
         scene.add(background);
 
-        const imageSources = mode === "assemblage"
+        const defaultImageSources = mode === "assemblage"
           ? ["/assets/171467_688502.jpeg", "/assets/217375_739589.jpeg", "/drive/kitchens/kitchen-03-a.webp"]
           : ["/drive/dressing/dressing-08.webp", "/assets/141202_527604.jpeg", "/drive/kitchens/kitchen-04-a.webp", "/assets/474743_155959.jpg"];
+        const resolvedImageSources = imageSources.length ? imageSources : defaultImageSources;
         const loader = new THREE.TextureLoader();
-        const loaded = await Promise.all(imageSources.map((src) => loader.loadAsync(src).catch(() => null)));
+        const loaded = await Promise.all(resolvedImageSources.map((src) => loader.loadAsync(src).catch(() => null)));
         if (disposed) return;
 
         loaded.forEach((texture, index) => {
@@ -121,7 +165,11 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
           const height = canvas.clientHeight || window.innerHeight;
           renderer.setSize(width, height, false);
           camera.aspect = width / height;
+          camera.fov = width < 760 ? 48 : width < 1100 ? 42 : 36;
+          camera.position.z = width < 760 ? 10.8 : width < 1100 ? 9.8 : 9;
           camera.updateProjectionMatrix();
+          const responsiveScale = width < 760 ? 0.82 : width < 1100 ? 0.92 : 1;
+          group?.scale.setScalar(responsiveScale);
         };
         onResize = () => resize();
         window.addEventListener("resize", onResize);
@@ -133,7 +181,12 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
           if (!visible || document.hidden || !renderer || !scene || !camera || !group) return;
           bgMaterial.uniforms.uTime.value = time * 0.001;
           const scroll = Math.min(1, window.scrollY / Math.max(1, window.innerHeight));
-          group.rotation.y += ((pointer.x + (mode === "nocturne" ? time * 0.000035 : 0)) - group.rotation.y) * 0.045;
+          if (!pointer.dragging) {
+            pointer.dragOffset += pointer.velocity;
+            pointer.velocity *= 0.94;
+          }
+          const autoRotation = mode === "nocturne" ? time * 0.000035 : 0;
+          group.rotation.y += ((pointer.x + pointer.dragOffset + autoRotation) - group.rotation.y) * (pointer.dragging ? 0.16 : 0.045);
           group.rotation.x += ((-pointer.y + scroll * 0.08) - group.rotation.x) * 0.04;
           group.position.y = Math.sin(time * 0.00045) * 0.08 - scroll * 0.22;
           renderer.render(scene, camera);
@@ -150,13 +203,17 @@ export function AdaptiveWebGL({ mode }: { mode: Extract<DesignId, "assemblage" |
       observer.disconnect();
       if (onResize) window.removeEventListener("resize", onResize);
       window.removeEventListener("pointermove", onPointer);
+      canvas.removeEventListener("pointerdown", onPointerDown);
+      canvas.removeEventListener("pointermove", onPointerDrag);
+      canvas.removeEventListener("pointerup", onPointerUp);
+      canvas.removeEventListener("pointercancel", onPointerUp);
       canvas.removeEventListener("webglcontextlost", onContextLost);
       textures.forEach((texture) => texture.dispose());
       materials.forEach((material) => material.dispose());
       geometries.forEach((geometry) => geometry.dispose());
       renderer?.dispose();
     };
-  }, [mode]);
+  }, [imageSources, mode]);
 
   return <canvas ref={canvasRef} className={`adaptive-webgl ${fallback ? "is-fallback" : ""}`} aria-hidden="true" />;
 }

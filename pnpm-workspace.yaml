@@ -1,0 +1,9 @@
+allowBuilds:
+  '@ibm/plex-mono': set this to true or false
+  '@ibm/plex-sans': set this to true or false
+  '@ibm/plex-sans-arabic': set this to true or false
+  esbuild: set this to true or false
+  ffmpeg-static: set this to true or false
+  sharp: set this to true or false
+  unrs-resolver: set this to true or false
+  workerd: set this to true or false

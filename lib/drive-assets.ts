@@ -2,6 +2,7 @@ import type { DriveAssetReference, MediaAsset } from "./site-types";
 
 export const DRIVE_SOT_FOLDER_ID = "1J_E8PhUFAvRpUuIYrGL0XjwMU3c6V5uK";
 export const SODIC_SOURCE_FOLDER_ID = "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS";
+export const HYDE_PARK_SOURCE_FOLDER_ID = "1-P-ia4hCmDsLPVi_ilzt40IELPK6_S1t";
 export const PEOPLE_SOURCE_FOLDER_ID = "1_gXLthKMbOmODh3n7X5nel79B8EYaH2d";
 export const MATERIAL_BRANDS_SOURCE_FOLDER_ID = "1Zxpk16-Um3Y9pDDq99vuabCQYmssTt6a";
 
@@ -67,6 +68,42 @@ export const sodicMediaAssets: MediaAsset[] = sodicSource.map(([number, sourceNa
   derived: {
     webp: `/drive/projects/sodic-ahmed-elsheref/sodic-${number}.webp`,
     avif: `/drive/projects/sodic-ahmed-elsheref/sodic-${number}.avif`,
+  },
+  publishStatus: "public",
+}));
+
+const hydeParkSource = [
+  ["01", "IMG_6731.HEIC", "1aD2z7kpl5x0XU0x6mLqVbo0U-K1P_ZUY", "b7d4d3b446fa0769b2b31ee15d8f560f20f8bbf6b900ca038bf44934b63c7385", "Wide view of a glossy white kitchen with a walnut counter", "منظور واسع لمطبخ أبيض لامع مع سطح من خشب الجوز", "landscape"],
+  ["02", "IMG_6722.HEIC", "1deym7-BZRB5HsvTLA9P0z9Hpt1csHZTK", "0555f201bee0c693184b7f849b4e19462ccbcd973edce03e164fcef8aed1580f", "White kitchen island beside the living area", "جزيرة مطبخ بيضاء بجوار مساحة المعيشة", "portrait"],
+  ["03", "IMG_6717.HEIC", "1at1I3jvFVhaNtbA8-fvPAbTZDwdXCU6q", "88c5656d8e6e01b1f9404e33f80ed77469cebedc902bb7dc1191d502a6791e74", "Full-height white kitchen cabinetry with black integrated appliances", "خزائن مطبخ بيضاء بارتفاع كامل مع أجهزة سوداء مدمجة", "landscape"],
+  ["04", "IMG_6726.HEIC", "1i9wuVQl9d0yDPtkpLiyv-dQSm55Txh2X", "68c75c112f01c2e0c5eb23b8cf44ec4d2e041fa8d67a2538c9b22c6c72c00c93", "White kitchen islands with walnut work surfaces", "جزر مطبخ بيضاء بأسطح عمل من خشب الجوز", "landscape"],
+  ["05", "IMG_6712.HEIC", "1hXWLasXz302JmMDSwpMrWfdzsIyXrBS2", "74915028997dce8372e1256cc5a3a5c728b43411549c3b6d32cfa6964d8c6982", "Front view of the completed white island kitchen", "منظور أمامي للمطبخ الأبيض المكتمل ذي الجزيرة", "landscape"],
+  ["06", "IMG_6715.HEIC", "1Stl8xxMkdlcP_dE2YU3SN5EmNHDjiYiB", "4d0021f569924edba096140b6c6fd2454fe590cfa9b62f3a37b2e8a2d5682be4", "Glossy white cabinetry framing a walnut breakfast counter", "خزائن بيضاء لامعة تحيط بسطح إفطار من خشب الجوز", "landscape"],
+  ["07", "IMG_6713.HEIC", "1mh6bEWV1lcQbU6LNllM-gpEFEqZjQTp6", "d0c3a93e99e26d1e4026e7177e0ffb8b05f03ba51e41d2bf2271dbfb6edc51d5", "Walnut-edged cooking island facing integrated white cabinetry", "جزيرة طهي بحافة من خشب الجوز أمام خزائن بيضاء مدمجة", "portrait"],
+] as const;
+
+export const hydeParkMediaAssets: MediaAsset[] = hydeParkSource.map(([number, sourceName, driveFileId, contentHash, en, ar, orientation]) => ({
+  id: `white-island-kitchen-${number}`,
+  src: `/drive/projects/white-island-kitchen/white-island-kitchen-${number}.webp`,
+  sourceFolder: "Hyde Park",
+  sourceFolderId: HYDE_PARK_SOURCE_FOLDER_ID,
+  sourceName,
+  projectSlug: "hyde-park",
+  sector: "residential-developments",
+  capabilities: ["kitchens", "custom-units"],
+  stage: "finished",
+  authenticity: "verified-real",
+  rights: "approved",
+  orientation,
+  quality: number === "01" ? "hero" : "editorial",
+  usage: "project",
+  alt: { en, ar },
+  driveFileId,
+  originalMime: "image/heif",
+  contentHash,
+  derived: {
+    webp: `/drive/projects/white-island-kitchen/white-island-kitchen-${number}.webp`,
+    avif: `/drive/projects/white-island-kitchen/white-island-kitchen-${number}.avif`,
   },
   publishStatus: "public",
 }));
