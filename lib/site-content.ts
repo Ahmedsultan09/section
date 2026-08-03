@@ -1,6 +1,7 @@
 import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectSector } from "./site-types";
 import { hydeParkMediaAssets, sodicMediaAssets } from "./drive-assets";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
+import { selectedProjectMedia, selectedProjectRecords, selectedProjectSlugs } from "./selected-projects";
 
 export const locales: Locale[] = ["en", "ar"];
 
@@ -57,6 +58,7 @@ export const mediaAssets: MediaAsset[] = [
   ...sodicMediaAssets,
   ...hydeParkMediaAssets,
   ...categoryMediaAssets,
+  ...selectedProjectMedia,
   {
     id: "asset-living-01", src: "/assets/141202_527604.jpeg", sourceFolder: "Legacy site", sourceName: "141202_527604.jpeg",
     projectSlug: "residential-joinery-study", sector: "residential-developments", capabilities: ["living-rooms", "custom-units"],
@@ -190,7 +192,7 @@ export const projects: Project[] = [
     scope: { en: "Interior work, woodwork and furniture. Quantities, locations and programme are intentionally omitted until verified.", ar: "أعمال داخلية ونجارة وأثاث. تم استبعاد الكميات والمواقع والبرنامج الزمني حتى التحقق منها." },
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." },
-    capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"],
+    capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"], sourceFolderId: "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS", sourceFolderTitle: "1-SODIC ahmed el sherif", mediaAreas: { "sodic-drive-06": "cover", "sodic-drive-02": "wall", "sodic-drive-01": "stairs", "sodic-drive-03": "kitchen", "sodic-drive-08": "wall" },
   },
   {
     slug: "hyde-park", title: { en: "Hyde Park", ar: "هايد بارك" },
@@ -203,6 +205,7 @@ export const projects: Project[] = [
     outcome: { en: "A composed kitchen where storage, preparation and cooking zones read as one continuous interior.", ar: "مطبخ متناسق تتصل فيه مناطق التخزين والتحضير والطهي ضمن مساحة داخلية واحدة." },
     capabilities: ["kitchens", "custom-units"], media: ["white-island-kitchen-01", "white-island-kitchen-02", "white-island-kitchen-03", "white-island-kitchen-04", "white-island-kitchen-05", "white-island-kitchen-06", "white-island-kitchen-07"],
   },
+  ...selectedProjectRecords,
   {
     slug: "residential-joinery-study", title: { en: "Residential Joinery Study", ar: "دراسة نجارة لمشروع سكني" },
     sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Greater Cairo", ar: "القاهرة الكبرى" }, year: "—",
@@ -259,6 +262,12 @@ export const processSteps = [
   { number: "03", title: { en: "Manufacturing", ar: "التصنيع" }, text: { en: "Approved information moves through fabrication, assembly, finish control and documented quality checks.", ar: "تنتقل المعلومات المعتمدة عبر التصنيع والتجميع وضبط التشطيب وفحوص الجودة الموثقة." }, image: "asset-process-01" },
   { number: "04", title: { en: "Installation", ar: "التركيب" }, text: { en: "Protected delivery and sequenced site installation bring every coordinated element into its final position.", ar: "يجمع التسليم المحمي والتركيب المتسلسل في الموقع كل عنصر منسق في موضعه النهائي." }, image: "asset-door-01" },
 ];
+
+export const publishedProjects = projects.filter((project) => project.publication !== "pending" && project.media.length > 0);
+
+export const selectedProjects = selectedProjectSlugs
+  .map((slug) => projects.find((project) => project.slug === slug))
+  .filter((project): project is Project => Boolean(project && project.publication !== "pending" && project.media.length > 0));
 
 export const copy = {
   en: {

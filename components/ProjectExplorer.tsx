@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { getMedia, projects, sectors } from "@/lib/site-content";
+import { getMedia, publishedProjects, sectors } from "@/lib/site-content";
 import type { Locale, ProjectSector } from "@/lib/site-types";
 import { DesignAwareLink } from "./DesignAwareLink";
 
 export function ProjectExplorer({ locale, compact = false }: { locale: Locale; compact?: boolean }) {
   const [filter, setFilter] = useState<ProjectSector | "all">("all");
-  const visible = projects.filter((project) => filter === "all" || project.sector === filter);
+  const visible = publishedProjects.filter((project) => filter === "all" || project.sector === filter);
 
   return (
     <div className={compact ? "project-explorer compact" : "project-explorer"}>

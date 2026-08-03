@@ -3,11 +3,12 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { DesignAwareLink } from "./DesignAwareLink";
-import { getMedia, projects } from "@/lib/site-content";
+import { getMedia, selectedProjects } from "@/lib/site-content";
 import type { Locale } from "@/lib/site-types";
 import { ProjectAttribution } from "./ProjectAttribution";
 
 export function ProjectStoryRail({ locale }: { locale: Locale }) {
+  const projectCount = selectedProjects.length;
   const railRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef({ active: false, startX: 0, scrollLeft: 0 });
   const [active, setActive] = useState(0);
@@ -26,7 +27,7 @@ export function ProjectStoryRail({ locale }: { locale: Locale }) {
 
   function move(direction: -1 | 1) {
     const cards = railRef.current?.querySelectorAll<HTMLElement>("[data-project-card]");
-    const next = Math.max(0, Math.min(projects.length - 1, active + direction));
+    const next = Math.max(0, Math.min(projectCount - 1, active + direction));
     const card = cards?.[next];
     card?.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
   }
@@ -55,9 +56,9 @@ export function ProjectStoryRail({ locale }: { locale: Locale }) {
       <div className="story-rail-controls">
         <p>{locale === "ar" ? "قصص مشاريع مختارة" : "Selected project stories"}</p>
         <div>
-          <span>{String(active + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}</span>
+          <span>{String(active + 1).padStart(2, "0")} / {String(projectCount).padStart(2, "0")}</span>
           <button type="button" onClick={() => move(-1)} disabled={active === 0} aria-label={locale === "ar" ? "المشروع السابق" : "Previous project"}>←</button>
-          <button type="button" onClick={() => move(1)} disabled={active === projects.length - 1} aria-label={locale === "ar" ? "المشروع التالي" : "Next project"}>→</button>
+          <button type="button" onClick={() => move(1)} disabled={active === projectCount - 1} aria-label={locale === "ar" ? "المشروع التالي" : "Next project"}>→</button>
         </div>
       </div>
       <div
@@ -71,7 +72,7 @@ export function ProjectStoryRail({ locale }: { locale: Locale }) {
         onPointerUp={stopDrag}
         onPointerCancel={stopDrag}
       >
-        {projects.map((project, index) => {
+        {selectedProjects.map((project, index) => {
           const image = getMedia(project.media[0]);
           const named = project.clientVisibility === "approved";
           return (
@@ -89,7 +90,7 @@ export function ProjectStoryRail({ locale }: { locale: Locale }) {
         })}
         <div className="story-rail-end" aria-hidden="true" />
       </div>
-      <div className="story-progress" aria-hidden="true"><i style={{ transform: `scaleX(${(active + 1) / projects.length})` }} /></div>
+      <div className="story-progress" aria-hidden="true"><i style={{ transform: `scaleX(${(active + 1) / projectCount})` }} /></div>
     </div>
   );
 }

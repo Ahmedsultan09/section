@@ -4,18 +4,18 @@ import { notFound } from "next/navigation";
 import { DesignAwareLink } from "@/components/DesignAwareLink";
 import { JsonLd } from "@/components/JsonLd";
 import { ProjectAttribution } from "@/components/ProjectAttribution";
-import { capabilityLabel, getMedia, getProject, isLocale, locales, projects } from "@/lib/site-content";
+import { capabilityLabel, getMedia, getProject, isLocale, locales, publishedProjects } from "@/lib/site-content";
 import { breadcrumbSchema, pageMetadata, projectSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => projects.map((project) => ({ locale, slug: project.slug })));
+  return locales.flatMap((locale) => publishedProjects.map((project) => ({ locale, slug: project.slug })));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
   const project = getProject(slug);
-  if (!project) return {};
+  if (!project || project.publication === "pending" || project.media.length === 0) return {};
   const title = locale === "ar" ? `${project.title[locale]} — دراسة مشروع نجارة وتجهيز داخلي` : `${project.title[locale]} — Joinery & Fit-out Project Study`;
   return pageMetadata({ locale, path: `/projects/${slug}`, title, description: project.summary[locale], image: getMedia(project.media[0]).src });
 }
@@ -28,9 +28,9 @@ export default async function ProjectPage({
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
   const project = getProject(slug);
-  if (!project) notFound();
-  const index = projects.findIndex((item) => item.slug === slug);
-  const next = projects[(index + 1) % projects.length];
+  if (!project || project.publication === "pending" || project.media.length === 0) notFound();
+  const index = publishedProjects.findIndex((item) => item.slug === slug);
+  const next = publishedProjects[(index + 1) % publishedProjects.length];
   const hero = getMedia(project.media[0]);
 
   return <main className="project-detail subpage design-nocturne" data-design="nocturne">

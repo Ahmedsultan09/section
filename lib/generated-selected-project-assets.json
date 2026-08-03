@@ -1,0 +1,434 @@
+[
+  {
+    "id": "swan-lake-01",
+    "projectSlug": "swan-lake",
+    "area": "cover",
+    "driveFileId": "1mCbHAsQx9Ij_npKE69JYXNCKt80p7j4T",
+    "sourceFolderId": "1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR",
+    "sourceName": "IMG_4498.JPG",
+    "localSrc": "/drive/projects/selected/swan-lake/swan-lake-01.webp",
+    "originalMime": "image/jpeg",
+    "contentHash": "54e89c031f4a1084950dc0a5a24a6c90b0afb5bbbaae002a580cbf0df007b69e",
+    "orientation": "landscape",
+    "quality": "hero",
+    "alt": {
+      "en": "Living room with timber slat wall and integrated media joinery",
+      "ar": "غرفة معيشة بجدار شرائح خشبية ونجارة وسائط مدمجة"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/swan-lake/swan-lake-01.webp",
+      "avif": "/drive/projects/selected/swan-lake/swan-lake-01.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "swan-lake-02",
+    "projectSlug": "swan-lake",
+    "area": "wall",
+    "driveFileId": "1vJDzYESn7P4rS7QU8urLydoC7rSjc4ix",
+    "sourceFolderId": "1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR",
+    "sourceName": "IMG_4499.JPG",
+    "localSrc": "/drive/projects/selected/swan-lake/swan-lake-02.webp",
+    "originalMime": "image/jpeg",
+    "contentHash": "a837e32745d9e643b8f6193cb4787aa96f24b8c3507a55d50bd76b542a05b265",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Marble vanity framed by timber wall panels",
+      "ar": "وحدة مغسلة رخامية محاطة بألواح جدارية خشبية"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/swan-lake/swan-lake-02.webp",
+      "avif": "/drive/projects/selected/swan-lake/swan-lake-02.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "swan-lake-03",
+    "projectSlug": "swan-lake",
+    "area": "bedroom",
+    "driveFileId": "1N2pphLlYyLglGkvBcQzaKhKl6wvOFys8",
+    "sourceFolderId": "1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR",
+    "sourceName": "IMG_4497.JPG",
+    "localSrc": "/drive/projects/selected/swan-lake/swan-lake-03.webp",
+    "originalMime": "image/jpeg",
+    "contentHash": "3308deaad3ea070c767facc06a284e43432a533ca2700da8e3fb4b9090c409e9",
+    "orientation": "landscape",
+    "quality": "editorial",
+    "alt": {
+      "en": "Bedroom with a full-height timber headboard wall",
+      "ar": "غرفة نوم بجدار لوح رأسي خشبي كامل الارتفاع"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/swan-lake/swan-lake-03.webp",
+      "avif": "/drive/projects/selected/swan-lake/swan-lake-03.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "swan-lake-04",
+    "projectSlug": "swan-lake",
+    "area": "detail",
+    "driveFileId": "1NrcWiwS5pGhQYMiQit-cqFTxsDWDL-QB",
+    "sourceFolderId": "1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR",
+    "sourceName": "IMG_1253.HEIC",
+    "localSrc": "/drive/projects/selected/swan-lake/swan-lake-04.webp",
+    "originalMime": "image/heif",
+    "contentHash": "ec694176078c321542ba81229d06e542834fdf5962021ef7c6eabc40cc160172",
+    "orientation": "landscape",
+    "quality": "editorial",
+    "alt": {
+      "en": "Illuminated timber bedhead detail",
+      "ar": "تفصيل لوح رأسي خشبي مضاء"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/swan-lake/swan-lake-04.webp",
+      "avif": "/drive/projects/selected/swan-lake/swan-lake-04.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "villette-01",
+    "projectSlug": "sodic-villette",
+    "area": "wall",
+    "driveFileId": "19-Zg-F9LiIU_OGYSCO_4sQzVxLDJj7KX",
+    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
+    "sourceName": "IMG_0278.HEIC",
+    "localSrc": "/drive/projects/selected/sodic-villette/villette-01.webp",
+    "originalMime": "image/heif",
+    "contentHash": "97cab5dd4e5f2263b18b05cd35b1715d2182c21911edc30e16278b21040fcde9",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Fluted timber wall with integrated desk and shelving",
+      "ar": "جدار خشبي مخدد مع مكتب ورفوف مدمجة"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/sodic-villette/villette-01.webp",
+      "avif": "/drive/projects/selected/sodic-villette/villette-01.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "villette-02",
+    "projectSlug": "sodic-villette",
+    "area": "dressing",
+    "driveFileId": "1m4SZkP2KRYSVO4e6Ly2xZb918KVotXUF",
+    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
+    "sourceName": "IMG_0343.HEIC",
+    "localSrc": "/drive/projects/selected/sodic-villette/villette-02.webp",
+    "originalMime": "image/heif",
+    "contentHash": "4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Walnut wardrobe interior with pull-down rail",
+      "ar": "خزانة ملابس من الجوز مع قضيب قابل للسحب"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/sodic-villette/villette-02.webp",
+      "avif": "/drive/projects/selected/sodic-villette/villette-02.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "villette-03",
+    "projectSlug": "sodic-villette",
+    "area": "bedroom",
+    "driveFileId": "1ahJxQRZM6nYlmrOJ5hT6ZdAGVYVxWGJL",
+    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
+    "sourceName": "IMG_0359.HEIC",
+    "localSrc": "/drive/projects/selected/sodic-villette/villette-03.webp",
+    "originalMime": "image/heif",
+    "contentHash": "29a5adad12c0c3551ee68ac0b2cb030913bbee7a46ee21bfdf3c001ece69421f",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Bedroom with a fluted timber feature wall",
+      "ar": "غرفة نوم بجدار خشبي مخدد مميز"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/sodic-villette/villette-03.webp",
+      "avif": "/drive/projects/selected/sodic-villette/villette-03.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "villette-04",
+    "projectSlug": "sodic-villette",
+    "area": "reception",
+    "driveFileId": "1zNAyw53pQvIU1jxqbnOAhe4JCQRPUdlt",
+    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
+    "sourceName": "IMG_9536.HEIC",
+    "localSrc": "/drive/projects/selected/sodic-villette/villette-04.webp",
+    "originalMime": "image/heif",
+    "contentHash": "4b7a11661e4ca2e0f032bbfab189f0721909b7f5e4bca3ed7983fc7ef8a62e8f",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Living room seating and media wall",
+      "ar": "جلسة معيشة وجدار وسائط"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/sodic-villette/villette-04.webp",
+      "avif": "/drive/projects/selected/sodic-villette/villette-04.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "villette-05",
+    "projectSlug": "sodic-villette",
+    "area": "reception-detail",
+    "driveFileId": "1J99sGjk07y4oXtuqTby82_wNsY2NZoU3",
+    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
+    "sourceName": "IMG_9532.HEIC",
+    "localSrc": "/drive/projects/selected/sodic-villette/villette-05.webp",
+    "originalMime": "image/heif",
+    "contentHash": "28d58ece04e80dc1b584158da6e9424aa7707e636d28b6b6ade1c7a537414c6a",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Sofa and timber wall detail",
+      "ar": "تفصيل أريكة وجدار خشبي"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/sodic-villette/villette-05.webp",
+      "avif": "/drive/projects/selected/sodic-villette/villette-05.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "villette-06",
+    "projectSlug": "sodic-villette",
+    "area": "cover",
+    "driveFileId": "1jG0MQlpnD5gVbXogi4WLp_5Dho4TKqYu",
+    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
+    "sourceName": "IMG_9539.HEIC",
+    "localSrc": "/drive/projects/selected/sodic-villette/villette-06.webp",
+    "originalMime": "image/heif",
+    "contentHash": "e51b0f1d8b82ec7f74f6e181831ede4e871ef92ec042663db4f36508da634763",
+    "orientation": "portrait",
+    "quality": "hero",
+    "alt": {
+      "en": "Wide living room with a dark media wall",
+      "ar": "غرفة معيشة واسعة بجدار وسائط داكن"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/sodic-villette/villette-06.webp",
+      "avif": "/drive/projects/selected/sodic-villette/villette-06.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "playa-01",
+    "projectSlug": "playa",
+    "area": "dressing",
+    "driveFileId": "1wlZGDtxjTMgd4SoadLO0bNN9sRJ7Vfsu",
+    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
+    "sourceName": "IMG_2581.HEIC",
+    "localSrc": "/drive/projects/selected/playa/playa-01.webp",
+    "originalMime": "image/heif",
+    "contentHash": "662bc96cc930421901e2472b556bd38f2d3935318c76b74f2ad0fdcdc3de3342",
+    "orientation": "landscape",
+    "quality": "editorial",
+    "alt": {
+      "en": "White fitted wardrobe with open storage",
+      "ar": "خزانة ملابس بيضاء بوحدات تخزين مفتوحة"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/playa/playa-01.webp",
+      "avif": "/drive/projects/selected/playa/playa-01.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "playa-02",
+    "projectSlug": "playa",
+    "area": "dressing-detail",
+    "driveFileId": "1eH-YHNlaviqw9q-XotblZduEypFd9Op8",
+    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
+    "sourceName": "IMG_2582.HEIC",
+    "localSrc": "/drive/projects/selected/playa/playa-02.webp",
+    "originalMime": "image/heif",
+    "contentHash": "e6c7611eda4a352c6f838408ec6e9b6636d02c86b216969a82ec80eee6f750b9",
+    "orientation": "landscape",
+    "quality": "editorial",
+    "alt": {
+      "en": "Close detail of wardrobe internals",
+      "ar": "تفصيل داخلي لخزانة ملابس"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/playa/playa-02.webp",
+      "avif": "/drive/projects/selected/playa/playa-02.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "playa-03",
+    "projectSlug": "playa",
+    "area": "dressing-detail",
+    "driveFileId": "1gyf-n7KyLBRVmMxyyGnX9KDgpxNoInZ6",
+    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
+    "sourceName": "IMG_2546.HEIC",
+    "localSrc": "/drive/projects/selected/playa/playa-03.webp",
+    "originalMime": "image/heif",
+    "contentHash": "feef08d1169d8abfddcafe06263d5e1a0827cf8573304eda3e52dd7d42b0715b",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Wardrobe hardware and drawer detail",
+      "ar": "تفصيل إكسسوارات وأدراج خزانة"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/playa/playa-03.webp",
+      "avif": "/drive/projects/selected/playa/playa-03.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "playa-04",
+    "projectSlug": "playa",
+    "area": "doors",
+    "driveFileId": "1SRyB5YdCyX3ZlwpVAKtW2yRyggoZFTgp",
+    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
+    "sourceName": "IMG_2607.HEIC",
+    "localSrc": "/drive/projects/selected/playa/playa-04.webp",
+    "originalMime": "image/heif",
+    "contentHash": "32c5d7c1cfcfda8619880ee5e21a67441accc9c9cb7f9e1e0bb4028ede608146",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Oak double doors with perforated timber detail",
+      "ar": "بابان من البلوط بتفصيل خشبي مثقب"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/playa/playa-04.webp",
+      "avif": "/drive/projects/selected/playa/playa-04.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "playa-05",
+    "projectSlug": "playa",
+    "area": "stairs",
+    "driveFileId": "1vrdIsa6opQz-8XOTCUv1czDph4GxHGgF",
+    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
+    "sourceName": "IMG_2601.HEIC",
+    "localSrc": "/drive/projects/selected/playa/playa-05.webp",
+    "originalMime": "image/heif",
+    "contentHash": "be80a6d77b228b758f3d704b5eadfd64b30414e10f56c3d354cd8ec5c9a168a2",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Illuminated entry steps and timber doorway",
+      "ar": "درجات مدخل مضاءة وباب خشبي"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/playa/playa-05.webp",
+      "avif": "/drive/projects/selected/playa/playa-05.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "cfc-office-01",
+    "projectSlug": "cfc-office",
+    "area": "wall",
+    "driveFileId": "1Ttb8b0kNPTcopDfySTAiss7GKEt-4fdW",
+    "sourceFolderId": "1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y",
+    "sourceName": "IMG_4192.HEIC",
+    "localSrc": "/drive/projects/selected/cfc-office/cfc-office-01.webp",
+    "originalMime": "image/heif",
+    "contentHash": "388e07a09420342711a43cca4cef3f38cc3dec201dd5686f7fcc7258c27a0f96",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Timber wall and workstation detail in the CFC office",
+      "ar": "تفصيل جدار خشبي ومكتب في مكتب CFC"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/cfc-office/cfc-office-01.webp",
+      "avif": "/drive/projects/selected/cfc-office/cfc-office-01.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "cfc-office-02",
+    "projectSlug": "cfc-office",
+    "area": "cover",
+    "driveFileId": "172xbRcLKiigQuyNc7ctm-yx-w7JTrm3L",
+    "sourceFolderId": "1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y",
+    "sourceName": "IMG_4189.HEIC",
+    "localSrc": "/drive/projects/selected/cfc-office/cfc-office-02.webp",
+    "originalMime": "image/heif",
+    "contentHash": "b402849d74162ecf1f348791a929bbf7182cdb3502e24816a402516b11c0cb9c",
+    "orientation": "landscape",
+    "quality": "hero",
+    "alt": {
+      "en": "CFC office reception and conference space",
+      "ar": "منطقة استقبال واجتماعات في مكتب CFC"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/cfc-office/cfc-office-02.webp",
+      "avif": "/drive/projects/selected/cfc-office/cfc-office-02.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  },
+  {
+    "id": "cfc-office-03",
+    "projectSlug": "cfc-office",
+    "area": "detail",
+    "driveFileId": "1YgzFugyzqSjC8XKIoWRDIU8OZP7cp9YR",
+    "sourceFolderId": "1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y",
+    "sourceName": "IMG_4193.HEIC",
+    "localSrc": "/drive/projects/selected/cfc-office/cfc-office-03.webp",
+    "originalMime": "image/heif",
+    "contentHash": "06a228597880882c251dc156f2a107d1c2d87ecd7ff04c73e5c5a5579c80a77c",
+    "orientation": "portrait",
+    "quality": "editorial",
+    "alt": {
+      "en": "Lighting and seating detail in the CFC office",
+      "ar": "تفصيل إضاءة ومقاعد في مكتب CFC"
+    },
+    "derived": {
+      "webp": "/drive/projects/selected/cfc-office/cfc-office-03.webp",
+      "avif": "/drive/projects/selected/cfc-office/cfc-office-03.avif"
+    },
+    "authenticity": "verified-real",
+    "rights": "approved",
+    "publishStatus": "public"
+  }
+]

@@ -20,6 +20,23 @@ export type CapabilitySlug =
   | "wall-cladding"
   | "materials-finishes";
 
+export type ProjectArea =
+  | "cover"
+  | "wall"
+  | "bedroom"
+  | "reception"
+  | "reception-detail"
+  | "kitchen"
+  | "doors"
+  | "units"
+  | "rooms"
+  | "stairs"
+  | "dressing"
+  | "dressing-detail"
+  | "detail"
+  | "outdoor-unit"
+  | "other";
+
 export type MediaAsset = {
   id: string;
   src: string;
@@ -41,6 +58,7 @@ export type MediaAsset = {
   contentHash?: string;
   derived?: { webp?: string; avif?: string; jpeg?: string; poster?: string };
   publishStatus?: "preview" | "public" | "quarantined";
+  area?: ProjectArea;
 };
 
 export type Project = {
@@ -63,6 +81,10 @@ export type Project = {
   clientLogoId?: string;
   collaboratorIds?: string[];
   verificationStatus?: "verified" | "partial" | "pending";
+  sourceFolderId?: string;
+  sourceFolderTitle?: string;
+  mediaAreas?: Record<string, ProjectArea>;
+  publication?: "public" | "pending";
 };
 
 export type CollectionPiece = {

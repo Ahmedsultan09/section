@@ -1,9 +1,13 @@
 import type { MetadataRoute } from "next";
-import { capabilities, locales, projects } from "@/lib/site-content";
+import { capabilities, locales, publishedProjects } from "@/lib/site-content";
 import { absoluteUrl, localePath, SEO_LAST_MODIFIED } from "@/lib/seo";
 import type { Locale } from "@/lib/site-types";
 
 type ChangeFrequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
+
+// The public sitemap uses the reviewed subset; pending Drive folders stay out
+// of discovery until their media is supplied.
+const projects = publishedProjects;
 
 function localizedEntry(locale: Locale, path: string, priority: number, changeFrequency: ChangeFrequency): MetadataRoute.Sitemap[number] {
   return {

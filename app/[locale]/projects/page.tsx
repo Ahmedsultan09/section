@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
 import { ProjectStoryRail } from "@/components/ProjectStoryRail";
-import { isLocale, projects } from "@/lib/site-content";
+import { isLocale, publishedProjects } from "@/lib/site-content";
 import { absoluteUrl, breadcrumbSchema, localePath, pageMetadata, seoCopy } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -21,7 +21,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
       {
         "@context": "https://schema.org", "@type": "CollectionPage", name: seoCopy[locale].projectsTitle,
         description: seoCopy[locale].projectsDescription, url: absoluteUrl(localePath(locale, "/projects")), inLanguage: locale,
-        hasPart: projects.map((project) => ({ "@type": "CreativeWork", name: project.title[locale], url: absoluteUrl(localePath(locale, `/projects/${project.slug}`)) })),
+        hasPart: publishedProjects.map((project) => ({ "@type": "CreativeWork", name: project.title[locale], url: absoluteUrl(localePath(locale, `/projects/${project.slug}`)) })),
       },
     ]} />
     <header className="page-intro">

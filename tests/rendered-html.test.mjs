@@ -273,3 +273,29 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
   assert.match(css, /\.design-nocturne \.showroom-collection-list \{ display: grid; gap:/);
   assert.match(css, /\.inquiry-page \.form-action-area \{\s+position: fixed;\s+top: 12px;/);
 });
+
+test("keeps the numbered selected-project Drive catalog traceable", async () => {
+  const [catalog, generated, rail, content, inventory] = await Promise.all([
+    read("lib/selected-projects.ts"),
+    read("lib/generated-selected-project-assets.json"),
+    read("components/ProjectStoryRail.tsx"),
+    read("lib/site-content.ts"),
+    read("docs/nocturne-drive-asset-inventory.md"),
+  ]);
+  const assets = JSON.parse(generated);
+  assert.match(catalog, /SELECTED_PROJECTS_ROOT_FOLDER_ID = "1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-Mh"/);
+  assert.match(catalog, /slug: "sodic-collaboration"/);
+  assert.match(catalog, /slug: "swan-lake"/);
+  assert.match(catalog, /slug: "sodic-villette"/);
+  assert.match(catalog, /slug: "new-giza".*publishStatus: "pending"/s);
+  assert.match(catalog, /slug: "playa"/);
+  assert.match(catalog, /slug: "cfc-office"/);
+  assert.equal(assets.length, 18);
+  assert.ok(assets.every((asset) => asset.driveFileId && asset.sourceFolderId && asset.contentHash && asset.derived?.webp && asset.derived?.avif));
+  assert.ok(assets.some((asset) => asset.driveFileId === "1SRyB5YdCyX3ZlwpVAKtW2yRyggoZFTgp" && asset.sourceName === "IMG_2607.HEIC"));
+  assert.match(rail, /selectedProjects\.map/);
+  assert.doesNotMatch(rail, /projects\.map/);
+  assert.match(content, /export const selectedProjects = selectedProjectSlugs/);
+  assert.match(inventory, /Selected projects source of truth/);
+  assert.match(inventory, /New Giza.*Folder is empty/s);
+});

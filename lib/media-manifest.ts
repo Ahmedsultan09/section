@@ -1,4 +1,6 @@
 import { SODIC_SOURCE_FOLDER_ID, hydeParkMediaAssets, sodicMediaAssets, sodicVideoPosters } from "./drive-assets";
+import { selectedProjectMedia } from "./selected-projects";
+import type { ProjectArea } from "./site-types";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
 
 export type DriveMediaRecord = {
@@ -13,6 +15,8 @@ export type DriveMediaRecord = {
   orientation?: "landscape" | "portrait" | "square" | "unknown";
   quality?: "hero" | "editorial" | "reference";
   derived?: { webp?: string; avif?: string; jpeg?: string; poster?: string };
+  projectSlug?: string;
+  area?: ProjectArea;
   authenticity: "verified-real" | "ai-concept" | "unknown";
   rights: "approved" | "pending" | "restricted";
   publishStatus: "preview" | "public" | "quarantined";
@@ -74,6 +78,24 @@ const driveMediaSeed: DriveMediaRecord[] = [
     sourceName: asset.sourceName,
     localSrc: asset.src,
     originalMime: asset.originalMime!,
+    contentHash: asset.contentHash,
+    orientation: asset.orientation,
+    quality: asset.quality,
+    derived: asset.derived,
+    authenticity: asset.authenticity,
+    rights: asset.rights,
+    publishStatus: asset.publishStatus!,
+  })),
+  ...selectedProjectMedia.map((asset) => ({
+    id: asset.id,
+    driveFileId: asset.driveFileId!,
+    sourceFolder: asset.sourceFolder,
+    sourceFolderId: asset.sourceFolderId,
+    sourceName: asset.sourceName,
+    localSrc: asset.src,
+    originalMime: asset.originalMime!,
+    projectSlug: asset.projectSlug,
+    area: asset.area,
     contentHash: asset.contentHash,
     orientation: asset.orientation,
     quality: asset.quality,

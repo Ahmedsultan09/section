@@ -52,7 +52,7 @@ All nine photographs have WebP and AVIF derivatives. The two MOV files have post
 
 ## Hyde Park project media
 
-The seven supplied HEIC photographs were visually verified as one completed kitchen set and are mounted directly after SODIC in Selected Work. Each source has optimized WebP and AVIF derivatives. The approved client name is shown as HYDE PARK, matching SODIC's text-attribution treatment. The folder contains no Hyde Park logo file, so no untraceable logo is shown.
+The seven supplied HEIC photographs were visually verified as one completed kitchen set and remain available in the broader project catalog. The numbered selected-project rail now follows the newer Drive root documented below. Each source has optimized WebP and AVIF derivatives. The approved client name is shown as HYDE PARK, matching SODIC's text-attribution treatment. The folder contains no Hyde Park logo file, so no untraceable logo is shown.
 
 | Source | Drive file ID | SHA-256 | Intended usage |
 | --- | --- | --- | --- |
@@ -93,3 +93,18 @@ The approved marquee maps Drive IDs in `lib/drive-assets.ts` to Egger, Egypt Pan
 4. Confirm commercial licensing for the Drive font files.
 5. Approve localized Brand Story, Vision and Mission placement before mounting `BrandNarrative`.
 6. Supply and approve a Hyde Park logo in Drive if logo attribution is required.
+
+## Selected projects source of truth (August 2026)
+
+The selected-project root is [Selected projects](https://drive.google.com/drive/folders/1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-Mh), Drive folder ID `1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-Mh`. The numeric prefixes are the presentation order. `lib/selected-projects.ts` is the typed catalog; `lib/generated-selected-project-assets.json` retains the source file ID, source folder ID, SHA-256 and optimized delivery paths for every imported still.
+
+| Order | Project / Drive folder | Canonical source folder ID | Published media | Notes |
+| ---: | --- | --- | ---: | --- |
+| 1 | SODIC / Ahmed Elsheref | `11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS` | 9 existing stills | SODIC text attribution and approved Ahmed Elsheref collaborator mark; stairs, wall, kitchen and cover are represented |
+| 2 | Swan Lake | `1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR` | 4 stills | One representative cover, wall, bedroom and detail image |
+| 3 | SODIC Villette / Mai Saad | `11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv` | 5 stills | One representative cover, wall, bedroom, dressing and reception image |
+| 4 | New Giza / Mai Saad | `1NmaXGLx8SRXereWz90DmS8YRh2I5J5cd` | 0 | Folder is empty; registered in the manifest but gated from the rail and routes until media is uploaded and reviewed |
+| 5 | Playa / Amaken | `1256mAU_FoUKShxofhCe8-pQEYja11tMr` | 3 stills | One representative dressing, doors and stairs image from a larger folder containing additional video |
+| 6 | CFC office (Commercial) | `1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y` | 3 stills | Wall, reception and detail |
+
+The new selected-project rail publishes the five folders with reviewed photography in this order. New Giza remains visible to the content team through the manifest but does not render an empty placeholder. Hyde Park remains available in the broader project catalog and is not silently mixed into this six-folder selection.
