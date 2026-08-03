@@ -18,6 +18,8 @@ test("ships the bilingual B2B route and content model", async () => {
   assert.match(localeLayout, /dir=\{locale === "ar" \? "rtl" : "ltr"\}/);
   assert.match(home, /mode="nocturne"/);
   assert.match(showroomHome, /nocturne-final-cta/);
+  assert.match(await read("app/layout.tsx"), /section-favicon\.png/);
+  assert.match(await read("public/favicon.svg"), /section-favicon\.png/);
   assert.match(content, /Made with wood\.\\nBuilt for ambitious spaces\./);
   assert.match(content, /مصنوع من الخشب/);
   assert.match(content, /export const capabilities: Capability\[\]/);
@@ -32,6 +34,8 @@ test("ships the bilingual B2B route and content model", async () => {
   assert.doesNotMatch(content, /slug: "interior-fit-out"/);
   assert.doesNotMatch(content, /slug: "joinery-fitted-units"/);
   assert.match(content, /export const processSteps/);
+  assert.match(content, /export const manufacturingSteps/);
+  assert.match(content, /title: \{ en: "Select", ar: "الاختيار" \}/);
   assert.match(content, /Concept & briefing/);
   assert.match(content, /Design & sketching/);
   assert.match(content, /title: \{ en: "Manufacturing"/);

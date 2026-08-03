@@ -138,7 +138,7 @@ export function organizationSchema(locale: Locale) {
     "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
-    logo: absoluteUrl("/favicon.svg"),
+    logo: absoluteUrl("/brand/section-black.png"),
     description: seoCopy[locale].description,
     telephone: "+201272333832",
     areaServed: { "@type": "Country", name: locale === "ar" ? "مصر" : "Egypt" },

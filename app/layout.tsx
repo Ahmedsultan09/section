@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "SECTION",
   description: "B2B digital showroom for design, engineering, manufacturing, and installation.",
+  icons: {
+    icon: "/brand/section-favicon.png",
+    shortcut: "/brand/section-favicon.png",
+    apple: "/brand/section-favicon.png",
+  },
   openGraph: {
     title: "SECTION — Made with wood",
     description: "Design, manufacturing and installation for ambitious interiors.",

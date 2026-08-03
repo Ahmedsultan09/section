@@ -263,6 +263,14 @@ export const processSteps = [
   { number: "04", title: { en: "Installation", ar: "التركيب" }, text: { en: "Protected delivery and sequenced site installation bring every coordinated element into its final position.", ar: "يجمع التسليم المحمي والتركيب المتسلسل في الموقع كل عنصر منسق في موضعه النهائي." }, image: "asset-door-01" },
 ];
 
+export const manufacturingSteps = [
+  { number: "01", title: { en: "Select", ar: "الاختيار" }, text: { en: "Boards, veneers and hardware are aligned to the approved brief.", ar: "نطابق الألواح والقشرة والإكسسوارات مع الموجز المعتمد." } },
+  { number: "02", title: { en: "Cut", ar: "القص" }, text: { en: "Panels are cut, edged and machined to the production drawings.", ar: "تُقص الألواح وتُشطب وتُشغل وفق رسومات الإنتاج." } },
+  { number: "03", title: { en: "Assemble", ar: "التجميع" }, text: { en: "Parts are dry-fitted and checked before the finish is applied.", ar: "تُركب الأجزاء تجريبياً وتُراجع قبل تنفيذ التشطيب." } },
+  { number: "04", title: { en: "Finish", ar: "التشطيب" }, text: { en: "Colour, texture and hardware are tuned by hand against the samples.", ar: "نضبط اللون والملمس والإكسسوارات يدوياً مقارنة بالعينات." } },
+  { number: "05", title: { en: "Check", ar: "الفحص" }, text: { en: "Every piece is inspected, protected and prepared for site.", ar: "نفحص كل قطعة ونحميها ونجهزها للموقع." } },
+];
+
 export const publishedProjects = projects.filter((project) => project.publication !== "pending" && project.media.length > 0);
 
 export const selectedProjects = selectedProjectSlugs
