@@ -19,7 +19,7 @@ test("ships the bilingual B2B route and content model", async () => {
   assert.match(home, /mode="nocturne"/);
   assert.match(showroomHome, /nocturne-final-cta/);
   assert.match(await read("app/layout.tsx"), /section-favicon\.png/);
-  assert.match(await read("public/favicon.svg"), /section-favicon\.png/);
+  assert.match(await read("public/favicon.svg"), /data:image\/png;base64,/);
   assert.match(content, /Made with wood\.\\nBuilt for ambitious spaces\./);
   assert.match(content, /مصنوع من الخشب/);
   assert.match(content, /export const capabilities: Capability\[\]/);
