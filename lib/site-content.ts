@@ -188,8 +188,8 @@ export const projects: Project[] = [
     sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Egypt", ar: "مصر" }, year: "—",
     client: { en: "SODIC", ar: "سوديك" }, clientVisibility: "approved", verificationStatus: "partial",
     verificationNote: { en: "The client name and broad work categories are approved for this preview; detailed project facts remain under review.", ar: "اسم العميل وفئات العمل العامة معتمدة لهذه المعاينة، بينما تظل تفاصيل المشروع قيد المراجعة." },
-    summary: { en: "Interior work, custom woodwork and furniture delivered as a coordinated project package.", ar: "أعمال داخلية ونجارة مخصصة وأثاث ضمن حزمة مشروع منسقة." },
-    scope: { en: "Interior work, woodwork and furniture. Quantities, locations and programme are intentionally omitted until verified.", ar: "أعمال داخلية ونجارة وأثاث. تم استبعاد الكميات والمواقع والبرنامج الزمني حتى التحقق منها." },
+    summary: { en: "A residential joinery package that moves from fluted walls and concealed storage to stair, kitchen and living details in one timber-led language.", ar: "حزمة نجارة سكنية تمتد من الجدران المخددة والتخزين المخفي إلى تفاصيل السلم والمطبخ والمعيشة ضمن لغة واحدة تقودها الخامة الخشبية." },
+    scope: { en: "Selected wall, stair, kitchen and joinery photography from the SODIC Drive folder; quantities, locations and programme remain intentionally unlisted.", ar: "صور مختارة للجدران والسلم والمطبخ وتفاصيل النجارة من مجلد سوديك على Drive؛ لم تُدرج الكميات والمواقع والبرنامج الزمني عمداً." },
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." },
     capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"], sourceFolderId: "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS", sourceFolderTitle: "1-SODIC ahmed el sherif", mediaAreas: { "sodic-drive-06": "cover", "sodic-drive-02": "wall", "sodic-drive-01": "stairs", "sodic-drive-03": "kitchen", "sodic-drive-08": "wall" },
@@ -198,8 +198,8 @@ export const projects: Project[] = [
     slug: "hyde-park", title: { en: "Hyde Park", ar: "هايد بارك" },
     sector: "residential-developments", sectorLabel: sectors[0].label, location: { en: "Egypt", ar: "مصر" }, year: "—",
     client: { en: "HYDE PARK", ar: "هايد بارك" }, clientVisibility: "approved", verificationStatus: "partial",
-    summary: { en: "A bright fitted kitchen combining glossy white cabinetry, integrated black appliances and timber-accented island worktops.", ar: "مطبخ مشرق ومتكامل يجمع بين الخزائن البيضاء اللامعة والأجهزة السوداء المدمجة وأسطح الجزر بلمسات خشبية." },
-    scope: { en: "Completed kitchen cabinetry with full-height storage, integrated appliance housings and paired island work surfaces.", ar: "خزائن مطبخ مكتملة مع تخزين بارتفاع كامل ووحدات مدمجة للأجهزة وسطحَي عمل للجزيرتين." },
+    summary: { en: "A light-filled kitchen organized around a pair of islands, full-height storage and a quiet contrast between white fronts and dark timber.", ar: "مطبخ مضيء يتمحور حول جزيرتين وتخزين بارتفاع كامل وتباين هادئ بين الواجهات البيضاء والخشب الداكن." },
+    scope: { en: "The Drive selection follows the kitchen from integrated appliance walls to island work surfaces and close joinery details.", ar: "تتبع صور Drive المطبخ من جدران الأجهزة المدمجة إلى أسطح الجزر وتفاصيل النجارة القريبة." },
     responsibilities: [{ en: "Kitchen cabinetry", ar: "خزائن المطبخ" }, { en: "Integrated appliance housings", ar: "وحدات الأجهزة المدمجة" }, { en: "Island work surfaces", ar: "أسطح عمل الجزر" }],
     materials: [{ en: "High-gloss white fronts", ar: "واجهات بيضاء عالية اللمعان" }, { en: "Dark timber worktops", ar: "أسطح عمل خشبية داكنة" }, { en: "White work surfaces", ar: "أسطح عمل بيضاء" }],
     outcome: { en: "A composed kitchen where storage, preparation and cooking zones read as one continuous interior.", ar: "مطبخ متناسق تتصل فيه مناطق التخزين والتحضير والطهي ضمن مساحة داخلية واحدة." },
@@ -264,11 +264,11 @@ export const processSteps = [
 ];
 
 export const manufacturingSteps = [
-  { number: "01", title: { en: "Select", ar: "الاختيار" }, text: { en: "Boards, veneers and hardware are aligned to the approved brief.", ar: "نطابق الألواح والقشرة والإكسسوارات مع الموجز المعتمد." } },
-  { number: "02", title: { en: "Cut", ar: "القص" }, text: { en: "Panels are cut, edged and machined to the production drawings.", ar: "تُقص الألواح وتُشطب وتُشغل وفق رسومات الإنتاج." } },
-  { number: "03", title: { en: "Assemble", ar: "التجميع" }, text: { en: "Parts are dry-fitted and checked before the finish is applied.", ar: "تُركب الأجزاء تجريبياً وتُراجع قبل تنفيذ التشطيب." } },
-  { number: "04", title: { en: "Finish", ar: "التشطيب" }, text: { en: "Colour, texture and hardware are tuned by hand against the samples.", ar: "نضبط اللون والملمس والإكسسوارات يدوياً مقارنة بالعينات." } },
-  { number: "05", title: { en: "Check", ar: "الفحص" }, text: { en: "Every piece is inspected, protected and prepared for site.", ar: "نفحص كل قطعة ونحميها ونجهزها للموقع." } },
+  { number: "01", topic: { en: "Material direction", ar: "توجيه الخامة" }, title: { en: "Select", ar: "الاختيار" }, text: { en: "Boards, veneers and hardware are aligned to the approved brief.", ar: "نطابق الألواح والقشرة والإكسسوارات مع الموجز المعتمد." }, image: "/drive/materials/material-03.webp", imageAlt: { en: "A fan of timber and stone finish samples", ar: "عينات متدرجة من الخشب والحجر والتشطيبات" } },
+  { number: "02", topic: { en: "Production set-up", ar: "إعداد الإنتاج" }, title: { en: "Cut", ar: "القص" }, text: { en: "Panels are cut, edged and machined to the production drawings.", ar: "تُقص الألواح وتُشطب وتُشغل وفق رسومات الإنتاج." }, image: "/drive/materials/material-02.webp", imageAlt: { en: "Layered board and veneer samples prepared for production", ar: "عينات متراكبة من الألواح والقشرة جاهزة للإنتاج" } },
+  { number: "03", topic: { en: "Assembly check", ar: "مراجعة التجميع" }, title: { en: "Assemble", ar: "التجميع" }, text: { en: "Parts are dry-fitted and checked before the finish is applied.", ar: "تُركب الأجزاء تجريبياً وتُراجع قبل تنفيذ التشطيب." }, image: "/drive/materials/material-04.webp", imageAlt: { en: "Tagged timber samples being checked as a set", ar: "عينات خشبية معلّمة تُراجع كمجموعة واحدة" } },
+  { number: "04", topic: { en: "Finish matching", ar: "مطابقة التشطيب" }, title: { en: "Finish", ar: "التشطيب" }, text: { en: "Colour, texture and hardware are tuned by hand against the samples.", ar: "نضبط اللون والملمس والإكسسوارات يدوياً مقارنة بالعينات." }, image: "/drive/materials/material-06.webp", imageAlt: { en: "Hands comparing finish samples on a work table", ar: "أيدٍ تقارن عينات التشطيب على طاولة العمل" } },
+  { number: "05", topic: { en: "Quality gate", ar: "بوابة الجودة" }, title: { en: "Check", ar: "الفحص" }, text: { en: "Every piece is inspected, protected and prepared for site.", ar: "نفحص كل قطعة ونحميها ونجهزها للموقع." }, image: "/drive/materials/material-01.webp", imageAlt: { en: "A SECTION material sample under a final quality review", ar: "عينة من خامة SECTION أثناء مراجعة الجودة النهائية" } },
 ];
 
 export const publishedProjects = projects.filter((project) => project.publication !== "pending" && project.media.length > 0);

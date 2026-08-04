@@ -3,11 +3,12 @@ import { AdaptiveWebGL } from "./AdaptiveWebGL";
 import { DesignAwareLink } from "./DesignAwareLink";
 import { InquiryForm } from "./InquiryForm";
 import { MaterialBrandMarquee } from "./MaterialBrandMarquee";
+import { ManufacturingLine } from "./ManufacturingLine";
 import { NocturneCategoryStack } from "./NocturneCategoryStack";
 import { PartnerMarquee } from "./PartnerMarquee";
 import { ProjectStoryRail } from "./ProjectStoryRail";
 import { ShowroomProcess } from "./ShowroomProcess";
-import { capabilities, copy, getMedia, manufacturingSteps } from "@/lib/site-content";
+import { capabilities, copy, getMedia } from "@/lib/site-content";
 import type { DesignId, Locale } from "@/lib/site-types";
 
 type Mode = Extract<DesignId, "assemblage" | "nocturne">;
@@ -43,18 +44,7 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         <p>01 / {locale === "ar" ? "فريق واحد" : "One accountable team"}</p>
         <h2>{locale === "ar" ? <>المشروع يتحرك في <em>خط واحد.</em></> : <>The project moves through <em>one line.</em></>}</h2>
         <span>{locale === "ar" ? "من موجز العمل إلى التصميم والتصنيع والتركيب—مع مراجعة كل انتقال." : "From brief to design, manufacturing and installation—with every handoff checked."}</span>
-        <div className="showroom-statement-flow">
-          <p>{locale === "ar" ? "داخل خط التصنيع" : "Inside the manufacturing line"}</p>
-          <ol aria-label={locale === "ar" ? "خطوات التصنيع" : "Manufacturing steps"}>
-            {manufacturingSteps.map((step) => (
-              <li key={step.number}>
-                <span>{step.number}</span>
-                <strong>{step.title[locale]}</strong>
-                <small>{step.text[locale]}</small>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <ManufacturingLine locale={locale} />
       </section>
 
       <section className="showroom-collections" id="capabilities">

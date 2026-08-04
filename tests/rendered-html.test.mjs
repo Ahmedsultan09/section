@@ -5,12 +5,13 @@ import test from "node:test";
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
 test("ships the bilingual B2B route and content model", async () => {
-  const [root, localeLayout, home, showroomHome, content] = await Promise.all([
+  const [root, localeLayout, home, showroomHome, content, manufacturing] = await Promise.all([
     read("app/(root)/page.tsx"),
     read("app/[locale]/layout.tsx"),
     read("app/[locale]/page.tsx"),
     read("components/ShowroomHome.tsx"),
     read("lib/site-content.ts"),
+    read("components/ManufacturingLine.tsx"),
   ]);
 
   assert.match(root, /redirect\("\/en"\)/);
@@ -18,6 +19,7 @@ test("ships the bilingual B2B route and content model", async () => {
   assert.match(localeLayout, /dir=\{locale === "ar" \? "rtl" : "ltr"\}/);
   assert.match(home, /mode="nocturne"/);
   assert.match(showroomHome, /nocturne-final-cta/);
+  assert.match(showroomHome, /<ManufacturingLine locale=\{locale\} \/>/);
   assert.match(await read("app/layout.tsx"), /section-favicon\.png/);
   assert.match(await read("public/favicon.svg"), /data:image\/png;base64,/);
   assert.match(content, /Made with wood\.\\nBuilt for ambitious spaces\./);
@@ -36,6 +38,8 @@ test("ships the bilingual B2B route and content model", async () => {
   assert.match(content, /export const processSteps/);
   assert.match(content, /export const manufacturingSteps/);
   assert.match(content, /title: \{ en: "Select", ar: "الاختيار" \}/);
+  assert.match(content, /image: "\/drive\/materials\/material-03\.webp"/);
+  assert.match(manufacturing, /IntersectionObserver/);
   assert.match(content, /Concept & briefing/);
   assert.match(content, /Design & sketching/);
   assert.match(content, /title: \{ en: "Manufacturing"/);
@@ -197,15 +201,18 @@ test("publishes Nocturne as the only SECTION view", async () => {
 });
 
 test("keeps Drive media, SODIC attribution and partner marks governed", async () => {
-  const [manifest, showroom, content, partners, logoMarquee, driveAssets, inventory, categoryAssets] = await Promise.all([
+  const [manifest, showroom, content, partners, logoMarquee, attribution, driveAssets, inventory, categoryAssets, css, brandPrep] = await Promise.all([
     read("lib/media-manifest.ts"),
     read("lib/showroom-content.ts"),
     read("lib/site-content.ts"),
     read("components/PartnerMarquee.tsx"),
     read("components/LogoMarquee.tsx"),
+    read("components/ProjectAttribution.tsx"),
     read("lib/drive-assets.ts"),
     read("docs/nocturne-drive-asset-inventory.md"),
     read("lib/generated-category-drive-assets.json"),
+    read("app/globals.css"),
+    read("scripts/prepare-brand-assets.mjs"),
   ]);
 
   assert.match(manifest, /driveFileId/);
@@ -227,6 +234,10 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.doesNotMatch(content, /SODIC.{0,80}(?:units|sqm|m²|million)/i);
   assert.match(partners, /sodic-attribution/);
   assert.match(logoMarquee, /partner-logo/);
+  assert.match(attribution, /data-logo-id=\{logo\.id\}/);
+  assert.match(css, /\.people-marquee \.partner-logo\.dark[\s\S]*?background: transparent/);
+  assert.match(css, /\.project-collaborator-logo\.dark[\s\S]*?background: transparent/);
+  assert.match(brandPrep, /removeOutsideCircle/);
   assert.match(driveAssets, /11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS/);
   assert.match(driveAssets, /1-P-ia4hCmDsLPVi_ilzt40IELPK6_S1t/);
   assert.match(driveAssets, /1aD2z7kpl5x0XU0x6mLqVbo0U-K1P_ZUY/);
@@ -294,9 +305,20 @@ test("keeps the numbered selected-project Drive catalog traceable", async () => 
   assert.match(catalog, /slug: "new-giza".*publishStatus: "pending"/s);
   assert.match(catalog, /slug: "playa"/);
   assert.match(catalog, /slug: "cfc-office"/);
-  assert.equal(assets.length, 18);
+  assert.equal(assets.length, 165);
+  assert.equal(new Set(assets.map((asset) => asset.id)).size, assets.length);
+  for (const [projectSlug, expectedCount] of Object.entries({
+    "cfc-office": 9,
+    "swan-lake": 16,
+    "sodic-villette": 55,
+    playa: 85,
+  })) {
+    assert.equal(assets.filter((asset) => asset.projectSlug === projectSlug).length, expectedCount);
+  }
   assert.ok(assets.every((asset) => asset.driveFileId && asset.sourceFolderId && asset.contentHash && asset.derived?.webp && asset.derived?.avif));
+  assert.ok(assets.every((asset) => !asset.alt.en.includes(asset.sourceName) && !asset.alt.ar.includes(asset.sourceName)));
   assert.ok(assets.some((asset) => asset.driveFileId === "1SRyB5YdCyX3ZlwpVAKtW2yRyggoZFTgp" && asset.sourceName === "IMG_2607.HEIC"));
+  assert.ok(assets.some((asset) => asset.driveFileId === "1Ycd4DyHYiruethdrGJ1xY1HhvnDJmb-5" && asset.sourceName === "IMG_4493.JPG"));
   assert.match(rail, /selectedProjects\.map/);
   assert.doesNotMatch(rail, /projects\.map/);
   assert.match(content, /export const selectedProjects = selectedProjectSlugs/);

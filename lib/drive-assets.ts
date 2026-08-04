@@ -58,7 +58,7 @@ export const sodicMediaAssets: MediaAsset[] = sodicSource.map(([number, sourceNa
   stage: "finished",
   authenticity: "verified-real",
   rights: "approved",
-  orientation: "portrait",
+  orientation: number === "06" ? "landscape" : "portrait",
   quality: number === "06" ? "hero" : "editorial",
   usage: "project",
   alt: { en, ar },

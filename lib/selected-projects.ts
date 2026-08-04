@@ -58,17 +58,9 @@ export const selectedProjectMedia: MediaAsset[] = generatedSelectedProjectAssets
 });
 
 const selectedProjectMediaIds = (projectSlug: string) => {
-  const areas = new Set<string>();
   return selectedProjectMedia
     .filter((asset) => asset.projectSlug === projectSlug)
     .sort((a, b) => (a.area === "cover" ? -1 : b.area === "cover" ? 1 : 0))
-    .filter((asset) => {
-      const area = asset.area ?? "other";
-      const areaGroup = area.endsWith("-detail") ? area.slice(0, -"-detail".length) : area;
-      if (areas.has(areaGroup)) return false;
-      areas.add(areaGroup);
-      return true;
-    })
     .map((asset) => asset.id);
 };
 
@@ -90,7 +82,7 @@ export const selectedProjectRecords: Project[] = [
     clientVisibility: "approved",
     verificationStatus: "verified",
     summary: { en: "A residential interior package where warm timber walls, media joinery and furniture carry one continuous language.", ar: "حزمة داخلية سكنية تجمع الجدران الخشبية الدافئة ونجارة الوسائط والأثاث في لغة واحدة." },
-    scope: { en: "Representative living, wall and bedroom photography selected from the Drive source folder.", ar: "صور ممثلة للمعيشة والجدران وغرف النوم مختارة من مجلد Drive المصدر." },
+    scope: { en: "Complete living, wall and bedroom photography from the Swan Lake Drive source folder, organized by room and detail.", ar: "كامل صور المعيشة والجدران وغرف النوم من مجلد سوان ليك على Drive، مرتبة حسب الغرفة والتفصيل." },
     responsibilities: [{ en: "Interior joinery", ar: "النجارة الداخلية" }, { en: "Wall cladding", ar: "تكسية الجدران" }, { en: "Furniture coordination", ar: "تنسيق الأثاث" }],
     materials: [{ en: "Timber veneer", ar: "قشرة خشبية" }, { en: "Marble", ar: "رخام" }],
     outcome: { en: "A calm, coordinated interior package documented through selected areas.", ar: "حزمة داخلية هادئة ومنسقة موثقة عبر مناطق مختارة." },
@@ -110,8 +102,8 @@ export const selectedProjectRecords: Project[] = [
     client: { en: "SODIC", ar: "سوديك" },
     clientVisibility: "approved",
     verificationStatus: "verified",
-    summary: { en: "Selected SODIC Villette rooms showing fluted walls, dressing storage, bedrooms and living spaces.", ar: "مساحات مختارة من سوديك فيليت تعرض الجدران المخددة والتخزين وغرف النوم والمعيشة." },
-    scope: { en: "Representative room photography selected from the SODIC Villette Drive folder.", ar: "صور ممثلة للمساحات مختارة من مجلد سوديك فيليت على Drive." },
+    summary: { en: "A room-by-room study of fluted wall rhythms, dressing storage, and quiet bedroom joinery throughout the SODIC Villette home.", ar: "دراسة مساحة تلو الأخرى لإيقاع الجدران المخددة وتخزين غرف الملابس ونجارة غرف النوم الهادئة في منزل سوديك فيليت." },
+    scope: { en: "Complete living, bedroom, dressing and wall photography from the SODIC Villette Drive folder, arranged to show how storage and surface meet.", ar: "كامل صور المعيشة وغرف النوم وغرف الملابس والجدران من مجلد سوديك فيليت على Drive، مرتبة لتوضح التقاء التخزين بالسطح." },
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [{ en: "Timber veneer", ar: "قشرة خشبية" }, { en: "Fluted timber", ar: "خشب مخدد" }],
     outcome: { en: "A selected record of the completed residential spaces.", ar: "سجل مختار للمساحات السكنية المكتملة." },
@@ -155,8 +147,8 @@ export const selectedProjectRecords: Project[] = [
     client: { en: "PLAYA", ar: "بلايا" },
     clientVisibility: "approved",
     verificationStatus: "verified",
-    summary: { en: "A selected Playa package moving from dressing-room systems to door and entry details.", ar: "حزمة مختارة من بلايا تنتقل من أنظمة غرف الملابس إلى تفاصيل الأبواب والمداخل." },
-    scope: { en: "Representative dressing, doors and stairs selected from the Playa Drive folder.", ar: "صور ممثلة لغرف الملابس والأبواب والسلالم مختارة من مجلد بلايا على Drive." },
+    summary: { en: "A layered residential sequence where dressing-room storage, door sets and stair details carry the same measured rhythm from entry to private rooms.", ar: "تسلسل سكني متعدد الطبقات تحمل فيه تخزين غرف الملابس ومجموعات الأبواب وتفاصيل السلم الإيقاع نفسه من المدخل إلى الغرف الخاصة." },
+    scope: { en: "Complete dressing, door and stair photography from the Playa Drive folder, with each frame focused on storage, thresholds and joinery detail.", ar: "كامل صور غرف الملابس والأبواب والسلالم من مجلد بلايا على Drive، تركز كل صورة على التخزين والعتبات وتفاصيل النجارة." },
     responsibilities: [{ en: "Dressing-room joinery", ar: "نجارة غرف الملابس" }, { en: "Door sets", ar: "مجموعات الأبواب" }, { en: "Entry detailing", ar: "تفاصيل المداخل" }],
     materials: [{ en: "Painted timber", ar: "خشب مطلي" }, { en: "Oak veneer", ar: "قشرة بلوط" }],
     outcome: { en: "A concise visual record of storage, door and entry work.", ar: "سجل بصري مختصر لأعمال التخزين والأبواب والمداخل." },
@@ -177,8 +169,8 @@ export const selectedProjectRecords: Project[] = [
     client: { en: "CFC", ar: "CFC" },
     clientVisibility: "approved",
     verificationStatus: "verified",
-    summary: { en: "A commercial interior study with timber walls, reception and considered lighting details.", ar: "دراسة لمساحة تجارية بجدران خشبية واستقبال وتفاصيل إضاءة مدروسة." },
-    scope: { en: "Representative wall, reception and detail photography selected from the CFC office Drive folder.", ar: "صور ممثلة للجدران والاستقبال والتفاصيل مختارة من مجلد مكتب CFC على Drive." },
+    summary: { en: "A workplace interior shaped by timber walls, reception joinery and precise lighting details that make arrival feel considered.", ar: "مساحة عمل تشكلها الجدران الخشبية ونجارة الاستقبال وتفاصيل الإضاءة الدقيقة التي تمنح لحظة الوصول عناية واضحة." },
+    scope: { en: "Complete wall, reception and detail photography from the CFC Office Drive folder, following the package from first impression to close finish.", ar: "كامل صور الجدران والاستقبال والتفاصيل من مجلد مكتب CFC على Drive، تتتبع الحزمة من الانطباع الأول إلى التشطيب الدقيق." },
     responsibilities: [{ en: "Commercial joinery", ar: "نجارة تجارية" }, { en: "Reception elements", ar: "عناصر الاستقبال" }, { en: "Site delivery", ar: "التنفيذ بالموقع" }],
     materials: [{ en: "Timber veneer", ar: "قشرة خشبية" }, { en: "Painted panels", ar: "ألواح مطلية" }],
     outcome: { en: "A focused record of the workplace package.", ar: "سجل مركز لحزمة مساحة العمل." },

@@ -69,7 +69,9 @@ The seven supplied HEIC photographs were visually verified as one completed kitc
 - Ahmed Elsheref Designs: Drive ID `1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs`; approved collaborator mark; shown on the SODIC card, project detail and People We Work With.
 - SODIC: no logo file was found in the supplied project folder or the searched Drive source. The UI uses accessible text attribution only. An image logo remains gated until an approved Drive file exists.
 - Vento/Evento: source ID `1kkrKXJpd1K65oqPZ1UsAiT5pBqp2t-T1` is currently labelled “Vento Designs” in the catalog. Identity/spelling still needs owner confirmation.
-- MYS and Amaken: retained with per-logo surface, padding and scale treatments rather than destructive filters.
+- MYS and Amaken: retained with per-logo scale treatments rather than destructive filters.
+- People We Work With and project attribution render the transparent delivery derivatives tied to these Drive IDs directly; collaborator wrappers have no artificial black tile or border, with only per-mark sizing used to preserve readability.
+- Circular Drive exports (MYS, Nawara and Amaken) are matte-cleaned and delivered on their true square bounds so their transparent edges do not render as black canvases.
 
 ## Material brands
 
@@ -101,10 +103,10 @@ The selected-project root is [Selected projects](https://drive.google.com/drive/
 | Order | Project / Drive folder | Canonical source folder ID | Published media | Notes |
 | ---: | --- | --- | ---: | --- |
 | 1 | SODIC / Ahmed Elsheref | `11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS` | 9 existing stills | SODIC text attribution and approved Ahmed Elsheref collaborator mark; stairs, wall, kitchen and cover are represented |
-| 2 | Swan Lake | `1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR` | 4 stills | One representative cover, wall, bedroom and detail image |
-| 3 | SODIC Villette / Mai Saad | `11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv` | 5 stills | One representative cover, wall, bedroom, dressing and reception image |
+| 2 | Swan Lake | `1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR` | 16 stills | Every approved photo in the Drive folder is published, with the first frame retained as cover and the remaining frames available in the project gallery |
+| 3 | SODIC Villette / Mai Saad | `11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv` | 55 stills | Every approved photo in the Drive folder is published; the gallery preserves the complete living, bedroom, dressing and wall sequence |
 | 4 | New Giza / Mai Saad | `1NmaXGLx8SRXereWz90DmS8YRh2I5J5cd` | 0 | Folder is empty; registered in the manifest but gated from the rail and routes until media is uploaded and reviewed |
-| 5 | Playa / Amaken | `1256mAU_FoUKShxofhCe8-pQEYja11tMr` | 3 stills | One representative dressing, doors and stairs image from a larger folder containing additional video |
-| 6 | CFC office (Commercial) | `1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y` | 3 stills | Wall, reception and detail |
+| 5 | Playa / Amaken | `1256mAU_FoUKShxofhCe8-pQEYja11tMr` | 85 stills | Every approved photo in the Drive folder is published; doors, stairs, dressing and joinery details remain in source order |
+| 6 | CFC office (Commercial) | `1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y` | 9 stills | Every approved photo in the Drive folder is published, covering wall, reception and finish details |
 
-The new selected-project rail publishes the five folders with reviewed photography in this order. New Giza remains visible to the content team through the manifest but does not render an empty placeholder. Hyde Park remains available in the broader project catalog and is not silently mixed into this six-folder selection.
+The selected-project rail publishes the four folders with reviewed photography in this order. New Giza remains visible to the content team through the manifest but does not render an empty placeholder. Hyde Park remains available in the broader project catalog and is not silently mixed into this six-folder selection. The generated manifest contains 165 stills from these four Drive folders, retaining each source file ID and SHA-256 hash.
