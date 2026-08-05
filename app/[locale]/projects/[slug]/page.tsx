@@ -48,7 +48,7 @@ export default async function ProjectPage({
     </header>
     <section className="project-overview section-pad" aria-labelledby="project-overview-title">
       <div className="project-overview-lead"><p className="eyebrow">{locale === "ar" ? "نظرة عامة" : "Overview"}</p><h2 id="project-overview-title">{project.summary[locale]}</h2></div>
-      <div className="project-facts"><p className="project-overview-scope">{project.scope[locale]}</p><dl><div><dt>{locale === "ar" ? "القطاع" : "Sector"}</dt><dd>{project.sectorLabel[locale]}</dd></div><div><dt>{locale === "ar" ? "الموقع" : "Location"}</dt><dd>{project.location[locale]}</dd></div><div><dt>{locale === "ar" ? "العناصر" : "Elements"}</dt><dd>{project.capabilities.map((capability) => capabilityLabel(capability, locale)).join(" · ")}</dd></div></dl></div>
+      <div className="project-facts"><p className="project-overview-scope">{project.scope[locale]}</p><dl><div><dt>{locale === "ar" ? "القطاع" : "Sector"}</dt><dd>{project.sectorLabel[locale]}</dd></div><div><dt>{locale === "ar" ? "الموقع" : "Location"}</dt><dd>{project.location[locale]}</dd></div><div><dt>{locale === "ar" ? "العناصر" : "Elements"}</dt><dd>{project.elements?.[locale] ?? project.capabilities.map((capability) => capabilityLabel(capability, locale)).join(" · ")}</dd></div></dl></div>
     </section>
     {project.verificationNote ? <aside className="verification-note"><span>!</span><p>{project.verificationNote[locale]}</p></aside> : null}
     <section className="editorial-gallery section-pad">

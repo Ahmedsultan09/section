@@ -221,7 +221,7 @@ export const projects: Project[] = [
     summary: { en: "A residential joinery package that moves from fluted walls and concealed storage to stair, kitchen and living details in one timber-led language.", ar: "حزمة نجارة سكنية تمتد من الجدران المخددة والتخزين المخفي إلى تفاصيل السلم والمطبخ والمعيشة ضمن لغة واحدة تقودها الخامة الخشبية." },
     scope: { en: "Selected wall, stair, kitchen and joinery photography from the SODIC Drive folder; quantities, locations and programme remain intentionally unlisted.", ar: "صور مختارة للجدران والسلم والمطبخ وتفاصيل النجارة من مجلد سوديك على Drive؛ لم تُدرج الكميات والمواقع والبرنامج الزمني عمداً." },
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
-    materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." },
+    materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." }, elements: { en: "Cladding only", ar: "التكسية فقط" },
     capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"], sourceFolderId: "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS", sourceFolderTitle: "1-SODIC ahmed el sherif", mediaAreas: { "sodic-drive-06": "cover", "sodic-drive-02": "wall", "sodic-drive-01": "stairs", "sodic-drive-03": "kitchen", "sodic-drive-08": "wall" },
   },
   {

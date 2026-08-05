@@ -73,6 +73,7 @@ export type Project = {
   verificationNote?: LocalizedText;
   summary: LocalizedText;
   scope: LocalizedText;
+  elements?: LocalizedText;
   responsibilities: LocalizedText[];
   materials: LocalizedText[];
   outcome: LocalizedText;
