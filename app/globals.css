@@ -175,7 +175,7 @@ img { display: block; }
 .project-row:hover { padding-inline: 16px; background: rgba(255,255,255,.55); }
 .project-index { align-self: start; margin-top: 30px; font: 500 10px var(--mono); }
 .project-thumb { height: 130px; position: relative; overflow: hidden; background: var(--olive); }
-.project-thumb img { object-fit: cover; filter: saturate(.65); transition: transform .7s ease; }
+.project-thumb img { object-fit: contain; padding: 10px; background: var(--olive-dark); filter: none; transition: transform .7s ease; }
 .project-row:hover .project-thumb img { transform: scale(1.06); }
 .project-row-copy p, .project-row-copy span { margin: 0; font: 500 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .project-row-copy h3 { margin: 12px 0; font-size: clamp(28px, 3.5vw, 54px); font-weight: 500; line-height: 1; letter-spacing: -.045em; }
@@ -222,7 +222,7 @@ img { display: block; }
 .project-hero { height: 100svh; min-height: 680px; position: relative; color: var(--white); background: var(--black); }
 .project-hero-media { position: absolute; inset: 0; }
 .project-hero-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,.75), rgba(0,0,0,.08) 70%); }
-.project-hero-media img { object-fit: cover; filter: saturate(.62); }
+.project-hero-media img { object-fit: cover; filter: none; }
 .project-hero-copy { position: absolute; z-index: 2; inset: auto var(--gutter) 70px; }
 .project-hero-copy p, .project-hero-copy span { margin: 0; font: 500 9px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 .project-hero-copy h1 { max-width: 1100px; margin: 18px 0 26px; font-size: clamp(56px, 8vw, 126px); font-weight: 500; line-height: .87; letter-spacing: -.065em; }
@@ -244,8 +244,8 @@ img { display: block; }
 .editorial-gallery figure > div { height: auto; aspect-ratio: 4 / 3; position: relative; overflow: hidden; background: var(--olive); }
 .editorial-gallery figure:first-child > div { aspect-ratio: 2.15 / 1; }
 .editorial-gallery figure.portrait > div { height: auto; aspect-ratio: 3 / 4; }
-.editorial-gallery img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; filter: saturate(.72); transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .5s ease; }
-.editorial-gallery figure:hover img { transform: scale(1.025); filter: saturate(.9); }
+.editorial-gallery img { width: 100%; height: 100%; display: block; object-fit: contain; object-position: center; padding: clamp(12px, 1.8vw, 28px); background: var(--olive-dark); filter: none; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.editorial-gallery figure:hover img { transform: scale(.97); }
 .editorial-gallery figcaption { display: flex; justify-content: space-between; gap: 30px; padding-top: 12px; font: 500 9px var(--mono); }
 .project-delivery { display: grid; grid-template-columns: 1.2fr .8fr; gap: 10vw; padding-block: 130px; color: var(--white); background: var(--olive-dark); }
 .project-delivery ul { margin: 0 0 35px; padding: 0; list-style: none; border-top: 1px solid var(--line-light); }
@@ -1390,8 +1390,8 @@ body:has(main.design-immersive) .design-switcher a.active { color: #0a0a07; back
 .story-rail::-webkit-scrollbar { display: none; }
 .story-card { min-width: 0; flex: 0 0 min(76vw, 1060px); display: grid; grid-template-columns: 1.25fr .75fr; scroll-snap-align: start; overflow: hidden; color: var(--white); background: var(--black); }
 .story-card-media { min-height: 570px; position: relative; overflow: hidden; background: var(--olive-dark); }
-.story-card-media img { object-fit: cover; filter: saturate(.72); transition: transform .9s cubic-bezier(.2,.7,.2,1), filter .5s; }
-.story-card:hover .story-card-media img { transform: scale(1.035); filter: saturate(.94); }
+.story-card-media img { object-fit: contain; padding: clamp(14px, 2vw, 30px); background: #11110d; filter: none; transition: transform .9s cubic-bezier(.2,.7,.2,1); }
+.story-card:hover .story-card-media img { transform: scale(.97); }
 .story-card-copy { display: flex; flex-direction: column; padding: clamp(26px, 4vw, 58px); }
 .story-card-copy > p { margin: 0; color: var(--yellow); font: 500 9px/1.4 var(--mono); letter-spacing: .09em; text-transform: uppercase; }
 .story-card-copy h3 { margin: auto 0 24px; font: 500 clamp(38px, 5vw, 80px)/.88 var(--sans); letter-spacing: -.065em; text-wrap: balance; }
@@ -1435,6 +1435,9 @@ body:has(main.design-immersive) .design-switcher a.active { color: #0a0a07; back
 .collection-piece-gallery img { object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
 .collection-piece-gallery figure:hover img { transform: scale(1.025); }
 .collection-piece-gallery figcaption { position: absolute; inset: auto 16px 16px; padding: 8px 10px; color: var(--white); background: rgba(0,0,0,.68); font: 500 8px/1.4 var(--mono); backdrop-filter: blur(8px); }
+.unit-collection-piece .collection-piece-gallery { grid-auto-flow: row; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-columns: auto; overflow: visible; }
+.unit-collection-piece .collection-piece-gallery figure { height: auto; aspect-ratio: 4 / 3; }
+.unit-collection-piece .collection-piece-gallery img { object-fit: contain; padding: 10px; background: #11110d; }
 .collection-piece > a { display: inline-block; margin: 28px 0 0 94px; padding-bottom: 8px; border-bottom: 1px solid var(--yellow); color: var(--yellow); font: 600 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 [dir="rtl"] .collection-piece > a { margin: 28px 94px 0 0; }
 
@@ -1593,6 +1596,7 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   .story-card { grid-template-columns: 1fr; }
   .story-card-media { min-height: 55vw; }
   .story-card-copy { min-height: 330px; }
+  .unit-collection-piece .collection-piece-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .showroom-statement, .showroom-collections header, .showroom-process header, .showroom-projects > header, .showroom-inquiry header { grid-template-columns: 1fr 2fr; }
   .showroom-statement h2, .showroom-collections header h2, .showroom-process header h2, .showroom-projects > header h2, .showroom-inquiry header h2 { grid-column: 2; }
   .showroom-statement > span, .showroom-inquiry header > span { grid-column: 2; }
@@ -1639,6 +1643,8 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   .collection-piece-heading { grid-template-columns: 38px 1fr; }
   .collection-piece-gallery { grid-auto-columns: 84vw; }
   .collection-piece-gallery figure { height: 110vw; }
+  .unit-collection-piece .collection-piece-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .unit-collection-piece .collection-piece-gallery figure { height: auto; aspect-ratio: 3 / 4; }
   .collection-piece > a, [dir="rtl"] .collection-piece > a { margin-inline: 62px 0; }
   .partner-proof-head { display: block; }
   .partner-proof-head span { display: block; margin-top: 12px; text-align: start; }

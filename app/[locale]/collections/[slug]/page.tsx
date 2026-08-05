@@ -43,7 +43,7 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
     <section className="collection-pieces section-pad" aria-labelledby="collection-pieces-title">
       <header><p className="eyebrow">{showroomCopy[locale].pieceLabel}</p><h2 id="collection-pieces-title">{locale === "ar" ? "تفاصيل تستحق الاستكشاف." : "Pieces worth exploring."}</h2><span>{locale === "ar" ? "كل قطعة مرجع يمكن تطويره وفقاً لاحتياجات مشروعك." : "Each piece is a made-to-order reference that can be developed for your project brief."}</span></header>
       <div className="collection-piece-list">
-        {pieces.map((piece, index) => <article className="collection-piece" id={piece.slug} key={piece.slug}>
+        {pieces.map((piece, index) => <article className={`collection-piece ${collection.slug === "custom-units" ? "unit-collection-piece" : ""}`} id={piece.slug} key={piece.slug}>
           <div className="collection-piece-heading"><span>{String(index + 1).padStart(2, "0")}</span><div><p>{piece.application[locale]}</p><h3>{piece.title[locale]}</h3><strong>{piece.story[locale]}</strong></div></div>
           <div className="collection-piece-gallery">{piece.media.map((src, mediaIndex) => <figure key={src}><Image unoptimized src={src} alt={`${piece.title[locale]} — ${mediaIndex + 1}`} fill sizes="(max-width: 760px) 82vw, 38vw" /><figcaption>{piece.scope[locale]}</figcaption></figure>)}</div>
           <DesignAwareLink href={`/${locale}/inquiry`}>{showroomCopy[locale].similar} ↗</DesignAwareLink>

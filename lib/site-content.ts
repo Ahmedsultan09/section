@@ -1,6 +1,7 @@
 import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectSector } from "./site-types";
 import { hydeParkMediaAssets, sodicMediaAssets } from "./drive-assets";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
+import generatedUnitProcessAssets from "./generated-unit-process-assets.json";
 import { selectedProjectMedia, selectedProjectRecords, selectedProjectSlugs } from "./selected-projects";
 
 export const locales: Locale[] = ["en", "ar"];
@@ -54,10 +55,39 @@ const categoryMediaAssets: MediaAsset[] = generatedCategoryDriveAssets.map((asse
   };
 });
 
+const processMediaLabels: Record<string, Record<Locale, string>> = {
+  "process-concept": { en: "Concept and briefing reference photograph", ar: "صورة مرجعية لمرحلة الفكرة والمتطلبات" },
+  "process-sketch": { en: "Design sketch reference photograph", ar: "صورة مرجعية لمرحلة التصميم والرسم" },
+  "process-manufacturing": { en: "Manufacturing reference photograph", ar: "صورة مرجعية لمرحلة التصنيع" },
+  "process-installation": { en: "Installation reference photograph", ar: "صورة مرجعية لمرحلة التركيب" },
+};
+
+const processMediaAssets: MediaAsset[] = generatedUnitProcessAssets.process.map((asset) => ({
+  id: asset.id,
+  src: asset.localSrc,
+  sourceFolder: asset.sourceFolderTitle,
+  sourceFolderId: asset.sourceFolderId,
+  sourceName: asset.sourceName,
+  capabilities: ["materials-finishes"],
+  stage: "process",
+  authenticity: asset.authenticity as MediaAsset["authenticity"],
+  rights: asset.rights as MediaAsset["rights"],
+  orientation: asset.orientation as MediaAsset["orientation"],
+  quality: "editorial",
+  usage: "process",
+  alt: processMediaLabels[asset.id],
+  driveFileId: asset.driveFileId,
+  originalMime: asset.originalMime,
+  contentHash: asset.contentHash,
+  derived: { webp: asset.localSrc },
+  publishStatus: asset.publishStatus as MediaAsset["publishStatus"],
+}));
+
 export const mediaAssets: MediaAsset[] = [
   ...sodicMediaAssets,
   ...hydeParkMediaAssets,
   ...categoryMediaAssets,
+  ...processMediaAssets,
   ...selectedProjectMedia,
   {
     id: "asset-living-01", src: "/assets/141202_527604.jpeg", sourceFolder: "Legacy site", sourceName: "141202_527604.jpeg",
@@ -257,10 +287,10 @@ export const projects: Project[] = [
 ];
 
 export const processSteps = [
-  { number: "01", title: { en: "Concept & briefing", ar: "الفكرة والمتطلبات" }, text: { en: "We define the ambition, scope, quantities, programme and site realities in one decisive working brief.", ar: "نحدد الطموح والنطاق والكميات والبرنامج وواقع الموقع في موجز عمل واضح وحاسم." }, image: "asset-living-01" },
-  { number: "02", title: { en: "Design & sketching", ar: "التصميم والرسم" }, text: { en: "Sketches, materials and technical decisions turn the brief into a buildable direction ready for approval.", ar: "تحول الرسومات والخامات والقرارات الفنية المتطلبات إلى اتجاه قابل للتنفيذ وجاهز للاعتماد." }, image: "asset-wall-01" },
-  { number: "03", title: { en: "Manufacturing", ar: "التصنيع" }, text: { en: "Approved information moves through fabrication, assembly, finish control and documented quality checks.", ar: "تنتقل المعلومات المعتمدة عبر التصنيع والتجميع وضبط التشطيب وفحوص الجودة الموثقة." }, image: "asset-process-01" },
-  { number: "04", title: { en: "Installation", ar: "التركيب" }, text: { en: "Protected delivery and sequenced site installation bring every coordinated element into its final position.", ar: "يجمع التسليم المحمي والتركيب المتسلسل في الموقع كل عنصر منسق في موضعه النهائي." }, image: "asset-door-01" },
+  { number: "01", title: { en: "Concept & briefing", ar: "الفكرة والمتطلبات" }, text: { en: "We define the ambition, scope, quantities, programme and site realities in one decisive working brief.", ar: "نحدد الطموح والنطاق والكميات والبرنامج وواقع الموقع في موجز عمل واضح وحاسم." }, image: "process-concept" },
+  { number: "02", title: { en: "Design & sketching", ar: "التصميم والرسم" }, text: { en: "Sketches, materials and technical decisions turn the brief into a buildable direction ready for approval.", ar: "تحول الرسومات والخامات والقرارات الفنية المتطلبات إلى اتجاه قابل للتنفيذ وجاهز للاعتماد." }, image: "process-sketch" },
+  { number: "03", title: { en: "Manufacturing", ar: "التصنيع" }, text: { en: "Approved information moves through fabrication, assembly, finish control and documented quality checks.", ar: "تنتقل المعلومات المعتمدة عبر التصنيع والتجميع وضبط التشطيب وفحوص الجودة الموثقة." }, image: "process-manufacturing" },
+  { number: "04", title: { en: "Installation", ar: "التركيب" }, text: { en: "Protected delivery and sequenced site installation bring every coordinated element into its final position.", ar: "يجمع التسليم المحمي والتركيب المتسلسل في الموقع كل عنصر منسق في موضعه النهائي." }, image: "process-installation" },
 ];
 
 export const manufacturingSteps = [

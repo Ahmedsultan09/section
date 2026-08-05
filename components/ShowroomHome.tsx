@@ -22,9 +22,9 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
   const body = locale === "ar"
     ? dark ? "رحلة بصرية عبر الخامة والتصنيع والمكان المكتمل." : "نصمم وننسق ونصنع ونركب العناصر الخشبية للمشروعات الطموحة."
     : dark ? "A cinematic journey through material, making and the completed space." : "We design, coordinate, make and install timber elements for ambitious projects.";
-  const poster = dark ? "/drive/dressing/dressing-08.webp" : "/assets/171467_688502.jpeg";
+  const poster = dark ? "/drive/materials/material-03.webp" : "/assets/171467_688502.jpeg";
   const heroImages = dark
-    ? ["dressing-09", "kitchen-obour-01", "bedroom-a-01", "dressing-12", "kitchen-edited-02", "bedroom-b-03", "dressing-13"].map(getMedia)
+    ? ["sodic-drive-06", "sodic-drive-02", "white-island-kitchen-01", "dressing-09", "bedroom-a-01", "sodic-drive-04"].map(getMedia)
     : [];
 
   return (

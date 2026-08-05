@@ -75,11 +75,9 @@ export function ShowroomProcess({ locale, mode }: { locale: Locale; mode: Mode }
       }}>
         {processSteps.map((step, index) => {
           const media = getMedia(step.image);
-          const src = index === 2 ? "/drive/materials/material-01.webp" : media.src;
-          const alt = index === 2 ? (locale === "ar" ? "مراجعة خامة خشبية تحمل علامة SECTION قبل التصنيع" : "SECTION material sample being reviewed before manufacturing") : media.alt[locale];
           return (
             <article className={index === active ? "is-active" : ""} data-process-card key={step.number}>
-              <figure><Image unoptimized src={src} alt={alt} fill sizes="(max-width: 760px) 86vw, 72vw" /><figcaption>{locale === "ar" ? `المرحلة ${step.number}` : `Stage ${step.number}`}</figcaption></figure>
+              <figure><Image unoptimized src={media.src} alt={media.alt[locale]} fill sizes="(max-width: 760px) 86vw, 72vw" /><figcaption>{locale === "ar" ? `المرحلة ${step.number}` : `Stage ${step.number}`}</figcaption></figure>
               <div className="process-card-copy"><span>{step.number}</span><h3>{step.title[locale]}</h3><p>{step.text[locale]}</p></div>
               <i className="process-card-line" aria-hidden="true" />
             </article>

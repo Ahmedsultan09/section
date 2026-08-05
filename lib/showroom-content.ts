@@ -1,5 +1,6 @@
 import type { CollectionPiece, Locale, PartnerLogo } from "./site-types";
 import { driveSrc } from "./media-manifest";
+import generatedUnitProcessAssets from "./generated-unit-process-assets.json";
 
 export const collectionPieces: CollectionPiece[] = [
   { slug: "obour-kitchen", collection: "kitchens", title: { en: "Obour Kitchen", ar: "مطبخ العبور" }, story: { en: "A calm fitted composition where storage, preparation and appliance zones read as one architectural line.", ar: "تكوين هادئ ومتكامل يجمع التخزين والتحضير والأجهزة في خط معماري واحد." }, application: { en: "Residential kitchen", ar: "مطبخ سكني" }, scope: { en: "Fitted cabinetry and coordinated installation", ar: "خزائن مدمجة وتركيب منسق" }, media: Array.from({ length: 16 }, (_, index) => driveSrc(`kitchen-obour-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv"], status: "preview" },
@@ -15,11 +16,38 @@ export const collectionPieces: CollectionPiece[] = [
   { slug: "bedroom-study-b", collection: "bedrooms", title: { en: "Bedroom Study 02", ar: "دراسة غرفة نوم ٠٢" }, story: { en: "A second bedroom study showing the room as one composed package rather than isolated furniture pieces.", ar: "دراسة ثانية لغرفة نوم تعرض المساحة كحزمة متكاملة بدلاً من قطع أثاث منفصلة." }, application: { en: "Residential bedroom", ar: "غرفة نوم سكنية" }, scope: { en: "Bedroom furniture, joinery and fitting", ar: "أثاث غرفة نوم ونجارة وتركيب" }, media: Array.from({ length: 7 }, (_, index) => driveSrc(`bedroom-b-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp"], status: "preview" },
   ...[
     ["living-rooms", "living-composition", "Living Composition", "تكوين للمعيشة", "/assets/141202_527604.jpeg"],
-    ["custom-units", "fitted-storage", "Fitted Storage", "تخزين مدمج", "/assets/217375_739589.jpeg"],
     ["doors", "timber-door-set", "Timber Door Set", "مجموعة باب خشبي", "/assets/412078_605141.jpeg"],
     ["wall-cladding", "integrated-wall", "Integrated Wall", "حائط متكامل", "/assets/171467_688502.jpeg"],
     ["materials-finishes", "finish-study", "Finish Study", "دراسة تشطيب", "/assets/891416_45535.jpg"],
   ].map(([collection, slug, en, ar, image]) => ({ slug, collection, title: { en, ar }, story: { en: "A selected SECTION study showing how one crafted element is coordinated with the wider interior.", ar: "دراسة مختارة من SECTION توضح كيف ينسق العنصر المصنوع مع المساحة الداخلية كاملة." }, application: { en: "Made-to-fit interior", ar: "عنصر داخلي مصمم للمقاس" }, scope: { en: "Design development, making and fitting", ar: "تطوير تصميم وتصنيع وتركيب" }, media: [image], sourceFolderIds: [], status: "preview" } as CollectionPiece)),
+  ...generatedUnitProcessAssets.units.map((group) => {
+    const copy = {
+      "tv-unit": {
+        title: { en: "TV Units", ar: "وحدات التلفزيون" },
+        story: { en: "A complete TV-unit reference set showing the full range of built-in media and storage details.", ar: "مجموعة مرجعية كاملة لوحدات التلفزيون تعرض نطاق تفاصيل الوسائط والتخزين المدمج." },
+      },
+      "bathroom-units": {
+        title: { en: "Bathroom Units", ar: "وحدات الحمامات" },
+        story: { en: "Bathroom-unit references gathered as one category, with every supplied view available to explore.", ar: "مراجع وحدات الحمامات مجمعة في فئة واحدة مع إتاحة كل الصور الموردة للاستكشاف." },
+      },
+      "custom-units": {
+        title: { en: "Custom Units", ar: "الوحدات المخصصة" },
+        story: { en: "Purpose-built unit references covering the supplied custom storage and display pieces.", ar: "مراجع لوحدات مصممة لغرض محدد تشمل قطع التخزين والعرض المخصصة الموردة." },
+      },
+    }[group.id as "tv-unit" | "bathroom-units" | "custom-units"];
+    if (!copy) throw new Error(`Unsupported unit group: ${group.id}`);
+    return {
+      slug: group.id,
+      collection: "custom-units",
+      title: copy.title,
+      story: copy.story,
+      application: { en: group.title.replace(/^\d+-/, ""), ar: group.title.replace(/^\d+-/, "") },
+      scope: { en: `${group.files.length} supplied project photographs`, ar: `${group.files.length} صورة موردة من المشروع` },
+      media: group.files.map((file) => file.localSrc),
+      sourceFolderIds: [group.sourceFolderId],
+      status: "preview",
+    } satisfies CollectionPiece;
+  }),
 ];
 
 export const partnerLogos: PartnerLogo[] = [

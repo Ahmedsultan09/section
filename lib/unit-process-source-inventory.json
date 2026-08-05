@@ -1,0 +1,92 @@
+{
+  "process": [
+    {
+      "id": "process-concept",
+      "driveFileId": "1WORAAoLI5m_tVNDHNJ4IWtFnjiXss_V7",
+      "sourceFolderId": "1RHx3xN5MmNIR1JYY1vPdKcJmOqJuvGbk",
+      "sourceName": "concept and briefing 2",
+      "originalMime": "image/jpeg"
+    },
+    {
+      "id": "process-sketch",
+      "driveFileId": "14UMxu_qjKewOzPvuhLV15lQe8ujy3hD1",
+      "sourceFolderId": "1RHx3xN5MmNIR1JYY1vPdKcJmOqJuvGbk",
+      "sourceName": "Scetch",
+      "originalMime": "image/jpeg"
+    },
+    {
+      "id": "process-manufacturing",
+      "driveFileId": "1tgHe10ph-zuWWvUd9auwNup2CW7nK7ja",
+      "sourceFolderId": "1RHx3xN5MmNIR1JYY1vPdKcJmOqJuvGbk",
+      "sourceName": "Manufacturing 2",
+      "originalMime": "image/jpeg"
+    },
+    {
+      "id": "process-installation",
+      "driveFileId": "1sxBPCDnZsFKnMmjQKfsnd2naBW2wILOL",
+      "sourceFolderId": "1RHx3xN5MmNIR1JYY1vPdKcJmOqJuvGbk",
+      "sourceName": "Installation 2",
+      "originalMime": "image/jpeg"
+    }
+  ],
+  "units": [
+    {
+      "id": "tv-unit",
+      "title": "1-Tv unit",
+      "sourceFolderId": "1U__0oOmH17VsUGlR5gSf2KgK_aHE5FAw",
+      "files": [
+        { "id": "tv-unit-01", "driveFileId": "14Lu1XQKHhj76PmYLt1j8QYG8KgHkbXwH", "sourceName": "1", "originalMime": "image/jpeg" },
+        { "id": "tv-unit-02", "driveFileId": "15bG5-Gl4n4ahQwMVklOHZOxXUdosenvM", "sourceName": "2", "originalMime": "image/jpeg" },
+        { "id": "tv-unit-03", "driveFileId": "1Pr1FKLXeEWQPzV1YtGy7KNcKQV9OYUNF", "sourceName": "3", "originalMime": "image/png" },
+        { "id": "tv-unit-04", "driveFileId": "1PCT88VOXH3rHuUg94fRkkrDRsWeAy1BY", "sourceName": "4", "originalMime": "image/png" },
+        { "id": "tv-unit-05", "driveFileId": "1W1LHHzJ0x0gL9aYxMZrAgptJZPILTDfB", "sourceName": "4.1", "originalMime": "image/heif" },
+        { "id": "tv-unit-06", "driveFileId": "1MH-gNXdACcUNU6u_t38IIl6LLlN245m9", "sourceName": "6.png", "originalMime": "image/jpeg" },
+        { "id": "tv-unit-07", "driveFileId": "1VulOYIeiRom2RLLGGeoxdS2LGyjTlWMZ", "sourceName": "7", "originalMime": "image/png" },
+        { "id": "tv-unit-08", "driveFileId": "1MtXc-BHvBQ_PmwfXdJnn27RvrUXA8dHP", "sourceName": "7.png", "originalMime": "image/png" },
+        { "id": "tv-unit-09", "driveFileId": "1B5AnaN4rd2Imls6k4I8np8vVClCNX-9j", "sourceName": "8", "originalMime": "image/png" },
+        { "id": "tv-unit-10", "driveFileId": "1gmXSpqAT0jI8-5Lk6QHUShcogYJpsMqm", "sourceName": "9", "originalMime": "image/png" },
+        { "id": "tv-unit-11", "driveFileId": "17xVlt7WLuoei6BPYIWcCkBYYfEUgGpPu", "sourceName": "10.png", "originalMime": "image/png" },
+        { "id": "tv-unit-12", "driveFileId": "1vKOJ5OrOVDUJ_87qc9eIiSsBkSlmg1ii", "sourceName": "11", "originalMime": "image/jpeg" },
+        { "id": "tv-unit-13", "driveFileId": "1OMNcWtFkAPrKzSl649rZXm7MDad31f1u", "sourceName": "12", "originalMime": "image/png" },
+        { "id": "tv-unit-14", "driveFileId": "1G20aldA5ioD9oTbf2d14LncQdTDN5IC0", "sourceName": "13", "originalMime": "image/png" },
+        { "id": "tv-unit-15", "driveFileId": "1LDGRri21TKt1ON3hrQ23VIswLI8XFxac", "sourceName": "14", "originalMime": "image/heif" }
+      ]
+    },
+    {
+      "id": "bathroom-units",
+      "title": "2-Bathroom units",
+      "sourceFolderId": "1aqQcX-H3lU9QyXTH2mbf0MR7wo7vhsTp",
+      "files": [
+        { "id": "bathroom-unit-01", "driveFileId": "186SFqvLLVQK_08kXDDIKlll9PTXwG8ZG", "sourceName": "1", "originalMime": "image/jpeg" },
+        { "id": "bathroom-unit-02", "driveFileId": "1sRyMDdm-WLyGChETriUhudWLCBtZOz4Z", "sourceName": "2", "originalMime": "image/jpeg" },
+        { "id": "bathroom-unit-03", "driveFileId": "16cOwziFcGViNxc-plshRvEckIifF7RoE", "sourceName": "3", "originalMime": "image/jpeg" },
+        { "id": "bathroom-unit-04", "driveFileId": "1w9lUqhNLOIZR0XTV7tluvlJ051HwxR9J", "sourceName": "4", "originalMime": "image/jpeg" },
+        { "id": "bathroom-unit-05", "driveFileId": "1e-dwZYzY9L9YNiwuC4Ai93Hjer3tpo-Y", "sourceName": "5", "originalMime": "image/jpeg" },
+        { "id": "bathroom-unit-06", "driveFileId": "1AFA0UY_uyWJiV75CY3_ZFzOSIO7nYnYz", "sourceName": "6", "originalMime": "image/png" },
+        { "id": "bathroom-unit-07", "driveFileId": "15aWadvJbgzUrkN2v_Gm7rj4evmlXjnAE", "sourceName": "7", "originalMime": "image/png" },
+        { "id": "bathroom-unit-08", "driveFileId": "1Tn34qTv8HZNOk_HDIt6tBUuZ6zefdGM_", "sourceName": "8", "originalMime": "image/jpeg" },
+        { "id": "bathroom-unit-09", "driveFileId": "1KDQ8Z6TdBwyrjNhTgXuNTmecXCWg2MeB", "sourceName": "9", "originalMime": "image/jpeg" }
+      ]
+    },
+    {
+      "id": "custom-units",
+      "title": "3-Custom units",
+      "sourceFolderId": "1UxzmpZ93tswuw5XFFzWQmAiWJoXCR4g9",
+      "files": [
+        { "id": "custom-unit-01", "driveFileId": "1nn2MA2kZYeE7Or3vtG4maR7lPCj7Hehv", "sourceName": "1", "originalMime": "image/png" },
+        { "id": "custom-unit-02", "driveFileId": "1MRCRtvXYvxxL55vF9LZpnRFpmuZn936p", "sourceName": "2", "originalMime": "image/png" },
+        { "id": "custom-unit-03", "driveFileId": "1EA7Df-Qym1lCtrXYBV8S3TUxSQbMHzWK", "sourceName": "3", "originalMime": "image/jpeg" },
+        { "id": "custom-unit-04", "driveFileId": "1zpSbJdSZIXDhmp57z-3eZKk7hHJSQeHd", "sourceName": "4", "originalMime": "image/png" },
+        { "id": "custom-unit-05", "driveFileId": "16C7-WDaA33icPwgmRYjPu6-J0rdkKHhT", "sourceName": "5", "originalMime": "image/png" },
+        { "id": "custom-unit-06", "driveFileId": "1VgKZiyYyr_AyWJ4tELTQy7c32Bdfwtm3", "sourceName": "6", "originalMime": "image/png" },
+        { "id": "custom-unit-07", "driveFileId": "169J8zN5xV8ziuQr0r9Q8YUbpWRIfwCg_", "sourceName": "7", "originalMime": "image/png" },
+        { "id": "custom-unit-08", "driveFileId": "1HDl-Cs770gt7YDTfnUQGlcBkWWZsrU-3", "sourceName": "8.png", "originalMime": "image/jpeg" },
+        { "id": "custom-unit-09", "driveFileId": "1RWg6aC2MIEk1mJ9KZB2DxxGsEFsp8JbJ", "sourceName": "9", "originalMime": "image/jpeg" },
+        { "id": "custom-unit-10", "driveFileId": "1fEwsLT16FLn1JLUgBNUJZUqqk-kOqLPE", "sourceName": "10", "originalMime": "image/heif" },
+        { "id": "custom-unit-11", "driveFileId": "1RLYGtDMMI1D3yeryzrwq57viCd1Uq4zo", "sourceName": "11", "originalMime": "image/png" },
+        { "id": "custom-unit-12", "driveFileId": "1Sr0oDF8aS5gLLbGGlsRDYwmlmpTFEC6C", "sourceName": "12", "originalMime": "image/jpeg" },
+        { "id": "custom-unit-13", "driveFileId": "1pEP4tce3YgIxRzWNLeY6IvOwuY3A4txm", "sourceName": "13", "originalMime": "image/jpeg" }
+      ]
+    }
+  ]
+}

@@ -119,7 +119,7 @@ export function AdaptiveWebGL({
         const defaultImageSources = mode === "assemblage"
           ? ["/assets/171467_688502.jpeg", "/assets/217375_739589.jpeg", "/drive/kitchens/kitchen-03-a.webp"]
           : ["/drive/dressing/dressing-08.webp", "/assets/141202_527604.jpeg", "/drive/kitchens/kitchen-04-a.webp", "/assets/474743_155959.jpg"];
-        const resolvedImageSources = imageSources.length ? imageSources : defaultImageSources;
+        const resolvedImageSources = (imageSources.length ? imageSources : defaultImageSources).slice(0, 6);
         const loader = new THREE.TextureLoader();
         const loaded = await Promise.all(resolvedImageSources.map((src) => loader.loadAsync(src).catch(() => null)));
         if (disposed) return;
@@ -130,18 +130,35 @@ export function AdaptiveWebGL({
           texture.colorSpace = THREE.SRGBColorSpace;
           texture.anisotropy = 4;
           textures.push(texture);
-          const geometry = new THREE.PlaneGeometry(mode === "assemblage" ? 2.7 : 3.1, mode === "assemblage" ? 3.65 : 4.15, 16, 16);
-          const material = new THREE.MeshBasicMaterial({ map: texture, transparent: true, opacity: mode === "assemblage" ? 0.94 : 0.86, side: THREE.DoubleSide });
+          const isCircle = mode === "nocturne";
+          const geometry = isCircle
+            ? new THREE.CircleGeometry(1.55, 64)
+            : new THREE.PlaneGeometry(2.7, 3.65, 16, 16);
+          const image = texture.image as { width?: number; height?: number } | undefined;
+          const aspect = image?.width && image.height ? image.width / image.height : 1;
+          const material = isCircle
+            ? new THREE.ShaderMaterial({
+              uniforms: {
+                uTexture: { value: texture },
+                uAspect: { value: aspect },
+                uBackground: { value: new THREE.Color(0x171713) },
+              },
+              vertexShader: "varying vec2 vUv; void main(){vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}",
+              fragmentShader: "varying vec2 vUv; uniform sampler2D uTexture; uniform float uAspect; uniform vec3 uBackground; void main(){vec2 centered=vUv-.5; float inner=.76; vec2 extent=uAspect>=1.0?vec2(inner,inner/uAspect):vec2(inner*uAspect,inner); vec2 imageUv=centered/extent+.5; vec3 color=uBackground; if(imageUv.x>=0.0&&imageUv.x<=1.0&&imageUv.y>=0.0&&imageUv.y<=1.0){color=texture2D(uTexture,imageUv).rgb;} gl_FragColor=vec4(color,1.0);}",
+              side: THREE.DoubleSide,
+            })
+            : new THREE.MeshBasicMaterial({ map: texture, transparent: true, opacity: 0.94, side: THREE.DoubleSide });
           geometries.push(geometry); materials.push(material);
           const mesh = new THREE.Mesh(geometry, material);
           if (mode === "assemblage") {
             mesh.position.set((index - 1) * 2.25, index === 1 ? 0.45 : -0.35, index * -0.35);
             mesh.rotation.set(index === 1 ? -0.04 : 0.08, (index - 1) * -0.18, (index - 1) * 0.04);
           } else {
-            const angle = (index / loaded.length) * Math.PI * 1.5 - Math.PI * 0.7;
-            mesh.position.set(Math.sin(angle) * 3.3, (index % 2 ? -0.6 : 0.75), Math.cos(angle) * 2.2 - 0.5);
+            const angle = (index / Math.max(loaded.length, 1)) * Math.PI * 2 - Math.PI * 0.65;
+            mesh.position.set(Math.sin(angle) * 3.35, (index % 2 ? -0.68 : 0.72), Math.cos(angle) * 1.75 - 0.55);
             mesh.rotation.y = -angle * 0.42;
-            mesh.rotation.z = (index - 1.5) * 0.06;
+            mesh.rotation.z = (index - 2.5) * 0.045;
+            mesh.scale.setScalar(index % 3 === 0 ? 1.08 : index % 3 === 1 ? 0.92 : 1);
           }
           targetGroup.add(mesh);
         });
