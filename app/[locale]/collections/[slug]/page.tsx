@@ -57,8 +57,8 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
       </aside>}
       <div className="collection-piece-list">
         {pieces.map((piece, index) => <article className={`collection-piece ${collection.slug === "wall-cladding" ? "cladding-piece" : ""}`} id={piece.slug} key={piece.slug}>
-          <div className="collection-piece-heading"><span>{String(index + 1).padStart(2, "0")}</span><div><p>{piece.application[locale]}</p><h3>{piece.title[locale]}</h3>{piece.location && <p className="collection-piece-location">{piece.location[locale]}</p>}{piece.story[locale] && <strong>{piece.story[locale]}</strong>}</div></div>
-          <div className="collection-piece-gallery">{piece.media.map((src, mediaIndex) => { const tag = piece.mediaTags?.[src]; return <figure key={src}><Image unoptimized src={src} alt={`${piece.title[locale]} — ${mediaIndex + 1}`} fill sizes="(max-width: 760px) 82vw, 38vw" /><figcaption>{tag?.[locale] ?? piece.scope[locale]}</figcaption></figure>; })}</div>
+          <div className="collection-piece-heading"><span>{String(index + 1).padStart(2, "0")}</span><div><p>{piece.application[locale]}</p><h3>{piece.title[locale]}</h3>{piece.location && <p className="collection-piece-location">{piece.location[locale]}</p>}</div></div>
+          <div className="collection-piece-gallery">{piece.media.map((src, mediaIndex) => <figure key={src}><Image unoptimized src={src} alt={`${piece.title[locale]} — ${mediaIndex + 1}`} fill sizes="(max-width: 760px) 82vw, 38vw" /></figure>)}</div>
           <DesignAwareLink href={`/${locale}/inquiry`}>{showroomCopy[locale].similar} ↗</DesignAwareLink>
         </article>)}
       </div>

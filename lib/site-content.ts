@@ -115,6 +115,27 @@ const kitchenCoverAsset: MediaAsset = {
   publishStatus: "preview",
 };
 
+const customUnitsCoverAsset: MediaAsset = {
+  id: "custom-unit-04",
+  src: "/drive/units/custom-units/custom-unit-04.webp",
+  sourceFolder: "3-Custom units",
+  sourceFolderId: "1UxzmpZ93tswuw5XFFzWQmAiWJoXCR4g9",
+  sourceName: "4",
+  capabilities: ["custom-units"],
+  stage: "finished",
+  authenticity: "verified-real",
+  rights: "pending",
+  orientation: "portrait",
+  quality: "hero",
+  usage: "capability",
+  alt: { en: "Custom TV unit with mirror and built-in storage", ar: "وحدة تلفزيون مخصصة مع مرآة وتخزين مدمج" },
+  driveFileId: "1PCT88VOXH3rHuUg94fRkkrDRsWeAy1BY",
+  originalMime: "image/png",
+  contentHash: "7cfad55e5a6a4d060e7c84cb903b4db1aefa102467c06d16d9c268f5f49156cf",
+  derived: { webp: "/drive/units/custom-units/custom-unit-04.webp" },
+  publishStatus: "preview",
+};
+
 export const mediaAssets: MediaAsset[] = [
   ...sodicMediaAssets,
   ...hydeParkMediaAssets,
@@ -123,6 +144,7 @@ export const mediaAssets: MediaAsset[] = [
   ...processMediaAssets,
   ...selectedProjectMedia,
   kitchenCoverAsset,
+  customUnitsCoverAsset,
   {
     id: "asset-living-01", src: "/assets/141202_527604.jpeg", sourceFolder: "Legacy site", sourceName: "141202_527604.jpeg",
     projectSlug: "residential-joinery-study", sector: "residential-developments", capabilities: ["living-rooms", "custom-units"],
@@ -202,7 +224,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Media units, storage, reception pieces and fitted elements developed around drawings, services and real site tolerances.", ar: "وحدات وسائط وتخزين واستقبال وعناصر مدمجة تُطوّر وفق الرسومات والخدمات وسماحات الموقع الفعلية." },
     applications: [{ en: "Media units", ar: "وحدات الوسائط" }, { en: "Integrated storage", ar: "التخزين المدمج" }, { en: "Reception joinery", ar: "نجارة الاستقبال" }],
     materials: [{ en: "Plywood and MDF", ar: "الأبلكاش وMDF" }, { en: "Veneers and laminates", ar: "القشرة واللامينيت" }, { en: "Integrated hardware", ar: "الإكسسوارات المدمجة" }],
-    process: [{ en: "Site verification", ar: "مراجعة الموقع" }, { en: "Prototype and sample", ar: "النموذج والعينة" }, { en: "Controlled production", ar: "الإنتاج المنضبط" }], image: "asset-wall-01",
+    process: [{ en: "Site verification", ar: "مراجعة الموقع" }, { en: "Prototype and sample", ar: "النموذج والعينة" }, { en: "Controlled production", ar: "الإنتاج المنضبط" }], image: "custom-unit-04",
   },
   {
     slug: "bedrooms", number: "06", title: { en: "Bedrooms", ar: "غرف النوم" },

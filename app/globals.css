@@ -692,7 +692,7 @@ body:has(main.design-immersive.subpage) .site-header .brand-mark-light { display
   .process-assemblage .process-card-copy > span { width: auto; height: auto; display: block; margin: 0 0 10px; border: 0; }
   .process-card-copy h3 { margin: 10px 0; font-size: clamp(34px, 12vw, 54px); }
   .process-card-copy p { font-size: 13px; }
-  .process-nocturne .process-card-copy { inset: auto 24px 30px; }
+  .process-nocturne .process-card-copy { inset: auto 24px 92px; }
   .process-nocturne .process-card-copy > span { margin-bottom: 22px; font-size: 36px; }
   .showroom-manufacturing-media figure { width: 128px; border-width: 4px; }
   .showroom-about { display: block; min-height: auto; }
@@ -1652,7 +1652,7 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   .story-card { flex-basis: 86vw; }
   .story-card-media { min-height: 105vw; }
   .story-card-copy { min-height: 310px; }
-  .story-card-copy h3.named-client { font-size: 68px; }
+  .story-card-copy h3.named-client { max-width: 100%; font-size: clamp(46px, 12vw, 62px); letter-spacing: -.075em; overflow-wrap: anywhere; }
   .story-rail-end { width: max(var(--gutter), 14vw); }
   .collection-pieces > header { display: block; }
   .collection-pieces > header h2 { margin: 24px 0; }
