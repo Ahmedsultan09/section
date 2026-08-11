@@ -221,7 +221,7 @@ const capabilityCatalog: Capability[] = [
     process: [{ en: "Setting-out", ar: "تحديد المحاور" }, { en: "Panel coordination", ar: "تنسيق الألواح" }, { en: "Protected installation", ar: "التركيب والحماية" }], image: "asset-wall-01",
   },
   {
-    slug: "doors", number: "04", title: { en: "Architectural Doors", ar: "الأبواب المعمارية" },
+    slug: "doors", number: "04", title: { en: "Doors", ar: "الأبواب" },
     short: { en: "Complete door sets coordinated with walls, hardware and site tolerances.", ar: "مجموعات أبواب متكاملة ومنسقة مع الحوائط والإكسسوارات وسماحات الموقع." },
     intro: { en: "Each door is developed as a complete assembly: leaf, frame, architrave, hardware preparation, finish and installation sequence.", ar: "يُطوّر كل باب كمجموعة متكاملة تشمل الضلفة والحلق والحليات وتجهيز الإكسسوارات والتشطيب وتسلسل التركيب." },
     applications: [{ en: "Apartment entrances", ar: "مداخل الوحدات" }, { en: "Internal doors", ar: "الأبواب الداخلية" }, { en: "Concealed doors", ar: "الأبواب المخفية" }],

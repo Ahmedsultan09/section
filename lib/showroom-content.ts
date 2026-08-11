@@ -57,7 +57,7 @@ const dressingRoomPieces: CollectionPiece[] = dressingRoomSeries.map((series) =>
 const doorGalleryPiece: CollectionPiece = {
   slug: "doors-gallery",
   collection: "doors",
-  title: { en: "Architectural Doors", ar: "الأبواب المعمارية" },
+  title: { en: "Doors", ar: "الأبواب" },
   story: {
     en: "The complete Doors sequence is shown as one combined gallery because the source folder has no subcategories.",
     ar: "يُعرض تسلسل الأبواب كاملاً في معرض واحد لأن مجلد المصدر لا يحتوي على فئات فرعية.",
