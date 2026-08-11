@@ -92,11 +92,13 @@ export type CollectionPiece = {
   slug: string;
   collection: CapabilitySlug;
   title: LocalizedText;
+  location?: LocalizedText;
   story: LocalizedText;
   application: LocalizedText;
   scope: LocalizedText;
   materials?: LocalizedText[];
   media: string[];
+  mediaTags?: Record<string, LocalizedText>;
   sourceFolderIds: string[];
   status: "preview" | "approved" | "quarantined";
 };

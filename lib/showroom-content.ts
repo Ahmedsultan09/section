@@ -1,29 +1,185 @@
 import type { CollectionPiece, Locale, PartnerLogo } from "./site-types";
 import { driveSrc } from "./media-manifest";
+import generatedDressingDriveAssets from "./generated-dressing-drive-assets.json";
+import generatedDoorsDriveAssets from "./generated-doors-drive-assets.json";
+import generatedLivingDriveAssets from "./generated-living-drive-assets.json";
 import generatedUnitProcessAssets from "./generated-unit-process-assets.json";
 
 function driveSequence(prefix: string, count: number) {
   return Array.from({ length: count }, (_, index) => driveSrc(`${prefix}-${String(index + 1).padStart(2, "0")}`));
 }
 
+const dressingRoomSeries = [
+  {
+    folderName: "Dressing 1 (sodic vilette)",
+    folderId: "1EBo-nIxqiEiQAK8r7VIkBqzaxqtH9v4w",
+    slug: "dressing-1-sodic-villette",
+    title: { en: "Dressing 1 — SODIC Villette", ar: "غرفة الملابس ١ — سوديك فيليت" },
+  },
+  {
+    folderName: "Dressing 2 (Playa)",
+    folderId: "1OrhLiy6n10YaOcMErZBTVX_oVwP3b46-",
+    slug: "dressing-2-playa",
+    title: { en: "Dressing 2 — Playa", ar: "غرفة الملابس ٢ — بلايا" },
+  },
+  {
+    folderName: "Dressing 3 (sodic)",
+    folderId: "1ieWZ8B_wabeOZYpjtNZDvaZxvSDBSmnP",
+    slug: "dressing-3-sodic",
+    title: { en: "Dressing 3 — SODIC", ar: "غرفة الملابس ٣ — سوديك" },
+  },
+  {
+    folderName: "Dressing 4 (New Cairo)",
+    folderId: "1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs",
+    slug: "dressing-4-new-cairo",
+    title: { en: "Dressing 4 — New Cairo", ar: "غرفة الملابس ٤ — القاهرة الجديدة" },
+  },
+] as const;
+
+const dressingRoomPieces: CollectionPiece[] = dressingRoomSeries.map((series) => ({
+  slug: series.slug,
+  collection: "dressing-rooms",
+  title: series.title,
+  story: {
+    en: "A Drive-supplied dressing-room sequence preserved in the source folder order.",
+    ar: "تسلسل صور غرفة ملابس مورّد من Drive مع الحفاظ على ترتيب مجلد المصدر.",
+  },
+  application: { en: "Dressing room reference", ar: "مرجع غرفة ملابس" },
+  scope: { en: "Wardrobes, storage and joinery", ar: "خزائن وتخزين وأعمال نجارة" },
+  media: generatedDressingDriveAssets
+    .filter((asset) => asset.sourceFolderName === series.folderName)
+    .sort((a, b) => (a.imageOrder ?? 0) - (b.imageOrder ?? 0))
+    .map((asset) => driveSrc(asset.id)),
+  sourceFolderIds: [series.folderId],
+  status: "preview",
+}));
+
+const doorGalleryPiece: CollectionPiece = {
+  slug: "doors-gallery",
+  collection: "doors",
+  title: { en: "Architectural Doors", ar: "الأبواب المعمارية" },
+  story: {
+    en: "The complete Doors sequence is shown as one combined gallery because the source folder has no subcategories.",
+    ar: "يُعرض تسلسل الأبواب كاملاً في معرض واحد لأن مجلد المصدر لا يحتوي على فئات فرعية.",
+  },
+  application: { en: "Architectural door sets", ar: "مجموعات أبواب معمارية" },
+  scope: { en: "18 ordered Drive-supplied photographs", ar: "١٨ صورة موردة من Drive بالترتيب" },
+  media: generatedDoorsDriveAssets
+    .sort((a, b) => a.imageOrder - b.imageOrder)
+    .map((asset) => driveSrc(asset.id)),
+  sourceFolderIds: ["1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh"],
+  status: "preview",
+};
+
+const livingSpaceSeries = [
+  { projectOrder: 1, folderName: "Living space 01", folderId: "1mMM-Qqo3Zd-FEntIDYLaGLPC1KQ7FQbx", slug: "living-space-01", title: { en: "Living Space 01", ar: "مساحة المعيشة ٠١" } },
+  { projectOrder: 2, folderName: "Living space 02", folderId: "1uhkdfxII741nyF3BIKKQod7XRBJC5727", slug: "living-space-02", title: { en: "Living Space 02", ar: "مساحة المعيشة ٠٢" } },
+  { projectOrder: 3, folderName: "Living space 03", folderId: "1s4KOmIANFU9_hli-7KTaVSBdp4qJvEAS", slug: "living-space-03", title: { en: "Living Space 03", ar: "مساحة المعيشة ٠٣" } },
+] as const;
+
+const livingSpacePieces: CollectionPiece[] = livingSpaceSeries.map((series) => ({
+  slug: series.slug,
+  collection: "living-rooms",
+  title: series.title,
+  story: {
+    en: `Living Spaces project ${String(series.projectOrder).padStart(2, "0")} shown in the numbered order supplied in Drive.`,
+    ar: `مشروع مساحة المعيشة ${String(series.projectOrder).padStart(2, "0")} معروض بالترتيب المرقم المورّد في Drive.`,
+  },
+  application: { en: "Residential living space", ar: "مساحة معيشة سكنية" },
+  scope: { en: "Ordered project photographs", ar: "صور المشروع بالترتيب" },
+  media: generatedLivingDriveAssets
+    .filter((asset) => asset.role === "gallery" && asset.sourceFolderName === series.folderName)
+    .sort((a, b) => (a.imageOrder ?? 0) - (b.imageOrder ?? 0))
+    .map((asset) => driveSrc(asset.id)),
+  sourceFolderIds: [series.folderId],
+  status: "preview",
+}));
+
+function kitchenReferenceTags(prefix: string, count: number) {
+  return Object.fromEntries(
+    Array.from({ length: count }, (_, index) => [
+      driveSrc(`${prefix}-${String(index + 1).padStart(2, "0")}`),
+      { en: "3D Reference", ar: "مرجع ثلاثي الأبعاد" },
+    ]),
+  );
+}
+
+const kitchenPieces: CollectionPiece[] = [
+  {
+    slug: "kitchen-01",
+    collection: "kitchens",
+    title: { en: "Kitchen 01", ar: "المطبخ ٠١" },
+    location: { en: "— Azad Compound", ar: "— كمبوند آزاد" },
+    story: { en: "A six-image fitted-kitchen sequence from Azad Compound, preserved in the Drive order.", ar: "تسلسل من ست صور لمطبخ مدمج في كمبوند آزاد، مع الحفاظ على ترتيب Drive." },
+    application: { en: "Residential kitchen", ar: "مطبخ سكني" },
+    scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
+    media: driveSequence("kitchen-01", 6),
+    sourceFolderIds: ["1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv"],
+    status: "preview",
+  },
+  {
+    slug: "kitchen-02",
+    collection: "kitchens",
+    title: { en: "Kitchen 02", ar: "المطبخ ٠٢" },
+    location: { en: "— New Cairo", ar: "— القاهرة الجديدة" },
+    story: { en: "The five supplied project photographs are followed by the client’s 3D reference views.", ar: "تتبع صور المشروع الخمس الصور المرجعية ثلاثية الأبعاد الموردة من العميل." },
+    application: { en: "Residential kitchen", ar: "مطبخ سكني" },
+    scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
+    media: [...driveSequence("kitchen-02", 5), ...driveSequence("kitchen-02-ref", 3)],
+    mediaTags: kitchenReferenceTags("kitchen-02-ref", 3),
+    sourceFolderIds: ["1ag8bx9wjuYjZK3XTuUdTpSR4oPIZAVsw"],
+    status: "preview",
+  },
+  {
+    slug: "kitchen-03",
+    collection: "kitchens",
+    title: { en: "Kitchen 03", ar: "المطبخ ٠٣" },
+    location: { en: "— New Cairo", ar: "— القاهرة الجديدة" },
+    story: { en: "An eight-image New Cairo kitchen sequence, kept in the numbered Drive order.", ar: "تسلسل من ثماني صور لمطبخ في القاهرة الجديدة، مع الحفاظ على الترتيب المرقم في Drive." },
+    application: { en: "Made-to-fit kitchen", ar: "مطبخ مصمم للمقاس" },
+    scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
+    media: driveSequence("kitchen-03", 8),
+    sourceFolderIds: ["1tMOmunoBYRxhlvs-rTsll-B7ZLDLPghU"],
+    status: "preview",
+  },
+  {
+    slug: "kitchen-04",
+    collection: "kitchens",
+    title: { en: "Kitchen 04", ar: "المطبخ ٠٤" },
+    location: { en: "— Hyde Park", ar: "— هايد بارك" },
+    story: { en: "The five numbered Hyde Park photographs are shown; the remaining source-folder images are excluded.", ar: "تُعرض صور هايد بارك الخمس المرقمة، مع استبعاد الصور المتبقية من مجلد المصدر." },
+    application: { en: "Residential development", ar: "مشروع سكني" },
+    scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
+    media: driveSequence("kitchen-04", 5),
+    sourceFolderIds: ["1-P-ia4hCmDsLPVi_ilzt40IELPK6_S1t"],
+    status: "preview",
+  },
+  {
+    slug: "kitchen-05",
+    collection: "kitchens",
+    title: { en: "Kitchen 05", ar: "المطبخ ٠٥" },
+    location: { en: "— Obour City", ar: "— مدينة العبور" },
+    story: { en: "The five supplied project photographs are followed by the client’s 3D reference views.", ar: "تتبع صور المشروع الخمس الصور المرجعية ثلاثية الأبعاد الموردة من العميل." },
+    application: { en: "Residential kitchen", ar: "مطبخ سكني" },
+    scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
+    media: [...driveSequence("kitchen-05", 5), ...driveSequence("kitchen-05-ref", 3)],
+    mediaTags: kitchenReferenceTags("kitchen-05-ref", 3),
+    sourceFolderIds: ["1FDvpmYk-p-zNaDXyRSM1Q9CMO1cqfBpf"],
+    status: "preview",
+  },
+];
+
 export const collectionPieces: CollectionPiece[] = [
-  { slug: "obour-kitchen", collection: "kitchens", title: { en: "Obour Kitchen", ar: "مطبخ العبور" }, story: { en: "A calm fitted composition where storage, preparation and appliance zones read as one architectural line.", ar: "تكوين هادئ ومتكامل يجمع التخزين والتحضير والأجهزة في خط معماري واحد." }, application: { en: "Residential kitchen", ar: "مطبخ سكني" }, scope: { en: "Fitted cabinetry and coordinated installation", ar: "خزائن مدمجة وتركيب منسق" }, media: Array.from({ length: 16 }, (_, index) => driveSrc(`kitchen-obour-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv"], status: "preview" },
-  { slug: "timber-frame-kitchen", collection: "kitchens", title: { en: "Kitchen Study 07", ar: "دراسة مطبخ ٠٧" }, story: { en: "A warm timber kitchen with dark framed storage, integrated appliances and an extended preparation counter.", ar: "مطبخ خشبي دافئ يجمع التخزين بإطارات داكنة والأجهزة المدمجة وسطح تحضير ممتد." }, application: { en: "Residential kitchen", ar: "مطبخ سكني" }, scope: { en: "Kitchen cabinetry and coordinated fitting", ar: "خزائن مطبخ وتركيب منسق" }, media: Array.from({ length: 5 }, (_, index) => driveSrc(`kitchen-obour-${String(index + 17).padStart(2, "0")}`)), sourceFolderIds: ["1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv"], status: "preview" },
-  { slug: "edited-kitchen-study", collection: "kitchens", title: { en: "Kitchen Study 06", ar: "دراسة مطبخ ٠٦" }, story: { en: "A selected kitchen study documented through the edited photographs supplied in the project’s Drive folder.", ar: "دراسة مطبخ مختارة موثقة بالصور المعدلة الموردة في مجلد المشروع على Drive." }, application: { en: "Residential kitchen", ar: "مطبخ سكني" }, scope: { en: "Kitchen cabinetry and coordinated fitting", ar: "خزائن مطبخ وتركيب منسق" }, media: Array.from({ length: 6 }, (_, index) => driveSrc(`kitchen-edited-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M", "1r-JCLypKDimXW-zivG9hhAuduFL8N3vZ"], status: "preview" },
-  { slug: "sahar-kitchen", collection: "kitchens", title: { en: "Sahar Kitchen", ar: "مطبخ سحر" }, story: { en: "A compact kitchen study shaped around clear circulation, concealed storage and an easy everyday rhythm.", ar: "دراسة لمطبخ مدمج تتشكل حول حركة واضحة وتخزين هادئ وإيقاع يومي سهل." }, application: { en: "Private residence", ar: "مسكن خاص" }, scope: { en: "Cabinetry development and fitting", ar: "تطوير الخزائن وتركيبها" }, media: [driveSrc("k02a"), driveSrc("k02b"), "/drive/kitchens/kitchen-02-c.webp", "/drive/kitchens/kitchen-02-d.webp"], sourceFolderIds: ["1ag8bx9wjuYjZK3XTuUdTpSR4oPIZAVsw"], status: "preview" },
-  { slug: "kitchen-03", collection: "kitchens", title: { en: "Kitchen 03", ar: "المطبخ ٠٣" }, story: { en: "A material-led kitchen package developed from site dimensions into a precise fitted envelope.", ar: "حزمة مطبخ تقودها الخامة وتتطور من أبعاد الموقع إلى غلاف دقيق ومتكامل." }, application: { en: "Made-to-fit kitchen", ar: "مطبخ مصمم للمقاس" }, scope: { en: "Survey, detailing and production", ar: "رفع مقاسات وتفاصيل وتصنيع" }, media: [driveSrc("k03a"), driveSrc("k03b")], sourceFolderIds: ["1tMOmunoBYRxhlvs-rTsll-B7ZLDLPghU"], status: "preview" },
-  { slug: "kitchen-04", collection: "kitchens", title: { en: "Kitchen 04", ar: "المطبخ ٠٤" }, story: { en: "A restrained storage system designed to keep the room visually quiet while every function stays close at hand.", ar: "نظام تخزين هادئ بصرياً يحافظ على قرب كل وظيفة وسهولة الوصول إليها." }, application: { en: "Residential development", ar: "مشروع سكني" }, scope: { en: "Joinery manufacturing and fitting", ar: "تصنيع نجارة وتركيب" }, media: [driveSrc("k04a"), driveSrc("k04b")], sourceFolderIds: ["13xG1rK3o4rdBb46kbVLMR_b2yflBEiE7"], status: "preview" },
-  { slug: "kitchen-05", collection: "kitchens", title: { en: "Kitchen 05", ar: "المطبخ ٠٥" }, story: { en: "A practical kitchen sequence balancing durable surfaces with a clean, composed elevation.", ar: "تسلسل عملي يوازن بين الأسطح المتينة وواجهة نظيفة ومتزنة." }, application: { en: "Residential kitchen", ar: "مطبخ سكني" }, scope: { en: "Production and coordinated delivery", ar: "تصنيع وتسليم منسق" }, media: [driveSrc("k05a"), driveSrc("k05b"), "/drive/kitchens/kitchen-05-c.webp", "/drive/kitchens/kitchen-05-d.webp"], sourceFolderIds: ["1Va7QqpjC6Pmchnseo37B_tZq4kPiresk"], status: "preview" },
+  ...kitchenPieces,
   { slug: "cnc-cladding", collection: "wall-cladding", title: { en: "CNC CLADDING", ar: "تكسية CNC" }, story: { en: "CNC-routed wall panels and sculpted feature surfaces shaped from a precise digital-to-built workflow.", ar: "ألواح حوائط وأسطح مميزة مشغلة بتقنية CNC ضمن مسار دقيق من التصميم الرقمي إلى التنفيذ." }, application: { en: "CNC-routed feature walls", ar: "حوائط مميزة مشغلة بتقنية CNC" }, scope: { en: "CNC wall cladding / sculpted panels", ar: "تكسية حوائط CNC / ألواح منحوتة" }, media: driveSequence("cladding-cnc", 14), sourceFolderIds: ["12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd"], status: "preview" },
   { slug: "melamine-cladding", collection: "wall-cladding", title: { en: "MELAMINE CLADDING", ar: "تكسية ميلامين" }, story: { en: "Warm, durable melamine surfaces organized into clean wall planes, reveals and built-in storage lines.", ar: "أسطح ميلامين دافئة ومتينة تتنظم في مستويات حائط واضحة وفواصل وخطوط تخزين مدمج." }, application: { en: "Residential and hospitality wall systems", ar: "أنظمة حوائط سكنية وفندقية" }, scope: { en: "Melamine wall cladding / fitted joinery", ar: "تكسية ميلامين / نجارة مدمجة" }, media: driveSequence("cladding-melamine", 13), sourceFolderIds: ["1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0"], status: "preview" },
   { slug: "veneer-painting-cladding", collection: "wall-cladding", title: { en: "VENEER & PAINTING CLADDING", ar: "تكسية القشرة والدهان" }, story: { en: "Natural veneer grain and painted profiles brought together for layered, architectural wall compositions.", ar: "تجتمع عروق القشرة الطبيعية مع القطاعات المدهونة لتكوين حوائط معمارية متعددة الطبقات." }, application: { en: "Feature walls, doors and room envelopes", ar: "حوائط مميزة وأبواب وغلاف الغرفة" }, scope: { en: "Veneer and painted wall cladding", ar: "تكسية حوائط بالقشرة والدهان" }, media: driveSequence("cladding-veneer-painting", 17), sourceFolderIds: ["12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR"], status: "preview" },
-  { slug: "glass-frame-dressing", collection: "dressing-rooms", title: { en: "Glass-frame Dressing Room", ar: "غرفة ملابس بإطارات زجاجية" }, story: { en: "A full-height wardrobe system combining illuminated interiors, glass fronts and accessible storage hardware.", ar: "نظام خزائن بارتفاع كامل يجمع الإضاءة الداخلية والواجهات الزجاجية وإكسسوارات التخزين العملية." }, application: { en: "Bedroom dressing wall", ar: "حائط ملابس لغرفة نوم" }, scope: { en: "Wardrobes, lighting integration and fitting", ar: "خزائن ودمج إضاءة وتركيب" }, media: [driveSrc("d08"), driveSrc("d04"), driveSrc("d01"), driveSrc("d02"), driveSrc("dressing-09"), driveSrc("dressing-10"), driveSrc("dressing-11")], sourceFolderIds: ["1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X"], status: "preview" },
-  { slug: "walk-in-dressing", collection: "dressing-rooms", title: { en: "Walk-in Dressing Room", ar: "غرفة ملابس داخلية" }, story: { en: "A room-scale storage system where lighting, hanging, drawers and display zones form a continuous sequence.", ar: "نظام تخزين بحجم الغرفة تتصل فيه الإضاءة والتعليق والأدراج ومساحات العرض في تسلسل واحد." }, application: { en: "Walk-in wardrobe", ar: "خزانة ملابس داخلية" }, scope: { en: "Internal planning, cabinetry and installation", ar: "تخطيط داخلي وخزائن وتركيب" }, media: [driveSrc("d06"), driveSrc("d05"), driveSrc("d07"), driveSrc("d03"), driveSrc("dressing-12"), driveSrc("dressing-13")], sourceFolderIds: ["1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X"], status: "preview" },
+  ...dressingRoomPieces,
+  doorGalleryPiece,
+  ...livingSpacePieces,
   { slug: "bedroom-study-a", collection: "bedrooms", title: { en: "Bedroom Study 01", ar: "دراسة غرفة نوم ٠١" }, story: { en: "A coordinated bedroom package documented across fitted storage, furniture and wall details.", ar: "حزمة غرفة نوم متناسقة موثقة عبر التخزين المدمج والأثاث وتفاصيل الحوائط." }, application: { en: "Residential bedroom", ar: "غرفة نوم سكنية" }, scope: { en: "Bedroom furniture, joinery and fitting", ar: "أثاث غرفة نوم ونجارة وتركيب" }, media: Array.from({ length: 11 }, (_, index) => driveSrc(`bedroom-a-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j"], status: "preview" },
   { slug: "bedroom-study-b", collection: "bedrooms", title: { en: "Bedroom Study 02", ar: "دراسة غرفة نوم ٠٢" }, story: { en: "A second bedroom study showing the room as one composed package rather than isolated furniture pieces.", ar: "دراسة ثانية لغرفة نوم تعرض المساحة كحزمة متكاملة بدلاً من قطع أثاث منفصلة." }, application: { en: "Residential bedroom", ar: "غرفة نوم سكنية" }, scope: { en: "Bedroom furniture, joinery and fitting", ar: "أثاث غرفة نوم ونجارة وتركيب" }, media: Array.from({ length: 7 }, (_, index) => driveSrc(`bedroom-b-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp"], status: "preview" },
   ...[
-    ["living-rooms", "living-composition", "Living Composition", "تكوين للمعيشة", "/assets/141202_527604.jpeg"],
-    ["doors", "timber-door-set", "Timber Door Set", "مجموعة باب خشبي", "/assets/412078_605141.jpeg"],
     ["materials-finishes", "finish-study", "Finish Study", "دراسة تشطيب", "/assets/891416_45535.jpg"],
   ].map(([collection, slug, en, ar, image]) => ({ slug, collection, title: { en, ar }, story: { en: "A selected SECTION study showing how one crafted element is coordinated with the wider interior.", ar: "دراسة مختارة من SECTION توضح كيف ينسق العنصر المصنوع مع المساحة الداخلية كاملة." }, application: { en: "Made-to-fit interior", ar: "عنصر داخلي مصمم للمقاس" }, scope: { en: "Design development, making and fitting", ar: "تطوير تصميم وتصنيع وتركيب" }, media: [image], sourceFolderIds: [], status: "preview" } as CollectionPiece)),
   ...generatedUnitProcessAssets.units.map((group) => {

@@ -210,7 +210,7 @@ test("publishes Nocturne as the only SECTION view", async () => {
 });
 
 test("keeps Drive media, SODIC attribution and partner marks governed", async () => {
-  const [manifest, showroom, content, partners, logoMarquee, attribution, driveAssets, inventory, categoryAssets, css, brandPrep] = await Promise.all([
+  const [manifest, showroom, content, partners, logoMarquee, attribution, driveAssets, inventory, categoryAssets, doorAssets, livingAssets, css, brandPrep] = await Promise.all([
     read("lib/media-manifest.ts"),
     read("lib/showroom-content.ts"),
     read("lib/site-content.ts"),
@@ -220,6 +220,8 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
     read("lib/drive-assets.ts"),
     read("docs/nocturne-drive-asset-inventory.md"),
     read("lib/generated-category-drive-assets.json"),
+    read("lib/generated-doors-drive-assets.json"),
+    read("lib/generated-living-drive-assets.json"),
     read("app/globals.css"),
     read("scripts/prepare-brand-assets.mjs"),
   ]);
@@ -228,8 +230,17 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(manifest, /authenticity/);
   assert.match(manifest, /publishStatus/);
   assert.match(manifest, /image\/heif/);
+  assert.match(manifest, /generatedDoorsDriveAssets/);
+  assert.match(manifest, /generatedLivingDriveAssets/);
   assert.match(showroom, /Obour Kitchen/);
-  assert.match(showroom, /Glass-frame Dressing Room/);
+  assert.match(showroom, /Dressing 1 — SODIC Villette/);
+  assert.match(showroom, /Dressing 4 — New Cairo/);
+  assert.match(showroom, /doors-gallery/);
+  assert.match(showroom, /living-space-01/);
+  assert.match(showroom, /living-space-03/);
+  assert.ok(showroom.indexOf('folderName: "Dressing 1') < showroom.indexOf('folderName: "Dressing 2'));
+  assert.ok(showroom.indexOf('folderName: "Dressing 2') < showroom.indexOf('folderName: "Dressing 3'));
+  assert.ok(showroom.indexOf('folderName: "Dressing 3') < showroom.indexOf('folderName: "Dressing 4'));
   assert.equal((showroom.match(/kind: "collaborator"/g) ?? []).length, 9);
   assert.match(content, /client: \{ en: "SODIC"/);
   assert.match(content, /collaboratorIds: \["ahmed-elsheref"\]/);
@@ -261,6 +272,15 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   const categoryAssetRecords = JSON.parse(categoryAssets);
   assert.equal(categoryAssetRecords.length, 95);
   assert.equal(categoryAssetRecords.filter((asset) => asset.id.startsWith("cladding-")).length, 44);
+  const doorAssetRecords = JSON.parse(doorAssets);
+  assert.equal(doorAssetRecords.length, 18);
+  assert.deepEqual(doorAssetRecords.map((asset) => asset.imageOrder), Array.from({ length: 18 }, (_, index) => index + 1));
+  const livingAssetRecords = JSON.parse(livingAssets);
+  const livingGalleryRecords = livingAssetRecords.filter((asset) => asset.role === "gallery");
+  assert.equal(livingGalleryRecords.length, 10);
+  assert.deepEqual(livingGalleryRecords.map((asset) => `${asset.projectOrder}.${asset.imageOrder}`), ["1.1", "1.2", "1.3", "2.1", "2.2", "2.3", "3.1", "3.2", "3.3", "3.4"]);
+  assert.ok(livingAssetRecords.some((asset) => asset.role === "cover" && asset.sourceName.includes("main photo")));
+  assert.match(content, /image: "living-cover"/);
 });
 
 test("keeps Nocturne revisions isolated and ordered", async () => {

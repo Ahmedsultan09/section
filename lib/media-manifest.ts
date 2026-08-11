@@ -1,7 +1,11 @@
 import { SODIC_SOURCE_FOLDER_ID, hydeParkMediaAssets, sodicMediaAssets, sodicVideoPosters } from "./drive-assets";
 import { selectedProjectMedia } from "./selected-projects";
 import type { ProjectArea } from "./site-types";
+import generatedDressingDriveAssets from "./generated-dressing-drive-assets.json";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
+import { kitchenMediaAssets } from "./kitchen-media";
+import generatedDoorsDriveAssets from "./generated-doors-drive-assets.json";
+import generatedLivingDriveAssets from "./generated-living-drive-assets.json";
 
 export type DriveMediaRecord = {
   id: string;
@@ -47,6 +51,33 @@ const driveMediaSeed: DriveMediaRecord[] = [
     ["d01", "19P_A2Q7w9AlxE67Y087iirRaHSiLY4Iq"], ["d02", "1ksvIGXGPsAp7XrAMDAmronYjYpXQsqb-"], ["d03", "1Nmvi7geXmXUvOgT6V6OycY8JX7m0pcAC"], ["d04", "1_kID2fqpB4jF6pfUjdXtGKfKg3TCInf6"],
     ["d05", "1oBpvLO3Mo3KhmLI4QnCI2YdaEopdEAdZ"], ["d06", "12EE_jOrRRMUKqkXjATFjETlJkXYUM_HH"], ["d07", "1VzGwxT4COzuoP-jqC0BwWIqj7UwWXmvR"], ["d08", "1MLLFKBXiphhfEUXitbc4IC2eZnaILlIa"],
   ].map(([id, driveFileId], index) => ({ id, driveFileId, sourceFolder: "Dressing", sourceName: `Dressing image ${index + 1}`, localSrc: `/drive/dressing/dressing-0${index + 1}.webp`, originalMime: "image/heif", authenticity: "verified-real" as const, rights: "pending" as const, publishStatus: "preview" as const })),
+  ...generatedDressingDriveAssets.map((asset) => ({
+    ...asset,
+    sourceFolder: asset.sourceFolderName,
+    sourceFolderId: asset.sourceFolderId,
+    orientation: asset.orientation as DriveMediaRecord["orientation"],
+    authenticity: asset.authenticity as DriveMediaRecord["authenticity"],
+    rights: asset.rights as DriveMediaRecord["rights"],
+    publishStatus: asset.publishStatus as DriveMediaRecord["publishStatus"],
+  })),
+  ...generatedDoorsDriveAssets.map((asset) => ({
+    ...asset,
+    sourceFolder: asset.sourceFolderName,
+    sourceFolderId: asset.sourceFolderId,
+    orientation: asset.orientation as DriveMediaRecord["orientation"],
+    authenticity: asset.authenticity as DriveMediaRecord["authenticity"],
+    rights: asset.rights as DriveMediaRecord["rights"],
+    publishStatus: asset.publishStatus as DriveMediaRecord["publishStatus"],
+  })),
+  ...generatedLivingDriveAssets.map((asset) => ({
+    ...asset,
+    sourceFolder: asset.sourceFolderName,
+    sourceFolderId: asset.sourceFolderId,
+    orientation: asset.orientation as DriveMediaRecord["orientation"],
+    authenticity: asset.authenticity as DriveMediaRecord["authenticity"],
+    rights: asset.rights as DriveMediaRecord["rights"],
+    publishStatus: asset.publishStatus as DriveMediaRecord["publishStatus"],
+  })),
   ...generatedCategoryDriveAssets.map((asset) => ({
     ...asset,
     sourceFolder: asset.sourceFolderId,
@@ -54,6 +85,21 @@ const driveMediaSeed: DriveMediaRecord[] = [
     authenticity: asset.authenticity as DriveMediaRecord["authenticity"],
     rights: asset.rights as DriveMediaRecord["rights"],
     publishStatus: asset.publishStatus as DriveMediaRecord["publishStatus"],
+  })),
+  ...kitchenMediaAssets.map((asset) => ({
+    id: asset.id,
+    driveFileId: asset.driveFileId!,
+    sourceFolder: asset.sourceFolder,
+    sourceFolderId: asset.sourceFolderId,
+    sourceName: asset.sourceName,
+    localSrc: asset.src,
+    originalMime: asset.originalMime!,
+    orientation: asset.orientation,
+    quality: asset.quality,
+    derived: asset.derived,
+    authenticity: asset.authenticity,
+    rights: asset.rights,
+    publishStatus: asset.publishStatus!,
   })),
   ...sodicMediaAssets.map((asset) => ({
     id: asset.id,

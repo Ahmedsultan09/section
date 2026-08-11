@@ -1429,6 +1429,7 @@ body:has(main.design-immersive) .design-switcher a.active { color: #0a0a07; back
 .collection-piece-heading > span { color: var(--yellow); font: 500 12px var(--mono); }
 .collection-piece-heading p { margin: 0 0 10px; color: rgba(255,255,255,.5); font: 500 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .collection-piece-heading h3 { margin: 0; font: 500 clamp(42px, 5vw, 80px)/.9 var(--sans); letter-spacing: -.055em; }
+.collection-piece-location { margin: 14px 0 0 !important; color: var(--yellow) !important; font: 500 12px var(--mono) !important; letter-spacing: .08em; }
 .collection-piece-heading strong { display: block; max-width: 660px; margin-top: 16px; color: rgba(255,255,255,.68); font-size: 15px; font-weight: 400; line-height: 1.55; }
 .collection-piece-gallery { display: grid; grid-auto-flow: column; grid-auto-columns: min(58vw, 720px); gap: 16px; overflow-x: auto; scroll-snap-type: inline mandatory; overscroll-behavior-inline: contain; scrollbar-width: thin; padding-bottom: 18px; }
 .collection-piece-gallery figure { height: min(68vw, 690px); position: relative; scroll-snap-align: start; margin: 0; overflow: hidden; background: var(--olive-dark); }

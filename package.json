@@ -13,6 +13,8 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "media:convert": "node scripts/convert-drive-media.mjs",
+    "media:import-dressing": "node scripts/import-dressing-drive-media.mjs",
+    "media:import-doors-living": "node scripts/import-doors-living-drive-media.mjs",
     "media:prepare-brand": "node scripts/prepare-brand-assets.mjs",
     "media:og": "node scripts/create-og.mjs"
   },

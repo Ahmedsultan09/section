@@ -24,7 +24,7 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
     : dark ? "A cinematic journey through material, making and the completed space." : "We design, coordinate, make and install timber elements for ambitious projects.";
   const poster = "/assets/171467_688502.jpeg";
   const heroImages = dark
-    ? ["sodic-drive-06", "sodic-drive-02", "white-island-kitchen-01", "dressing-09", "bedroom-a-01", "sodic-drive-04"].map(getMedia)
+    ? ["bedroom-kids-03", "white-island-kitchen-01", "dressing-01-01", "kitchen-obour-01", "bedroom-b-01", "sodic-drive-06", "dressing-01-02", "sodic-drive-04"].map(getMedia)
     : [];
 
   return (
@@ -32,7 +32,6 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
       <section className="showroom-hero">
         {!dark && <Image unoptimized className="showroom-hero-poster" src={poster} alt="" fill priority sizes="100vw" />}
         <AdaptiveWebGL mode={mode} imageSources={heroImages.map((image) => image.src)} />
-        <div className="showroom-hero-grid" aria-hidden="true"><span /><span /><span /><span /></div>
         <div className="showroom-hero-copy">
           <p>{dark ? "SECTION / MATERIAL THEATRE" : "SECTION / DESIGN · MAKE · INSTALL"}</p>
           <h1>{title}</h1>

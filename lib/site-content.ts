@@ -1,8 +1,12 @@
 import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectSector } from "./site-types";
 import { hydeParkMediaAssets, sodicMediaAssets } from "./drive-assets";
+import generatedDressingDriveAssets from "./generated-dressing-drive-assets.json";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
+import generatedDoorsDriveAssets from "./generated-doors-drive-assets.json";
+import generatedLivingDriveAssets from "./generated-living-drive-assets.json";
 import generatedUnitProcessAssets from "./generated-unit-process-assets.json";
 import { selectedProjectMedia, selectedProjectRecords, selectedProjectSlugs } from "./selected-projects";
+import { kitchenMediaAssets } from "./kitchen-media";
 
 export const locales: Locale[] = ["en", "ar"];
 
@@ -17,14 +21,23 @@ export const sectors: Array<{ slug: ProjectSector; label: Record<Locale, string>
   { slug: "retail-public", label: { en: "Retail & public spaces", ar: "التجزئة والمساحات العامة" } },
 ];
 
-const categoryMediaAssets: MediaAsset[] = generatedCategoryDriveAssets.map((asset) => {
-  const capability: CapabilitySlug = asset.id.startsWith("kitchen")
-    ? "kitchens"
-    : asset.id.startsWith("bedroom")
-      ? "bedrooms"
-      : asset.id.startsWith("cladding-")
-        ? "wall-cladding"
-        : "dressing-rooms";
+const categoryMediaAssets: MediaAsset[] = [
+  ...generatedDoorsDriveAssets,
+  ...generatedLivingDriveAssets,
+  ...generatedDressingDriveAssets,
+  ...generatedCategoryDriveAssets,
+].map((asset) => {
+  const capability: CapabilitySlug = asset.id.startsWith("door-")
+    ? "doors"
+    : asset.id.startsWith("living-")
+      ? "living-rooms"
+      : asset.id.startsWith("kitchen")
+        ? "kitchens"
+        : asset.id.startsWith("bedroom")
+          ? "bedrooms"
+          : asset.id.startsWith("cladding-")
+            ? "wall-cladding"
+            : "dressing-rooms";
   const labels: Record<CapabilitySlug, Record<Locale, string>> = {
     kitchens: { en: "Drive-supplied kitchen project photograph", ar: "صورة مشروع مطبخ موردة من Drive" },
     bedrooms: { en: "Drive-supplied bedroom project photograph", ar: "صورة مشروع غرفة نوم موردة من Drive" },
@@ -85,12 +98,31 @@ const processMediaAssets: MediaAsset[] = generatedUnitProcessAssets.process.map(
   publishStatus: asset.publishStatus as MediaAsset["publishStatus"],
 }));
 
+const kitchenCoverAsset: MediaAsset = {
+  id: "kitchens-cover-white",
+  src: "/drive/kitchens/kitchens-cover-white.webp",
+  sourceFolder: "Client-supplied WhatsApp reference",
+  sourceName: "WhatsApp Image 2026-08-11 at 1.05.07 AM.jpeg",
+  capabilities: ["kitchens"],
+  stage: "finished",
+  authenticity: "unknown",
+  rights: "pending",
+  orientation: "landscape",
+  quality: "hero",
+  usage: "capability",
+  alt: { en: "White kitchen with a walnut breakfast counter", ar: "مطبخ أبيض مع سطح إفطار من خشب الجوز" },
+  derived: { webp: "/drive/kitchens/kitchens-cover-white.webp" },
+  publishStatus: "preview",
+};
+
 export const mediaAssets: MediaAsset[] = [
   ...sodicMediaAssets,
   ...hydeParkMediaAssets,
   ...categoryMediaAssets,
+  ...kitchenMediaAssets,
   ...processMediaAssets,
   ...selectedProjectMedia,
+  kitchenCoverAsset,
   {
     id: "asset-living-01", src: "/assets/141202_527604.jpeg", sourceFolder: "Legacy site", sourceName: "141202_527604.jpeg",
     projectSlug: "residential-joinery-study", sector: "residential-developments", capabilities: ["living-rooms", "custom-units"],
@@ -146,7 +178,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Complete kitchen environments coordinated with appliances, services, worktops and site conditions before production begins.", ar: "بيئات مطابخ متكاملة تُنسق مع الأجهزة والخدمات وأسطح العمل وظروف الموقع قبل بدء التصنيع." },
     applications: [{ en: "Residential developments", ar: "المشروعات السكنية" }, { en: "Serviced residences", ar: "الوحدات الفندقية" }, { en: "Hospitality", ar: "الضيافة" }],
     materials: [{ en: "Moisture-resistant boards", ar: "ألواح مقاومة للرطوبة" }, { en: "Natural veneers", ar: "القشرة الطبيعية" }, { en: "Durable hardware", ar: "إكسسوارات عالية التحمل" }],
-    process: [{ en: "Layout coordination", ar: "تنسيق المخطط" }, { en: "Sample approval", ar: "اعتماد العينة" }, { en: "Sequenced installation", ar: "التركيب المرحلي" }], image: "kitchen-obour-01",
+    process: [{ en: "Layout coordination", ar: "تنسيق المخطط" }, { en: "Sample approval", ar: "اعتماد العينة" }, { en: "Sequenced installation", ar: "التركيب المرحلي" }], image: "kitchens-cover-white",
   },
   {
     slug: "dressing-rooms", number: "03", title: { en: "Dressing Rooms", ar: "غرف الملابس" },
@@ -154,7 +186,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Wardrobes and dressing rooms developed as complete systems with considered internals, finishes, hardware and lighting.", ar: "خزائن وغرف ملابس تُطوّر كنظم متكاملة تشمل التقسيمات والتشطيبات والإكسسوارات والإضاءة." },
     applications: [{ en: "Walk-in rooms", ar: "غرف ملابس داخلية" }, { en: "Built-in wardrobes", ar: "خزائن مدمجة" }, { en: "Hospitality storage", ar: "تخزين الضيافة" }],
     materials: [{ en: "Textured laminates", ar: "لامينيت محبب" }, { en: "Painted finishes", ar: "تشطيبات دهان" }, { en: "Glass and metal details", ar: "تفاصيل زجاج ومعدن" }],
-    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-09",
+    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-01-01",
   },
   {
     slug: "living-rooms", number: "07", title: { en: "Living Spaces", ar: "مساحات المعيشة" },
@@ -162,7 +194,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Living spaces bring fitted joinery, wall treatments and custom furniture together in one calm, coordinated composition.", ar: "تجمع مساحات المعيشة النجارة المدمجة ومعالجات الحوائط والأثاث المخصص في تكوين هادئ ومتناغم." },
     applications: [{ en: "Residential lounges", ar: "صالات المعيشة" }, { en: "Reception spaces", ar: "مساحات الاستقبال" }, { en: "Hospitality suites", ar: "الأجنحة الفندقية" }],
     materials: [{ en: "Natural veneer", ar: "قشرة طبيعية" }, { en: "Painted timber", ar: "خشب مدهون" }, { en: "Metal and upholstery details", ar: "تفاصيل معدن وتنجيد" }],
-    process: [{ en: "Composition study", ar: "دراسة التكوين" }, { en: "Detail coordination", ar: "تنسيق التفاصيل" }, { en: "Final installation", ar: "التركيب النهائي" }], image: "asset-living-01",
+    process: [{ en: "Composition study", ar: "دراسة التكوين" }, { en: "Detail coordination", ar: "تنسيق التفاصيل" }, { en: "Final installation", ar: "التركيب النهائي" }], image: "living-cover",
   },
   {
     slug: "custom-units", number: "05", title: { en: "Custom Units", ar: "الوحدات المخصصة" },
@@ -194,7 +226,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Each door is developed as a complete assembly: leaf, frame, architrave, hardware preparation, finish and installation sequence.", ar: "يُطوّر كل باب كمجموعة متكاملة تشمل الضلفة والحلق والحليات وتجهيز الإكسسوارات والتشطيب وتسلسل التركيب." },
     applications: [{ en: "Apartment entrances", ar: "مداخل الوحدات" }, { en: "Internal doors", ar: "الأبواب الداخلية" }, { en: "Concealed doors", ar: "الأبواب المخفية" }],
     materials: [{ en: "Natural veneer", ar: "قشرة طبيعية" }, { en: "Painted timber", ar: "خشب مدهون" }, { en: "Specified door cores", ar: "قلوب أبواب حسب المواصفات" }],
-    process: [{ en: "Opening review", ar: "مراجعة الفتحات" }, { en: "Hardware coordination", ar: "تنسيق الإكسسوارات" }, { en: "Final adjustment", ar: "الضبط النهائي" }], image: "asset-door-01",
+    process: [{ en: "Opening review", ar: "مراجعة الفتحات" }, { en: "Hardware coordination", ar: "تنسيق الإكسسوارات" }, { en: "Final adjustment", ar: "الضبط النهائي" }], image: "door-01",
   },
   {
     slug: "materials-finishes", number: "08", title: { en: "Materials & Finishes", ar: "الخامات والتشطيبات" },
