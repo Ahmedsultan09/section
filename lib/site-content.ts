@@ -208,7 +208,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Wardrobes and dressing rooms developed as complete systems with considered internals, finishes, hardware and lighting.", ar: "خزائن وغرف ملابس تُطوّر كنظم متكاملة تشمل التقسيمات والتشطيبات والإكسسوارات والإضاءة." },
     applications: [{ en: "Walk-in rooms", ar: "غرف ملابس داخلية" }, { en: "Built-in wardrobes", ar: "خزائن مدمجة" }, { en: "Hospitality storage", ar: "تخزين الضيافة" }],
     materials: [{ en: "Textured laminates", ar: "لامينيت محبب" }, { en: "Painted finishes", ar: "تشطيبات دهان" }, { en: "Glass and metal details", ar: "تفاصيل زجاج ومعدن" }],
-    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-01-01",
+    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-collection-01",
   },
   {
     slug: "living-rooms", number: "07", title: { en: "Living Spaces", ar: "مساحات المعيشة" },
