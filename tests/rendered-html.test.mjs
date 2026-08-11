@@ -294,7 +294,9 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   const unitSourceRecords = JSON.parse(unitInventory);
   assert.equal(unitSourceRecords.units[0].files[0].driveFileId, "1nn2MA2kZYeE7Or3vtG4maR7lPCj7Hehv");
   assert.equal(unitSourceRecords.units[2].files[0].driveFileId, "14Lu1XQKHhj76PmYLt1j8QYG8KgHkbXwH");
+  assert.match(home, /className="showroom-hero-established"/);
   assert.match(home, /Established since 2019|تأسست عام ٢٠١٩/);
+  assert.doesNotMatch(home, /showroom-about-established/);
 });
 
 test("keeps Nocturne revisions isolated and ordered", async () => {
@@ -333,6 +335,8 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
   assert.match(contacts, /https:\/\/wa\.me\/201272333832/);
   assert.match(css, /@keyframes partner-run-reverse/);
   assert.match(css, /\.material-brand-marquee \.partner-logo \{/);
+  assert.match(css, /\.showroom-hero-established \{/);
+  assert.doesNotMatch(css, /\.showroom-about-established/);
   assert.match(css, /\.design-nocturne \.showroom-collection-list \{ display: grid; gap:/);
   assert.match(css, /\.inquiry-page \.form-action-area \{\s+position: fixed;\s+top: 12px;/);
 });

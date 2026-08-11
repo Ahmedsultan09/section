@@ -34,6 +34,7 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         <AdaptiveWebGL mode={mode} imageSources={heroImages.map((image) => image.src)} />
         <div className="showroom-hero-copy">
           <p>{dark ? "SECTION / MATERIAL THEATRE" : "SECTION / DESIGN · MAKE · INSTALL"}</p>
+          <p className="showroom-hero-established">{locale === "ar" ? "تأسست عام ٢٠١٩" : "Established since 2019"}</p>
           <h1>{title}</h1>
           <div><span>{body}</span>{!dark && <DesignAwareLink href={`/${locale}/inquiry`}>{t.hero.primary} ↗</DesignAwareLink>}</div>
         </div>
@@ -85,7 +86,6 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         <p>06 / {locale === "ar" ? "عن SECTION" : "About SECTION"}</p>
         <h2>{locale === "ar" ? <>الخشب هو الخامة. <em>والمكان هو القصة.</em></> : <>Wood is the medium. <em>The space is the story.</em></>}</h2>
         <div className="showroom-about-copy">
-          <p className="showroom-about-established">{locale === "ar" ? "تأسست عام ٢٠١٩" : "Established since 2019"}</p>
           <p>{locale === "ar" ? "نرشد المشروع من أول محادثة حتى التركيب النهائي، ونحوّل الرؤية إلى عناصر خشبية مصممة للمقاس تجمع بين الجمال والوظيفة والمتانة." : "We guide a project from the first conversation to final installation, turning the brief into made-to-fit timber interiors that balance beauty, function and durability."}</p>
           <p>{locale === "ar" ? "رؤيتنا أن نكون شريكاً موثوقاً للتصميم والتصنيع؛ نصنع مساحات ذات غرض واضح، تعكس هوية المشروع وتدوم بشكل جميل." : "Our vision is to be a trusted design-and-manufacturing partner: creating purposeful spaces that carry the project’s identity and last beautifully."}</p>
         </div>
