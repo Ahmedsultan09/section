@@ -33,6 +33,15 @@ test("ships the bilingual B2B route and content model", async () => {
   assert.match(content, /title: \{ en: "Wall cladding"/i);
   assert.match(content, /title: \{ en: "Architectural Doors"/);
   assert.match(content, /title: \{ en: "Materials & Finishes"/);
+  assert.match(content, /slug: "wall-cladding", number: "01"/);
+  assert.match(content, /slug: "kitchens", number: "02"/);
+  assert.match(content, /slug: "dressing-rooms", number: "03"/);
+  assert.match(content, /slug: "doors", number: "04"/);
+  assert.match(content, /slug: "custom-units", number: "05"/);
+  assert.match(content, /slug: "bedrooms", number: "06"/);
+  assert.match(content, /slug: "living-rooms", number: "07"/);
+  assert.match(content, /slug: "materials-finishes", number: "08"/);
+  assert.match(content, /const capabilityOrder: CapabilitySlug\[\] = \["wall-cladding", "kitchens", "dressing-rooms", "doors", "custom-units", "bedrooms", "living-rooms", "materials-finishes"\]/);
   assert.doesNotMatch(content, /slug: "interior-fit-out"/);
   assert.doesNotMatch(content, /slug: "joinery-fitted-units"/);
   assert.match(content, /export const processSteps/);

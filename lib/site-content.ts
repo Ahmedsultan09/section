@@ -141,7 +141,7 @@ export function getMedia(id: string) {
 
 const capabilityCatalog: Capability[] = [
   {
-    slug: "kitchens", number: "01", title: { en: "Kitchens", ar: "المطابخ" },
+    slug: "kitchens", number: "02", title: { en: "Kitchens", ar: "المطابخ" },
     short: { en: "Made-to-fit kitchens planned for everyday use and demanding project schedules.", ar: "مطابخ مصممة للمقاس تجمع الاستخدام اليومي مع متطلبات برامج المشاريع." },
     intro: { en: "Complete kitchen environments coordinated with appliances, services, worktops and site conditions before production begins.", ar: "بيئات مطابخ متكاملة تُنسق مع الأجهزة والخدمات وأسطح العمل وظروف الموقع قبل بدء التصنيع." },
     applications: [{ en: "Residential developments", ar: "المشروعات السكنية" }, { en: "Serviced residences", ar: "الوحدات الفندقية" }, { en: "Hospitality", ar: "الضيافة" }],
@@ -149,7 +149,7 @@ const capabilityCatalog: Capability[] = [
     process: [{ en: "Layout coordination", ar: "تنسيق المخطط" }, { en: "Sample approval", ar: "اعتماد العينة" }, { en: "Sequenced installation", ar: "التركيب المرحلي" }], image: "kitchen-obour-01",
   },
   {
-    slug: "dressing-rooms", number: "02", title: { en: "Dressing Rooms", ar: "غرف الملابس" },
+    slug: "dressing-rooms", number: "03", title: { en: "Dressing Rooms", ar: "غرف الملابس" },
     short: { en: "Storage systems shaped around people, unit types and daily routines.", ar: "أنظمة تخزين تتشكل حول المستخدم ونمط الوحدة وروتين الحياة اليومي." },
     intro: { en: "Wardrobes and dressing rooms developed as complete systems with considered internals, finishes, hardware and lighting.", ar: "خزائن وغرف ملابس تُطوّر كنظم متكاملة تشمل التقسيمات والتشطيبات والإكسسوارات والإضاءة." },
     applications: [{ en: "Walk-in rooms", ar: "غرف ملابس داخلية" }, { en: "Built-in wardrobes", ar: "خزائن مدمجة" }, { en: "Hospitality storage", ar: "تخزين الضيافة" }],
@@ -157,7 +157,7 @@ const capabilityCatalog: Capability[] = [
     process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-09",
   },
   {
-    slug: "living-rooms", number: "03", title: { en: "Living Spaces", ar: "مساحات المعيشة" },
+    slug: "living-rooms", number: "07", title: { en: "Living Spaces", ar: "مساحات المعيشة" },
     short: { en: "Wall features, storage and furniture composed as one interior language.", ar: "حوائط مميزة وتخزين وأثاث تتكوّن كلغة داخلية واحدة." },
     intro: { en: "Living spaces bring fitted joinery, wall treatments and custom furniture together in one calm, coordinated composition.", ar: "تجمع مساحات المعيشة النجارة المدمجة ومعالجات الحوائط والأثاث المخصص في تكوين هادئ ومتناغم." },
     applications: [{ en: "Residential lounges", ar: "صالات المعيشة" }, { en: "Reception spaces", ar: "مساحات الاستقبال" }, { en: "Hospitality suites", ar: "الأجنحة الفندقية" }],
@@ -165,7 +165,7 @@ const capabilityCatalog: Capability[] = [
     process: [{ en: "Composition study", ar: "دراسة التكوين" }, { en: "Detail coordination", ar: "تنسيق التفاصيل" }, { en: "Final installation", ar: "التركيب النهائي" }], image: "asset-living-01",
   },
   {
-    slug: "custom-units", number: "04", title: { en: "Custom Units", ar: "الوحدات المخصصة" },
+    slug: "custom-units", number: "05", title: { en: "Custom Units", ar: "الوحدات المخصصة" },
     short: { en: "Purpose-built pieces engineered once and produced with consistency.", ar: "قطع مصممة لغرض محدد تُهندس مرة وتُنتج بجودة متسقة." },
     intro: { en: "Media units, storage, reception pieces and fitted elements developed around drawings, services and real site tolerances.", ar: "وحدات وسائط وتخزين واستقبال وعناصر مدمجة تُطوّر وفق الرسومات والخدمات وسماحات الموقع الفعلية." },
     applications: [{ en: "Media units", ar: "وحدات الوسائط" }, { en: "Integrated storage", ar: "التخزين المدمج" }, { en: "Reception joinery", ar: "نجارة الاستقبال" }],
@@ -173,7 +173,7 @@ const capabilityCatalog: Capability[] = [
     process: [{ en: "Site verification", ar: "مراجعة الموقع" }, { en: "Prototype and sample", ar: "النموذج والعينة" }, { en: "Controlled production", ar: "الإنتاج المنضبط" }], image: "asset-wall-01",
   },
   {
-    slug: "bedrooms", number: "05", title: { en: "Bedrooms", ar: "غرف النوم" },
+    slug: "bedrooms", number: "06", title: { en: "Bedrooms", ar: "غرف النوم" },
     short: { en: "Coordinated room packages with storage, furniture and crafted details.", ar: "حزم غرف متناسقة تجمع التخزين والأثاث والتفاصيل المصنوعة بعناية." },
     intro: { en: "Beds, night units, wardrobes and wall details developed together for repeatable residential and hospitality rooms.", ar: "أسرة ووحدات جانبية وخزائن وتفاصيل حوائط تُطوّر معاً لغرف سكنية وفندقية قابلة للتكرار." },
     applications: [{ en: "Residential bedrooms", ar: "غرف النوم السكنية" }, { en: "Hotel rooms", ar: "الغرف الفندقية" }, { en: "Serviced apartments", ar: "الشقق الفندقية" }],
@@ -181,7 +181,7 @@ const capabilityCatalog: Capability[] = [
     process: [{ en: "Room-type study", ar: "دراسة نموذج الغرفة" }, { en: "Prototype review", ar: "مراجعة النموذج" }, { en: "Package installation", ar: "تركيب الحزمة" }], image: "bedroom-a-01",
   },
   {
-    slug: "wall-cladding", number: "06", title: { en: "Wall cladding", ar: "تكسية الحوائط" },
+    slug: "wall-cladding", number: "01", title: { en: "Wall cladding", ar: "تكسية الحوائط" },
     short: { en: "Integrated timber surfaces that conceal, protect and define space.", ar: "أسطح خشبية متكاملة تخفي وتحمي وتحدد هوية المكان." },
     intro: { en: "Feature walls, service panels and coordinated cladding designed around joints, access, acoustics and adjacent finishes.", ar: "حوائط مميزة وألواح خدمات وتكسيات منسقة وفق الفواصل وفتحات الصيانة والصوتيات والتشطيبات المجاورة." },
     applications: [{ en: "Lobbies", ar: "الردهات" }, { en: "Media walls", ar: "حوائط الوسائط" }, { en: "Circulation areas", ar: "مسارات الحركة" }],
@@ -189,7 +189,7 @@ const capabilityCatalog: Capability[] = [
     process: [{ en: "Setting-out", ar: "تحديد المحاور" }, { en: "Panel coordination", ar: "تنسيق الألواح" }, { en: "Protected installation", ar: "التركيب والحماية" }], image: "asset-wall-01",
   },
   {
-    slug: "doors", number: "07", title: { en: "Architectural Doors", ar: "الأبواب المعمارية" },
+    slug: "doors", number: "04", title: { en: "Architectural Doors", ar: "الأبواب المعمارية" },
     short: { en: "Complete door sets coordinated with walls, hardware and site tolerances.", ar: "مجموعات أبواب متكاملة ومنسقة مع الحوائط والإكسسوارات وسماحات الموقع." },
     intro: { en: "Each door is developed as a complete assembly: leaf, frame, architrave, hardware preparation, finish and installation sequence.", ar: "يُطوّر كل باب كمجموعة متكاملة تشمل الضلفة والحلق والحليات وتجهيز الإكسسوارات والتشطيب وتسلسل التركيب." },
     applications: [{ en: "Apartment entrances", ar: "مداخل الوحدات" }, { en: "Internal doors", ar: "الأبواب الداخلية" }, { en: "Concealed doors", ar: "الأبواب المخفية" }],
@@ -206,7 +206,7 @@ const capabilityCatalog: Capability[] = [
   },
 ];
 
-const capabilityOrder = ["wall-cladding", "kitchens", "dressing-rooms", "doors", "custom-units", "bedrooms"];
+const capabilityOrder: CapabilitySlug[] = ["wall-cladding", "kitchens", "dressing-rooms", "doors", "custom-units", "bedrooms", "living-rooms", "materials-finishes"];
 
 export const capabilities: Capability[] = [...capabilityCatalog].sort((a, b) => {
   const aIndex = capabilityOrder.indexOf(a.slug);
