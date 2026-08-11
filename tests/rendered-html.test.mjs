@@ -232,7 +232,9 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(manifest, /image\/heif/);
   assert.match(manifest, /generatedDoorsDriveAssets/);
   assert.match(manifest, /generatedLivingDriveAssets/);
-  assert.match(showroom, /Obour Kitchen/);
+  assert.match(showroom, /Kitchen 01/);
+  assert.match(showroom, /Azad Compound/);
+  assert.match(showroom, /3D Reference/);
   assert.match(showroom, /Dressing 1 — SODIC Villette/);
   assert.match(showroom, /Dressing 4 — New Cairo/);
   assert.match(showroom, /doors-gallery/);
