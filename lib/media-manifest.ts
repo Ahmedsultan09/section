@@ -188,5 +188,10 @@ function dedupeDriveMedia(records: DriveMediaRecord[]) {
 export const driveMediaManifest = dedupeDriveMedia(driveMediaSeed);
 
 export function driveSrc(id: string) {
-  return driveMediaManifest.find((item) => item.id === id)?.localSrc ?? "/assets/217375_739589.jpeg";
+  // Keep source-folder IDs addressable even when duplicate content hashes are
+  // removed from the governed manifest. Falling back to an unrelated wardrobe
+  // photo can silently place the wrong image in a category gallery.
+  return driveMediaSeed.find((item) => item.id === id)?.localSrc
+    ?? driveMediaManifest.find((item) => item.id === id)?.localSrc
+    ?? "/assets/171467_688502.jpeg";
 }

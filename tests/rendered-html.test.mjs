@@ -59,7 +59,7 @@ test("ships the bilingual B2B route and content model", async () => {
 });
 
 test("implements the complete multilingual SEO discovery layer", async () => {
-  const [seo, localeLayout, sitemap, robots, manifest, projectPage, capabilityPage, inquiryPage] = await Promise.all([
+  const [seo, localeLayout, sitemap, robots, manifest, projectPage, capabilityPage, inquiryPage, renderedCladding] = await Promise.all([
     read("lib/seo.ts"),
     read("app/[locale]/layout.tsx"),
     read("app/sitemap.ts"),
@@ -68,6 +68,7 @@ test("implements the complete multilingual SEO discovery layer", async () => {
     read("app/[locale]/projects/[slug]/page.tsx"),
     read("app/[locale]/collections/[slug]/page.tsx"),
     read("app/[locale]/inquiry/page.tsx"),
+    read(".next/server/app/en/collections/wall-cladding.html"),
   ]);
 
   assert.match(localeLayout, /className="locale-shell" lang=\{locale\} dir=/);
@@ -89,6 +90,8 @@ test("implements the complete multilingual SEO discovery layer", async () => {
   assert.match(projectPage, /projectSchema/);
   assert.match(capabilityPage, /serviceSchema/);
   assert.match(capabilityPage, /\/drive\/cladding\/water-based-substrate\.webp/);
+  assert.doesNotMatch(renderedCladding, /\/assets\/217375_739589\.jpeg/);
+  assert.match(renderedCladding, /\/drive\/cladding\/cnc\/cladding-cnc-10\.webp/);
   assert.match(inquiryPage, /ContactPage/);
 });
 
