@@ -46,7 +46,6 @@ const categoryMediaAssets: MediaAsset[] = [
     "custom-units": { en: "Custom unit", ar: "وحدة مخصصة" },
     doors: { en: "Architectural door", ar: "باب معماري" },
     "wall-cladding": { en: "Wall cladding", ar: "تكسية حائط" },
-    "materials-finishes": { en: "Material finish", ar: "تشطيب خامة" },
   };
   return {
     id: asset.id,
@@ -83,7 +82,7 @@ const processMediaAssets: MediaAsset[] = generatedUnitProcessAssets.process.map(
   sourceFolder: asset.sourceFolderTitle,
   sourceFolderId: asset.sourceFolderId,
   sourceName: asset.sourceName,
-  capabilities: ["materials-finishes"],
+  capabilities: ["custom-units"],
   stage: "process",
   authenticity: asset.authenticity as MediaAsset["authenticity"],
   rights: asset.rights as MediaAsset["rights"],
@@ -177,13 +176,13 @@ export const mediaAssets: MediaAsset[] = [
   },
   {
     id: "asset-process-01", src: "/assets/805180_442982.jpeg", sourceFolder: "Legacy site", sourceName: "805180_442982.jpeg",
-    projectSlug: "workplace-joinery-study", sector: "workplace", capabilities: ["custom-units", "materials-finishes"],
+    projectSlug: "workplace-joinery-study", sector: "workplace", capabilities: ["custom-units"],
     stage: "process", authenticity: "unknown", rights: "pending", orientation: "landscape", quality: "editorial", usage: "process",
     alt: { en: "Joinery work during fabrication", ar: "أعمال النجارة خلال التصنيع" },
   },
   {
     id: "asset-detail-01", src: "/assets/891416_45535.jpg", sourceFolder: "Legacy site", sourceName: "891416_45535.jpg",
-    projectSlug: "hospitality-room-study", sector: "hospitality", capabilities: ["materials-finishes", "bedrooms"],
+    projectSlug: "hospitality-room-study", sector: "hospitality", capabilities: ["bedrooms"],
     stage: "detail", authenticity: "unknown", rights: "pending", orientation: "landscape", quality: "editorial", usage: "project",
     alt: { en: "Material and furniture detail", ar: "تفصيلة خامات وأثاث" },
   },
@@ -250,17 +249,9 @@ const capabilityCatalog: Capability[] = [
     materials: [{ en: "Natural veneer", ar: "قشرة طبيعية" }, { en: "Painted timber", ar: "خشب مدهون" }, { en: "Specified door cores", ar: "قلوب أبواب حسب المواصفات" }],
     process: [{ en: "Opening review", ar: "مراجعة الفتحات" }, { en: "Hardware coordination", ar: "تنسيق الإكسسوارات" }, { en: "Final adjustment", ar: "الضبط النهائي" }], image: "door-01",
   },
-  {
-    slug: "materials-finishes", number: "08", title: { en: "Materials & Finishes", ar: "الخامات والتشطيبات" },
-    short: { en: "A working finish library refined through samples, approvals and quality checks.", ar: "مكتبة تشطيبات عملية تتطور عبر العينات والاعتمادات وفحوص الجودة." },
-    intro: { en: "Boards, veneers, laminates, paints and hardware are selected for the way each space will look, work and age.", ar: "تُختار الألواح والقشرة واللامينيت والدهانات والإكسسوارات وفق شكل المساحة واستخدامها وكيف ستتطور مع الزمن." },
-    applications: [{ en: "Finish schedules", ar: "جداول التشطيبات" }, { en: "Material boards", ar: "لوحات الخامات" }, { en: "Project mock-ups", ar: "نماذج المشروع" }],
-    materials: [{ en: "Natural veneers", ar: "القشرة الطبيعية" }, { en: "Technical laminates", ar: "اللامينيت التقني" }, { en: "Paint and hardware systems", ar: "أنظمة الدهان والإكسسوارات" }],
-    process: [{ en: "Material shortlist", ar: "قائمة الخامات" }, { en: "Sample approval", ar: "اعتماد العينة" }, { en: "Finish control", ar: "ضبط التشطيب" }], image: "asset-detail-01",
-  },
 ];
 
-const capabilityOrder: CapabilitySlug[] = ["wall-cladding", "kitchens", "dressing-rooms", "doors", "custom-units", "bedrooms", "living-rooms", "materials-finishes"];
+const capabilityOrder: CapabilitySlug[] = ["wall-cladding", "kitchens", "dressing-rooms", "doors", "custom-units", "bedrooms", "living-rooms"];
 
 export const capabilities: Capability[] = [...capabilityCatalog].sort((a, b) => {
   const aIndex = capabilityOrder.indexOf(a.slug);

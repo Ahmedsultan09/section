@@ -35,7 +35,6 @@ Website collections follow the client’s Drive library, with names refined for 
 - Bedrooms
 - Wall Cladding
 - Architectural Doors (`Doors` in Drive)
-- Materials & Finishes (`Materials used` in Drive)
 
 The administrative, brand, About and People/Clients folders do not appear in the work index. They feed identity, company-story and enterprise-proof sections instead. Interior fit-out, joinery, manufacturing and installation remain important delivery capabilities, but they are described inside projects, collection pages and the inquiry rather than used as the homepage browsing taxonomy.
 

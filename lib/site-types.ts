@@ -17,8 +17,7 @@ export type CapabilitySlug =
   | "custom-units"
   | "bedrooms"
   | "doors"
-  | "wall-cladding"
-  | "materials-finishes";
+  | "wall-cladding";
 
 export type ProjectArea =
   | "cover"
