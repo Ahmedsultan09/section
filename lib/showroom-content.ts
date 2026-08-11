@@ -113,8 +113,9 @@ const kitchenPieces: CollectionPiece[] = [
     story: { en: "", ar: "" },
     application: { en: "Residential kitchen", ar: "مطبخ سكني" },
     scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
-    media: driveSequence("kitchen-01", 6),
-    sourceFolderIds: ["1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv"],
+    media: [...driveSequence("kitchen-01", 6), ...driveSequence("kitchen-01-ref", 3)],
+    mediaTags: kitchenReferenceTags("kitchen-01-ref", 3),
+    sourceFolderIds: ["1r-JCLypKDimXW-zivG9hhAuduFL8N3vZ", "1839f-h-jyJkuZCKvRmUt2KgaE7GDBxWP"],
     status: "preview",
   },
   {
@@ -164,7 +165,7 @@ const kitchenPieces: CollectionPiece[] = [
     scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
     media: [...driveSequence("kitchen-05", 5), ...driveSequence("kitchen-05-ref", 3)],
     mediaTags: kitchenReferenceTags("kitchen-05-ref", 3),
-    sourceFolderIds: ["1FDvpmYk-p-zNaDXyRSM1Q9CMO1cqfBpf"],
+    sourceFolderIds: ["1r-JCLypKDimXW-zivG9hhAuduFL8N3vZ", "1FDvpmYk-p-zNaDXyRSM1Q9CMO1cqfBpf"],
     status: "preview",
   },
 ];

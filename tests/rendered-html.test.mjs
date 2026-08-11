@@ -275,7 +275,8 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(driveAssets, /1aD2z7kpl5x0XU0x6mLqVbo0U-K1P_ZUY/);
   assert.match(showroom, /1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs/);
   assert.match(inventory, /no logo file was found/i);
-  assert.match(showroom, /1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv/);
+  assert.match(showroom, /1r-JCLypKDimXW-zivG9hhAuduFL8N3vZ/);
+  assert.match(showroom, /1839f-h-jyJkuZCKvRmUt2KgaE7GDBxWP/);
   assert.match(showroom, /10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j/);
   assert.match(showroom, /10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp/);
   assert.match(showroom, /CNC CLADDING/);
