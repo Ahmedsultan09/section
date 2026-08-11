@@ -110,7 +110,7 @@ const kitchenPieces: CollectionPiece[] = [
     collection: "kitchens",
     title: { en: "Kitchen 01", ar: "المطبخ ٠١" },
     location: { en: "— Azad Compound", ar: "— كمبوند آزاد" },
-    story: { en: "A six-image fitted-kitchen sequence from Azad Compound, preserved in the Drive order.", ar: "تسلسل من ست صور لمطبخ مدمج في كمبوند آزاد، مع الحفاظ على ترتيب Drive." },
+    story: { en: "", ar: "" },
     application: { en: "Residential kitchen", ar: "مطبخ سكني" },
     scope: { en: "Drive-supplied project photographs", ar: "صور مشروع موردة من Drive" },
     media: driveSequence("kitchen-01", 6),
