@@ -246,7 +246,12 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(showroom, /1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv/);
   assert.match(showroom, /10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j/);
   assert.match(showroom, /10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp/);
-  assert.equal(JSON.parse(categoryAssets).length, 50);
+  assert.match(showroom, /CNC CLADDING/);
+  assert.match(showroom, /MELAMINE CLADDING/);
+  assert.match(showroom, /VENEER & PAINTING CLADDING/);
+  const categoryAssetRecords = JSON.parse(categoryAssets);
+  assert.equal(categoryAssetRecords.length, 95);
+  assert.equal(categoryAssetRecords.filter((asset) => asset.id.startsWith("cladding-")).length, 44);
 });
 
 test("keeps Nocturne revisions isolated and ordered", async () => {

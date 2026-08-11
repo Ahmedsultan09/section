@@ -22,7 +22,9 @@ const categoryMediaAssets: MediaAsset[] = generatedCategoryDriveAssets.map((asse
     ? "kitchens"
     : asset.id.startsWith("bedroom")
       ? "bedrooms"
-      : "dressing-rooms";
+      : asset.id.startsWith("cladding-")
+        ? "wall-cladding"
+        : "dressing-rooms";
   const labels: Record<CapabilitySlug, Record<Locale, string>> = {
     kitchens: { en: "Drive-supplied kitchen project photograph", ar: "صورة مشروع مطبخ موردة من Drive" },
     bedrooms: { en: "Drive-supplied bedroom project photograph", ar: "صورة مشروع غرفة نوم موردة من Drive" },

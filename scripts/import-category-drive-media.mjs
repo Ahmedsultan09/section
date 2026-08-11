@@ -37,6 +37,56 @@ const assets = [
   ["kitchen-edited-05", "15aa3bVnj0p_VubvwkPC3vlfkx4B6kCm0", "16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M", "IMG_0962.PNG", "image/png", "kitchens"],
   ["kitchen-edited-06", "1bMQ4Blod_mQAzzM-D6CtdJyN-hCY960h", "16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M", "IMG_0956.PNG", "image/png", "kitchens"],
 
+  // Wall cladding — CNC
+  ["cladding-cnc-01", "1Agz6x9h41CQWD-UEGL3Q09fwH2USAInM", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_2325.PNG", "image/jpeg", "cladding/cnc"],
+  ["cladding-cnc-02", "1_tg92kR2qOHTrQFyAXfGF2ycs_J5_vXj", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_2322.PNG", "image/png", "cladding/cnc"],
+  ["cladding-cnc-03", "1BE28X5TQCOQd52DCnfLCxRJgarZkGx6O", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_2320.PNG", "image/png", "cladding/cnc"],
+  ["cladding-cnc-04", "1-IzL1L5Qa-JwNGe4DrCrFHvNmzQB0Gu-", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_2318.PNG", "image/png", "cladding/cnc"],
+  ["cladding-cnc-05", "1uE7zcAvG35zVvCR302WJqNdt_xML6KRI", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_2316.PNG", "image/png", "cladding/cnc"],
+  ["cladding-cnc-06", "1_wSsFSC_kYA094WDyAD7HlPjuWRKEEbW", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_2314.PNG", "image/png", "cladding/cnc"],
+  ["cladding-cnc-07", "1wr3rWFxeeF6Iga3T9Q0OPSSfGqTcCIAj", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_2312.PNG", "image/jpeg", "cladding/cnc"],
+  ["cladding-cnc-08", "1vqnYhGbexAxktk-6ZCIjlyc6KNMgnKIg", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_0113.heif", "image/heif", "cladding/cnc"],
+  ["cladding-cnc-09", "1-chxe8mQDoHAg2Rv_rgQPuwuxdkzfPbA", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_1987.heif", "image/heif", "cladding/cnc"],
+  ["cladding-cnc-10", "109ZKKCzHbP5kE8utTi3Ww0MqiNpyHVaD", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "IMG_0805.heif", "image/heif", "cladding/cnc"],
+  ["cladding-cnc-11", "18wepOnxnaEE1TsXNK8rUbYkHtvlYneRH", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "CAA6F07E-265E-4D21-9BA7-29E99D80E784.png", "image/png", "cladding/cnc"],
+  ["cladding-cnc-12", "1VR4NVuQHMzXEE7Ww8zmQwqsMaQy9Cdad", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "7C5B9E60-6389-4053-B249-E325C7BADDDB.png", "image/png", "cladding/cnc"],
+  ["cladding-cnc-13", "171gXuwod5BzvyV1pXDeGuAx-tVgNdqfV", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "F3B33140-0026-4EE2-92F6-EE1E1CB382F1.png", "image/png", "cladding/cnc"],
+  ["cladding-cnc-14", "1oyBm-1BoM5r_3KshukuU7hinsGOwcmyz", "12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd", "arabesque.png", "image/png", "cladding/cnc"],
+
+  // Wall cladding — melamine
+  ["cladding-melamine-01", "1wgW8ffRjg_ITxbvVqL_5S18x1om1vYAE", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_2329.PNG", "image/png", "cladding/melamine"],
+  ["cladding-melamine-02", "14Nmkp8qrJUqGDWg0VybduX9nsfu6NZUV", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0631.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-03", "1GiFXnnNGOAoMdB6BForJg2LlH1W2jiUX", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_2139.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-04", "1QqQq0O57VA6CzARe1ZTIaemdO1SuUs4e", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "AE0A724C-0C0C-44E4-BB50-F2E2B4423B60.PNG", "image/png", "cladding/melamine"],
+  ["cladding-melamine-05", "1yeFEeT_yk5hWXOkldanXd3BGUuvCIkgy", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0210.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-06", "1CT3NTecN0xjqbjHdxtJ6C9oHx08yJSoI", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_7004.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-07", "1zHWfZ1hfUr5YXQyyAO94lz4C9SZTyxef", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0479.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-08", "1bdN5olItc1Pshcu93qK-kUPTDZzeIS1y", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0525.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-09", "1KpQgjQCo5TTPEcDKTCAMtnESgEWmeN0i", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0522.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-10", "1jGRQwaQVKL-_KGsTuOf4u5cyAnSEZ9n7", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0526.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-11", "1X6FDr7Hho94o-v4zZ5NKgyeC3WOBVMqt", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0103.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-12", "1QTj-GnmFPu5XQ5_h39Cn4dwZB3zsWDQ5", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_6958.HEIC", "image/heif", "cladding/melamine"],
+  ["cladding-melamine-13", "13vd-C7Ddyw8rR_abmnRUZwREuPVwYmQS", "1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0", "IMG_0786.HEIC", "image/heif", "cladding/melamine"],
+
+  // Wall cladding — veneer & painting
+  ["cladding-veneer-painting-01", "19y1QqslNJpkXPC3bJ-z2cq4g-WZxtJ8v", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_2309.PNG", "image/png", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-02", "1DTZPbt_qnNwnqUG6tDJ_wJ-bViy2ytU8", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_2078.PNG", "image/png", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-03", "1Rq9Z7VfvlVf8fu9c0gIa_oHBEGAwqPp_", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_2011.HEIC", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-04", "1Sk9KGim8XEz_lvSvJrtNWjWI8UQs2YLY", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_1613.HEIC", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-05", "1mCQNUl6CSDuw4_UWj5GWxH6ReixV65ks", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_6990.HEIC", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-06", "1afoM0WRr_j10uY9kNIHxjyyYhlZfpT5f", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_4404.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-07", "125Bf4CgA4xARoX0YwCw2RVJMEVwFIiI0", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_9152.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-08", "1A2jgGnFFck6_jYxzwuV2imzlOJYoM-z4", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_4189.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-09", "1s1l0o7OCy1z52sP2mtyeD_ZGxqFjqmIQ", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_4499.jpeg", "image/jpeg", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-10", "1-Hn_ptQRHUET002c9z2BlebO53j4bolr", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_1284.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-11", "1oGy4gKhxPw8fT2H5-0rjg3SgB8e08ojV", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_1253.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-12", "1TvS1mXx8veAuGQrZAyK5nQqzFALOHEsk", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_1244.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-13", "1petY2eY7cdAiCkxcCXRu2Wk0xdHj_r8B", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_0655.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-14", "1lhShP17Xyk57RNETHFyBr7PwtBckWBf8", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "A8075502-5D0C-41A3-8FAC-0290486E5318.png", "image/png", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-15", "1CyPTKe-PSqEH7_6HCcZr_IqsTppKMUpP", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "9E31F52C-2452-46A8-AF5A-DA5018346B00.png", "image/png", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-16", "1kQyLGOYJKl5YzPehGY5q0_ZCuJ0km_Uy", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_6261.heif", "image/heif", "cladding/veneer-painting"],
+  ["cladding-veneer-painting-17", "1o0i00p_xglYRvHYdUYDN9UApJIBcNB4_", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_0426.JPG", "image/jpeg", "cladding/veneer-painting"],
+
   // Bedrooms — two Drive-backed projects
   ...[
     ["01", "1NG0WV2PJxIRdVeIp1wHucpBuyoUs6apo", "IMG_5857.HEIC"],
@@ -61,6 +111,9 @@ const assets = [
     ["07", "1atdXjTqlu19jcZ0nMaxQHcrn3HuIKFzM", "IMG_9717.HEIC"],
   ].map(([number, id, name]) => [`bedroom-b-${number}`, id, "10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp", name, "image/heif", "bedrooms"]),
 
+  // Kids bedroom — newly selected opening-frame image
+  ["bedroom-kids-03", "1N5iHK9y-ZCwHBY3KuyXw2XibvkJrhyiI", "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", "3.png", "image/png", "bedrooms"],
+
   // Dressing — complete the existing still-image set
   ["dressing-09", "1fYRcH5w_Rs4CcAgBOoEO8jHTnZCEwRaI", "1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X", "IMG_0340.HEIC", "image/heif", "dressing"],
   ["dressing-10", "1lEw9I439xqdpOZf12Oo9fwYGOU5FXsmO", "1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X", "IMG_0352.HEIC", "image/heif", "dressing"],
@@ -71,11 +124,13 @@ const assets = [
 
 const workspace = process.cwd();
 const temporaryDirectory = await mkdtemp(join(tmpdir(), "section-drive-import-"));
+const requestedIds = new Set((process.env.IMPORT_CATEGORY_IDS ?? "").split(",").map((id) => id.trim()).filter(Boolean));
 const records = [];
 const seenHashes = new Set();
 
 try {
   for (const [id, driveFileId, sourceFolderId, sourceName, originalMime, outputFolder] of assets) {
+    if (requestedIds.size > 0 && !requestedIds.has(id)) continue;
     const extension = extname(sourceName) || (originalMime === "image/heif" ? ".heic" : ".jpg");
     const sourcePath = join(temporaryDirectory, `${id}${extension}`);
     const authenticatedDownload = join(workspace, ".tmp-drive-import", "input", id);
@@ -122,9 +177,16 @@ try {
     process.stdout.write(`imported ${sourceName} -> ${outputPath}\n`);
   }
 
+  const existingRecords = requestedIds.size > 0
+    ? JSON.parse(await readFile(join(workspace, "lib", "generated-category-drive-assets.json"), "utf8"))
+    : [];
+  const outputRecords = requestedIds.size > 0
+    ? [...existingRecords.filter((record) => !requestedIds.has(record.id)), ...records]
+    : records;
+
   await writeFile(
     join(workspace, "lib", "generated-category-drive-assets.json"),
-    `${JSON.stringify(records, null, 2)}\n`,
+    `${JSON.stringify(outputRecords, null, 2)}\n`,
   );
 } finally {
   await rm(temporaryDirectory, { recursive: true, force: true });
