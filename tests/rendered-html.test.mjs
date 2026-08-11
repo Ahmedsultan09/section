@@ -92,6 +92,7 @@ test("implements the complete multilingual SEO discovery layer", async () => {
   assert.match(capabilityPage, /\/drive\/cladding\/water-based-substrate\.webp/);
   assert.doesNotMatch(renderedCladding, /\/assets\/217375_739589\.jpeg/);
   assert.match(renderedCladding, /\/drive\/cladding\/cnc\/cladding-cnc-10\.webp/);
+  assert.doesNotMatch(renderedCladding, /\/drive\/cladding\/veneer-painting\/cladding-veneer-painting-02\.webp/);
   assert.match(inquiryPage, /ContactPage/);
 });
 
