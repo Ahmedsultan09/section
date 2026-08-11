@@ -1903,7 +1903,7 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   --partner-logo-pad-y: 14px;
   background: #d8d0b9;
 }
-.logo-marquee-section .partner-logo[data-logo-id="vento"] {
+.logo-marquee-section .partner-logo[data-logo-id="evento"] {
   --partner-logo-pad-x: 18px;
   --partner-logo-pad-y: 12px;
   background: radial-gradient(circle at 50% 45%, #383a32 0%, #171812 74%);
@@ -1914,7 +1914,7 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   background: #d9d3c1;
 }
 .people-marquee .partner-logo[data-logo-id="mys"] img,
-.people-marquee .partner-logo[data-logo-id="vento"] img,
+.people-marquee .partner-logo[data-logo-id="evento"] img,
 .people-marquee .partner-logo[data-logo-id="amaken"] img {
   filter: none;
 }
@@ -1925,7 +1925,7 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
 .people-marquee .partner-logo.light,
 .people-marquee .partner-logo.dark,
 .people-marquee .partner-logo[data-logo-id="mys"],
-.people-marquee .partner-logo[data-logo-id="vento"],
+.people-marquee .partner-logo[data-logo-id="evento"],
 .people-marquee .partner-logo[data-logo-id="amaken"] {
   background: transparent;
   border: 0;
@@ -1944,7 +1944,7 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
 .people-marquee .partner-logo[data-logo-id="mai-saad"] { --partner-logo-scale: 1.5; }
 .people-marquee .partner-logo[data-logo-id="ahmed-elsheref"] { --partner-logo-scale: 1.5; }
 .people-marquee .partner-logo[data-logo-id="ra"] { --partner-logo-scale: 1.2; }
-.people-marquee .partner-logo[data-logo-id="vento"] { --partner-logo-scale: 1.58; }
+.people-marquee .partner-logo[data-logo-id="evento"] { --partner-logo-scale: 1.58; }
 .people-marquee .partner-logo[data-logo-id="amaken"] { --partner-logo-scale: 1.5; }
 .people-marquee .partner-logo[data-logo-id="taj"] img,
 .people-marquee .partner-logo[data-logo-id="ra"] img {

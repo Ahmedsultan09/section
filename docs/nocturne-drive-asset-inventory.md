@@ -68,7 +68,7 @@ The seven supplied HEIC photographs were visually verified as one completed kitc
 
 - Ahmed Elsheref Designs: Drive ID `1-BcvpWLz8KUwOR7uwWLMf-gBMyBRNbXs`; approved collaborator mark; shown on the SODIC card, project detail and People We Work With.
 - SODIC: no logo file was found in the supplied project folder or the searched Drive source. The UI uses accessible text attribution only. An image logo remains gated until an approved Drive file exists.
-- Vento/Evento: source ID `1kkrKXJpd1K65oqPZ1UsAiT5pBqp2t-T1` is currently labelled “Vento Designs” in the catalog. Identity/spelling still needs owner confirmation.
+- Evento Designs: source ID `1kkrKXJpd1K65oqPZ1UsAiT5pBqp2t-T1`; the existing Drive-derived partner mark is attached to the CFC Office collaboration record.
 - MYS and Amaken: retained with per-logo scale treatments rather than destructive filters.
 - People We Work With and project attribution render the transparent delivery derivatives tied to these Drive IDs directly; collaborator wrappers have no artificial black tile or border, with only per-mark sizing used to preserve readability.
 - Circular Drive exports (MYS, Nawara and Amaken) are matte-cleaned and delivered on their true square bounds so their transparent edges do not render as black canvases.
@@ -90,7 +90,7 @@ The approved marquee maps Drive IDs in `lib/drive-assets.ts` to Egger, Egypt Pan
 ## Open release gates
 
 1. Supply and approve a SODIC logo in Drive.
-2. Confirm Vento versus Evento naming.
+2. Confirm the final spelling of the remaining partner names.
 3. Confirm the Ahmed Elsheref / Ahmad Elsherif spelling against the owner record.
 4. Confirm commercial licensing for the Drive font files.
 5. Approve localized Brand Story, Vision and Mission placement before mounting `BrandNarrative`.

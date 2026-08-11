@@ -99,7 +99,7 @@ Current local preview ingestion:
 
 - Five kitchen stories based on Kitchen 1–5, including the working names Obour and Sahar.
 - Two dressing-room stories derived from the supplied dressing folder.
-- Nine partner/collaborator marks: Karim Magdy, Taj Design House, MYS, Nawara / Alaa Ezzat, Mai Saad Designs, Ahmad Elsherif Designs, RA Interior Design, Vento Designs and Amaken Contracting.
+- Nine partner/collaborator marks: Karim Magdy, Taj Design House, MYS, Nawara / Alaa Ezzat, Mai Saad Designs, Ahmad Elsherif Designs, RA Interior Design, Evento Designs and Amaken Contracting.
 - HEIC/HEIF, JPEG and PNG source copies are converted into optimized WebP derivatives. The originals remain in Drive and are not shipped in the production public directory.
 - Drive IDs remain in the typed manifest for deduplication and later remapping.
 

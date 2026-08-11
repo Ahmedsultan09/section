@@ -182,6 +182,7 @@ export const selectedProjectRecords: Project[] = [
     mediaAreas: selectedProjectAreas("cfc-office"),
     sourceFolderId: "1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y",
     sourceFolderTitle: "6-CFC office. (Commercial)",
+    collaboratorIds: ["evento"],
   },
 ];
 
