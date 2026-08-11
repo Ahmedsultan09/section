@@ -1,23 +1,215 @@
 {
-  "_framework-XU8gKkFC.js": {
-    "file": "assets/framework-XU8gKkFC.js",
+  "_DesignAwareLink-C4T-D8Jn.js": {
+    "file": "assets/DesignAwareLink-C4T-D8Jn.js",
+    "name": "DesignAwareLink",
+    "imports": [
+      "_framework-CXnKph_e.js",
+      "_link-BkWxwwcz.js"
+    ]
+  },
+  "_framework-CXnKph_e.js": {
+    "file": "assets/framework-CXnKph_e.js",
     "name": "framework",
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js"
+    ]
+  },
+  "_link-BkWxwwcz.js": {
+    "file": "assets/link-BkWxwwcz.js",
+    "name": "link",
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-CXnKph_e.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/router.js"
     ]
   },
   "_rolldown-runtime-S-ySWqyJ.js": {
     "file": "assets/rolldown-runtime-S-ySWqyJ.js",
     "name": "rolldown-runtime"
   },
+  "_site-content-BdzrLmUE.js": {
+    "file": "assets/site-content-BdzrLmUE.js",
+    "name": "site-content"
+  },
+  "app/admin-dashboard/LeadDetailsDialog.tsx": {
+    "file": "assets/LeadDetailsDialog-K-vaR086.js",
+    "name": "LeadDetailsDialog",
+    "src": "app/admin-dashboard/LeadDetailsDialog.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-CXnKph_e.js"
+    ],
+    "css": [
+      "assets/LeadDetailsDialog-B0rqLnYd.css"
+    ]
+  },
+  "components/AdaptiveWebGL.tsx": {
+    "file": "assets/AdaptiveWebGL-Dn_kC25i.js",
+    "name": "AdaptiveWebGL",
+    "src": "components/AdaptiveWebGL.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-CXnKph_e.js"
+    ],
+    "dynamicImports": [
+      "node_modules/three/build/three.module.js"
+    ]
+  },
+  "components/InquiryForm.tsx": {
+    "file": "assets/InquiryForm-B6TrZjqt.js",
+    "name": "InquiryForm",
+    "src": "components/InquiryForm.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_site-content-BdzrLmUE.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "components/LocaleSwitch.tsx": {
+    "file": "assets/LocaleSwitch-whNgmc9e.js",
+    "name": "LocaleSwitch",
+    "src": "components/LocaleSwitch.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "virtual:vinext-app-browser-entry",
+      "_DesignAwareLink-C4T-D8Jn.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "components/ManufacturingLine.tsx": {
+    "file": "assets/ManufacturingLine-gG-oEwd2.js",
+    "name": "ManufacturingLine",
+    "src": "components/ManufacturingLine.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_site-content-BdzrLmUE.js",
+      "node_modules/vinext/dist/shims/image.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "components/NocturneCategoryStack.tsx": {
+    "file": "assets/NocturneCategoryStack-B0vqhkbs.js",
+    "name": "NocturneCategoryStack",
+    "src": "components/NocturneCategoryStack.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_DesignAwareLink-C4T-D8Jn.js",
+      "node_modules/vinext/dist/shims/image.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "components/ProjectExplorer.tsx": {
+    "file": "assets/ProjectExplorer-C2HgDLvW.js",
+    "name": "ProjectExplorer",
+    "src": "components/ProjectExplorer.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_DesignAwareLink-C4T-D8Jn.js",
+      "_site-content-BdzrLmUE.js",
+      "node_modules/vinext/dist/shims/image.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "components/ProjectStoryRail.tsx": {
+    "file": "assets/ProjectStoryRail-C-TRFa2w.js",
+    "name": "ProjectStoryRail",
+    "src": "components/ProjectStoryRail.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_DesignAwareLink-C4T-D8Jn.js",
+      "_site-content-BdzrLmUE.js",
+      "node_modules/vinext/dist/shims/image.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "components/ShowroomProcess.tsx": {
+    "file": "assets/ShowroomProcess-CWfUEi2K.js",
+    "name": "ShowroomProcess",
+    "src": "components/ShowroomProcess.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_site-content-BdzrLmUE.js",
+      "node_modules/vinext/dist/shims/image.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "node_modules/three/build/three.module.js": {
+    "file": "assets/three.module-BHduyG5K.js",
+    "name": "three.module",
+    "src": "node_modules/three/build/three.module.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/vinext/dist/shims/image.js": {
+    "file": "assets/image-Cm3oQkH9.js",
+    "name": "image",
+    "src": "node_modules/vinext/dist/shims/image.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-BABUewVu.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/router.js": {
+    "file": "assets/router-BYP3C4SU.js",
+    "name": "router",
+    "src": "node_modules/vinext/dist/shims/router.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-CXnKph_e.js",
+      "_link-BkWxwwcz.js"
+    ],
+    "dynamicImports": [
+      "_framework-CXnKph_e.js"
+    ]
+  },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-JaQw7BxD.js",
+    "file": "assets/index-Cs8DHs0k.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
-      "_framework-XU8gKkFC.js"
+      "_framework-CXnKph_e.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "components/InquiryForm.tsx",
+      "components/ManufacturingLine.tsx",
+      "components/ShowroomProcess.tsx",
+      "virtual:vinext-app-browser-entry",
+      "components/ProjectExplorer.tsx",
+      "components/NocturneCategoryStack.tsx",
+      "node_modules/vinext/dist/shims/image.js",
+      "components/LocaleSwitch.tsx",
+      "components/AdaptiveWebGL.tsx",
+      "app/admin-dashboard/LeadDetailsDialog.tsx",
+      "_link-BkWxwwcz.js",
+      "components/ProjectStoryRail.tsx"
     ]
   }
 }

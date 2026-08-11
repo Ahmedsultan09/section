@@ -1,8 +1,301 @@
 {
+  "app/fonts/brand-bold.woff2": {
+    "file": "assets/brand-bold-Dc3-kJqa.woff2",
+    "src": "app/fonts/brand-bold.woff2"
+  },
+  "app/fonts/brand-light.woff2": {
+    "file": "assets/brand-light-Cqs2G4n8.woff2",
+    "src": "app/fonts/brand-light.woff2"
+  },
+  "app/fonts/brand-variable.woff2": {
+    "file": "assets/brand-variable-Djgz8jd6.woff2",
+    "src": "app/fonts/brand-variable.woff2"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-400-italic.woff": {
+    "file": "assets/newsreader-latin-400-italic-CNZoH1hn.woff",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-400-italic.woff"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-400-italic.woff2": {
+    "file": "assets/newsreader-latin-400-italic-CEihAR-f.woff2",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-400-italic.woff2"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-400-normal.woff": {
+    "file": "assets/newsreader-latin-400-normal-gRTjlS2D.woff",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-400-normal.woff2": {
+    "file": "assets/newsreader-latin-400-normal-BFBkh4jY.woff2",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-italic.woff": {
+    "file": "assets/newsreader-latin-ext-400-italic-qdgKLcPG.woff",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-italic.woff"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-italic.woff2": {
+    "file": "assets/newsreader-latin-ext-400-italic-BMTE_bNQ.woff2",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-italic.woff2"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-normal.woff": {
+    "file": "assets/newsreader-latin-ext-400-normal-DYA1XoQK.woff",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-normal.woff2": {
+    "file": "assets/newsreader-latin-ext-400-normal-svq1FPys.woff2",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-italic.woff": {
+    "file": "assets/newsreader-vietnamese-400-italic-QbB8kb5s.woff",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-italic.woff"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-italic.woff2": {
+    "file": "assets/newsreader-vietnamese-400-italic-bZegYFuM.woff2",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-italic.woff2"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-normal.woff": {
+    "file": "assets/newsreader-vietnamese-400-normal-BekUZro8.woff",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-normal.woff"
+  },
+  "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-normal.woff2": {
+    "file": "assets/newsreader-vietnamese-400-normal-DdKr49mV.woff2",
+    "src": "node_modules/@fontsource/newsreader/files/newsreader-vietnamese-400-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-500-normal.woff": {
+    "file": "assets/saira-condensed-latin-500-normal-BGC7F_dX.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-500-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-500-normal.woff2": {
+    "file": "assets/saira-condensed-latin-500-normal-DIdKjHXc.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-500-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-600-normal.woff": {
+    "file": "assets/saira-condensed-latin-600-normal-CJ-Ib_yI.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-600-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-600-normal.woff2": {
+    "file": "assets/saira-condensed-latin-600-normal-0taFJMb7.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-600-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-700-normal.woff": {
+    "file": "assets/saira-condensed-latin-700-normal-Br1WwvhS.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-700-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-700-normal.woff2": {
+    "file": "assets/saira-condensed-latin-700-normal-BpDqMSKw.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-700-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-500-normal.woff": {
+    "file": "assets/saira-condensed-latin-ext-500-normal-CgTVcJE5.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-500-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-500-normal.woff2": {
+    "file": "assets/saira-condensed-latin-ext-500-normal-CIzImMjU.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-500-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-600-normal.woff": {
+    "file": "assets/saira-condensed-latin-ext-600-normal-BQ2ZMbdg.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-600-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-600-normal.woff2": {
+    "file": "assets/saira-condensed-latin-ext-600-normal-DwjIBGFg.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-600-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-700-normal.woff": {
+    "file": "assets/saira-condensed-latin-ext-700-normal-DPP8JZfq.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-700-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-700-normal.woff2": {
+    "file": "assets/saira-condensed-latin-ext-700-normal-rfs_OqX7.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-latin-ext-700-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-500-normal.woff": {
+    "file": "assets/saira-condensed-vietnamese-500-normal-CtjeXiCW.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-500-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-500-normal.woff2": {
+    "file": "assets/saira-condensed-vietnamese-500-normal-BO-iw4YA.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-500-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-600-normal.woff": {
+    "file": "assets/saira-condensed-vietnamese-600-normal-Cx33h9T1.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-600-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-600-normal.woff2": {
+    "file": "assets/saira-condensed-vietnamese-600-normal-DdheDV3O.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-600-normal.woff2"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-700-normal.woff": {
+    "file": "assets/saira-condensed-vietnamese-700-normal-C4pgqYLY.woff",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-700-normal.woff"
+  },
+  "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-700-normal.woff2": {
+    "file": "assets/saira-condensed-vietnamese-700-normal-DTNtv3pg.woff2",
+    "src": "node_modules/@fontsource/saira-condensed/files/saira-condensed-vietnamese-700-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-400-normal.woff": {
+    "file": "assets/saira-latin-400-normal-B30sl1n7.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-400-normal.woff2": {
+    "file": "assets/saira-latin-400-normal-6Q3FbzbH.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-500-normal.woff": {
+    "file": "assets/saira-latin-500-normal-D4NXTERl.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-500-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-500-normal.woff2": {
+    "file": "assets/saira-latin-500-normal-BUkaYXVh.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-500-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-600-normal.woff": {
+    "file": "assets/saira-latin-600-normal-CJ94zROc.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-600-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-600-normal.woff2": {
+    "file": "assets/saira-latin-600-normal-DYxBFP1f.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-600-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-ext-400-normal.woff": {
+    "file": "assets/saira-latin-ext-400-normal-D39B05CL.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-ext-400-normal.woff2": {
+    "file": "assets/saira-latin-ext-400-normal-BJFFSgrL.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-ext-500-normal.woff": {
+    "file": "assets/saira-latin-ext-500-normal-DmOcC75z.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-ext-500-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-ext-500-normal.woff2": {
+    "file": "assets/saira-latin-ext-500-normal-C-BKQ_B5.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-ext-500-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-ext-600-normal.woff": {
+    "file": "assets/saira-latin-ext-600-normal-CKQVRYTf.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-ext-600-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-latin-ext-600-normal.woff2": {
+    "file": "assets/saira-latin-ext-600-normal-BDLPjVgT.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-latin-ext-600-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-vietnamese-400-normal.woff": {
+    "file": "assets/saira-vietnamese-400-normal-DoaGX8Xb.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-vietnamese-400-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-vietnamese-400-normal.woff2": {
+    "file": "assets/saira-vietnamese-400-normal-BDft9Aer.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-vietnamese-400-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-vietnamese-500-normal.woff": {
+    "file": "assets/saira-vietnamese-500-normal-k_43d8z9.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-vietnamese-500-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-vietnamese-500-normal.woff2": {
+    "file": "assets/saira-vietnamese-500-normal-DnkVjnpC.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-vietnamese-500-normal.woff2"
+  },
+  "node_modules/@fontsource/saira/files/saira-vietnamese-600-normal.woff": {
+    "file": "assets/saira-vietnamese-600-normal-BhF9dVaI.woff",
+    "src": "node_modules/@fontsource/saira/files/saira-vietnamese-600-normal.woff"
+  },
+  "node_modules/@fontsource/saira/files/saira-vietnamese-600-normal.woff2": {
+    "file": "assets/saira-vietnamese-600-normal-D5gszP3k.woff2",
+    "src": "node_modules/@fontsource/saira/files/saira-vietnamese-600-normal.woff2"
+  },
+  "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff/IBMPlexSansArabic-Light.woff": {
+    "file": "assets/IBMPlexSansArabic-Light-BzSl5HxT.woff",
+    "src": "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff/IBMPlexSansArabic-Light.woff"
+  },
+  "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff/IBMPlexSansArabic-Regular.woff": {
+    "file": "assets/IBMPlexSansArabic-Regular-Ua_R_TKz.woff",
+    "src": "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff/IBMPlexSansArabic-Regular.woff"
+  },
+  "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff/IBMPlexSansArabic-SemiBold.woff": {
+    "file": "assets/IBMPlexSansArabic-SemiBold-Ekh58eoQ.woff",
+    "src": "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff/IBMPlexSansArabic-SemiBold.woff"
+  },
+  "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-Light.woff2": {
+    "file": "assets/IBMPlexSansArabic-Light-A56g9QB4.woff2",
+    "src": "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-Light.woff2"
+  },
+  "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-Regular.woff2": {
+    "file": "assets/IBMPlexSansArabic-Regular-B2a76lLF.woff2",
+    "src": "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-Regular.woff2"
+  },
+  "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-SemiBold.woff2": {
+    "file": "assets/IBMPlexSansArabic-SemiBold-FtXILkUg.woff2",
+    "src": "node_modules/@ibm/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-SemiBold.woff2"
+  },
   "virtual:cloudflare/worker-entry": {
     "file": "index.js",
     "name": "index",
     "src": "virtual:cloudflare/worker-entry",
-    "isEntry": true
+    "isEntry": true,
+    "dynamicImports": [
+      "virtual:cloudflare/worker-entry"
+    ],
+    "css": [
+      "assets/index-BH6tUu-J.css"
+    ],
+    "assets": [
+      "assets/brand-bold-Dc3-kJqa.woff2",
+      "assets/brand-variable-Djgz8jd6.woff2",
+      "assets/brand-light-Cqs2G4n8.woff2",
+      "assets/saira-vietnamese-400-normal-BDft9Aer.woff2",
+      "assets/saira-vietnamese-400-normal-DoaGX8Xb.woff",
+      "assets/saira-latin-ext-400-normal-BJFFSgrL.woff2",
+      "assets/saira-latin-ext-400-normal-D39B05CL.woff",
+      "assets/saira-latin-400-normal-6Q3FbzbH.woff2",
+      "assets/saira-latin-400-normal-B30sl1n7.woff",
+      "assets/saira-vietnamese-500-normal-DnkVjnpC.woff2",
+      "assets/saira-vietnamese-500-normal-k_43d8z9.woff",
+      "assets/saira-latin-ext-500-normal-C-BKQ_B5.woff2",
+      "assets/saira-latin-ext-500-normal-DmOcC75z.woff",
+      "assets/saira-latin-500-normal-BUkaYXVh.woff2",
+      "assets/saira-latin-500-normal-D4NXTERl.woff",
+      "assets/saira-vietnamese-600-normal-D5gszP3k.woff2",
+      "assets/saira-vietnamese-600-normal-BhF9dVaI.woff",
+      "assets/saira-latin-ext-600-normal-BDLPjVgT.woff2",
+      "assets/saira-latin-ext-600-normal-CKQVRYTf.woff",
+      "assets/saira-latin-600-normal-DYxBFP1f.woff2",
+      "assets/saira-latin-600-normal-CJ94zROc.woff",
+      "assets/saira-condensed-vietnamese-500-normal-BO-iw4YA.woff2",
+      "assets/saira-condensed-vietnamese-500-normal-CtjeXiCW.woff",
+      "assets/saira-condensed-latin-ext-500-normal-CIzImMjU.woff2",
+      "assets/saira-condensed-latin-ext-500-normal-CgTVcJE5.woff",
+      "assets/saira-condensed-latin-500-normal-DIdKjHXc.woff2",
+      "assets/saira-condensed-latin-500-normal-BGC7F_dX.woff",
+      "assets/saira-condensed-vietnamese-600-normal-DdheDV3O.woff2",
+      "assets/saira-condensed-vietnamese-600-normal-Cx33h9T1.woff",
+      "assets/saira-condensed-latin-ext-600-normal-DwjIBGFg.woff2",
+      "assets/saira-condensed-latin-ext-600-normal-BQ2ZMbdg.woff",
+      "assets/saira-condensed-latin-600-normal-0taFJMb7.woff2",
+      "assets/saira-condensed-latin-600-normal-CJ-Ib_yI.woff",
+      "assets/saira-condensed-vietnamese-700-normal-DTNtv3pg.woff2",
+      "assets/saira-condensed-vietnamese-700-normal-C4pgqYLY.woff",
+      "assets/saira-condensed-latin-ext-700-normal-rfs_OqX7.woff2",
+      "assets/saira-condensed-latin-ext-700-normal-DPP8JZfq.woff",
+      "assets/saira-condensed-latin-700-normal-BpDqMSKw.woff2",
+      "assets/saira-condensed-latin-700-normal-Br1WwvhS.woff",
+      "assets/newsreader-vietnamese-400-normal-DdKr49mV.woff2",
+      "assets/newsreader-vietnamese-400-normal-BekUZro8.woff",
+      "assets/newsreader-latin-ext-400-normal-svq1FPys.woff2",
+      "assets/newsreader-latin-ext-400-normal-DYA1XoQK.woff",
+      "assets/newsreader-latin-400-normal-BFBkh4jY.woff2",
+      "assets/newsreader-latin-400-normal-gRTjlS2D.woff",
+      "assets/newsreader-vietnamese-400-italic-bZegYFuM.woff2",
+      "assets/newsreader-vietnamese-400-italic-QbB8kb5s.woff",
+      "assets/newsreader-latin-ext-400-italic-BMTE_bNQ.woff2",
+      "assets/newsreader-latin-ext-400-italic-qdgKLcPG.woff",
+      "assets/newsreader-latin-400-italic-CEihAR-f.woff2",
+      "assets/newsreader-latin-400-italic-CNZoH1hn.woff",
+      "assets/IBMPlexSansArabic-Light-A56g9QB4.woff2",
+      "assets/IBMPlexSansArabic-Light-BzSl5HxT.woff",
+      "assets/IBMPlexSansArabic-Regular-B2a76lLF.woff2",
+      "assets/IBMPlexSansArabic-Regular-Ua_R_TKz.woff",
+      "assets/IBMPlexSansArabic-SemiBold-FtXILkUg.woff2",
+      "assets/IBMPlexSansArabic-SemiBold-Ekh58eoQ.woff"
+    ]
   }
 }

@@ -17,14 +17,14 @@ const nocturneHeroLayout = [
 ] as const;
 
 const nocturneHeroLayoutMobile = [
-  { x: -1.25, y: 2.08, z: 0.55, scale: 0.58, rotation: -0.06 },
-  { x: -0.42, y: 2.32, z: -0.25, scale: 0.56, rotation: 0.05 },
-  { x: 0.42, y: 2.18, z: -0.5, scale: 0.6, rotation: -0.04 },
-  { x: 1.25, y: 1.88, z: 0.12, scale: 0.58, rotation: 0.06 },
-  { x: -1.25, y: 0.05, z: -0.6, scale: 0.58, rotation: -0.07 },
-  { x: -0.42, y: -0.12, z: 0.8, scale: 0.56, rotation: 0.04 },
-  { x: 0.42, y: -0.22, z: 0.2, scale: 0.58, rotation: -0.05 },
-  { x: 1.25, y: 0, z: 0.55, scale: 0.56, rotation: 0.04 },
+  { x: -1.25, y: 2.08, z: 0.55, scale: 0.64, rotation: -0.06 },
+  { x: -0.42, y: 2.32, z: -0.25, scale: 0.62, rotation: 0.05 },
+  { x: 0.42, y: 2.18, z: -0.5, scale: 0.66, rotation: -0.04 },
+  { x: 1.25, y: 1.88, z: 0.12, scale: 0.64, rotation: 0.06 },
+  { x: -1.25, y: 0.05, z: -0.6, scale: 0.64, rotation: -0.07 },
+  { x: -0.42, y: -0.12, z: 0.8, scale: 0.62, rotation: 0.04 },
+  { x: 0.42, y: -0.22, z: 0.2, scale: 0.64, rotation: -0.05 },
+  { x: 1.25, y: 0, z: 0.55, scale: 0.62, rotation: 0.04 },
 ] as const;
 
 export function AdaptiveWebGL({
@@ -126,7 +126,7 @@ export function AdaptiveWebGL({
         const THREE = await import("three");
         if (disposed) return;
         renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, window.innerWidth < 760 ? 1.25 : 1.8));
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, window.innerWidth < 760 ? 2 : 1.8));
         renderer.outputColorSpace = THREE.SRGBColorSpace;
         scene = new THREE.Scene();
         scene.background = new THREE.Color(mode === "nocturne" ? 0x070705 : 0xfbf5de);
@@ -152,7 +152,7 @@ export function AdaptiveWebGL({
           const targetGroup = group;
           if (!texture || !targetGroup) return;
           texture.colorSpace = THREE.SRGBColorSpace;
-          texture.anisotropy = 4;
+          texture.anisotropy = Math.min(renderer?.capabilities.getMaxAnisotropy() ?? 4, 8);
           textures.push(texture);
           const isNocturne = mode === "nocturne";
           const frameWidth = isNocturne ? 2.55 : 2.7;
@@ -286,7 +286,7 @@ export function AdaptiveWebGL({
             group.rotation.y += ((pointer.x + pointer.dragOffset) - group.rotation.y) * (pointer.dragging ? 0.16 : 0.045);
             group.rotation.x += ((-pointer.y + scroll * 0.08) - group.rotation.x) * 0.04;
           }
-          group.position.y = Math.sin(time * 0.00045) * 0.08 - scroll * 0.22 + (mode === "nocturne" && window.innerWidth < 760 ? 0.5 : 0);
+          group.position.y = Math.sin(time * 0.00045) * 0.08 - scroll * 0.22 + (mode === "nocturne" && window.innerWidth < 760 ? 0.62 : 0);
           renderer.render(scene, camera);
         };
         frame = requestAnimationFrame(tick);

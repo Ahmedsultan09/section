@@ -7,9 +7,9 @@ import sharp from "sharp";
 const root = process.cwd();
 const sourceRootId = "1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS";
 
-// Only the four numbered folders under Dressing rooms are published. The
-// separate Collection shortcut and its "Dont upload" files are intentionally
-// outside this ordered source set.
+// The four numbered folders and the Collection folder under Dressing rooms are
+// published. Files explicitly marked "Dont upload" in Collection stay outside
+// this ordered source set.
 const assets = [
   ["dressing-01-01", "1EBo-nIxqiEiQAK8r7VIkBqzaxqtH9v4w", "Dressing 1 (sodic vilette)", 1, "1QDRFfD6h9xy80KEiDT8onwGTRZ5IlUw6", "IMG_0343.heif", "image/heif"],
   ["dressing-01-02", "1EBo-nIxqiEiQAK8r7VIkBqzaxqtH9v4w", "Dressing 1 (sodic vilette)", 2, "1zasUfaNCnj2HYylnu2f8YqePtBxiG_hD", "IMG_0342.heif", "image/heif"],
@@ -32,6 +32,15 @@ const assets = [
   ["dressing-04-06", "1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs", "Dressing 4 (New Cairo)", 6, "1CXJtiEwFys7JeQmLPuHrZi2jEmJiJ3DE", "IMG_0103.HEIC", "image/heif"],
   ["dressing-04-07", "1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs", "Dressing 4 (New Cairo)", 7, "1Pp5ueVbshw6hCSdxLGh-bfRcZW8IQZnd", "IMG_0097.HEIC", "image/heif"],
   ["dressing-04-08", "1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs", "Dressing 4 (New Cairo)", 8, "1Lxl32tvU8jxnmTYRHXGfVvq5q0_XInD1", "IMG_0102.HEIC", "image/heif"],
+  ["dressing-collection-01", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 1, "1tvrKnJ5UViC8T6Zw48GarZ_eMyuCRBLj", "1.JPG", "image/jpeg"],
+  ["dressing-collection-02", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 2, "1e_C2o8BDOb6UVjxGVAevxT5hxU85XC72", "2.HEIC", "image/heif"],
+  ["dressing-collection-03", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 3, "1K-SCs6f-cHuTBpSnFNw89YaOma4yNS5g", "IMG_2476.HEIC", "image/heif"],
+  ["dressing-collection-04", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 4, "1me5mEA1oZ-doSr79KTKKdyaM6lKeHV7C", "4.PNG", "image/png"],
+  ["dressing-collection-05", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 5, "1JhM0vR8NCrYFBLGcYd6OE7ZeF7-yqRd3", "5.PNG", "image/png"],
+  ["dressing-collection-06", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 6, "12wqYTl-5qbbDvqsbScC9UKYdgeTuZJ7e", "6.JPG", "image/jpeg"],
+  ["dressing-collection-07", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 7, "1XU6uO_3fDUoxKmn63FVN4Dp-WqwueN9h", "7.PNG", "image/png"],
+  ["dressing-collection-08", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 8, "1FbKgQqfqnf4rT9q4W_-huN_mP2rA-3a8", "8.HEIC", "image/heif"],
+  ["dressing-collection-09", "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK", "Collection", 9, "1ak4BimvcwFk0yNbJRJ2zNz7bPdUCr5PE", "9.HEIC", "image/heif"],
 ];
 
 const records = [];

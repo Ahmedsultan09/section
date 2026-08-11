@@ -34,6 +34,12 @@ const dressingRoomSeries = [
     slug: "dressing-4-new-cairo",
     title: { en: "Dressing 4 — New Cairo", ar: "غرفة الملابس ٤ — القاهرة الجديدة" },
   },
+  {
+    folderName: "Collection",
+    folderId: "1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK",
+    slug: "dressing-collection",
+    title: { en: "Collection", ar: "المجموعة" },
+  },
 ] as const;
 
 const dressingRoomPieces: CollectionPiece[] = dressingRoomSeries.map((series) => ({
