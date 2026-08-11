@@ -17,14 +17,14 @@ const nocturneHeroLayout = [
 ] as const;
 
 const nocturneHeroLayoutMobile = [
-  { x: -1.45, y: 2.58, z: 0.55, scale: 0.58, rotation: -0.06 },
-  { x: -0.48, y: 2.82, z: -0.25, scale: 0.56, rotation: 0.05 },
-  { x: 0.52, y: 2.68, z: -0.5, scale: 0.6, rotation: -0.04 },
-  { x: 1.5, y: 2.38, z: 0.12, scale: 0.58, rotation: 0.06 },
-  { x: -1.42, y: -0.45, z: -0.6, scale: 0.58, rotation: -0.07 },
-  { x: -0.48, y: -0.62, z: 0.8, scale: 0.56, rotation: 0.04 },
-  { x: 0.52, y: -0.72, z: 0.2, scale: 0.58, rotation: -0.05 },
-  { x: 1.48, y: -0.5, z: 0.55, scale: 0.56, rotation: 0.04 },
+  { x: -1.25, y: 2.08, z: 0.55, scale: 0.58, rotation: -0.06 },
+  { x: -0.42, y: 2.32, z: -0.25, scale: 0.56, rotation: 0.05 },
+  { x: 0.42, y: 2.18, z: -0.5, scale: 0.6, rotation: -0.04 },
+  { x: 1.25, y: 1.88, z: 0.12, scale: 0.58, rotation: 0.06 },
+  { x: -1.25, y: 0.05, z: -0.6, scale: 0.58, rotation: -0.07 },
+  { x: -0.42, y: -0.12, z: 0.8, scale: 0.56, rotation: 0.04 },
+  { x: 0.42, y: -0.22, z: 0.2, scale: 0.58, rotation: -0.05 },
+  { x: 1.25, y: 0, z: 0.55, scale: 0.56, rotation: 0.04 },
 ] as const;
 
 export function AdaptiveWebGL({
@@ -286,7 +286,7 @@ export function AdaptiveWebGL({
             group.rotation.y += ((pointer.x + pointer.dragOffset) - group.rotation.y) * (pointer.dragging ? 0.16 : 0.045);
             group.rotation.x += ((-pointer.y + scroll * 0.08) - group.rotation.x) * 0.04;
           }
-          group.position.y = Math.sin(time * 0.00045) * 0.08 - scroll * 0.22;
+          group.position.y = Math.sin(time * 0.00045) * 0.08 - scroll * 0.22 + (mode === "nocturne" && window.innerWidth < 760 ? 0.5 : 0);
           renderer.render(scene, camera);
         };
         frame = requestAnimationFrame(tick);
