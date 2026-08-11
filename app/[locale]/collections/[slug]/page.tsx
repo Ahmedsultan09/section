@@ -26,7 +26,7 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
   const collection = getCapability(slug);
   if (!collection) notFound();
   const image = getMedia(collection.image);
-  const claddingNoteImage = getMedia("cladding-cnc-11");
+  const claddingNoteImage = "/drive/cladding/water-based-substrate.webp";
   const related = projects.filter((project) => project.capabilities.includes(collection.slug));
   const pieces = piecesFor(collection.slug);
 
@@ -51,8 +51,8 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
           <span>{locale === "ar" ? "مواصفة تستحق أن تبقى واضحة." : "A specification worth keeping visible."}</span>
         </div>
         <figure>
-          <Image unoptimized src={claddingNoteImage.src} alt={locale === "ar" ? "تكسية CNC خضراء مع لوحة زخرفية مضاءة" : "Green CNC cladding with a backlit sculpted panel"} fill sizes="(max-width: 760px) 84vw, 28vw" />
-          <figcaption>{locale === "ar" ? "مرجع العزل المائي الأساس" : "Water-based insulation reference"}</figcaption>
+          <Image unoptimized src={claddingNoteImage} alt={locale === "ar" ? "قاعدة خشبية خضراء للتكسية قبل التشطيب" : "Green wood substrate base for cladding before the finish"} fill sizes="(max-width: 760px) 84vw, 28vw" />
+          <figcaption>{locale === "ar" ? "مرجع قاعدة الخشب والعزل المائي الأساس" : "Wood substrate / water-based insulation reference"}</figcaption>
         </figure>
       </aside>}
       <div className="collection-piece-list">

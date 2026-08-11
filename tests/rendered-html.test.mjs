@@ -88,6 +88,7 @@ test("implements the complete multilingual SEO discovery layer", async () => {
   assert.match(manifest, /theme_color: "#FEDD10"/);
   assert.match(projectPage, /projectSchema/);
   assert.match(capabilityPage, /serviceSchema/);
+  assert.match(capabilityPage, /\/drive\/cladding\/water-based-substrate\.webp/);
   assert.match(inquiryPage, /ContactPage/);
 });
 
