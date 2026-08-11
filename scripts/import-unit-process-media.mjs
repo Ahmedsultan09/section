@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { access, mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { extname, join } from "node:path";
 import convert from "heic-convert";
 import sharp from "sharp";
@@ -31,10 +31,7 @@ async function importAsset(asset, outputDirectory, folderLabel) {
   const localDirectory = join(workspace, "public", "drive", outputDirectory);
   const localFile = join(localDirectory, `${asset.id}.webp`);
   await mkdir(localDirectory, { recursive: true });
-  const alreadyConverted = await access(localFile).then(() => true).catch(() => false);
-  if (!alreadyConverted) {
-    await image.resize({ width: 1800, height: 1800, fit: "inside", withoutEnlargement: true }).webp({ quality: 84 }).toFile(localFile);
-  }
+  await image.resize({ width: 1800, height: 1800, fit: "inside", withoutEnlargement: true }).webp({ quality: 84 }).toFile(localFile);
   return {
     id: asset.id,
     driveFileId: asset.driveFileId,

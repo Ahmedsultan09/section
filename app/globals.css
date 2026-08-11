@@ -666,6 +666,7 @@ body:has(main.design-immersive.subpage) .site-header .brand-mark-light { display
 .showroom-about h2 em { color: var(--show-accent); }
 .showroom-about-copy { padding-top: 10px; }
 .showroom-about-copy p { margin: 0 0 24px; font-size: 15px; line-height: 1.7; }
+.showroom-about-established { margin-bottom: 28px !important; color: var(--show-accent); font: 600 10px/1.3 var(--mono) !important; letter-spacing: .12em; text-transform: uppercase; }
 .showroom-about blockquote { grid-column: 2 / 4; margin: 80px 0 0; padding-top: 20px; border-top: 1px solid currentColor; font: 400 clamp(28px, 4vw, 62px)/1 "Newsreader", "IBM Plex Sans Arabic", serif; font-style: italic; }
 .design-assemblage .showroom-about { color: #000; background: var(--white); }
 .design-nocturne .showroom-about { color: #f8f3df; background: #11110d; }

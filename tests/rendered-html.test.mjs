@@ -210,10 +210,11 @@ test("publishes Nocturne as the only SECTION view", async () => {
 });
 
 test("keeps Drive media, SODIC attribution and partner marks governed", async () => {
-  const [manifest, showroom, content, partners, logoMarquee, attribution, driveAssets, inventory, categoryAssets, doorAssets, livingAssets, css, brandPrep] = await Promise.all([
+  const [manifest, showroom, content, home, partners, logoMarquee, attribution, driveAssets, inventory, categoryAssets, doorAssets, livingAssets, unitAssets, unitInventory, css, brandPrep] = await Promise.all([
     read("lib/media-manifest.ts"),
     read("lib/showroom-content.ts"),
     read("lib/site-content.ts"),
+    read("components/ShowroomHome.tsx"),
     read("components/PartnerMarquee.tsx"),
     read("components/LogoMarquee.tsx"),
     read("components/ProjectAttribution.tsx"),
@@ -222,6 +223,8 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
     read("lib/generated-category-drive-assets.json"),
     read("lib/generated-doors-drive-assets.json"),
     read("lib/generated-living-drive-assets.json"),
+    read("lib/generated-unit-process-assets.json"),
+    read("lib/unit-process-source-inventory.json"),
     read("app/globals.css"),
     read("scripts/prepare-brand-assets.mjs"),
   ]);
@@ -283,6 +286,15 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.deepEqual(livingGalleryRecords.map((asset) => `${asset.projectOrder}.${asset.imageOrder}`), ["1.1", "1.2", "1.3", "2.1", "2.2", "2.3", "3.1", "3.2", "3.3", "3.4"]);
   assert.ok(livingAssetRecords.some((asset) => asset.role === "cover" && asset.sourceName.includes("main photo")));
   assert.match(content, /image: "living-cover"/);
+  assert.match(showroom, /generatedUnitProcessAssets\.units\.map/);
+  const unitAssetRecords = JSON.parse(unitAssets);
+  assert.deepEqual(unitAssetRecords.units.map((group) => [group.id, group.files.length]), [["tv-unit", 14], ["bathroom-units", 9], ["custom-units", 15]]);
+  assert.deepEqual(unitAssetRecords.units[0].files.map((file) => file.sourceName), ["1", "2", "3", "4", "5", "6", "7", "8.png", "9", "10", "11", "12", "13", "14"]);
+  assert.deepEqual(unitAssetRecords.units[2].files.map((file) => file.sourceName), ["1", "2", "3", "4", "4.1", "6.png", "7", "7.png", "8", "9", "10.png", "11", "12", "13", "14"]);
+  const unitSourceRecords = JSON.parse(unitInventory);
+  assert.equal(unitSourceRecords.units[0].files[0].driveFileId, "1nn2MA2kZYeE7Or3vtG4maR7lPCj7Hehv");
+  assert.equal(unitSourceRecords.units[2].files[0].driveFileId, "14Lu1XQKHhj76PmYLt1j8QYG8KgHkbXwH");
+  assert.match(home, /Established since 2019|تأسست عام ٢٠١٩/);
 });
 
 test("keeps Nocturne revisions isolated and ordered", async () => {
