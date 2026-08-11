@@ -208,7 +208,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Wardrobes and dressing rooms developed as complete systems with considered internals, finishes, hardware and lighting.", ar: "خزائن وغرف ملابس تُطوّر كنظم متكاملة تشمل التقسيمات والتشطيبات والإكسسوارات والإضاءة." },
     applications: [{ en: "Walk-in rooms", ar: "غرف ملابس داخلية" }, { en: "Built-in wardrobes", ar: "خزائن مدمجة" }, { en: "Hospitality storage", ar: "تخزين الضيافة" }],
     materials: [{ en: "Textured laminates", ar: "لامينيت محبب" }, { en: "Painted finishes", ar: "تشطيبات دهان" }, { en: "Glass and metal details", ar: "تفاصيل زجاج ومعدن" }],
-    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-collection-01",
+    process: [{ en: "Internal planning", ar: "تخطيط التقسيمات" }, { en: "Hardware selection", ar: "اختيار الإكسسوارات" }, { en: "Quality inspection", ar: "فحص الجودة" }], image: "dressing-01-01",
   },
   {
     slug: "living-rooms", number: "07", title: { en: "Living Spaces", ar: "مساحات المعيشة" },
@@ -232,7 +232,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Beds, night units, wardrobes and wall details developed together for repeatable residential and hospitality rooms.", ar: "أسرة ووحدات جانبية وخزائن وتفاصيل حوائط تُطوّر معاً لغرف سكنية وفندقية قابلة للتكرار." },
     applications: [{ en: "Residential bedrooms", ar: "غرف النوم السكنية" }, { en: "Hotel rooms", ar: "الغرف الفندقية" }, { en: "Serviced apartments", ar: "الشقق الفندقية" }],
     materials: [{ en: "Timber veneer", ar: "قشرة خشبية" }, { en: "Upholstery", ar: "التنجيد" }, { en: "Integrated lighting details", ar: "تفاصيل إضاءة مدمجة" }],
-    process: [{ en: "Room-type study", ar: "دراسة نموذج الغرفة" }, { en: "Prototype review", ar: "مراجعة النموذج" }, { en: "Package installation", ar: "تركيب الحزمة" }], image: "bedroom-a-01",
+    process: [{ en: "Room-type study", ar: "دراسة نموذج الغرفة" }, { en: "Prototype review", ar: "مراجعة النموذج" }, { en: "Package installation", ar: "تركيب الحزمة" }], image: "bedroom-a-11",
   },
   {
     slug: "wall-cladding", number: "01", title: { en: "Wall cladding", ar: "تكسية الحوائط" },
