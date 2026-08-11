@@ -87,33 +87,6 @@ const assets = [
   ["cladding-veneer-painting-16", "1kQyLGOYJKl5YzPehGY5q0_ZCuJ0km_Uy", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_6261.heif", "image/heif", "cladding/veneer-painting"],
   ["cladding-veneer-painting-17", "1o0i00p_xglYRvHYdUYDN9UApJIBcNB4_", "12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR", "IMG_0426.JPG", "image/jpeg", "cladding/veneer-painting"],
 
-  // Bedrooms — two Drive-backed projects
-  ...[
-    ["01", "1NG0WV2PJxIRdVeIp1wHucpBuyoUs6apo", "IMG_5857.HEIC"],
-    ["02", "1U_h0qkyaXtlh2TaOQ-r75VJZxUBb5c5P", "IMG_5865.HEIC"],
-    ["03", "1tC94OTyxyhoKVbzK_5wqb63iWS6GINh2", "IMG_5946.HEIC"],
-    ["04", "1v1JEOOaTdC4jEO6UoblkNMAIpIr4an-m", "IMG_5886.HEIC"],
-    ["05", "1aGFBwa0OuazJrhNjw4yPzcGqN9CHo0zg", "IMG_5876.HEIC"],
-    ["06", "1RcTHaewzbp0v-7bImFygjMw1rp-zNN-o", "IMG_5840.HEIC"],
-    ["07", "1yYZC7zy5K0D6ohQYtGC5-cKPxgZyWaRj", "IMG_5819.HEIC"],
-    ["08", "1O-CiDeedVPpBRuCy9CR1jpiIOb5cw0av", "IMG_5864.HEIC"],
-    ["09", "10iDqpYjALFu_ChL1tueYDowf0YZXIzWD", "IMG_5843.HEIC"],
-    ["10", "1pS2s8sixoLmWWVKJKStwTuKcWHJb6IT2", "IMG_5834.HEIC"],
-    ["11", "1kT_1GQIbNzFlrMGLPanLyIPMsgJNzyT0", "IMG_5849.HEIC"],
-  ].map(([number, id, name]) => [`bedroom-a-${number}`, id, "10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j", name, "image/heif", "bedrooms"]),
-  ...[
-    ["01", "19OMksMj2TT8yEO1Z8gIAicyX7YlqbTTa", "IMG_9719.HEIC"],
-    ["02", "1zC4HCcavaED8EynrA0PShqFn9hPISHHU", "IMG_9727.HEIC"],
-    ["03", "1PsuKvdear5tmhzDoOx3MW0Zf2wa7gC3s", "IMG_9728.HEIC"],
-    ["04", "1aDewiO2rMyFNMR3PqQZZmDTYblOJNw5j", "IMG_9733.HEIC"],
-    ["05", "1hf-CfG8vmm3pa-aZWujnmJg8CheG46w2", "IMG_9724.HEIC"],
-    ["06", "1_j2VCplA2J16BfIMiPIqKXnKJGmtog67", "IMG_9738.HEIC"],
-    ["07", "1atdXjTqlu19jcZ0nMaxQHcrn3HuIKFzM", "IMG_9717.HEIC"],
-  ].map(([number, id, name]) => [`bedroom-b-${number}`, id, "10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp", name, "image/heif", "bedrooms"]),
-
-  // Kids bedroom — newly selected opening-frame image
-  ["bedroom-kids-03", "1N5iHK9y-ZCwHBY3KuyXw2XibvkJrhyiI", "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", "3.png", "image/png", "bedrooms"],
-
   // Dressing — complete the existing still-image set
   ["dressing-09", "1fYRcH5w_Rs4CcAgBOoEO8jHTnZCEwRaI", "1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X", "IMG_0340.HEIC", "image/heif", "dressing"],
   ["dressing-10", "1lEw9I439xqdpOZf12Oo9fwYGOU5FXsmO", "1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X", "IMG_0352.HEIC", "image/heif", "dressing"],

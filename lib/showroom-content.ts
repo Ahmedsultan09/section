@@ -1,5 +1,6 @@
 import type { CollectionPiece, Locale, PartnerLogo } from "./site-types";
 import { driveSrc } from "./media-manifest";
+import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
 import generatedDressingDriveAssets from "./generated-dressing-drive-assets.json";
 import generatedDoorsDriveAssets from "./generated-doors-drive-assets.json";
 import generatedLivingDriveAssets from "./generated-living-drive-assets.json";
@@ -101,6 +102,34 @@ const livingSpacePieces: CollectionPiece[] = livingSpaceSeries.map((series) => (
   status: "preview",
 }));
 
+const bedroomSourceFolders = [
+  { slug: "bedroom-1", group: { en: "Adults", ar: "للبالغين" }, sourceFolderName: "Bedroom 1", folderId: "1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP", title: { en: "Bedroom 1", ar: "غرفة النوم ١" } },
+  { slug: "bedroom-2", group: { en: "Adults", ar: "للبالغين" }, sourceFolderName: "Bedroom 2", folderId: "1p4obdncuGFOY9ZSPxazkCNnwA0wVU4hT", title: { en: "Bedroom 2", ar: "غرفة النوم ٢" } },
+  { slug: "bedroom-items", group: { en: "Adults", ar: "للبالغين" }, sourceFolderName: "collection of bedroom items", folderId: "1uqjXyNQfm7H29-_TH4v6akhZns1ziwJG", title: { en: "Bedroom Items", ar: "عناصر غرف النوم" } },
+  { slug: "kids-bedroom-1", group: { en: "Kids", ar: "للأطفال" }, sourceFolderName: "Br 1", folderId: "14jbn8JsB8KFxM26IBphuea7oYHpZzi6u", title: { en: "Bedroom 1", ar: "غرفة النوم ١" } },
+  { slug: "kids-bedroom-2", group: { en: "Kids", ar: "للأطفال" }, sourceFolderName: "BR 2", folderId: "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", title: { en: "Bedroom 2", ar: "غرفة النوم ٢" } },
+  { slug: "kids-bedroom-3", group: { en: "Kids", ar: "للأطفال" }, sourceFolderName: "Br 3", folderId: "1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc", title: { en: "Bedroom 3", ar: "غرفة النوم ٣" } },
+  { slug: "kids-bedroom-4", group: { en: "Kids", ar: "للأطفال" }, sourceFolderName: "Br 4", folderId: "1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e", title: { en: "Bedroom 4", ar: "غرفة النوم ٤" } },
+] as const;
+
+const bedroomPieces: CollectionPiece[] = bedroomSourceFolders.map((folder) => {
+  const assets = generatedCategoryDriveAssets
+    .filter((asset) => asset.sourceFolderName === folder.sourceFolderName)
+    .sort((a, b) => (a.imageOrder ?? 0) - (b.imageOrder ?? 0));
+  return {
+    slug: folder.slug,
+    collection: "bedrooms",
+    group: folder.group,
+    title: folder.title,
+    story: { en: "A Drive-supplied bedroom sequence preserved in the source folder order.", ar: "تسلسل صور غرفة نوم مورّد من Drive مع الحفاظ على ترتيب مجلد المصدر." },
+    application: { en: "Bedroom reference", ar: "مرجع غرفة نوم" },
+    scope: { en: `${assets.length} supplied bedroom photographs`, ar: `${assets.length} صورة غرفة نوم موردة` },
+    media: assets.map((asset) => driveSrc(asset.id)),
+    sourceFolderIds: [folder.folderId],
+    status: "preview",
+  } satisfies CollectionPiece;
+});
+
 function kitchenReferenceTags(prefix: string, count: number) {
   return Object.fromEntries(
     Array.from({ length: count }, (_, index) => [
@@ -184,8 +213,7 @@ export const collectionPieces: CollectionPiece[] = [
   ...dressingRoomPieces,
   doorGalleryPiece,
   ...livingSpacePieces,
-  { slug: "bedroom-study-a", collection: "bedrooms", title: { en: "Bedroom Study 01", ar: "دراسة غرفة نوم ٠١" }, story: { en: "A coordinated bedroom package documented across fitted storage, furniture and wall details.", ar: "حزمة غرفة نوم متناسقة موثقة عبر التخزين المدمج والأثاث وتفاصيل الحوائط." }, application: { en: "Residential bedroom", ar: "غرفة نوم سكنية" }, scope: { en: "Bedroom furniture, joinery and fitting", ar: "أثاث غرفة نوم ونجارة وتركيب" }, media: Array.from({ length: 11 }, (_, index) => driveSrc(`bedroom-a-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j"], status: "preview" },
-  { slug: "bedroom-study-b", collection: "bedrooms", title: { en: "Bedroom Study 02", ar: "دراسة غرفة نوم ٠٢" }, story: { en: "A second bedroom study showing the room as one composed package rather than isolated furniture pieces.", ar: "دراسة ثانية لغرفة نوم تعرض المساحة كحزمة متكاملة بدلاً من قطع أثاث منفصلة." }, application: { en: "Residential bedroom", ar: "غرفة نوم سكنية" }, scope: { en: "Bedroom furniture, joinery and fitting", ar: "أثاث غرفة نوم ونجارة وتركيب" }, media: Array.from({ length: 7 }, (_, index) => driveSrc(`bedroom-b-${String(index + 1).padStart(2, "0")}`)), sourceFolderIds: ["10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp"], status: "preview" },
+  ...bedroomPieces,
   ...generatedUnitProcessAssets.units.map((group) => {
     const copy = {
       "tv-unit": {

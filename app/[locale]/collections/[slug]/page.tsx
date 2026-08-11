@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, pageMetadata, serviceSchema } from "@/lib/seo";
 import { capabilities, getCapability, getMedia, isLocale, locales, projects } from "@/lib/site-content";
 import { piecesFor, showroomCopy } from "@/lib/showroom-content";
+import type { CollectionPiece } from "@/lib/site-types";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => capabilities.map((collection) => ({ locale, slug: collection.slug })));
@@ -29,6 +30,11 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
   const claddingNoteImage = "/drive/cladding/water-based-substrate.webp";
   const related = projects.filter((project) => project.capabilities.includes(collection.slug));
   const pieces = piecesFor(collection.slug);
+  const renderPiece = (piece: CollectionPiece, index: number) => <article className={`collection-piece ${collection.slug === "wall-cladding" ? "cladding-piece" : ""}`} id={piece.slug} key={piece.slug}>
+    <div className="collection-piece-heading"><span>{String(index + 1).padStart(2, "0")}</span><div><p>{piece.application[locale]}</p><h3>{piece.title[locale]}</h3>{piece.location && <p className="collection-piece-location">{piece.location[locale]}</p>}</div></div>
+    <div className="collection-piece-gallery">{piece.media.map((src, mediaIndex) => <figure key={src}><Image unoptimized src={src} alt={`${piece.title[locale]} — ${mediaIndex + 1}`} fill sizes="(max-width: 760px) 82vw, 38vw" /></figure>)}</div>
+    <DesignAwareLink href={`/${locale}/inquiry`}>{showroomCopy[locale].similar} ↗</DesignAwareLink>
+  </article>;
 
   return <main className="capability-detail subpage design-nocturne" data-design="nocturne">
     <JsonLd data={[
@@ -56,11 +62,13 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
         </figure>
       </aside>}
       <div className="collection-piece-list">
-        {pieces.map((piece, index) => <article className={`collection-piece ${collection.slug === "wall-cladding" ? "cladding-piece" : ""}`} id={piece.slug} key={piece.slug}>
-          <div className="collection-piece-heading"><span>{String(index + 1).padStart(2, "0")}</span><div><p>{piece.application[locale]}</p><h3>{piece.title[locale]}</h3>{piece.location && <p className="collection-piece-location">{piece.location[locale]}</p>}</div></div>
-          <div className="collection-piece-gallery">{piece.media.map((src, mediaIndex) => <figure key={src}><Image unoptimized src={src} alt={`${piece.title[locale]} — ${mediaIndex + 1}`} fill sizes="(max-width: 760px) 82vw, 38vw" /></figure>)}</div>
-          <DesignAwareLink href={`/${locale}/inquiry`}>{showroomCopy[locale].similar} ↗</DesignAwareLink>
-        </article>)}
+        {slug === "bedrooms" ? ([
+          { key: "adults", title: { en: "Adults", ar: "للبالغين" }, pieces: pieces.filter((piece) => piece.group?.en === "Adults") },
+          { key: "kids", title: { en: "Kids", ar: "للأطفال" }, pieces: pieces.filter((piece) => piece.group?.en === "Kids") },
+        ] as const).map((group) => <section className="collection-piece-group is-highlighted" aria-labelledby={`bedroom-group-${group.key}`} key={group.key}>
+          <header className="collection-piece-group-heading"><p>{locale === "ar" ? "فئة غرف النوم" : "Bedroom category"}</p><h3 id={`bedroom-group-${group.key}`}>{group.title[locale]}</h3></header>
+          {group.pieces.map(renderPiece)}
+        </section>) : pieces.map(renderPiece)}
       </div>
     </section>
     <section className="capability-spec section-pad"><SpecList number="01" title={locale === "ar" ? "التطبيقات" : "Applications"} items={collection.applications.map((item) => item[locale])} /><SpecList number="02" title={locale === "ar" ? "الخامات" : "Materials"} items={collection.materials.map((item) => item[locale])} /><SpecList number="03" title={locale === "ar" ? "مسار العمل" : "Delivery path"} items={collection.process.map((item) => item[locale])} /></section>

@@ -90,6 +90,7 @@ export type Project = {
 export type CollectionPiece = {
   slug: string;
   collection: CapabilitySlug;
+  group?: LocalizedText;
   title: LocalizedText;
   location?: LocalizedText;
   story: LocalizedText;

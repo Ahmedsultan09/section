@@ -231,7 +231,7 @@ const capabilityCatalog: Capability[] = [
     intro: { en: "Beds, night units, wardrobes and wall details developed together for repeatable residential and hospitality rooms.", ar: "أسرة ووحدات جانبية وخزائن وتفاصيل حوائط تُطوّر معاً لغرف سكنية وفندقية قابلة للتكرار." },
     applications: [{ en: "Residential bedrooms", ar: "غرف النوم السكنية" }, { en: "Hotel rooms", ar: "الغرف الفندقية" }, { en: "Serviced apartments", ar: "الشقق الفندقية" }],
     materials: [{ en: "Timber veneer", ar: "قشرة خشبية" }, { en: "Upholstery", ar: "التنجيد" }, { en: "Integrated lighting details", ar: "تفاصيل إضاءة مدمجة" }],
-    process: [{ en: "Room-type study", ar: "دراسة نموذج الغرفة" }, { en: "Prototype review", ar: "مراجعة النموذج" }, { en: "Package installation", ar: "تركيب الحزمة" }], image: "bedroom-a-11",
+    process: [{ en: "Room-type study", ar: "دراسة نموذج الغرفة" }, { en: "Prototype review", ar: "مراجعة النموذج" }, { en: "Package installation", ar: "تركيب الحزمة" }], image: "bedroom-adult-01-01",
   },
   {
     slug: "wall-cladding", number: "01", title: { en: "Wall cladding", ar: "تكسية الحوائط" },

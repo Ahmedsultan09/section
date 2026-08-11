@@ -403,19 +403,6 @@
           "publishStatus": "preview"
         },
         {
-          "id": "custom-unit-03",
-          "driveFileId": "1Pr1FKLXeEWQPzV1YtGy7KNcKQV9OYUNF",
-          "sourceFolderTitle": "3-Custom units",
-          "sourceName": "3",
-          "originalMime": "image/png",
-          "contentHash": "572e0144740620dd1de2cea23b533be4e141b90f2e0998a7fbd4e126db1252ff",
-          "orientation": "portrait",
-          "localSrc": "/drive/units/custom-units/custom-unit-03.webp",
-          "authenticity": "verified-real",
-          "rights": "pending",
-          "publishStatus": "preview"
-        },
-        {
           "id": "custom-unit-04",
           "driveFileId": "1PCT88VOXH3rHuUg94fRkkrDRsWeAy1BY",
           "sourceFolderTitle": "3-Custom units",

@@ -276,14 +276,26 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(inventory, /no logo file was found/i);
   assert.match(showroom, /1r-JCLypKDimXW-zivG9hhAuduFL8N3vZ/);
   assert.match(showroom, /1839f-h-jyJkuZCKvRmUt2KgaE7GDBxWP/);
-  assert.match(showroom, /10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j/);
-  assert.match(showroom, /10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp/);
+  assert.match(showroom, /1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP/);
+  assert.match(showroom, /1p4obdncuGFOY9ZSPxazkCNnwA0wVU4hT/);
+  assert.match(showroom, /group: \{ en: "Adults", ar: "للبالغين" \}/);
+  assert.match(showroom, /group: \{ en: "Kids", ar: "للأطفال" \}/);
+  assert.match(showroom, /kids-bedroom-4/);
   assert.match(showroom, /CNC CLADDING/);
   assert.match(showroom, /MELAMINE CLADDING/);
   assert.match(showroom, /VENEER & PAINTING CLADDING/);
   const categoryAssetRecords = JSON.parse(categoryAssets);
-  assert.equal(categoryAssetRecords.length, 95);
+  assert.equal(categoryAssetRecords.length, 110);
   assert.equal(categoryAssetRecords.filter((asset) => asset.id.startsWith("cladding-")).length, 44);
+  const bedroomAssetRecords = categoryAssetRecords.filter((asset) => asset.id.startsWith("bedroom-"));
+  assert.equal(bedroomAssetRecords.length, 34);
+  assert.deepEqual(
+    bedroomAssetRecords.reduce((counts, asset) => {
+      counts[asset.sourceFolderName] = (counts[asset.sourceFolderName] ?? 0) + 1;
+      return counts;
+    }, {}),
+    { "Bedroom 1": 6, "Bedroom 2": 4, "collection of bedroom items": 3, "Br 1": 8, "BR 2": 1, "Br 3": 5, "Br 4": 7 },
+  );
   const doorAssetRecords = JSON.parse(doorAssets);
   assert.equal(doorAssetRecords.length, 18);
   assert.deepEqual(doorAssetRecords.map((asset) => asset.imageOrder), Array.from({ length: 18 }, (_, index) => index + 1));
@@ -295,9 +307,11 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(content, /image: "living-cover"/);
   assert.match(showroom, /generatedUnitProcessAssets\.units\.map/);
   const unitAssetRecords = JSON.parse(unitAssets);
-  assert.deepEqual(unitAssetRecords.units.map((group) => [group.id, group.files.length]), [["tv-unit", 14], ["bathroom-units", 9], ["custom-units", 15]]);
+  assert.deepEqual(unitAssetRecords.units.map((group) => [group.id, group.files.length]), [["tv-unit", 14], ["bathroom-units", 9], ["custom-units", 14]]);
   assert.deepEqual(unitAssetRecords.units[0].files.map((file) => file.sourceName), ["1", "2", "3", "4", "5", "6", "7", "8.png", "9", "10", "11", "12", "13", "14"]);
-  assert.deepEqual(unitAssetRecords.units[2].files.map((file) => file.sourceName), ["1", "2", "3", "4", "4.1", "6.png", "7", "7.png", "8", "9", "10.png", "11", "12", "13", "14"]);
+  assert.deepEqual(unitAssetRecords.units[2].files.map((file) => file.sourceName), ["1", "2", "4", "4.1", "6.png", "7", "7.png", "8", "9", "10.png", "11", "12", "13", "14"]);
+  assert.ok(!unitAssetRecords.units[2].files.some((file) => file.id === "custom-unit-03"));
+  assert.ok(unitAssetRecords.units[2].files.some((file) => file.id === "custom-unit-05"));
   const unitSourceRecords = JSON.parse(unitInventory);
   assert.equal(unitSourceRecords.units[0].files[0].driveFileId, "1nn2MA2kZYeE7Or3vtG4maR7lPCj7Hehv");
   assert.equal(unitSourceRecords.units[2].files[0].driveFileId, "14Lu1XQKHhj76PmYLt1j8QYG8KgHkbXwH");
@@ -329,6 +343,9 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
   assert.match(categoryStack, /IntersectionObserver/);
   assert.match(categoryStack, /mostVisible/);
   assert.ok(categoryPage.indexOf("collection-piece-list") < categoryPage.indexOf("capability-spec"));
+  assert.match(categoryPage, /collection-piece-group/);
+  assert.match(categoryPage, /is-highlighted/);
+  assert.match(categoryPage, /Bedroom category/);
   assert.match(narrative, /Brand story/);
   assert.doesNotMatch(home, /<BrandNarrative/);
   assert.match(layout, /next\/font\/local/);
