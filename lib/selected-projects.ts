@@ -1,4 +1,5 @@
 import generatedSelectedProjectAssets from "./generated-selected-project-assets.json";
+import { playaLinkedMedia } from "./playa-linked-media";
 import type { CapabilitySlug, MediaAsset, Project, ProjectArea } from "./site-types";
 
 export const SELECTED_PROJECTS_ROOT_FOLDER_ID = "1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-Mh";
@@ -35,32 +36,35 @@ const suppressedDuplicateMediaIds = new Set([
   "sodic-villette-drive-035",
 ]);
 
-export const selectedProjectMedia: MediaAsset[] = generatedSelectedProjectAssets.map((asset): MediaAsset => {
-  const area = asset.area as ProjectArea;
-  return {
-    id: asset.id,
-    src: asset.localSrc,
-    sourceFolder: sourceFolderNames[asset.projectSlug] ?? asset.sourceFolderId,
-    sourceFolderId: asset.sourceFolderId,
-    sourceName: asset.sourceName,
-    projectSlug: asset.projectSlug,
-    sector: asset.projectSlug === "cfc-office" ? "workplace" : "residential-developments",
-    capabilities: capabilitiesFor(asset.projectSlug, area),
-    stage: "finished",
-    authenticity: asset.authenticity as MediaAsset["authenticity"],
-    rights: asset.rights as MediaAsset["rights"],
-    orientation: asset.orientation as MediaAsset["orientation"],
-    quality: asset.quality as MediaAsset["quality"],
-    usage: "project",
-    alt: asset.alt,
-    driveFileId: asset.driveFileId,
-    originalMime: asset.originalMime,
-    contentHash: asset.contentHash,
-    derived: asset.derived,
-    publishStatus: asset.publishStatus as MediaAsset["publishStatus"],
-    area,
-  };
-}).filter((asset) => !suppressedDuplicateMediaIds.has(asset.id));
+export const selectedProjectMedia: MediaAsset[] = [
+  ...playaLinkedMedia,
+  ...generatedSelectedProjectAssets.map((asset): MediaAsset => {
+    const area = asset.area as ProjectArea;
+    return {
+      id: asset.id,
+      src: asset.localSrc,
+      sourceFolder: sourceFolderNames[asset.projectSlug] ?? asset.sourceFolderId,
+      sourceFolderId: asset.sourceFolderId,
+      sourceName: asset.sourceName,
+      projectSlug: asset.projectSlug,
+      sector: asset.projectSlug === "cfc-office" ? "workplace" : "residential-developments",
+      capabilities: capabilitiesFor(asset.projectSlug, area),
+      stage: "finished",
+      authenticity: asset.authenticity as MediaAsset["authenticity"],
+      rights: asset.rights as MediaAsset["rights"],
+      orientation: asset.orientation as MediaAsset["orientation"],
+      quality: asset.quality as MediaAsset["quality"],
+      usage: "project",
+      alt: asset.alt,
+      driveFileId: asset.driveFileId,
+      originalMime: asset.originalMime,
+      contentHash: asset.contentHash,
+      derived: asset.derived,
+      publishStatus: asset.publishStatus as MediaAsset["publishStatus"],
+      area,
+    };
+  }),
+].filter((asset) => !suppressedDuplicateMediaIds.has(asset.id));
 
 const selectedProjectMediaIds = (projectSlug: string) => {
   return selectedProjectMedia
@@ -163,7 +167,7 @@ export const selectedProjectRecords: Project[] = [
     media: selectedProjectMediaIds("playa"),
     mediaAreas: selectedProjectAreas("playa"),
     sourceFolderId: "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    sourceFolderTitle: "5-PLAYA with Amaken",
+    sourceFolderTitle: "5-PLAYA with Amaken + linked photo set",
     collaboratorIds: ["amaken"],
   },
   {
