@@ -600,72 +600,72 @@
     "publishStatus": "public"
   },
   {
-    "id": "villette-01",
+    "id": "sodic-villette-drive-001",
     "projectSlug": "sodic-villette",
-    "area": "wall",
-    "driveFileId": "19-Zg-F9LiIU_OGYSCO_4sQzVxLDJj7KX",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0278.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/villette-01.webp",
+    "area": "cover",
+    "driveFileId": "1xPeTXFg-xcJ1GkdexvfdfoqK-WnYqvKf",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "1st.heif",
+    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-001.webp",
     "originalMime": "image/heif",
-    "contentHash": "97cab5dd4e5f2263b18b05cd35b1715d2182c21911edc30e16278b21040fcde9",
+    "contentHash": "b07670a2e977e6c5f24648704668876c94f9fc74326c6933e6f18aebbf813961",
     "orientation": "portrait",
-    "quality": "editorial",
+    "quality": "hero",
     "alt": {
-      "en": "Fluted timber wall with integrated desk and shelving",
-      "ar": "جدار خشبي مخدد مع مكتب ورفوف مدمجة"
+      "en": "A selected interior view from the SODIC Villette home.",
+      "ar": "منظور داخلي مختار من منزل سوديك فيليت."
     },
     "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/villette-01.webp",
-      "avif": "/drive/projects/selected/sodic-villette/villette-01.avif"
+      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-001.webp",
+      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-001.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "villette-02",
+    "id": "sodic-villette-drive-002",
     "projectSlug": "sodic-villette",
-    "area": "dressing",
-    "driveFileId": "1m4SZkP2KRYSVO4e6Ly2xZb918KVotXUF",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0343.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/villette-02.webp",
+    "area": "other",
+    "driveFileId": "1Dj6-62XiZ9dxnD7uApIMlstCFsffKwpj",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "2nd.heif",
+    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-002.webp",
     "originalMime": "image/heif",
-    "contentHash": "4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3",
+    "contentHash": "ae37cffef07c0536b09f0e24fba7934bde5a98a2d48ba921bdcf0c7ab1621258",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Walnut wardrobe interior with pull-down rail",
-      "ar": "خزانة ملابس من الجوز مع قضيب قابل للسحب"
+      "en": "A close study of joinery, texture and proportion.",
+      "ar": "دراسة قريبة للنجارة والخامة والنسب."
     },
     "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/villette-02.webp",
-      "avif": "/drive/projects/selected/sodic-villette/villette-02.avif"
+      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-002.webp",
+      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-002.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "villette-03",
+    "id": "sodic-villette-drive-003",
     "projectSlug": "sodic-villette",
-    "area": "bedroom",
-    "driveFileId": "1ahJxQRZM6nYlmrOJ5hT6ZdAGVYVxWGJL",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0359.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/villette-03.webp",
+    "area": "other",
+    "driveFileId": "1td7HICem8_FqBtefI83X4pI7eR3yR7er",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "3rd.heif",
+    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-003.webp",
     "originalMime": "image/heif",
-    "contentHash": "29a5adad12c0c3551ee68ac0b2cb030913bbee7a46ee21bfdf3c001ece69421f",
+    "contentHash": "60fd32e6d4c14decba78bc57d9072c7f661563db81fbe27289187e541d24db3a",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Bedroom with a fluted timber feature wall",
-      "ar": "غرفة نوم بجدار خشبي مخدد مميز"
+      "en": "A residential room shaped by considered timber details.",
+      "ar": "مساحة سكنية تشكلها تفاصيل خشبية مدروسة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/villette-03.webp",
-      "avif": "/drive/projects/selected/sodic-villette/villette-03.avif"
+      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-003.webp",
+      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-003.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
@@ -675,17 +675,17 @@
     "id": "sodic-villette-drive-004",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1PzFfP-y6YTHSFPcoQnNqfBE0OsfaMMOJ",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0355.HEIC",
+    "driveFileId": "1VlU6fmb8NyNiheFve9cA5yb9beUaAyZs",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "4th.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-004.webp",
     "originalMime": "image/heif",
-    "contentHash": "f4612315ad4516eec46c684ffcc63a319c72895cd79b5b54a9ba78cda2409ef5",
+    "contentHash": "f135f620cea25fdea849644ebcb1a3518939943511ceaa805fe7467a7d62431a",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
+      "en": "Storage, wall treatment and furniture held in one interior language.",
+      "ar": "تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-004.webp",
@@ -699,17 +699,17 @@
     "id": "sodic-villette-drive-005",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1G9NqHA0PffJ3_1N7GM2fpqxevh9aScyT",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0351.HEIC",
+    "driveFileId": "1owwTF_Hm0tEiq9vRPCut3OolgUUYB6jF",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "5th.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-005.webp",
     "originalMime": "image/heif",
-    "contentHash": "67990b38c8192d96b1c66878a14a246232e8c47f72e87e42d3199c5916f5d0bd",
+    "contentHash": "97cab5dd4e5f2263b18b05cd35b1715d2182c21911edc30e16278b21040fcde9",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
+      "en": "A finished interior detail from the supplied project sequence.",
+      "ar": "تفصيلة داخلية مكتملة من تسلسل الصور الموردة للمشروع."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-005.webp",
@@ -723,17 +723,17 @@
     "id": "sodic-villette-drive-006",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1uNI36SN4etS0gFWgoPLF8sc5g4Ux-oJC",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0407.HEIC",
+    "driveFileId": "1nQVIs0HrUZocbK_kAFP4Pzv6_5A7z93b",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "6th.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-006.webp",
     "originalMime": "image/heif",
     "contentHash": "aedf0f69b43621fbf785ce6228e3eedf2c2b217ea8b211823648679c2405639c",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
+      "en": "Crafted surfaces and quiet material rhythm across the home.",
+      "ar": "أسطح مصنوعة وإيقاع هادئ للخامات عبر المنزل."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-006.webp",
@@ -747,17 +747,17 @@
     "id": "sodic-villette-drive-007",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "10hyLqmwNWifQ-_aaoeRCY7o5nwmXY869",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0352.HEIC",
+    "driveFileId": "16xqlTylg7YN1cQadibz65YxU6Hwlw2KK",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "7th.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-007.webp",
     "originalMime": "image/heif",
-    "contentHash": "8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737",
-    "orientation": "portrait",
+    "contentHash": "c21738dfb4c72fb1edc6cc810768c34c1c9ef53fa46485fd218955fd2457d05e",
+    "orientation": "landscape",
     "quality": "editorial",
     "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
+      "en": "A selected interior view from the SODIC Villette home.",
+      "ar": "منظور داخلي مختار من منزل سوديك فيليت."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-007.webp",
@@ -771,17 +771,17 @@
     "id": "sodic-villette-drive-008",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1TTQaR_JGYbm2YSAW168NQhA4RTyWfWTM",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0400.HEIC",
+    "driveFileId": "1s5H0J7xM8PFNsQCvb2B3bWW67ntZeBDK",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "8th.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-008.webp",
     "originalMime": "image/heif",
-    "contentHash": "52c1f34db92752b029e641670aed938cfac114e860e0e764732b64e50e20a8df",
-    "orientation": "landscape",
+    "contentHash": "262871bf27eb79937e21d579b0606103d31c7325004b9fee2405e7a7147a326f",
+    "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A dressing storage detail resolved with precise joinery and quiet texture.",
-      "ar": "تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة."
+      "en": "A close study of joinery, texture and proportion.",
+      "ar": "دراسة قريبة للنجارة والخامة والنسب."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-008.webp",
@@ -795,17 +795,17 @@
     "id": "sodic-villette-drive-009",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1XhFekbr6Q0jVFMYN11aR0buZBm9t1Fea",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0363.HEIC",
+    "driveFileId": "1Mx1q9SIefnRY4z0hT6TErI2oBc_JuJfO",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "9th.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-009.webp",
     "originalMime": "image/heif",
     "contentHash": "5cea8e19997892d0b7943b879007e05e343917e64273057acd30b5999806f130",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A bedroom interior where timber, proportion and soft light work together.",
-      "ar": "مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم."
+      "en": "A residential room shaped by considered timber details.",
+      "ar": "مساحة سكنية تشكلها تفاصيل خشبية مدروسة."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-009.webp",
@@ -819,17 +819,17 @@
     "id": "sodic-villette-drive-010",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1l2lXz60641QaLJeH1hVU8Eacc8UOLf98",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0350.HEIC",
+    "driveFileId": "14AkfwafXdz-KWHyeQDv5pKTnSc31tFg0",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "10th.JPG",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-010.webp",
-    "originalMime": "image/heif",
-    "contentHash": "1a8610f87b38c14937493a1313e9bcf955a84ce373e940935b65326a5e90dd73",
+    "originalMime": "image/jpeg",
+    "contentHash": "6d3b5d1667a6e2ad4e7d2f3bcde4ee1e600f282361b55442b602b82f277c8404",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
+      "en": "Storage, wall treatment and furniture held in one interior language.",
+      "ar": "تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-010.webp",
@@ -843,17 +843,17 @@
     "id": "sodic-villette-drive-011",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1JKODL2BZq2EVAdQC1T0uqL0WAyA5ebr4",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0342.HEIC",
+    "driveFileId": "1V_9BaObbG-cfPlRSFzAm9PZccNmqhoG_",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "11th.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-011.webp",
     "originalMime": "image/heif",
-    "contentHash": "ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976",
+    "contentHash": "d64e37f5997490d710acd6ec37c2e8a4848089fc6d1f7275a50ec1ada4ec503d",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
+      "en": "A finished interior detail from the supplied project sequence.",
+      "ar": "تفصيلة داخلية مكتملة من تسلسل الصور الموردة للمشروع."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-011.webp",
@@ -867,17 +867,17 @@
     "id": "sodic-villette-drive-012",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1hEgHq0xcen8L1pkDPBzzk4HIlVgXua6G",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0356.HEIC",
+    "driveFileId": "1j7lrWjtSJxwMnwFSRD9p7VrWmmt2mvN2",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "12.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-012.webp",
     "originalMime": "image/heif",
-    "contentHash": "cedaf845b533213d55abd5f13021a3c41d0777748eeda1229e80a503bf5f0c08",
+    "contentHash": "e98d167f409f90e88dc9eb6627d7a3160d6ea168d3f4615548a1c9cef14d5a40",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
+      "en": "Crafted surfaces and quiet material rhythm across the home.",
+      "ar": "أسطح مصنوعة وإيقاع هادئ للخامات عبر المنزل."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-012.webp",
@@ -891,17 +891,17 @@
     "id": "sodic-villette-drive-013",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1R5U_hog0gjAT-os7kyrxTpp_0rRiA8KA",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0357.HEIC",
+    "driveFileId": "1cIMxg18Lc6mEkxCoTJ2NXzTOF89T5WPP",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "13.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-013.webp",
     "originalMime": "image/heif",
-    "contentHash": "8da0950e0fbc41998c4429a904611538482fffafaeb5a978665b8f8fdb033177",
+    "contentHash": "ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
+      "en": "A selected interior view from the SODIC Villette home.",
+      "ar": "منظور داخلي مختار من منزل سوديك فيليت."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-013.webp",
@@ -915,17 +915,17 @@
     "id": "sodic-villette-drive-014",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1S5NhqSLi2VVr0c0VU6wr8_8NvDlw2sGh",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0354.HEIC",
+    "driveFileId": "1A0VFg0Ku6m-boIBBq3Ma0o8jroRyFQty",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "14.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-014.webp",
     "originalMime": "image/heif",
-    "contentHash": "b080f65fd37c6f37df13824e668cc11ea50058bee0707eeaa0aad77fe372a72a",
+    "contentHash": "4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A dressing storage detail resolved with precise joinery and quiet texture.",
-      "ar": "تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة."
+      "en": "A close study of joinery, texture and proportion.",
+      "ar": "دراسة قريبة للنجارة والخامة والنسب."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-014.webp",
@@ -939,17 +939,17 @@
     "id": "sodic-villette-drive-015",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "12StwrLTCALvSnLUs6NA--9gptK9s6qet",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0353.HEIC",
+    "driveFileId": "17pvhp9DFC3UP5iqfB8c5ysszqBkDS_jI",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "15.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-015.webp",
     "originalMime": "image/heif",
-    "contentHash": "7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44",
+    "contentHash": "ec3025ea53537b975907b84709e7312e4202a01ca5b6111241d2eda7dad57506",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A bedroom interior where timber, proportion and soft light work together.",
-      "ar": "مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم."
+      "en": "A residential room shaped by considered timber details.",
+      "ar": "مساحة سكنية تشكلها تفاصيل خشبية مدروسة."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-015.webp",
@@ -963,17 +963,17 @@
     "id": "sodic-villette-drive-016",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1EqleKPKAz9ZtUjVEGro7PNtSdEjCLLrP",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0360.HEIC",
+    "driveFileId": "12CIWUaVrRhmjdobnMfbSya6ydnNWPL71",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "16.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-016.webp",
     "originalMime": "image/heif",
-    "contentHash": "9f6b088240616ef1c480922c41437552a8977899b9084135d859a8cf26fb73ec",
+    "contentHash": "1a8610f87b38c14937493a1313e9bcf955a84ce373e940935b65326a5e90dd73",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
+      "en": "Storage, wall treatment and furniture held in one interior language.",
+      "ar": "تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-016.webp",
@@ -987,17 +987,17 @@
     "id": "sodic-villette-drive-017",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "16B2ESCTDaPXOhk_qxGa5Cq2aWuY9Ibbx",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0343.HEIC",
+    "driveFileId": "1CGnRvy2lHLM2uJLrE5O2leAIU4ZcL19t",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "17.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-017.webp",
     "originalMime": "image/heif",
-    "contentHash": "4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3",
+    "contentHash": "8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
+      "en": "A finished interior detail from the supplied project sequence.",
+      "ar": "تفصيلة داخلية مكتملة من تسلسل الصور الموردة للمشروع."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-017.webp",
@@ -1011,17 +1011,17 @@
     "id": "sodic-villette-drive-018",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1M44cMKz7qIRtB646RQT00OynkqN84gtd",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0355.HEIC",
+    "driveFileId": "1QLEos8q2g3TwDo6A9CrQ_zH_f2Eb2U2G",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "18.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-018.webp",
     "originalMime": "image/heif",
     "contentHash": "f4612315ad4516eec46c684ffcc63a319c72895cd79b5b54a9ba78cda2409ef5",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
+      "en": "Crafted surfaces and quiet material rhythm across the home.",
+      "ar": "أسطح مصنوعة وإيقاع هادئ للخامات عبر المنزل."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-018.webp",
@@ -1035,17 +1035,17 @@
     "id": "sodic-villette-drive-019",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1DUll3fmzFybYIiJuXOecU8uD-uPwKvDX",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0371.HEIC",
+    "driveFileId": "1Wj2UlTJdw1pMxJq8TPo9pcW2T7qDc7YZ",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "19.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-019.webp",
     "originalMime": "image/heif",
-    "contentHash": "2c227d55387b0b5f1abb6d3040e732d5b555fab95b485da44e45ad8aaa88fb03",
-    "orientation": "landscape",
+    "contentHash": "7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44",
+    "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
+      "en": "A selected interior view from the SODIC Villette home.",
+      "ar": "منظور داخلي مختار من منزل سوديك فيليت."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-019.webp",
@@ -1059,17 +1059,17 @@
     "id": "sodic-villette-drive-020",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1Z5l1bfdmex-MJbX7yjKHOUDqa7VBBr7x",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0351.HEIC",
+    "driveFileId": "1rdEM67i9SjOeMVT2ZLpcz-EzYODOqkGy",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "20.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-020.webp",
     "originalMime": "image/heif",
-    "contentHash": "67990b38c8192d96b1c66878a14a246232e8c47f72e87e42d3199c5916f5d0bd",
+    "contentHash": "cedaf845b533213d55abd5f13021a3c41d0777748eeda1229e80a503bf5f0c08",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A dressing storage detail resolved with precise joinery and quiet texture.",
-      "ar": "تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة."
+      "en": "A close study of joinery, texture and proportion.",
+      "ar": "دراسة قريبة للنجارة والخامة والنسب."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-020.webp",
@@ -1083,17 +1083,17 @@
     "id": "sodic-villette-drive-021",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "12202JU8Wd1rOqngOXZVgJYxMEIxGfFCm",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0374.HEIC",
+    "driveFileId": "1VtNimUkqMW69Nap3VbiTzb1o_IeqmyLV",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "21.heif",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-021.webp",
     "originalMime": "image/heif",
-    "contentHash": "b474fe0b887f109fa021a74c3daca1c108605a56eeba677ac13da64887dc8a5c",
+    "contentHash": "5510ea246e3f8bd45a13856c0b66499c9b5603314224c8612f41fc603eeef40e",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A bedroom interior where timber, proportion and soft light work together.",
-      "ar": "مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم."
+      "en": "A residential room shaped by considered timber details.",
+      "ar": "مساحة سكنية تشكلها تفاصيل خشبية مدروسة."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-021.webp",
@@ -1107,813 +1107,21 @@
     "id": "sodic-villette-drive-022",
     "projectSlug": "sodic-villette",
     "area": "other",
-    "driveFileId": "1PWlVhaTw8ne5vCuT7PTBzFfSb2yzZ-vN",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0372.HEIC",
+    "driveFileId": "1RtFvDb9xpdAq-pm_2IlFO0ZY-fEV1K6U",
+    "sourceFolderId": "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    "sourceName": "22.jpeg",
     "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-022.webp",
-    "originalMime": "image/heif",
-    "contentHash": "bdbfd4bb7acc07ea1cf8017d43985596ecec49ae8a9e25e6bb5ef89c6cc9ec18",
+    "originalMime": "image/jpeg",
+    "contentHash": "e81877a62550723c1eb863fc63ef3dc4c9c88a9c874ad2e1e9a47d828297816c",
     "orientation": "landscape",
     "quality": "editorial",
     "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
+      "en": "Storage, wall treatment and furniture held in one interior language.",
+      "ar": "تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة."
     },
     "derived": {
       "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-022.webp",
       "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-022.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-023",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1raCBnnEngnjLku7ExPKT24fEDv8OUUDK",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0368.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-023.webp",
-    "originalMime": "image/heif",
-    "contentHash": "f282a3b5d0f8d43516a004a8b01182936b0ef328d6df44b014ce567d60236df4",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-023.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-023.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-024",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1pXOhVkzLFYr7UFMWc9vuZU2E3vPXeEuf",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0370.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-024.webp",
-    "originalMime": "image/heif",
-    "contentHash": "fa59dc7dcbf2aefe1f3a8a6cbdf0dbeede84c1171807ad521fe2da588a9658f2",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-024.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-024.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-025",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "111qalaWbKGuh9Utmqh2kl2yrAP9vtHnE",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0352.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-025.webp",
-    "originalMime": "image/heif",
-    "contentHash": "8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-025.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-025.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-026",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1gdTwurehWwYjh_QeayntXWTUd5m5VN9U",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0366.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-026.webp",
-    "originalMime": "image/heif",
-    "contentHash": "fcf7307fd975101e66093bf9de0360970fe5082ecc26f8cdddc6211307fdd335",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "A dressing storage detail resolved with precise joinery and quiet texture.",
-      "ar": "تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-026.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-026.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-027",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1olgeC4Au-8y5Q5RHbVJ_ovpG7wtdzxR-",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0363.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-027.webp",
-    "originalMime": "image/heif",
-    "contentHash": "5cea8e19997892d0b7943b879007e05e343917e64273057acd30b5999806f130",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A bedroom interior where timber, proportion and soft light work together.",
-      "ar": "مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-027.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-027.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-028",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1e7RX_rhAvQ6jXu2_qXsmq6f4SMcvycXl",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0350.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-028.webp",
-    "originalMime": "image/heif",
-    "contentHash": "1a8610f87b38c14937493a1313e9bcf955a84ce373e940935b65326a5e90dd73",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-028.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-028.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-029",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1zU3EkF3-VrQrvIla_WsALFxzKw2OWm3E",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0342.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-029.webp",
-    "originalMime": "image/heif",
-    "contentHash": "ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-029.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-029.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-030",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1dbePPtTRSLlqAXf2LDSlI-zXCIfWXuDc",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0356.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-030.webp",
-    "originalMime": "image/heif",
-    "contentHash": "cedaf845b533213d55abd5f13021a3c41d0777748eeda1229e80a503bf5f0c08",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-030.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-030.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-031",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "13fBPrv7iCSt9jNp2u-hoilQZXkKg8jbp",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0358.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-031.webp",
-    "originalMime": "image/heif",
-    "contentHash": "d64e37f5997490d710acd6ec37c2e8a4848089fc6d1f7275a50ec1ada4ec503d",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-031.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-031.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-032",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1bO8U_yLNyvQ4QMuB8NUPzufxag4Xe3nO",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0357.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-032.webp",
-    "originalMime": "image/heif",
-    "contentHash": "8da0950e0fbc41998c4429a904611538482fffafaeb5a978665b8f8fdb033177",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A dressing storage detail resolved with precise joinery and quiet texture.",
-      "ar": "تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-032.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-032.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-033",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1mkB25MbwuUdWjNR5s_5OA8qEA-Jbc4oc",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0354.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-033.webp",
-    "originalMime": "image/heif",
-    "contentHash": "b080f65fd37c6f37df13824e668cc11ea50058bee0707eeaa0aad77fe372a72a",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A bedroom interior where timber, proportion and soft light work together.",
-      "ar": "مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-033.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-033.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-034",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "15pgQ4RV8ws7b3nIwDSF16ROWFzEVWnGI",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0353.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-034.webp",
-    "originalMime": "image/heif",
-    "contentHash": "7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-034.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-034.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-035",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1OTfEB9kynCWNJ6otkuTzGkEDE0w1Tuzg",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0360.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-035.webp",
-    "originalMime": "image/heif",
-    "contentHash": "9f6b088240616ef1c480922c41437552a8977899b9084135d859a8cf26fb73ec",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-035.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-035.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-036",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1hQ3pwixKzQy4LPmBkB61g7OMVkHhgs8I",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0340.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-036.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e98d167f409f90e88dc9eb6627d7a3160d6ea168d3f4615548a1c9cef14d5a40",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-036.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-036.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-037",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1nTZzCumJX8-ENwQFvB86DjZHC5TTf7Yr",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0369.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-037.webp",
-    "originalMime": "image/heif",
-    "contentHash": "a13a29e626f7f1b02753743c254c1d952a9b5650d432521ece2792ca47776c1a",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-037.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-037.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "villette-04",
-    "projectSlug": "sodic-villette",
-    "area": "reception",
-    "driveFileId": "1zNAyw53pQvIU1jxqbnOAhe4JCQRPUdlt",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_9536.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/villette-04.webp",
-    "originalMime": "image/heif",
-    "contentHash": "4b7a11661e4ca2e0f032bbfab189f0721909b7f5e4bca3ed7983fc7ef8a62e8f",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Living room seating and media wall",
-      "ar": "جلسة معيشة وجدار وسائط"
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/villette-04.webp",
-      "avif": "/drive/projects/selected/sodic-villette/villette-04.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "villette-05",
-    "projectSlug": "sodic-villette",
-    "area": "reception-detail",
-    "driveFileId": "1J99sGjk07y4oXtuqTby82_wNsY2NZoU3",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_9532.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/villette-05.webp",
-    "originalMime": "image/heif",
-    "contentHash": "28d58ece04e80dc1b584158da6e9424aa7707e636d28b6b6ade1c7a537414c6a",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Sofa and timber wall detail",
-      "ar": "تفصيل أريكة وجدار خشبي"
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/villette-05.webp",
-      "avif": "/drive/projects/selected/sodic-villette/villette-05.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "villette-06",
-    "projectSlug": "sodic-villette",
-    "area": "cover",
-    "driveFileId": "1jG0MQlpnD5gVbXogi4WLp_5Dho4TKqYu",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_9539.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/villette-06.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e51b0f1d8b82ec7f74f6e181831ede4e871ef92ec042663db4f36508da634763",
-    "orientation": "portrait",
-    "quality": "hero",
-    "alt": {
-      "en": "Wide living room with a dark media wall",
-      "ar": "غرفة معيشة واسعة بجدار وسائط داكن"
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/villette-06.webp",
-      "avif": "/drive/projects/selected/sodic-villette/villette-06.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-041",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1ssFmaqUvVEEwAEGEEvXp36mW3IqaghEL",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_9534.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-041.webp",
-    "originalMime": "image/heif",
-    "contentHash": "4eaa0aa287081abfe758449110c4d2b1bb9f4a6c83e9378ab1a726a00857cb5a",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-041.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-041.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-042",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1CkDktkkTy-3IASnJxYKGh-4TFs8vl4RM",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_9537.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-042.webp",
-    "originalMime": "image/heif",
-    "contentHash": "d0cb2bffbe6d1f94d9d685d835b6af79e6ac848d3aee69512c551488a93ec9f5",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-042.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-042.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-043",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1I-OWZDIN3OHZnbW3tWT7ITKBuwEwLN1J",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0114.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-043.webp",
-    "originalMime": "image/heif",
-    "contentHash": "5510ea246e3f8bd45a13856c0b66499c9b5603314224c8612f41fc603eeef40e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-043.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-043.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-044",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1hNR_o-8LCGZvx9wQISp_Oj0kaaGYWM_j",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0282.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-044.webp",
-    "originalMime": "image/heif",
-    "contentHash": "262871bf27eb79937e21d579b0606103d31c7325004b9fee2405e7a7147a326f",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A dressing storage detail resolved with precise joinery and quiet texture.",
-      "ar": "تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-044.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-044.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-045",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1J49VeHUMtS4c8mf9yHpAGtQqfk4XgjEp",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0278.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-045.webp",
-    "originalMime": "image/heif",
-    "contentHash": "97cab5dd4e5f2263b18b05cd35b1715d2182c21911edc30e16278b21040fcde9",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A bedroom interior where timber, proportion and soft light work together.",
-      "ar": "مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-045.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-045.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-046",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1LUKZ1FeOocALcRrina4msmUWLvlcxIjy",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0107.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-046.webp",
-    "originalMime": "image/heif",
-    "contentHash": "ae37cffef07c0536b09f0e24fba7934bde5a98a2d48ba921bdcf0c7ab1621258",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-046.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-046.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-047",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1YUmoxe8Qr4_vD3o9_qHhxhEVMdid6yLu",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0103.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-047.webp",
-    "originalMime": "image/heif",
-    "contentHash": "60fd32e6d4c14decba78bc57d9072c7f661563db81fbe27289187e541d24db3a",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-047.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-047.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-048",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "17EPhkkQqP22oHnwXmZh7k7Od5EaIwUmd",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0108.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-048.webp",
-    "originalMime": "image/heif",
-    "contentHash": "ee64ab994ca3f0f07cebe1e80b940f184bc145e16755b5ed39879a945ec8f34e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-048.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-048.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-049",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1K7hGtot4NHmikiIg3WL87TzCMMLiODXs",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0283.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-049.webp",
-    "originalMime": "image/heif",
-    "contentHash": "89094506572931063665e947406daac3eab77646a42b2109081519981e9b72c5",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-049.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-049.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-050",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "19r3QaH06pkrFRPzUTXVdzGruyLj4gzeh",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0276.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-050.webp",
-    "originalMime": "image/heif",
-    "contentHash": "f135f620cea25fdea849644ebcb1a3518939943511ceaa805fe7467a7d62431a",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A dressing storage detail resolved with precise joinery and quiet texture.",
-      "ar": "تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-050.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-050.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-051",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "15WLFIbBY8Oy2ZLJrR8WRrBMuq186Jxii",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0300.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-051.webp",
-    "originalMime": "image/heif",
-    "contentHash": "c81b6fb9f96fd3b30296d14effcaef227451de41fd4486135b785f181a7041e6",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A bedroom interior where timber, proportion and soft light work together.",
-      "ar": "مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-051.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-051.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-052",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1dlS2lWFmOyIYmUFAvS4M5JJgUM7fnvR8",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0293.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-052.webp",
-    "originalMime": "image/heif",
-    "contentHash": "ec3025ea53537b975907b84709e7312e4202a01ca5b6111241d2eda7dad57506",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Continuous wall treatment connects storage, doors and living spaces.",
-      "ar": "تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-052.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-052.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-053",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1V4SDkRd2vG8O1b_QSVnrlQmIlu72nsfZ",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0105.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-053.webp",
-    "originalMime": "image/heif",
-    "contentHash": "b07670a2e977e6c5f24648704668876c94f9fc74326c6933e6f18aebbf813961",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close view of crafted surfaces and hardware across the Villette package.",
-      "ar": "لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-053.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-053.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-054",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "1OfZkbDOd_JEztBpFPPbmSGFj6ubzMzLq",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0287.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-054.webp",
-    "originalMime": "image/heif",
-    "contentHash": "7b77d152d8e0a5b45de4cfff138d7746c029bec643c9150d40b109b85ccf834e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Residential joinery shaped around everyday movement and calm rooms.",
-      "ar": "نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-054.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-054.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "sodic-villette-drive-055",
-    "projectSlug": "sodic-villette",
-    "area": "other",
-    "driveFileId": "16KsljsM2fM_uzIP2i23u5qfhTG6NwPbk",
-    "sourceFolderId": "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    "sourceName": "IMG_0286.HEIC",
-    "localSrc": "/drive/projects/selected/sodic-villette/sodic-villette-drive-055.webp",
-    "originalMime": "image/heif",
-    "contentHash": "c21738dfb4c72fb1edc6cc810768c34c1c9ef53fa46485fd218955fd2457d05e",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fluted timber walls bring rhythm and warmth to the SODIC Villette home.",
-      "ar": "تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/sodic-villette/sodic-villette-drive-055.webp",
-      "avif": "/drive/projects/selected/sodic-villette/sodic-villette-drive-055.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",

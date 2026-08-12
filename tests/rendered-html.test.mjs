@@ -385,16 +385,45 @@ test("keeps the numbered selected-project Drive catalog traceable", async () => 
   assert.match(catalog, /slug: "new-giza".*publishStatus: "pending"/s);
   assert.match(catalog, /slug: "playa"/);
   assert.match(catalog, /slug: "cfc-office"/);
-  assert.equal(assets.length, 165);
+  assert.match(catalog, /sourceFolderId: "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH"/);
+  assert.match(catalog, /sourceFolderTitle: "Sodic vilette mai saad new folder"/);
+  assert.doesNotMatch(catalog, /11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv/);
+  assert.equal(assets.length, 132);
   assert.equal(new Set(assets.map((asset) => asset.id)).size, assets.length);
   for (const [projectSlug, expectedCount] of Object.entries({
     "cfc-office": 9,
     "swan-lake": 16,
-    "sodic-villette": 55,
+    "sodic-villette": 22,
     playa: 85,
   })) {
     assert.equal(assets.filter((asset) => asset.projectSlug === projectSlug).length, expectedCount);
   }
+  const sodicAssets = assets.filter((asset) => asset.projectSlug === "sodic-villette");
+  assert.ok(sodicAssets.every((asset) => asset.sourceFolderId === "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH"));
+  assert.deepEqual(sodicAssets.map((asset) => asset.sourceName), [
+    "1st.heif",
+    "2nd.heif",
+    "3rd.heif",
+    "4th.heif",
+    "5th.heif",
+    "6th.heif",
+    "7th.heif",
+    "8th.heif",
+    "9th.heif",
+    "10th.JPG",
+    "11th.heif",
+    "12.heif",
+    "13.heif",
+    "14.heif",
+    "15.heif",
+    "16.heif",
+    "17.heif",
+    "18.heif",
+    "19.heif",
+    "20.heif",
+    "21.heif",
+    "22.jpeg",
+  ]);
   assert.ok(assets.every((asset) => asset.driveFileId && asset.sourceFolderId && asset.contentHash && asset.derived?.webp && asset.derived?.avif));
   assert.ok(assets.every((asset) => !asset.alt.en.includes(asset.sourceName) && !asset.alt.ar.includes(asset.sourceName)));
   assert.ok(assets.some((asset) => asset.driveFileId === "1SRyB5YdCyX3ZlwpVAKtW2yRyggoZFTgp" && asset.sourceName === "IMG_2607.HEIC"));
@@ -403,5 +432,6 @@ test("keeps the numbered selected-project Drive catalog traceable", async () => 
   assert.doesNotMatch(rail, /projects\.map/);
   assert.match(content, /export const selectedProjects = selectedProjectSlugs/);
   assert.match(inventory, /Selected projects source of truth/);
+  assert.match(inventory, /Sodic vilette mai saad new folder/);
   assert.match(inventory, /New Giza.*Folder is empty/s);
 });
