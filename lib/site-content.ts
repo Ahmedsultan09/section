@@ -151,10 +151,10 @@ export const mediaAssets: MediaAsset[] = [
     alt: { en: "Warm residential interior with custom wood elements", ar: "مساحة سكنية دافئة بعناصر خشبية مصممة خصيصاً" },
   },
   {
-    id: "asset-wall-01", src: "/assets/171467_688502.jpeg", sourceFolder: "Legacy site", sourceName: "171467_688502.jpeg",
+    id: "asset-wall-01", src: "/assets/wall-cladding-cover.jpeg", sourceFolder: "Client-supplied WhatsApp reference", sourceName: "WhatsApp Image 2026-08-12 at 10.25.46 AM.jpeg",
     projectSlug: "residential-joinery-study", sector: "residential-developments", capabilities: ["wall-cladding", "living-rooms"],
-    stage: "finished", authenticity: "unknown", rights: "pending", orientation: "landscape", quality: "hero", usage: "project",
-    alt: { en: "Integrated wall cladding and media joinery", ar: "تكسية حائط ووحدة وسائط مدمجة" },
+    stage: "finished", authenticity: "unknown", rights: "pending", orientation: "portrait", quality: "hero", usage: "project",
+    alt: { en: "CNC-routed wall cladding feature wall", ar: "حائط مميز بتكسية CNC" },
   },
   {
     id: "asset-unit-01", src: "/assets/217375_739589.jpeg", sourceFolder: "Legacy site", sourceName: "217375_739589.jpeg",
