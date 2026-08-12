@@ -36,9 +36,12 @@ const assets = [
   ["bedroom-kids-br1-07", "1pLJYJdVD_3-s6PWPIxn8i2nBlNrSaBS3", "14jbn8JsB8KFxM26IBphuea7oYHpZzi6u", "Br 1", "7", "image/jpeg", 1, 7],
   ["bedroom-kids-br1-08", "1LHgr8xbSoTwgHNiqeeY3zwcXIZPUg-AY", "14jbn8JsB8KFxM26IBphuea7oYHpZzi6u", "Br 1", "8", "image/heif", 1, 8],
 
-  // Kids / BR 2. The parent folder is currently inaccessible through the connector,
-  // but this source image remains available and is retained by its original IDs.
+  // Kids / BR 2
+  ["bedroom-kids-br2-01", "1wtxnbeaPrswjjnbCYfmXo-Yx6-QO5rwK", "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", "BR 2", "1.png", "image/png", 2, 1],
+  ["bedroom-kids-br2-02", "1s_xQO2bP8jUPLGHzMmG9rWaXSKpUBwpL", "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", "BR 2", "2.png", "image/png", 2, 2],
   ["bedroom-kids-br2-03", "1N5iHK9y-ZCwHBY3KuyXw2XibvkJrhyiI", "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", "BR 2", "3.png", "image/png", 2, 3],
+  ["bedroom-kids-br2-04", "1fgMi0lsjFhUpYStPGYBX2mbvGEulOECD", "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", "BR 2", "4.png", "image/png", 2, 4],
+  ["bedroom-kids-br2-05", "1FjcH4YtZdP2Mez_7GPL2NbZ7QuBpAdIM", "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz", "BR 2", "5.png", "image/png", 2, 5],
 
   // Kids / Br 3
   ["bedroom-kids-br3-01", "1IuoCzLQ8AYxVAysgaJXQ3BNMq27zuLJK", "1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc", "Br 3", "1.JPG", "image/jpeg", 3, 1],

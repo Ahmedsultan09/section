@@ -30,7 +30,12 @@ function capabilitiesFor(projectSlug: string, area: ProjectArea): CapabilitySlug
   return ["living-rooms", "custom-units"];
 }
 
-export const selectedProjectMedia: MediaAsset[] = generatedSelectedProjectAssets.map((asset) => {
+const suppressedDuplicateMediaIds = new Set([
+  "sodic-villette-drive-020",
+  "sodic-villette-drive-035",
+]);
+
+export const selectedProjectMedia: MediaAsset[] = generatedSelectedProjectAssets.map((asset): MediaAsset => {
   const area = asset.area as ProjectArea;
   return {
     id: asset.id,
@@ -55,7 +60,7 @@ export const selectedProjectMedia: MediaAsset[] = generatedSelectedProjectAssets
     publishStatus: asset.publishStatus as MediaAsset["publishStatus"],
     area,
   };
-});
+}).filter((asset) => !suppressedDuplicateMediaIds.has(asset.id));
 
 const selectedProjectMediaIds = (projectSlug: string) => {
   return selectedProjectMedia
@@ -104,7 +109,7 @@ export const selectedProjectRecords: Project[] = [
     clientVisibility: "approved",
     verificationStatus: "verified",
     summary: { en: "A room-by-room study of fluted wall rhythms, dressing storage, and quiet bedroom joinery throughout the SODIC Villette home.", ar: "دراسة مساحة تلو الأخرى لإيقاع الجدران المخددة وتخزين غرف الملابس ونجارة غرف النوم الهادئة في منزل سوديك فيليت." },
-    scope: { en: "Complete living, bedroom, dressing and wall photography from the SODIC Villette Drive folder, arranged to show how storage and surface meet.", ar: "كامل صور المعيشة وغرف النوم وغرف الملابس والجدران من مجلد سوديك فيليت على Drive، مرتبة لتوضح التقاء التخزين بالسطح." },
+    scope: { en: "Complete living, bedroom, dressing and wall photography from the SODIC Villette project, arranged to show how storage and surface meet.", ar: "كامل صور المعيشة وغرف النوم وغرف الملابس والجدران من مشروع سوديك فيليت، مرتبة لتوضح التقاء التخزين بالسطح." },
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [{ en: "Timber veneer", ar: "قشرة خشبية" }, { en: "Fluted timber", ar: "خشب مخدد" }],
     outcome: { en: "A selected record of the completed residential spaces.", ar: "سجل مختار للمساحات السكنية المكتملة." },

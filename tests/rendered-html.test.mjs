@@ -285,16 +285,20 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.match(showroom, /MELAMINE CLADDING/);
   assert.match(showroom, /VENEER & PAINTING CLADDING/);
   const categoryAssetRecords = JSON.parse(categoryAssets);
-  assert.equal(categoryAssetRecords.length, 110);
+  assert.equal(categoryAssetRecords.length, 114);
   assert.equal(categoryAssetRecords.filter((asset) => asset.id.startsWith("cladding-")).length, 44);
   const bedroomAssetRecords = categoryAssetRecords.filter((asset) => asset.id.startsWith("bedroom-"));
-  assert.equal(bedroomAssetRecords.length, 34);
+  assert.equal(bedroomAssetRecords.length, 38);
   assert.deepEqual(
     bedroomAssetRecords.reduce((counts, asset) => {
       counts[asset.sourceFolderName] = (counts[asset.sourceFolderName] ?? 0) + 1;
       return counts;
     }, {}),
-    { "Bedroom 1": 6, "Bedroom 2": 4, "collection of bedroom items": 3, "Br 1": 8, "BR 2": 1, "Br 3": 5, "Br 4": 7 },
+    { "Bedroom 1": 6, "Bedroom 2": 4, "collection of bedroom items": 3, "Br 1": 8, "BR 2": 5, "Br 3": 5, "Br 4": 7 },
+  );
+  assert.deepEqual(
+    bedroomAssetRecords.filter((asset) => asset.sourceFolderName === "BR 2").map((asset) => asset.sourceName),
+    ["1.png", "2.png", "3.png", "4.png", "5.png"],
   );
   const doorAssetRecords = JSON.parse(doorAssets);
   assert.equal(doorAssetRecords.length, 18);
