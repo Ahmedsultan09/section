@@ -1,5 +1,6 @@
 import generatedSelectedProjectAssets from "./generated-selected-project-assets.json";
 import { playaCoverMedia, playaLinkedMedia } from "./playa-linked-media";
+import { sodicLinkedMediaIds } from "./sodic-linked-media";
 import type { CapabilitySlug, MediaAsset, Project, ProjectArea } from "./site-types";
 
 export const SELECTED_PROJECTS_ROOT_FOLDER_ID = "1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-Mh";
@@ -195,5 +196,5 @@ export const selectedProjectRecords: Project[] = [
 
 export const selectedProjectManifest = selectedProjectSourceFolders.map((folder) => ({
   ...folder,
-  media: folder.slug === "sodic-collaboration" ? ["sodic-drive-06", "sodic-drive-08", "sodic-drive-03", "sodic-drive-01", "sodic-drive-02"] : selectedProjectRecords.find((project) => project.slug === folder.slug)?.media ?? [],
+  media: folder.slug === "sodic-collaboration" ? sodicLinkedMediaIds : selectedProjectRecords.find((project) => project.slug === folder.slug)?.media ?? [],
 }));

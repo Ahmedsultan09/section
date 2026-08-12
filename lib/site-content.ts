@@ -1,5 +1,6 @@
-import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectSector } from "./site-types";
+import type { Capability, CapabilitySlug, Locale, MediaAsset, Project, ProjectArea, ProjectSector } from "./site-types";
 import { hydeParkMediaAssets, sodicMediaAssets } from "./drive-assets";
+import { sodicLinkedMedia, sodicLinkedMediaIds } from "./sodic-linked-media";
 import generatedDressingDriveAssets from "./generated-dressing-drive-assets.json";
 import generatedCategoryDriveAssets from "./generated-category-drive-assets.json";
 import generatedDoorsDriveAssets from "./generated-doors-drive-assets.json";
@@ -137,6 +138,7 @@ const customUnitsCoverAsset: MediaAsset = {
 
 export const mediaAssets: MediaAsset[] = [
   ...sodicMediaAssets,
+  ...sodicLinkedMedia,
   ...hydeParkMediaAssets,
   ...categoryMediaAssets,
   ...kitchenMediaAssets,
@@ -269,7 +271,7 @@ export const projects: Project[] = [
     scope: { en: "Selected wall, stair, kitchen and joinery photography from the SODIC Drive folder; quantities, locations and programme remain intentionally unlisted.", ar: "صور مختارة للجدران والسلم والمطبخ وتفاصيل النجارة من مجلد سوديك على Drive؛ لم تُدرج الكميات والمواقع والبرنامج الزمني عمداً." },
     responsibilities: [{ en: "Interior work", ar: "أعمال داخلية" }, { en: "Custom woodwork", ar: "نجارة مخصصة" }, { en: "Furniture", ar: "أثاث" }],
     materials: [], outcome: { en: "Selected collaboration shown without unsupported metrics or claims.", ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة." }, elements: { en: "Cladding only", ar: "التكسية فقط" },
-    capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: ["sodic-drive-06", "sodic-drive-02", "sodic-drive-01", "sodic-drive-04", "sodic-drive-08", "sodic-drive-07", "sodic-drive-03", "sodic-drive-05", "sodic-drive-09"], collaboratorIds: ["ahmed-elsheref"], sourceFolderId: "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS", sourceFolderTitle: "1-SODIC ahmed el sherif", mediaAreas: { "sodic-drive-06": "cover", "sodic-drive-02": "wall", "sodic-drive-01": "stairs", "sodic-drive-03": "kitchen", "sodic-drive-08": "wall" },
+    capabilities: ["custom-units", "wall-cladding", "living-rooms"], media: sodicLinkedMediaIds, collaboratorIds: ["ahmed-elsheref"], sourceFolderId: "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS", sourceFolderTitle: "1-SODIC ahmed el sherif", mediaAreas: Object.fromEntries(sodicLinkedMedia.map((asset) => [asset.id, asset.area]).filter((entry): entry is [string, NonNullable<typeof entry[1]>] => Boolean(entry[1]))) as Record<string, ProjectArea>,
   },
   {
     slug: "hyde-park", title: { en: "Hyde Park", ar: "هايد بارك" },
