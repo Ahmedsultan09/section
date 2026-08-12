@@ -1,5 +1,5 @@
 import generatedSelectedProjectAssets from "./generated-selected-project-assets.json";
-import { playaLinkedMedia } from "./playa-linked-media";
+import { playaCoverMedia, playaLinkedMedia } from "./playa-linked-media";
 import type { CapabilitySlug, MediaAsset, Project, ProjectArea } from "./site-types";
 
 export const SELECTED_PROJECTS_ROOT_FOLDER_ID = "1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-Mh";
@@ -7,7 +7,7 @@ export const SELECTED_PROJECTS_ROOT_FOLDER_ID = "1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-
 export const selectedProjectSourceFolders = [
   { order: 1, slug: "sodic-collaboration", title: "1-SODIC ahmed el sherif", sourceFolderId: "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS", publishStatus: "public" as const },
   { order: 2, slug: "swan-lake", title: "2-SWANLAKE", sourceFolderId: "1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR", publishStatus: "public" as const },
-  { order: 3, slug: "sodic-villette", title: "3-SODIC VILETTE with Mai saad", sourceFolderId: "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv", publishStatus: "public" as const },
+  { order: 3, slug: "sodic-villette", title: "Sodic vilette mai saad new folder", sourceFolderId: "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH", publishStatus: "public" as const },
   { order: 4, slug: "new-giza", title: "4-NEW GIZA mai saad", sourceFolderId: "1NmaXGLx8SRXereWz90DmS8YRh2I5J5cd", publishStatus: "pending" as const },
   { order: 5, slug: "playa", title: "5-PLAYA with Amaken", sourceFolderId: "1256mAU_FoUKShxofhCe8-pQEYja11tMr", publishStatus: "public" as const },
   { order: 6, slug: "cfc-office", title: "6-CFC office. (Commercial)", sourceFolderId: "1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y", publishStatus: "public" as const },
@@ -31,12 +31,10 @@ function capabilitiesFor(projectSlug: string, area: ProjectArea): CapabilitySlug
   return ["living-rooms", "custom-units"];
 }
 
-const suppressedDuplicateMediaIds = new Set([
-  "sodic-villette-drive-020",
-  "sodic-villette-drive-035",
-]);
+const suppressedDuplicateMediaIds = new Set<string>();
 
 export const selectedProjectMedia: MediaAsset[] = [
+  playaCoverMedia,
   ...playaLinkedMedia,
   ...generatedSelectedProjectAssets.map((asset): MediaAsset => {
     const area = asset.area as ProjectArea;
@@ -121,8 +119,8 @@ export const selectedProjectRecords: Project[] = [
     elements: { en: "Cladding & furniture", ar: "التكسية والأثاث" },
     media: selectedProjectMediaIds("sodic-villette"),
     mediaAreas: selectedProjectAreas("sodic-villette"),
-    sourceFolderId: "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-    sourceFolderTitle: "3-SODIC VILETTE with Mai saad",
+    sourceFolderId: "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+    sourceFolderTitle: "Sodic vilette mai saad new folder",
     collaboratorIds: ["mai-saad"],
   },
   {
@@ -167,7 +165,7 @@ export const selectedProjectRecords: Project[] = [
     media: selectedProjectMediaIds("playa"),
     mediaAreas: selectedProjectAreas("playa"),
     sourceFolderId: "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    sourceFolderTitle: "5-PLAYA with Amaken + linked photo set",
+    sourceFolderTitle: "5-PLAYA with Amaken + linked photo set + cover reference",
     collaboratorIds: ["amaken"],
   },
   {

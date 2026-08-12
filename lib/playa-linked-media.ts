@@ -53,7 +53,7 @@ const linkedPhotoDriveIds = [
 ] as const;
 
 const linkedPhotoAreas: ProjectArea[] = [
-  "cover",
+  "rooms",
   "rooms",
   "units",
   "bedroom",
@@ -174,6 +174,32 @@ const capabilitiesFor = (area: ProjectArea) => {
   if (area === "doors") return ["doors", "wall-cladding"] as const;
   if (area === "wall") return ["wall-cladding", "custom-units"] as const;
   return ["living-rooms", "custom-units"] as const;
+};
+
+export const playaCoverMedia: MediaAsset = {
+  id: "playa-cover-reference",
+  src: "/drive/projects/selected/playa-cover-reference.webp",
+  sourceFolder: "PLAYA / cover reference",
+  sourceFolderId: "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+  sourceName: "4th.heif",
+  projectSlug: "playa",
+  sector: "residential-developments",
+  capabilities: ["living-rooms", "custom-units"],
+  stage: "finished",
+  authenticity: "verified-real",
+  rights: "approved",
+  orientation: "square",
+  quality: "hero",
+  usage: "project",
+  alt: {
+    en: "A Playa interior threshold framing the sea-facing room through a curved opening.",
+    ar: "عتبة داخلية في بلايا تؤطر الغرفة المطلة على البحر عبر فتحة منحنية.",
+  },
+  driveFileId: "1tzXrFucZBs3crezGRP00t4YNd60QhWQu",
+  originalMime: "image/heif",
+  derived: { webp: "/drive/projects/selected/playa-cover-reference.webp" },
+  publishStatus: "public",
+  area: "cover",
 };
 
 export const playaLinkedMedia: MediaAsset[] = linkedPhotoNames.map((sourceName, index) => {
