@@ -255,7 +255,7 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.equal((showroom.match(/kind: "collaborator"/g) ?? []).length, 9);
   assert.match(content, /client: \{ en: "SODIC"/);
   assert.match(content, /collaboratorIds: \["ahmed-elsheref"\]/);
-  assert.match(content, /media: \["sodic-drive-06"/);
+  assert.match(content, /media: sodicLinkedMediaIds/);
   assert.match(content, /slug: "hyde-park"/);
   assert.match(content, /client: \{ en: "HYDE PARK", ar: "هايد بارك" \}, clientVisibility: "approved"/);
   assert.match(content, /media: \["white-island-kitchen-01"/);
@@ -370,12 +370,13 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
 });
 
 test("keeps the numbered selected-project Drive catalog traceable", async () => {
-  const [catalog, generated, rail, content, inventory] = await Promise.all([
+  const [catalog, generated, rail, content, inventory, projectPage] = await Promise.all([
     read("lib/selected-projects.ts"),
     read("lib/generated-selected-project-assets.json"),
     read("components/ProjectStoryRail.tsx"),
     read("lib/site-content.ts"),
     read("docs/nocturne-drive-asset-inventory.md"),
+    read("app/[locale]/projects/[slug]/page.tsx"),
   ]);
   const assets = JSON.parse(generated);
   assert.match(catalog, /SELECTED_PROJECTS_ROOT_FOLDER_ID = "1Dh1mQCh7iWs3Txayc20AaFgdPbYvY-Mh"/);
@@ -384,17 +385,18 @@ test("keeps the numbered selected-project Drive catalog traceable", async () => 
   assert.match(catalog, /slug: "sodic-villette"/);
   assert.match(catalog, /slug: "new-giza".*publishStatus: "pending"/s);
   assert.match(catalog, /slug: "playa"/);
+  assert.match(catalog, /slug: "playa".*sourceFolderId: "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ"/s);
   assert.match(catalog, /slug: "cfc-office"/);
   assert.match(catalog, /sourceFolderId: "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH"/);
   assert.match(catalog, /sourceFolderTitle: "Sodic vilette mai saad new folder"/);
   assert.doesNotMatch(catalog, /11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv/);
-  assert.equal(assets.length, 132);
+  assert.equal(assets.length, 64);
   assert.equal(new Set(assets.map((asset) => asset.id)).size, assets.length);
   for (const [projectSlug, expectedCount] of Object.entries({
     "cfc-office": 9,
     "swan-lake": 16,
     "sodic-villette": 22,
-    playa: 85,
+    playa: 17,
   })) {
     assert.equal(assets.filter((asset) => asset.projectSlug === projectSlug).length, expectedCount);
   }
@@ -426,11 +428,51 @@ test("keeps the numbered selected-project Drive catalog traceable", async () => 
   ]);
   assert.ok(assets.every((asset) => asset.driveFileId && asset.sourceFolderId && asset.contentHash && asset.derived?.webp && asset.derived?.avif));
   assert.ok(assets.every((asset) => !asset.alt.en.includes(asset.sourceName) && !asset.alt.ar.includes(asset.sourceName)));
-  assert.ok(assets.some((asset) => asset.driveFileId === "1SRyB5YdCyX3ZlwpVAKtW2yRyggoZFTgp" && asset.sourceName === "IMG_2607.HEIC"));
-  assert.ok(assets.some((asset) => asset.driveFileId === "1Ycd4DyHYiruethdrGJ1xY1HhvnDJmb-5" && asset.sourceName === "IMG_4493.JPG"));
+  const playaAssets = assets.filter((asset) => asset.projectSlug === "playa");
+  assert.deepEqual(playaAssets.map((asset) => asset.driveFileId), [
+    "1_7wC12TBZIn3tXBjXdm_nqlb3X3mYwfT",
+    "156830ccZ3XA7stNs0_BdVWgyhMqlOabi",
+    "1cm8YReir86YVsmD0pj-30iNAKIXGpFbW",
+    "1tzXrFucZBs3crezGRP00t4YNd60QhWQu",
+    "1Vc3xCOb8BGicFzi1SsrA8TAqVc1crT9P",
+    "1bBGwXBoqa4duiZMEIireMD0Cqs5W-4Rx",
+    "19v3qnMpLls0XSQsl_Q9gXoHjcKZymvYN",
+    "186T3vnICFGEDqZjxd8cEsM7jYQo2nsmE",
+    "1v0P8XmLWC3vsNSHUq-O_-G5iNljYB20j",
+    "13m4oDVYptnAvlvJi84LEytpnkumSSdvK",
+    "1nP5TgzGwFpq2pngyzRaYhyO1U4I9prBg",
+    "1P6eZZpaaUBCqSilyOixfhTIMHyLsk1MP",
+    "1DY4GCfGaWr5Fg6NlOM3mMk0wSJlPRl3a",
+    "1CQXIfYa-nWrUW6kofjf8-barA0DGPXo1",
+    "1Ax4tv0m0lEvbtoK3t--IGIJ_n71UsS7h",
+    "13Ml7-d08UuuTZi2PJE3z7VOZaHtccpmT",
+    "1XJCcDSlB5RysBHAS7ILnLFaRqOyYWpi_",
+  ]);
+  assert.deepEqual(playaAssets.map((asset) => asset.sourceName), [
+    "1st.png",
+    "2nd.png",
+    "3rd.heif",
+    "4th.heif",
+    "5th.heif",
+    "6th.heif",
+    "7th.heif",
+    "8th.heif",
+    "9th.heif",
+    "10.heif",
+    "11.heif",
+    "12.heif",
+    "13.heif",
+    "14.heif",
+    "15.heif",
+    "16.heif",
+    "17.heif",
+  ]);
+  assert.ok(playaAssets.every((asset) => asset.sourceFolderId === "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ"));
   assert.match(rail, /selectedProjects\.map/);
   assert.doesNotMatch(rail, /projects\.map/);
   assert.match(content, /export const selectedProjects = selectedProjectSlugs/);
+  assert.match(projectPage, /selectedProjects\.some\(\(item\) => item\.slug === slug\)/);
+  assert.match(projectPage, /const next = navigationProjects\[\(index \+ 1\) % navigationProjects\.length\]/);
   assert.match(inventory, /Selected projects source of truth/);
   assert.match(inventory, /Sodic vilette mai saad new folder/);
   assert.match(inventory, /New Giza.*Folder is empty/s);

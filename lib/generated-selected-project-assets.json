@@ -1128,255 +1128,63 @@
     "publishStatus": "public"
   },
   {
-    "id": "playa-01",
+    "id": "playa-new-001",
     "projectSlug": "playa",
-    "area": "dressing",
-    "driveFileId": "1wlZGDtxjTMgd4SoadLO0bNN9sRJ7Vfsu",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2581.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-01.webp",
-    "originalMime": "image/heif",
-    "contentHash": "662bc96cc930421901e2472b556bd38f2d3935318c76b74f2ad0fdcdc3de3342",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "White fitted wardrobe with open storage",
-      "ar": "خزانة ملابس بيضاء بوحدات تخزين مفتوحة"
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-01.webp",
-      "avif": "/drive/projects/selected/playa/playa-01.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-02",
-    "projectSlug": "playa",
-    "area": "dressing-detail",
-    "driveFileId": "1eH-YHNlaviqw9q-XotblZduEypFd9Op8",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2582.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-02.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e6c7611eda4a352c6f838408ec6e9b6636d02c86b216969a82ec80eee6f750b9",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "Close detail of wardrobe internals",
-      "ar": "تفصيل داخلي لخزانة ملابس"
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-02.webp",
-      "avif": "/drive/projects/selected/playa/playa-02.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-03",
-    "projectSlug": "playa",
-    "area": "dressing-detail",
-    "driveFileId": "1gyf-n7KyLBRVmMxyyGnX9KDgpxNoInZ6",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2546.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-03.webp",
-    "originalMime": "image/heif",
-    "contentHash": "feef08d1169d8abfddcafe06263d5e1a0827cf8573304eda3e52dd7d42b0715b",
+    "area": "cover",
+    "driveFileId": "1_7wC12TBZIn3tXBjXdm_nqlb3X3mYwfT",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "1st.png",
+    "localSrc": "/drive/projects/selected/playa/playa-new-001.webp",
+    "originalMime": "image/png",
+    "contentHash": "7c26c892e8f4c90ea66023fa86514b1c0e497d993d649cd24bb003333b6c0f8f",
     "orientation": "portrait",
-    "quality": "editorial",
+    "quality": "hero",
     "alt": {
-      "en": "Wardrobe hardware and drawer detail",
-      "ar": "تفصيل إكسسوارات وأدراج خزانة"
+      "en": "A Playa interior view with warm timber, clean lines and precise detailing.",
+      "ar": "منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-03.webp",
-      "avif": "/drive/projects/selected/playa/playa-03.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-001.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-001.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-04",
-    "projectSlug": "playa",
-    "area": "doors",
-    "driveFileId": "1SRyB5YdCyX3ZlwpVAKtW2yRyggoZFTgp",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2607.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-04.webp",
-    "originalMime": "image/heif",
-    "contentHash": "32c5d7c1cfcfda8619880ee5e21a67441accc9c9cb7f9e1e0bb4028ede608146",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Oak double doors with perforated timber detail",
-      "ar": "بابان من البلوط بتفصيل خشبي مثقب"
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-04.webp",
-      "avif": "/drive/projects/selected/playa/playa-04.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-005",
+    "id": "playa-new-002",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1Walr9xOjbHhhLExBZMixmLQ3rpIfDnQG",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2554.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-005.webp",
-    "originalMime": "image/heif",
-    "contentHash": "6aef4391ed06a1b8770608e14736ef42e619149e5971baa34cdda44712ec5e52",
+    "driveFileId": "156830ccZ3XA7stNs0_BdVWgyhMqlOabi",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "2nd.png",
+    "localSrc": "/drive/projects/selected/playa/playa-new-002.webp",
+    "originalMime": "image/jpeg",
+    "contentHash": "b528afd4050ee56d85597114f578d25ba1c945f8c4f69eba33d39a41dba32946",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
+      "en": "A tailored Playa joinery composition showing measured storage and calm material rhythm.",
+      "ar": "تكوين نجارة مخصص من Playa يظهر التخزين المدروس وإيقاع الخامات الهادئ."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-005.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-005.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-002.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-002.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-05",
-    "projectSlug": "playa",
-    "area": "stairs",
-    "driveFileId": "1vrdIsa6opQz-8XOTCUv1czDph4GxHGgF",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2601.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-05.webp",
-    "originalMime": "image/heif",
-    "contentHash": "be80a6d77b228b758f3d704b5eadfd64b30414e10f56c3d354cd8ec5c9a168a2",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Illuminated entry steps and timber doorway",
-      "ar": "درجات مدخل مضاءة وباب خشبي"
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-05.webp",
-      "avif": "/drive/projects/selected/playa/playa-05.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-007",
+    "id": "playa-new-003",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1NL0MU_1r8KMsamt-oCooADVQv5UTLuqJ",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2545.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-007.webp",
+    "driveFileId": "1cm8YReir86YVsmD0pj-30iNAKIXGpFbW",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "3rd.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-003.webp",
     "originalMime": "image/heif",
-    "contentHash": "7401f2b1abca128ac874b4ed5c1f6194eac589723a76e467d7fe53e911f5d279",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-007.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-007.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-008",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "17tEeqQHgEgwNBHDrzzOxu0_XYZOKt6MV",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2600.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-008.webp",
-    "originalMime": "image/heif",
-    "contentHash": "ae5faa44171dab482ded9f0e88599a735cc49ce9c781089fda5ad70711bae0f1",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-008.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-008.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-009",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1Qyee45z0ZYzIpXUJAoYePgR-kclDE-sH",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2555.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-009.webp",
-    "originalMime": "image/heif",
-    "contentHash": "29aa7a3b731eeb07af6275e645087569130bee6a3c54669e300c5844756cb99d",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-009.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-009.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-010",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1sIEpA9S6ufq236nl8piPVsfbtrioFa9o",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2606.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-010.webp",
-    "originalMime": "image/heif",
-    "contentHash": "1dda9d86821dc8d56e743e30118b50cdfb54fe649aa69d84b36019cc6c1bbb69",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-010.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-010.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-011",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1RPM8AZVF2WhFS7JfcgMGk6m5KD-8wDEe",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2556.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-011.webp",
-    "originalMime": "image/heif",
-    "contentHash": "9693f32db327f8fc3bd156fe87e9569920f01ed75daaac13f0ea611ccd9d3ae2",
+    "contentHash": "125c8c86cf7554eefadcf89eccfee38a504461276e2cb5b898b80018e1f7d494",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -1384,431 +1192,47 @@
       "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-011.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-011.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-003.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-003.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-012",
+    "id": "playa-new-004",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1d9uggaaVcUVGZqCJfucJsd1r5kDGisNn",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2560.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-012.webp",
-    "originalMime": "image/heif",
-    "contentHash": "118e2d38a5e0bd5255d67e30d6e1a86d8a75cc59b0d70dcaf7f7da1ee16f466b",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-012.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-012.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-013",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1vQYD1Jh2_rLc01dzqEb6oxTWzHtNe9yS",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2605.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-013.webp",
-    "originalMime": "image/heif",
-    "contentHash": "45e8fceb79049cef317f4ec316361efe88a9e8c4ed6f71296749be2fe9e7676e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-013.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-013.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-014",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1fJQp2j6ZVlPSZ-ES0oxWSZAZn4zUGF6P",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2602.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-014.webp",
-    "originalMime": "image/heif",
-    "contentHash": "18b93da037828fedcfc0a8a3e89feff3194aaeb3d0b5cdd8b2d204fba52165d2",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fine hardware and aligned panels give this Playa interior its quiet character.",
-      "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-014.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-014.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-015",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1q9tlHyIOyp8IW7XU2ZqQ4zLSXoh_8G0p",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2603.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-015.webp",
-    "originalMime": "image/heif",
-    "contentHash": "fbd819211bf411e0ac44ef9c70a670ec2829d126e84584f15270b24cdb1f6a53",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-015.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-015.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-016",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1xGVwS43aRTotCFJIYqVXqQ1v-jv0OoVc",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2561.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-016.webp",
-    "originalMime": "image/heif",
-    "contentHash": "1f34181a005a333e32414e3194e7df3328c5c5563eb2a422b43c988183499d7b",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-016.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-016.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-017",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1dYkoRdA6CsWZ7mKMNtFDnFU18UwBKTUN",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2604.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-017.webp",
-    "originalMime": "image/heif",
-    "contentHash": "346f866cb4c9cd55f1685999b62e7f90574c7c8a4e78095677fab98456c252c8",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-017.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-017.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-018",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "11tjt3zpeU4rSAnEvosg8JpZXt-Lvp6JI",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2544.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-018.webp",
-    "originalMime": "image/heif",
-    "contentHash": "db91ae441f33e583621d8922ce5fba0fe7c9ee719db22c62ac91059ecb228699",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-018.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-018.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-019",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1UF7ND2TBIAB1fLH5rX0DSmgpco1B11pm",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2549.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-019.webp",
-    "originalMime": "image/heif",
-    "contentHash": "471e35104f40c1b1a03183f519d0af9d4d2b5c20a35944cd9cfb827b3d143cfa",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-019.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-019.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-020",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1CF5NcvLodyIFNHWCi671x9HSq9COgC_y",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2550.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-020.webp",
-    "originalMime": "image/heif",
-    "contentHash": "1e9ece8c411152f2cf2d8b947302a939c2646da167923ed59ded915f67b0cb7e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-020.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-020.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-021",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1i2ZVadPwuFNZTUiHDtWKsJxaB20FxQ17",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2535.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-021.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e3daa00ff4db5c3b606cf75c0ad8c7561606742f67dd81fe4fcd617442aa87c6",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-021.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-021.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-022",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1fCVKV0M7jp-HFG_cETdgBO_dsCL0gu8i",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2572.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-022.webp",
-    "originalMime": "image/heif",
-    "contentHash": "f55b4cae92c4b0b9bb5e06861e0b32ca6e0b2a35fce57864069475f072137fa1",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fine hardware and aligned panels give this Playa interior its quiet character.",
-      "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-022.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-022.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-023",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1v61LUtbsD2eZymrt8PXUbfHUBzKHFUSg",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2534.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-023.webp",
-    "originalMime": "image/heif",
-    "contentHash": "743bf03f4d9d1ebfacb9555559f2e7a0df579a60a2214643cf897fa60d226624",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-023.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-023.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-024",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1mI3vWdIhX0Gua-4Re1hYU2aSQybtO62W",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2542.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-024.webp",
-    "originalMime": "image/heif",
-    "contentHash": "ac599082550104250349367d06ca71fdb49fb761b72077314db9c6f71659346c",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-024.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-024.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-025",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1bP6xqVHczDxAA34wKftMKiQhF7TWGJLd",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2531.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-025.webp",
-    "originalMime": "image/heif",
-    "contentHash": "6ff29d2467fa6aa3132974fa3ddcd2513d816c462b71ad59b80dd1ab9d5d19d6",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-025.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-025.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-026",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1N4bWwbCwxqlS0qU9Cag6Itq4s9cWGMg_",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2571.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-026.webp",
+    "driveFileId": "1tzXrFucZBs3crezGRP00t4YNd60QhWQu",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "4th.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-004.webp",
     "originalMime": "image/heif",
     "contentHash": "dbdb053a38151cc1c1db5d22cc5177cfa007692ec6cb129682e7e970f86d1239",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-026.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-026.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-027",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1ZAwZAkhRFcc-QobNLk2j1Zj8MqbitzoG",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2574.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-027.webp",
-    "originalMime": "image/heif",
-    "contentHash": "7f17cce6ee670cb4b0d00448a5788c7f8ab98eacf24e682ea19739c47ff8ea5a",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-027.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-027.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-028",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1d2U_Fp4J5zL-XjnZ1nTU-oM66bZ_EsbF",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2580.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-028.webp",
-    "originalMime": "image/heif",
-    "contentHash": "6ba041537de12ea557d9abe4611da60050e41eca6da7da7ea28a009725bacb81",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
       "en": "A stair and joinery study built around clean thresholds and durable detail.",
       "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-028.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-028.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-004.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-004.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-029",
+    "id": "playa-new-005",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1uQpmalWFaf3PMvG-QYLD10CxfTGFmjPT",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2579.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-029.webp",
+    "driveFileId": "1Vc3xCOb8BGicFzi1SsrA8TAqVc1crT9P",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "5th.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-005.webp",
     "originalMime": "image/heif",
-    "contentHash": "bdbe37105ad0a414462e17ea8d61c77e57ef14168481c719bb09318c3a7dfd4b",
+    "contentHash": "17b2ea2b403eebf73328d04bffbb0dacbd842d8946d6d39941b1b9c1d8521e3c",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -1816,981 +1240,21 @@
       "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-029.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-029.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-005.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-005.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-030",
+    "id": "playa-new-006",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1OQoCmPCezfC16GeMltTKDZ_7X1g9-rTL",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2597.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-030.webp",
-    "originalMime": "image/heif",
-    "contentHash": "5deed7e58af6a27f49f33cd972f82f872057c2cc638dd130fcfd0a20e7e83674",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fine hardware and aligned panels give this Playa interior its quiet character.",
-      "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-030.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-030.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-031",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1_JjXW4ZDqQzbZLX021hKPzD7nSnHJ2Rb",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2530.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-031.webp",
-    "originalMime": "image/heif",
-    "contentHash": "a83f641dc32a1ebd8b9ddd7062bc93f67aa224c94d67f7c123c7b27354a79d94",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-031.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-031.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-032",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "16nM8n5Kkfl2RL6t8fqGzJXVZqGgTuxC9",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2541.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-032.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e9183317f0ff603873bed93caedb81796a089db34250428dc7708c2c0eb0508c",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-032.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-032.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-033",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1B7hOYVK4z6SUqKxIR0i1088fN7Qf4gq8",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2575.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-033.webp",
-    "originalMime": "image/heif",
-    "contentHash": "f551cfeb9cf0341b5186c8cbf77937fad050bab898ce25574fcd1b702dff2872",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-033.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-033.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-034",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "173BKgIed_QBLhCZRBEZfIy6HtFE2gZkw",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2583.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-034.webp",
-    "originalMime": "image/heif",
-    "contentHash": "0c4710f71c679a590862f6d69df8970cb2594b5f1c527bfa4f44427dfcde6efb",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-034.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-034.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-035",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1j9qLfWixq9CZ6YFXQAouPATP4ktQHY82",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2584.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-035.webp",
-    "originalMime": "image/heif",
-    "contentHash": "d7c43120681331caf6e2f7546ab933336096ac6a5a5fff1f3ebbff21b1b32f03",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-035.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-035.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-036",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1zIsOh8CR2La4KsbR4gZSWflmKFdAt4PO",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2559.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-036.webp",
-    "originalMime": "image/heif",
-    "contentHash": "c6ee56f75ce928e30222e2c77f735ff7dd63776caef8ccb0a23d5bafb33ea5af",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-036.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-036.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-037",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1p62RHUNFUG3t2bXuqSFQVpIed1I1--M7",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2608.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-037.webp",
-    "originalMime": "image/heif",
-    "contentHash": "1b20a4afdd8b74c44ff65356e4fd9f06650ebc5c487ca30baba25e85b933e030",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-037.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-037.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-038",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1Hr8XgWp8hc2qXqqbxIHmddoQ_KQWMxqh",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2588.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-038.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e1c0220bc0b577c1bc825f67a60d0ccd2c142a7e03fb110cc5dc8a4687c2b0c1",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fine hardware and aligned panels give this Playa interior its quiet character.",
-      "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-038.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-038.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-039",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1VBQNRp0cHC8-o-oBG6GgMRVV_k_Mb2MK",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2590.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-039.webp",
-    "originalMime": "image/heif",
-    "contentHash": "2bdbddff469f4a8c4578bba6fcca29f35aec9bfb5a96e08458dfced5236c1f0c",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-039.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-039.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-040",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1Pn_eezdKR1UQYWRgwrFlgovtd3B0Jv2u",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2589.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-040.webp",
-    "originalMime": "image/heif",
-    "contentHash": "11215249047f3fe5e0ab8e990e739dbb71326f7a76ca6fc917d5cd0509d566a0",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-040.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-040.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-041",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1UnnY_tjn75JJaCnMLkYRsLkwi_ImT75M",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2578.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-041.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e01b9bf276265ec3f47e21368200e24bfb0e32653733dceec3f2d78351085dc2",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-041.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-041.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-042",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1Uu-px8JUr83tnFR3x_VlyNgpXG3bp8so",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2558.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-042.webp",
-    "originalMime": "image/heif",
-    "contentHash": "aed7bdf914eb120362f1fb27ccf10a862ad48a83083cf0a0be7cc849bc33601c",
-    "orientation": "landscape",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-042.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-042.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-043",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1CW2SnViJtR3xceLAx5uJvmcXO-Jk1vEU",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2577.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-043.webp",
-    "originalMime": "image/heif",
-    "contentHash": "666afc3b295873401ef74c776970cd7ec47564f4721ab7ea7b0761f48f4b7422",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-043.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-043.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-044",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1f3yvwLU9a9d6S75OM59VF6Vpzl4XYVXe",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2587.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-044.webp",
-    "originalMime": "image/heif",
-    "contentHash": "b7a73318593ced78aa0584651748b78b5310f053e6275631411347763cc7a8a7",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-044.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-044.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-045",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1zWpQzNFpQJ7VDNQEoLkXuFV23bAhK7ps",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2586.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-045.webp",
-    "originalMime": "image/heif",
-    "contentHash": "5ef3209e689d27c3f2e96ff96472cff9a827d36ab278230926dc04d34d59449c",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-045.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-045.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-046",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1TSz9TmIF_D_2ICzdOvxWN-Mb13KstKnk",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2566.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-046.webp",
-    "originalMime": "image/heif",
-    "contentHash": "bac3b04d68a3b8bfc145d409816876bc88d3caaa00d39285f28d0f6f613a2606",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fine hardware and aligned panels give this Playa interior its quiet character.",
-      "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-046.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-046.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-047",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1fhRoC03LRj4QRiyxvSlBRNO-Er8mkU5r",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2585.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-047.webp",
-    "originalMime": "image/heif",
-    "contentHash": "5425a81480daaabbd1e00b8f59bd609055c9c6dc80c7b7285f1f57dfd83b0d6b",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-047.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-047.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-048",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1l9OQ9FLdnThJzjAkJaYMdO0J9ODbB76z",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2567.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-048.webp",
-    "originalMime": "image/heif",
-    "contentHash": "e4edce96cc189ca77eee1c901ae1c901d071fe2a4afc16788a7bc7353dc5a2e4",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-048.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-048.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-049",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1lg5hDQQabdKxHjRrGR7bwUjeSvtfr4W_",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2543.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-049.webp",
-    "originalMime": "image/heif",
-    "contentHash": "c49c848d49f0750e3d797a6d3f314e863a0273835c8722352c13415b4defc199",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-049.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-049.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-050",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1IdEihXAGs7-6pLzomYdzlDXC058RWu1r",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2539.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-050.webp",
-    "originalMime": "image/heif",
-    "contentHash": "adb37077e0b1b3c8feac10e8355897b8b338652b359ddfc8b3764d2fd46783d5",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-050.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-050.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-051",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1uNx1Og8LmTsz5yOzgB3UHvTi-VFs97wG",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2564.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-051.webp",
-    "originalMime": "image/heif",
-    "contentHash": "256de71fb5c31133d1a57e97aa5bdc0f8abc6c81fbbb76da9f7546587f78ab83",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-051.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-051.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-052",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1VMP6_NRbotRvZOIFmfswWLpUoPdFC22k",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2568.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-052.webp",
-    "originalMime": "image/heif",
-    "contentHash": "b229de6e23f0b6c3d5b92c1dad6d2e58d72b5a6aaefb78d87b60ce6c64761c35",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-052.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-052.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-053",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1kI1akc9zHEu8oWT_3FwBk_4KrGvLUnYr",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2565.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-053.webp",
-    "originalMime": "image/heif",
-    "contentHash": "bf9c19f34a223e7d3f432b37887406032f92e432ff759664570b39f4ac59da72",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-053.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-053.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-054",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1k-F3c-4f1BUXCw4bIp5EY4eXQs2LMnHP",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2563.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-054.webp",
-    "originalMime": "image/heif",
-    "contentHash": "893ceb1d989f33e60d2e661746af9f8ce31d689ada06f6afe55792559069d55f",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fine hardware and aligned panels give this Playa interior its quiet character.",
-      "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-054.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-054.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-055",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "11kB2vzr1VZ4gsrPB5Aif-kXsC3LyxBG0",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2562.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-055.webp",
-    "originalMime": "image/heif",
-    "contentHash": "558b5b002b7bb055e869789b39c919f57397f35d164a0ba39c34d56867e4ee3e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-055.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-055.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-056",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1_6-ZctvZyQwawsGbDmkjraBPvcY8Gdgj",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2570.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-056.webp",
-    "originalMime": "image/heif",
-    "contentHash": "20a52746d6c42630acde2d0e58ab911d0f6742af4a2cd41aa3c0fa114fac75d4",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-056.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-056.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-057",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1HnhqKwAYe_gpXIQXwijVfHG9L7ufhpHW",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2569.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-057.webp",
-    "originalMime": "image/heif",
-    "contentHash": "d00e0e58b3ec62f48046191e1dfe4fe66ba07ef6186b5b15e7c008243abd9c0b",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-057.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-057.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-058",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1XkhTx-HRcuIjJ1uJ00OoGhx61sjQTgEs",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2598.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-058.webp",
-    "originalMime": "image/heif",
-    "contentHash": "fda6d3bd0bdeeb3ab80ba25334f9bb007785e6cba6fcc9b1fb43dd3aaa1b7040",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-058.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-058.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-059",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1v64DAcDOUp7riz_Ia1y2gFTUkoOh-G0G",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2599.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-059.webp",
-    "originalMime": "image/heif",
-    "contentHash": "3efb822624922c69a231f06800bc604985a30eee769165e4dd4d2978c3d9a249",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-059.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-059.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-060",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1k0MpbAnfTHfFlsELz_1Ke0qqn79YEOhC",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2495.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-060.webp",
-    "originalMime": "image/heif",
-    "contentHash": "4c7d13d23401ff065ef8e08b75751b066d239671edf504897ab3fa34d2a0f64e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-060.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-060.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-061",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1mTb17vhx0edJTRqBMy9hTpo_7vJWWE5r",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2492.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-061.webp",
-    "originalMime": "image/heif",
-    "contentHash": "b6e1a8e3982138cf37edb56e5632a04d0618a8a1e7d8bd47c4528af599001b2e",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-061.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-061.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-062",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1K-SCs6f-cHuTBpSnFNw89YaOma4yNS5g",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2476.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-062.webp",
-    "originalMime": "image/heif",
-    "contentHash": "33fc34f2aa18f83d7cefe4ed53ad200f26d653bca7c997741b30b8d5aaa2040f",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Fine hardware and aligned panels give this Playa interior its quiet character.",
-      "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-062.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-062.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-063",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1K4RVxNvIcD_hKVhlF8H6FRn6iUljay70",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2490.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-063.webp",
-    "originalMime": "image/heif",
-    "contentHash": "cf7a3f52d6710346876e32050070922608d0727d3d9caf731d6a98d9ac48851c",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A close study of the thresholds, doors and fitted pieces that complete the room.",
-      "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-063.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-063.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-064",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "17hc0hK8MNmoI5l4j0IiLq7Mk9qXD6Y6b",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2489.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-064.webp",
-    "originalMime": "image/heif",
-    "contentHash": "0d11319e66f0606dac57e7e911faee6b0af18f18991be06166991263d07ac455",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "Warm joinery and measured storage carry one continuous language through the space.",
-      "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-064.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-064.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-065",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1RGluHrxkK8qFT-ZUySCLmto7kVVKMn2H",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2483.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-065.webp",
-    "originalMime": "image/heif",
-    "contentHash": "7adc270064c416a0c0bce420e86aeaded2a1e22cd51282492e575bd34505e771",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-065.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-065.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-066",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1QJwZnkmFSmD9FrgEdeqyOqTMgKU_LyW8",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2482.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-066.webp",
-    "originalMime": "image/heif",
-    "contentHash": "4dc25605fc904ef351360fd45960fa7f3b7c6d3891edbb4857c275a68f52f02b",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-066.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-066.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-067",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1qzIrulPAJ_13_-WB8_ISsk_X9cjNwWh5",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2496.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-067.webp",
-    "originalMime": "image/heif",
-    "contentHash": "d1016805adccd8196c0ccd29e769bf586b2183877aba90fc2eb392327afec51f",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-067.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-067.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-068",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1rhJHSxSGN4DruuQps9dd19Lgw3mkJm7H",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2500.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-068.webp",
-    "originalMime": "image/heif",
-    "contentHash": "15ad05e60c3bc84e1de0b73282126af6cfa83f0095a04b4fea8d53296f3f5ce5",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-068.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-068.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-069",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1MtrcgFmHsMvf2vUCMk4wHz55I0E0sG4t",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2499.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-069.webp",
-    "originalMime": "image/heif",
-    "contentHash": "c720fdaffddb786786e3eb1a79658c6f37d15dfa9b6380aa6a08e5b987de74bb",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-069.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-069.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-070",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1YU3WPZ9Sgz1jW3ldgYdDe_ho5av77ToA",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2475.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-070.webp",
+    "driveFileId": "1bBGwXBoqa4duiZMEIireMD0Cqs5W-4Rx",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "6th.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-006.webp",
     "originalMime": "image/heif",
     "contentHash": "a8f56cf21ddf3b159cf4bf8740d4ad56685a2224308ce5255db50e13ed149048",
     "orientation": "portrait",
@@ -2800,23 +1264,23 @@
       "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-070.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-070.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-006.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-006.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-071",
+    "id": "playa-new-007",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1PVhZKKyZuj5uix1icTqsj5Wui6_SJYra",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2485.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-071.webp",
+    "driveFileId": "19v3qnMpLls0XSQsl_Q9gXoHjcKZymvYN",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "7th.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-007.webp",
     "originalMime": "image/heif",
-    "contentHash": "2e5fe5bf2005fc63eda4dae0b73ab2d330cb3f471189baf21d33393f6715715b",
+    "contentHash": "4dc25605fc904ef351360fd45960fa7f3b7c6d3891edbb4857c275a68f52f02b",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -2824,95 +1288,95 @@
       "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-071.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-071.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-007.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-007.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-072",
+    "id": "playa-new-008",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1OWDfk-B7_QLDyEOM8tyY9x1X0rxV3uUp",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2484.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-072.webp",
+    "driveFileId": "186T3vnICFGEDqZjxd8cEsM7jYQo2nsmE",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "8th.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-008.webp",
     "originalMime": "image/heif",
-    "contentHash": "be5632acc81f7849d334d6886a47ebb19afa5bcbddf604d8e4bdc7c9b66f55f7",
-    "orientation": "portrait",
+    "contentHash": "2bdbddff469f4a8c4578bba6fcca29f35aec9bfb5a96e08458dfced5236c1f0c",
+    "orientation": "landscape",
     "quality": "editorial",
     "alt": {
       "en": "Warm joinery and measured storage carry one continuous language through the space.",
       "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-072.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-072.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-008.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-008.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-073",
+    "id": "playa-new-009",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "13mj0sIl-c6GveKja2r7gCIRma82hrjfk",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2487.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-073.webp",
+    "driveFileId": "1v0P8XmLWC3vsNSHUq-O_-G5iNljYB20j",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "9th.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-009.webp",
     "originalMime": "image/heif",
-    "contentHash": "001353e2d9f929ba8cf64f08c87d62b314bceea9549a8053eb5312c739ce6673",
-    "orientation": "portrait",
+    "contentHash": "0c4710f71c679a590862f6d69df8970cb2594b5f1c527bfa4f44427dfcde6efb",
+    "orientation": "landscape",
     "quality": "editorial",
     "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
+      "en": "A Playa interior view with warm timber, clean lines and precise detailing.",
+      "ar": "منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-073.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-073.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-009.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-009.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-074",
+    "id": "playa-new-010",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "15fIElreRZ5xLIJ7VEmbgY_DH9pgOHWVz",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2488.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-074.webp",
+    "driveFileId": "13m4oDVYptnAvlvJi84LEytpnkumSSdvK",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "10.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-010.webp",
     "originalMime": "image/heif",
     "contentHash": "9d9dc33c2325d23c5aba49cc712b71541422ffe400a0f6fbf2c4a4d12934e0ee",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
+      "en": "A tailored Playa joinery composition showing measured storage and calm material rhythm.",
+      "ar": "تكوين نجارة مخصص من Playa يظهر التخزين المدروس وإيقاع الخامات الهادئ."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-074.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-074.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-010.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-010.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-075",
+    "id": "playa-new-011",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1toan_HTguZcW2elUQrrfmPEkWoMrjLUr",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2477.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-075.webp",
+    "driveFileId": "1nP5TgzGwFpq2pngyzRaYhyO1U4I9prBg",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "11.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-011.webp",
     "originalMime": "image/heif",
-    "contentHash": "17b2ea2b403eebf73328d04bffbb0dacbd842d8946d6d39941b1b9c1d8521e3c",
+    "contentHash": "a83f641dc32a1ebd8b9ddd7062bc93f67aa224c94d67f7c123c7b27354a79d94",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -2920,23 +1384,23 @@
       "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-075.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-075.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-011.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-011.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-076",
+    "id": "playa-new-012",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1AL80LXqQyc9pLxQNUvjIvLMSyQLcHI4Z",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2481.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-076.webp",
+    "driveFileId": "1P6eZZpaaUBCqSilyOixfhTIMHyLsk1MP",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "12.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-012.webp",
     "originalMime": "image/heif",
-    "contentHash": "d8ca7d37fefda93f15f6f9fe79ad43bacae5244d61596fa8c397fda8a2cfe2c6",
+    "contentHash": "29aa7a3b731eeb07af6275e645087569130bee6a3c54669e300c5844756cb99d",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -2944,23 +1408,23 @@
       "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-076.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-076.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-012.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-012.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-077",
+    "id": "playa-new-013",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1aYUcU1sIYBZlwb1xmKGN57Z2b7q8jYeZ",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2480.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-077.webp",
+    "driveFileId": "1DY4GCfGaWr5Fg6NlOM3mMk0wSJlPRl3a",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "13.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-013.webp",
     "originalMime": "image/heif",
-    "contentHash": "125c8c86cf7554eefadcf89eccfee38a504461276e2cb5b898b80018e1f7d494",
+    "contentHash": "adb37077e0b1b3c8feac10e8355897b8b338652b359ddfc8b3764d2fd46783d5",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -2968,23 +1432,23 @@
       "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-077.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-077.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-013.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-013.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-078",
+    "id": "playa-new-014",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1PyfwlGzqKR4qZB9VbbMLCGHuHsU94BMM",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2493.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-078.webp",
+    "driveFileId": "1CQXIfYa-nWrUW6kofjf8-barA0DGPXo1",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "14.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-014.webp",
     "originalMime": "image/heif",
-    "contentHash": "1d00d336eb46127d343ee0cfafe3a97701b26dcddd693326f072c23e7e03aab1",
+    "contentHash": "558b5b002b7bb055e869789b39c919f57397f35d164a0ba39c34d56867e4ee3e",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -2992,23 +1456,23 @@
       "ar": "تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-078.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-078.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-014.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-014.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-079",
+    "id": "playa-new-015",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1um740zKECPMKClwrB2pTlTKejVP5E_d6",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_2494.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-079.webp",
+    "driveFileId": "1Ax4tv0m0lEvbtoK3t--IGIJ_n71UsS7h",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "15.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-015.webp",
     "originalMime": "image/heif",
-    "contentHash": "ae455dee1a4a1bbc6fd0277aed50b0704e944c5e402814e69ceb90574a39fde1",
+    "contentHash": "bac3b04d68a3b8bfc145d409816876bc88d3caaa00d39285f28d0f6f613a2606",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -3016,23 +1480,23 @@
       "ar": "دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-079.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-079.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-015.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-015.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-080",
+    "id": "playa-new-016",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "1I8imJUBeBxsR88w4i3M3JuNL0-vtCsU5",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_6520.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-080.webp",
+    "driveFileId": "13Ml7-d08UuuTZi2PJE3z7VOZaHtccpmT",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "16.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-016.webp",
     "originalMime": "image/heif",
-    "contentHash": "37f48f47e8fbad6a5a22794eb18fd9efba05ab3ee61c4232de5c495544879024",
+    "contentHash": "b229de6e23f0b6c3d5b92c1dad6d2e58d72b5a6aaefb78d87b60ce6c64761c35",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
@@ -3040,128 +1504,32 @@
       "ar": "تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-080.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-080.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-016.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-016.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",
     "publishStatus": "public"
   },
   {
-    "id": "playa-drive-081",
+    "id": "playa-new-017",
     "projectSlug": "playa",
     "area": "other",
-    "driveFileId": "16h7H0WUPuwOR9dE5H6u6WtUNDWdylKl1",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_6519.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-081.webp",
+    "driveFileId": "1XJCcDSlB5RysBHAS7ILnLFaRqOyYWpi_",
+    "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    "sourceName": "17.heif",
+    "localSrc": "/drive/projects/selected/playa/playa-new-017.webp",
     "originalMime": "image/heif",
-    "contentHash": "6502e0c5400ec59b8db817f24af4b2a36141c16b49937b280bfa9c787995d793",
+    "contentHash": "e9183317f0ff603873bed93caedb81796a089db34250428dc7708c2c0eb0508c",
     "orientation": "portrait",
     "quality": "editorial",
     "alt": {
-      "en": "A Playa joinery detail with warm timber, clean lines and precise hardware.",
-      "ar": "تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة."
+      "en": "A Playa interior view with warm timber, clean lines and precise detailing.",
+      "ar": "منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة."
     },
     "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-081.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-081.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-082",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1LFkRkDFL5c4Z5oC-JrEAc1FLw_BpNk3p",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_6516.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-082.webp",
-    "originalMime": "image/heif",
-    "contentHash": "a9bed239cef2c53a6ffe2a3e8f1ca8b29b4be5a9806d26a52758f4b916771eb9",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A tailored storage composition showing the quiet precision of the Playa package.",
-      "ar": "تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-082.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-082.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-083",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1YL7cehdrLsO-ulMG1nsyV3E3QDBf2L1_",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_6521.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-083.webp",
-    "originalMime": "image/heif",
-    "contentHash": "3a0e36a8da6171da5d3934800c046315398bd8cd46c5f79e0a70a7562a3cc730",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A crafted doorway where material, proportion and movement meet.",
-      "ar": "مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-083.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-083.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-084",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1Ua-aLabtJakv9D3m5HsC9zylRgj8ciwa",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_6504.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-084.webp",
-    "originalMime": "image/heif",
-    "contentHash": "8dbb07b61cbd110bc69b02ad39a15c48504e6b8149a4b9d2528f0c1923714723",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A stair and joinery study built around clean thresholds and durable detail.",
-      "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-084.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-084.avif"
-    },
-    "authenticity": "verified-real",
-    "rights": "approved",
-    "publishStatus": "public"
-  },
-  {
-    "id": "playa-drive-085",
-    "projectSlug": "playa",
-    "area": "other",
-    "driveFileId": "1Zhe7WKarPMdcZ52XIS4x1-u7vGBFRafp",
-    "sourceFolderId": "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    "sourceName": "IMG_6502.HEIC",
-    "localSrc": "/drive/projects/selected/playa/playa-drive-085.webp",
-    "originalMime": "image/heif",
-    "contentHash": "a42130e231f5ec28151c6bf1167bf873d8509029993661a4563f342a2c3b9866",
-    "orientation": "portrait",
-    "quality": "editorial",
-    "alt": {
-      "en": "A considered interior view of timber surfaces, storage and soft natural light.",
-      "ar": "منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم."
-    },
-    "derived": {
-      "webp": "/drive/projects/selected/playa/playa-drive-085.webp",
-      "avif": "/drive/projects/selected/playa/playa-drive-085.avif"
+      "webp": "/drive/projects/selected/playa/playa-new-017.webp",
+      "avif": "/drive/projects/selected/playa/playa-new-017.avif"
     },
     "authenticity": "verified-real",
     "rights": "approved",

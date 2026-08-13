@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { DesignAwareLink } from "@/components/DesignAwareLink";
 import { JsonLd } from "@/components/JsonLd";
 import { ProjectAttribution } from "@/components/ProjectAttribution";
-import { capabilityLabel, getMedia, getProject, isLocale, locales, publishedProjects } from "@/lib/site-content";
+import { capabilityLabel, getMedia, getProject, isLocale, locales, publishedProjects, selectedProjects } from "@/lib/site-content";
 import { breadcrumbSchema, pageMetadata, projectSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -29,9 +29,11 @@ export default async function ProjectPage({
   if (!isLocale(locale)) notFound();
   const project = getProject(slug);
   if (!project || project.publication === "pending" || project.media.length === 0) notFound();
-  const index = publishedProjects.findIndex((item) => item.slug === slug);
-  const next = publishedProjects[(index + 1) % publishedProjects.length];
+  const navigationProjects = selectedProjects.some((item) => item.slug === slug) ? selectedProjects : publishedProjects;
+  const index = navigationProjects.findIndex((item) => item.slug === slug);
+  const next = navigationProjects[(index + 1) % navigationProjects.length];
   const hero = getMedia(project.media[0]);
+  const heroOrientation = hero.orientation;
 
   return <main className="project-detail subpage design-nocturne" data-design="nocturne">
     <JsonLd data={[
@@ -42,7 +44,7 @@ export default async function ProjectPage({
         { name: project.title[locale], path: `/projects/${slug}` },
       ]),
     ]} />
-    <header className="project-hero">
+    <header className={`project-hero project-hero--${heroOrientation}`}>
       <div className="project-hero-media"><Image unoptimized src={hero.src} alt={hero.alt[locale]} fill priority sizes="100vw" /></div>
       <div className="project-hero-copy"><p>{project.sectorLabel[locale]} / {project.location[locale]}</p><h1>{project.title[locale]}</h1><span>{project.client[locale]}</span><ProjectAttribution project={project} locale={locale} /></div>
     </header>
@@ -52,7 +54,11 @@ export default async function ProjectPage({
     </section>
     {project.verificationNote ? <aside className="verification-note"><span>!</span><p>{project.verificationNote[locale]}</p></aside> : null}
     <section className="editorial-gallery section-pad">
-      {project.media.map((mediaId, mediaIndex) => { const asset = getMedia(mediaId); const orientationClass = asset.orientation === "portrait" ? "portrait" : "landscape"; return <figure className={orientationClass} data-orientation={asset.orientation} key={`${mediaId}-${mediaIndex}`}><div><Image unoptimized src={asset.src} alt={asset.alt[locale]} fill sizes="(max-width: 800px) 100vw, 75vw" /></div><figcaption><span>{String(mediaIndex + 1).padStart(2, "0")} / {String(project.media.length).padStart(2, "0")}</span>{asset.alt[locale]}</figcaption></figure>; })}
+      {project.media.map((mediaId, mediaIndex) => {
+        const asset = getMedia(mediaId);
+        const orientation = asset.orientation;
+        return <figure className={`project-gallery-item project-gallery-item--${orientation}`} data-orientation={orientation} key={`${mediaId}-${mediaIndex}`}><div className="project-gallery-media"><Image unoptimized src={asset.src} alt={asset.alt[locale]} fill sizes="(max-width: 800px) 100vw, 75vw" /></div><figcaption><span>{String(mediaIndex + 1).padStart(2, "0")} / {String(project.media.length).padStart(2, "0")}</span>{asset.alt[locale]}</figcaption></figure>;
+      })}
     </section>
     <section className="project-delivery section-pad"><div><p className="eyebrow">{locale === "ar" ? "مسؤوليتنا" : "Our responsibility"}</p><h2>{project.outcome[locale]}</h2></div><div><ul>{project.responsibilities.map((item) => <li key={item.en}>{item[locale]}</li>)}</ul><ul>{project.materials.map((item) => <li key={item.en}>{item[locale]}</li>)}</ul></div></section>
     <DesignAwareLink className="next-project section-pad" href={`/${locale}/projects/${next.slug}`}><p>{locale === "ar" ? "المشروع التالي" : "Next project"}</p><h2>{next.title[locale]}</h2><span>↗</span></DesignAwareLink>

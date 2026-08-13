@@ -21,10 +21,11 @@ export function ProjectExplorer({ locale, compact = false }: { locale: Locale; c
       <div className="project-list">
         {visible.map((project, index) => {
           const asset = getMedia(project.media[0]);
+          const orientation = asset.orientation;
           return (
             <DesignAwareLink className="project-row" href={`/${locale}/projects/${project.slug}`} key={project.slug}>
               <span className="project-index">{String(index + 1).padStart(2, "0")}</span>
-              <div className="project-thumb"><Image unoptimized src={asset.src} alt={asset.alt[locale]} fill sizes="(max-width: 700px) 100vw, 36vw" /></div>
+              <div className={`project-thumb project-thumb--${orientation}`}><Image unoptimized src={asset.src} alt={asset.alt[locale]} fill sizes="(max-width: 700px) 100vw, 36vw" /></div>
               <div className="project-row-copy"><p>{project.sectorLabel[locale]}</p><h3>{project.title[locale]}</h3><span>{project.location[locale]} · {project.year}</span></div>
               <span className="project-arrow">↗</span>
             </DesignAwareLink>

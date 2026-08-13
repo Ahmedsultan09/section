@@ -74,10 +74,11 @@ export function ProjectStoryRail({ locale }: { locale: Locale }) {
       >
         {selectedProjects.map((project, index) => {
           const image = getMedia(project.media[0]);
+          const orientation = image.orientation;
           const named = project.clientVisibility === "approved";
           return (
-            <article className="story-card" key={project.slug} data-project-card data-index={index}>
-              <div className="story-card-media"><Image unoptimized src={image.src} alt={image.alt[locale]} fill sizes="(max-width: 760px) 86vw, 72vw" /></div>
+            <article className={`story-card story-card--${orientation}`} key={project.slug} data-project-card data-index={index}>
+              <div className={`story-card-media story-card-media--${orientation}`}><Image unoptimized src={image.src} alt={image.alt[locale]} fill sizes="(max-width: 760px) 86vw, 72vw" /></div>
               <div className="story-card-copy">
                 <p>{project.sectorLabel[locale]} / {project.location[locale]}</p>
                 <h3 className={named ? "named-client" : ""}>{named ? project.client[locale] : project.title[locale]}</h3>

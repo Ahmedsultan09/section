@@ -1,5 +1,4 @@
 import generatedSelectedProjectAssets from "./generated-selected-project-assets.json";
-import { playaCoverMedia, playaLinkedMedia } from "./playa-linked-media";
 import { sodicLinkedMediaIds } from "./sodic-linked-media";
 import type { CapabilitySlug, MediaAsset, Project, ProjectArea } from "./site-types";
 
@@ -10,7 +9,7 @@ export const selectedProjectSourceFolders = [
   { order: 2, slug: "swan-lake", title: "2-SWANLAKE", sourceFolderId: "1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR", publishStatus: "public" as const },
   { order: 3, slug: "sodic-villette", title: "Sodic vilette mai saad new folder", sourceFolderId: "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH", publishStatus: "public" as const },
   { order: 4, slug: "new-giza", title: "4-NEW GIZA mai saad", sourceFolderId: "1NmaXGLx8SRXereWz90DmS8YRh2I5J5cd", publishStatus: "pending" as const },
-  { order: 5, slug: "playa", title: "5-PLAYA with Amaken", sourceFolderId: "1256mAU_FoUKShxofhCe8-pQEYja11tMr", publishStatus: "public" as const },
+  { order: 5, slug: "playa", title: "Playa replacement source", sourceFolderId: "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ", publishStatus: "public" as const },
   { order: 6, slug: "cfc-office", title: "6-CFC office. (Commercial)", sourceFolderId: "1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y", publishStatus: "public" as const },
 ] as const;
 
@@ -35,8 +34,6 @@ function capabilitiesFor(projectSlug: string, area: ProjectArea): CapabilitySlug
 const suppressedDuplicateMediaIds = new Set<string>();
 
 export const selectedProjectMedia: MediaAsset[] = [
-  playaCoverMedia,
-  ...playaLinkedMedia,
   ...generatedSelectedProjectAssets.map((asset): MediaAsset => {
     const area = asset.area as ProjectArea;
     return {
@@ -165,8 +162,8 @@ export const selectedProjectRecords: Project[] = [
     capabilities: ["dressing-rooms", "doors", "wall-cladding", "custom-units"],
     media: selectedProjectMediaIds("playa"),
     mediaAreas: selectedProjectAreas("playa"),
-    sourceFolderId: "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-    sourceFolderTitle: "5-PLAYA with Amaken + linked photo set + cover reference",
+    sourceFolderId: "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+    sourceFolderTitle: "Playa replacement source",
     collaboratorIds: ["amaken"],
   },
   {
