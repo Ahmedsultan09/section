@@ -1130,7 +1130,7 @@
   {
     "id": "playa-new-001",
     "projectSlug": "playa",
-    "area": "cover",
+    "area": "other",
     "driveFileId": "1_7wC12TBZIn3tXBjXdm_nqlb3X3mYwfT",
     "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
     "sourceName": "1st.png",
@@ -1138,7 +1138,7 @@
     "originalMime": "image/png",
     "contentHash": "7c26c892e8f4c90ea66023fa86514b1c0e497d993d649cd24bb003333b6c0f8f",
     "orientation": "portrait",
-    "quality": "hero",
+    "quality": "editorial",
     "alt": {
       "en": "A Playa interior view with warm timber, clean lines and precise detailing.",
       "ar": "منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة."
@@ -1202,7 +1202,7 @@
   {
     "id": "playa-new-004",
     "projectSlug": "playa",
-    "area": "other",
+    "area": "cover",
     "driveFileId": "1tzXrFucZBs3crezGRP00t4YNd60QhWQu",
     "sourceFolderId": "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
     "sourceName": "4th.heif",
@@ -1210,7 +1210,7 @@
     "originalMime": "image/heif",
     "contentHash": "dbdb053a38151cc1c1db5d22cc5177cfa007692ec6cb129682e7e970f86d1239",
     "orientation": "portrait",
-    "quality": "editorial",
+    "quality": "hero",
     "alt": {
       "en": "A stair and joinery study built around clean thresholds and durable detail.",
       "ar": "دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة."

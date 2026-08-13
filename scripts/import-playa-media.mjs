@@ -29,6 +29,7 @@ const sourceFiles = [
   ["13Ml7-d08UuuTZi2PJE3z7VOZaHtccpmT", "16.heif", "image/heif"],
   ["1XJCcDSlB5RysBHAS7ILnLFaRqOyYWpi_", "17.heif", "image/heif"],
 ];
+const coverOrder = 4;
 
 const captions = [
   ["A Playa interior view with warm timber, clean lines and precise detailing.", "منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة."],
@@ -69,7 +70,7 @@ for (const [index, [driveFileId, sourceName, originalMime]] of sourceFiles.entri
   imported.push({
     id,
     projectSlug: "playa",
-    area: order === 1 ? "cover" : "other",
+    area: order === coverOrder ? "cover" : "other",
     driveFileId,
     sourceFolderId,
     sourceName,
@@ -77,7 +78,7 @@ for (const [index, [driveFileId, sourceName, originalMime]] of sourceFiles.entri
     originalMime,
     contentHash,
     orientation,
-    quality: order === 1 ? "hero" : "editorial",
+    quality: order === coverOrder ? "hero" : "editorial",
     alt: { en, ar },
     derived: {
       webp: `/drive/projects/selected/playa/${id}.webp`,

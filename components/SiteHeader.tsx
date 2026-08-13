@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useRef, type MouseEvent } from "react";
 import type { Locale } from "@/lib/site-types";
 import { copy } from "@/lib/site-content";
 import { LocaleSwitch } from "./LocaleSwitch";
@@ -16,6 +19,15 @@ export function Wordmark({ tone = "auto" }: { tone?: "auto" | "dark" | "light" }
 
 export function SiteHeader({ locale }: { locale: Locale }) {
   const nav = copy[locale].nav;
+  const mobileMenuRef = useRef<HTMLDetailsElement>(null);
+
+  function closeMobileMenu(event: MouseEvent<HTMLDetailsElement>) {
+    const target = event.target;
+    if (target instanceof Element && target.closest("a")) {
+      mobileMenuRef.current?.removeAttribute("open");
+    }
+  }
+
   return (
     <>
       <header className="site-header">
@@ -31,7 +43,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           <DesignAwareLink className="header-cta" href={`/${locale}/inquiry`}>{nav.inquiry}<span>↗</span></DesignAwareLink>
         </div>
       </header>
-      <details className="mobile-menu">
+      <details ref={mobileMenuRef} className="mobile-menu" onClick={closeMobileMenu}>
         <summary aria-label={locale === "ar" ? "فتح القائمة" : "Open menu"}><i /><i /></summary>
         <div className="mobile-nav-overlay">
           <div className="mobile-nav-overlay-header">

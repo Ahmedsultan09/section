@@ -112,6 +112,8 @@ test("keeps visitor-facing source free of commerce and developer-tool language",
 
   assert.doesNotMatch(source, /\b(add to cart|checkout|buy now|shopping cart|codex|developer kit)\b/i);
   assert.match(source, /inquiry|Discuss|ناقش/);
+  assert.match(source, /mobileMenuRef/);
+  assert.match(source, /removeAttribute\("open"\)/);
 });
 
 test("implements the four-step validated inquiry pipeline", async () => {
@@ -468,6 +470,9 @@ test("keeps the numbered selected-project Drive catalog traceable", async () => 
     "17.heif",
   ]);
   assert.ok(playaAssets.every((asset) => asset.sourceFolderId === "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ"));
+  const playaCover = playaAssets.find((asset) => asset.area === "cover");
+  assert.equal(playaCover?.sourceName, "4th.heif");
+  assert.equal(playaCover?.driveFileId, "1tzXrFucZBs3crezGRP00t4YNd60QhWQu");
   assert.match(rail, /selectedProjects\.map/);
   assert.doesNotMatch(rail, /projects\.map/);
   assert.match(content, /export const selectedProjects = selectedProjectSlugs/);
