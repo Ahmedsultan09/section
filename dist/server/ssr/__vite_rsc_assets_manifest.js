@@ -152,19 +152,19 @@ export default {
     "app/admin-dashboard/login/page.tsx": {
       "js": [],
       "css": [
-        "/assets/index-BWhTGJcO.css"
+        "/assets/index-D-ZqY-ib.css"
       ]
     },
     "app/admin-dashboard/page.tsx": {
       "js": [],
       "css": [
-        "/assets/index-BWhTGJcO.css"
+        "/assets/index-D-ZqY-ib.css"
       ]
     },
     "app/layout.tsx": {
       "js": [],
       "css": [
-        "/assets/index-BWhTGJcO.css"
+        "/assets/index-D-ZqY-ib.css"
       ]
     }
   }

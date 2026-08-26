@@ -377,6 +377,8 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
   assert.match(contacts, /https:\/\/wa\.me\/201272333832/);
   assert.match(css, /@keyframes partner-run-reverse/);
   assert.match(css, /mask: url\("\/icons\/instagram\.svg"\)/);
+  assert.match(css, /\.story-card-copy h3 \{[\s\S]*margin: clamp\(64px, 6vw, 82px\) 0 24px;/);
+  assert.doesNotMatch(css, /\.story-card-copy h3 \{[\s\S]{0,180}margin: auto 0 24px;/);
   assert.match(css, /\.material-brand-marquee \.partner-logo \{/);
   assert.match(css, /\.showroom-hero-established \{/);
   assert.doesNotMatch(css, /\.showroom-about-established/);

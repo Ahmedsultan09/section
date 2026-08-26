@@ -1398,7 +1398,7 @@ body:has(main.design-immersive) .design-switcher a.active { color: #0a0a07; back
 .story-card-copy h3 {
   max-width: 100%;
   min-width: 0;
-  margin: auto 0 24px;
+  margin: clamp(64px, 6vw, 82px) 0 24px;
   font: 500 clamp(38px, 5vw, 80px)/.88 var(--sans);
   letter-spacing: -.065em;
   text-wrap: balance;
@@ -1673,6 +1673,7 @@ body:has(main.design-nocturne) .design-switcher { color: #fff; border-color: rgb
   .story-card { flex-basis: 86vw; }
   .story-card-media { min-height: 105vw; }
   .story-card-copy { min-height: 310px; }
+  .story-card-copy h3 { margin-top: 48px; }
   .story-card-copy h3.named-client { max-width: 100%; font-size: clamp(48px, 14vw, 72px); letter-spacing: -.075em; white-space: nowrap; text-wrap: nowrap; overflow-wrap: normal; }
   .story-rail-end { width: max(var(--gutter), 14vw); }
   .collection-pieces > header { display: block; }
