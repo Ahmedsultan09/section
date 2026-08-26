@@ -6,6 +6,7 @@ import type { Locale } from "@/lib/site-types";
 import { copy } from "@/lib/site-content";
 import { LocaleSwitch } from "./LocaleSwitch";
 import { DesignAwareLink } from "./DesignAwareLink";
+import { InstagramIcon } from "./InstagramIcon";
 import { siteContact } from "@/lib/drive-assets";
 
 export function Wordmark({ tone = "auto" }: { tone?: "auto" | "dark" | "light" }) {
@@ -60,7 +61,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           <section className="mobile-nav-contact" aria-label={locale === "ar" ? "تواصل معنا" : "Find us"}>
             <p>{locale === "ar" ? "تواصل معنا" : "Find us"}</p>
             <a href={siteContact.phoneHref}><span aria-hidden="true">☎</span>{siteContact.phoneDisplay}</a>
-            <a href={siteContact.instagramHref} target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span>{siteContact.instagramLabel}</a>
+            <a href={siteContact.instagramHref} target="_blank" rel="noreferrer"><InstagramIcon />{siteContact.instagramLabel}</a>
           </section>
         </div>
       </details>

@@ -256,6 +256,10 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
   assert.ok(showroom.indexOf('folderName: "Dressing 3') < showroom.indexOf('folderName: "Dressing 4'));
   assert.equal((showroom.match(/kind: "collaborator"/g) ?? []).length, 9);
   assert.match(content, /client: \{ en: "SODIC"/);
+  assert.match(content, /slug: "sodic-collaboration", title: \{ en: "SODIC", ar: "سوديك" \}/);
+  assert.doesNotMatch(content, /SODIC Collaboration|تعاون مع سوديك/);
+  assert.match(content, /outcome: \{ en: "Selected SODIC work shown/);
+  assert.doesNotMatch(content, /Selected collaboration shown/);
   assert.match(content, /collaboratorIds: \["ahmed-elsheref"\]/);
   assert.match(content, /media: sodicLinkedMediaIds/);
   assert.match(content, /slug: "hyde-park"/);
@@ -327,7 +331,7 @@ test("keeps Drive media, SODIC attribution and partner marks governed", async ()
 });
 
 test("keeps Nocturne revisions isolated and ordered", async () => {
-  const [home, categoryStack, categoryPage, narrative, layout, materials, logoMarquee, footer, contacts, css] = await Promise.all([
+  const [home, categoryStack, categoryPage, narrative, layout, materials, logoMarquee, header, footer, instagramIcon, instagramAsset, contacts, css] = await Promise.all([
     read("components/ShowroomHome.tsx"),
     read("components/NocturneCategoryStack.tsx"),
     read("app/[locale]/collections/[slug]/page.tsx"),
@@ -335,7 +339,10 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
     read("app/layout.tsx"),
     read("components/MaterialBrandMarquee.tsx"),
     read("components/LogoMarquee.tsx"),
+    read("components/SiteHeader.tsx"),
     read("components/SiteFooter.tsx"),
+    read("components/InstagramIcon.tsx"),
+    read("public/icons/instagram.svg"),
     read("lib/drive-assets.ts"),
     read("app/globals.css"),
   ]);
@@ -361,9 +368,15 @@ test("keeps Nocturne revisions isolated and ordered", async () => {
   assert.match(logoMarquee, /partner-logo-tooltip/);
   assert.doesNotMatch(home, /Selected work with/);
   assert.doesNotMatch(home, /showroom-hero-proof/);
-  assert.match(footer, /SocialIcon kind="whatsapp"/);
+  assert.match(footer, /<WhatsAppIcon \/>/);
+  assert.match(footer, /<InstagramIcon \/>/);
+  assert.match(header, /<InstagramIcon \/>/);
+  assert.match(instagramIcon, /instagram-icon/);
+  assert.match(instagramAsset, /viewBox="0 0 24 24"/);
+  assert.doesNotMatch(header, /◎/);
   assert.match(contacts, /https:\/\/wa\.me\/201272333832/);
   assert.match(css, /@keyframes partner-run-reverse/);
+  assert.match(css, /mask: url\("\/icons\/instagram\.svg"\)/);
   assert.match(css, /\.material-brand-marquee \.partner-logo \{/);
   assert.match(css, /\.showroom-hero-established \{/);
   assert.doesNotMatch(css, /\.showroom-about-established/);
