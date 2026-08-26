@@ -1,4 +1,4 @@
-globalThis.__VINEXT_LAZY_CHUNKS__ = ["assets/DesignAwareLink-C4T-D8Jn.js","assets/link-BkWxwwcz.js","assets/site-content-BdzrLmUE.js","assets/LeadDetailsDialog-K-vaR086.js","assets/AdaptiveWebGL-Dn_kC25i.js","assets/InquiryForm-B6TrZjqt.js","assets/LocaleSwitch-whNgmc9e.js","assets/ManufacturingLine-gG-oEwd2.js","assets/NocturneCategoryStack-B0vqhkbs.js","assets/ProjectExplorer-C2HgDLvW.js","assets/ProjectStoryRail-C-TRFa2w.js","assets/ShowroomProcess-CWfUEi2K.js","assets/three.module-BHduyG5K.js","assets/image-Cm3oQkH9.js","assets/layout-segment-context-BABUewVu.js","assets/router-BYP3C4SU.js"];
+globalThis.__VINEXT_LAZY_CHUNKS__ = ["assets/DesignAwareLink-CKlPJx1v.js","assets/link-Cm2uNlzB.js","assets/site-content-DyrBoXu3.js","assets/LeadDetailsDialog-K-vaR086.js","assets/AdaptiveWebGL-BNUhgrGL.js","assets/InquiryForm-BSZ2JWLR.js","assets/ManufacturingLine-DKWvxjVG.js","assets/NocturneCategoryStack-Cr9Dp00C.js","assets/ProjectExplorer-BreTWT5U.js","assets/ProjectStoryRail-D3wdQDv8.js","assets/ShowroomProcess-BjBaE3_T.js","assets/SiteHeader-CGejpPkX.js","assets/three.module-BHduyG5K.js","assets/image-DVmnoWzk.js","assets/layout-segment-context-BoOHDhOt.js","assets/router-DXGgaL5G.js"];
 import * as __viteRscAsyncHooks from "node:async_hooks";
 import { AsyncLocalStorage as AsyncLocalStorage$1 } from "node:async_hooks";
 import assetsManifest from "./__vite_rsc_assets_manifest.js";
@@ -50,7 +50,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 }) : target, mod));
 var __toCommonJS = (mod) => __hasOwnProp.call(mod, "module.exports") ? mod["module.exports"] : __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 //#endregion
-//#region node_modules/vinext/dist/shims/internal/als-registry.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/internal/als-registry.js
 /**
 * Shared helper for registering AsyncLocalStorage instances on `globalThis`
 * via `Symbol.for(...)` so that they survive multiple module instances.
@@ -101,7 +101,7 @@ function getOrCreateAls(key) {
 	return _g$8[sym] ??= new AsyncLocalStorage$1();
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/unified-request-context.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/unified-request-context.js
 var _REQUEST_CONTEXT_ALS_KEY = Symbol.for("vinext.requestContext.als");
 var _g$7 = globalThis;
 var _als$4 = getOrCreateAls("vinext.unifiedRequestContext.als");
@@ -178,7 +178,7 @@ function isInsideUnifiedScope() {
 	return _als$4.getStore() != null;
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/request-context.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/request-context.js
 /**
 * Request ExecutionContext — AsyncLocalStorage-backed accessor.
 *
@@ -220,7 +220,7 @@ function getRequestExecutionContext() {
 	return _als$3.getStore() ?? null;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/http-error-responses.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/http-error-responses.js
 /**
 * Build a 400 Bad Request plain-text response.
 *
@@ -294,7 +294,7 @@ function internalServerErrorResponse(message, init) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/utils/base-path.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/utils/base-path.js
 /**
 * Shared basePath helpers.
 *
@@ -329,7 +329,7 @@ function removeTrailingSlash(pathname) {
 	return end === 0 ? "/" : pathname.slice(0, end);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/headers.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/headers.js
 /**
 * Internal HTTP header name constants used throughout vinext.
 *
@@ -415,7 +415,7 @@ var INTERNAL_HEADERS = [
 	"x-next-resume-state-length"
 ];
 //#endregion
-//#region node_modules/vinext/dist/server/middleware-request-headers.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/middleware-request-headers.js
 var CREDENTIAL_REQUEST_HEADERS = ["authorization", "cookie"];
 function getMiddlewareHeaderValue(source, key) {
 	if (source instanceof Headers) return source.get(key);
@@ -478,7 +478,7 @@ function shouldKeepMiddlewareHeader(key) {
 	return key === "x-middleware-override-headers" || key === "x-middleware-set-cookie" || key.startsWith("x-middleware-request-");
 }
 //#endregion
-//#region node_modules/vinext/dist/config/config-matchers.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/config/config-matchers.js
 /**
 * Cache for compiled regex patterns in matchConfigPattern.
 *
@@ -1236,7 +1236,7 @@ function matchHeaders(pathname, headers, ctx) {
 	return result;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/request-pipeline.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/request-pipeline.js
 /**
 * Shared request pipeline utilities.
 *
@@ -1598,7 +1598,7 @@ function cloneRequestWithHeaders(request, headers) {
 	return cloned;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/worker-utils.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/worker-utils.js
 /**
 * Shared utilities for Cloudflare Worker entries.
 *
@@ -1696,7 +1696,7 @@ async function resolveStaticAssetSignal(signalResponse, options) {
 	return mergeHeaders(assetResponse, extraHeaders, assetResponse.ok && signalResponse.status !== 200 ? signalResponse.status : void 0);
 }
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/dist-rz-Bnebz.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_react-dom@19.2.6_react@19.2.6__react-server-dom-webpack@19.2._86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/dist-rz-Bnebz.js
 function tinyassert(value, message) {
 	if (value) return;
 	if (message instanceof Error) throw message;
@@ -1724,7 +1724,7 @@ function memoize(f, options) {
 	});
 }
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/shared-BViDMJTQ.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_react-dom@19.2.6_react@19.2.6__react-server-dom-webpack@19.2._86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/shared-BViDMJTQ.js
 var SERVER_REFERENCE_PREFIX = "$$server:";
 var SERVER_DECODE_CLIENT_PREFIX = "$$decode-client:";
 function removeReferenceCacheTag(id) {
@@ -1740,7 +1740,7 @@ function setInternalRequire() {
 	};
 }
 //#endregion
-//#region node_modules/react/cjs/react.react-server.production.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react.react-server.production.js
 /**
 * @license React
 * react.react-server.production.js
@@ -2014,12 +2014,12 @@ var require_react_react_server_production = /* @__PURE__ */ __commonJSMin(((expo
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/react/react.react-server.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/react.react-server.js
 var require_react_react_server = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_react_server_production();
 }));
 //#endregion
-//#region node_modules/react-dom/cjs/react-dom.react-server.production.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/cjs/react-dom.react-server.production.js
 /**
 * @license React
 * react-dom.react-server.production.js
@@ -2117,12 +2117,12 @@ var require_react_dom_react_server_production = /* @__PURE__ */ __commonJSMin(((
 	exports.version = "19.2.6";
 }));
 //#endregion
-//#region node_modules/react-dom/react-dom.react-server.js
+//#region node_modules/.pnpm/react-dom@19.2.6_react@19.2.6/node_modules/react-dom/react-dom.react-server.js
 var require_react_dom_react_server = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_dom_react_server_production();
 }));
 //#endregion
-//#region node_modules/react-server-dom-webpack/cjs/react-server-dom-webpack-server.edge.production.js
+//#region node_modules/.pnpm/react-server-dom-webpack@19.2.6_react-dom@19.2.6_react@19.2.6__react@19.2.6_webpack@5.109.0_esbuild@0.28.1_/node_modules/react-server-dom-webpack/cjs/react-server-dom-webpack-server.edge.production.js
 var require_react_server_dom_webpack_server_edge_production = /* @__PURE__ */ __commonJSMin(((exports) => {
 	globalThis.AsyncLocalStorage = __viteRscAsyncHooks.AsyncLocalStorage;
 	/**
@@ -4191,7 +4191,7 @@ var require_react_server_dom_webpack_server_edge_production = /* @__PURE__ */ __
 	};
 }));
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/core/rsc.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_react-dom@19.2.6_react@19.2.6__react-server-dom-webpack@19.2._86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/core/rsc.js
 var import_server_edge = /* @__PURE__ */ __toESM((/* @__PURE__ */ __commonJSMin(((exports) => {
 	var s = require_react_server_dom_webpack_server_edge_production();
 	exports.renderToReadableStream = s.renderToReadableStream;
@@ -4271,7 +4271,7 @@ function createClientManifest(options) {
 	} });
 }
 //#endregion
-//#region node_modules/react-server-dom-webpack/cjs/react-server-dom-webpack-client.edge.production.js
+//#region node_modules/.pnpm/react-server-dom-webpack@19.2.6_react-dom@19.2.6_react@19.2.6__react@19.2.6_webpack@5.109.0_esbuild@0.28.1_/node_modules/react-server-dom-webpack/cjs/react-server-dom-webpack-client.edge.production.js
 /**
 * @license React
 * react-server-dom-webpack-client.edge.production.js
@@ -4488,7 +4488,7 @@ var createTemporaryReferenceSet = import_server_edge.createTemporaryReferenceSet
 //#region \0virtual:vite-rsc/server-references
 var server_references_default = {};
 //#endregion
-//#region node_modules/@vitejs/plugin-rsc/dist/rsc.js
+//#region node_modules/.pnpm/@vitejs+plugin-rsc@0.5.26_react-dom@19.2.6_react@19.2.6__react-server-dom-webpack@19.2._86d7b6ba0afebb6f324327ea95631a1f/node_modules/@vitejs/plugin-rsc/dist/rsc.js
 initialize();
 function initialize() {
 	setRequireModule({ load: async (id) => {
@@ -4513,7 +4513,7 @@ function renderToReadableStream$1(data, options, extraOptions) {
 	} });
 }
 //#endregion
-//#region node_modules/vinext/dist/server/rsc-stream-hints.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/rsc-stream-hints.js
 var REACT_FLIGHT_STYLESHEET_PRELOAD_HINT = /(\d*:HL\[.*?),"stylesheet"(\]|,)/g;
 /**
 * React Flight emits HL hints with "stylesheet" for CSS preloads, but the
@@ -4548,7 +4548,7 @@ function createRscRenderer(render) {
 	return (model, options) => normalizeReactFlightPreloadHints(render(model, options));
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/readonly-url-search-params.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/readonly-url-search-params.js
 var import_react_react_server = /* @__PURE__ */ __toESM(require_react_react_server(), 1);
 var ReadonlyURLSearchParamsError = class extends Error {
 	constructor() {
@@ -4574,7 +4574,7 @@ var ReadonlyURLSearchParams = class extends URLSearchParams {
 	}
 };
 //#endregion
-//#region node_modules/vinext/dist/shims/url-safety.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/url-safety.js
 /**
 * Shared URL safety utilities for Link, Form, and navigation shims.
 *
@@ -4616,7 +4616,7 @@ function assertSafeNavigationUrl(url) {
 	if (isDangerousScheme(url)) throw new Error(DANGEROUS_URL_BLOCK_MESSAGE);
 }
 //#endregion
-//#region node_modules/vinext/dist/utils/hash.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/utils/hash.js
 /**
 * FNV-1a hash producing a 64-bit result (two 32-bit rounds with different seeds).
 * Used for deterministic key generation where collisions must be rare.
@@ -4635,7 +4635,7 @@ function fnv1a64(input) {
 	return h1.toString(36) + h2.toString(36);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/artifact-compatibility.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/artifact-compatibility.js
 function createArtifactCompatibilityEnvelope(input = {}) {
 	return {
 		schemaVersion: 1,
@@ -4677,7 +4677,7 @@ function parseArtifactCompatibilityEnvelope(value) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-elements-wire.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-elements-wire.js
 var APP_INTERCEPTION_SEPARATOR = "\0";
 var APP_ARTIFACT_COMPATIBILITY_KEY = "__artifactCompatibility";
 var APP_INTERCEPTION_CONTEXT_KEY = "__interceptionContext";
@@ -4893,7 +4893,7 @@ var AppElementsWire = {
 	withLayoutFlags
 };
 //#endregion
-//#region node_modules/vinext/dist/server/app-mounted-slots-header.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-mounted-slots-header.js
 /**
 * Normalize the `x-vinext-mounted-slots` header for request handling and cache keying.
 *
@@ -4911,7 +4911,7 @@ function normalizeMountedSlotsHeader(raw) {
 	return Array.from(new Set(raw.split(/\s+/).filter(Boolean))).sort().join(" ") || null;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-render-mode.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-render-mode.js
 var APP_RSC_RENDER_MODE_NAVIGATION = "navigation";
 var APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI = "refresh-preserve-ui";
 var APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI = "action-rerender-preserve-ui";
@@ -4929,7 +4929,7 @@ function parseAppRscRenderMode(value) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-cache-busting.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-cache-busting.js
 /**
 * RSC cache-busting hashes cover the headers that make a `.rsc` payload vary.
 * Client-side variant headers must survive transit through CDNs and reverse
@@ -5069,7 +5069,7 @@ async function resolveInvalidRscCacheBustingRequest(options) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/navigation.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/navigation.js
 var _SERVER_INSERTED_HTML_CTX_KEY = Symbol.for("vinext.serverInsertedHTMLContext");
 function getServerInsertedHTMLContext() {
 	if (typeof import_react_react_server.createContext !== "function") return null;
@@ -5301,7 +5301,7 @@ if (!isServer) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/client-hook-error.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/client-hook-error.js
 /**
 * Shared error helper for client-only hooks called in Server Components.
 *
@@ -5314,7 +5314,7 @@ function buildClientHookErrorMessage(hookName) {
 	return `${hookName} only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component`;
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/internal/cookie-serialize.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/internal/cookie-serialize.js
 /**
 * RFC 6265 §4.1.1: cookie-name is a token (RFC 2616 §2.2).
 * Allowed: any visible ASCII (0x21-0x7E) except separators: ()<>@,;:\"/[]?={}
@@ -5362,7 +5362,7 @@ function serializeSetCookie(name, value, options) {
 	return parts.join("; ");
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/internal/parse-cookie-header.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/internal/parse-cookie-header.js
 /**
 * Port of the current Next.js/@edge-runtime request cookie parser semantics.
 *
@@ -5391,7 +5391,7 @@ function parseCookieHeader(cookieHeader) {
 	return cookies;
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/headers.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/headers.js
 var _FALLBACK_KEY$4 = Symbol.for("vinext.nextHeadersShim.fallback");
 var _g$6 = globalThis;
 var _als$2 = getOrCreateAls("vinext.nextHeadersShim.als");
@@ -5786,7 +5786,7 @@ function getAndClearPendingCookies() {
 var DRAFT_MODE_COOKIE = "__prerender_bypass";
 (/* @__PURE__ */ new Date(0)).toUTCString();
 function getDraftSecret() {
-	return "d37ef197-0455-4681-8997-bf7b6024f040";
+	return "f8a9fbbd-d49d-4d2d-b4ce-5e756056390a";
 }
 /**
 * Get any Set-Cookie header generated by draftMode().enable()/disable().
@@ -5901,7 +5901,7 @@ var RequestCookies$1 = class {
 	}
 };
 //#endregion
-//#region node_modules/vinext/dist/shims/thenable-params.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/thenable-params.js
 function hasParamProperty(obj, prop) {
 	return Object.prototype.hasOwnProperty.call(obj, prop);
 }
@@ -5955,7 +5955,7 @@ function makeThenableParams(obj) {
 	});
 }
 //#endregion
-//#region node_modules/react/cjs/react-jsx-runtime.react-server.production.js
+//#region node_modules/.pnpm/react@19.2.6/node_modules/react/cjs/react-jsx-runtime.react-server.production.js
 /**
 * @license React
 * react-jsx-runtime.react-server.production.js
@@ -5990,7 +5990,7 @@ var require_react_jsx_runtime_react_server_production = /* @__PURE__ */ __common
 	exports.jsxs = jsxProd;
 }));
 //#endregion
-//#region node_modules/vinext/dist/shims/metadata.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/metadata.js
 var import_jsx_runtime_react_server = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_jsx_runtime_react_server_production();
 })))();
@@ -6652,7 +6652,7 @@ function MetadataHead({ metadata }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(import_jsx_runtime_react_server.Fragment, { children: elements });
 }
 //#endregion
-//#region node_modules/vinext/dist/utils/encode-cache-tag.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/utils/encode-cache-tag.js
 /**
 * Cache-tag canonicalisation.
 *
@@ -6687,7 +6687,7 @@ function encodeCacheTags(tags) {
 	return tags.map(encodeCacheTag);
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/internal/work-unit-async-storage.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/internal/work-unit-async-storage.js
 /**
 * Shim for next/dist/server/app-render/work-unit-async-storage.external
 * and next/dist/client/components/request-async-storage.external
@@ -6701,7 +6701,7 @@ function encodeCacheTags(tags) {
 */
 var workUnitAsyncStorage = new AsyncLocalStorage$1();
 //#endregion
-//#region node_modules/vinext/dist/utils/cache-control-metadata.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/utils/cache-control-metadata.js
 function isUnknownRecord(value) {
 	return value !== null && typeof value === "object" && !Array.isArray(value);
 }
@@ -6714,7 +6714,7 @@ function readCacheControlNumberField(ctx, field) {
 	return typeof value === "number" ? value : void 0;
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/cache.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/cache.js
 function readStringArrayField(ctx, field) {
 	const value = ctx?.[field];
 	if (!Array.isArray(value)) return [];
@@ -6849,7 +6849,7 @@ function _consumeRequestScopedCacheLife() {
 }
 getOrCreateAls("vinext.unstableCache.als");
 //#endregion
-//#region node_modules/vinext/dist/shims/fetch-cache.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/fetch-cache.js
 /**
 * Extended fetch() with Next.js caching semantics.
 *
@@ -7450,7 +7450,7 @@ function ensureFetchPatch() {
 	_ensurePatchInstalled();
 }
 //#endregion
-//#region node_modules/vinext/dist/server/csp.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/csp.js
 var ESCAPE_REGEX = /[&><\u2028\u2029]/;
 function matchesDirectiveName(directive, name) {
 	return directive === name || directive.startsWith(`${name} `);
@@ -7476,7 +7476,7 @@ function getScriptNonceFromHeaderSources(...headersList) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/middleware-response-headers.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/middleware-response-headers.js
 var ADDITIVE_RESPONSE_HEADER_NAMES = new Set(["set-cookie", "vary"]);
 function mergeVaryHeader(target, value) {
 	const existing = target.get("Vary");
@@ -7517,7 +7517,7 @@ function mergeMiddlewareResponseHeaders(target, middlewareHeaders) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/routing/utils.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/routing/utils.js
 var PATH_DELIMITER_REGEX = /([/#?\\]|%(2f|23|3f|5c))/gi;
 function encodePathDelimiters(segment) {
 	return segment.replace(PATH_DELIMITER_REGEX, (char) => encodeURIComponent(char));
@@ -7574,7 +7574,7 @@ function decodeMatchedParams(params) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/server.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/server.js
 var NextRequest = class extends Request {
 	_nextUrl;
 	_url;
@@ -7872,7 +7872,7 @@ var NextURL = class NextURL {
 	* Matches the Next.js API: `request.nextUrl.buildId`.
 	*/
 	get buildId() {
-		return "32e58dcb-4894-48a2-9fd2-1d85262c5b0e";
+		return "6464e407-022a-4c1c-8390-6df22749d1ee";
 	}
 };
 var RequestCookies = class {
@@ -8127,7 +8127,7 @@ var NextFetchEvent = class {
 };
 globalThis.URLPattern;
 //#endregion
-//#region node_modules/vinext/dist/server/normalize-path.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/normalize-path.js
 /**
 * Path normalization utility for request handling.
 *
@@ -8160,7 +8160,7 @@ function normalizePath(pathname) {
 	return "/" + resolved.join("/");
 }
 //#endregion
-//#region node_modules/vinext/dist/server/middleware-matcher.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/middleware-matcher.js
 var EMPTY_MIDDLEWARE_REQUEST_CONTEXT = {
 	headers: new Headers(),
 	cookies: {},
@@ -8257,7 +8257,7 @@ function compileMatcherPattern(pattern) {
 	return safeRegExp("^" + regexStr + "$");
 }
 //#endregion
-//#region node_modules/vinext/dist/server/middleware-runtime.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/middleware-runtime.js
 function isMiddlewareHandler(value) {
 	return typeof value === "function";
 }
@@ -8403,7 +8403,7 @@ async function executeMiddleware(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-middleware.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-middleware.js
 var FLIGHT_HEADER_SET = new Set(FLIGHT_HEADERS);
 function requestWithoutFlightHeaders(request) {
 	let hasFlightHeader = false;
@@ -8528,7 +8528,7 @@ async function applyAppMiddleware(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/cache-control.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/cache-control.js
 var NEVER_CACHE_CONTROL = "private, no-cache, no-store, max-age=0, must-revalidate";
 var STATIC_CACHE_CONTROL = "s-maxage=31536000, stale-while-revalidate";
 var STALE_REVALIDATE_CACHE_CONTROL = "s-maxage=0, stale-while-revalidate";
@@ -8559,7 +8559,7 @@ function buildCachedRevalidateCacheControl(cacheState, revalidateSeconds, expire
 	return buildRevalidateCacheControl(revalidateSeconds, expireSeconds);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-response.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-response.js
 function applyTimingHeader(headers, timing) {
 	if (!timing) return;
 	const handlerStart = Math.round(timing.handlerStart);
@@ -8656,7 +8656,7 @@ function buildAppPageHtmlResponse(body, options) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/server/implicit-tags.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/implicit-tags.js
 var NEXT_CACHE_IMPLICIT_TAG_ID = "_N_T_";
 function appendUnique(tags, tag) {
 	if (!tags.includes(tag)) tags.push(tag);
@@ -8695,7 +8695,7 @@ function buildPageCacheTags(pathname, extraTags, routeSegments, leafKind) {
 	return tags.map(encodeCacheTag);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-post-middleware-context.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-post-middleware-context.js
 /**
 * Build a request context from the live ALS HeadersContext, which reflects
 * any x-middleware-request-* header mutations applied by middleware.
@@ -8718,7 +8718,7 @@ function buildPostMwRequestContext(request) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/root-params.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/root-params.js
 var _FALLBACK_KEY$1 = Symbol.for("vinext.rootParams.fallback");
 var _g$3 = globalThis;
 var _fallbackState$1 = _g$3[_FALLBACK_KEY$1] ??= { rootParams: null };
@@ -8735,7 +8735,7 @@ function setRootParams(params) {
 	getState().rootParams = params;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-prerender-static-params.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-prerender-static-params.js
 async function callAppPrerenderStaticParams(options) {
 	setRootParams(pickRootParams(options.params, options.rootParamNamesByPattern[options.pattern]));
 	try {
@@ -8745,7 +8745,7 @@ async function callAppPrerenderStaticParams(options) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-prerender-endpoints.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-prerender-endpoints.js
 var STATIC_PARAMS_ENDPOINT = "/__vinext/prerender/static-params";
 var PAGES_STATIC_PATHS_ENDPOINT = "/__vinext/prerender/pages-static-paths";
 var JSON_HEADERS = { "content-type": "application/json" };
@@ -8837,7 +8837,7 @@ function isStringArray(value) {
 	return Array.isArray(value) && value.every((item) => typeof item === "string");
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-response-finalizer.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-response-finalizer.js
 /**
 * Apply App Router response finalization that must happen outside individual
 * route dispatchers.
@@ -8870,7 +8870,7 @@ function finalizeAppRscResponse(response, request, options) {
 	return response;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-request-normalization.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-request-normalization.js
 /**
 * Normalize an App Router RSC request.
 *
@@ -8930,7 +8930,7 @@ function normalizeRscRequest(request, basePath) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/routing/route-pattern.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/routing/route-pattern.js
 function routePatternPart(segment) {
 	if (segment.startsWith("[[...") && segment.endsWith("]]")) return `:${segment.slice(5, -2)}*`;
 	if (segment.startsWith("[...") && segment.endsWith("]")) return `:${segment.slice(4, -1)}+`;
@@ -9019,7 +9019,7 @@ function matchRoutePattern(urlParts, patternParts) {
 	return params;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/metadata-routes.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/metadata-routes.js
 /** Escape the five XML special characters in text content and attribute values. */
 function escapeXml(s) {
 	return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
@@ -9140,7 +9140,7 @@ function matchMetadataRoutePattern(urlParts, patternParts) {
 	return matchRoutePattern(urlParts, patternParts);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/metadata-route-response.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/metadata-route-response.js
 var routeFunctionCache = /* @__PURE__ */ new WeakMap();
 function isObject(value) {
 	return typeof value === "object" && value !== null;
@@ -9323,7 +9323,7 @@ async function handleMetadataRouteRequest(options) {
 	return null;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/prerender-work-unit-setup.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/prerender-work-unit-setup.js
 /**
 * Sets up the work unit async storage for prerendering.
 *
@@ -9349,7 +9349,7 @@ function runWithPrerenderWorkUnit(fn, options) {
 	return fn();
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-handler.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-handler.js
 function hasProperty(value, key) {
 	return key in value;
 }
@@ -9623,7 +9623,7 @@ function createAppRscHandler(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/instrumentation.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/instrumentation.js
 /**
 * Get the registered onRequestError handler (if any).
 *
@@ -9654,7 +9654,7 @@ function reportRequestError(error, request, context) {
 	return promise;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-route-handler-runtime.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-route-handler-runtime.js
 var ROUTE_HANDLER_HTTP_METHODS = [
 	"GET",
 	"HEAD",
@@ -9889,7 +9889,7 @@ function createTrackedAppRouteRequest(request, options = {}) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/next-error-digest.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/next-error-digest.js
 /**
 * Pulls a stringified `digest` off an unknown thrown value, or returns null
 * when the value is not a digest-bearing error.
@@ -9928,7 +9928,7 @@ function parseNextHttpErrorDigest(digest) {
 	return null;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-route-handler-policy.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-route-handler-policy.js
 function isPossibleAppRouteActionRequest(request) {
 	if (request.method.toUpperCase() !== "POST") return false;
 	const contentType = request.headers.get("content-type");
@@ -9987,7 +9987,7 @@ function resolveAppRouteHandlerSpecialError(error, requestUrl, options) {
 	return null;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-static-generation.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-static-generation.js
 function getAppPageStaticGenerationErrorMessage() {
 	return "Page with `dynamic = \"error\"` used a dynamic API. This page was expected to be fully static, but headers(), cookies(), or searchParams was accessed. Remove the dynamic API usage or change the dynamic config to \"auto\" or \"force-dynamic\".";
 }
@@ -10004,7 +10004,7 @@ function createStaticGenerationHeadersContext(options) {
 	return context;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-route-handler-response.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-route-handler-response.js
 var APP_ROUTE_REWRITE_ERROR = "NextResponse.rewrite() was used in a app route handler, this is not currently supported. Please remove the invocation to continue.";
 var APP_ROUTE_NEXT_ERROR = "NextResponse.next() was used in a app route handler, this is not supported. See here for more info: https://nextjs.org/docs/messages/next-response-next-in-app-route-handler";
 function hasMiddlewareHeader(headers) {
@@ -10107,7 +10107,7 @@ function finalizeRouteHandlerResponse(response, options) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-route-handler-execution.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-route-handler-execution.js
 function configureAppRouteStaticGenerationContext(options) {
 	if (options.dynamicConfig === "force-static" || options.dynamicConfig === "error") {
 		setHeadersContext(createStaticGenerationHeadersContext({
@@ -10226,7 +10226,7 @@ async function executeAppRouteHandler(options) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-route-handler-cache.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-route-handler-cache.js
 function getCachedAppRouteValue(entry) {
 	return entry?.value.value && entry.value.value.kind === "APP_ROUTE" ? entry.value.value : null;
 }
@@ -10297,7 +10297,7 @@ async function readAppRouteHandlerCacheResponse(options) {
 	return null;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-route-handler-dispatch.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-route-handler-dispatch.js
 function isAppRouteHandlerFunction(value) {
 	return typeof value === "function";
 }
@@ -10432,7 +10432,7 @@ async function dispatchAppRouteHandler(options) {
 	return applyRouteHandlerMiddlewareContext(new Response(null, { status: 405 }), options.middlewareContext);
 }
 //#endregion
-//#region node_modules/vinext/dist/utils/text-stream.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/utils/text-stream.js
 /**
 * Helpers for the repeated `new TextDecoder()` + `ReadableStream` chunk-loop
 * pattern used across the server. Each helper handles the streaming-decode
@@ -10495,7 +10495,7 @@ async function readStreamAsTextWithLimit(stream, maxBytes, onLimitExceeded) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/server-action-not-found.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/server-action-not-found.js
 var SERVER_ACTION_NOT_FOUND_DOCS = "https://nextjs.org/docs/messages/failed-to-find-server-action";
 var SERVER_ACTION_NOT_FOUND_BODY = "Server action not found.";
 function getServerActionNotFoundPrefix(actionId) {
@@ -10525,7 +10525,7 @@ function createServerActionNotFoundResponse() {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-params.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-params.js
 function getAppPageSegmentParamName(segment) {
 	if (segment.startsWith("[[...") && segment.endsWith("]]") && segment.length > 7) return segment.slice(5, -2);
 	if (segment.startsWith("[...") && segment.endsWith("]") && segment.length > 5) return segment.slice(4, -1);
@@ -10550,7 +10550,7 @@ function resolveAppPageSegmentParams(routeSegments, treePosition, matchedParams)
 	return segmentParams;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-request.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-request.js
 function pickRouteParams(matchedParams, routeParamNames) {
 	const params = {};
 	for (const paramName of routeParamNames) {
@@ -10710,7 +10710,7 @@ async function buildAppPageElement(options) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-server-action-execution.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-server-action-execution.js
 /**
 * Matches Next.js' server action argument cap to prevent stack overflow in
 * Function.prototype.apply when decoding hostile action payloads.
@@ -11097,7 +11097,7 @@ async function handleServerActionRscRequest(options) {
 	}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-execution.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-execution.js
 function isPromiseLike(value) {
 	return Boolean(value && (typeof value === "object" || typeof value === "function") && "then" in value && typeof value.then === "function");
 }
@@ -11266,7 +11266,7 @@ function buildAppPageFontLinkHeader(preloads) {
 	return preloads.map((preload) => `<${preload.href}>; rel=preload; as=font; type=${preload.type}; crossorigin`).join(", ");
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-errors.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-errors.js
 function hasDigest(error) {
 	return Boolean(error && typeof error === "object" && "digest" in error);
 }
@@ -11304,7 +11304,7 @@ function createRscOnErrorHandler$1(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-error-handler.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-error-handler.js
 /**
 * Build a per-request RSC error handler that extracts request metadata from
 * the incoming Web `Request`, wires it into a `createRscOnErrorHandler` call,
@@ -11330,24 +11330,24 @@ function createAppRscOnErrorHandler(reportRequestError, request, pathname, route
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/error-boundary.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/error-boundary.js
 var ErrorBoundary = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'ErrorBoundary' is called on server");
-}, "593f344dc510", "ErrorBoundary");
+}, "97e23c8fc95f", "ErrorBoundary");
 var ForbiddenBoundary = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'ForbiddenBoundary' is called on server");
-}, "593f344dc510", "ForbiddenBoundary");
+}, "97e23c8fc95f", "ForbiddenBoundary");
 var NotFoundBoundary = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'NotFoundBoundary' is called on server");
-}, "593f344dc510", "NotFoundBoundary");
+}, "97e23c8fc95f", "NotFoundBoundary");
 var RedirectBoundary = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'RedirectBoundary' is called on server");
-}, "593f344dc510", "RedirectBoundary");
+}, "97e23c8fc95f", "RedirectBoundary");
 var UnauthorizedBoundary = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'UnauthorizedBoundary' is called on server");
-}, "593f344dc510", "UnauthorizedBoundary");
+}, "97e23c8fc95f", "UnauthorizedBoundary");
 //#endregion
-//#region node_modules/vinext/dist/shims/layout-segment-context.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/layout-segment-context.js
 /**
 * Layout segment context provider.
 *
@@ -11377,9 +11377,9 @@ var UnauthorizedBoundary = /* @__PURE__ */ registerClientReference(() => {
 */
 var LayoutSegmentProvider = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'LayoutSegmentProvider' is called on server");
-}, "15c18cfaeeff", "LayoutSegmentProvider");
+}, "d7d8178d8913", "LayoutSegmentProvider");
 //#endregion
-//#region node_modules/vinext/dist/shims/slot.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/slot.js
 /**
 * Holds resolved AppElements (not a Promise). React 19's use(Promise) during
 * hydration triggers "async Client Component" for native Promises that lack
@@ -11387,15 +11387,15 @@ var LayoutSegmentProvider = /* @__PURE__ */ registerClientReference(() => {
 */
 var Children = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'Children' is called on server");
-}, "8c0f216c4604", "Children");
+}, "79ef9a017562", "Children");
 var ParallelSlot = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'ParallelSlot' is called on server");
-}, "8c0f216c4604", "ParallelSlot");
+}, "79ef9a017562", "ParallelSlot");
 var Slot = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'Slot' is called on server");
-}, "8c0f216c4604", "Slot");
+}, "79ef9a017562", "Slot");
 //#endregion
-//#region node_modules/vinext/dist/server/app-render-dependency.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-render-dependency.js
 function createAppRenderDependency() {
 	let released = false;
 	let resolve;
@@ -11426,7 +11426,7 @@ function renderWithAppDependencyBarrier(children, dependency) {
 	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)(import_jsx_runtime_react_server.Fragment, { children: [children, /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(ReleaseAppRenderDependency, {})] });
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-segment-state.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-segment-state.js
 function isOptionalCatchAllSegment(segment) {
 	return segment.startsWith("[[...") && segment.endsWith("]]") && segment.length > 7;
 }
@@ -11503,7 +11503,7 @@ function resolveAppPageRouteStateKey(routeSegments, params) {
 	return statePath.length > 0 ? JSON.stringify(statePath) : "";
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-route-wiring.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-route-wiring.js
 function getDefaultExport$1(module) {
 	return module?.default ?? null;
 }
@@ -11827,7 +11827,7 @@ function buildAppPageElements(options) {
 	return elements;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/file-based-metadata.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/file-based-metadata.js
 function routeApplies(routePath, routePrefix) {
 	if (!routePrefix) return true;
 	return routePath === routePrefix || routePath.startsWith(`${routePrefix}/`);
@@ -12177,7 +12177,7 @@ async function applyFileBasedMetadata(metadata, routePath, params, metadataRoute
 	return nextMetadata;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-head.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-head.js
 function resolveActiveParallelRouteHeadInputs(options) {
 	return Object.entries(options.slots ?? {}).map(([slotKey, slot]) => {
 		if (options.interceptSlotKey === slotKey && options.interceptPage) return {
@@ -12371,7 +12371,7 @@ async function resolveAppPageHeadInner(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-boundary.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-boundary.js
 function resolveAppPageHttpAccessBoundaryComponent(options) {
 	let boundaryModule;
 	if (options.statusCode === 403) boundaryModule = options.routeForbiddenModule ?? options.rootForbiddenModule;
@@ -12447,7 +12447,7 @@ async function renderAppPageBoundaryResponse(options) {
 	return options.createHtmlResponse(rscStream, options.status);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-stream.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-stream.js
 function createAppPageFontData(options) {
 	return {
 		links: options.getLinks(),
@@ -12559,7 +12559,7 @@ function shouldRerenderAppPageWithGlobalError(options) {
 	return Boolean(options.capturedError) && !options.hasLocalBoundary;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-boundary-render.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-boundary-render.js
 function getDefaultExport(module) {
 	return module?.default ?? null;
 }
@@ -12793,7 +12793,7 @@ function rewriteClientHookError(error) {
 	if (match) error.message = buildClientHookErrorMessage(`${match[1]}()`);
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-fallback-renderer.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-fallback-renderer.js
 var EMPTY_MW_CTX = {
 	headers: null,
 	status: null
@@ -12868,7 +12868,7 @@ function createAppFallbackRenderer(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-element-builder.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-element-builder.js
 /**
 * Build the App Router element tree for a matched route.
 *
@@ -13002,7 +13002,7 @@ function collectParamNameSet(params) {
 	return set;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/isr-cache.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/isr-cache.js
 /**
 * ISR (Incremental Static Regeneration) cache layer.
 *
@@ -13113,7 +13113,7 @@ function buildCacheKey(prefix, pathname, suffix) {
 * The suffix mirrors Next.js's separate on-disk app artifacts while keeping the
 * Cloudflare KV key under its 512-byte limit for long pathnames.
 */
-function appIsrCacheKey(pathname, suffix, buildId = "32e58dcb-4894-48a2-9fd2-1d85262c5b0e") {
+function appIsrCacheKey(pathname, suffix, buildId = "6464e407-022a-4c1c-8390-6df22749d1ee") {
 	return buildCacheKey(buildId ? `app:${buildId}` : "app", pathname, suffix);
 }
 function appIsrHtmlKey(pathname) {
@@ -13138,7 +13138,7 @@ function appIsrRouteKey(pathname) {
 var _REVALIDATE_KEY = Symbol.for("vinext.isrCache.revalidateDurations");
 _g$1[_REVALIDATE_KEY] ??= /* @__PURE__ */ new Map();
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-cache.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-cache.js
 var NO_STORE_CACHE_CONTROL = "no-store, must-revalidate";
 function buildAppPageCacheControl(cacheState, revalidateSeconds, expireSeconds) {
 	return buildCachedRevalidateCacheControl(cacheState, revalidateSeconds, expireSeconds);
@@ -13341,7 +13341,7 @@ function scheduleAppPageRscCacheWrite(options) {
 	return true;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-method.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-method.js
 function isNonGetOrHead(method) {
 	const normalizedMethod = method.toUpperCase();
 	return normalizedMethod !== "GET" && normalizedMethod !== "HEAD";
@@ -13362,7 +13362,7 @@ function resolveAppPageMethodResponse(options) {
 	return methodNotAllowedResponse("GET, HEAD", { headers });
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-probe.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-probe.js
 async function probeAppPageBeforeRender(options) {
 	let layoutFlags = {};
 	if (options.layoutCount > 0) {
@@ -13406,7 +13406,7 @@ async function probeAppPageBeforeRender(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-render.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-render.js
 function buildResponseTiming(options) {
 	if (options.isProduction) return;
 	return {
@@ -13442,7 +13442,7 @@ function createAppPageArtifactCompatibility(element, routePattern) {
 			routePattern,
 			rootBoundaryId
 		}),
-		deploymentVersion: "32e58dcb-4894-48a2-9fd2-1d85262c5b0e",
+		deploymentVersion: "6464e407-022a-4c1c-8390-6df22749d1ee",
 		rootBoundaryId
 	});
 }
@@ -13722,7 +13722,7 @@ async function settleCapturedRscRenderForCacheMetadata(capturedRscDataPromise) {
 	} catch {}
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-page-dispatch.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-page-dispatch.js
 function shouldReadAppPageCache(options) {
 	return options.isProduction && !options.isProgressiveActionRender && !options.isDraftMode && !options.isForceDynamic && (options.isRscRequest || !options.scriptNonce) && (options.revalidateSeconds === null || options.revalidateSeconds > 0);
 }
@@ -14068,7 +14068,7 @@ async function renderPageSpecialError(options, specialError) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-segment-config.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-segment-config.js
 var DYNAMIC_VALUES = new Set([
 	"auto",
 	"error",
@@ -14155,7 +14155,7 @@ function resolveAppPageFetchCacheMode(options) {
 	return resolveAppPageSegmentConfig(options).fetchCache ?? null;
 }
 //#endregion
-//#region node_modules/vinext/dist/routing/route-trie.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/routing/route-trie.js
 function createNode() {
 	return {
 		staticChildren: /* @__PURE__ */ new Map(),
@@ -14301,7 +14301,7 @@ function match(node, urlParts, index) {
 	return null;
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-rsc-route-matching.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-rsc-route-matching.js
 function createRouteParams() {
 	return Object.create(null);
 }
@@ -14365,7 +14365,7 @@ function mergeMatchedParams(sourceParams, targetParams) {
 	return Object.assign(createRouteParams(), sourceParams, targetParams);
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/navigation-state.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/navigation-state.js
 /**
 * Server-only navigation state backed by AsyncLocalStorage.
 *
@@ -14406,7 +14406,7 @@ var _accessors = {
 _registerStateAccessors(_accessors);
 globalThis[GLOBAL_ACCESSORS_KEY] = _accessors;
 //#endregion
-//#region node_modules/vinext/dist/build/google-fonts/sort-variants.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/build/google-fonts/sort-variants.js
 function sortFontsVariantValues(valA, valB) {
 	if (valA.includes(",") && valB.includes(",")) {
 		const [aPrefix, aSuffix] = valA.split(",", 2);
@@ -14417,7 +14417,7 @@ function sortFontsVariantValues(valA, valB) {
 	return parseInt(valA) - parseInt(valB);
 }
 //#endregion
-//#region node_modules/vinext/dist/build/google-fonts/build-url.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/build/google-fonts/build-url.js
 function buildGoogleFontsUrl$1(fontFamily, axes, display) {
 	const variants = [];
 	if (axes.wght) for (const wght of axes.wght) if (!axes.ital) variants.push([["wght", wght], ...axes.variableAxes ?? []]);
@@ -14443,7 +14443,7 @@ function buildGoogleFontsUrl$1(fontFamily, axes, display) {
 	return `${url}&display=${display}`;
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/font-google-base.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/font-google-base.js
 /**
 * next/font/google shim
 *
@@ -14786,7 +14786,7 @@ var googleFonts = new Proxy({}, { get(_target, prop) {
 	return createFontLoader(prop.replace(/_/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2"));
 } });
 //#endregion
-//#region node_modules/vinext/dist/shims/font-local.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/font-local.js
 /**
 * next/font/local shim
 *
@@ -15040,7 +15040,7 @@ function localFont(options) {
 	};
 }
 //#endregion
-//#region node_modules/vinext/dist/server/app-hook-warning-suppression.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-hook-warning-suppression.js
 var suppressHookWarningAls = new AsyncLocalStorage$1();
 var _origConsoleError = console.error;
 console.error = (...args) => {
@@ -15048,7 +15048,7 @@ console.error = (...args) => {
 	_origConsoleError.apply(console, args);
 };
 //#endregion
-//#region node_modules/vinext/dist/server/app-request-context.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-request-context.js
 /**
 * Set navigation context in the ALS-backed store. "use client" components
 * rendered during SSR need the pathname/searchParams/params but the SSR
@@ -15072,7 +15072,7 @@ function clearAppRequestContext() {
 	setAppNavigationContext(null);
 }
 //#endregion
-//#region node_modules/drizzle-orm/entity.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/entity.js
 var entityKind = Symbol.for("drizzle:entityKind");
 function is(value, type) {
 	if (!value || typeof value !== "object") return false;
@@ -15086,7 +15086,7 @@ function is(value, type) {
 	return false;
 }
 //#endregion
-//#region node_modules/drizzle-orm/column.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/column.js
 var Column = class {
 	constructor(table, config) {
 		this.table = table;
@@ -15136,7 +15136,7 @@ var Column = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/column-builder.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/column-builder.js
 var ColumnBuilder = class {
 	static [entityKind] = "ColumnBuilder";
 	config;
@@ -15239,10 +15239,10 @@ var ColumnBuilder = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/table.utils.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/table.utils.js
 var TableName = Symbol.for("drizzle:Name");
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/foreign-keys.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/foreign-keys.js
 var ForeignKeyBuilder = class {
 	static [entityKind] = "PgForeignKeyBuilder";
 	/** @internal */
@@ -15304,17 +15304,17 @@ var ForeignKey = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/tracing-utils.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/tracing-utils.js
 function iife(fn, ...args) {
 	return fn(...args);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/unique-constraint.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/unique-constraint.js
 function uniqueKeyName(table, columns) {
 	return `${table[TableName]}_${columns.join("_")}_unique`;
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/utils/array.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/utils/array.js
 function parsePgArrayValue(arrayString, startFrom, inQuotes) {
 	for (let i = startFrom; i < arrayString.length; i++) {
 		const char = arrayString[i];
@@ -15376,7 +15376,7 @@ function makePgArray(array) {
 	}).join(",")}}`;
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/common.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/common.js
 var PgColumnBuilder = class extends ColumnBuilder {
 	foreignKeyConfigs = [];
 	static [entityKind] = "PgColumnBuilder";
@@ -15535,7 +15535,7 @@ var PgArray = class PgArray extends PgColumn {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/enum.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/enum.js
 var PgEnumObjectColumnBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgEnumObjectColumnBuilder";
 	constructor(name, enumInstance) {
@@ -15608,7 +15608,7 @@ function pgEnumObjectWithSchema(enumName, values, schema) {
 	return enumInstance;
 }
 //#endregion
-//#region node_modules/drizzle-orm/subquery.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/subquery.js
 var Subquery = class {
 	static [entityKind] = "Subquery";
 	constructor(sql, fields, alias, isWith = false, usedTables = []) {
@@ -15626,15 +15626,15 @@ var WithSubquery = class extends Subquery {
 	static [entityKind] = "WithSubquery";
 };
 //#endregion
-//#region node_modules/drizzle-orm/tracing.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/tracing.js
 var tracer = { startActiveSpan(name, fn) {
 	return fn();
 } };
 //#endregion
-//#region node_modules/drizzle-orm/view-common.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/view-common.js
 var ViewBaseConfig = Symbol.for("drizzle:ViewBaseConfig");
 //#endregion
-//#region node_modules/drizzle-orm/table.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/table.js
 var Schema = Symbol.for("drizzle:Schema");
 var Columns = Symbol.for("drizzle:Columns");
 var ExtraConfigColumns = Symbol.for("drizzle:ExtraConfigColumns");
@@ -15696,7 +15696,7 @@ function getTableUniqueName(table) {
 	return `${table[Schema] ?? "public"}.${table[TableName]}`;
 }
 //#endregion
-//#region node_modules/drizzle-orm/sql/sql.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/sql/sql.js
 function isSQLWrapper(value) {
 	return value !== null && value !== void 0 && typeof value.getSQL === "function";
 }
@@ -16067,7 +16067,7 @@ Subquery.prototype.getSQL = function() {
 	return new SQL([this]);
 };
 //#endregion
-//#region node_modules/drizzle-orm/alias.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/alias.js
 var ColumnAliasProxyHandler = class {
 	constructor(table) {
 		this.table = table;
@@ -16125,7 +16125,7 @@ function mapColumnsInSQLToAlias(query, alias) {
 	}));
 }
 //#endregion
-//#region node_modules/drizzle-orm/errors.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/errors.js
 var DrizzleError = class extends Error {
 	static [entityKind] = "DrizzleError";
 	constructor({ message, cause }) {
@@ -16152,7 +16152,7 @@ var TransactionRollbackError = class extends DrizzleError {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/logger.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/logger.js
 var ConsoleLogWriter = class {
 	static [entityKind] = "ConsoleLogWriter";
 	write(message) {
@@ -16182,7 +16182,7 @@ var NoopLogger = class {
 	logQuery() {}
 };
 //#endregion
-//#region node_modules/drizzle-orm/query-promise.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/query-promise.js
 var QueryPromise = class {
 	static [entityKind] = "QueryPromise";
 	[Symbol.toStringTag] = "QueryPromise";
@@ -16203,7 +16203,7 @@ var QueryPromise = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/utils.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/utils.js
 function mapResultRow(columns, row, joinsNotNullableMap) {
 	const nullifyMap = {};
 	const result = columns.reduce((result2, { path, field }, columnIndex) => {
@@ -16315,7 +16315,7 @@ function isConfig(data) {
 }
 typeof TextDecoder === "undefined" || new TextDecoder();
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/int.common.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/int.common.js
 var PgIntColumnBaseBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgIntColumnBaseBuilder";
 	generatedAlwaysAsIdentity(sequence) {
@@ -16346,7 +16346,7 @@ var PgIntColumnBaseBuilder = class extends PgColumnBuilder {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/bigint.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/bigint.js
 var PgBigInt53Builder = class extends PgIntColumnBaseBuilder {
 	static [entityKind] = "PgBigInt53Builder";
 	constructor(name) {
@@ -16392,7 +16392,7 @@ function bigint(a, b) {
 	return new PgBigInt64Builder(name);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/bigserial.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/bigserial.js
 var PgBigSerial53Builder = class extends PgColumnBuilder {
 	static [entityKind] = "PgBigSerial53Builder";
 	constructor(name) {
@@ -16441,7 +16441,7 @@ function bigserial(a, b) {
 	return new PgBigSerial64Builder(name);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/boolean.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/boolean.js
 var PgBooleanBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgBooleanBuilder";
 	constructor(name) {
@@ -16462,7 +16462,7 @@ function boolean(name) {
 	return new PgBooleanBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/char.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/char.js
 var PgCharBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgCharBuilder";
 	constructor(name, config) {
@@ -16488,7 +16488,7 @@ function char(a, b = {}) {
 	return new PgCharBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/cidr.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/cidr.js
 var PgCidrBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgCidrBuilder";
 	constructor(name) {
@@ -16509,7 +16509,7 @@ function cidr(name) {
 	return new PgCidrBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/custom.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/custom.js
 var PgCustomColumnBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgCustomColumnBuilder";
 	constructor(name, fieldConfig, customTypeParams) {
@@ -16550,7 +16550,7 @@ function customType(customTypeParams) {
 	};
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/date.common.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/date.common.js
 var PgDateColumnBaseBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgDateColumnBaseBuilder";
 	defaultNow() {
@@ -16558,7 +16558,7 @@ var PgDateColumnBaseBuilder = class extends PgColumnBuilder {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/date.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/date.js
 var PgDateBuilder = class extends PgDateColumnBaseBuilder {
 	static [entityKind] = "PgDateBuilder";
 	constructor(name) {
@@ -16608,7 +16608,7 @@ function date$1(a, b) {
 	return new PgDateStringBuilder(name);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/double-precision.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/double-precision.js
 var PgDoublePrecisionBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgDoublePrecisionBuilder";
 	constructor(name) {
@@ -16633,7 +16633,7 @@ function doublePrecision(name) {
 	return new PgDoublePrecisionBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/inet.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/inet.js
 var PgInetBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgInetBuilder";
 	constructor(name) {
@@ -16654,7 +16654,7 @@ function inet(name) {
 	return new PgInetBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/integer.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/integer.js
 var PgIntegerBuilder = class extends PgIntColumnBaseBuilder {
 	static [entityKind] = "PgIntegerBuilder";
 	constructor(name) {
@@ -16679,7 +16679,7 @@ function integer(name) {
 	return new PgIntegerBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/interval.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/interval.js
 var PgIntervalBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgIntervalBuilder";
 	constructor(name, intervalConfig) {
@@ -16704,7 +16704,7 @@ function interval(a, b = {}) {
 	return new PgIntervalBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/json.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/json.js
 var PgJsonBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgJsonBuilder";
 	constructor(name) {
@@ -16739,7 +16739,7 @@ function json(name) {
 	return new PgJsonBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/jsonb.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/jsonb.js
 var PgJsonbBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgJsonbBuilder";
 	constructor(name) {
@@ -16774,7 +16774,7 @@ function jsonb(name) {
 	return new PgJsonbBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/line.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/line.js
 var PgLineBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgLineBuilder";
 	constructor(name) {
@@ -16835,7 +16835,7 @@ function line(a, b) {
 	return new PgLineABCBuilder(name);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/macaddr.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/macaddr.js
 var PgMacaddrBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgMacaddrBuilder";
 	constructor(name) {
@@ -16856,7 +16856,7 @@ function macaddr(name) {
 	return new PgMacaddrBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/macaddr8.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/macaddr8.js
 var PgMacaddr8Builder = class extends PgColumnBuilder {
 	static [entityKind] = "PgMacaddr8Builder";
 	constructor(name) {
@@ -16877,7 +16877,7 @@ function macaddr8(name) {
 	return new PgMacaddr8Builder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/numeric.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/numeric.js
 var PgNumericBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgNumericBuilder";
 	constructor(name, precision, scale) {
@@ -16976,7 +16976,7 @@ function numeric(a, b) {
 	return mode === "number" ? new PgNumericNumberBuilder(name, config?.precision, config?.scale) : mode === "bigint" ? new PgNumericBigIntBuilder(name, config?.precision, config?.scale) : new PgNumericBuilder(name, config?.precision, config?.scale);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/point.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/point.js
 var PgPointTupleBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgPointTupleBuilder";
 	constructor(name) {
@@ -17038,7 +17038,7 @@ function point(a, b) {
 	return new PgPointObjectBuilder(name);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/postgis_extension/utils.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/postgis_extension/utils.js
 function hexToBytes(hex) {
 	const bytes = [];
 	for (let c = 0; c < hex.length; c += 2) bytes.push(Number.parseInt(hex.slice(c, c + 2), 16));
@@ -17071,7 +17071,7 @@ function parseEWKB(hex) {
 	throw new Error("Unsupported geometry type");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/postgis_extension/geometry.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/postgis_extension/geometry.js
 var PgGeometryBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgGeometryBuilder";
 	constructor(name) {
@@ -17126,7 +17126,7 @@ function geometry(a, b) {
 	return new PgGeometryObjectBuilder(name);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/real.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/real.js
 var PgRealBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgRealBuilder";
 	constructor(name, length) {
@@ -17155,7 +17155,7 @@ function real(name) {
 	return new PgRealBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/serial.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/serial.js
 var PgSerialBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgSerialBuilder";
 	constructor(name) {
@@ -17178,7 +17178,7 @@ function serial(name) {
 	return new PgSerialBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/smallint.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/smallint.js
 var PgSmallIntBuilder = class extends PgIntColumnBaseBuilder {
 	static [entityKind] = "PgSmallIntBuilder";
 	constructor(name) {
@@ -17203,7 +17203,7 @@ function smallint(name) {
 	return new PgSmallIntBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/smallserial.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/smallserial.js
 var PgSmallSerialBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgSmallSerialBuilder";
 	constructor(name) {
@@ -17226,7 +17226,7 @@ function smallserial(name) {
 	return new PgSmallSerialBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/text.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/text.js
 var PgTextBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgTextBuilder";
 	constructor(name, config) {
@@ -17250,7 +17250,7 @@ function text(a, b = {}) {
 	return new PgTextBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/time.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/time.js
 var PgTimeBuilder = class extends PgDateColumnBaseBuilder {
 	constructor(name, withTimezone, precision) {
 		super(name, "string", "PgTime");
@@ -17283,7 +17283,7 @@ function time(a, b = {}) {
 	return new PgTimeBuilder(name, config.withTimezone ?? false, config.precision);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/timestamp.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/timestamp.js
 var PgTimestampBuilder = class extends PgDateColumnBaseBuilder {
 	static [entityKind] = "PgTimestampBuilder";
 	constructor(name, withTimezone, precision) {
@@ -17356,7 +17356,7 @@ function timestamp(a, b = {}) {
 	return new PgTimestampBuilder(name, config?.withTimezone ?? false, config?.precision);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/uuid.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/uuid.js
 var PgUUIDBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgUUIDBuilder";
 	constructor(name) {
@@ -17383,7 +17383,7 @@ function uuid(name) {
 	return new PgUUIDBuilder(name ?? "");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/varchar.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/varchar.js
 var PgVarcharBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgVarcharBuilder";
 	constructor(name, config) {
@@ -17409,7 +17409,7 @@ function varchar(a, b = {}) {
 	return new PgVarcharBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/vector_extension/bit.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/vector_extension/bit.js
 var PgBinaryVectorBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgBinaryVectorBuilder";
 	constructor(name, config) {
@@ -17433,7 +17433,7 @@ function bit(a, b) {
 	return new PgBinaryVectorBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/vector_extension/halfvec.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/vector_extension/halfvec.js
 var PgHalfVectorBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgHalfVectorBuilder";
 	constructor(name, config) {
@@ -17463,7 +17463,7 @@ function halfvec(a, b) {
 	return new PgHalfVectorBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/vector_extension/sparsevec.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/vector_extension/sparsevec.js
 var PgSparseVectorBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgSparseVectorBuilder";
 	constructor(name, config) {
@@ -17487,7 +17487,7 @@ function sparsevec(a, b) {
 	return new PgSparseVectorBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/vector_extension/vector.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/vector_extension/vector.js
 var PgVectorBuilder = class extends PgColumnBuilder {
 	static [entityKind] = "PgVectorBuilder";
 	constructor(name, config) {
@@ -17517,7 +17517,7 @@ function vector(a, b) {
 	return new PgVectorBuilder(name, config);
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/columns/all.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/columns/all.js
 function getPgColumnBuilders() {
 	return {
 		bigint,
@@ -17555,7 +17555,7 @@ function getPgColumnBuilders() {
 	};
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/table.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/table.js
 var InlineForeignKeys = Symbol.for("drizzle:PgInlineForeignKeys");
 var EnableRLS = Symbol.for("drizzle:EnableRLS");
 var PgTable = class extends Table {
@@ -17602,7 +17602,7 @@ var pgTable = (name, columns, extraConfig) => {
 	return pgTableWithSchema(name, columns, extraConfig, void 0);
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/primary-keys.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/primary-keys.js
 var PrimaryKeyBuilder = class {
 	static [entityKind] = "PgPrimaryKeyBuilder";
 	/** @internal */
@@ -17632,7 +17632,7 @@ var PrimaryKey = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/sql/expressions/conditions.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/sql/expressions/conditions.js
 function bindIfParam(value, column) {
 	if (isDriverValueEncoder(column) && !isSQLWrapper(value) && !is(value, Param) && !is(value, Placeholder) && !is(value, Column) && !is(value, Table) && !is(value, View)) return new Param(value, column);
 	return value;
@@ -17723,7 +17723,7 @@ function notIlike(column, value) {
 	return sql`${column} not ilike ${value}`;
 }
 //#endregion
-//#region node_modules/drizzle-orm/sql/expressions/select.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/sql/expressions/select.js
 function asc(column) {
 	return sql`${column} asc`;
 }
@@ -17731,7 +17731,7 @@ function desc(column) {
 	return sql`${column} desc`;
 }
 //#endregion
-//#region node_modules/drizzle-orm/relations.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/relations.js
 var Relation = class {
 	constructor(sourceTable, referencedTable, relationName) {
 		this.sourceTable = sourceTable;
@@ -17912,7 +17912,7 @@ var require_builtin_esm_external_require_events = /* @__PURE__ */ __commonJSMin(
 	module.exports = m$10.default;
 }));
 //#endregion
-//#region node_modules/postgres-array/index.js
+//#region node_modules/.pnpm/postgres-array@2.0.0/node_modules/postgres-array/index.js
 var require_postgres_array = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.parse = function(source, transform) {
 		return new ArrayParser(source, transform).parse();
@@ -17991,7 +17991,7 @@ var require_postgres_array = /* @__PURE__ */ __commonJSMin(((exports) => {
 	}
 }));
 //#endregion
-//#region node_modules/pg-types/lib/arrayParser.js
+//#region node_modules/.pnpm/pg-types@2.2.0/node_modules/pg-types/lib/arrayParser.js
 var require_arrayParser = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var array = require_postgres_array();
 	module.exports = { create: function(source, transform) {
@@ -18001,7 +18001,7 @@ var require_arrayParser = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	} };
 }));
 //#endregion
-//#region node_modules/postgres-date/index.js
+//#region node_modules/.pnpm/postgres-date@1.0.7/node_modules/postgres-date/index.js
 var require_postgres_date = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var DATE_TIME = /(\d{1,})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})(\.\d{1,})?.*?( BC)?$/;
 	var DATE = /^(\d{1,})-(\d{2})-(\d{2})( BC)?$/;
@@ -18061,7 +18061,7 @@ var require_postgres_date = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 	}
 }));
 //#endregion
-//#region node_modules/xtend/mutable.js
+//#region node_modules/.pnpm/xtend@4.0.2/node_modules/xtend/mutable.js
 var require_mutable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = extend;
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -18074,7 +18074,7 @@ var require_mutable = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region node_modules/postgres-interval/index.js
+//#region node_modules/.pnpm/postgres-interval@1.2.0/node_modules/postgres-interval/index.js
 var require_postgres_interval = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var extend = require_mutable();
 	module.exports = PostgresInterval;
@@ -18175,7 +18175,7 @@ var require_postgres_interval = /* @__PURE__ */ __commonJSMin(((exports, module)
 	}
 }));
 //#endregion
-//#region node_modules/postgres-bytea/index.js
+//#region node_modules/.pnpm/postgres-bytea@1.0.1/node_modules/postgres-bytea/index.js
 var require_postgres_bytea = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var bufferFrom = Buffer.from || Buffer;
 	module.exports = function parseBytea(input) {
@@ -18198,7 +18198,7 @@ var require_postgres_bytea = /* @__PURE__ */ __commonJSMin(((exports, module) =>
 	};
 }));
 //#endregion
-//#region node_modules/pg-types/lib/textParsers.js
+//#region node_modules/.pnpm/pg-types@2.2.0/node_modules/pg-types/lib/textParsers.js
 var require_textParsers = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var array = require_postgres_array();
 	var arrayParser = require_arrayParser();
@@ -18355,7 +18355,7 @@ var require_textParsers = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = { init };
 }));
 //#endregion
-//#region node_modules/pg-int8/index.js
+//#region node_modules/.pnpm/pg-int8@1.0.1/node_modules/pg-int8/index.js
 var require_pg_int8 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var BASE = 1e6;
 	function readInt8(buffer) {
@@ -18412,7 +18412,7 @@ var require_pg_int8 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = readInt8;
 }));
 //#endregion
-//#region node_modules/pg-types/lib/binaryParsers.js
+//#region node_modules/.pnpm/pg-types@2.2.0/node_modules/pg-types/lib/binaryParsers.js
 var require_binaryParsers = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var parseInt64 = require_pg_int8();
 	var parseBits = function(data, bits, offset, invert, callback) {
@@ -18571,7 +18571,7 @@ var require_binaryParsers = /* @__PURE__ */ __commonJSMin(((exports, module) => 
 	module.exports = { init };
 }));
 //#endregion
-//#region node_modules/pg-types/lib/builtins.js
+//#region node_modules/.pnpm/pg-types@2.2.0/node_modules/pg-types/lib/builtins.js
 var require_builtins = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	/**
 	* Following query was used to generate this file:
@@ -18647,7 +18647,7 @@ var require_builtins = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	};
 }));
 //#endregion
-//#region node_modules/pg-types/index.js
+//#region node_modules/.pnpm/pg-types@2.2.0/node_modules/pg-types/index.js
 var require_pg_types = /* @__PURE__ */ __commonJSMin(((exports) => {
 	var textParsers = require_textParsers();
 	var binaryParsers = require_binaryParsers();
@@ -18684,7 +18684,7 @@ var require_pg_types = /* @__PURE__ */ __commonJSMin(((exports) => {
 	});
 }));
 //#endregion
-//#region node_modules/pg/lib/defaults.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/defaults.js
 var require_defaults = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var user;
 	try {
@@ -18730,7 +18730,7 @@ var require_types = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = m$9.default;
 }));
 //#endregion
-//#region node_modules/pg/lib/utils.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/utils.js
 var require_utils$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var defaults = require_defaults();
 	var { isDate } = require_types();
@@ -18843,7 +18843,7 @@ var require_builtin_esm_external_require_crypto = /* @__PURE__ */ __commonJSMin(
 	module.exports = m$7.default;
 }));
 //#endregion
-//#region node_modules/pg/lib/crypto/utils.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/crypto/utils.js
 var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var nodeCrypto = require_builtin_esm_external_require_crypto();
 	module.exports = {
@@ -18927,7 +18927,7 @@ var require_utils = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region node_modules/pg/lib/crypto/cert-signatures.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/crypto/cert-signatures.js
 var require_cert_signatures = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function x509Error(msg, cert) {
 		return /* @__PURE__ */ new Error("SASL channel binding: " + msg + " when parsing public certificate " + cert.toString("base64"));
@@ -19019,7 +19019,7 @@ var require_cert_signatures = /* @__PURE__ */ __commonJSMin(((exports, module) =
 	module.exports = { signatureAlgorithmHashFromCertificate };
 }));
 //#endregion
-//#region node_modules/pg/lib/crypto/sasl.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/crypto/sasl.js
 var require_sasl = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var crypto = require_utils();
 	var { signatureAlgorithmHashFromCertificate } = require_cert_signatures();
@@ -19154,7 +19154,7 @@ var require_sasl = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	};
 }));
 //#endregion
-//#region node_modules/pg/lib/type-overrides.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/type-overrides.js
 var require_type_overrides = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var types = require_pg_types();
 	function TypeOverrides(userTypes) {
@@ -19193,7 +19193,7 @@ var require_builtin_esm_external_require_fs = /* @__PURE__ */ __commonJSMin(((ex
 	module.exports = m$5.default;
 }));
 //#endregion
-//#region node_modules/pg-connection-string/index.js
+//#region node_modules/.pnpm/pg-connection-string@2.14.0/node_modules/pg-connection-string/index.js
 var require_pg_connection_string = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	function parse(str, options = {}) {
 		if (str.charAt(0) === "/") {
@@ -19319,7 +19319,7 @@ See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode de
 	parse.parseIntoClientConfig = parseIntoClientConfig;
 }));
 //#endregion
-//#region node_modules/pg/lib/connection-parameters.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/connection-parameters.js
 var require_connection_parameters = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var dns = require_builtin_esm_external_require_dns();
 	var defaults = require_defaults();
@@ -19420,7 +19420,7 @@ var require_connection_parameters = /* @__PURE__ */ __commonJSMin(((exports, mod
 	module.exports = ConnectionParameters;
 }));
 //#endregion
-//#region node_modules/pg/lib/result.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/result.js
 var require_result = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var types = require_pg_types();
 	var matchRegexp = /^([A-Za-z]+)(?: (\d+))?(?: (\d+))?/;
@@ -19490,7 +19490,7 @@ var require_result = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = Result;
 }));
 //#endregion
-//#region node_modules/pg/lib/query.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/query.js
 var require_query$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var { EventEmitter } = require_builtin_esm_external_require_events();
 	var Result = require_result();
@@ -19639,7 +19639,7 @@ var require_query$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = Query;
 }));
 //#endregion
-//#region node_modules/pg-protocol/dist/messages.js
+//#region node_modules/.pnpm/pg-protocol@1.15.0/node_modules/pg-protocol/dist/messages.js
 var require_messages = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.NoticeMessage = exports.DataRowMessage = exports.CommandCompleteMessage = exports.ReadyForQueryMessage = exports.NotificationResponseMessage = exports.BackendKeyDataMessage = exports.AuthenticationMD5Password = exports.ParameterStatusMessage = exports.ParameterDescriptionMessage = exports.RowDescriptionMessage = exports.Field = exports.CopyResponse = exports.CopyDataMessage = exports.DatabaseError = exports.copyDone = exports.emptyQuery = exports.replicationStart = exports.portalSuspended = exports.noData = exports.closeComplete = exports.bindComplete = exports.parseComplete = void 0;
@@ -19801,7 +19801,7 @@ var require_messages = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.NoticeMessage = NoticeMessage;
 }));
 //#endregion
-//#region node_modules/pg-protocol/dist/buffer-writer.js
+//#region node_modules/.pnpm/pg-protocol@1.15.0/node_modules/pg-protocol/dist/buffer-writer.js
 var require_buffer_writer = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.Writer = void 0;
@@ -19894,7 +19894,7 @@ var require_buffer_writer = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.Writer = Writer;
 }));
 //#endregion
-//#region node_modules/pg-protocol/dist/serializer.js
+//#region node_modules/.pnpm/pg-protocol@1.15.0/node_modules/pg-protocol/dist/serializer.js
 var require_serializer = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.serialize = void 0;
@@ -20070,7 +20070,7 @@ var require_serializer = /* @__PURE__ */ __commonJSMin(((exports) => {
 	};
 }));
 //#endregion
-//#region node_modules/pg-protocol/dist/buffer-reader.js
+//#region node_modules/.pnpm/pg-protocol@1.15.0/node_modules/pg-protocol/dist/buffer-reader.js
 var require_buffer_reader = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.BufferReader = void 0;
@@ -20125,7 +20125,7 @@ var require_buffer_reader = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.BufferReader = BufferReader;
 }));
 //#endregion
-//#region node_modules/pg-protocol/dist/parser.js
+//#region node_modules/.pnpm/pg-protocol@1.15.0/node_modules/pg-protocol/dist/parser.js
 var require_parser = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.Parser = void 0;
@@ -20406,7 +20406,7 @@ var require_parser = /* @__PURE__ */ __commonJSMin(((exports) => {
 	};
 }));
 //#endregion
-//#region node_modules/pg-protocol/dist/index.js
+//#region node_modules/.pnpm/pg-protocol@1.15.0/node_modules/pg-protocol/dist/index.js
 var require_dist$1 = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.DatabaseError = exports.serialize = void 0;
@@ -20443,7 +20443,7 @@ var require_builtin_esm_external_require_tls = /* @__PURE__ */ __commonJSMin(((e
 	module.exports = m$3.default;
 }));
 //#endregion
-//#region node_modules/pg-cloudflare/dist/index.js
+//#region node_modules/.pnpm/pg-cloudflare@1.4.0/node_modules/pg-cloudflare/dist/index.js
 var require_dist = /* @__PURE__ */ __commonJSMin(((exports) => {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.CloudflareSocket = void 0;
@@ -20555,7 +20555,7 @@ var require_dist = /* @__PURE__ */ __commonJSMin(((exports) => {
 	exports.CloudflareSocket = CloudflareSocket;
 }));
 //#endregion
-//#region node_modules/pg/lib/stream.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/stream.js
 var require_stream = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var { getStream, getSecureStream } = getStreamFuncs();
 	module.exports = {
@@ -20622,7 +20622,7 @@ var require_stream = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	}
 }));
 //#endregion
-//#region node_modules/pg/lib/connection.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/connection.js
 var require_connection = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var EventEmitter = require_builtin_esm_external_require_events().EventEmitter;
 	var { parse, serialize } = require_dist$1();
@@ -20800,7 +20800,7 @@ var require_builtin_esm_external_require_string_decoder = /* @__PURE__ */ __comm
 	module.exports = m.default;
 }));
 //#endregion
-//#region node_modules/split2/index.js
+//#region node_modules/.pnpm/split2@4.2.0/node_modules/split2/index.js
 var require_split2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var { Transform } = require_builtin_esm_external_require_stream();
 	var { StringDecoder } = require_builtin_esm_external_require_string_decoder();
@@ -20890,7 +20890,7 @@ var require_split2 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = split;
 }));
 //#endregion
-//#region node_modules/pgpass/lib/helper.js
+//#region node_modules/.pnpm/pgpass@1.0.5/node_modules/pgpass/lib/helper.js
 var require_helper = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var path = require_builtin_esm_external_require_path(), Stream = require_builtin_esm_external_require_stream().Stream, split = require_split2(), util = require_builtin_esm_external_require_util(), defaultPort = 5432, isWin = process.platform === "win32", warnStream = process.stderr;
 	var S_IRWXG = 56, S_IRWXO = 7, S_IFMT = 61440, S_IFREG = 32768;
@@ -21031,7 +21031,7 @@ var require_helper = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	};
 }));
 //#endregion
-//#region node_modules/pgpass/lib/index.js
+//#region node_modules/.pnpm/pgpass@1.0.5/node_modules/pgpass/lib/index.js
 var require_lib$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	require_builtin_esm_external_require_path();
 	var fs = require_builtin_esm_external_require_fs(), helper = require_helper();
@@ -21046,7 +21046,7 @@ var require_lib$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports.warnTo = helper.warnTo;
 }));
 //#endregion
-//#region node_modules/pg/lib/client.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/client.js
 var require_client$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var EventEmitter = require_builtin_esm_external_require_events().EventEmitter;
 	var utils = require_utils$1();
@@ -21556,7 +21556,7 @@ var require_client$1 = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = Client;
 }));
 //#endregion
-//#region node_modules/pg-pool/index.js
+//#region node_modules/.pnpm/pg-pool@3.14.0_pg@8.22.0/node_modules/pg-pool/index.js
 var require_pg_pool = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var EventEmitter = require_builtin_esm_external_require_events().EventEmitter;
 	var NOOP = function() {};
@@ -21911,7 +21911,7 @@ var init___vite_optional_peer_dep_pg_native_pg = __esmMin(() => {
 	throw new Error(`Could not resolve "pg-native" imported by "pg". Is it installed?`);
 });
 //#endregion
-//#region node_modules/pg/lib/native/query.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/native/query.js
 var require_query = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var EventEmitter = require_builtin_esm_external_require_events().EventEmitter;
 	var util = require_builtin_esm_external_require_util();
@@ -22022,7 +22022,7 @@ var require_query = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	};
 }));
 //#endregion
-//#region node_modules/pg/lib/native/client.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/native/client.js
 var require_client = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var nodeUtils = require_builtin_esm_external_require_util();
 	var Native;
@@ -22244,12 +22244,12 @@ var require_client = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	};
 }));
 //#endregion
-//#region node_modules/pg/lib/native/index.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/native/index.js
 var require_native = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_client();
 }));
 //#endregion
-//#region node_modules/pg/lib/index.js
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/lib/index.js
 var require_lib = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	var Client = require_client$1();
 	var defaults = require_defaults();
@@ -22305,7 +22305,7 @@ var require_lib = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 	});
 }));
 //#endregion
-//#region node_modules/pg/esm/index.mjs
+//#region node_modules/.pnpm/pg@8.22.0/node_modules/pg/esm/index.mjs
 var import_lib = /* @__PURE__ */ __toESM(require_lib(), 1);
 import_lib.default.Client;
 var Pool$1 = import_lib.default.Pool;
@@ -22320,7 +22320,7 @@ import_lib.default.TypeOverrides;
 import_lib.default.defaults;
 var esm_default = import_lib.default;
 //#endregion
-//#region node_modules/drizzle-orm/selection-proxy.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/selection-proxy.js
 var SelectionProxyHandler = class SelectionProxyHandler {
 	static [entityKind] = "SelectionProxyHandler";
 	config;
@@ -22357,7 +22357,7 @@ var SelectionProxyHandler = class SelectionProxyHandler {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/casing.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/casing.js
 function toSnakeCase(input) {
 	return (input.replace(/['\u2019]/g, "").match(/[\da-z]+|[A-Z]+(?![a-z])|[A-Z][\da-z]+/g) ?? []).map((word) => word.toLowerCase()).join("_");
 }
@@ -22400,12 +22400,12 @@ var CasingCache = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/view-base.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/view-base.js
 var PgViewBase = class extends View {
 	static [entityKind] = "PgViewBase";
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/dialect.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/dialect.js
 var PgDialect = class {
 	static [entityKind] = "PgDialect";
 	/** @internal */
@@ -22855,7 +22855,7 @@ var PgDialect = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/query-builders/query-builder.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/query-builders/query-builder.js
 var TypedQueryBuilder = class {
 	static [entityKind] = "TypedQueryBuilder";
 	/** @internal */
@@ -22864,7 +22864,7 @@ var TypedQueryBuilder = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/select.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/select.js
 var PgSelectBuilder = class {
 	static [entityKind] = "PgSelectBuilder";
 	fields;
@@ -23631,7 +23631,7 @@ var intersectAll = createSetOperator("intersect", true);
 var except = createSetOperator("except", false);
 var exceptAll = createSetOperator("except", true);
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/query-builder.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/query-builder.js
 var QueryBuilder = class {
 	static [entityKind] = "PgQueryBuilder";
 	dialect;
@@ -23713,7 +23713,7 @@ var QueryBuilder = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/utils.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/utils.js
 function extractUsedTable(table) {
 	if (is(table, PgTable)) return [table[Schema] ? `${table[Schema]}.${table[Table.Symbol.BaseName]}` : table[Table.Symbol.BaseName]];
 	if (is(table, Subquery)) return table._.usedTables ?? [];
@@ -23721,7 +23721,7 @@ function extractUsedTable(table) {
 	return [];
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/delete.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/delete.js
 var PgDeleteBase = class extends QueryPromise {
 	constructor(table, session, dialect, withList) {
 		super();
@@ -23817,7 +23817,7 @@ var PgDeleteBase = class extends QueryPromise {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/insert.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/insert.js
 var PgInsertBuilder = class {
 	constructor(table, session, dialect, withList, overridingSystemValue_) {
 		this.table = table;
@@ -23994,7 +23994,7 @@ var PgInsertBase = class extends QueryPromise {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/refresh-materialized-view.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/refresh-materialized-view.js
 var PgRefreshMaterializedView = class extends QueryPromise {
 	constructor(view, session, dialect) {
 		super();
@@ -24044,7 +24044,7 @@ var PgRefreshMaterializedView = class extends QueryPromise {
 	};
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/update.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/update.js
 var PgUpdateBuilder = class {
 	constructor(table, session, dialect, withList) {
 		this.table = table;
@@ -24237,7 +24237,7 @@ var PgUpdateBase = class extends QueryPromise {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/count.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/count.js
 var PgCountBuilder = class PgCountBuilder extends SQL {
 	constructor(params) {
 		super(PgCountBuilder.buildEmbeddedCount(params.source, params.filters).queryChunks);
@@ -24279,7 +24279,7 @@ var PgCountBuilder = class PgCountBuilder extends SQL {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/query.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/query.js
 var RelationalQueryBuilder = class {
 	constructor(fullSchema, schema, tableNamesMap, table, tableConfig, dialect, session) {
 		this.fullSchema = fullSchema;
@@ -24367,7 +24367,7 @@ var PgRelationalQuery = class extends QueryPromise {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/query-builders/raw.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/query-builders/raw.js
 var PgRaw = class extends QueryPromise {
 	constructor(execute, sql, query, mapBatchResult) {
 		super();
@@ -24396,7 +24396,7 @@ var PgRaw = class extends QueryPromise {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/db.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/db.js
 var PgDatabase = class {
 	constructor(dialect, session, schema) {
 		this.dialect = dialect;
@@ -24657,7 +24657,7 @@ var PgDatabase = class {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/cache/core/cache.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/cache/core/cache.js
 var Cache = class {
 	static [entityKind] = "Cache";
 };
@@ -24677,7 +24677,7 @@ async function hashQuery(sql, params) {
 	return [...new Uint8Array(hashBuffer)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 //#endregion
-//#region node_modules/drizzle-orm/pg-core/session.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/pg-core/session.js
 var PgPreparedQuery = class {
 	constructor(query, cache, queryMetadata, cacheConfig) {
 		this.query = query;
@@ -24794,7 +24794,7 @@ var PgTransaction = class extends PgDatabase {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/node-postgres/session.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/node-postgres/session.js
 var { Pool, types } = esm_default;
 var NodePgPreparedQuery = class extends PgPreparedQuery {
 	constructor(client, queryString, params, logger, cache, queryMetadata, cacheConfig, fields, name, _isResponseInArrayMode, customResultMapper) {
@@ -24950,7 +24950,7 @@ var NodePgTransaction = class NodePgTransaction extends PgTransaction {
 	}
 };
 //#endregion
-//#region node_modules/drizzle-orm/node-postgres/driver.js
+//#region node_modules/.pnpm/drizzle-orm@0.45.2_@types+pg@8.20.0_pg@8.22.0/node_modules/drizzle-orm/node-postgres/driver.js
 var NodePgDriver = class {
 	constructor(client, dialect, options = {}) {
 		this.client = client;
@@ -25906,11 +25906,134 @@ var siteContact = {
 	}
 };
 //#endregion
+//#region lib/sodic-linked-media.ts
+var sourceFolderId = "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS";
+var sourceFiles = [
+	["1st & cover .HEIC", "1PtMwqsohnjKgpFZoukq5-xWpLG2Z3nLJ"],
+	["2nd.HEIC", "1zV9r6xH02r-jWUyukvmsVN_UMzhaVjE_"],
+	["3rd.HEIC", "1DTphNqAJhJyoaf87DuInu05K3CDjUaDv"],
+	["4th.HEIC", "153Cn-ENFwIRjWxOM9c7LBhmlxcccJz6i"],
+	["5th.HEIC", "1m9P-Vt8V3n9Dsdn9II8ji_vMIbVULEl4"],
+	["6.HEIC", "17EbABIbvfcI4CI4Tnz34qCHJMop45EEE"],
+	["7.HEIC", "1YW_ppjuQ42-VJZaToohGLjNILcG_rJIL"],
+	["8.HEIC", "1se5IiFty4Aq5gtpXLSWjBKmOM1gpvZsa"],
+	["9.HEIC", "1zNP89LynCQ8VHwChuAkXivPWrW5FxS7R"],
+	["10.HEIC", "1b_xRsfK6K7JY9F3mNpefA3PEFaIpjAHw"],
+	["11.HEIC", "16z4rMmYjLqZ1GvM-zxPw9jcxm0UfVF1D"],
+	["12.HEIC", "1jG-0eHu523k7aDqcPj9tqrRbyCYr_w44"],
+	["13.HEIC", "1s-6b3qF6sfSJi1PlqTk6yRH3XJ3y4A_L"]
+];
+var areas = [
+	"cover",
+	"rooms",
+	"wall",
+	"doors",
+	"stairs",
+	"reception",
+	"reception-detail",
+	"doors",
+	"kitchen",
+	"units",
+	"wall",
+	"bedroom",
+	"detail"
+];
+var captions = [
+	{
+		en: "A dining wall where sculptural light and curved detailing establish the SODIC arrival.",
+		ar: "حائط طعام تضع فيه الإضاءة النحتية والتفاصيل المنحنية ملامح الوصول إلى سوديك."
+	},
+	{
+		en: "A composed dining room bringing timber, lighting and furniture into one rhythm.",
+		ar: "غرفة طعام متناسقة تجمع الخشب والإضاءة والأثاث في إيقاع واحد."
+	},
+	{
+		en: "Media joinery and dark timber set a calm focal wall.",
+		ar: "تحدد نجارة الوسائط والخشب الداكن حائطاً محورياً هادئاً."
+	},
+	{
+		en: "A timber-lined threshold tying the entry to the stair.",
+		ar: "عتبة مكسوة بالخشب تصل المدخل بالسلم."
+	},
+	{
+		en: "A stair flight framed by glass, timber and precise shadow gaps.",
+		ar: "سلم تؤطره الزجاجات والخشب وفواصل الظل الدقيقة."
+	},
+	{
+		en: "Vertical wall profiles and stone artwork shape the reception interior.",
+		ar: "تشكل القطاعات الرأسية والعمل الحجري مساحة الاستقبال الداخلية."
+	},
+	{
+		en: "A close view of the reception package, from fluted wall to crafted display.",
+		ar: "لقطة قريبة لحزمة الاستقبال من الحائط المخدد إلى وحدة العرض المصنوعة بعناية."
+	},
+	{
+		en: "Entry wall cladding turns circulation into a considered interior moment.",
+		ar: "تحول تكسية حائط المدخل مسار الحركة إلى لحظة داخلية مدروسة."
+	},
+	{
+		en: "A compact kitchen and adjoining door set resolved as one residential package.",
+		ar: "مطبخ مدمج ومجموعة أبواب مجاورة حُسمت كحزمة سكنية واحدة."
+	},
+	{
+		en: "Full-height joinery adds storage and display to the living room.",
+		ar: "تضيف النجارة بارتفاع كامل التخزين والعرض إلى غرفة المعيشة."
+	},
+	{
+		en: "Open shelving and wall panels balance function with a lighter seating zone.",
+		ar: "توازن الأرفف المفتوحة وألواح الحائط بين الوظيفة ومنطقة جلوس أخف."
+	},
+	{
+		en: "A bedroom headboard and wall package continuing the same timber language.",
+		ar: "رأس سرير وحزمة حائط تواصل اللغة الخشبية نفسها."
+	},
+	{
+		en: "A close wall detail showing the junction between veneer, lighting and fabric.",
+		ar: "تفصيلة حائط قريبة توضح التقاء القشرة والإضاءة والقماش."
+	}
+];
+function capabilitiesFor$1(area) {
+	if (area === "kitchen") return ["kitchens", "custom-units"];
+	if (area === "bedroom") return ["bedrooms", "custom-units"];
+	if (area === "doors") return ["doors", "wall-cladding"];
+	if (area === "stairs" || area === "wall" || area === "reception-detail") return ["wall-cladding", "custom-units"];
+	return ["living-rooms", "custom-units"];
+}
+var sodicLinkedMedia = sourceFiles.map(([sourceName, driveFileId], index) => {
+	const number = String(index + 1).padStart(2, "0");
+	const id = `sodic-linked-${number}`;
+	const area = areas[index];
+	const caption = captions[index];
+	return {
+		id,
+		src: `/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-${number}.webp`,
+		sourceFolder: "SODIC / Ahmed Sherif photo set",
+		sourceFolderId,
+		sourceName,
+		projectSlug: "sodic-collaboration",
+		sector: "residential-developments",
+		capabilities: capabilitiesFor$1(area),
+		stage: "finished",
+		authenticity: "verified-real",
+		rights: "approved",
+		orientation: "square",
+		quality: area === "cover" ? "hero" : "editorial",
+		usage: "project",
+		alt: caption,
+		driveFileId,
+		originalMime: "image/heic",
+		derived: { webp: `/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-${number}.webp` },
+		publishStatus: "public",
+		area
+	};
+});
+var sodicLinkedMediaIds = sodicLinkedMedia.map((asset) => asset.id);
+//#endregion
 //#region lib/generated-dressing-drive-assets.json
 var generated_dressing_drive_assets_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"dressing-01-01\",\"driveFileId\":\"1QDRFfD6h9xy80KEiDT8onwGTRZ5IlUw6\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1EBo-nIxqiEiQAK8r7VIkBqzaxqtH9v4w\",\"sourceFolderName\":\"Dressing 1 (sodic vilette)\",\"imageOrder\":1,\"sourceName\":\"IMG_0343.heif\",\"localSrc\":\"/drive/dressing/dressing-01-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-01-02\",\"driveFileId\":\"1zasUfaNCnj2HYylnu2f8YqePtBxiG_hD\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1EBo-nIxqiEiQAK8r7VIkBqzaxqtH9v4w\",\"sourceFolderName\":\"Dressing 1 (sodic vilette)\",\"imageOrder\":2,\"sourceName\":\"IMG_0342.heif\",\"localSrc\":\"/drive/dressing/dressing-01-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-01-03\",\"driveFileId\":\"1uQ5FGSolzgERdxpZJWGUNlbFJESQSuv7\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1EBo-nIxqiEiQAK8r7VIkBqzaxqtH9v4w\",\"sourceFolderName\":\"Dressing 1 (sodic vilette)\",\"imageOrder\":3,\"sourceName\":\"IMG_0287.heif\",\"localSrc\":\"/drive/dressing/dressing-01-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7b77d152d8e0a5b45de4cfff138d7746c029bec643c9150d40b109b85ccf834e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-01-04\",\"driveFileId\":\"1ubTjOGhrv6ovCuO2VyQ4ekqBFDlniAJH\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1EBo-nIxqiEiQAK8r7VIkBqzaxqtH9v4w\",\"sourceFolderName\":\"Dressing 1 (sodic vilette)\",\"imageOrder\":4,\"sourceName\":\"IMG_0340.heif\",\"localSrc\":\"/drive/dressing/dressing-01-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e98d167f409f90e88dc9eb6627d7a3160d6ea168d3f4615548a1c9cef14d5a40\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-02-01\",\"driveFileId\":\"1eMqHxwTRBjJC7714kD8DxXJ_miW_ux29\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1OrhLiy6n10YaOcMErZBTVX_oVwP3b46-\",\"sourceFolderName\":\"Dressing 2 (Playa)\",\"imageOrder\":1,\"sourceName\":\"321c1d47-e7a4-472d-8101-438d81f6b601.jpg\",\"localSrc\":\"/drive/dressing/dressing-02-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"b9b764bd12008dd444379590c5a9739eea6f5eb355193b29ba16117ac497b4cf\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-02-02\",\"driveFileId\":\"18ConaFENfcvIHiZ_-tlT91RPzdtW2Lrm\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1OrhLiy6n10YaOcMErZBTVX_oVwP3b46-\",\"sourceFolderName\":\"Dressing 2 (Playa)\",\"imageOrder\":2,\"sourceName\":\"IMG_1291.PNG\",\"localSrc\":\"/drive/dressing/dressing-02-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"d2d1f41b2e8b1e098f04f565affe751b6fa03bdee3c56ce569d63249886bac84\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-02-03\",\"driveFileId\":\"1lg2SQ0ffqQhlgCEadbCROcZu5HAGQu-z\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1OrhLiy6n10YaOcMErZBTVX_oVwP3b46-\",\"sourceFolderName\":\"Dressing 2 (Playa)\",\"imageOrder\":3,\"sourceName\":\"30223268-a45c-4d92-8592-b4bbe584a906.jpg\",\"localSrc\":\"/drive/dressing/dressing-02-03.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"28820bf3512f5955e7728b06a3fe8e06bc3ea3abc26afacc30ca109259531cb2\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-03-01\",\"driveFileId\":\"1HjUBYyy5gAZtyhT89InRDgkb8braTSRf\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1ieWZ8B_wabeOZYpjtNZDvaZxvSDBSmnP\",\"sourceFolderName\":\"Dressing 3 (sodic)\",\"imageOrder\":1,\"sourceName\":\"IMG_0355.heif\",\"localSrc\":\"/drive/dressing/dressing-03-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f4612315ad4516eec46c684ffcc63a319c72895cd79b5b54a9ba78cda2409ef5\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-03-02\",\"driveFileId\":\"1y4cBRPiOh0zKHZFv-0k3ZHJzrJZUvpTp\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1ieWZ8B_wabeOZYpjtNZDvaZxvSDBSmnP\",\"sourceFolderName\":\"Dressing 3 (sodic)\",\"imageOrder\":2,\"sourceName\":\"IMG_0352.heif\",\"localSrc\":\"/drive/dressing/dressing-03-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-03-03\",\"driveFileId\":\"1KEdRJaSCYQZHXIytcssjkTVfG2yZMkAb\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1ieWZ8B_wabeOZYpjtNZDvaZxvSDBSmnP\",\"sourceFolderName\":\"Dressing 3 (sodic)\",\"imageOrder\":3,\"sourceName\":\"IMG_9547.heif\",\"localSrc\":\"/drive/dressing/dressing-03-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c51723ca497641651295c189af330fbfe6d4a5f7005be93b6525ddca63ed2e35\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-03-04\",\"driveFileId\":\"1FFd31NBKrHyLO_izQ2sHhwjTv9ZzUvIM\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1ieWZ8B_wabeOZYpjtNZDvaZxvSDBSmnP\",\"sourceFolderName\":\"Dressing 3 (sodic)\",\"imageOrder\":4,\"sourceName\":\"IMG_0356.heif\",\"localSrc\":\"/drive/dressing/dressing-03-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cedaf845b533213d55abd5f13021a3c41d0777748eeda1229e80a503bf5f0c08\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-03-05\",\"driveFileId\":\"1cDwIwEkp2PIKudiKPjJAZWlQgNuEEoKD\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1ieWZ8B_wabeOZYpjtNZDvaZxvSDBSmnP\",\"sourceFolderName\":\"Dressing 3 (sodic)\",\"imageOrder\":5,\"sourceName\":\"IMG_0357.heif\",\"localSrc\":\"/drive/dressing/dressing-03-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8da0950e0fbc41998c4429a904611538482fffafaeb5a978665b8f8fdb033177\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-03-06\",\"driveFileId\":\"1d740lm_pxcIlJ1X98Nlsy0x9vMVLAjHL\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1ieWZ8B_wabeOZYpjtNZDvaZxvSDBSmnP\",\"sourceFolderName\":\"Dressing 3 (sodic)\",\"imageOrder\":6,\"sourceName\":\"IMG_0353.heif\",\"localSrc\":\"/drive/dressing/dressing-03-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-01\",\"driveFileId\":\"1p-lgPa4M-ki-QOEBUqjBy_ZwpctKeIsj\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":1,\"sourceName\":\"IMG_0094.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f308868c27aabadc86b7589255f2b45d8680cba185ffe769921bad7624aa882e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-02\",\"driveFileId\":\"1R2UC1McUloTQipzbC8SMV15m76cnO5Kg\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":2,\"sourceName\":\"IMG_0099.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4b9cac38a2d53f013673c99d374355bbc587af4f5a32ab9e62084fd84b212cad\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-03\",\"driveFileId\":\"1PbPqPF1x9onYURULDeDlyGwo2fD-Ji4-\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":3,\"sourceName\":\"IMG_0106.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bd3fa8b40683134c9268afc931191a67511da86f90e544f5d3228b5ea566ca61\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-04\",\"driveFileId\":\"1-hUAucXArkQCW235CRMtu0cecDStCK_j\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":4,\"sourceName\":\"IMG_0105.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b83d7b54b9c06259b8546601019003992aa4111bddb508ad5c2d9f016235ee69\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-05\",\"driveFileId\":\"1exIaFzKBp5mZnjLJRSIuEdXe7WzPLock\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":5,\"sourceName\":\"IMG_0104.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"03bfa1c696f80ae480be3cef007d070458d93a49b46306f06be620f8c099014d\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-06\",\"driveFileId\":\"1CXJtiEwFys7JeQmLPuHrZi2jEmJiJ3DE\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":6,\"sourceName\":\"IMG_0103.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"eacbff82bb7414861d66727fe269c52268cffa59cf1c70aa340714459a3302b0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-07\",\"driveFileId\":\"1Pp5ueVbshw6hCSdxLGh-bfRcZW8IQZnd\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":7,\"sourceName\":\"IMG_0097.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5fe8c015fef53296be2060bfe0fb675380504d99d3405abe60e1e2ee46376c83\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-04-08\",\"driveFileId\":\"1Lxl32tvU8jxnmTYRHXGfVvq5q0_XInD1\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-g0FiIg9LNYi5zazhjvJV1Gz-FP5sQBs\",\"sourceFolderName\":\"Dressing 4 (New Cairo)\",\"imageOrder\":8,\"sourceName\":\"IMG_0102.HEIC\",\"localSrc\":\"/drive/dressing/dressing-04-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f122868f43fbf9b5ae60c0314f7bc7f62973a5dd481aa2c0916c28813743eacf\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-01\",\"driveFileId\":\"1tvrKnJ5UViC8T6Zw48GarZ_eMyuCRBLj\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":1,\"sourceName\":\"1.JPG\",\"localSrc\":\"/drive/dressing/dressing-collection-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"332d6436e3ff33a2b8ed85cd654e87f34c48293c45387c080ef75742347f186d\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-02\",\"driveFileId\":\"1e_C2o8BDOb6UVjxGVAevxT5hxU85XC72\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":2,\"sourceName\":\"2.HEIC\",\"localSrc\":\"/drive/dressing/dressing-collection-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"0b4ab89a386de4e92c58b95ae23d6558a898bfd4d8703d0cb9d588cb4c3cce0c\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-03\",\"driveFileId\":\"1K-SCs6f-cHuTBpSnFNw89YaOma4yNS5g\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":3,\"sourceName\":\"IMG_2476.HEIC\",\"localSrc\":\"/drive/dressing/dressing-collection-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"33fc34f2aa18f83d7cefe4ed53ad200f26d653bca7c997741b30b8d5aaa2040f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-04\",\"driveFileId\":\"1me5mEA1oZ-doSr79KTKKdyaM6lKeHV7C\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":4,\"sourceName\":\"4.PNG\",\"localSrc\":\"/drive/dressing/dressing-collection-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"2dad176fd2241d2c3d9d23ebcdf6ef4c4ed333cecaaedc81f9fcd67e04aa7dc0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-05\",\"driveFileId\":\"1JhM0vR8NCrYFBLGcYd6OE7ZeF7-yqRd3\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":5,\"sourceName\":\"5.PNG\",\"localSrc\":\"/drive/dressing/dressing-collection-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"3d743b1cf16524b57a399cb5a0e7f0de36451b9fefd2204eb34229916d60faee\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-06\",\"driveFileId\":\"12wqYTl-5qbbDvqsbScC9UKYdgeTuZJ7e\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":6,\"sourceName\":\"6.JPG\",\"localSrc\":\"/drive/dressing/dressing-collection-06.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"22bc812c0dd6dd66bb67e28c5aa91e71be95c4c4818dd6cbc888ec0a675ba074\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-07\",\"driveFileId\":\"1XU6uO_3fDUoxKmn63FVN4Dp-WqwueN9h\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":7,\"sourceName\":\"7.PNG\",\"localSrc\":\"/drive/dressing/dressing-collection-07.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"56f90342b96894cff7fc747661ba3d536a718b7bda822c0cd5e2b6beffefeece\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-08\",\"driveFileId\":\"1FbKgQqfqnf4rT9q4W_-huN_mP2rA-3a8\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":8,\"sourceName\":\"8.HEIC\",\"localSrc\":\"/drive/dressing/dressing-collection-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"506b446a135b6e7ccb3d7468a6264fe3622379a7571ae399c29ed6ab346950d6\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-collection-09\",\"driveFileId\":\"1ak4BimvcwFk0yNbJRJ2zNz7bPdUCr5PE\",\"sourceRootId\":\"1_dw0o8qNZHWkhPizdv5ss0NUS66S4LNS\",\"sourceFolderId\":\"1-bil17AsCgA4AnUybCnlR_OOBv22Z-uK\",\"sourceFolderName\":\"Collection\",\"imageOrder\":9,\"sourceName\":\"9.HEIC\",\"localSrc\":\"/drive/dressing/dressing-collection-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"572486bbfcf0bc15c11385c1fae1d605b870a123e6c23f5ea72df8a2f43b00ca\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"}]");
 //#endregion
 //#region lib/generated-category-drive-assets.json
-var generated_category_drive_assets_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"kitchen-obour-01\",\"driveFileId\":\"1tMnbWs7EX6BLe6jYqL-SiorGf9hjT7bh\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9414.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"eedaec17cbaadf8b40b8fda6da7710c97b70c7814c689e56ee309457d8df5f38\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-02\",\"driveFileId\":\"1k-fM110ILq-3U1kWzjcMZ5ET--E5pa64\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9411.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-02.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"caa0a5d9de7f8ff39805add6c8d805be5d94a73eab7d98351552a4a1fe9545e1\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-03\",\"driveFileId\":\"16m4KwKCXQ-pBQNRO5r0Y_EZGkPG47KiH\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9410.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"55f1b9dbb71199cf339930ec85fb930afe9cf666e56af29b898896a08d350876\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-04\",\"driveFileId\":\"1RfYwap6fxUHrgWci3hG_hDJeu5XDckRm\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9413.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"22ca3841de77c996439edd84ae2601db9b4d5df7e499175f7710bb77fc117157\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-05\",\"driveFileId\":\"14_OuicIfdjPpdck1w_VNZx1TEKfM8o-z\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9409.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"5c0e8e9843ae4eec7798d8fc4738f24860e2a58ee818f0354c0fcd77bda6f784\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-06\",\"driveFileId\":\"12lIlgCbnizWOvdIzHzN2Mtj8CbMiUHbz\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9400.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-06.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8f280fd9a6c5f045e2beb98af2be46f43cb376a69845cd015cf77da992871245\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-07\",\"driveFileId\":\"1UBkEXu_ECV2NBF-gtlSOP1u03H8mMieR\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2525.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ef6f23f6cc8d43a3282ce14edd59fbbc6adb2198d1b6cc579a28e6183213e3ef\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-08\",\"driveFileId\":\"1RZrjcWUzVNrRZK2mMy3E9U_4wIdcH8nT\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2522.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a134841037593b83df95c48681dd38448121ce0767528084ab028e4e802beadf\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-09\",\"driveFileId\":\"1gMO0A3lPxMk2IIPU8IF3KWsKS8zKx8jp\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2524.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cb71c230e3b73ba6a732d2295421144e4de3467daf047c08d897ec27585549a9\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-10\",\"driveFileId\":\"1tYDk-675SLhRo0iwdAiJbFKbUhFhqcS_\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2532.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"dc880e86afe6b91a5fd84aecb50cd269c650f210a0c2d390507d284fba74e895\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-11\",\"driveFileId\":\"195BQnO_OpS6KEj2C5gi1JLT7shSB00D9\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2531.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b6eadb3f6634453abde8703cd9d27b6c1e6042917861b6cfd2d4d2f4c7b9294c\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-12\",\"driveFileId\":\"1Ta34gmWsUtoPApQRT4PzwdFF3oJVK-Rf\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2526.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bf1ea293c9dc2f6bf78861d9327824796c1f0409bcea1cdb3203b15c2b1d5d28\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-13\",\"driveFileId\":\"1L5_wFTNZvTfuNl-d2tM7-x7Sqk9VZUCb\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"11f7c376-2d2d-4a0b-a9e3-b7e685b9688f.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-13.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"d00bdab5363bfbea75bbee1eed6f2c0f2f44440dad194d98666a9e4d6dd6f1b0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-14\",\"driveFileId\":\"1Jl7jhjE97vVrwdMBdjIActz4rnK_It_G\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2523.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-14.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f4fe66f870c9d456778cb792fab583ebd0927e35a6a09b65753fc6367bb0e5c4\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-15\",\"driveFileId\":\"1CMR8A03y12QW0ybFSQNzUU8jNdYnoWXF\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2533.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-15.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"35384ee327aa17e469efcf21a9037b1159b4fb36a04881e8fe847832b57b00eb\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-16\",\"driveFileId\":\"1kvmsNriLZ6K7q_Xof0sZYAMk-XgejZju\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2534.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-16.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d2c87071574c902f7bb81b750c1dc77078653199f122c3b35c49c03ca6d52682\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-17\",\"driveFileId\":\"1mE1OXV3EjXHcPEyO5vuwtarSh1cVO-Ak\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"0600d022-fec8-4d34-b89b-9821362f7945.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-17.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"e0a95a5e7c7ddfb697589920cf2542018a1da2d1323d9a253af24112c04e833d\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-18\",\"driveFileId\":\"14pisp5kNa9xxBtgSLILZIxjWjv0iW0hL\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"6924bfbf-de99-476c-a4a2-3e5d2729ba38.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-18.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"b6e5a2a52e417e10b3a743bacc1e6728f112c8d9b21ad7a81c33da8477dc2dbf\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-19\",\"driveFileId\":\"1hHt5VnWsKZF1JGQL11dIWSixRMxAZKHf\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"dcdf6165-ef8f-4cba-a053-44f1562ac869.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-19.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"5444e551d276aa95914d9d35da3345d677bad9009f610ee0aa53ea6890e08d58\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-20\",\"driveFileId\":\"1EryUvaxMekl1CMnzfnEM1W1ykSZ4yaJQ\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"4a6b2691-fc4b-4141-9f6f-78751c1ee2bb.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-20.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1215c082934e6ba245bf4b9920e3c2e9ad72de4d692a873b62528c9f3cda81ea\",\"orientation\":\"square\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-21\",\"driveFileId\":\"1o-93Rgn7qFVMHkGl7aG5tYbYToOMGqi_\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"89ed5665-3724-473f-8cf5-077c9968768c.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-21.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"ac1227b07d1771ecd44ddd43417fc7caa487245e508368a7b51d2fafffc714d4\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-01\",\"driveFileId\":\"1r3k6rUhOa32JJ41h8qYbkyn8SlSlITlp\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0958.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"65c3dfe69618f73488a89a6460e3871ef93f150912bc11666ca57d3c9b256af6\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-02\",\"driveFileId\":\"18xePK2OLwR42VvpiCk8oTl1jryEPw-x8\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0959.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"ddb18ff7c047e1309b49cead59e741625378a091cfea2ffae854024a5ca9dffa\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-03\",\"driveFileId\":\"1ak1pREO34BmtMntEBWo8cJ7jYn_RS7ki\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0960.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"b420853703f969b5ebef35b07767191b10d96a1437e9c244f8d5f0a82bc64ee3\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-04\",\"driveFileId\":\"12pf2SpwL6R2k-j40NFvBSdUd_-nuKQHM\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0961.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-04.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"ea8d1a8964260ff1a7b417568c6066715cf2bdf468b81a23ac52485362b8b798\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-05\",\"driveFileId\":\"15aa3bVnj0p_VubvwkPC3vlfkx4B6kCm0\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0962.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"fb4c98ebd6b0df84c7447b657f85110ee9911ab5ecfa15702a5b2c4cae06e1fe\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-06\",\"driveFileId\":\"1bMQ4Blod_mQAzzM-D6CtdJyN-hCY960h\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0956.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-06.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"f62a40ac08bdbd95addd52fa6d2c6f8e2815109eb9aa8efb7620217dc822ee85\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-01\",\"driveFileId\":\"1NG0WV2PJxIRdVeIp1wHucpBuyoUs6apo\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5857.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d1f5456360c32fc5b8e8effa637d9ce0a4b7a4ea03f8c56a4c7ab89e3e01f78c\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-02\",\"driveFileId\":\"1U_h0qkyaXtlh2TaOQ-r75VJZxUBb5c5P\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5865.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8bf6a7fc473f33986a21f85986217357e15ca9c5516a4af2d45ba2a514ff24aa\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-03\",\"driveFileId\":\"1tC94OTyxyhoKVbzK_5wqb63iWS6GINh2\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5946.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f58d15bdd09a8778880bdf8403d463b528d4279c0bfcefcff0384bc9146c8c9a\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-04\",\"driveFileId\":\"1v1JEOOaTdC4jEO6UoblkNMAIpIr4an-m\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5886.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"60b56ce6bfed1b8539596237daf5060b721258490be38137a1f38350341f519e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-05\",\"driveFileId\":\"1aGFBwa0OuazJrhNjw4yPzcGqN9CHo0zg\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5876.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"df7674468d61bcab4206660c575e36e69adeb12e6d42a7d2bf0c4f4fde20e2ab\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-06\",\"driveFileId\":\"1RcTHaewzbp0v-7bImFygjMw1rp-zNN-o\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5840.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8bdee13ace39a2ef6058d35913a88e931e5135ce940e5f7bb73d5b953d130f88\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-07\",\"driveFileId\":\"1yYZC7zy5K0D6ohQYtGC5-cKPxgZyWaRj\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5819.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"184cbacd27094dc39b627504e7ffd6e5fcd79c13782d27db72019a0dbc99a1f6\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-08\",\"driveFileId\":\"1O-CiDeedVPpBRuCy9CR1jpiIOb5cw0av\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5864.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"057b0485cf5f8ccaa431083ae88c1618b43630332be1a8b37563a960414499c9\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-09\",\"driveFileId\":\"10iDqpYjALFu_ChL1tueYDowf0YZXIzWD\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5843.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7cc7841e54b838b9f7a39e3e3d47e60788ee52aa43e9c49da35202777badd519\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-10\",\"driveFileId\":\"1pS2s8sixoLmWWVKJKStwTuKcWHJb6IT2\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5834.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"3918f48b7922eae788d7442b5558e53a193a1ee439300aefdb5cf1bc85fbdec9\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-a-11\",\"driveFileId\":\"1kT_1GQIbNzFlrMGLPanLyIPMsgJNzyT0\",\"sourceFolderId\":\"10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j\",\"sourceName\":\"IMG_5849.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-a-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"db7944736b90c59432d5016eeb0c4d86b8a9db93e5bfed7869443120a95e28e1\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-b-01\",\"driveFileId\":\"19OMksMj2TT8yEO1Z8gIAicyX7YlqbTTa\",\"sourceFolderId\":\"10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp\",\"sourceName\":\"IMG_9719.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-b-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"807f6835a6bc479acce4f2e4f14b25d6a69f54d17c1774f715dde3d8c5acfb66\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-b-02\",\"driveFileId\":\"1zC4HCcavaED8EynrA0PShqFn9hPISHHU\",\"sourceFolderId\":\"10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp\",\"sourceName\":\"IMG_9727.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-b-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"74443111f86d2d9b1d8beeb0f8db22653c727a946f8d4e25edbdc6940448c6d9\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-b-03\",\"driveFileId\":\"1PsuKvdear5tmhzDoOx3MW0Zf2wa7gC3s\",\"sourceFolderId\":\"10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp\",\"sourceName\":\"IMG_9728.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-b-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4df5ae860d292e0cb7ab9912a65c58a12f278a450cc87f2a162247f4783e70cb\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-b-04\",\"driveFileId\":\"1aDewiO2rMyFNMR3PqQZZmDTYblOJNw5j\",\"sourceFolderId\":\"10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp\",\"sourceName\":\"IMG_9733.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-b-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"0ce11db0b7af6691f7f3cb7328c973e44f67166c1782765e7e43f50be52aa7b2\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-b-05\",\"driveFileId\":\"1hf-CfG8vmm3pa-aZWujnmJg8CheG46w2\",\"sourceFolderId\":\"10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp\",\"sourceName\":\"IMG_9724.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-b-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1a4da743123bac4e185517dc2e38ce627a9b94efb8c682ddc00617ade52989ba\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-b-06\",\"driveFileId\":\"1_j2VCplA2J16BfIMiPIqKXnKJGmtog67\",\"sourceFolderId\":\"10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp\",\"sourceName\":\"IMG_9738.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-b-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"de25ae5f269f336c7e403b81d00e0c8dce18ef85b8f0a2710a5344f651ad55fe\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-b-07\",\"driveFileId\":\"1atdXjTqlu19jcZ0nMaxQHcrn3HuIKFzM\",\"sourceFolderId\":\"10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp\",\"sourceName\":\"IMG_9717.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-b-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"44fcb1b962451db323076fd08b6afd22ea8f1072b3296b42af64118459d24c2a\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-09\",\"driveFileId\":\"1fYRcH5w_Rs4CcAgBOoEO8jHTnZCEwRaI\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0340.HEIC\",\"localSrc\":\"/drive/dressing/dressing-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e98d167f409f90e88dc9eb6627d7a3160d6ea168d3f4615548a1c9cef14d5a40\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-10\",\"driveFileId\":\"1lEw9I439xqdpOZf12Oo9fwYGOU5FXsmO\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0352.HEIC\",\"localSrc\":\"/drive/dressing/dressing-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-11\",\"driveFileId\":\"1f1TfkOPFBjpOjY4dwlH4b07SbUtMhj4a\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0342.HEIC\",\"localSrc\":\"/drive/dressing/dressing-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-12\",\"driveFileId\":\"1ZmLjpK_Ksj7ePAaaCt7AsoMlYujObwsJ\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0287.HEIC\",\"localSrc\":\"/drive/dressing/dressing-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7b77d152d8e0a5b45de4cfff138d7746c029bec643c9150d40b109b85ccf834e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-13\",\"driveFileId\":\"1bKRncA3QiCvOVaJJ8LdmIik4_w2tcAiG\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0353.HEIC\",\"localSrc\":\"/drive/dressing/dressing-13.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-03\",\"driveFileId\":\"1N5iHK9y-ZCwHBY3KuyXw2XibvkJrhyiI\",\"sourceFolderId\":\"1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz\",\"sourceName\":\"3.png\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-03.webp\",\"originalMime\":\"image/png\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-01\",\"driveFileId\":\"1Agz6x9h41CQWD-UEGL3Q09fwH2USAInM\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2325.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"9571363c854aaa9182f13d9fccef1ca5df43f82babe9a267cc1c1c006e5fde0b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-02\",\"driveFileId\":\"1_tg92kR2qOHTrQFyAXfGF2ycs_J5_vXj\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2322.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"afb4b3fe67b337a42d9d7ed552707c7e7f10914605befc8705a22e4e3f3ad3df\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-03\",\"driveFileId\":\"1BE28X5TQCOQd52DCnfLCxRJgarZkGx6O\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2320.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"85de6cdd964cd47d60870fdcffd32cb2d0ee870813f15ce8950756db0797c244\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-04\",\"driveFileId\":\"1-IzL1L5Qa-JwNGe4DrCrFHvNmzQB0Gu-\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2318.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"06a0d9b5f7467005794f1207d4587100a1636bc1c54252d842b0302a82adbeb3\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-05\",\"driveFileId\":\"1uE7zcAvG35zVvCR302WJqNdt_xML6KRI\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2316.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"1adeebfbb52f8f7ff6683a33d6a1608b60540883b84c3db1a516515e63cad624\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-06\",\"driveFileId\":\"1_wSsFSC_kYA094WDyAD7HlPjuWRKEEbW\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2314.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-06.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8e5313e43bdd0adae4886f613fd65225cd8422dca0cfe1fced2f91eeb0e77f21\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-07\",\"driveFileId\":\"1wr3rWFxeeF6Iga3T9Q0OPSSfGqTcCIAj\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2312.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-07.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a69baa32304fdf17e262a6cf20bd92a9a9c634349b8825bb06a8978c5ab037ee\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-08\",\"driveFileId\":\"1vqnYhGbexAxktk-6ZCIjlyc6KNMgnKIg\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_0113.heif\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"dd785fc5fc3a65fe1dd22b113e2892885c877c9ec26083088e86ef1025e08f48\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-09\",\"driveFileId\":\"1-chxe8mQDoHAg2Rv_rgQPuwuxdkzfPbA\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_1987.heif\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"575f24902cc8f51d0b1ad9ae38077d99a2e6a1c318f3ab519058a0026b3b98a8\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-10\",\"driveFileId\":\"109ZKKCzHbP5kE8utTi3Ww0MqiNpyHVaD\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_0805.heif\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e1415e5c51f23897943f9f935eb9e964f5dc959d5a8251b3100761464146dfb6\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-11\",\"driveFileId\":\"18wepOnxnaEE1TsXNK8rUbYkHtvlYneRH\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"CAA6F07E-265E-4D21-9BA7-29E99D80E784.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-11.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"291074d245562bac245ad2c114441d855366cc8d63b5b380dc4ccdd0d99680d0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-12\",\"driveFileId\":\"1VR4NVuQHMzXEE7Ww8zmQwqsMaQy9Cdad\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"7C5B9E60-6389-4053-B249-E325C7BADDDB.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-12.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"d56d0333ad91d7652f15eb57d7a58f63c50e757ae14739f44e04f8a456563074\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-13\",\"driveFileId\":\"171gXuwod5BzvyV1pXDeGuAx-tVgNdqfV\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"F3B33140-0026-4EE2-92F6-EE1E1CB382F1.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-13.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"a333afc3be9223e2587be5634d8812c2b2c7be84e1c655eecf6a0f6f0b058dda\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-14\",\"driveFileId\":\"1oyBm-1BoM5r_3KshukuU7hinsGOwcmyz\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"arabesque.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-14.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"498b0184d1e67ff048eec8c095aa483ce17486d9dac5fd79f02488df13111868\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-01\",\"driveFileId\":\"1wgW8ffRjg_ITxbvVqL_5S18x1om1vYAE\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_2329.PNG\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"45545b7dc1b000051c8a665bba807d60adada5f11f858ddeacd3cb95a139c4ee\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-02\",\"driveFileId\":\"14Nmkp8qrJUqGDWg0VybduX9nsfu6NZUV\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0631.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8aeadbb52bbc20cbd01d8725ae0edf779a427e687bf3c5375964c1017ae6273e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-03\",\"driveFileId\":\"1GiFXnnNGOAoMdB6BForJg2LlH1W2jiUX\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_2139.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"61e7e1624f6d6e7c6f11d9d7e8ccdd0a0b83fe2afb3d0b26f2db43cd2866b2ba\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-04\",\"driveFileId\":\"1QqQq0O57VA6CzARe1ZTIaemdO1SuUs4e\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"AE0A724C-0C0C-44E4-BB50-F2E2B4423B60.PNG\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8eff3c799854415cefa05dadd9cb70ee2515b928face737479cdf860ff57d451\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-05\",\"driveFileId\":\"1yeFEeT_yk5hWXOkldanXd3BGUuvCIkgy\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0210.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"51bef5f62bf453b460bf5eb5fd2048ce3a85a877728ee43dc282a35bac98e6c5\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-06\",\"driveFileId\":\"1CT3NTecN0xjqbjHdxtJ6C9oHx08yJSoI\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_7004.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"0f3238b4f9ef7f2aa8dbd3b44b70ea9645ecd5753cbf91ced16f866d95a38d8b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-07\",\"driveFileId\":\"1zHWfZ1hfUr5YXQyyAO94lz4C9SZTyxef\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0479.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"16d99bcddfef1df79bf5ca00a8a61b22ac491ce7b1620c6396f6ea4f78585dc5\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-08\",\"driveFileId\":\"1bdN5olItc1Pshcu93qK-kUPTDZzeIS1y\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0525.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"fdc5c5eb763d45d35b70c5ce66d054149a2d47eab08951e0c365fc354a4ba403\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-09\",\"driveFileId\":\"1KpQgjQCo5TTPEcDKTCAMtnESgEWmeN0i\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0522.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"6c668e993ae9b3f41381e00fe2f4244d200566fc354ca9731f32b1806322b362\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-10\",\"driveFileId\":\"1jGRQwaQVKL-_KGsTuOf4u5cyAnSEZ9n7\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0526.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7bdcb6d49406a888c26122966ecac47cb54fefafdf3d6923b0751c97475484fe\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-11\",\"driveFileId\":\"1X6FDr7Hho94o-v4zZ5NKgyeC3WOBVMqt\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0103.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"60fd32e6d4c14decba78bc57d9072c7f661563db81fbe27289187e541d24db3a\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-12\",\"driveFileId\":\"1QTj-GnmFPu5XQ5_h39Cn4dwZB3zsWDQ5\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_6958.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"48a8d9db5a86e9cb490c00f89c70320341ebfe3629d764a3dfd312bfc6af999b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-13\",\"driveFileId\":\"13vd-C7Ddyw8rR_abmnRUZwREuPVwYmQS\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0786.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-13.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ac73a2eb0f2f309e3afe196d5be46b4801fbd2a08d0660b76c2ff8fcf77ef00f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-01\",\"driveFileId\":\"19y1QqslNJpkXPC3bJ-z2cq4g-WZxtJ8v\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_2309.PNG\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"7dd51112e89e6c10e599103abdda141523c7ffddd7d1b6e062be294026da67b2\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-02\",\"driveFileId\":\"1DTZPbt_qnNwnqUG6tDJ_wJ-bViy2ytU8\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_2078.PNG\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"ea435b09c085fe90ae59da5ce49e0e9bf981440e809835f5cc782e05a12d243e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-03\",\"driveFileId\":\"1Rq9Z7VfvlVf8fu9c0gIa_oHBEGAwqPp_\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_2011.HEIC\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"985181234d09680ec94bab962ef51b91c35d166b23f14de34328b0ba454946a1\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-04\",\"driveFileId\":\"1Sk9KGim8XEz_lvSvJrtNWjWI8UQs2YLY\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1613.HEIC\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f06246fac9dd2cd3c411f7bdc71e062eea1a305f5dd9d063650cd873d59481c9\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-05\",\"driveFileId\":\"1mCQNUl6CSDuw4_UWj5GWxH6ReixV65ks\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_6990.HEIC\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5032c406196d9e60a7a214b05e809cc07f8dd5cffdc2ba608e284dd1eb379097\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-06\",\"driveFileId\":\"1afoM0WRr_j10uY9kNIHxjyyYhlZfpT5f\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_4404.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"27df969c60754b6e2ae3ae116c8e09aa37213744b14abc4bc113e538323d556b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-07\",\"driveFileId\":\"125Bf4CgA4xARoX0YwCw2RVJMEVwFIiI0\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_9152.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9605a62798f7f21304141bc1dc231c6f1390485bccb1400da11d4d0692f8eeeb\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-08\",\"driveFileId\":\"1A2jgGnFFck6_jYxzwuV2imzlOJYoM-z4\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_4189.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b402849d74162ecf1f348791a929bbf7182cdb3502e24816a402516b11c0cb9c\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-09\",\"driveFileId\":\"1s1l0o7OCy1z52sP2mtyeD_ZGxqFjqmIQ\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_4499.jpeg\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-09.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a837e32745d9e643b8f6193cb4787aa96f24b8c3507a55d50bd76b542a05b265\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-10\",\"driveFileId\":\"1-Hn_ptQRHUET002c9z2BlebO53j4bolr\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1284.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"79b46cb34b024ea25a93425a830f57b3af1cab0d7d45bad967759751f5faacfa\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-11\",\"driveFileId\":\"1oGy4gKhxPw8fT2H5-0rjg3SgB8e08ojV\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1253.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ec694176078c321542ba81229d06e542834fdf5962021ef7c6eabc40cc160172\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-12\",\"driveFileId\":\"1TvS1mXx8veAuGQrZAyK5nQqzFALOHEsk\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1244.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"526eeead623fbf3527a806879c2da9fbb00756204bd74e4dd7dd58ebf6ed0273\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-13\",\"driveFileId\":\"1petY2eY7cdAiCkxcCXRu2Wk0xdHj_r8B\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_0655.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-13.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f066515c2f84cccfc0593146b92bf04d5e4bc456cc2763c5d6028f173f77a0a0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-14\",\"driveFileId\":\"1lhShP17Xyk57RNETHFyBr7PwtBckWBf8\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"A8075502-5D0C-41A3-8FAC-0290486E5318.png\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-14.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"414bacf03e0073de31f656c949d97155a3b8588833db9d6f30bafe5cb5c915ea\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-15\",\"driveFileId\":\"1CyPTKe-PSqEH7_6HCcZr_IqsTppKMUpP\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"9E31F52C-2452-46A8-AF5A-DA5018346B00.png\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-15.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"4ba7b75c6cdc52944e0b75b379bf8b8c7e88efa6b538cbfa2afc1d45d619358f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-16\",\"driveFileId\":\"1kQyLGOYJKl5YzPehGY5q0_ZCuJ0km_Uy\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_6261.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-16.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"796e3d2b342cbf123c3be3072c9e746b71bdc8a18da36d2eba51681e362b213e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-17\",\"driveFileId\":\"1o0i00p_xglYRvHYdUYDN9UApJIBcNB4_\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_0426.JPG\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-17.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"6fe88444d6949501b5a6a08bafc797c07d9c4f01f48d4a027397c0029bc38b2f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"}]");
+var generated_category_drive_assets_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"kitchen-obour-01\",\"driveFileId\":\"1tMnbWs7EX6BLe6jYqL-SiorGf9hjT7bh\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9414.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"eedaec17cbaadf8b40b8fda6da7710c97b70c7814c689e56ee309457d8df5f38\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-02\",\"driveFileId\":\"1k-fM110ILq-3U1kWzjcMZ5ET--E5pa64\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9411.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-02.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"caa0a5d9de7f8ff39805add6c8d805be5d94a73eab7d98351552a4a1fe9545e1\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-03\",\"driveFileId\":\"16m4KwKCXQ-pBQNRO5r0Y_EZGkPG47KiH\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9410.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"55f1b9dbb71199cf339930ec85fb930afe9cf666e56af29b898896a08d350876\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-04\",\"driveFileId\":\"1RfYwap6fxUHrgWci3hG_hDJeu5XDckRm\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9413.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"22ca3841de77c996439edd84ae2601db9b4d5df7e499175f7710bb77fc117157\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-05\",\"driveFileId\":\"14_OuicIfdjPpdck1w_VNZx1TEKfM8o-z\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9409.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"5c0e8e9843ae4eec7798d8fc4738f24860e2a58ee818f0354c0fcd77bda6f784\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-06\",\"driveFileId\":\"12lIlgCbnizWOvdIzHzN2Mtj8CbMiUHbz\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_9400.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-obour-06.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8f280fd9a6c5f045e2beb98af2be46f43cb376a69845cd015cf77da992871245\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-07\",\"driveFileId\":\"1UBkEXu_ECV2NBF-gtlSOP1u03H8mMieR\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2525.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ef6f23f6cc8d43a3282ce14edd59fbbc6adb2198d1b6cc579a28e6183213e3ef\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-08\",\"driveFileId\":\"1RZrjcWUzVNrRZK2mMy3E9U_4wIdcH8nT\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2522.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a134841037593b83df95c48681dd38448121ce0767528084ab028e4e802beadf\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-09\",\"driveFileId\":\"1gMO0A3lPxMk2IIPU8IF3KWsKS8zKx8jp\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2524.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cb71c230e3b73ba6a732d2295421144e4de3467daf047c08d897ec27585549a9\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-10\",\"driveFileId\":\"1tYDk-675SLhRo0iwdAiJbFKbUhFhqcS_\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2532.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"dc880e86afe6b91a5fd84aecb50cd269c650f210a0c2d390507d284fba74e895\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-11\",\"driveFileId\":\"195BQnO_OpS6KEj2C5gi1JLT7shSB00D9\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2531.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b6eadb3f6634453abde8703cd9d27b6c1e6042917861b6cfd2d4d2f4c7b9294c\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-12\",\"driveFileId\":\"1Ta34gmWsUtoPApQRT4PzwdFF3oJVK-Rf\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2526.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bf1ea293c9dc2f6bf78861d9327824796c1f0409bcea1cdb3203b15c2b1d5d28\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-13\",\"driveFileId\":\"1L5_wFTNZvTfuNl-d2tM7-x7Sqk9VZUCb\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"11f7c376-2d2d-4a0b-a9e3-b7e685b9688f.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-13.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"d00bdab5363bfbea75bbee1eed6f2c0f2f44440dad194d98666a9e4d6dd6f1b0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-14\",\"driveFileId\":\"1Jl7jhjE97vVrwdMBdjIActz4rnK_It_G\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2523.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-14.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f4fe66f870c9d456778cb792fab583ebd0927e35a6a09b65753fc6367bb0e5c4\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-15\",\"driveFileId\":\"1CMR8A03y12QW0ybFSQNzUU8jNdYnoWXF\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2533.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-15.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"35384ee327aa17e469efcf21a9037b1159b4fb36a04881e8fe847832b57b00eb\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-16\",\"driveFileId\":\"1kvmsNriLZ6K7q_Xof0sZYAMk-XgejZju\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"IMG_2534.heic\",\"localSrc\":\"/drive/kitchens/kitchen-obour-16.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d2c87071574c902f7bb81b750c1dc77078653199f122c3b35c49c03ca6d52682\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-17\",\"driveFileId\":\"1mE1OXV3EjXHcPEyO5vuwtarSh1cVO-Ak\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"0600d022-fec8-4d34-b89b-9821362f7945.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-17.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"e0a95a5e7c7ddfb697589920cf2542018a1da2d1323d9a253af24112c04e833d\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-18\",\"driveFileId\":\"14pisp5kNa9xxBtgSLILZIxjWjv0iW0hL\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"6924bfbf-de99-476c-a4a2-3e5d2729ba38.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-18.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"b6e5a2a52e417e10b3a743bacc1e6728f112c8d9b21ad7a81c33da8477dc2dbf\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-19\",\"driveFileId\":\"1hHt5VnWsKZF1JGQL11dIWSixRMxAZKHf\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"dcdf6165-ef8f-4cba-a053-44f1562ac869.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-19.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"5444e551d276aa95914d9d35da3345d677bad9009f610ee0aa53ea6890e08d58\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-20\",\"driveFileId\":\"1EryUvaxMekl1CMnzfnEM1W1ykSZ4yaJQ\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"4a6b2691-fc4b-4141-9f6f-78751c1ee2bb.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-20.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1215c082934e6ba245bf4b9920e3c2e9ad72de4d692a873b62528c9f3cda81ea\",\"orientation\":\"square\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-obour-21\",\"driveFileId\":\"1o-93Rgn7qFVMHkGl7aG5tYbYToOMGqi_\",\"sourceFolderId\":\"1-ga5fA7B3E2jjOb1ln51Xox1Qtok3wsv\",\"sourceName\":\"89ed5665-3724-473f-8cf5-077c9968768c.jpg\",\"localSrc\":\"/drive/kitchens/kitchen-obour-21.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"ac1227b07d1771ecd44ddd43417fc7caa487245e508368a7b51d2fafffc714d4\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-01\",\"driveFileId\":\"1r3k6rUhOa32JJ41h8qYbkyn8SlSlITlp\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0958.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"65c3dfe69618f73488a89a6460e3871ef93f150912bc11666ca57d3c9b256af6\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-02\",\"driveFileId\":\"18xePK2OLwR42VvpiCk8oTl1jryEPw-x8\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0959.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"ddb18ff7c047e1309b49cead59e741625378a091cfea2ffae854024a5ca9dffa\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-03\",\"driveFileId\":\"1ak1pREO34BmtMntEBWo8cJ7jYn_RS7ki\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0960.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"b420853703f969b5ebef35b07767191b10d96a1437e9c244f8d5f0a82bc64ee3\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-04\",\"driveFileId\":\"12pf2SpwL6R2k-j40NFvBSdUd_-nuKQHM\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0961.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-04.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"ea8d1a8964260ff1a7b417568c6066715cf2bdf468b81a23ac52485362b8b798\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-05\",\"driveFileId\":\"15aa3bVnj0p_VubvwkPC3vlfkx4B6kCm0\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0962.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"fb4c98ebd6b0df84c7447b657f85110ee9911ab5ecfa15702a5b2c4cae06e1fe\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"kitchen-edited-06\",\"driveFileId\":\"1bMQ4Blod_mQAzzM-D6CtdJyN-hCY960h\",\"sourceFolderId\":\"16eduRBCVDCB-Efrl1vb-gyVyhqGMLU_M\",\"sourceName\":\"IMG_0956.PNG\",\"localSrc\":\"/drive/kitchens/kitchen-edited-06.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"f62a40ac08bdbd95addd52fa6d2c6f8e2815109eb9aa8efb7620217dc822ee85\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-09\",\"driveFileId\":\"1fYRcH5w_Rs4CcAgBOoEO8jHTnZCEwRaI\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0340.HEIC\",\"localSrc\":\"/drive/dressing/dressing-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e98d167f409f90e88dc9eb6627d7a3160d6ea168d3f4615548a1c9cef14d5a40\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-10\",\"driveFileId\":\"1lEw9I439xqdpOZf12Oo9fwYGOU5FXsmO\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0352.HEIC\",\"localSrc\":\"/drive/dressing/dressing-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-11\",\"driveFileId\":\"1f1TfkOPFBjpOjY4dwlH4b07SbUtMhj4a\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0342.HEIC\",\"localSrc\":\"/drive/dressing/dressing-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-12\",\"driveFileId\":\"1ZmLjpK_Ksj7ePAaaCt7AsoMlYujObwsJ\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0287.HEIC\",\"localSrc\":\"/drive/dressing/dressing-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7b77d152d8e0a5b45de4cfff138d7746c029bec643c9150d40b109b85ccf834e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"dressing-13\",\"driveFileId\":\"1bKRncA3QiCvOVaJJ8LdmIik4_w2tcAiG\",\"sourceFolderId\":\"1-1au0sX3ciSYnzZ-HYwa3OzE9D-q0q4X\",\"sourceName\":\"IMG_0353.HEIC\",\"localSrc\":\"/drive/dressing/dressing-13.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-01\",\"driveFileId\":\"1Agz6x9h41CQWD-UEGL3Q09fwH2USAInM\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2325.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"9571363c854aaa9182f13d9fccef1ca5df43f82babe9a267cc1c1c006e5fde0b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-02\",\"driveFileId\":\"1_tg92kR2qOHTrQFyAXfGF2ycs_J5_vXj\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2322.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"afb4b3fe67b337a42d9d7ed552707c7e7f10914605befc8705a22e4e3f3ad3df\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-03\",\"driveFileId\":\"1BE28X5TQCOQd52DCnfLCxRJgarZkGx6O\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2320.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"85de6cdd964cd47d60870fdcffd32cb2d0ee870813f15ce8950756db0797c244\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-04\",\"driveFileId\":\"1-IzL1L5Qa-JwNGe4DrCrFHvNmzQB0Gu-\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2318.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"06a0d9b5f7467005794f1207d4587100a1636bc1c54252d842b0302a82adbeb3\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-05\",\"driveFileId\":\"1uE7zcAvG35zVvCR302WJqNdt_xML6KRI\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2316.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"1adeebfbb52f8f7ff6683a33d6a1608b60540883b84c3db1a516515e63cad624\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-06\",\"driveFileId\":\"1_wSsFSC_kYA094WDyAD7HlPjuWRKEEbW\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2314.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-06.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8e5313e43bdd0adae4886f613fd65225cd8422dca0cfe1fced2f91eeb0e77f21\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-07\",\"driveFileId\":\"1wr3rWFxeeF6Iga3T9Q0OPSSfGqTcCIAj\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_2312.PNG\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-07.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a69baa32304fdf17e262a6cf20bd92a9a9c634349b8825bb06a8978c5ab037ee\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-08\",\"driveFileId\":\"1vqnYhGbexAxktk-6ZCIjlyc6KNMgnKIg\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_0113.heif\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"dd785fc5fc3a65fe1dd22b113e2892885c877c9ec26083088e86ef1025e08f48\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-09\",\"driveFileId\":\"1-chxe8mQDoHAg2Rv_rgQPuwuxdkzfPbA\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_1987.heif\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"575f24902cc8f51d0b1ad9ae38077d99a2e6a1c318f3ab519058a0026b3b98a8\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-10\",\"driveFileId\":\"109ZKKCzHbP5kE8utTi3Ww0MqiNpyHVaD\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"IMG_0805.heif\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e1415e5c51f23897943f9f935eb9e964f5dc959d5a8251b3100761464146dfb6\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-11\",\"driveFileId\":\"18wepOnxnaEE1TsXNK8rUbYkHtvlYneRH\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"CAA6F07E-265E-4D21-9BA7-29E99D80E784.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-11.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"291074d245562bac245ad2c114441d855366cc8d63b5b380dc4ccdd0d99680d0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-12\",\"driveFileId\":\"1VR4NVuQHMzXEE7Ww8zmQwqsMaQy9Cdad\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"7C5B9E60-6389-4053-B249-E325C7BADDDB.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-12.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"d56d0333ad91d7652f15eb57d7a58f63c50e757ae14739f44e04f8a456563074\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-13\",\"driveFileId\":\"171gXuwod5BzvyV1pXDeGuAx-tVgNdqfV\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"F3B33140-0026-4EE2-92F6-EE1E1CB382F1.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-13.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"a333afc3be9223e2587be5634d8812c2b2c7be84e1c655eecf6a0f6f0b058dda\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-cnc-14\",\"driveFileId\":\"1oyBm-1BoM5r_3KshukuU7hinsGOwcmyz\",\"sourceFolderId\":\"12GCC4nvPIK0wf0mnT9_zpu9Hgmzt_cTd\",\"sourceName\":\"arabesque.png\",\"localSrc\":\"/drive/cladding/cnc/cladding-cnc-14.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"498b0184d1e67ff048eec8c095aa483ce17486d9dac5fd79f02488df13111868\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-01\",\"driveFileId\":\"1wgW8ffRjg_ITxbvVqL_5S18x1om1vYAE\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_2329.PNG\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"45545b7dc1b000051c8a665bba807d60adada5f11f858ddeacd3cb95a139c4ee\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-02\",\"driveFileId\":\"14Nmkp8qrJUqGDWg0VybduX9nsfu6NZUV\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0631.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8aeadbb52bbc20cbd01d8725ae0edf779a427e687bf3c5375964c1017ae6273e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-03\",\"driveFileId\":\"1GiFXnnNGOAoMdB6BForJg2LlH1W2jiUX\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_2139.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"61e7e1624f6d6e7c6f11d9d7e8ccdd0a0b83fe2afb3d0b26f2db43cd2866b2ba\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-04\",\"driveFileId\":\"1QqQq0O57VA6CzARe1ZTIaemdO1SuUs4e\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"AE0A724C-0C0C-44E4-BB50-F2E2B4423B60.PNG\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8eff3c799854415cefa05dadd9cb70ee2515b928face737479cdf860ff57d451\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-05\",\"driveFileId\":\"1yeFEeT_yk5hWXOkldanXd3BGUuvCIkgy\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0210.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"51bef5f62bf453b460bf5eb5fd2048ce3a85a877728ee43dc282a35bac98e6c5\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-06\",\"driveFileId\":\"1CT3NTecN0xjqbjHdxtJ6C9oHx08yJSoI\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_7004.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"0f3238b4f9ef7f2aa8dbd3b44b70ea9645ecd5753cbf91ced16f866d95a38d8b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-07\",\"driveFileId\":\"1zHWfZ1hfUr5YXQyyAO94lz4C9SZTyxef\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0479.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"16d99bcddfef1df79bf5ca00a8a61b22ac491ce7b1620c6396f6ea4f78585dc5\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-08\",\"driveFileId\":\"1bdN5olItc1Pshcu93qK-kUPTDZzeIS1y\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0525.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"fdc5c5eb763d45d35b70c5ce66d054149a2d47eab08951e0c365fc354a4ba403\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-09\",\"driveFileId\":\"1KpQgjQCo5TTPEcDKTCAMtnESgEWmeN0i\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0522.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"6c668e993ae9b3f41381e00fe2f4244d200566fc354ca9731f32b1806322b362\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-10\",\"driveFileId\":\"1jGRQwaQVKL-_KGsTuOf4u5cyAnSEZ9n7\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0526.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7bdcb6d49406a888c26122966ecac47cb54fefafdf3d6923b0751c97475484fe\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-11\",\"driveFileId\":\"1X6FDr7Hho94o-v4zZ5NKgyeC3WOBVMqt\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0103.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"60fd32e6d4c14decba78bc57d9072c7f661563db81fbe27289187e541d24db3a\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-12\",\"driveFileId\":\"1QTj-GnmFPu5XQ5_h39Cn4dwZB3zsWDQ5\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_6958.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"48a8d9db5a86e9cb490c00f89c70320341ebfe3629d764a3dfd312bfc6af999b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-melamine-13\",\"driveFileId\":\"13vd-C7Ddyw8rR_abmnRUZwREuPVwYmQS\",\"sourceFolderId\":\"1-wXrzAXHPzMg5G_8ukcGoSFupIK048R0\",\"sourceName\":\"IMG_0786.HEIC\",\"localSrc\":\"/drive/cladding/melamine/cladding-melamine-13.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ac73a2eb0f2f309e3afe196d5be46b4801fbd2a08d0660b76c2ff8fcf77ef00f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-01\",\"driveFileId\":\"19y1QqslNJpkXPC3bJ-z2cq4g-WZxtJ8v\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_2309.PNG\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"7dd51112e89e6c10e599103abdda141523c7ffddd7d1b6e062be294026da67b2\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-02\",\"driveFileId\":\"1DTZPbt_qnNwnqUG6tDJ_wJ-bViy2ytU8\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_2078.PNG\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"ea435b09c085fe90ae59da5ce49e0e9bf981440e809835f5cc782e05a12d243e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-03\",\"driveFileId\":\"1Rq9Z7VfvlVf8fu9c0gIa_oHBEGAwqPp_\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_2011.HEIC\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"985181234d09680ec94bab962ef51b91c35d166b23f14de34328b0ba454946a1\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-04\",\"driveFileId\":\"1Sk9KGim8XEz_lvSvJrtNWjWI8UQs2YLY\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1613.HEIC\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f06246fac9dd2cd3c411f7bdc71e062eea1a305f5dd9d063650cd873d59481c9\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-05\",\"driveFileId\":\"1mCQNUl6CSDuw4_UWj5GWxH6ReixV65ks\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_6990.HEIC\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5032c406196d9e60a7a214b05e809cc07f8dd5cffdc2ba608e284dd1eb379097\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-06\",\"driveFileId\":\"1afoM0WRr_j10uY9kNIHxjyyYhlZfpT5f\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_4404.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"27df969c60754b6e2ae3ae116c8e09aa37213744b14abc4bc113e538323d556b\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-07\",\"driveFileId\":\"125Bf4CgA4xARoX0YwCw2RVJMEVwFIiI0\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_9152.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9605a62798f7f21304141bc1dc231c6f1390485bccb1400da11d4d0692f8eeeb\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-08\",\"driveFileId\":\"1A2jgGnFFck6_jYxzwuV2imzlOJYoM-z4\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_4189.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b402849d74162ecf1f348791a929bbf7182cdb3502e24816a402516b11c0cb9c\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-09\",\"driveFileId\":\"1s1l0o7OCy1z52sP2mtyeD_ZGxqFjqmIQ\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_4499.jpeg\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-09.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a837e32745d9e643b8f6193cb4787aa96f24b8c3507a55d50bd76b542a05b265\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-10\",\"driveFileId\":\"1-Hn_ptQRHUET002c9z2BlebO53j4bolr\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1284.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-10.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"79b46cb34b024ea25a93425a830f57b3af1cab0d7d45bad967759751f5faacfa\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-11\",\"driveFileId\":\"1oGy4gKhxPw8fT2H5-0rjg3SgB8e08ojV\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1253.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ec694176078c321542ba81229d06e542834fdf5962021ef7c6eabc40cc160172\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-12\",\"driveFileId\":\"1TvS1mXx8veAuGQrZAyK5nQqzFALOHEsk\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_1244.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"526eeead623fbf3527a806879c2da9fbb00756204bd74e4dd7dd58ebf6ed0273\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-13\",\"driveFileId\":\"1petY2eY7cdAiCkxcCXRu2Wk0xdHj_r8B\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_0655.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-13.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f066515c2f84cccfc0593146b92bf04d5e4bc456cc2763c5d6028f173f77a0a0\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-14\",\"driveFileId\":\"1lhShP17Xyk57RNETHFyBr7PwtBckWBf8\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"A8075502-5D0C-41A3-8FAC-0290486E5318.png\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-14.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"414bacf03e0073de31f656c949d97155a3b8588833db9d6f30bafe5cb5c915ea\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-15\",\"driveFileId\":\"1CyPTKe-PSqEH7_6HCcZr_IqsTppKMUpP\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"9E31F52C-2452-46A8-AF5A-DA5018346B00.png\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-15.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"4ba7b75c6cdc52944e0b75b379bf8b8c7e88efa6b538cbfa2afc1d45d619358f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-16\",\"driveFileId\":\"1kQyLGOYJKl5YzPehGY5q0_ZCuJ0km_Uy\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_6261.heif\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-16.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"796e3d2b342cbf123c3be3072c9e746b71bdc8a18da36d2eba51681e362b213e\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"cladding-veneer-painting-17\",\"driveFileId\":\"1o0i00p_xglYRvHYdUYDN9UApJIBcNB4_\",\"sourceFolderId\":\"12IeUWn3lOdDAzcQsiZShQkIWZ00ekKYR\",\"sourceName\":\"IMG_0426.JPG\",\"localSrc\":\"/drive/cladding/veneer-painting/cladding-veneer-painting-17.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"6fe88444d6949501b5a6a08bafc797c07d9c4f01f48d4a027397c0029bc38b2f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-01-01\",\"driveFileId\":\"1O4cOfO9gUMqaBU9OXCxqIWKT1pN0LTQQ\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP\",\"sourceFolderName\":\"Bedroom 1\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":1,\"imageOrder\":1,\"sourceName\":\"1.JPG\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-01-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"11318354d4722ca99b614e89fee4ed9935df89b75cd5f0b23a3d5e142f327ba1\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-01-02\",\"driveFileId\":\"1ewIbLQ3s0eAgT192t2_qehosipTkYkP2\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP\",\"sourceFolderName\":\"Bedroom 1\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":1,\"imageOrder\":2,\"sourceName\":\"2.JPG\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-01-02.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a24923dd64d151490e595bfd6244c364e775c97582853fc3951e1eda09c09591\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-01-03\",\"driveFileId\":\"1c43IHm6djHpHYhIcHUg4xxojZCdBnZZO\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP\",\"sourceFolderName\":\"Bedroom 1\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":1,\"imageOrder\":3,\"sourceName\":\"3.png\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-01-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"7f5eecba992dd6c7c76bec0f15efea7928edc78e99f9c193d3f5dd1263e7bc89\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-01-04\",\"driveFileId\":\"1eGvBlIY-EA5FPA_Zr23FXGO2NbX-7Ka_\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP\",\"sourceFolderName\":\"Bedroom 1\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":1,\"imageOrder\":4,\"sourceName\":\"4.png\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-01-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"e86c65214f8b1178cad1d77d7236291bcff9ea41d56f7bf2c455dfbc308207da\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-01-05\",\"driveFileId\":\"12mvviKJ0CjREYTYaWSF9BZqkX53Mz62b\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP\",\"sourceFolderName\":\"Bedroom 1\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":1,\"imageOrder\":5,\"sourceName\":\"5.JPG\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-01-05.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"fae663d33bbb0f28ad93d523b3257d4b41b582630b81b56ea319b1e6ed417686\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-01-06\",\"driveFileId\":\"1nlQIvLqLnEHFLQSgbwjCxWAp3UyGZdRM\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP\",\"sourceFolderName\":\"Bedroom 1\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":1,\"imageOrder\":6,\"sourceName\":\"6.JPG\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-01-06.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"69bec616be3a29409c71291f036e2108bba2b3d0397b3d90180ce72a0613a9cd\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-02-01\",\"driveFileId\":\"1hHSHa6beCVIQQv6Ji7G2qIXw2citYtYh\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1p4obdncuGFOY9ZSPxazkCNnwA0wVU4hT\",\"sourceFolderName\":\"Bedroom 2\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":2,\"imageOrder\":1,\"sourceName\":\"1\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-02-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"ad39f543fb8e00f6ecc48cc5b9d153373572672c11089da6a2d16c969c34feb2\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-02-02\",\"driveFileId\":\"1fbE6sCkQ_-G1uU3OmtDIbnE-6FDihV3y\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1p4obdncuGFOY9ZSPxazkCNnwA0wVU4hT\",\"sourceFolderName\":\"Bedroom 2\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":2,\"imageOrder\":2,\"sourceName\":\"2.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-02-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c029dc99dda9463a5ad94a3ac21e19a1c844b158d55514f628e0a431a81836a4\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-02-03\",\"driveFileId\":\"1BZhNNCuX1n107rlbqBGkLjYNWZUhwr2S\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1p4obdncuGFOY9ZSPxazkCNnwA0wVU4hT\",\"sourceFolderName\":\"Bedroom 2\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":2,\"imageOrder\":3,\"sourceName\":\"3.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-02-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cb24493b2c3f1db6257c952f19550165b19eac76a4aa323175d364e959bf45a4\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-adult-02-04\",\"driveFileId\":\"14dobgMOSZqNg6S62JpNomeqBoT_NcwR9\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1p4obdncuGFOY9ZSPxazkCNnwA0wVU4hT\",\"sourceFolderName\":\"Bedroom 2\",\"bedroomCategory\":\"adult-bedroom\",\"subcategoryOrder\":2,\"imageOrder\":4,\"sourceName\":\"4\",\"localSrc\":\"/drive/bedrooms/bedroom-adult-02-04.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"f0bf0b5a47c813f2507c606e4974e6df7783983e77078749b76ae42e31693073\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-collection-05\",\"driveFileId\":\"1PS0l56lz739XXCpN9znEq3ag4NP7dLqS\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1uqjXyNQfm7H29-_TH4v6akhZns1ziwJG\",\"sourceFolderName\":\"collection of bedroom items\",\"bedroomCategory\":\"collection\",\"subcategoryOrder\":1,\"imageOrder\":5,\"sourceName\":\"5\",\"localSrc\":\"/drive/bedrooms/bedroom-collection-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"a760ad15189f2c5fa9d7d211e8ddffe42c0359c2098dacfbe5071b36b2534585\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-collection-07\",\"driveFileId\":\"1vUEpI0Z6yzbMIpK74_aaanhp_dRVAu8m\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1uqjXyNQfm7H29-_TH4v6akhZns1ziwJG\",\"sourceFolderName\":\"collection of bedroom items\",\"bedroomCategory\":\"collection\",\"subcategoryOrder\":1,\"imageOrder\":7,\"sourceName\":\"7\",\"localSrc\":\"/drive/bedrooms/bedroom-collection-07.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"fba9ea19df856fa6a1f813cbc67839226f0fc02c92618c6c0ca2b5284ba9fa40\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-collection-08\",\"driveFileId\":\"1aUSK9s38Qd_-PdXCklJiVrt1nHGNDQKP\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1uqjXyNQfm7H29-_TH4v6akhZns1ziwJG\",\"sourceFolderName\":\"collection of bedroom items\",\"bedroomCategory\":\"collection\",\"subcategoryOrder\":1,\"imageOrder\":8,\"sourceName\":\"8\",\"localSrc\":\"/drive/bedrooms/bedroom-collection-08.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"291df46c513c87c3b17fd5aee54d6adadf0075430bf6a7beda56f6d00fe61eae\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-01\",\"driveFileId\":\"1TVqJz8vqWDeZHHl2N20yf03YPcAD5wEl\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":1,\"sourceName\":\"1.JPG\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"b536564d76fcc452b31ca8d0df751fae383b4deead38b6c2cec84823bc8b87d7\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-02\",\"driveFileId\":\"1lDYO9ehnvJG3XiMY12z_gKGmjiExtYBw\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":2,\"sourceName\":\"2\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9805c8c58c8386e55e43dda453be2e45fcab8a4d00388b2ec7bcbf9063e8b2bb\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-03\",\"driveFileId\":\"1iSBZfMJmEAn4q1P8_fFhN1HAVCjtdRj0\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":3,\"sourceName\":\"3\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8d0dd3248825e4da1fe3d585632738c48163724fbc3a303f99b31d51de04b8c4\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-04\",\"driveFileId\":\"12UAQyXFxKqE4uYdi_Diex3a8mRXGGdj0\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":4,\"sourceName\":\"4.heif\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"05118e508134dbee2b86ba57af727c2f2c1ff24488f16b2634ebf6014d307d6c\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-05\",\"driveFileId\":\"1orvK8VuwLiGEY5qxtu2TOOsvC0W3fALb\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":5,\"sourceName\":\"5.heif\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cf4cb7f6da840113870aaf174cbe544c5350c09fc5098528f39849447e9aa8e1\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-06\",\"driveFileId\":\"18_qQ0LbsybZ7AjVQKSzTpWxSIDatq1yu\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":6,\"sourceName\":\"6\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-06.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"beb3cbe9b6fbdc12584693d7f6cee89f817edd6efbf48d131911f5181c86144c\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-07\",\"driveFileId\":\"1pLJYJdVD_3-s6PWPIxn8i2nBlNrSaBS3\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":7,\"sourceName\":\"7\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-07.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"ab61700c5680fa86e79b977364cab3128b7598c303ba1d74688552523ff9ea3e\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br1-08\",\"driveFileId\":\"1LHgr8xbSoTwgHNiqeeY3zwcXIZPUg-AY\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"14jbn8JsB8KFxM26IBphuea7oYHpZzi6u\",\"sourceFolderName\":\"Br 1\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":1,\"imageOrder\":8,\"sourceName\":\"8\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br1-08.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5ec10abe584f2b61c4c5e771556326018b5ae473f396ef4d239c8ba1931d0a3f\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br2-01\",\"driveFileId\":\"1wtxnbeaPrswjjnbCYfmXo-Yx6-QO5rwK\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz\",\"sourceFolderName\":\"BR 2\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":2,\"imageOrder\":1,\"sourceName\":\"1.png\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br2-01.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8d774d374795f09e3b27bfde7460b9d783e253cbefb1d3f7118c8f9bf04bdd99\",\"orientation\":\"landscape\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br2-02\",\"driveFileId\":\"1s_xQO2bP8jUPLGHzMmG9rWaXSKpUBwpL\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz\",\"sourceFolderName\":\"BR 2\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":2,\"imageOrder\":2,\"sourceName\":\"2.png\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br2-02.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"3bc286d0932c99f8e47b8711b32f4a3836b35d579735a29b25f8e01ddb76b377\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br2-03\",\"driveFileId\":\"1N5iHK9y-ZCwHBY3KuyXw2XibvkJrhyiI\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz\",\"sourceFolderName\":\"BR 2\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":2,\"imageOrder\":3,\"sourceName\":\"3.png\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br2-03.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"f7a03c55fcaa56e53bee9ed5eab9f66a6ee7abe33fc49810e86bf702278d6e55\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br2-04\",\"driveFileId\":\"1fgMi0lsjFhUpYStPGYBX2mbvGEulOECD\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz\",\"sourceFolderName\":\"BR 2\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":2,\"imageOrder\":4,\"sourceName\":\"4.png\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br2-04.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"c6b6105892da18f2978672cc95d2726ee22ce8869e890991f7ba97ca1ee1d9e8\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br2-05\",\"driveFileId\":\"1FjcH4YtZdP2Mez_7GPL2NbZ7QuBpAdIM\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz\",\"sourceFolderName\":\"BR 2\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":2,\"imageOrder\":5,\"sourceName\":\"5.png\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br2-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"74d1e13bc6a5b5f78973a2a257a3706c6f2af10bd45d265a2b772bc1c74124d3\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br3-01\",\"driveFileId\":\"1IuoCzLQ8AYxVAysgaJXQ3BNMq27zuLJK\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc\",\"sourceFolderName\":\"Br 3\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":3,\"imageOrder\":1,\"sourceName\":\"1.JPG\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br3-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"4ea3a4e1b69a48b090871c2524ba7e1a856b625270aabedc3cd36d8e870c9c71\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br3-02\",\"driveFileId\":\"1t1bdcHe92KQgf2VKSHru11FkowaZBuif\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc\",\"sourceFolderName\":\"Br 3\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":3,\"imageOrder\":2,\"sourceName\":\"2\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br3-02.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1a0856ec5eec6f27f3f262dee9275327e1201c284d00dc1628c999ce2aacc4d3\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br3-03\",\"driveFileId\":\"1fXMwzYRtBu_8wj_N4wqUMCY0pR_TifDL\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc\",\"sourceFolderName\":\"Br 3\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":3,\"imageOrder\":3,\"sourceName\":\"3\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br3-03.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"bdb187c772c36696b780624dc8d3323b0df2417edde896d5335101df3a4c4176\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br3-04\",\"driveFileId\":\"1BO6AueWLhZZtpIXVfoRPTCmV9K32mZv_\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc\",\"sourceFolderName\":\"Br 3\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":3,\"imageOrder\":4,\"sourceName\":\"4.heif\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br3-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"74443111f86d2d9b1d8beeb0f8db22653c727a946f8d4e25edbdc6940448c6d9\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br3-05\",\"driveFileId\":\"1NlHxSG6PCI-mLBcecUkNHmD2KCfRSZZ7\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc\",\"sourceFolderName\":\"Br 3\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":3,\"imageOrder\":5,\"sourceName\":\"5.JPG\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br3-05.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"e6ae606c8565d13d975e07e76b363ac087e0db0b1fcc6cc5d3c0a8fdfe32a9ca\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br4-01\",\"driveFileId\":\"1n3pPU6gUOZFsLKOxMSbPHM6i58hw56V9\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e\",\"sourceFolderName\":\"Br 4\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":4,\"imageOrder\":1,\"sourceName\":\"IMG_6940.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br4-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5b567487b3a502adbaa4468fca40dff19bb49e2532d39bb80b17ca13aeac0cf8\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br4-02\",\"driveFileId\":\"1qFenFsvn12w0T-XMAcKa3ytQtxHE6l3w\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e\",\"sourceFolderName\":\"Br 4\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":4,\"imageOrder\":2,\"sourceName\":\"IMG_6943.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br4-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"92da824e23d1ee18d4850d934f9ffbdfe5403070e839bab91f0c143bb46dfb57\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br4-03\",\"driveFileId\":\"1aUDa9Rphq7XFELRQ_uhNLyp6W3sSWUDE\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e\",\"sourceFolderName\":\"Br 4\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":4,\"imageOrder\":3,\"sourceName\":\"IMG_6944.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br4-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"3d1f91aa8cf4cfc8041be391ca28c6859f7c89cc243d30e392f649896bfb8689\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br4-04\",\"driveFileId\":\"1puHKtrGeJQi3XAmtPgzMRjrcOoXrT2FY\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e\",\"sourceFolderName\":\"Br 4\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":4,\"imageOrder\":4,\"sourceName\":\"IMG_6946.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br4-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7dd959319e7fa1bbb09bb13c3a5d715b9c89fdee4c913f04477b61c5872db745\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br4-05\",\"driveFileId\":\"1z9Z5O0gtHF5NGYu2ZPtq-N_nnRYCxBDo\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e\",\"sourceFolderName\":\"Br 4\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":4,\"imageOrder\":5,\"sourceName\":\"IMG_6974.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br4-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"2fe7c5ac0f35dfbac379a2f11598f64d7f05d72918c1ed79435fa9a83f43df64\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br4-06\",\"driveFileId\":\"1D1ToI6Cu43z9s8RB7GN6mt_6pR9r1I6o\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e\",\"sourceFolderName\":\"Br 4\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":4,\"imageOrder\":6,\"sourceName\":\"IMG_6976.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br4-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a3abe82457668cad0a484f4746520b810f3072d17c0290b79424b776ad66e8ba\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"bedroom-kids-br4-07\",\"driveFileId\":\"1Y_ePFoUye9jh9yPnAh876hBanFTUTWP6\",\"sourceRootFolderId\":\"1Mki1dVI9TJP5AiVjf4x5IbMZ3Koqhm8X\",\"sourceFolderId\":\"1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e\",\"sourceFolderName\":\"Br 4\",\"bedroomCategory\":\"kids\",\"subcategoryOrder\":4,\"imageOrder\":7,\"sourceName\":\"IMG_6981.HEIC\",\"localSrc\":\"/drive/bedrooms/bedroom-kids-br4-07.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f55cb72db4767295d0207c980db5e5b76d0b69b125bb6736615620d1e3394f62\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"}]");
 //#endregion
 //#region lib/generated-doors-drive-assets.json
 var generated_doors_drive_assets_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"door-01\",\"driveFileId\":\"1F8veHcJiD9xIQhx5PvaeDeadd-wicF2X\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":1,\"sourceName\":\"1.jpg\",\"localSrc\":\"/drive/doors/door-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"64134eef8d7df8f8b8beba8edb4ff3e8ffe6535af1acf2bdb1dc992ad92c2176\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-02\",\"driveFileId\":\"1CKMiAT70o4O7OGRFktBN1mbMi1psPMoQ\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":2,\"sourceName\":\"2.jpg\",\"localSrc\":\"/drive/doors/door-02.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"f6eb911461e24e5019ecba6c91a9c7a82c082221d5b4039e99d2fa557c0b402a\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-03\",\"driveFileId\":\"17MrmOy6T4pM5CJP0rtFrEgRjZJaZ7CO4\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":3,\"sourceName\":\"3.heif\",\"localSrc\":\"/drive/doors/door-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"fcfdd5c2ec2552e8b917fae9c0ef7da789d809be17231e7df0c3487e5e71eb77\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-04\",\"driveFileId\":\"1KEN1faX_E0_kq3oYSdBPAY4o9EjZnTfZ\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":4,\"sourceName\":\"4.jpg\",\"localSrc\":\"/drive/doors/door-04.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"b528afd4050ee56d85597114f578d25ba1c945f8c4f69eba33d39a41dba32946\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-05\",\"driveFileId\":\"13iwbIMeQoVZne3X9GGtjdOg_m4ftQaPZ\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":5,\"sourceName\":\"5.png\",\"localSrc\":\"/drive/doors/door-05.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"8c83ce8be7349498000609e302acf0fe78b705857ff0bda0a77f54ebee04dc92\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-06\",\"driveFileId\":\"1H22o4onyJlOAFgBDiv1ee7hHEeTbCiah\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":6,\"sourceName\":\"6.png\",\"localSrc\":\"/drive/doors/door-06.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"1393e2a2d2a14544cdc429323e089b1ba178eb63ebfa4bf5165763ca01fe5bac\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-07\",\"driveFileId\":\"1f7-PZtaLOZ9zcEG9TzpK7UqkH5vBtQRR\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":7,\"sourceName\":\"7.jpg\",\"localSrc\":\"/drive/doors/door-07.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"b2a9616ea71be1c38919d99f1b3aba56edc44acae132189bbb9ab1cf60c4fd04\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-08\",\"driveFileId\":\"1jcV6jlmq5LxNCl4mi1r8ZqITyXHGGW8j\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":8,\"sourceName\":\"8.jpg\",\"localSrc\":\"/drive/doors/door-08.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"9e2689201c6b47711b95b69b2cfdc15cd2283a3d4ebd16fb53eac4177b5e3190\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-09\",\"driveFileId\":\"1kvc13XiEF8rO5O3Rzg_8cOg3XUOrHz21\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":9,\"sourceName\":\"9.heif\",\"localSrc\":\"/drive/doors/door-09.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"df0ca6f527ba07dbd66390cd2f3e32b3d8c086a61d77d5fd327141775b41a7d4\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-10\",\"driveFileId\":\"17zfO76lNg3jsukIIzaYQzKmLg7e2kisJ\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":10,\"sourceName\":\"10.jpg\",\"localSrc\":\"/drive/doors/door-10.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"6caab28f34f8e976c759d0f83afb5994bfc1a812b00775d63b3a42a4ee75278d\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-11\",\"driveFileId\":\"1EXZqxZX2Dckl7kTbHxEIhFNF73h7_UYK\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":11,\"sourceName\":\"11.heif\",\"localSrc\":\"/drive/doors/door-11.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f4b3b2f318306610f636f2b553be29ae4c15e0dbb272c0b402272d040035f554\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-12\",\"driveFileId\":\"1FBLmBirzm4-7VPQkJGNkezdVHXOGZ3BO\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":12,\"sourceName\":\"12.heif\",\"localSrc\":\"/drive/doors/door-12.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ff1a621771d2adec1a635258ec49350ba8708c4ddc4582871d0eaf42282c65a7\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-13\",\"driveFileId\":\"12mUFtM_GdsdDTxaA7PO6LYSATXwkuoE8\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":13,\"sourceName\":\"13.jpg\",\"localSrc\":\"/drive/doors/door-13.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1af7eb5299f034662ae30dc6e9cd131080e82fd526aa605de93b5cf29c9cd6fe\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-14\",\"driveFileId\":\"1UXPy3VCpRbrcrva4UNHhoH5rjZUBU-Os\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":14,\"sourceName\":\"14.png\",\"localSrc\":\"/drive/doors/door-14.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"4996675dd3784454a5218faf9393161d5948ce302da4e6d2674985a6e2831202\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-15\",\"driveFileId\":\"1pCk7GTvA6LgrQw6kEQkfMH_gQx5_a7-0\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":15,\"sourceName\":\"15.jpg\",\"localSrc\":\"/drive/doors/door-15.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"e1acb6915e8e24571a626308cd3903263f679ffe62b7e95d721103e34dd8c211\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-16\",\"driveFileId\":\"1ZT3W__-Fni-G0utTxXktIC0KFn1XcLzk\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":16,\"sourceName\":\"16.jpg\",\"localSrc\":\"/drive/doors/door-16.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1b963c3b75c434fecaf9952c4d4342e2103eeb6beb4316dfaa0ae74172566331\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-17\",\"driveFileId\":\"1C6RqIZv4FE2r5b6byq_xxy5NEPmAW9DJ\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":17,\"sourceName\":\"17.JPG\",\"localSrc\":\"/drive/doors/door-17.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"6ca495bc011c943b453a8e8aee84449da976345a65e3a48544c222c4d26faec5\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"},{\"id\":\"door-18\",\"driveFileId\":\"12Rw2WNkOoEOxIIum2vXZME2j8dF9vFG-\",\"sourceRootId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderId\":\"1atlCJvilwpNVrXjZCZNT4RF0gbhc4QNh\",\"sourceFolderName\":\"Doors\",\"imageOrder\":18,\"sourceName\":\"18.heif\",\"localSrc\":\"/drive/doors/door-18.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e1415e5c51f23897943f9f935eb9e964f5dc959d5a8251b3100761464146dfb6\",\"orientation\":\"portrait\",\"authenticity\":\"verified-real\",\"rights\":\"pending\",\"publishStatus\":\"preview\"}]");
@@ -26519,19 +26642,6 @@ var generated_unit_process_assets_default = {
 					"publishStatus": "preview"
 				},
 				{
-					"id": "custom-unit-03",
-					"driveFileId": "1Pr1FKLXeEWQPzV1YtGy7KNcKQV9OYUNF",
-					"sourceFolderTitle": "3-Custom units",
-					"sourceName": "3",
-					"originalMime": "image/png",
-					"contentHash": "572e0144740620dd1de2cea23b533be4e141b90f2e0998a7fbd4e126db1252ff",
-					"orientation": "portrait",
-					"localSrc": "/drive/units/custom-units/custom-unit-03.webp",
-					"authenticity": "verified-real",
-					"rights": "pending",
-					"publishStatus": "preview"
-				},
-				{
 					"id": "custom-unit-04",
 					"driveFileId": "1PCT88VOXH3rHuUg94fRkkrDRsWeAy1BY",
 					"sourceFolderTitle": "3-Custom units",
@@ -26693,7 +26803,7 @@ var generated_unit_process_assets_default = {
 };
 //#endregion
 //#region lib/generated-selected-project-assets.json
-var generated_selected_project_assets_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"cfc-office-01\",\"projectSlug\":\"cfc-office\",\"area\":\"wall\",\"driveFileId\":\"1Ttb8b0kNPTcopDfySTAiss7GKEt-4fdW\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4192.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"388e07a09420342711a43cca4cef3f38cc3dec201dd5686f7fcc7258c27a0f96\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Timber wall and workstation detail in the CFC office\",\"ar\":\"تفصيل جدار خشبي ومكتب في مكتب CFC\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-01.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-01.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-02\",\"projectSlug\":\"cfc-office\",\"area\":\"cover\",\"driveFileId\":\"172xbRcLKiigQuyNc7ctm-yx-w7JTrm3L\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4189.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b402849d74162ecf1f348791a929bbf7182cdb3502e24816a402516b11c0cb9c\",\"orientation\":\"landscape\",\"quality\":\"hero\",\"alt\":{\"en\":\"CFC office reception and conference space\",\"ar\":\"منطقة استقبال واجتماعات في مكتب CFC\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-02.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-02.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-03\",\"projectSlug\":\"cfc-office\",\"area\":\"detail\",\"driveFileId\":\"1YgzFugyzqSjC8XKIoWRDIU8OZP7cp9YR\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4193.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"06a228597880882c251dc156f2a107d1c2d87ecd7ff04c73e5c5a5579c80a77c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Lighting and seating detail in the CFC office\",\"ar\":\"تفصيل إضاءة ومقاعد في مكتب CFC\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-03.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-03.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-004\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1LmXcfXRBdvqB2jLZqibvpNOpJXMcG2mb\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4196.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-004.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"df7507dc4a0363aea42ddc195ab1b1ba1578ecac2fca2c7bbe45e45372d62187\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of crafted surfaces, hardware and architectural light.\",\"ar\":\"دراسة قريبة للأسطح المصنوعة بعناية والتجهيزات والضوء المعماري.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-004.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-004.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-005\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1-kU5NOITTO4_mVuV7lz5YgFI_K1OyBak\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4188.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-005.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"513af17fdadf55a783f3f90b639b62000c959c9e9c50c45a4376ed1996349890\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A finished workplace vignette with measured storage and warm materiality.\",\"ar\":\"لقطة من مساحة عمل مكتملة بتخزين مدروس وخامات دافئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-005.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-005.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-006\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1_S5f6TWLovajDhBDotISvMFblCjVjTAz\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4185.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-006.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ca9012bc00520ea855afa5014627a0d147d2fa63f1de05325e499d06d660e80c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Timber details and layered lighting define this CFC office setting.\",\"ar\":\"تفاصيل خشبية وإضاءة متعددة الطبقات تميز هذه المساحة المكتبية في CFC.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-006.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-006.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-007\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"13UBEWEE2fosoH_v5pjTApmVu6K0dZgTC\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4203.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-007.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"907437596eb3f8bab95ed0c70639698586fd351efe3cab4f558978571700abae\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered CFC office interior where warm timber meets soft light.\",\"ar\":\"مساحة مكتبية متكاملة في CFC يلتقي فيها الخشب الدافئ مع الضوء الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-007.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-007.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-008\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1fu-sJWrIHBOCnBCcmCv7d8ObMt1PT89A\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4187.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-008.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cba578b3d0997fbc35e56528292861fa73f9e0b755dc627b0028da83ab4a1295\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored reception scene shaped by timber, glass and clean lines.\",\"ar\":\"مشهد استقبال مصمم بعناية من الخشب والزجاج والخطوط النظيفة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-008.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-008.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-009\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"12o48P1Z2RzyUxTO_cTxGLqzZD0SMRQ7q\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4199.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-009.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"84be9f025a3426658fd738b81e5a2068bbd49ee4c76f7fcd07b640a0b221c0e8\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Integrated wall joinery and workstations bring order to the office.\",\"ar\":\"تجمع وحدات الحائط ومحطات العمل المدمجة بين الوظيفة والنظام.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-009.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-009.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-04\",\"projectSlug\":\"swan-lake\",\"area\":\"detail\",\"driveFileId\":\"1NrcWiwS5pGhQYMiQit-cqFTxsDWDL-QB\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1253.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ec694176078c321542ba81229d06e542834fdf5962021ef7c6eabc40cc160172\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Illuminated timber bedhead detail\",\"ar\":\"تفصيل لوح رأسي خشبي مضاء\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-04.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-04.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-002\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1B3n6iPXxgibylooL6vcfJERlFcKFx2Qu\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1296.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-002.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ab1d60fe92a40b6b77c36dd4b023dc67e7616be252cac94e5f1d6ffc5199fd3b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A quiet bedroom composition with crafted timber and softened light.\",\"ar\":\"تكوين هادئ لغرفة نوم من الخشب المصنوع بعناية وضوء ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-002.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-002.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-003\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1hv1UzgBDjL8PuI_ZIk0pLXjxKVUoNO3E\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1341.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-003.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9e1ff062f520b59a6778b3eb249bed9b17b68704d229a434dacb8ee068b80745\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Marble, walnut and built-in storage meet in a refined interior detail.\",\"ar\":\"يلتقي الرخام والجوز والتخزين المدمج في تفصيلة داخلية راقية.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-003.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-003.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-01\",\"projectSlug\":\"swan-lake\",\"area\":\"cover\",\"driveFileId\":\"1mCbHAsQx9Ij_npKE69JYXNCKt80p7j4T\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4498.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"54e89c031f4a1084950dc0a5a24a6c90b0afb5bbbaae002a580cbf0df007b69e\",\"orientation\":\"landscape\",\"quality\":\"hero\",\"alt\":{\"en\":\"Living room with timber slat wall and integrated media joinery\",\"ar\":\"غرفة معيشة بجدار شرائح خشبية ونجارة وسائط مدمجة\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-01.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-01.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-02\",\"projectSlug\":\"swan-lake\",\"area\":\"wall\",\"driveFileId\":\"1vJDzYESn7P4rS7QU8urLydoC7rSjc4ix\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4499.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-02.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a837e32745d9e643b8f6193cb4787aa96f24b8c3507a55d50bd76b542a05b265\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Marble vanity framed by timber wall panels\",\"ar\":\"وحدة مغسلة رخامية محاطة بألواح جدارية خشبية\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-02.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-02.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-03\",\"projectSlug\":\"swan-lake\",\"area\":\"bedroom\",\"driveFileId\":\"1N2pphLlYyLglGkvBcQzaKhKl6wvOFys8\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4497.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-03.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"3308deaad3ea070c767facc06a284e43432a533ca2700da8e3fb4b9090c409e9\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Bedroom with a full-height timber headboard wall\",\"ar\":\"غرفة نوم بجدار لوح رأسي خشبي كامل الارتفاع\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-03.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-03.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-08\",\"projectSlug\":\"swan-lake\",\"area\":\"reception\",\"driveFileId\":\"1rHJeeeWNXbq-9ldFdyjdw-bWQ_Z0DN09\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4496.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-08.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"d95ced7fbd47712e0b75186b418a5d4e3f07e18078696098ff59b65f3cdf59f4\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Dining room framed by timber, marble and a continuous built-in wall\",\"ar\":\"غرفة طعام يحيط بها الخشب والرخام وحائط مدمج متصل\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-08.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-08.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-06\",\"projectSlug\":\"swan-lake\",\"area\":\"reception\",\"driveFileId\":\"1-CR_lCzIWUnnR_uUVLO-Kq5O6fZSx-X-\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4494.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-06.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1320ce282fa89cefdd28233f2d7ec8b02b3323b42ef1c9accbea44a8d2ccb21f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Dining room with walnut wall panels, artwork and a crystal pendant\",\"ar\":\"غرفة طعام بألواح جدارية من الجوز ولوحة فنية وثريا كريستالية\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-06.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-06.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-07\",\"projectSlug\":\"swan-lake\",\"area\":\"wall\",\"driveFileId\":\"1S4RMfXTbVK_iAXWRSEb-sY_t8IpcfydY\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4495.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-07.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a1209ef633d3d8c1095d4117fd4d6f3459bd9e3369ef2ec3e92ed5e10aa3ce6c\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Living room with timber ceiling beams, brickwork and integrated media joinery\",\"ar\":\"غرفة معيشة بعوارض سقف خشبية وطوب ونجارة وسائط مدمجة\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-07.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-07.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-010\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1xd7Bq5dwkSJJNfnbulBKdBcmd9axdusV\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1244.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-010.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"526eeead623fbf3527a806879c2da9fbb00756204bd74e4dd7dd58ebf6ed0273\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dining setting carried by continuous timber lines and considered proportion.\",\"ar\":\"منطقة طعام تقودها خطوط خشبية متصلة ونسب مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-010.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-010.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-011\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1M_75S0x6uD0dwv7Ojd_GORtRAkSiU9xs\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1241.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-011.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9ff8f6155d9c891eb852004f90890d1ce93d8ff753f4700f8d41a1abf22de9fd\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Layered joinery and architectural light shape this Swan Lake interior.\",\"ar\":\"تشكّل النجارة متعددة الطبقات والضوء المعماري هذا الجزء من مشروع Swan Lake.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-011.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-011.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-012\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1SHMRlqmib_RzYBDdcCpef2sdhqaYoUiR\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_0957.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-012.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"df0ca6f527ba07dbd66390cd2f3e32b3d8c086a61d77d5fd327141775b41a7d4\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted residential vignette balancing storage, texture and calm.\",\"ar\":\"لقطة سكنية مصنوعة بعناية توازن بين التخزين والخامة والهدوء.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-012.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-012.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-013\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1Lx_ahSbrb7Hv4YZsD7ZU6klPW4wkmMuy\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1278.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-013.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f916c3347e63486841f6f00fbfa09176dc63101af9f65c721ad31f4be2498b4b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A warm living space framed by timber walls and integrated joinery.\",\"ar\":\"مساحة معيشة دافئة تحيط بها حوائط خشبية ووحدات مدمجة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-013.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-013.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-014\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1oyNu0baeMZfG7dC5ZekPAav4LcFESwCu\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"909A61FC-2C55-47DB-87E3-6D9D10423FF5.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-014.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"e906b3bc03ee22df6aedef8c797941cb73eee40ded982f58724f0c0576d968e4\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A quiet bedroom composition with crafted timber and softened light.\",\"ar\":\"تكوين هادئ لغرفة نوم من الخشب المصنوع بعناية وضوء ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-014.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-014.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-05\",\"projectSlug\":\"swan-lake\",\"area\":\"rooms\",\"driveFileId\":\"1Ycd4DyHYiruethdrGJ1xY1HhvnDJmb-5\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4493.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-05.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1af93416c255ce610babaa88b04e30a2c78cdebe196b206e2bc734fdba60bd09\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Living room with a dark media wall, timber slats and layered lighting\",\"ar\":\"غرفة معيشة بجدار وسائط داكن وشرائح خشبية وإضاءة متعددة الطبقات\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-05.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-05.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-016\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1Dt84KV_0Gqe4FW3f8OqfbiRA26GpBMe4\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"D2E7CF64-DEAB-41FE-8FF6-FA1F085F8C3E.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-016.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"72dc80901a3af98c067b46e78a2b9a279d6f88347aee110041162da15c5df1bd\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dining setting carried by continuous timber lines and considered proportion.\",\"ar\":\"منطقة طعام تقودها خطوط خشبية متصلة ونسب مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-016.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-016.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"villette-01\",\"projectSlug\":\"sodic-villette\",\"area\":\"wall\",\"driveFileId\":\"19-Zg-F9LiIU_OGYSCO_4sQzVxLDJj7KX\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0278.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/villette-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"97cab5dd4e5f2263b18b05cd35b1715d2182c21911edc30e16278b21040fcde9\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber wall with integrated desk and shelving\",\"ar\":\"جدار خشبي مخدد مع مكتب ورفوف مدمجة\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/villette-01.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/villette-01.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"villette-02\",\"projectSlug\":\"sodic-villette\",\"area\":\"dressing\",\"driveFileId\":\"1m4SZkP2KRYSVO4e6Ly2xZb918KVotXUF\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0343.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/villette-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Walnut wardrobe interior with pull-down rail\",\"ar\":\"خزانة ملابس من الجوز مع قضيب قابل للسحب\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/villette-02.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/villette-02.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"villette-03\",\"projectSlug\":\"sodic-villette\",\"area\":\"bedroom\",\"driveFileId\":\"1ahJxQRZM6nYlmrOJ5hT6ZdAGVYVxWGJL\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0359.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/villette-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"29a5adad12c0c3551ee68ac0b2cb030913bbee7a46ee21bfdf3c001ece69421f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Bedroom with a fluted timber feature wall\",\"ar\":\"غرفة نوم بجدار خشبي مخدد مميز\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/villette-03.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/villette-03.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-004\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1PzFfP-y6YTHSFPcoQnNqfBE0OsfaMMOJ\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0355.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f4612315ad4516eec46c684ffcc63a319c72895cd79b5b54a9ba78cda2409ef5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-005\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1G9NqHA0PffJ3_1N7GM2fpqxevh9aScyT\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0351.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-005.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"67990b38c8192d96b1c66878a14a246232e8c47f72e87e42d3199c5916f5d0bd\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-005.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-005.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-006\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1uNI36SN4etS0gFWgoPLF8sc5g4Ux-oJC\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0407.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-006.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"aedf0f69b43621fbf785ce6228e3eedf2c2b217ea8b211823648679c2405639c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-006.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-006.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-007\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"10hyLqmwNWifQ-_aaoeRCY7o5nwmXY869\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0352.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-007.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-007.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-007.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-008\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1TTQaR_JGYbm2YSAW168NQhA4RTyWfWTM\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0400.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-008.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"52c1f34db92752b029e641670aed938cfac114e860e0e764732b64e50e20a8df\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dressing storage detail resolved with precise joinery and quiet texture.\",\"ar\":\"تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-008.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-008.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-009\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1XhFekbr6Q0jVFMYN11aR0buZBm9t1Fea\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0363.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-009.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5cea8e19997892d0b7943b879007e05e343917e64273057acd30b5999806f130\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A bedroom interior where timber, proportion and soft light work together.\",\"ar\":\"مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-009.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-009.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-010\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1l2lXz60641QaLJeH1hVU8Eacc8UOLf98\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0350.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-010.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1a8610f87b38c14937493a1313e9bcf955a84ce373e940935b65326a5e90dd73\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-010.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-010.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-011\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1JKODL2BZq2EVAdQC1T0uqL0WAyA5ebr4\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0342.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-011.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-011.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-011.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-012\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1hEgHq0xcen8L1pkDPBzzk4HIlVgXua6G\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0356.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-012.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cedaf845b533213d55abd5f13021a3c41d0777748eeda1229e80a503bf5f0c08\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-012.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-012.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-013\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1R5U_hog0gjAT-os7kyrxTpp_0rRiA8KA\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0357.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-013.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8da0950e0fbc41998c4429a904611538482fffafaeb5a978665b8f8fdb033177\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-013.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-013.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-014\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1S5NhqSLi2VVr0c0VU6wr8_8NvDlw2sGh\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0354.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-014.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b080f65fd37c6f37df13824e668cc11ea50058bee0707eeaa0aad77fe372a72a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dressing storage detail resolved with precise joinery and quiet texture.\",\"ar\":\"تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-014.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-014.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-015\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"12StwrLTCALvSnLUs6NA--9gptK9s6qet\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0353.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-015.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A bedroom interior where timber, proportion and soft light work together.\",\"ar\":\"مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-015.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-015.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-016\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1EqleKPKAz9ZtUjVEGro7PNtSdEjCLLrP\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0360.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-016.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9f6b088240616ef1c480922c41437552a8977899b9084135d859a8cf26fb73ec\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-016.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-016.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-017\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"16B2ESCTDaPXOhk_qxGa5Cq2aWuY9Ibbx\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0343.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-017.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-017.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-017.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-018\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1M44cMKz7qIRtB646RQT00OynkqN84gtd\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0355.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-018.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f4612315ad4516eec46c684ffcc63a319c72895cd79b5b54a9ba78cda2409ef5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-018.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-018.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-019\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1DUll3fmzFybYIiJuXOecU8uD-uPwKvDX\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0371.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-019.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"2c227d55387b0b5f1abb6d3040e732d5b555fab95b485da44e45ad8aaa88fb03\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-019.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-019.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-020\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1Z5l1bfdmex-MJbX7yjKHOUDqa7VBBr7x\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0351.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-020.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"67990b38c8192d96b1c66878a14a246232e8c47f72e87e42d3199c5916f5d0bd\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dressing storage detail resolved with precise joinery and quiet texture.\",\"ar\":\"تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-020.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-020.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-021\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"12202JU8Wd1rOqngOXZVgJYxMEIxGfFCm\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0374.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-021.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b474fe0b887f109fa021a74c3daca1c108605a56eeba677ac13da64887dc8a5c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A bedroom interior where timber, proportion and soft light work together.\",\"ar\":\"مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-021.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-021.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-022\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1PWlVhaTw8ne5vCuT7PTBzFfSb2yzZ-vN\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0372.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bdbfd4bb7acc07ea1cf8017d43985596ecec49ae8a9e25e6bb5ef89c6cc9ec18\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-023\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1raCBnnEngnjLku7ExPKT24fEDv8OUUDK\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0368.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-023.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f282a3b5d0f8d43516a004a8b01182936b0ef328d6df44b014ce567d60236df4\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-023.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-023.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-024\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1pXOhVkzLFYr7UFMWc9vuZU2E3vPXeEuf\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0370.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-024.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"fa59dc7dcbf2aefe1f3a8a6cbdf0dbeede84c1171807ad521fe2da588a9658f2\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-024.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-024.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-025\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"111qalaWbKGuh9Utmqh2kl2yrAP9vtHnE\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0352.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-025.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-025.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-025.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-026\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1gdTwurehWwYjh_QeayntXWTUd5m5VN9U\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0366.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-026.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"fcf7307fd975101e66093bf9de0360970fe5082ecc26f8cdddc6211307fdd335\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dressing storage detail resolved with precise joinery and quiet texture.\",\"ar\":\"تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-026.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-026.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-027\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1olgeC4Au-8y5Q5RHbVJ_ovpG7wtdzxR-\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0363.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-027.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5cea8e19997892d0b7943b879007e05e343917e64273057acd30b5999806f130\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A bedroom interior where timber, proportion and soft light work together.\",\"ar\":\"مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-027.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-027.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-028\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1e7RX_rhAvQ6jXu2_qXsmq6f4SMcvycXl\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0350.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-028.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1a8610f87b38c14937493a1313e9bcf955a84ce373e940935b65326a5e90dd73\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-028.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-028.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-029\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1zU3EkF3-VrQrvIla_WsALFxzKw2OWm3E\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0342.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-029.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-029.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-029.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-030\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1dbePPtTRSLlqAXf2LDSlI-zXCIfWXuDc\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0356.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-030.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cedaf845b533213d55abd5f13021a3c41d0777748eeda1229e80a503bf5f0c08\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-030.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-030.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-031\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"13fBPrv7iCSt9jNp2u-hoilQZXkKg8jbp\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0358.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-031.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d64e37f5997490d710acd6ec37c2e8a4848089fc6d1f7275a50ec1ada4ec503d\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-031.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-031.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-032\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1bO8U_yLNyvQ4QMuB8NUPzufxag4Xe3nO\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0357.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-032.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8da0950e0fbc41998c4429a904611538482fffafaeb5a978665b8f8fdb033177\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dressing storage detail resolved with precise joinery and quiet texture.\",\"ar\":\"تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-032.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-032.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-033\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1mkB25MbwuUdWjNR5s_5OA8qEA-Jbc4oc\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0354.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-033.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b080f65fd37c6f37df13824e668cc11ea50058bee0707eeaa0aad77fe372a72a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A bedroom interior where timber, proportion and soft light work together.\",\"ar\":\"مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-033.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-033.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-034\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"15pgQ4RV8ws7b3nIwDSF16ROWFzEVWnGI\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0353.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-034.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-034.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-034.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-035\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1OTfEB9kynCWNJ6otkuTzGkEDE0w1Tuzg\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0360.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-035.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9f6b088240616ef1c480922c41437552a8977899b9084135d859a8cf26fb73ec\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-035.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-035.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-036\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1hQ3pwixKzQy4LPmBkB61g7OMVkHhgs8I\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0340.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-036.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e98d167f409f90e88dc9eb6627d7a3160d6ea168d3f4615548a1c9cef14d5a40\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-036.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-036.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-037\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1nTZzCumJX8-ENwQFvB86DjZHC5TTf7Yr\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0369.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-037.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a13a29e626f7f1b02753743c254c1d952a9b5650d432521ece2792ca47776c1a\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-037.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-037.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"villette-04\",\"projectSlug\":\"sodic-villette\",\"area\":\"reception\",\"driveFileId\":\"1zNAyw53pQvIU1jxqbnOAhe4JCQRPUdlt\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_9536.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/villette-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4b7a11661e4ca2e0f032bbfab189f0721909b7f5e4bca3ed7983fc7ef8a62e8f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Living room seating and media wall\",\"ar\":\"جلسة معيشة وجدار وسائط\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/villette-04.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/villette-04.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"villette-05\",\"projectSlug\":\"sodic-villette\",\"area\":\"reception-detail\",\"driveFileId\":\"1J99sGjk07y4oXtuqTby82_wNsY2NZoU3\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_9532.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/villette-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"28d58ece04e80dc1b584158da6e9424aa7707e636d28b6b6ade1c7a537414c6a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Sofa and timber wall detail\",\"ar\":\"تفصيل أريكة وجدار خشبي\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/villette-05.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/villette-05.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"villette-06\",\"projectSlug\":\"sodic-villette\",\"area\":\"cover\",\"driveFileId\":\"1jG0MQlpnD5gVbXogi4WLp_5Dho4TKqYu\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_9539.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/villette-06.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e51b0f1d8b82ec7f74f6e181831ede4e871ef92ec042663db4f36508da634763\",\"orientation\":\"portrait\",\"quality\":\"hero\",\"alt\":{\"en\":\"Wide living room with a dark media wall\",\"ar\":\"غرفة معيشة واسعة بجدار وسائط داكن\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/villette-06.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/villette-06.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-041\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1ssFmaqUvVEEwAEGEEvXp36mW3IqaghEL\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_9534.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-041.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4eaa0aa287081abfe758449110c4d2b1bb9f4a6c83e9378ab1a726a00857cb5a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-041.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-041.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-042\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1CkDktkkTy-3IASnJxYKGh-4TFs8vl4RM\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_9537.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-042.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d0cb2bffbe6d1f94d9d685d835b6af79e6ac848d3aee69512c551488a93ec9f5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-042.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-042.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-043\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1I-OWZDIN3OHZnbW3tWT7ITKBuwEwLN1J\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0114.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-043.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5510ea246e3f8bd45a13856c0b66499c9b5603314224c8612f41fc603eeef40e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-043.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-043.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-044\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1hNR_o-8LCGZvx9wQISp_Oj0kaaGYWM_j\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0282.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-044.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"262871bf27eb79937e21d579b0606103d31c7325004b9fee2405e7a7147a326f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dressing storage detail resolved with precise joinery and quiet texture.\",\"ar\":\"تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-044.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-044.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-045\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1J49VeHUMtS4c8mf9yHpAGtQqfk4XgjEp\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0278.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-045.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"97cab5dd4e5f2263b18b05cd35b1715d2182c21911edc30e16278b21040fcde9\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A bedroom interior where timber, proportion and soft light work together.\",\"ar\":\"مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-045.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-045.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-046\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1LUKZ1FeOocALcRrina4msmUWLvlcxIjy\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0107.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-046.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ae37cffef07c0536b09f0e24fba7934bde5a98a2d48ba921bdcf0c7ab1621258\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-046.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-046.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-047\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1YUmoxe8Qr4_vD3o9_qHhxhEVMdid6yLu\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0103.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-047.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"60fd32e6d4c14decba78bc57d9072c7f661563db81fbe27289187e541d24db3a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-047.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-047.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-048\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"17EPhkkQqP22oHnwXmZh7k7Od5EaIwUmd\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0108.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-048.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ee64ab994ca3f0f07cebe1e80b940f184bc145e16755b5ed39879a945ec8f34e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-048.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-048.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-049\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1K7hGtot4NHmikiIg3WL87TzCMMLiODXs\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0283.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-049.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"89094506572931063665e947406daac3eab77646a42b2109081519981e9b72c5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-049.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-049.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-050\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"19r3QaH06pkrFRPzUTXVdzGruyLj4gzeh\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0276.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-050.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f135f620cea25fdea849644ebcb1a3518939943511ceaa805fe7467a7d62431a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dressing storage detail resolved with precise joinery and quiet texture.\",\"ar\":\"تفصيلة تخزين لغرفة الملابس بحلول نجارة دقيقة وخامة هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-050.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-050.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-051\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"15WLFIbBY8Oy2ZLJrR8WRrBMuq186Jxii\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0300.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-051.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c81b6fb9f96fd3b30296d14effcaef227451de41fd4486135b785f181a7041e6\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A bedroom interior where timber, proportion and soft light work together.\",\"ar\":\"مساحة نوم يلتقي فيها الخشب والنسب والضوء الناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-051.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-051.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-052\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1dlS2lWFmOyIYmUFAvS4M5JJgUM7fnvR8\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0293.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-052.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ec3025ea53537b975907b84709e7312e4202a01ca5b6111241d2eda7dad57506\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Continuous wall treatment connects storage, doors and living spaces.\",\"ar\":\"تربط معالجة الحائط المستمرة بين التخزين والأبواب ومساحات المعيشة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-052.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-052.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-053\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1V4SDkRd2vG8O1b_QSVnrlQmIlu72nsfZ\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0105.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-053.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b07670a2e977e6c5f24648704668876c94f9fc74326c6933e6f18aebbf813961\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close view of crafted surfaces and hardware across the Villette package.\",\"ar\":\"لقطة قريبة للأسطح والتجهيزات المصنوعة بعناية ضمن حزمة Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-053.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-053.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-054\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1OfZkbDOd_JEztBpFPPbmSGFj6ubzMzLq\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0287.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-054.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7b77d152d8e0a5b45de4cfff138d7746c029bec643c9150d40b109b85ccf834e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Residential joinery shaped around everyday movement and calm rooms.\",\"ar\":\"نجارة سكنية مصممة حول الحركة اليومية وغرف هادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-054.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-054.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-055\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"16KsljsM2fM_uzIP2i23u5qfhTG6NwPbk\",\"sourceFolderId\":\"11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv\",\"sourceName\":\"IMG_0286.HEIC\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-055.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c21738dfb4c72fb1edc6cc810768c34c1c9ef53fa46485fd218955fd2457d05e\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fluted timber walls bring rhythm and warmth to the SODIC Villette home.\",\"ar\":\"تمنح الحوائط الخشبية المخددة إيقاعاً ودفئاً لمنزل SODIC Villette.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-055.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-055.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-01\",\"projectSlug\":\"playa\",\"area\":\"dressing\",\"driveFileId\":\"1wlZGDtxjTMgd4SoadLO0bNN9sRJ7Vfsu\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2581.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"662bc96cc930421901e2472b556bd38f2d3935318c76b74f2ad0fdcdc3de3342\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"White fitted wardrobe with open storage\",\"ar\":\"خزانة ملابس بيضاء بوحدات تخزين مفتوحة\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-01.webp\",\"avif\":\"/drive/projects/selected/playa/playa-01.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-02\",\"projectSlug\":\"playa\",\"area\":\"dressing-detail\",\"driveFileId\":\"1eH-YHNlaviqw9q-XotblZduEypFd9Op8\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2582.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e6c7611eda4a352c6f838408ec6e9b6636d02c86b216969a82ec80eee6f750b9\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Close detail of wardrobe internals\",\"ar\":\"تفصيل داخلي لخزانة ملابس\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-02.webp\",\"avif\":\"/drive/projects/selected/playa/playa-02.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-03\",\"projectSlug\":\"playa\",\"area\":\"dressing-detail\",\"driveFileId\":\"1gyf-n7KyLBRVmMxyyGnX9KDgpxNoInZ6\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2546.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"feef08d1169d8abfddcafe06263d5e1a0827cf8573304eda3e52dd7d42b0715b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Wardrobe hardware and drawer detail\",\"ar\":\"تفصيل إكسسوارات وأدراج خزانة\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-03.webp\",\"avif\":\"/drive/projects/selected/playa/playa-03.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-04\",\"projectSlug\":\"playa\",\"area\":\"doors\",\"driveFileId\":\"1SRyB5YdCyX3ZlwpVAKtW2yRyggoZFTgp\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2607.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"32c5d7c1cfcfda8619880ee5e21a67441accc9c9cb7f9e1e0bb4028ede608146\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Oak double doors with perforated timber detail\",\"ar\":\"بابان من البلوط بتفصيل خشبي مثقب\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-04.webp\",\"avif\":\"/drive/projects/selected/playa/playa-04.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-005\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Walr9xOjbHhhLExBZMixmLQ3rpIfDnQG\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2554.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-005.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"6aef4391ed06a1b8770608e14736ef42e619149e5971baa34cdda44712ec5e52\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-005.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-005.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-05\",\"projectSlug\":\"playa\",\"area\":\"stairs\",\"driveFileId\":\"1vrdIsa6opQz-8XOTCUv1czDph4GxHGgF\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2601.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-05.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"be80a6d77b228b758f3d704b5eadfd64b30414e10f56c3d354cd8ec5c9a168a2\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Illuminated entry steps and timber doorway\",\"ar\":\"درجات مدخل مضاءة وباب خشبي\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-05.webp\",\"avif\":\"/drive/projects/selected/playa/playa-05.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-007\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1NL0MU_1r8KMsamt-oCooADVQv5UTLuqJ\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2545.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-007.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7401f2b1abca128ac874b4ed5c1f6194eac589723a76e467d7fe53e911f5d279\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-007.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-007.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-008\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"17tEeqQHgEgwNBHDrzzOxu0_XYZOKt6MV\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2600.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-008.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ae5faa44171dab482ded9f0e88599a735cc49ce9c781089fda5ad70711bae0f1\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-008.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-008.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-009\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Qyee45z0ZYzIpXUJAoYePgR-kclDE-sH\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2555.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-009.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"29aa7a3b731eeb07af6275e645087569130bee6a3c54669e300c5844756cb99d\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-009.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-009.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-010\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1sIEpA9S6ufq236nl8piPVsfbtrioFa9o\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2606.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-010.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1dda9d86821dc8d56e743e30118b50cdfb54fe649aa69d84b36019cc6c1bbb69\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-010.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-010.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-011\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1RPM8AZVF2WhFS7JfcgMGk6m5KD-8wDEe\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2556.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-011.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9693f32db327f8fc3bd156fe87e9569920f01ed75daaac13f0ea611ccd9d3ae2\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-011.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-011.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-012\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1d9uggaaVcUVGZqCJfucJsd1r5kDGisNn\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2560.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-012.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"118e2d38a5e0bd5255d67e30d6e1a86d8a75cc59b0d70dcaf7f7da1ee16f466b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-012.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-012.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-013\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1vQYD1Jh2_rLc01dzqEb6oxTWzHtNe9yS\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2605.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-013.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"45e8fceb79049cef317f4ec316361efe88a9e8c4ed6f71296749be2fe9e7676e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-013.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-013.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-014\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1fJQp2j6ZVlPSZ-ES0oxWSZAZn4zUGF6P\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2602.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-014.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"18b93da037828fedcfc0a8a3e89feff3194aaeb3d0b5cdd8b2d204fba52165d2\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-014.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-014.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-015\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1q9tlHyIOyp8IW7XU2ZqQ4zLSXoh_8G0p\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2603.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-015.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"fbd819211bf411e0ac44ef9c70a670ec2829d126e84584f15270b24cdb1f6a53\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-015.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-015.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-016\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1xGVwS43aRTotCFJIYqVXqQ1v-jv0OoVc\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2561.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-016.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1f34181a005a333e32414e3194e7df3328c5c5563eb2a422b43c988183499d7b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-016.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-016.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-017\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1dYkoRdA6CsWZ7mKMNtFDnFU18UwBKTUN\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2604.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-017.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"346f866cb4c9cd55f1685999b62e7f90574c7c8a4e78095677fab98456c252c8\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-017.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-017.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-018\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"11tjt3zpeU4rSAnEvosg8JpZXt-Lvp6JI\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2544.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-018.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"db91ae441f33e583621d8922ce5fba0fe7c9ee719db22c62ac91059ecb228699\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-018.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-018.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-019\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1UF7ND2TBIAB1fLH5rX0DSmgpco1B11pm\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2549.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-019.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"471e35104f40c1b1a03183f519d0af9d4d2b5c20a35944cd9cfb827b3d143cfa\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-019.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-019.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-020\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1CF5NcvLodyIFNHWCi671x9HSq9COgC_y\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2550.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-020.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1e9ece8c411152f2cf2d8b947302a939c2646da167923ed59ded915f67b0cb7e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-020.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-020.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-021\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1i2ZVadPwuFNZTUiHDtWKsJxaB20FxQ17\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2535.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-021.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e3daa00ff4db5c3b606cf75c0ad8c7561606742f67dd81fe4fcd617442aa87c6\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-021.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-021.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-022\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1fCVKV0M7jp-HFG_cETdgBO_dsCL0gu8i\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2572.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-022.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f55b4cae92c4b0b9bb5e06861e0b32ca6e0b2a35fce57864069475f072137fa1\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-022.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-022.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-023\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1v61LUtbsD2eZymrt8PXUbfHUBzKHFUSg\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2534.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-023.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"743bf03f4d9d1ebfacb9555559f2e7a0df579a60a2214643cf897fa60d226624\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-023.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-023.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-024\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1mI3vWdIhX0Gua-4Re1hYU2aSQybtO62W\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2542.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-024.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ac599082550104250349367d06ca71fdb49fb761b72077314db9c6f71659346c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-024.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-024.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-025\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1bP6xqVHczDxAA34wKftMKiQhF7TWGJLd\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2531.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-025.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"6ff29d2467fa6aa3132974fa3ddcd2513d816c462b71ad59b80dd1ab9d5d19d6\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-025.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-025.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-026\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1N4bWwbCwxqlS0qU9Cag6Itq4s9cWGMg_\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2571.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-026.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"dbdb053a38151cc1c1db5d22cc5177cfa007692ec6cb129682e7e970f86d1239\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-026.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-026.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-027\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1ZAwZAkhRFcc-QobNLk2j1Zj8MqbitzoG\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2574.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-027.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7f17cce6ee670cb4b0d00448a5788c7f8ab98eacf24e682ea19739c47ff8ea5a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-027.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-027.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-028\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1d2U_Fp4J5zL-XjnZ1nTU-oM66bZ_EsbF\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2580.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-028.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"6ba041537de12ea557d9abe4611da60050e41eca6da7da7ea28a009725bacb81\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-028.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-028.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-029\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1uQpmalWFaf3PMvG-QYLD10CxfTGFmjPT\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2579.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-029.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bdbe37105ad0a414462e17ea8d61c77e57ef14168481c719bb09318c3a7dfd4b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-029.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-029.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-030\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1OQoCmPCezfC16GeMltTKDZ_7X1g9-rTL\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2597.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-030.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5deed7e58af6a27f49f33cd972f82f872057c2cc638dd130fcfd0a20e7e83674\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-030.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-030.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-031\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1_JjXW4ZDqQzbZLX021hKPzD7nSnHJ2Rb\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2530.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-031.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a83f641dc32a1ebd8b9ddd7062bc93f67aa224c94d67f7c123c7b27354a79d94\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-031.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-031.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-032\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"16nM8n5Kkfl2RL6t8fqGzJXVZqGgTuxC9\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2541.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-032.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e9183317f0ff603873bed93caedb81796a089db34250428dc7708c2c0eb0508c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-032.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-032.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-033\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1B7hOYVK4z6SUqKxIR0i1088fN7Qf4gq8\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2575.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-033.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f551cfeb9cf0341b5186c8cbf77937fad050bab898ce25574fcd1b702dff2872\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-033.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-033.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-034\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"173BKgIed_QBLhCZRBEZfIy6HtFE2gZkw\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2583.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-034.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"0c4710f71c679a590862f6d69df8970cb2594b5f1c527bfa4f44427dfcde6efb\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-034.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-034.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-035\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1j9qLfWixq9CZ6YFXQAouPATP4ktQHY82\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2584.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-035.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d7c43120681331caf6e2f7546ab933336096ac6a5a5fff1f3ebbff21b1b32f03\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-035.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-035.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-036\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1zIsOh8CR2La4KsbR4gZSWflmKFdAt4PO\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2559.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-036.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c6ee56f75ce928e30222e2c77f735ff7dd63776caef8ccb0a23d5bafb33ea5af\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-036.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-036.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-037\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1p62RHUNFUG3t2bXuqSFQVpIed1I1--M7\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2608.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-037.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1b20a4afdd8b74c44ff65356e4fd9f06650ebc5c487ca30baba25e85b933e030\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-037.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-037.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-038\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Hr8XgWp8hc2qXqqbxIHmddoQ_KQWMxqh\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2588.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-038.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e1c0220bc0b577c1bc825f67a60d0ccd2c142a7e03fb110cc5dc8a4687c2b0c1\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-038.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-038.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-039\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1VBQNRp0cHC8-o-oBG6GgMRVV_k_Mb2MK\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2590.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-039.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"2bdbddff469f4a8c4578bba6fcca29f35aec9bfb5a96e08458dfced5236c1f0c\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-039.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-039.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-040\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Pn_eezdKR1UQYWRgwrFlgovtd3B0Jv2u\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2589.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-040.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"11215249047f3fe5e0ab8e990e739dbb71326f7a76ca6fc917d5cd0509d566a0\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-040.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-040.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-041\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1UnnY_tjn75JJaCnMLkYRsLkwi_ImT75M\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2578.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-041.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e01b9bf276265ec3f47e21368200e24bfb0e32653733dceec3f2d78351085dc2\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-041.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-041.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-042\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Uu-px8JUr83tnFR3x_VlyNgpXG3bp8so\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2558.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-042.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"aed7bdf914eb120362f1fb27ccf10a862ad48a83083cf0a0be7cc849bc33601c\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-042.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-042.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-043\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1CW2SnViJtR3xceLAx5uJvmcXO-Jk1vEU\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2577.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-043.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"666afc3b295873401ef74c776970cd7ec47564f4721ab7ea7b0761f48f4b7422\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-043.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-043.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-044\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1f3yvwLU9a9d6S75OM59VF6Vpzl4XYVXe\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2587.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-044.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b7a73318593ced78aa0584651748b78b5310f053e6275631411347763cc7a8a7\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-044.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-044.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-045\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1zWpQzNFpQJ7VDNQEoLkXuFV23bAhK7ps\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2586.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-045.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5ef3209e689d27c3f2e96ff96472cff9a827d36ab278230926dc04d34d59449c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-045.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-045.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-046\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1TSz9TmIF_D_2ICzdOvxWN-Mb13KstKnk\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2566.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-046.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bac3b04d68a3b8bfc145d409816876bc88d3caaa00d39285f28d0f6f613a2606\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-046.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-046.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-047\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1fhRoC03LRj4QRiyxvSlBRNO-Er8mkU5r\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2585.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-047.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5425a81480daaabbd1e00b8f59bd609055c9c6dc80c7b7285f1f57dfd83b0d6b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-047.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-047.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-048\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1l9OQ9FLdnThJzjAkJaYMdO0J9ODbB76z\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2567.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-048.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e4edce96cc189ca77eee1c901ae1c901d071fe2a4afc16788a7bc7353dc5a2e4\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-048.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-048.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-049\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1lg5hDQQabdKxHjRrGR7bwUjeSvtfr4W_\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2543.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-049.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c49c848d49f0750e3d797a6d3f314e863a0273835c8722352c13415b4defc199\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-049.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-049.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-050\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1IdEihXAGs7-6pLzomYdzlDXC058RWu1r\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2539.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-050.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"adb37077e0b1b3c8feac10e8355897b8b338652b359ddfc8b3764d2fd46783d5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-050.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-050.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-051\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1uNx1Og8LmTsz5yOzgB3UHvTi-VFs97wG\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2564.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-051.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"256de71fb5c31133d1a57e97aa5bdc0f8abc6c81fbbb76da9f7546587f78ab83\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-051.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-051.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-052\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1VMP6_NRbotRvZOIFmfswWLpUoPdFC22k\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2568.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-052.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b229de6e23f0b6c3d5b92c1dad6d2e58d72b5a6aaefb78d87b60ce6c64761c35\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-052.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-052.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-053\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1kI1akc9zHEu8oWT_3FwBk_4KrGvLUnYr\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2565.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-053.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bf9c19f34a223e7d3f432b37887406032f92e432ff759664570b39f4ac59da72\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-053.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-053.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-054\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1k-F3c-4f1BUXCw4bIp5EY4eXQs2LMnHP\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2563.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-054.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"893ceb1d989f33e60d2e661746af9f8ce31d689ada06f6afe55792559069d55f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-054.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-054.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-055\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"11kB2vzr1VZ4gsrPB5Aif-kXsC3LyxBG0\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2562.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-055.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"558b5b002b7bb055e869789b39c919f57397f35d164a0ba39c34d56867e4ee3e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-055.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-055.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-056\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1_6-ZctvZyQwawsGbDmkjraBPvcY8Gdgj\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2570.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-056.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"20a52746d6c42630acde2d0e58ab911d0f6742af4a2cd41aa3c0fa114fac75d4\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-056.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-056.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-057\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1HnhqKwAYe_gpXIQXwijVfHG9L7ufhpHW\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2569.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-057.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d00e0e58b3ec62f48046191e1dfe4fe66ba07ef6186b5b15e7c008243abd9c0b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-057.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-057.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-058\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1XkhTx-HRcuIjJ1uJ00OoGhx61sjQTgEs\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2598.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-058.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"fda6d3bd0bdeeb3ab80ba25334f9bb007785e6cba6fcc9b1fb43dd3aaa1b7040\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-058.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-058.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-059\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1v64DAcDOUp7riz_Ia1y2gFTUkoOh-G0G\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2599.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-059.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"3efb822624922c69a231f06800bc604985a30eee769165e4dd4d2978c3d9a249\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-059.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-059.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-060\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1k0MpbAnfTHfFlsELz_1Ke0qqn79YEOhC\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2495.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-060.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4c7d13d23401ff065ef8e08b75751b066d239671edf504897ab3fa34d2a0f64e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-060.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-060.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-061\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1mTb17vhx0edJTRqBMy9hTpo_7vJWWE5r\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2492.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-061.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b6e1a8e3982138cf37edb56e5632a04d0618a8a1e7d8bd47c4528af599001b2e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-061.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-061.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-062\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1K-SCs6f-cHuTBpSnFNw89YaOma4yNS5g\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2476.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-062.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"33fc34f2aa18f83d7cefe4ed53ad200f26d653bca7c997741b30b8d5aaa2040f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-062.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-062.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-063\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1K4RVxNvIcD_hKVhlF8H6FRn6iUljay70\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2490.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-063.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cf7a3f52d6710346876e32050070922608d0727d3d9caf731d6a98d9ac48851c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-063.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-063.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-064\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"17hc0hK8MNmoI5l4j0IiLq7Mk9qXD6Y6b\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2489.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-064.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"0d11319e66f0606dac57e7e911faee6b0af18f18991be06166991263d07ac455\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-064.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-064.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-065\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1RGluHrxkK8qFT-ZUySCLmto7kVVKMn2H\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2483.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-065.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7adc270064c416a0c0bce420e86aeaded2a1e22cd51282492e575bd34505e771\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-065.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-065.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-066\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1QJwZnkmFSmD9FrgEdeqyOqTMgKU_LyW8\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2482.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-066.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4dc25605fc904ef351360fd45960fa7f3b7c6d3891edbb4857c275a68f52f02b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-066.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-066.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-067\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1qzIrulPAJ_13_-WB8_ISsk_X9cjNwWh5\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2496.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-067.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d1016805adccd8196c0ccd29e769bf586b2183877aba90fc2eb392327afec51f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-067.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-067.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-068\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1rhJHSxSGN4DruuQps9dd19Lgw3mkJm7H\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2500.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-068.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"15ad05e60c3bc84e1de0b73282126af6cfa83f0095a04b4fea8d53296f3f5ce5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-068.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-068.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-069\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1MtrcgFmHsMvf2vUCMk4wHz55I0E0sG4t\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2499.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-069.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c720fdaffddb786786e3eb1a79658c6f37d15dfa9b6380aa6a08e5b987de74bb\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-069.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-069.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-070\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1YU3WPZ9Sgz1jW3ldgYdDe_ho5av77ToA\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2475.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-070.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a8f56cf21ddf3b159cf4bf8740d4ad56685a2224308ce5255db50e13ed149048\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-070.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-070.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-071\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1PVhZKKyZuj5uix1icTqsj5Wui6_SJYra\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2485.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-071.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"2e5fe5bf2005fc63eda4dae0b73ab2d330cb3f471189baf21d33393f6715715b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-071.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-071.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-072\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1OWDfk-B7_QLDyEOM8tyY9x1X0rxV3uUp\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2484.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-072.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"be5632acc81f7849d334d6886a47ebb19afa5bcbddf604d8e4bdc7c9b66f55f7\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-072.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-072.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-073\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"13mj0sIl-c6GveKja2r7gCIRma82hrjfk\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2487.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-073.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"001353e2d9f929ba8cf64f08c87d62b314bceea9549a8053eb5312c739ce6673\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-073.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-073.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-074\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"15fIElreRZ5xLIJ7VEmbgY_DH9pgOHWVz\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2488.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-074.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9d9dc33c2325d23c5aba49cc712b71541422ffe400a0f6fbf2c4a4d12934e0ee\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-074.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-074.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-075\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1toan_HTguZcW2elUQrrfmPEkWoMrjLUr\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2477.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-075.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"17b2ea2b403eebf73328d04bffbb0dacbd842d8946d6d39941b1b9c1d8521e3c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-075.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-075.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-076\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1AL80LXqQyc9pLxQNUvjIvLMSyQLcHI4Z\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2481.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-076.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d8ca7d37fefda93f15f6f9fe79ad43bacae5244d61596fa8c397fda8a2cfe2c6\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-076.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-076.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-077\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1aYUcU1sIYBZlwb1xmKGN57Z2b7q8jYeZ\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2480.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-077.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"125c8c86cf7554eefadcf89eccfee38a504461276e2cb5b898b80018e1f7d494\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-077.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-077.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-078\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1PyfwlGzqKR4qZB9VbbMLCGHuHsU94BMM\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2493.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-078.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1d00d336eb46127d343ee0cfafe3a97701b26dcddd693326f072c23e7e03aab1\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-078.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-078.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-079\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1um740zKECPMKClwrB2pTlTKejVP5E_d6\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_2494.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-079.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ae455dee1a4a1bbc6fd0277aed50b0704e944c5e402814e69ceb90574a39fde1\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-079.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-079.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-080\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1I8imJUBeBxsR88w4i3M3JuNL0-vtCsU5\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_6520.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-080.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"37f48f47e8fbad6a5a22794eb18fd9efba05ab3ee61c4232de5c495544879024\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-080.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-080.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-081\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"16h7H0WUPuwOR9dE5H6u6WtUNDWdylKl1\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_6519.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-081.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"6502e0c5400ec59b8db817f24af4b2a36141c16b49937b280bfa9c787995d793\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa joinery detail with warm timber, clean lines and precise hardware.\",\"ar\":\"تفصيلة نجارة من Playa بخشب دافئ وخطوط نظيفة وتجهيزات دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-081.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-081.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-082\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1LFkRkDFL5c4Z5oC-JrEAc1FLw_BpNk3p\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_6516.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-082.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a9bed239cef2c53a6ffe2a3e8f1ca8b29b4be5a9806d26a52758f4b916771eb9\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored storage composition showing the quiet precision of the Playa package.\",\"ar\":\"تكوين تخزين مصمم بعناية يظهر دقة حزمة Playa الهادئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-082.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-082.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-083\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1YL7cehdrLsO-ulMG1nsyV3E3QDBf2L1_\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_6521.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-083.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"3a0e36a8da6171da5d3934800c046315398bd8cd46c5f79e0a70a7562a3cc730\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-083.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-083.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-084\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Ua-aLabtJakv9D3m5HsC9zylRgj8ciwa\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_6504.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-084.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8dbb07b61cbd110bc69b02ad39a15c48504e6b8149a4b9d2528f0c1923714723\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-084.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-084.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-drive-085\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Zhe7WKarPMdcZ52XIS4x1-u7vGBFRafp\",\"sourceFolderId\":\"1256mAU_FoUKShxofhCe8-pQEYja11tMr\",\"sourceName\":\"IMG_6502.HEIC\",\"localSrc\":\"/drive/projects/selected/playa/playa-drive-085.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a42130e231f5ec28151c6bf1167bf873d8509029993661a4563f342a2c3b9866\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-drive-085.webp\",\"avif\":\"/drive/projects/selected/playa/playa-drive-085.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"}]");
+var generated_selected_project_assets_default = /* @__PURE__ */ JSON.parse("[{\"id\":\"cfc-office-01\",\"projectSlug\":\"cfc-office\",\"area\":\"wall\",\"driveFileId\":\"1Ttb8b0kNPTcopDfySTAiss7GKEt-4fdW\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4192.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-01.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"388e07a09420342711a43cca4cef3f38cc3dec201dd5686f7fcc7258c27a0f96\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Timber wall and workstation detail in the CFC office\",\"ar\":\"تفصيل جدار خشبي ومكتب في مكتب CFC\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-01.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-01.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-02\",\"projectSlug\":\"cfc-office\",\"area\":\"cover\",\"driveFileId\":\"172xbRcLKiigQuyNc7ctm-yx-w7JTrm3L\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4189.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-02.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b402849d74162ecf1f348791a929bbf7182cdb3502e24816a402516b11c0cb9c\",\"orientation\":\"landscape\",\"quality\":\"hero\",\"alt\":{\"en\":\"CFC office reception and conference space\",\"ar\":\"منطقة استقبال واجتماعات في مكتب CFC\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-02.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-02.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-03\",\"projectSlug\":\"cfc-office\",\"area\":\"detail\",\"driveFileId\":\"1YgzFugyzqSjC8XKIoWRDIU8OZP7cp9YR\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4193.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-03.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"06a228597880882c251dc156f2a107d1c2d87ecd7ff04c73e5c5a5579c80a77c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Lighting and seating detail in the CFC office\",\"ar\":\"تفصيل إضاءة ومقاعد في مكتب CFC\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-03.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-03.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-004\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1LmXcfXRBdvqB2jLZqibvpNOpJXMcG2mb\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4196.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-004.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"df7507dc4a0363aea42ddc195ab1b1ba1578ecac2fca2c7bbe45e45372d62187\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of crafted surfaces, hardware and architectural light.\",\"ar\":\"دراسة قريبة للأسطح المصنوعة بعناية والتجهيزات والضوء المعماري.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-004.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-004.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-005\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1-kU5NOITTO4_mVuV7lz5YgFI_K1OyBak\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4188.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-005.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"513af17fdadf55a783f3f90b639b62000c959c9e9c50c45a4376ed1996349890\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A finished workplace vignette with measured storage and warm materiality.\",\"ar\":\"لقطة من مساحة عمل مكتملة بتخزين مدروس وخامات دافئة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-005.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-005.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-006\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1_S5f6TWLovajDhBDotISvMFblCjVjTAz\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4185.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-006.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ca9012bc00520ea855afa5014627a0d147d2fa63f1de05325e499d06d660e80c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Timber details and layered lighting define this CFC office setting.\",\"ar\":\"تفاصيل خشبية وإضاءة متعددة الطبقات تميز هذه المساحة المكتبية في CFC.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-006.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-006.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-007\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"13UBEWEE2fosoH_v5pjTApmVu6K0dZgTC\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4203.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-007.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"907437596eb3f8bab95ed0c70639698586fd351efe3cab4f558978571700abae\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered CFC office interior where warm timber meets soft light.\",\"ar\":\"مساحة مكتبية متكاملة في CFC يلتقي فيها الخشب الدافئ مع الضوء الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-007.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-007.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-008\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"1fu-sJWrIHBOCnBCcmCv7d8ObMt1PT89A\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4187.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-008.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cba578b3d0997fbc35e56528292861fa73f9e0b755dc627b0028da83ab4a1295\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored reception scene shaped by timber, glass and clean lines.\",\"ar\":\"مشهد استقبال مصمم بعناية من الخشب والزجاج والخطوط النظيفة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-008.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-008.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"cfc-office-drive-009\",\"projectSlug\":\"cfc-office\",\"area\":\"other\",\"driveFileId\":\"12o48P1Z2RzyUxTO_cTxGLqzZD0SMRQ7q\",\"sourceFolderId\":\"1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y\",\"sourceName\":\"IMG_4199.HEIC\",\"localSrc\":\"/drive/projects/selected/cfc-office/cfc-office-drive-009.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"84be9f025a3426658fd738b81e5a2068bbd49ee4c76f7fcd07b640a0b221c0e8\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Integrated wall joinery and workstations bring order to the office.\",\"ar\":\"تجمع وحدات الحائط ومحطات العمل المدمجة بين الوظيفة والنظام.\"},\"derived\":{\"webp\":\"/drive/projects/selected/cfc-office/cfc-office-drive-009.webp\",\"avif\":\"/drive/projects/selected/cfc-office/cfc-office-drive-009.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-04\",\"projectSlug\":\"swan-lake\",\"area\":\"detail\",\"driveFileId\":\"1NrcWiwS5pGhQYMiQit-cqFTxsDWDL-QB\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1253.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-04.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ec694176078c321542ba81229d06e542834fdf5962021ef7c6eabc40cc160172\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Illuminated timber bedhead detail\",\"ar\":\"تفصيل لوح رأسي خشبي مضاء\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-04.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-04.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-002\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1B3n6iPXxgibylooL6vcfJERlFcKFx2Qu\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1296.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-002.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ab1d60fe92a40b6b77c36dd4b023dc67e7616be252cac94e5f1d6ffc5199fd3b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A quiet bedroom composition with crafted timber and softened light.\",\"ar\":\"تكوين هادئ لغرفة نوم من الخشب المصنوع بعناية وضوء ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-002.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-002.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-003\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1hv1UzgBDjL8PuI_ZIk0pLXjxKVUoNO3E\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1341.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-003.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9e1ff062f520b59a6778b3eb249bed9b17b68704d229a434dacb8ee068b80745\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Marble, walnut and built-in storage meet in a refined interior detail.\",\"ar\":\"يلتقي الرخام والجوز والتخزين المدمج في تفصيلة داخلية راقية.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-003.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-003.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-01\",\"projectSlug\":\"swan-lake\",\"area\":\"cover\",\"driveFileId\":\"1mCbHAsQx9Ij_npKE69JYXNCKt80p7j4T\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4498.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-01.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"54e89c031f4a1084950dc0a5a24a6c90b0afb5bbbaae002a580cbf0df007b69e\",\"orientation\":\"landscape\",\"quality\":\"hero\",\"alt\":{\"en\":\"Living room with timber slat wall and integrated media joinery\",\"ar\":\"غرفة معيشة بجدار شرائح خشبية ونجارة وسائط مدمجة\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-01.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-01.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-02\",\"projectSlug\":\"swan-lake\",\"area\":\"wall\",\"driveFileId\":\"1vJDzYESn7P4rS7QU8urLydoC7rSjc4ix\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4499.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-02.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a837e32745d9e643b8f6193cb4787aa96f24b8c3507a55d50bd76b542a05b265\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Marble vanity framed by timber wall panels\",\"ar\":\"وحدة مغسلة رخامية محاطة بألواح جدارية خشبية\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-02.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-02.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-03\",\"projectSlug\":\"swan-lake\",\"area\":\"bedroom\",\"driveFileId\":\"1N2pphLlYyLglGkvBcQzaKhKl6wvOFys8\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4497.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-03.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"3308deaad3ea070c767facc06a284e43432a533ca2700da8e3fb4b9090c409e9\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Bedroom with a full-height timber headboard wall\",\"ar\":\"غرفة نوم بجدار لوح رأسي خشبي كامل الارتفاع\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-03.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-03.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-08\",\"projectSlug\":\"swan-lake\",\"area\":\"reception\",\"driveFileId\":\"1rHJeeeWNXbq-9ldFdyjdw-bWQ_Z0DN09\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4496.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-08.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"d95ced7fbd47712e0b75186b418a5d4e3f07e18078696098ff59b65f3cdf59f4\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Dining room framed by timber, marble and a continuous built-in wall\",\"ar\":\"غرفة طعام يحيط بها الخشب والرخام وحائط مدمج متصل\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-08.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-08.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-06\",\"projectSlug\":\"swan-lake\",\"area\":\"reception\",\"driveFileId\":\"1-CR_lCzIWUnnR_uUVLO-Kq5O6fZSx-X-\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4494.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-06.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1320ce282fa89cefdd28233f2d7ec8b02b3323b42ef1c9accbea44a8d2ccb21f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Dining room with walnut wall panels, artwork and a crystal pendant\",\"ar\":\"غرفة طعام بألواح جدارية من الجوز ولوحة فنية وثريا كريستالية\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-06.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-06.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-07\",\"projectSlug\":\"swan-lake\",\"area\":\"wall\",\"driveFileId\":\"1S4RMfXTbVK_iAXWRSEb-sY_t8IpcfydY\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4495.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-07.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"a1209ef633d3d8c1095d4117fd4d6f3459bd9e3369ef2ec3e92ed5e10aa3ce6c\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Living room with timber ceiling beams, brickwork and integrated media joinery\",\"ar\":\"غرفة معيشة بعوارض سقف خشبية وطوب ونجارة وسائط مدمجة\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-07.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-07.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-010\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1xd7Bq5dwkSJJNfnbulBKdBcmd9axdusV\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1244.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-010.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"526eeead623fbf3527a806879c2da9fbb00756204bd74e4dd7dd58ebf6ed0273\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dining setting carried by continuous timber lines and considered proportion.\",\"ar\":\"منطقة طعام تقودها خطوط خشبية متصلة ونسب مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-010.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-010.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-011\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1M_75S0x6uD0dwv7Ojd_GORtRAkSiU9xs\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1241.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-011.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9ff8f6155d9c891eb852004f90890d1ce93d8ff753f4700f8d41a1abf22de9fd\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Layered joinery and architectural light shape this Swan Lake interior.\",\"ar\":\"تشكّل النجارة متعددة الطبقات والضوء المعماري هذا الجزء من مشروع Swan Lake.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-011.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-011.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-012\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1SHMRlqmib_RzYBDdcCpef2sdhqaYoUiR\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_0957.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-012.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"df0ca6f527ba07dbd66390cd2f3e32b3d8c086a61d77d5fd327141775b41a7d4\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted residential vignette balancing storage, texture and calm.\",\"ar\":\"لقطة سكنية مصنوعة بعناية توازن بين التخزين والخامة والهدوء.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-012.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-012.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-013\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1Lx_ahSbrb7Hv4YZsD7ZU6klPW4wkmMuy\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_1278.HEIC\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-013.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f916c3347e63486841f6f00fbfa09176dc63101af9f65c721ad31f4be2498b4b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A warm living space framed by timber walls and integrated joinery.\",\"ar\":\"مساحة معيشة دافئة تحيط بها حوائط خشبية ووحدات مدمجة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-013.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-013.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-014\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1oyNu0baeMZfG7dC5ZekPAav4LcFESwCu\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"909A61FC-2C55-47DB-87E3-6D9D10423FF5.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-014.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"e906b3bc03ee22df6aedef8c797941cb73eee40ded982f58724f0c0576d968e4\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A quiet bedroom composition with crafted timber and softened light.\",\"ar\":\"تكوين هادئ لغرفة نوم من الخشب المصنوع بعناية وضوء ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-014.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-014.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-05\",\"projectSlug\":\"swan-lake\",\"area\":\"rooms\",\"driveFileId\":\"1Ycd4DyHYiruethdrGJ1xY1HhvnDJmb-5\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"IMG_4493.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-05.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"1af93416c255ce610babaa88b04e30a2c78cdebe196b206e2bc734fdba60bd09\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Living room with a dark media wall, timber slats and layered lighting\",\"ar\":\"غرفة معيشة بجدار وسائط داكن وشرائح خشبية وإضاءة متعددة الطبقات\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-05.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-05.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"swan-lake-drive-016\",\"projectSlug\":\"swan-lake\",\"area\":\"other\",\"driveFileId\":\"1Dt84KV_0Gqe4FW3f8OqfbiRA26GpBMe4\",\"sourceFolderId\":\"1-oc9ebNo-k9DqaK_aozdB9HQTZyek8kR\",\"sourceName\":\"D2E7CF64-DEAB-41FE-8FF6-FA1F085F8C3E.JPG\",\"localSrc\":\"/drive/projects/selected/swan-lake/swan-lake-drive-016.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"72dc80901a3af98c067b46e78a2b9a279d6f88347aee110041162da15c5df1bd\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A dining setting carried by continuous timber lines and considered proportion.\",\"ar\":\"منطقة طعام تقودها خطوط خشبية متصلة ونسب مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/swan-lake/swan-lake-drive-016.webp\",\"avif\":\"/drive/projects/selected/swan-lake/swan-lake-drive-016.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-001\",\"projectSlug\":\"sodic-villette\",\"area\":\"cover\",\"driveFileId\":\"1xPeTXFg-xcJ1GkdexvfdfoqK-WnYqvKf\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"1st.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-001.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b07670a2e977e6c5f24648704668876c94f9fc74326c6933e6f18aebbf813961\",\"orientation\":\"portrait\",\"quality\":\"hero\",\"alt\":{\"en\":\"A selected interior view from the SODIC Villette home.\",\"ar\":\"منظور داخلي مختار من منزل سوديك فيليت.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-001.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-001.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-002\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1Dj6-62XiZ9dxnD7uApIMlstCFsffKwpj\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"2nd.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-002.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ae37cffef07c0536b09f0e24fba7934bde5a98a2d48ba921bdcf0c7ab1621258\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of joinery, texture and proportion.\",\"ar\":\"دراسة قريبة للنجارة والخامة والنسب.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-002.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-002.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-003\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1td7HICem8_FqBtefI83X4pI7eR3yR7er\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"3rd.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-003.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"60fd32e6d4c14decba78bc57d9072c7f661563db81fbe27289187e541d24db3a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A residential room shaped by considered timber details.\",\"ar\":\"مساحة سكنية تشكلها تفاصيل خشبية مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-003.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-003.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-004\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1VlU6fmb8NyNiheFve9cA5yb9beUaAyZs\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"4th.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f135f620cea25fdea849644ebcb1a3518939943511ceaa805fe7467a7d62431a\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Storage, wall treatment and furniture held in one interior language.\",\"ar\":\"تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-005\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1owwTF_Hm0tEiq9vRPCut3OolgUUYB6jF\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"5th.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-005.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"97cab5dd4e5f2263b18b05cd35b1715d2182c21911edc30e16278b21040fcde9\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A finished interior detail from the supplied project sequence.\",\"ar\":\"تفصيلة داخلية مكتملة من تسلسل الصور الموردة للمشروع.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-005.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-005.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-006\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1nQVIs0HrUZocbK_kAFP4Pzv6_5A7z93b\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"6th.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-006.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"aedf0f69b43621fbf785ce6228e3eedf2c2b217ea8b211823648679c2405639c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Crafted surfaces and quiet material rhythm across the home.\",\"ar\":\"أسطح مصنوعة وإيقاع هادئ للخامات عبر المنزل.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-006.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-006.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-007\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"16xqlTylg7YN1cQadibz65YxU6Hwlw2KK\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"7th.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-007.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"c21738dfb4c72fb1edc6cc810768c34c1c9ef53fa46485fd218955fd2457d05e\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A selected interior view from the SODIC Villette home.\",\"ar\":\"منظور داخلي مختار من منزل سوديك فيليت.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-007.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-007.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-008\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1s5H0J7xM8PFNsQCvb2B3bWW67ntZeBDK\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"8th.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-008.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"262871bf27eb79937e21d579b0606103d31c7325004b9fee2405e7a7147a326f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of joinery, texture and proportion.\",\"ar\":\"دراسة قريبة للنجارة والخامة والنسب.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-008.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-008.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-009\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1Mx1q9SIefnRY4z0hT6TErI2oBc_JuJfO\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"9th.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-009.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5cea8e19997892d0b7943b879007e05e343917e64273057acd30b5999806f130\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A residential room shaped by considered timber details.\",\"ar\":\"مساحة سكنية تشكلها تفاصيل خشبية مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-009.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-009.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-010\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"14AkfwafXdz-KWHyeQDv5pKTnSc31tFg0\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"10th.JPG\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-010.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"6d3b5d1667a6e2ad4e7d2f3bcde4ee1e600f282361b55442b602b82f277c8404\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Storage, wall treatment and furniture held in one interior language.\",\"ar\":\"تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-010.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-010.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-011\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1V_9BaObbG-cfPlRSFzAm9PZccNmqhoG_\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"11th.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-011.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"d64e37f5997490d710acd6ec37c2e8a4848089fc6d1f7275a50ec1ada4ec503d\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A finished interior detail from the supplied project sequence.\",\"ar\":\"تفصيلة داخلية مكتملة من تسلسل الصور الموردة للمشروع.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-011.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-011.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-012\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1j7lrWjtSJxwMnwFSRD9p7VrWmmt2mvN2\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"12.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-012.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e98d167f409f90e88dc9eb6627d7a3160d6ea168d3f4615548a1c9cef14d5a40\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Crafted surfaces and quiet material rhythm across the home.\",\"ar\":\"أسطح مصنوعة وإيقاع هادئ للخامات عبر المنزل.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-012.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-012.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-013\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1cIMxg18Lc6mEkxCoTJ2NXzTOF89T5WPP\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"13.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-013.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ce84fc22befead4fe442c28f91ab1e68a9af33519aca1b3aa953d2148ae73976\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A selected interior view from the SODIC Villette home.\",\"ar\":\"منظور داخلي مختار من منزل سوديك فيليت.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-013.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-013.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-014\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1A0VFg0Ku6m-boIBBq3Ma0o8jroRyFQty\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"14.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-014.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4ae85a30e5b5f5981d701a8cb95e654f9507accba90a1f833e93049374441bb3\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of joinery, texture and proportion.\",\"ar\":\"دراسة قريبة للنجارة والخامة والنسب.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-014.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-014.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-015\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"17pvhp9DFC3UP5iqfB8c5ysszqBkDS_jI\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"15.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-015.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"ec3025ea53537b975907b84709e7312e4202a01ca5b6111241d2eda7dad57506\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A residential room shaped by considered timber details.\",\"ar\":\"مساحة سكنية تشكلها تفاصيل خشبية مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-015.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-015.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-016\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"12CIWUaVrRhmjdobnMfbSya6ydnNWPL71\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"16.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-016.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"1a8610f87b38c14937493a1313e9bcf955a84ce373e940935b65326a5e90dd73\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Storage, wall treatment and furniture held in one interior language.\",\"ar\":\"تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-016.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-016.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-017\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1CGnRvy2lHLM2uJLrE5O2leAIU4ZcL19t\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"17.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-017.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"8d4af249900952821f46623a96ed15eae369f8d50fd3caff275708c40c82b737\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A finished interior detail from the supplied project sequence.\",\"ar\":\"تفصيلة داخلية مكتملة من تسلسل الصور الموردة للمشروع.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-017.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-017.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-018\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1QLEos8q2g3TwDo6A9CrQ_zH_f2Eb2U2G\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"18.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-018.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"f4612315ad4516eec46c684ffcc63a319c72895cd79b5b54a9ba78cda2409ef5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Crafted surfaces and quiet material rhythm across the home.\",\"ar\":\"أسطح مصنوعة وإيقاع هادئ للخامات عبر المنزل.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-018.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-018.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-019\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1Wj2UlTJdw1pMxJq8TPo9pcW2T7qDc7YZ\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"19.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-019.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"7cccc794f7630c32bf2a08e7894d918ebf3f2dd8e8f0eaaebfa83ed51d41cc44\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A selected interior view from the SODIC Villette home.\",\"ar\":\"منظور داخلي مختار من منزل سوديك فيليت.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-019.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-019.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-020\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1rdEM67i9SjOeMVT2ZLpcz-EzYODOqkGy\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"20.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-020.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"cedaf845b533213d55abd5f13021a3c41d0777748eeda1229e80a503bf5f0c08\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of joinery, texture and proportion.\",\"ar\":\"دراسة قريبة للنجارة والخامة والنسب.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-020.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-020.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-021\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1VtNimUkqMW69Nap3VbiTzb1o_IeqmyLV\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"21.heif\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-021.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"5510ea246e3f8bd45a13856c0b66499c9b5603314224c8612f41fc603eeef40e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A residential room shaped by considered timber details.\",\"ar\":\"مساحة سكنية تشكلها تفاصيل خشبية مدروسة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-021.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-021.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"sodic-villette-drive-022\",\"projectSlug\":\"sodic-villette\",\"area\":\"other\",\"driveFileId\":\"1RtFvDb9xpdAq-pm_2IlFO0ZY-fEV1K6U\",\"sourceFolderId\":\"1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH\",\"sourceName\":\"22.jpeg\",\"localSrc\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"e81877a62550723c1eb863fc63ef3dc4c9c88a9c874ad2e1e9a47d828297816c\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Storage, wall treatment and furniture held in one interior language.\",\"ar\":\"تخزين ومعالجة حائط وأثاث في لغة داخلية واحدة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.webp\",\"avif\":\"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-001\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1_7wC12TBZIn3tXBjXdm_nqlb3X3mYwfT\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"1st.png\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-001.webp\",\"originalMime\":\"image/png\",\"contentHash\":\"7c26c892e8f4c90ea66023fa86514b1c0e497d993d649cd24bb003333b6c0f8f\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa interior view with warm timber, clean lines and precise detailing.\",\"ar\":\"منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-001.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-001.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-002\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"156830ccZ3XA7stNs0_BdVWgyhMqlOabi\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"2nd.png\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-002.webp\",\"originalMime\":\"image/jpeg\",\"contentHash\":\"b528afd4050ee56d85597114f578d25ba1c945f8c4f69eba33d39a41dba32946\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored Playa joinery composition showing measured storage and calm material rhythm.\",\"ar\":\"تكوين نجارة مخصص من Playa يظهر التخزين المدروس وإيقاع الخامات الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-002.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-002.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-003\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1cm8YReir86YVsmD0pj-30iNAKIXGpFbW\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"3rd.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-003.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"125c8c86cf7554eefadcf89eccfee38a504461276e2cb5b898b80018e1f7d494\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-003.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-003.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-004\",\"projectSlug\":\"playa\",\"area\":\"cover\",\"driveFileId\":\"1tzXrFucZBs3crezGRP00t4YNd60QhWQu\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"4th.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-004.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"dbdb053a38151cc1c1db5d22cc5177cfa007692ec6cb129682e7e970f86d1239\",\"orientation\":\"portrait\",\"quality\":\"hero\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-004.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-004.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-005\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Vc3xCOb8BGicFzi1SsrA8TAqVc1crT9P\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"5th.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-005.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"17b2ea2b403eebf73328d04bffbb0dacbd842d8946d6d39941b1b9c1d8521e3c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-005.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-005.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-006\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1bBGwXBoqa4duiZMEIireMD0Cqs5W-4Rx\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"6th.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-006.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a8f56cf21ddf3b159cf4bf8740d4ad56685a2224308ce5255db50e13ed149048\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-006.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-006.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-007\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"19v3qnMpLls0XSQsl_Q9gXoHjcKZymvYN\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"7th.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-007.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"4dc25605fc904ef351360fd45960fa7f3b7c6d3891edbb4857c275a68f52f02b\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-007.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-007.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-008\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"186T3vnICFGEDqZjxd8cEsM7jYQo2nsmE\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"8th.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-008.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"2bdbddff469f4a8c4578bba6fcca29f35aec9bfb5a96e08458dfced5236c1f0c\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-008.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-008.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-009\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1v0P8XmLWC3vsNSHUq-O_-G5iNljYB20j\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"9th.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-009.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"0c4710f71c679a590862f6d69df8970cb2594b5f1c527bfa4f44427dfcde6efb\",\"orientation\":\"landscape\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa interior view with warm timber, clean lines and precise detailing.\",\"ar\":\"منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-009.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-009.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-010\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"13m4oDVYptnAvlvJi84LEytpnkumSSdvK\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"10.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-010.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"9d9dc33c2325d23c5aba49cc712b71541422ffe400a0f6fbf2c4a4d12934e0ee\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A tailored Playa joinery composition showing measured storage and calm material rhythm.\",\"ar\":\"تكوين نجارة مخصص من Playa يظهر التخزين المدروس وإيقاع الخامات الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-010.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-010.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-011\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1nP5TgzGwFpq2pngyzRaYhyO1U4I9prBg\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"11.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-011.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"a83f641dc32a1ebd8b9ddd7062bc93f67aa224c94d67f7c123c7b27354a79d94\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A crafted doorway where material, proportion and movement meet.\",\"ar\":\"مدخل مصنوع بعناية تلتقي فيه الخامة والنسب والحركة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-011.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-011.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-012\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1P6eZZpaaUBCqSilyOixfhTIMHyLsk1MP\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"12.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-012.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"29aa7a3b731eeb07af6275e645087569130bee6a3c54669e300c5844756cb99d\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A stair and joinery study built around clean thresholds and durable detail.\",\"ar\":\"دراسة للسلم والنجارة مبنية حول انتقالات نظيفة وتفاصيل متينة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-012.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-012.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-013\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1DY4GCfGaWr5Fg6NlOM3mMk0wSJlPRl3a\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"13.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-013.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"adb37077e0b1b3c8feac10e8355897b8b338652b359ddfc8b3764d2fd46783d5\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A considered interior view of timber surfaces, storage and soft natural light.\",\"ar\":\"منظور داخلي مدروس لأسطح خشبية وتخزين وضوء طبيعي ناعم.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-013.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-013.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-014\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1CQXIfYa-nWrUW6kofjf8-barA0DGPXo1\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"14.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-014.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"558b5b002b7bb055e869789b39c919f57397f35d164a0ba39c34d56867e4ee3e\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Fine hardware and aligned panels give this Playa interior its quiet character.\",\"ar\":\"تمنح التجهيزات الدقيقة والألواح المتراصة هذا الجزء من Playa طابعه الهادئ.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-014.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-014.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-015\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1Ax4tv0m0lEvbtoK3t--IGIJ_n71UsS7h\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"15.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-015.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"bac3b04d68a3b8bfc145d409816876bc88d3caaa00d39285f28d0f6f613a2606\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A close study of the thresholds, doors and fitted pieces that complete the room.\",\"ar\":\"دراسة قريبة للانتقالات والأبواب والعناصر المدمجة التي تكمل المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-015.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-015.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-016\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"13Ml7-d08UuuTZi2PJE3z7VOZaHtccpmT\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"16.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-016.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"b229de6e23f0b6c3d5b92c1dad6d2e58d72b5a6aaefb78d87b60ce6c64761c35\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"Warm joinery and measured storage carry one continuous language through the space.\",\"ar\":\"تحمل النجارة الدافئة والتخزين المدروس لغة واحدة متصلة عبر المكان.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-016.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-016.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"},{\"id\":\"playa-new-017\",\"projectSlug\":\"playa\",\"area\":\"other\",\"driveFileId\":\"1XJCcDSlB5RysBHAS7ILnLFaRqOyYWpi_\",\"sourceFolderId\":\"1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ\",\"sourceName\":\"17.heif\",\"localSrc\":\"/drive/projects/selected/playa/playa-new-017.webp\",\"originalMime\":\"image/heif\",\"contentHash\":\"e9183317f0ff603873bed93caedb81796a089db34250428dc7708c2c0eb0508c\",\"orientation\":\"portrait\",\"quality\":\"editorial\",\"alt\":{\"en\":\"A Playa interior view with warm timber, clean lines and precise detailing.\",\"ar\":\"منظور داخلي من Playa بخشب دافئ وخطوط نظيفة وتفاصيل دقيقة.\"},\"derived\":{\"webp\":\"/drive/projects/selected/playa/playa-new-017.webp\",\"avif\":\"/drive/projects/selected/playa/playa-new-017.avif\"},\"authenticity\":\"verified-real\",\"rights\":\"approved\",\"publishStatus\":\"public\"}]");
 //#endregion
 //#region lib/selected-projects.ts
 var selectedProjectSourceFolders = [
@@ -26714,8 +26824,8 @@ var selectedProjectSourceFolders = [
 	{
 		order: 3,
 		slug: "sodic-villette",
-		title: "3-SODIC VILETTE with Mai saad",
-		sourceFolderId: "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
+		title: "Sodic vilette mai saad new folder",
+		sourceFolderId: "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
 		publishStatus: "public"
 	},
 	{
@@ -26728,8 +26838,8 @@ var selectedProjectSourceFolders = [
 	{
 		order: 5,
 		slug: "playa",
-		title: "5-PLAYA with Amaken",
-		sourceFolderId: "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
+		title: "Playa replacement source",
+		sourceFolderId: "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
 		publishStatus: "public"
 	},
 	{
@@ -26755,7 +26865,8 @@ function capabilitiesFor(projectSlug, area) {
 	if (projectSlug === "cfc-office") return ["custom-units", "wall-cladding"];
 	return ["living-rooms", "custom-units"];
 }
-var selectedProjectMedia = generated_selected_project_assets_default.map((asset) => {
+var suppressedDuplicateMediaIds = /* @__PURE__ */ new Set();
+var selectedProjectMedia = [...generated_selected_project_assets_default.map((asset) => {
 	const area = asset.area;
 	return {
 		id: asset.id,
@@ -26780,7 +26891,7 @@ var selectedProjectMedia = generated_selected_project_assets_default.map((asset)
 		publishStatus: asset.publishStatus,
 		area
 	};
-});
+})].filter((asset) => !suppressedDuplicateMediaIds.has(asset.id));
 var selectedProjectMediaIds = (projectSlug) => {
 	return selectedProjectMedia.filter((asset) => asset.projectSlug === projectSlug).sort((a, b) => a.area === "cover" ? -1 : b.area === "cover" ? 1 : 0).map((asset) => asset.id);
 };
@@ -26883,8 +26994,8 @@ var selectedProjectRecords = [
 			ar: "دراسة مساحة تلو الأخرى لإيقاع الجدران المخددة وتخزين غرف الملابس ونجارة غرف النوم الهادئة في منزل سوديك فيليت."
 		},
 		scope: {
-			en: "Complete living, bedroom, dressing and wall photography from the SODIC Villette Drive folder, arranged to show how storage and surface meet.",
-			ar: "كامل صور المعيشة وغرف النوم وغرف الملابس والجدران من مجلد سوديك فيليت على Drive، مرتبة لتوضح التقاء التخزين بالسطح."
+			en: "Complete living, bedroom, dressing and wall photography from the SODIC Villette project, arranged to show how storage and surface meet.",
+			ar: "كامل صور المعيشة وغرف النوم وغرف الملابس والجدران من مشروع سوديك فيليت، مرتبة لتوضح التقاء التخزين بالسطح."
 		},
 		responsibilities: [
 			{
@@ -26924,8 +27035,8 @@ var selectedProjectRecords = [
 		},
 		media: selectedProjectMediaIds("sodic-villette"),
 		mediaAreas: selectedProjectAreas("sodic-villette"),
-		sourceFolderId: "11Di9Elw9kYMcZ6SmVwvhjTBVPVK3zHJv",
-		sourceFolderTitle: "3-SODIC VILETTE with Mai saad",
+		sourceFolderId: "1bX0LcksoN1DGEKnkmpm8NHk0opmyhNlH",
+		sourceFolderTitle: "Sodic vilette mai saad new folder",
 		collaboratorIds: ["mai-saad"]
 	},
 	{
@@ -27038,8 +27149,8 @@ var selectedProjectRecords = [
 		],
 		media: selectedProjectMediaIds("playa"),
 		mediaAreas: selectedProjectAreas("playa"),
-		sourceFolderId: "1256mAU_FoUKShxofhCe8-pQEYja11tMr",
-		sourceFolderTitle: "5-PLAYA with Amaken",
+		sourceFolderId: "1El0Bbk_JEOUvyfy6iDgc-7XmMyT5GgUZ",
+		sourceFolderTitle: "Playa replacement source",
 		collaboratorIds: ["amaken"]
 	},
 	{
@@ -27109,18 +27220,13 @@ var selectedProjectRecords = [
 		media: selectedProjectMediaIds("cfc-office"),
 		mediaAreas: selectedProjectAreas("cfc-office"),
 		sourceFolderId: "1-oivASCnYHYzWsmsEAsSxHZO0LgT_s_Y",
-		sourceFolderTitle: "6-CFC office. (Commercial)"
+		sourceFolderTitle: "6-CFC office. (Commercial)",
+		collaboratorIds: ["evento"]
 	}
 ];
 selectedProjectSourceFolders.map((folder) => ({
 	...folder,
-	media: folder.slug === "sodic-collaboration" ? [
-		"sodic-drive-06",
-		"sodic-drive-08",
-		"sodic-drive-03",
-		"sodic-drive-01",
-		"sodic-drive-02"
-	] : selectedProjectRecords.find((project) => project.slug === folder.slug)?.media ?? []
+	media: folder.slug === "sodic-collaboration" ? sodicLinkedMediaIds : selectedProjectRecords.find((project) => project.slug === folder.slug)?.media ?? []
 }));
 //#endregion
 //#region lib/kitchen-media.ts
@@ -27744,10 +27850,6 @@ var categoryMediaAssets = [
 			"wall-cladding": {
 				en: "Wall cladding",
 				ar: "تكسية حائط"
-			},
-			"materials-finishes": {
-				en: "Material finish",
-				ar: "تشطيب خامة"
 			}
 		}[capability],
 		driveFileId: asset.driveFileId,
@@ -27781,7 +27883,7 @@ var processMediaAssets = generated_unit_process_assets_default.process.map((asse
 	sourceFolder: asset.sourceFolderTitle,
 	sourceFolderId: asset.sourceFolderId,
 	sourceName: asset.sourceName,
-	capabilities: ["materials-finishes"],
+	capabilities: ["custom-units"],
 	stage: "process",
 	authenticity: asset.authenticity,
 	rights: asset.rights,
@@ -27839,6 +27941,7 @@ var customUnitsCoverAsset = {
 };
 var mediaAssets = [
 	...sodicMediaAssets,
+	...sodicLinkedMedia,
 	...hydeParkMediaAssets,
 	...categoryMediaAssets,
 	...kitchenMediaAssets,
@@ -27867,21 +27970,21 @@ var mediaAssets = [
 	},
 	{
 		id: "asset-wall-01",
-		src: "/assets/171467_688502.jpeg",
-		sourceFolder: "Legacy site",
-		sourceName: "171467_688502.jpeg",
+		src: "/assets/wall-cladding-cover.jpeg",
+		sourceFolder: "Client-supplied WhatsApp reference",
+		sourceName: "WhatsApp Image 2026-08-12 at 10.25.46 AM.jpeg",
 		projectSlug: "residential-joinery-study",
 		sector: "residential-developments",
 		capabilities: ["wall-cladding", "living-rooms"],
 		stage: "finished",
 		authenticity: "unknown",
 		rights: "pending",
-		orientation: "landscape",
+		orientation: "portrait",
 		quality: "hero",
 		usage: "project",
 		alt: {
-			en: "Integrated wall cladding and media joinery",
-			ar: "تكسية حائط ووحدة وسائط مدمجة"
+			en: "CNC-routed wall cladding feature wall",
+			ar: "حائط مميز بتكسية CNC"
 		}
 	},
 	{
@@ -27952,7 +28055,7 @@ var mediaAssets = [
 		sourceName: "805180_442982.jpeg",
 		projectSlug: "workplace-joinery-study",
 		sector: "workplace",
-		capabilities: ["custom-units", "materials-finishes"],
+		capabilities: ["custom-units"],
 		stage: "process",
 		authenticity: "unknown",
 		rights: "pending",
@@ -27971,7 +28074,7 @@ var mediaAssets = [
 		sourceName: "891416_45535.jpg",
 		projectSlug: "hospitality-room-study",
 		sector: "hospitality",
-		capabilities: ["materials-finishes", "bedrooms"],
+		capabilities: ["bedrooms"],
 		stage: "detail",
 		authenticity: "unknown",
 		rights: "pending",
@@ -28104,7 +28207,7 @@ var capabilityCatalog = [
 				ar: "فحص الجودة"
 			}
 		],
-		image: "dressing-collection-01"
+		image: "dressing-01-01"
 	},
 	{
 		slug: "living-rooms",
@@ -28281,7 +28384,7 @@ var capabilityCatalog = [
 				ar: "تركيب الحزمة"
 			}
 		],
-		image: "bedroom-a-01"
+		image: "bedroom-adult-01-01"
 	},
 	{
 		slug: "wall-cladding",
@@ -28400,65 +28503,6 @@ var capabilityCatalog = [
 			}
 		],
 		image: "door-01"
-	},
-	{
-		slug: "materials-finishes",
-		number: "08",
-		title: {
-			en: "Materials & Finishes",
-			ar: "الخامات والتشطيبات"
-		},
-		short: {
-			en: "A working finish library refined through samples, approvals and quality checks.",
-			ar: "مكتبة تشطيبات عملية تتطور عبر العينات والاعتمادات وفحوص الجودة."
-		},
-		intro: {
-			en: "Boards, veneers, laminates, paints and hardware are selected for the way each space will look, work and age.",
-			ar: "تُختار الألواح والقشرة واللامينيت والدهانات والإكسسوارات وفق شكل المساحة واستخدامها وكيف ستتطور مع الزمن."
-		},
-		applications: [
-			{
-				en: "Finish schedules",
-				ar: "جداول التشطيبات"
-			},
-			{
-				en: "Material boards",
-				ar: "لوحات الخامات"
-			},
-			{
-				en: "Project mock-ups",
-				ar: "نماذج المشروع"
-			}
-		],
-		materials: [
-			{
-				en: "Natural veneers",
-				ar: "القشرة الطبيعية"
-			},
-			{
-				en: "Technical laminates",
-				ar: "اللامينيت التقني"
-			},
-			{
-				en: "Paint and hardware systems",
-				ar: "أنظمة الدهان والإكسسوارات"
-			}
-		],
-		process: [
-			{
-				en: "Material shortlist",
-				ar: "قائمة الخامات"
-			},
-			{
-				en: "Sample approval",
-				ar: "اعتماد العينة"
-			},
-			{
-				en: "Finish control",
-				ar: "ضبط التشطيب"
-			}
-		],
-		image: "asset-detail-01"
 	}
 ];
 var capabilityOrder = [
@@ -28468,8 +28512,7 @@ var capabilityOrder = [
 	"doors",
 	"custom-units",
 	"bedrooms",
-	"living-rooms",
-	"materials-finishes"
+	"living-rooms"
 ];
 var capabilities = [...capabilityCatalog].sort((a, b) => {
 	const aIndex = capabilityOrder.indexOf(a.slug);
@@ -28480,8 +28523,8 @@ var projects$1 = [
 	{
 		slug: "sodic-collaboration",
 		title: {
-			en: "SODIC Collaboration",
-			ar: "تعاون مع سوديك"
+			en: "SODIC",
+			ar: "سوديك"
 		},
 		sector: "residential-developments",
 		sectorLabel: sectors[0].label,
@@ -28524,8 +28567,8 @@ var projects$1 = [
 		],
 		materials: [],
 		outcome: {
-			en: "Selected collaboration shown without unsupported metrics or claims.",
-			ar: "تعاون مختار معروض دون أرقام أو ادعاءات غير موثقة."
+			en: "Selected SODIC work shown without unsupported metrics or claims.",
+			ar: "أعمال سوديك المختارة معروضة دون أرقام أو ادعاءات غير موثقة."
 		},
 		elements: {
 			en: "Cladding only",
@@ -28536,27 +28579,11 @@ var projects$1 = [
 			"wall-cladding",
 			"living-rooms"
 		],
-		media: [
-			"sodic-drive-06",
-			"sodic-drive-02",
-			"sodic-drive-01",
-			"sodic-drive-04",
-			"sodic-drive-08",
-			"sodic-drive-07",
-			"sodic-drive-03",
-			"sodic-drive-05",
-			"sodic-drive-09"
-		],
+		media: sodicLinkedMediaIds,
 		collaboratorIds: ["ahmed-elsheref"],
 		sourceFolderId: "11gkeSNomh8jBKdBZKJ3Hed0k5tQViUlS",
 		sourceFolderTitle: "1-SODIC ahmed el sherif",
-		mediaAreas: {
-			"sodic-drive-06": "cover",
-			"sodic-drive-02": "wall",
-			"sodic-drive-01": "stairs",
-			"sodic-drive-03": "kitchen",
-			"sodic-drive-08": "wall"
-		}
+		mediaAreas: Object.fromEntries(sodicLinkedMedia.map((asset) => [asset.id, asset.area]).filter((entry) => Boolean(entry[1])))
 	},
 	{
 		slug: "hyde-park",
@@ -28875,7 +28902,7 @@ var projects$1 = [
 	}
 ];
 var publishedProjects = projects$1.filter((project) => project.publication !== "pending" && project.media.length > 0);
-selectedProjectSlugs.map((slug) => projects$1.find((project) => project.slug === slug)).filter((project) => Boolean(project && project.publication !== "pending" && project.media.length > 0));
+var selectedProjects = selectedProjectSlugs.map((slug) => projects$1.find((project) => project.slug === slug)).filter((project) => Boolean(project && project.publication !== "pending" && project.media.length > 0));
 var copy = {
 	en: {
 		nav: {
@@ -29087,117 +29114,15 @@ async function InquiryPage({ params }) {
 	});
 }
 //#endregion
-//#region node_modules/vinext/dist/shims/image.js
-/**
-* next/image shim
-*
-* Translates Next.js Image props to @unpic/react Image component.
-* @unpic/react auto-detects CDN from URL and uses native transforms.
-* For local images (relative paths), routes through `/_vinext/image`
-* for server-side optimization (resize, format negotiation, quality).
-*
-* Remote images are validated against `images.remotePatterns` and
-* `images.domains` from next.config.js. Unmatched URLs are blocked
-* in production and warn in development, matching Next.js behavior.
-*/
-/**
-* Image config injected at build time via Vite define.
-* Serialized as JSON — parsed once at module level.
-*/
-/**
-* Whether dangerouslyAllowSVG is enabled in next.config.js.
-* When false (default), .svg sources auto-skip the optimization endpoint
-* and are served directly, matching Next.js behavior.
-* When true, .svg sources are routed through the optimizer (served as-is
-* with security headers).
-*/
-/**
-* Whether dangerouslyAllowLocalIP is enabled in next.config.js.
-* When false (default), remote image URLs with literal private-IP hostnames
-* are blocked to mitigate SSRF risk.
-*/
-/**
-* Validate that a remote URL is allowed by the configured remote patterns.
-* Returns true if the URL is allowed, false otherwise.
-*
-* When no remotePatterns/domains are configured, all remote URLs are allowed
-* (backwards-compatible — user hasn't opted into restriction).
-*
-* When patterns ARE configured, only matching URLs are allowed.
-* In development, non-matching URLs produce a console warning.
-* In production, non-matching URLs are blocked (src replaced with empty string).
-*
-* Private-IP hostnames are additionally rejected unless dangerouslyAllowLocalIP
-* is set, mirroring Next.js's fetchExternalImage guard.
-*/
-/**
-* A version of useLayoutEffect that doesn't warn during SSR.
-* Do not rename this to "isomorphic layout effect". There is no such thing as
-* an isomorphic Layout Effect since there is no Layout on the server.
-* Ported from Next.js: https://github.com/vercel/next.js/pull/93209
-*/
-/**
-* Create a synthetic React load event for replaying onLoad/onLoadingComplete
-* during hydration when the image already completed loading.
-*
-* This function creates a native Event("load") via the DOM Event constructor
-* and must only be called in a browser context (client-side layout effect).
-* It mirrors the pattern used in Next.js `handleLoading`.
-*/
-/**
-* Sanitize a blurDataURL to prevent CSS injection.
-*
-* A crafted data URL containing `)` can break out of the `url()` CSS function,
-* allowing injection of arbitrary CSS properties or rules. Characters like `{`,
-* `}`, and `\` can also assist in crafting injection payloads.
-*
-* This validates the URL starts with `data:image/` and rejects characters that
-* could escape the `url()` context. Semicolons are allowed since they're part
-* of valid data URLs (`data:image/png;base64,...`) and harmless inside `url()`.
-*
-* Returns undefined for invalid URLs, which causes the blur placeholder to be
-* skipped gracefully.
-*/
-/**
-* Determine if a src is a remote URL (CDN-optimizable) or local.
-*/
-/**
-* Resolve src, width, height, blurDataURL from Image props (string or StaticImageData).
-* Shared by the Image component and getImageProps to keep behavior in sync.
-*/
-/**
-* Responsive image widths matching Next.js's device sizes config.
-* These are the breakpoints used for srcSet generation.
-* Configurable via `images.deviceSizes` in next.config.js.
-*/
-/**
-* Build a `/_vinext/image` optimization URL.
-*
-* In production (Cloudflare Workers), the worker intercepts this path and uses
-* the Images binding to resize/transcode on the fly. In dev, the Vite dev
-* server handles it as a passthrough (serves the original file).
-*/
-/**
-* Generate a srcSet string for responsive images.
-*
-* Each width points to the `/_vinext/image` optimization endpoint so the
-* server can resize and transcode the image. Only includes widths that are
-* <= 2x the original image width to avoid pointless upscaling.
-*/
-/**
-* getImageProps — for advanced use cases (picture elements, background images).
-* Returns the props that would be passed to the underlying <img> element.
-*/
-var image_default = /* @__PURE__ */ registerClientReference(() => {
-	throw new Error("Unexpectedly client reference export 'default' is called on server");
-}, "9fb86276be8f", "default");
+//#region components/SiteHeader.tsx
+var Wordmark = /* @__PURE__ */ registerClientReference(() => {
+	throw new Error("Unexpectedly client reference export 'Wordmark' is called on server");
+}, "326fe58ccdc4", "Wordmark");
+var SiteHeader = /* @__PURE__ */ registerClientReference(() => {
+	throw new Error("Unexpectedly client reference export 'SiteHeader' is called on server");
+}, "326fe58ccdc4", "SiteHeader");
 //#endregion
-//#region components/LocaleSwitch.tsx
-var LocaleSwitch = /* @__PURE__ */ registerClientReference(() => {
-	throw new Error("Unexpectedly client reference export 'LocaleSwitch' is called on server");
-}, "a23e0279e836", "LocaleSwitch");
-//#endregion
-//#region node_modules/vinext/dist/shims/link.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/link.js
 var link_default = /* @__PURE__ */ registerClientReference(() => {
 	throw new Error("Unexpectedly client reference export 'default' is called on server");
 }, "c2747888630f", "default");
@@ -29209,135 +29134,6 @@ function DesignAwareLink({ href, children, ...props }) {
 		...props,
 		children
 	});
-}
-//#endregion
-//#region components/SiteHeader.tsx
-function Wordmark({ tone = "auto" }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("span", {
-		className: `wordmark brand-mark brand-mark-${tone}`,
-		"aria-label": "SECTION",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(image_default, {
-			unoptimized: true,
-			className: "brand-mark-dark",
-			src: "/brand/section-black.png",
-			alt: "",
-			width: 980,
-			height: 175
-		}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(image_default, {
-			unoptimized: true,
-			className: "brand-mark-light",
-			src: "/brand/section-white.png",
-			alt: "",
-			width: 980,
-			height: 175
-		})]
-	});
-}
-function SiteHeader({ locale }) {
-	const nav = copy[locale].nav;
-	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)(import_jsx_runtime_react_server.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("header", {
-		className: "site-header",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)(DesignAwareLink, {
-				className: "brand-link",
-				href: `/${locale}`,
-				children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(Wordmark, {}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("small", { children: "MADE WITH WOOD" })]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("nav", {
-				className: "desktop-nav",
-				"aria-label": locale === "ar" ? "التنقل الرئيسي" : "Primary navigation",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-						href: `/${locale}/projects`,
-						children: nav.work
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-						href: `/${locale}#capabilities`,
-						children: nav.capabilities
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-						href: `/${locale}#process`,
-						children: nav.process
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-						href: `/${locale}#studio`,
-						children: nav.studio
-					})
-				]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("div", {
-				className: "header-actions",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(LocaleSwitch, { locale }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)(DesignAwareLink, {
-					className: "header-cta",
-					href: `/${locale}/inquiry`,
-					children: [nav.inquiry, /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: "↗" })]
-				})]
-			})
-		]
-	}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("details", {
-		className: "mobile-menu",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("summary", {
-			"aria-label": locale === "ar" ? "فتح القائمة" : "Open menu",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("i", {}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("i", {})]
-		}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("div", {
-			className: "mobile-nav-overlay",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("div", {
-					className: "mobile-nav-overlay-header",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(Wordmark, { tone: "light" }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(LocaleSwitch, { locale })]
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("nav", {
-					className: "mobile-nav-links",
-					"aria-label": locale === "ar" ? "التنقل عبر الموقع" : "Mobile navigation",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-							href: `/${locale}/projects`,
-							children: nav.work
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-							href: `/${locale}#capabilities`,
-							children: nav.capabilities
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-							href: `/${locale}#process`,
-							children: nav.process
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-							href: `/${locale}#studio`,
-							children: nav.studio
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(DesignAwareLink, {
-							href: `/${locale}/inquiry`,
-							children: nav.inquiry
-						})
-					]
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("section", {
-					className: "mobile-nav-contact",
-					"aria-label": locale === "ar" ? "تواصل معنا" : "Find us",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("p", { children: locale === "ar" ? "تواصل معنا" : "Find us" }),
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("a", {
-							href: siteContact.phoneHref,
-							children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", {
-								"aria-hidden": "true",
-								children: "☎"
-							}), siteContact.phoneDisplay]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("a", {
-							href: siteContact.instagramHref,
-							target: "_blank",
-							rel: "noreferrer",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", {
-								"aria-hidden": "true",
-								children: "◎"
-							}), siteContact.instagramLabel]
-						})
-					]
-				})
-			]
-		})]
-	})] });
 }
 //#endregion
 //#region lib/media-manifest.ts
@@ -29818,6 +29614,122 @@ var livingSpacePieces = [
 	sourceFolderIds: [series.folderId],
 	status: "preview"
 }));
+var bedroomPieces = [
+	{
+		slug: "bedroom-1",
+		group: {
+			en: "Adults",
+			ar: "للبالغين"
+		},
+		sourceFolderName: "Bedroom 1",
+		folderId: "1NJ4BZOHi0NgQP6U0v3DM_1N5r972zHfP",
+		title: {
+			en: "Bedroom 1",
+			ar: "غرفة النوم ١"
+		}
+	},
+	{
+		slug: "bedroom-2",
+		group: {
+			en: "Adults",
+			ar: "للبالغين"
+		},
+		sourceFolderName: "Bedroom 2",
+		folderId: "1p4obdncuGFOY9ZSPxazkCNnwA0wVU4hT",
+		title: {
+			en: "Bedroom 2",
+			ar: "غرفة النوم ٢"
+		}
+	},
+	{
+		slug: "bedroom-items",
+		group: {
+			en: "Adults",
+			ar: "للبالغين"
+		},
+		sourceFolderName: "collection of bedroom items",
+		folderId: "1uqjXyNQfm7H29-_TH4v6akhZns1ziwJG",
+		title: {
+			en: "Bedroom Items",
+			ar: "عناصر غرف النوم"
+		}
+	},
+	{
+		slug: "kids-bedroom-1",
+		group: {
+			en: "Kids",
+			ar: "للأطفال"
+		},
+		sourceFolderName: "Br 1",
+		folderId: "14jbn8JsB8KFxM26IBphuea7oYHpZzi6u",
+		title: {
+			en: "Bedroom 1",
+			ar: "غرفة النوم ١"
+		}
+	},
+	{
+		slug: "kids-bedroom-2",
+		group: {
+			en: "Kids",
+			ar: "للأطفال"
+		},
+		sourceFolderName: "BR 2",
+		folderId: "1BFZ2f318tyKJYvg-q31Sq8L1JW3dJlrz",
+		title: {
+			en: "Bedroom 2",
+			ar: "غرفة النوم ٢"
+		}
+	},
+	{
+		slug: "kids-bedroom-3",
+		group: {
+			en: "Kids",
+			ar: "للأطفال"
+		},
+		sourceFolderName: "Br 3",
+		folderId: "1UuKJop3toV3wYnYbC4sNo6AHl1sIrHQc",
+		title: {
+			en: "Bedroom 3",
+			ar: "غرفة النوم ٣"
+		}
+	},
+	{
+		slug: "kids-bedroom-4",
+		group: {
+			en: "Kids",
+			ar: "للأطفال"
+		},
+		sourceFolderName: "Br 4",
+		folderId: "1b2SsyYOkHuIxc8sCLhS_Mf9G-H3D_r6e",
+		title: {
+			en: "Bedroom 4",
+			ar: "غرفة النوم ٤"
+		}
+	}
+].map((folder) => {
+	const assets = generated_category_drive_assets_default.filter((asset) => asset.sourceFolderName === folder.sourceFolderName).sort((a, b) => (a.imageOrder ?? 0) - (b.imageOrder ?? 0));
+	return {
+		slug: folder.slug,
+		collection: "bedrooms",
+		group: folder.group,
+		title: folder.title,
+		story: {
+			en: "A Drive-supplied bedroom sequence preserved in the source folder order.",
+			ar: "تسلسل صور غرفة نوم مورّد من Drive مع الحفاظ على ترتيب مجلد المصدر."
+		},
+		application: {
+			en: "Bedroom reference",
+			ar: "مرجع غرفة نوم"
+		},
+		scope: {
+			en: `${assets.length} supplied bedroom photographs`,
+			ar: `${assets.length} صورة غرفة نوم موردة`
+		},
+		media: assets.map((asset) => driveSrc(asset.id)),
+		sourceFolderIds: [folder.folderId],
+		status: "preview"
+	};
+});
 function kitchenReferenceTags(prefix, count) {
 	return Object.fromEntries(Array.from({ length: count }, (_, index) => [driveSrc(`${prefix}-${String(index + 1).padStart(2, "0")}`), {
 		en: "3D Reference",
@@ -30037,81 +29949,7 @@ var collectionPieces = [
 	...dressingRoomPieces,
 	doorGalleryPiece,
 	...livingSpacePieces,
-	{
-		slug: "bedroom-study-a",
-		collection: "bedrooms",
-		title: {
-			en: "Bedroom Study 01",
-			ar: "دراسة غرفة نوم ٠١"
-		},
-		story: {
-			en: "A coordinated bedroom package documented across fitted storage, furniture and wall details.",
-			ar: "حزمة غرفة نوم متناسقة موثقة عبر التخزين المدمج والأثاث وتفاصيل الحوائط."
-		},
-		application: {
-			en: "Residential bedroom",
-			ar: "غرفة نوم سكنية"
-		},
-		scope: {
-			en: "Bedroom furniture, joinery and fitting",
-			ar: "أثاث غرفة نوم ونجارة وتركيب"
-		},
-		media: Array.from({ length: 11 }, (_, index) => driveSrc(`bedroom-a-${String(index + 1).padStart(2, "0")}`)),
-		sourceFolderIds: ["10VuQK5YjEqxIqCGeOYJDB8Fcg6hRQ_2j"],
-		status: "preview"
-	},
-	{
-		slug: "bedroom-study-b",
-		collection: "bedrooms",
-		title: {
-			en: "Bedroom Study 02",
-			ar: "دراسة غرفة نوم ٠٢"
-		},
-		story: {
-			en: "A second bedroom study showing the room as one composed package rather than isolated furniture pieces.",
-			ar: "دراسة ثانية لغرفة نوم تعرض المساحة كحزمة متكاملة بدلاً من قطع أثاث منفصلة."
-		},
-		application: {
-			en: "Residential bedroom",
-			ar: "غرفة نوم سكنية"
-		},
-		scope: {
-			en: "Bedroom furniture, joinery and fitting",
-			ar: "أثاث غرفة نوم ونجارة وتركيب"
-		},
-		media: Array.from({ length: 7 }, (_, index) => driveSrc(`bedroom-b-${String(index + 1).padStart(2, "0")}`)),
-		sourceFolderIds: ["10LIhHLVF6OQpszqlfyCV1Eui5RoVMKRp"],
-		status: "preview"
-	},
-	...[[
-		"materials-finishes",
-		"finish-study",
-		"Finish Study",
-		"دراسة تشطيب",
-		"/assets/891416_45535.jpg"
-	]].map(([collection, slug, en, ar, image]) => ({
-		slug,
-		collection,
-		title: {
-			en,
-			ar
-		},
-		story: {
-			en: "A selected SECTION study showing how one crafted element is coordinated with the wider interior.",
-			ar: "دراسة مختارة من SECTION توضح كيف ينسق العنصر المصنوع مع المساحة الداخلية كاملة."
-		},
-		application: {
-			en: "Made-to-fit interior",
-			ar: "عنصر داخلي مصمم للمقاس"
-		},
-		scope: {
-			en: "Design development, making and fitting",
-			ar: "تطوير تصميم وتصنيع وتركيب"
-		},
-		media: [image],
-		sourceFolderIds: [],
-		status: "preview"
-	})),
+	...bedroomPieces,
 	...generated_unit_process_assets_default.units.map((group) => {
 		const copy = {
 			"tv-unit": {
@@ -30231,8 +30069,8 @@ var partnerLogos = [
 		approval: "preview"
 	},
 	{
-		id: "vento",
-		name: "Vento Designs",
+		id: "evento",
+		name: "Evento Designs",
 		src: "/drive/partners-transparent/partner-08.png",
 		driveFileId: "1kkrKXJpd1K65oqPZ1UsAiT5pBqp2t-T1",
 		kind: "collaborator",
@@ -30266,6 +30104,111 @@ var showroomCopy = {
 		pieceLabel: "قطعة مختارة من مشروع"
 	}
 };
+//#endregion
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/shims/image.js
+/**
+* next/image shim
+*
+* Translates Next.js Image props to @unpic/react Image component.
+* @unpic/react auto-detects CDN from URL and uses native transforms.
+* For local images (relative paths), routes through `/_vinext/image`
+* for server-side optimization (resize, format negotiation, quality).
+*
+* Remote images are validated against `images.remotePatterns` and
+* `images.domains` from next.config.js. Unmatched URLs are blocked
+* in production and warn in development, matching Next.js behavior.
+*/
+/**
+* Image config injected at build time via Vite define.
+* Serialized as JSON — parsed once at module level.
+*/
+/**
+* Whether dangerouslyAllowSVG is enabled in next.config.js.
+* When false (default), .svg sources auto-skip the optimization endpoint
+* and are served directly, matching Next.js behavior.
+* When true, .svg sources are routed through the optimizer (served as-is
+* with security headers).
+*/
+/**
+* Whether dangerouslyAllowLocalIP is enabled in next.config.js.
+* When false (default), remote image URLs with literal private-IP hostnames
+* are blocked to mitigate SSRF risk.
+*/
+/**
+* Validate that a remote URL is allowed by the configured remote patterns.
+* Returns true if the URL is allowed, false otherwise.
+*
+* When no remotePatterns/domains are configured, all remote URLs are allowed
+* (backwards-compatible — user hasn't opted into restriction).
+*
+* When patterns ARE configured, only matching URLs are allowed.
+* In development, non-matching URLs produce a console warning.
+* In production, non-matching URLs are blocked (src replaced with empty string).
+*
+* Private-IP hostnames are additionally rejected unless dangerouslyAllowLocalIP
+* is set, mirroring Next.js's fetchExternalImage guard.
+*/
+/**
+* A version of useLayoutEffect that doesn't warn during SSR.
+* Do not rename this to "isomorphic layout effect". There is no such thing as
+* an isomorphic Layout Effect since there is no Layout on the server.
+* Ported from Next.js: https://github.com/vercel/next.js/pull/93209
+*/
+/**
+* Create a synthetic React load event for replaying onLoad/onLoadingComplete
+* during hydration when the image already completed loading.
+*
+* This function creates a native Event("load") via the DOM Event constructor
+* and must only be called in a browser context (client-side layout effect).
+* It mirrors the pattern used in Next.js `handleLoading`.
+*/
+/**
+* Sanitize a blurDataURL to prevent CSS injection.
+*
+* A crafted data URL containing `)` can break out of the `url()` CSS function,
+* allowing injection of arbitrary CSS properties or rules. Characters like `{`,
+* `}`, and `\` can also assist in crafting injection payloads.
+*
+* This validates the URL starts with `data:image/` and rejects characters that
+* could escape the `url()` context. Semicolons are allowed since they're part
+* of valid data URLs (`data:image/png;base64,...`) and harmless inside `url()`.
+*
+* Returns undefined for invalid URLs, which causes the blur placeholder to be
+* skipped gracefully.
+*/
+/**
+* Determine if a src is a remote URL (CDN-optimizable) or local.
+*/
+/**
+* Resolve src, width, height, blurDataURL from Image props (string or StaticImageData).
+* Shared by the Image component and getImageProps to keep behavior in sync.
+*/
+/**
+* Responsive image widths matching Next.js's device sizes config.
+* These are the breakpoints used for srcSet generation.
+* Configurable via `images.deviceSizes` in next.config.js.
+*/
+/**
+* Build a `/_vinext/image` optimization URL.
+*
+* In production (Cloudflare Workers), the worker intercepts this path and uses
+* the Images binding to resize/transcode on the fly. In dev, the Vite dev
+* server handles it as a passthrough (serves the original file).
+*/
+/**
+* Generate a srcSet string for responsive images.
+*
+* Each width points to the `/_vinext/image` optimization endpoint so the
+* server can resize and transcode the image. Only includes widths that are
+* <= 2x the original image width to avoid pointless upscaling.
+*/
+/**
+* getImageProps — for advanced use cases (picture elements, background images).
+* Returns the props that would be passed to the underlying <img> element.
+*/
+var image_default = /* @__PURE__ */ registerClientReference(() => {
+	throw new Error("Unexpectedly client reference export 'default' is called on server");
+}, "9fb86276be8f", "default");
 //#endregion
 //#region components/LogoMarquee.tsx
 function LogoMarquee({ title, note, items, className = "", direction = "forward" }) {
@@ -30324,6 +30267,14 @@ function PartnerMarquee({ locale }) {
 	});
 }
 //#endregion
+//#region components/InstagramIcon.tsx
+function InstagramIcon({ className = "" }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", {
+		className: `instagram-icon ${className}`.trim(),
+		"aria-hidden": "true"
+	});
+}
+//#endregion
 //#region components/SiteFooter.tsx
 function SiteFooter({ locale }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("footer", {
@@ -30355,14 +30306,14 @@ function SiteFooter({ locale }) {
 							target: "_blank",
 							rel: "noreferrer",
 							"aria-label": locale === "ar" ? "تواصل معنا عبر واتساب" : "Chat with SECTION on WhatsApp",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(SocialIcon, { kind: "whatsapp" }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: "WhatsApp" })]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(WhatsAppIcon, {}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: "WhatsApp" })]
 						}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("a", {
 							className: "footer-social-link",
 							href: siteContact.instagramHref,
 							target: "_blank",
 							rel: "noreferrer",
 							"aria-label": locale === "ar" ? "تابع SECTION على إنستغرام" : "Follow SECTION on Instagram",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(SocialIcon, { kind: "instagram" }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: siteContact.instagramLabel })]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(InstagramIcon, {}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: siteContact.instagramLabel })]
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("address", { children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: locale === "ar" ? `المعرض — ${siteContact.showroom.ar}` : `Showroom — ${siteContact.showroom.en}` }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: locale === "ar" ? `المصنع — ${siteContact.factory.ar}` : `Factory — ${siteContact.factory.en}` })] })
@@ -30379,35 +30330,11 @@ function SiteFooter({ locale }) {
 		]
 	});
 }
-function SocialIcon({ kind }) {
-	if (kind === "whatsapp") return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("svg", {
-		"aria-hidden": "true",
-		viewBox: "0 0 24 24",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("path", { d: "M20 11.6a8 8 0 0 1-11.8 7L4 19.8l1.2-4A8 8 0 1 1 20 11.6Z" }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("path", { d: "M8.3 8.1c.4-.4.8-.2 1 .2l.8 1.8c.1.3 0 .6-.3.9l-.5.5c.8 1.5 1.8 2.5 3.4 3.2l.5-.6c.3-.3.6-.4.9-.2l1.7.8c.4.2.6.6.3 1-.5.8-1.3 1.3-2.3 1.2-3.6-.4-7.1-3.8-7.5-7.3-.1-.6.5-1.2 1-1.5Z" })]
-	});
+function WhatsAppIcon() {
 	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("svg", {
 		"aria-hidden": "true",
 		viewBox: "0 0 24 24",
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("rect", {
-				x: "3.5",
-				y: "3.5",
-				width: "17",
-				height: "17",
-				rx: "4.5"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("circle", {
-				cx: "12",
-				cy: "12",
-				r: "4"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("circle", {
-				className: "social-icon-dot",
-				cx: "17.4",
-				cy: "6.8",
-				r: "1"
-			})
-		]
+		children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("path", { d: "M20 11.6a8 8 0 0 1-11.8 7L4 19.8l1.2-4A8 8 0 1 1 20 11.6Z" }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("path", { d: "M8.3 8.1c.4-.4.8-.2 1 .2l.8 1.8c.1.3 0 .6-.3.9l-.5.5c.8 1.5 1.8 2.5 3.4 3.2l.5-.6c.3-.3.6-.4.9-.2l1.7.8c.4.2.6.6.3 1-.5.8-1.3 1.3-2.3 1.2-3.6-.4-7.1-3.8-7.5-7.3-.1-.6.5-1.2 1-1.5Z" })]
 	});
 }
 //#endregion
@@ -30553,6 +30480,37 @@ async function CollectionPage({ params }) {
 	const claddingNoteImage = "/drive/cladding/water-based-substrate.webp";
 	const related = projects$1.filter((project) => project.capabilities.includes(collection.slug));
 	const pieces = piecesFor(collection.slug);
+	const renderPiece = (piece, index) => /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("article", {
+		className: `collection-piece ${collection.slug === "wall-cladding" ? "cladding-piece" : ""}`,
+		id: piece.slug,
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("div", {
+				className: "collection-piece-heading",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: String(index + 1).padStart(2, "0") }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("div", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("p", { children: piece.application[locale] }),
+					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("h3", { children: piece.title[locale] }),
+					piece.location && /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("p", {
+						className: "collection-piece-location",
+						children: piece.location[locale]
+					})
+				] })]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("div", {
+				className: "collection-piece-gallery",
+				children: piece.media.map((src, mediaIndex) => /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("figure", { children: /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(image_default, {
+					unoptimized: true,
+					src,
+					alt: `${piece.title[locale]} — ${mediaIndex + 1}`,
+					fill: true,
+					sizes: "(max-width: 760px) 82vw, 38vw"
+				}) }, src))
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)(DesignAwareLink, {
+				href: `/${locale}/inquiry`,
+				children: [showroomCopy[locale].similar, " ↗"]
+			})
+		]
+	}, piece.slug);
 	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("main", {
 		className: "capability-detail subpage design-nocturne",
 		"data-design": "nocturne",
@@ -30661,37 +30619,31 @@ async function CollectionPage({ params }) {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("div", {
 						className: "collection-piece-list",
-						children: pieces.map((piece, index) => /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("article", {
-							className: `collection-piece ${collection.slug === "wall-cladding" ? "cladding-piece" : ""}`,
-							id: piece.slug,
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("div", {
-									className: "collection-piece-heading",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("span", { children: String(index + 1).padStart(2, "0") }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("div", { children: [
-										/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("p", { children: piece.application[locale] }),
-										/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("h3", { children: piece.title[locale] }),
-										piece.location && /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("p", {
-											className: "collection-piece-location",
-											children: piece.location[locale]
-										})
-									] })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("div", {
-									className: "collection-piece-gallery",
-									children: piece.media.map((src, mediaIndex) => /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("figure", { children: /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(image_default, {
-										unoptimized: true,
-										src,
-										alt: `${piece.title[locale]} — ${mediaIndex + 1}`,
-										fill: true,
-										sizes: "(max-width: 760px) 82vw, 38vw"
-									}) }, src))
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)(DesignAwareLink, {
-									href: `/${locale}/inquiry`,
-									children: [showroomCopy[locale].similar, " ↗"]
-								})
-							]
-						}, piece.slug))
+						children: slug === "bedrooms" ? [{
+							key: "adults",
+							title: {
+								en: "Adults",
+								ar: "للبالغين"
+							},
+							pieces: pieces.filter((piece) => piece.group?.en === "Adults")
+						}, {
+							key: "kids",
+							title: {
+								en: "Kids",
+								ar: "للأطفال"
+							},
+							pieces: pieces.filter((piece) => piece.group?.en === "Kids")
+						}].map((group) => /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("section", {
+							className: "collection-piece-group is-highlighted",
+							"aria-labelledby": `bedroom-group-${group.key}`,
+							children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("header", {
+								className: "collection-piece-group-heading",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("p", { children: locale === "ar" ? "فئة غرف النوم" : "Bedroom category" }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("h3", {
+									id: `bedroom-group-${group.key}`,
+									children: group.title[locale]
+								})]
+							}), group.pieces.map(renderPiece)]
+						}, group.key)) : pieces.map(renderPiece)
 					})
 				]
 			}),
@@ -30807,8 +30759,10 @@ async function ProjectPage({ params }) {
 	if (!isLocale(locale)) notFound();
 	const project = getProject(slug);
 	if (!project || project.publication === "pending" || project.media.length === 0) notFound();
-	const next = publishedProjects[(publishedProjects.findIndex((item) => item.slug === slug) + 1) % publishedProjects.length];
+	const navigationProjects = selectedProjects.some((item) => item.slug === slug) ? selectedProjects : publishedProjects;
+	const next = navigationProjects[(navigationProjects.findIndex((item) => item.slug === slug) + 1) % navigationProjects.length];
 	const hero = getMedia(project.media[0]);
+	const heroOrientation = hero.orientation;
 	return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("main", {
 		className: "project-detail subpage design-nocturne",
 		"data-design": "nocturne",
@@ -30828,7 +30782,7 @@ async function ProjectPage({ params }) {
 				}
 			])] }),
 			/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("header", {
-				className: "project-hero",
+				className: `project-hero project-hero--${heroOrientation}`,
 				children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("div", {
 					className: "project-hero-media",
 					children: /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(image_default, {
@@ -30888,16 +30842,20 @@ async function ProjectPage({ params }) {
 				className: "editorial-gallery section-pad",
 				children: project.media.map((mediaId, mediaIndex) => {
 					const asset = getMedia(mediaId);
+					const orientation = asset.orientation;
 					return /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("figure", {
-						className: asset.orientation === "portrait" ? "portrait" : "landscape",
-						"data-orientation": asset.orientation,
-						children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(image_default, {
-							unoptimized: true,
-							src: asset.src,
-							alt: asset.alt[locale],
-							fill: true,
-							sizes: "(max-width: 800px) 100vw, 75vw"
-						}) }), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("figcaption", { children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("span", { children: [
+						className: `project-gallery-item project-gallery-item--${orientation}`,
+						"data-orientation": orientation,
+						children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)("div", {
+							className: "project-gallery-media",
+							children: /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsx)(image_default, {
+								unoptimized: true,
+								src: asset.src,
+								alt: asset.alt[locale],
+								fill: true,
+								sizes: "(max-width: 800px) 100vw, 75vw"
+							})
+						}), /* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("figcaption", { children: [/* @__PURE__ */ (0, import_jsx_runtime_react_server.jsxs)("span", { children: [
 							String(mediaIndex + 1).padStart(2, "0"),
 							" / ",
 							String(project.media.length).padStart(2, "0")
@@ -31702,11 +31660,11 @@ function ShowroomHome({ locale, mode }) {
 	const body = locale === "ar" ? dark ? "رحلة بصرية عبر الخامة والتصنيع والمكان المكتمل." : "نصمم وننسق ونصنع ونركب العناصر الخشبية للمشروعات الطموحة." : dark ? "A cinematic journey through material, making and the completed space." : "We design, coordinate, make and install timber elements for ambitious projects.";
 	const poster = "/assets/171467_688502.jpeg";
 	const heroImages = dark ? [
-		"bedroom-kids-03",
+		"bedroom-kids-br4-01",
 		"white-island-kitchen-01",
 		"dressing-01-01",
 		"kitchen-obour-01",
-		"bedroom-b-01",
+		"bedroom-adult-02-01",
 		"sodic-drive-06",
 		"dressing-01-02",
 		"sodic-drive-04"
@@ -32850,28 +32808,48 @@ var __publicFiles = new Set([
 	"/assets/866856_780182.png",
 	"/assets/891416_45535.jpg",
 	"/assets/old-site-home.png",
+	"/assets/wall-cladding-cover.jpeg",
 	"/brand/section-black.png",
 	"/brand/section-favicon.png",
 	"/brand/section-white.png",
-	"/drive/bedrooms/bedroom-a-01.webp",
-	"/drive/bedrooms/bedroom-a-02.webp",
-	"/drive/bedrooms/bedroom-a-03.webp",
-	"/drive/bedrooms/bedroom-a-04.webp",
-	"/drive/bedrooms/bedroom-a-05.webp",
-	"/drive/bedrooms/bedroom-a-06.webp",
-	"/drive/bedrooms/bedroom-a-07.webp",
-	"/drive/bedrooms/bedroom-a-08.webp",
-	"/drive/bedrooms/bedroom-a-09.webp",
-	"/drive/bedrooms/bedroom-a-10.webp",
-	"/drive/bedrooms/bedroom-a-11.webp",
-	"/drive/bedrooms/bedroom-b-01.webp",
-	"/drive/bedrooms/bedroom-b-02.webp",
-	"/drive/bedrooms/bedroom-b-03.webp",
-	"/drive/bedrooms/bedroom-b-04.webp",
-	"/drive/bedrooms/bedroom-b-05.webp",
-	"/drive/bedrooms/bedroom-b-06.webp",
-	"/drive/bedrooms/bedroom-b-07.webp",
-	"/drive/bedrooms/bedroom-kids-03.webp",
+	"/drive/bedrooms/bedroom-adult-01-01.webp",
+	"/drive/bedrooms/bedroom-adult-01-02.webp",
+	"/drive/bedrooms/bedroom-adult-01-03.webp",
+	"/drive/bedrooms/bedroom-adult-01-04.webp",
+	"/drive/bedrooms/bedroom-adult-01-05.webp",
+	"/drive/bedrooms/bedroom-adult-01-06.webp",
+	"/drive/bedrooms/bedroom-adult-02-01.webp",
+	"/drive/bedrooms/bedroom-adult-02-02.webp",
+	"/drive/bedrooms/bedroom-adult-02-03.webp",
+	"/drive/bedrooms/bedroom-adult-02-04.webp",
+	"/drive/bedrooms/bedroom-collection-05.webp",
+	"/drive/bedrooms/bedroom-collection-07.webp",
+	"/drive/bedrooms/bedroom-collection-08.webp",
+	"/drive/bedrooms/bedroom-kids-br1-01.webp",
+	"/drive/bedrooms/bedroom-kids-br1-02.webp",
+	"/drive/bedrooms/bedroom-kids-br1-03.webp",
+	"/drive/bedrooms/bedroom-kids-br1-04.webp",
+	"/drive/bedrooms/bedroom-kids-br1-05.webp",
+	"/drive/bedrooms/bedroom-kids-br1-06.webp",
+	"/drive/bedrooms/bedroom-kids-br1-07.webp",
+	"/drive/bedrooms/bedroom-kids-br1-08.webp",
+	"/drive/bedrooms/bedroom-kids-br2-01.webp",
+	"/drive/bedrooms/bedroom-kids-br2-02.webp",
+	"/drive/bedrooms/bedroom-kids-br2-03.webp",
+	"/drive/bedrooms/bedroom-kids-br2-04.webp",
+	"/drive/bedrooms/bedroom-kids-br2-05.webp",
+	"/drive/bedrooms/bedroom-kids-br3-01.webp",
+	"/drive/bedrooms/bedroom-kids-br3-02.webp",
+	"/drive/bedrooms/bedroom-kids-br3-03.webp",
+	"/drive/bedrooms/bedroom-kids-br3-04.webp",
+	"/drive/bedrooms/bedroom-kids-br3-05.webp",
+	"/drive/bedrooms/bedroom-kids-br4-01.webp",
+	"/drive/bedrooms/bedroom-kids-br4-02.webp",
+	"/drive/bedrooms/bedroom-kids-br4-03.webp",
+	"/drive/bedrooms/bedroom-kids-br4-04.webp",
+	"/drive/bedrooms/bedroom-kids-br4-05.webp",
+	"/drive/bedrooms/bedroom-kids-br4-06.webp",
+	"/drive/bedrooms/bedroom-kids-br4-07.webp",
 	"/drive/cladding/cnc/cladding-cnc-01.webp",
 	"/drive/cladding/cnc/cladding-cnc-02.webp",
 	"/drive/cladding/cnc/cladding-cnc-03.webp",
@@ -33145,6 +33123,29 @@ var __publicFiles = new Set([
 	"/drive/projects/selected/cfc-office/cfc-office-drive-008.webp",
 	"/drive/projects/selected/cfc-office/cfc-office-drive-009.avif",
 	"/drive/projects/selected/cfc-office/cfc-office-drive-009.webp",
+	"/drive/projects/selected/playa-cover-reference.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-01.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-02.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-03.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-04.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-05.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-06.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-07.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-08.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-09.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-10.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-11.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-12.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-13.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-14.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-15.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-16.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-17.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-18.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-19.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-20.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-21.webp",
+	"/drive/projects/selected/playa-linked/playa-linked-22.webp",
 	"/drive/projects/selected/playa/playa-01.avif",
 	"/drive/projects/selected/playa/playa-01.webp",
 	"/drive/projects/selected/playa/playa-02.avif",
@@ -33313,6 +33314,10 @@ var __publicFiles = new Set([
 	"/drive/projects/selected/playa/playa-84.webp",
 	"/drive/projects/selected/playa/playa-85.avif",
 	"/drive/projects/selected/playa/playa-85.webp",
+	"/drive/projects/selected/playa/playa-drive-001.avif",
+	"/drive/projects/selected/playa/playa-drive-001.webp",
+	"/drive/projects/selected/playa/playa-drive-002.avif",
+	"/drive/projects/selected/playa/playa-drive-002.webp",
 	"/drive/projects/selected/playa/playa-drive-005.avif",
 	"/drive/projects/selected/playa/playa-drive-005.webp",
 	"/drive/projects/selected/playa/playa-drive-007.avif",
@@ -33473,104 +33478,59 @@ var __publicFiles = new Set([
 	"/drive/projects/selected/playa/playa-drive-084.webp",
 	"/drive/projects/selected/playa/playa-drive-085.avif",
 	"/drive/projects/selected/playa/playa-drive-085.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-04.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-04.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-05.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-05.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-06.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-06.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-07.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-07.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-08.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-08.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-09.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-09.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-10.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-10.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-11.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-11.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-12.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-12.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-13.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-13.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-14.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-14.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-15.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-15.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-16.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-16.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-17.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-17.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-18.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-18.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-19.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-19.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-20.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-20.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-21.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-21.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-22.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-22.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-23.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-23.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-24.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-24.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-25.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-25.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-26.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-26.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-27.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-27.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-28.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-28.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-29.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-29.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-30.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-30.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-31.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-31.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-32.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-32.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-33.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-33.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-34.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-34.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-35.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-35.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-36.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-36.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-37.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-37.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-41.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-41.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-42.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-42.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-43.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-43.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-44.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-44.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-45.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-45.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-46.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-46.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-47.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-47.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-48.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-48.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-49.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-49.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-50.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-50.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-51.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-51.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-52.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-52.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-53.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-53.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-54.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-54.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-55.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-55.webp",
+	"/drive/projects/selected/playa/playa-new-001.avif",
+	"/drive/projects/selected/playa/playa-new-001.webp",
+	"/drive/projects/selected/playa/playa-new-002.avif",
+	"/drive/projects/selected/playa/playa-new-002.webp",
+	"/drive/projects/selected/playa/playa-new-003.avif",
+	"/drive/projects/selected/playa/playa-new-003.webp",
+	"/drive/projects/selected/playa/playa-new-004.avif",
+	"/drive/projects/selected/playa/playa-new-004.webp",
+	"/drive/projects/selected/playa/playa-new-005.avif",
+	"/drive/projects/selected/playa/playa-new-005.webp",
+	"/drive/projects/selected/playa/playa-new-006.avif",
+	"/drive/projects/selected/playa/playa-new-006.webp",
+	"/drive/projects/selected/playa/playa-new-007.avif",
+	"/drive/projects/selected/playa/playa-new-007.webp",
+	"/drive/projects/selected/playa/playa-new-008.avif",
+	"/drive/projects/selected/playa/playa-new-008.webp",
+	"/drive/projects/selected/playa/playa-new-009.avif",
+	"/drive/projects/selected/playa/playa-new-009.webp",
+	"/drive/projects/selected/playa/playa-new-010.avif",
+	"/drive/projects/selected/playa/playa-new-010.webp",
+	"/drive/projects/selected/playa/playa-new-011.avif",
+	"/drive/projects/selected/playa/playa-new-011.webp",
+	"/drive/projects/selected/playa/playa-new-012.avif",
+	"/drive/projects/selected/playa/playa-new-012.webp",
+	"/drive/projects/selected/playa/playa-new-013.avif",
+	"/drive/projects/selected/playa/playa-new-013.webp",
+	"/drive/projects/selected/playa/playa-new-014.avif",
+	"/drive/projects/selected/playa/playa-new-014.webp",
+	"/drive/projects/selected/playa/playa-new-015.avif",
+	"/drive/projects/selected/playa/playa-new-015.webp",
+	"/drive/projects/selected/playa/playa-new-016.avif",
+	"/drive/projects/selected/playa/playa-new-016.webp",
+	"/drive/projects/selected/playa/playa-new-017.avif",
+	"/drive/projects/selected/playa/playa-new-017.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-01.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-02.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-03.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-04.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-05.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-06.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-07.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-08.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-09.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-10.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-11.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-12.webp",
+	"/drive/projects/selected/sodic-ahmed-elsheref-linked/sodic-linked-13.webp",
+	"/drive/projects/selected/sodic-villette/sodic-villette-drive-001.avif",
+	"/drive/projects/selected/sodic-villette/sodic-villette-drive-001.webp",
+	"/drive/projects/selected/sodic-villette/sodic-villette-drive-002.avif",
+	"/drive/projects/selected/sodic-villette/sodic-villette-drive-002.webp",
+	"/drive/projects/selected/sodic-villette/sodic-villette-drive-003.avif",
+	"/drive/projects/selected/sodic-villette/sodic-villette-drive-003.webp",
 	"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.avif",
 	"/drive/projects/selected/sodic-villette/sodic-villette-drive-004.webp",
 	"/drive/projects/selected/sodic-villette/sodic-villette-drive-005.avif",
@@ -33609,78 +33569,6 @@ var __publicFiles = new Set([
 	"/drive/projects/selected/sodic-villette/sodic-villette-drive-021.webp",
 	"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.avif",
 	"/drive/projects/selected/sodic-villette/sodic-villette-drive-022.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-023.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-023.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-024.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-024.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-025.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-025.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-026.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-026.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-027.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-027.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-028.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-028.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-029.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-029.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-030.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-030.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-031.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-031.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-032.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-032.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-033.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-033.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-034.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-034.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-035.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-035.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-036.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-036.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-037.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-037.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-041.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-041.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-042.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-042.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-043.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-043.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-044.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-044.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-045.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-045.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-046.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-046.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-047.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-047.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-048.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-048.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-049.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-049.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-050.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-050.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-051.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-051.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-052.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-052.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-053.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-053.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-054.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-054.webp",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-055.avif",
-	"/drive/projects/selected/sodic-villette/sodic-villette-drive-055.webp",
-	"/drive/projects/selected/sodic-villette/villette-01.avif",
-	"/drive/projects/selected/sodic-villette/villette-01.webp",
-	"/drive/projects/selected/sodic-villette/villette-02.avif",
-	"/drive/projects/selected/sodic-villette/villette-02.webp",
-	"/drive/projects/selected/sodic-villette/villette-03.avif",
-	"/drive/projects/selected/sodic-villette/villette-03.webp",
-	"/drive/projects/selected/sodic-villette/villette-04.avif",
-	"/drive/projects/selected/sodic-villette/villette-04.webp",
-	"/drive/projects/selected/sodic-villette/villette-05.avif",
-	"/drive/projects/selected/sodic-villette/villette-05.webp",
-	"/drive/projects/selected/sodic-villette/villette-06.avif",
-	"/drive/projects/selected/sodic-villette/villette-06.webp",
 	"/drive/projects/selected/swan-lake/swan-lake-01.avif",
 	"/drive/projects/selected/swan-lake/swan-lake-01.webp",
 	"/drive/projects/selected/swan-lake/swan-lake-02.avif",
@@ -33770,7 +33658,6 @@ var __publicFiles = new Set([
 	"/drive/units/bathroom-units/bathroom-unit-09.webp",
 	"/drive/units/custom-units/custom-unit-01.webp",
 	"/drive/units/custom-units/custom-unit-02.webp",
-	"/drive/units/custom-units/custom-unit-03.webp",
 	"/drive/units/custom-units/custom-unit-04.webp",
 	"/drive/units/custom-units/custom-unit-05.webp",
 	"/drive/units/custom-units/custom-unit-06.webp",
@@ -33800,6 +33687,7 @@ var __publicFiles = new Set([
 	"/favicon.svg",
 	"/file.svg",
 	"/globe.svg",
+	"/icons/instagram.svg",
 	"/og-showroom.jpg",
 	"/og.png",
 	"/window.svg"
@@ -34124,7 +34012,7 @@ var _virtual_vinext_rsc_entry_default = createAppRscHandler({
 	validateDevRequestOrigin: __validateDevRequestOrigin
 });
 //#endregion
-//#region node_modules/vinext/dist/server/app-router-entry.js
+//#region node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6558342ba0b940cbd621b36b626ca262/node_modules/vinext/dist/server/app-router-entry.js
 /**
 * Default Cloudflare Worker entry point for vinext App Router.
 *
