@@ -8,6 +8,7 @@ import { NocturneCategoryStack } from "./NocturneCategoryStack";
 import { PartnerMarquee } from "./PartnerMarquee";
 import { ProjectStoryRail } from "./ProjectStoryRail";
 import { ShowroomProcess } from "./ShowroomProcess";
+import { StickyProjectCta } from "./StickyProjectCta";
 import { capabilities, copy, getMedia } from "@/lib/site-content";
 import type { DesignId, Locale } from "@/lib/site-types";
 
@@ -106,6 +107,8 @@ export function ShowroomHome({ locale, mode }: { locale: Locale; mode: Mode }) {
         <header><p>07 / {locale === "ar" ? "ابدأ من هنا" : "Start here"}</p><h2>{locale === "ar" ? <>ما الذي تريد أن <em>نصنعه؟</em></> : <>What should we <em>make together?</em></>}</h2><span>{locale === "ar" ? "اختر المطلوب في خطوات قصيرة. الاسم ورقم الهاتف فقط مطلوبان." : "Qualify the request in a few simple choices. Only your name and phone are required."}</span></header>
         <InquiryForm locale={locale} />
       </section>}
+
+      <StickyProjectCta locale={locale} />
     </main>
   );
 }

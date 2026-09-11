@@ -144,10 +144,11 @@ test("implements the four-step validated inquiry pipeline", async () => {
 });
 
 test("includes responsive, RTL, and reduced-motion safeguards", async () => {
-  const [css, showroomHome, process] = await Promise.all([
+  const [css, showroomHome, process, stickyProjectCta] = await Promise.all([
     read("app/globals.css"),
     read("components/ShowroomHome.tsx"),
     read("components/ProcessStory.tsx"),
+    read("components/StickyProjectCta.tsx"),
   ]);
 
   assert.match(css, /\[dir="rtl"\]/);
@@ -162,6 +163,13 @@ test("includes responsive, RTL, and reduced-motion safeguards", async () => {
   assert.match(css, /\.process-card \{ width: 100vw; min-width: 100vw; \}/);
   assert.match(showroomHome, /Spaces <em>revealed<\/em> in light\./);
   assert.match(showroomHome, /nocturne-final-cta/);
+  assert.match(showroomHome, /<StickyProjectCta locale=\{locale\} \/>/);
+  assert.match(stickyProjectCta, /href=\{`\/\$\{locale\}\/inquiry`\}/);
+  assert.match(stickyProjectCta, /aria-label=\{label\}/);
+  assert.match(css, /\.sticky-project-cta \{[\s\S]*?position: fixed;/);
+  assert.match(css, /env\(safe-area-inset-bottom\)/);
+  assert.match(css, /\.sticky-project-cta \{[\s\S]*?min-height: 54px;/);
+  assert.match(css, /prefers-reduced-motion: reduce[\s\S]*?\.sticky-project-cta/);
   assert.match(process, /\["0%", "-75%"\]/);
 });
 
