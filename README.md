@@ -102,6 +102,28 @@ portal at `/admin-dashboard`.
 - `DATABASE_URL`: PostgreSQL connection string.
 - `ADMIN_AUTH_SECRET`: long random secret used to sign admin sessions.
 
+The inquiry form also uses the private Cloudflare R2 `UPLOADS` binding declared in
+`.openai/hosting.json`. File uploads require the vinext/Cloudflare runtime; plain
+`next dev` does not provide that binding. Inquiries without files continue to work
+without R2. Use `npm run dev:cloudflare` to test uploads with the local R2
+binding.
+
+### Inquiry attachments
+
+Apply `db/migrations/20261001_lead_attachments.sql` to an existing PostgreSQL database
+before deploying the upload feature. It creates `lead_attachments` and its enum.
+The earlier `drizzle/0000`–`0003` SQL files contain SQLite statements and must
+not be replayed against PostgreSQL. Keep a database backup before applying the
+new migration.
+
+```bash
+psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/migrations/20261001_lead_attachments.sql
+```
+
+The form accepts up to three JPEG/PNG/WebP photos and three DWG/DXF/STEP/STP/SKP/3DM
+files, at 10 MiB each. Files are private in R2; only authenticated admins can
+preview photos or download CAD files through the lead dialog.
+
 Copy `.env.example` to `.env.local` (or `.env`) and update values before running:
 
 ```bash

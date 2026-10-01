@@ -452,6 +452,8 @@
   transform: translate(-50%, -50%);
   color: #f4f4ee;
   background: transparent;
+  max-height: calc(100dvh - 28px);
+  overflow-y: auto;
 }
 
 .choiceDialogShell {
@@ -593,6 +595,16 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+.attachmentPhotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.attachmentPhoto { min-width: 0; margin: 0; }
+.attachmentPhoto a { display: block; overflow: hidden; border-radius: 12px; border: 1px solid rgba(244,244,238,.15); }
+.attachmentPhoto img { display: block; width: 100%; height: 130px; object-fit: cover; }
+.attachmentPhoto figcaption { margin-top: 7px; overflow-wrap: anywhere; font-size: .8rem; color: rgba(244,244,238,.72); }
+.attachmentCadList { list-style: none; margin: 0; padding: 0; }
+.attachmentCadList li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid rgba(244,244,238,.12); font-size: .85rem; }
+.attachmentCadList li span { overflow-wrap: anywhere; }
+.attachmentCadList a { flex: none; color: #fedd10; text-decoration: underline; }
 
 .statusSelectWrap {
   display: grid;

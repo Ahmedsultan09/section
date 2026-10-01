@@ -1191,6 +1191,16 @@ body { font-family: var(--sans); }
 .brief-step, .contact-step { display: grid; gap: 28px; }
 .brief-step .field textarea { min-height: 180px; padding: 16px; border: 1px solid rgba(0,0,0,.28); background: rgba(255,255,255,.28); }
 .brief-step .field textarea:focus { border-color: var(--black); box-shadow: 0 0 0 3px var(--yellow); }
+.inquiry-file-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.inquiry-file-picker { min-width: 0; padding: 18px; border: 1px solid rgba(0,0,0,.28); background: rgba(255,255,255,.28); }
+.inquiry-file-picker label { display: grid; gap: 12px; font-weight: 600; }
+.inquiry-file-picker input { display: block; width: 100%; max-width: 100%; font: 500 12px var(--sans); }
+.inquiry-file-picker small { display: block; margin-top: 10px; opacity: .7; }
+.inquiry-file-picker ul { list-style: none; padding: 0; margin: 14px 0 0; }
+.inquiry-file-picker li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 9px 0; border-top: 1px solid rgba(0,0,0,.18); font-size: 12px; }
+.inquiry-file-picker li span { overflow-wrap: anywhere; }
+.inquiry-file-picker li button { flex: none; border: 0; background: transparent; text-decoration: underline; cursor: pointer; }
+.inquiry-file-dismiss { border: 0; padding: 0; background: transparent; text-decoration: underline; cursor: pointer; }
 .contact-step { max-width: 760px; }
 .contact-step .field-grid { margin-bottom: 12px; }
 .contact-step .field input { min-height: 66px; padding-inline: 16px; border: 1px solid rgba(0,0,0,.28); background: rgba(255,255,255,.28); font-size: 18px; }
@@ -1211,6 +1221,7 @@ body { font-family: var(--sans); }
   .choice-grid { grid-template-columns: 1fr; }
   .choice-card { min-height: 122px; }
   .choice-card strong { font-size: 34px; }
+  .inquiry-file-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
