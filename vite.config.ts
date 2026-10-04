@@ -1,5 +1,5 @@
 import vinext from "vinext";
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { sites } from "./build/sites-vite-plugin";
 
@@ -34,7 +34,7 @@ const localBindingConfig = {
     : [],
 };
 
-export default defineConfig(async () => {
+export default defineConfig(async ({ command, mode }) => {
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= "false";
@@ -43,6 +43,13 @@ export default defineConfig(async () => {
 
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
   const { cloudflare } = await import("@cloudflare/vite-plugin");
+  const localEnv = command === "serve" ? loadEnv(mode, process.cwd(), "") : {};
+  const databaseUrl = process.env.DATABASE_URL ?? localEnv.DATABASE_URL;
+  const adminAuthSecret = process.env.ADMIN_AUTH_SECRET ?? localEnv.ADMIN_AUTH_SECRET;
+  const devVars = command === "serve" ? {
+    ...(databaseUrl ? { DATABASE_URL: databaseUrl } : {}),
+    ...(adminAuthSecret ? { ADMIN_AUTH_SECRET: adminAuthSecret } : {}),
+  } : {};
 
   return {
     server: isCodexSeatbeltSandbox
@@ -53,7 +60,7 @@ export default defineConfig(async () => {
       sites(),
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
-        config: localBindingConfig,
+        config: { ...localBindingConfig, vars: devVars },
       }),
     ],
   };

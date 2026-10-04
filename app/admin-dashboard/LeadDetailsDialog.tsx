@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import type { LeadChoices } from "@/db/schema";
 import styles from "@/app/admin-dashboard/admin-dashboard.module.css";
 
@@ -17,6 +18,8 @@ type LeadNote = {
   createdAt: string;
   updatedAt: string;
 };
+
+type LeadAttachment = { id: string; kind: "photo" | "cad"; originalName: string; bytes: number };
 
 type ToastState = {
   message: string;
@@ -44,6 +47,12 @@ export function LeadDetailsDialog({ leadId, leadName, leadStatus, choices }: Lea
   const [status, setStatus] = useState(leadStatus);
   const [toast, setToast] = useState<ToastState>(null);
   const [notes, setNotes] = useState<LeadNote[]>([]);
+  const [attachments, setAttachments] = useState<LeadAttachment[]>([]);
+  const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
+  const photoUrlsRef = useRef<string[]>([]);
+  const [attachmentsLoading, setAttachmentsLoading] = useState(false);
+  const [attachmentsReady, setAttachmentsReady] = useState(false);
+  const [attachmentsError, setAttachmentsError] = useState(false);
   const [notesCursor, setNotesCursor] = useState<string | null>(null);
   const [notesLoading, setNotesLoading] = useState(false);
   const [notesReady, setNotesReady] = useState(false);
@@ -110,6 +119,8 @@ export function LeadDetailsDialog({ leadId, leadName, leadStatus, choices }: Lea
     return () => dialog.removeEventListener("cancel", onCancel);
   }, []);
 
+  useEffect(() => () => { photoUrlsRef.current.forEach((url) => URL.revokeObjectURL(url)); }, []);
+
   useEffect(() => {
     const trigger = moreTriggerRef.current;
     const root = loadMoreRootRef.current;
@@ -128,10 +139,40 @@ export function LeadDetailsDialog({ leadId, leadName, leadStatus, choices }: Lea
 
   async function handleOpen() {
     dialogRef.current?.showModal();
+    if (!attachmentsReady) void loadAttachments();
     if (!notesReady) {
       setNotes([]);
       setNotesCursor(null);
       await loadNotes(null);
+    }
+  }
+
+  async function loadAttachments() {
+    setAttachmentsLoading(true);
+    setAttachmentsError(false);
+    try {
+      const response = await fetch(`/api/admin/leads/${leadId}/attachments`, { cache: "no-store" });
+      if (!response.ok) throw new Error("attachments");
+      const data = await response.json();
+      const loaded = data.attachments as LeadAttachment[];
+      const previews = await Promise.all(loaded.filter((item) => item.kind === "photo").map(async (item) => {
+        try {
+          const fileResponse = await fetch(`/api/admin/leads/${leadId}/attachments/${item.id}`, { cache: "no-store" });
+          if (!fileResponse.ok) return null;
+          return [item.id, URL.createObjectURL(await fileResponse.blob())] as const;
+        } catch {
+          return null;
+        }
+      }));
+      photoUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
+      photoUrlsRef.current = previews.filter((item): item is readonly [string, string] => item !== null).map((item) => item[1]);
+      setPhotoUrls(Object.fromEntries(previews.filter((item): item is readonly [string, string] => item !== null)));
+      setAttachments(loaded);
+      setAttachmentsReady(true);
+    } catch {
+      setAttachmentsError(true);
+    } finally {
+      setAttachmentsLoading(false);
     }
   }
 
@@ -248,6 +289,18 @@ export function LeadDetailsDialog({ leadId, leadName, leadStatus, choices }: Lea
               </section>
             ))}
           </div>
+
+          <section className={styles.detailBlock}>
+            <div className={styles.detailHeader}>
+              <div><p className={styles.choiceDialogEyebrow}>Files</p><h4>Project references</h4></div>
+              {attachmentsReady && <span className={styles.choiceDialogMeta}>{attachments.length} files</span>}
+            </div>
+            {attachmentsLoading && <p className={styles.choiceDialogMeta}>Loading files...</p>}
+            {attachmentsError && <p className={styles.choiceDialogMeta}>Could not load files. <button className={styles.noteInlineButton} type="button" onClick={() => void loadAttachments()}>Retry</button></p>}
+            {attachmentsReady && attachments.length === 0 && <p className={styles.choiceDialogMeta}>No files attached.</p>}
+            {attachments.some((item) => item.kind === "photo") && <div className={styles.attachmentPhotos}>{attachments.filter((item) => item.kind === "photo").map((item) => <figure className={styles.attachmentPhoto} key={item.id}>{photoUrls[item.id] ? <a href={photoUrls[item.id]} target="_blank" rel="noopener noreferrer"><Image src={photoUrls[item.id]} alt={item.originalName} width={600} height={400} unoptimized /></a> : <span>Preview unavailable</span>}<figcaption>{item.originalName}</figcaption></figure>)}</div>}
+            {attachments.some((item) => item.kind === "cad") && <ul className={styles.attachmentCadList}>{attachments.filter((item) => item.kind === "cad").map((item) => <li key={item.id}><span>{item.originalName} · {(item.bytes / 1024 / 1024).toFixed(1)} MB</span><a href={`/api/admin/leads/${leadId}/attachments/${item.id}`}>Download CAD</a></li>)}</ul>}
+          </section>
 
           <section className={styles.detailBlock}>
             <div className={styles.detailHeader}>
